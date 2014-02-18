@@ -241,10 +241,12 @@ section.section .section-title .description {
   font-size: 18px;
   line-height: 34px;
   margin-top: 20px;
+  text-align: left;
 }
 section.section .section-title .btn {
   color: #333;
 }
+
 section.section.splash {
   color: #fff;
   height: 800px;
@@ -638,7 +640,6 @@ section.section.argentina .argentina-content .what-we-need {
   font-size: 18px;
   line-height: 34px;
   color: #000;
-  text-align: justify;
   margin-top: 20px;
 }
 section.section.argentina .argentina-content .what-we-need .btn {
@@ -667,7 +668,6 @@ section.section.proyectos .proyectos-content .investigacion {
   font-size: 18px;
   line-height: 34px;
   color: #000;
-  text-align: justify;
 }
 section.section.proyectos .proyectos-content .investigacion {
   float: right;
@@ -712,6 +712,16 @@ section.section.proyectos .proyectos-content .overlay-text span {
   -moz-box-sizing: border-box;
 }
 
+section.section.proyectos .proyectos-content .educacion .btn.btn-join{
+  display: inline-block;
+  border-color: #54c2b6;
+  background-color: #54c2b6;
+  background: none;
+  color: #54c2b6;
+  line-height: 20px;
+  margin-top: -5px;  
+}
+
 ul.team-avatars {
   overflow: hidden;
   padding: 0;
@@ -739,12 +749,39 @@ ul.team-avatars li em {
   margin: 0 0 5px;
 }
 ul.team-avatars li em {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
   font-style: normal;
   margin: 0 0 30px;
 }
-
+ul.padrinos-avatars {
+  overflow: hidden;
+  padding: 0;
+  margin: 0 auto;
+  width: 75%;
+  margin-bottom: 20px;
+}
+ul.padrinos-avatars li {
+  float: left;
+  width: 20%;
+  text-align: center;
+  list-style: none;
+}
+ul.padrinos-avatars li img {
+  max-width: 120px;
+  max-height: 120px;
+  display: block;
+  margin: 0 auto 20px;
+  border-radius:3px;
+}
+ul.padrinos-avatars li em {
+  font-size: 24px;
+  font-weight: 600;
+  font-style: normal;
+  margin: 0 0 30px;
+  display: block;
+  font-size: 16px;
+}
 section.section.who-we-are {
   background: #f9f9f9;
   padding: 80px 0 100px 0;
@@ -822,12 +859,14 @@ section.section.how-to-join .colaborate-box {
   text-align: center;
 }
 section.section.how-to-join .colaborate-box .help-link {
+  float: left;
+  min-height: 18px;
   margin-bottom: 20px;
-  width: 300px;
+  width: 40%;
   display: inline-block;
   text-align: center;
   padding: 2%;
-  margin: auto 20px;
+  margin: auto 3%;
   color: #fff;
   text-decoration: none;
   font-family: "Open Sans";
@@ -836,7 +875,7 @@ section.section.how-to-join .colaborate-box .help-link {
   letter-spacing: 1px;
   font-size: 11px;
   border-radius: 3px;
-  background: #fe8a31 url("../images/logo-bitcoin.png") center 65px no-repeat;
+  background: #54c2b6 url("../images/logo-bitcoin.png") center 65px no-repeat;
 }
 section.section.how-to-join .colaborate-box .help-link.ideame {
   background: #fff url("../images/logo-ideame.png") center 40px no-repeat;
@@ -844,7 +883,7 @@ section.section.how-to-join .colaborate-box .help-link.ideame {
 }
 section.section.how-to-join .colaborate-box .help-link.help-sign {
 /*margin-right: 0;*/
-  background: #0875ce url("../images/icon-sign.png") center 30px no-repeat;
+  background: #7b4c94 url("../images/icon-sign.png") center 30px no-repeat;
   padding-top: 120px;
 }
 section.section.how-to-join .colaborate-box .help-link i {
@@ -854,22 +893,18 @@ section.section.how-to-join .colaborate-box .help-link i {
 }
 .btn.donar {
   padding: 5px 35px;
-  color:#0875ce;
+  color:#7b4c94;
 }
 .btn.donar:hover {
   color: #fff;
 }
 
 .modal-header {
-    color:#0875ce;
+    color:#0BC7B8;
 }
 
 .modal-body{
-  color:#0875ce;
-}
-
-#padrinos {
-  float: left;
+  color:#0BC7B8;
 }
 
 section.section.how-to-join .colaborate-box .help-link.help-money {
@@ -877,7 +912,7 @@ section.section.how-to-join .colaborate-box .help-link.help-money {
   padding-bottom: 32px;
 }
 section.section.how-to-join p {
-  font-size: 12px;
+  font-size: 14px;
   /*line-height: 34px;*/
   text-align: center;
   margin-bottom: 20px;
@@ -986,7 +1021,8 @@ footer .last-line {
 }
 /* #Media Queries
 ================================================== */
-/* Smaller than standard 960 (devices and browsers) */
+
+/* Smaller than standard 995 (devices and browsers) */
 @media only screen and (max-width: 959px) {
   header.site-header .social {
     margin-right: 20px;
@@ -1039,6 +1075,7 @@ footer .last-line {
     float: none;
     width: 100%;
   }
+
   footer nav {
     padding: 40px 0;
   }
@@ -1071,6 +1108,19 @@ footer .last-line {
     width: 50%;
     height: auto;
   }
+
+  ul.padrinos-avatars {
+    width: 50%;
+    margin: 0 auto;
+  }
+ul.padrinos-avatars li {
+    width: 100%;
+  }
+  ul.padrinos-avatars li img {
+    width: 50%;
+    height: auto;
+  }
+
   section.section {
     padding: 40px;
   }
@@ -1189,8 +1239,9 @@ footer .last-line {
     padding: 0;
   }
   section.section.how-to-join .colaborate-box .help-link {
-    width: auto;
+    width: 100%;
     display: block;
+    margin: 0px;
     margin-top: 20px;
   }
   .btn.view-source, .btn.demo-pdr, .btn.tunez {
@@ -1358,4 +1409,8 @@ or wrap each row of columns in a <div class="row"> */
   100% {
     opacity: 1;
   }
+}
+
+#MP-Checkout-dialog {
+  z-index: 2000 !important;
 }
