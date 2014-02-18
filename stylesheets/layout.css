@@ -894,13 +894,19 @@ footer .last-line {
 }
 /* #Media Queries
 ================================================== */
+
+@media only screen and (min-width: 1081px) and (max-width: 1120px) {
+ section.section.argentina .argentina-content .what-we-need p{
+    margin-top: -25px;
+  }
+}
+
 /* Smaller than standard 1080 (devices and browsers) */
 @media only screen and (max-width: 1080px) {
   ul.team-avatars li img {
     max-width: 120px;
     max-height: 120px;
   }
-
   ul.team-avatars li em {
     font-weight: 600;
     font-style: normal;
@@ -908,13 +914,16 @@ footer .last-line {
     display: block;
     font-size: 16px;
   }
+
+  section.section.argentina .argentina-content .what-we-need p{
+    margin-top: -25px;
+  }
 }
 
 /* Smaller than standard 995 (devices and browsers) */
 @media only screen and (max-width: 959px) {
   header.site-header .social {
-    margin-right: 20px;
-     background: red; 
+    margin-right: 20px; 
   }
   section.section {
     padding: 100px 20px;
@@ -950,7 +959,7 @@ footer .last-line {
   section.section.proyectos .proyectos-content .investigacion p {
     font-size: 14px;
     line-height: 24px;
-    text-align: justify;
+    text-align: center;
     
   }
   section.section.argentina .argentina-content .what-we-need p {
@@ -1133,7 +1142,7 @@ footer .last-line {
     padding: 20px 10px;
   }
   section.section.splash .section-title .description {
-    font-size: 16px;
+    font-size: 18px;
   }
   section.section.splash .section-title .btn {
     margin-bottom: 20px;
@@ -1195,7 +1204,7 @@ footer .last-line {
   }
   section.section.splash .section-title .description {
     margin-top: 0;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 22px;
     margin-bottom: 20px;
   }
