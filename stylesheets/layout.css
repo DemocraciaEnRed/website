@@ -99,7 +99,7 @@ h6,
   left: 10px;
 }
 
-.btn.tunez {
+.btn.mexico {
   margin-left: 28px;
 }
 .btn:hover {
@@ -593,6 +593,11 @@ section.section.proyectos .proyectos-content .btn.btn-join{
   margin-top: -5px;
   min-width: 100px;
   border-radius: 0px;  
+}
+
+section.section.proyectos .proyectos-content .btn.btn-join:hover{
+  background-color:#54c2b6; 
+  color:#fff;
 }
 
 ul.team-avatars {
