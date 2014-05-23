@@ -259,7 +259,7 @@ section.section.splash {
   width: 100%;
 }
 section.section.splash img.logo {
-  height: 150px;
+  height: 160px;
 /*margin-bottom: 10px;*/
 }
 section.section.splash img:not(.logo) {
@@ -1205,7 +1205,7 @@ footer .last-line {
     margin: 0;
   }
   section.section.splash .section-title img {
-    height: 80px;
+    height: 120px;
   }
   section.section.splash .section-title .description {
     margin-top: 0;
