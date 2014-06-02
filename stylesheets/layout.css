@@ -1168,12 +1168,12 @@ footer .last-line {
     margin: 0px;
     margin-top: 20px;
   }
-  .btn.view-source, .btn.demo-pdr, .btn.tunez {
+  .btn.view-source, .btn.demo-pdr, .btn.mexico {
     margin-bottom: 10px;
     margin-right: 0;
   }
 
-  .btn.tunez {
+  .btn.mexico {
     
       margin-left: 0px;
   }
@@ -1269,7 +1269,7 @@ footer .last-line {
 @media only screen and (max-width: 424px) {
   section.democracy-network.section .btn.view-source, 
   section.democracy-network.section .btn.demo-pdr, 
-  section.democracy-network.section .btn.tunez {
+  section.democracy-network.section .btn.mexico {
     position: relative;
     display: block;
     float: left;
