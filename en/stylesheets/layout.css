@@ -167,6 +167,7 @@ header.site-header .navbar-inverse .navbar-inner ul.nav {
   padding: 0;
   margin: 0;
 }
+
 header.site-header .navbar-inverse .navbar-inner ul.nav li {
   display: inline-block;
   margin: 0;
@@ -186,6 +187,7 @@ header.site-header .navbar-inverse .navbar-inner ul.nav li a {
 header.site-header .navbar-inverse .navbar-inner ul.nav.languages li a {
   margin-right: 0;
 }
+
 header.site-header .navbar-inverse .navbar-inner ul.nav li a:hover {
   background: none;
   box-shadow: none;
