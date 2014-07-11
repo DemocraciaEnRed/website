@@ -167,6 +167,7 @@ header.site-header .navbar-inverse .navbar-inner ul.nav {
   padding: 0;
   margin: 0;
 }
+
 header.site-header .navbar-inverse .navbar-inner ul.nav li {
   display: inline-block;
   margin: 0;
@@ -183,11 +184,16 @@ header.site-header .navbar-inverse .navbar-inner ul.nav li a {
   text-shadow: none;
   padding: 24px 0;
 }
+header.site-header .navbar-inverse .navbar-inner ul.nav.languages li a {
+  margin-right: 0;
+}
+
 header.site-header .navbar-inverse .navbar-inner ul.nav li a:hover {
   background: none;
   box-shadow: none;
 }
-header.site-header .navbar-inverse .navbar-inner ul.nav li.active a {
+header.site-header .navbar-inverse .navbar-inner ul.nav li.active a,
+header.site-header .navbar-inverse .navbar-inner ul.nav li.selected a {
   color: #333;
 }
 header.site-header .navbar-inverse .navbar-inner ul.nav li.hide {
