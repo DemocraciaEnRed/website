@@ -1,0 +1,25 @@
+{
+  "name": "democraciaenred-website",
+  "version": "0.0.1",
+  "description": "Democracia en Red =================",
+  "main": "index.js",
+  "scripts": {
+    "start": "ws",
+    "build": "jade index.jade",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DemocraciaEnRed/democraciaenred.github.io.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DemocraciaEnRed/democraciaenred.github.io/issues"
+  },
+  "homepage": "https://github.com/DemocraciaEnRed/democraciaenred.github.io#readme",
+  "devDependencies": {
+    "jade": "^1.11.0",
+    "local-web-server": "^0.5.23"
+  }
+}
