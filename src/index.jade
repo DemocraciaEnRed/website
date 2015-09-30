@@ -1,0 +1,52 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    title: | Democracia en Red
+    meta(content="Nos unimos para innovar donde nadie esta innovando aún, en el sistema político.", name="description")
+    meta(content="Pía Mancini @piamancini", name="author")
+    meta(content="Ricardo Rauch @gravityonmars", name="author")
+    meta(content="HAkIFHrAksbGkWhFocPXjNqA6JDUjF3V2dA0SLKBIYc", name="google-site-verification")
+    meta(content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0", name="viewport")
+    link(href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css", rel="stylesheet")
+    link(href="stylesheets/fonts/social.css", rel="stylesheet")
+    link(href="stylesheets/layout.css", rel="stylesheet")
+    link(href="images/der-favicon.ico", rel="shortcut icon")
+    //- <!--[if lt IE 9]>
+    //- <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    //- <![endif]-->
+
+    script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js", type="text/javascript")
+    script(src="javascripts/vendor/jquery.scrollTo.min.js", type="text/javascript")
+    script(src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js", type="text/javascript")
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800', rel='stylesheet', type='text/css')
+    script(src="javascripts/site.js", type="text/javascript")
+
+    script(type="text/javascript").
+      try{Typekit.load();}catch(e){}
+
+body(data-offset="120", data-spy="scroll", data-target=".navbar")
+  include header/index
+
+  include sections/splash/index
+  include sections/who-we-are/index
+  include sections/democracyos/index
+  include sections/projects/index
+  include sections/team/index
+  include sections/collaborate/index
+
+  include footer/index
+
+  script.
+    $('.members a').popover({
+      trigger: 'hover',
+      placement: function (tip, element) {
+          var offset = $(element).offset()
+              , width = $(document).outerWidth()
+              , horiz = 0.5 * width - offset.left
+              , horizPlacement = horiz > 0 ? 'right' : 'left'
+          return horizPlacement;
+        }
+        });
+
+  include utils/ga

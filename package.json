@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "ws",
-    "build": "jade index.jade",
+    "build": "jade src/index.jade",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
