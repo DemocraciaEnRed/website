@@ -1,0 +1,53 @@
+{
+  "projects": [
+    {
+      "image": "dos.jpg",
+      "links": [
+        { "text": "Partido de la Red", "url": "http://dos.partidodelared.org/" },
+        { "text": "EVoks", "url": "http://evoks.hu" },
+        { "text": "Debatics PAMI", "url": "http://debatics.pami.org.ar" },
+        { "text": "Política de Datos Abiertos de México", "url": "http://politica.datos.gob.mx" },
+        { "text": "Barcelona en Comu", "url": "http://participa.confluenciacodietic.cat/" },
+        { "text": "Eu Voto", "url": "http://euvoto.org" }
+      ],
+      "description": "DemocracyOS es una herramienta de código abierto pensada para facilitar la participación ciudadana en procesos de toma de decisión. Es la manifestación tecnológica de nuestra misión principal: acercar el sistema político a las tecnologías y hábitos de este siglo."
+    },
+    {
+      "image": "civic.jpg",
+      "links": [ { "text": "civicstack.org", "url": "http://www.civicstack.org" } ],
+      "description": "Civic Stack es un repositorio de aplicaciones de código abierto diseñadas para generar impacto cívico. Fue pensado colaborativamente como una ventana para agrupar y facilitar el acceso a tecnologías con el objetivo de empoderar ciudadanos."
+    },
+    {
+      "image": "demos.jpg",
+      "links": [ { "text": "demos.legislatura.gov.ar", "url": "http://demos.legislatura.gov.ar" } ],
+      "description": "Demos Legislatura Porteña es un proyecto que hicimos en colaboración con la Legislatura Porteña. La experiencia permitió a todos los ciudadanos de Buenos Aires informarse, debatir y votar sobre 3 proyectos de ley elegidos por ellos mismos. Una apuesta institucional por la idea de que “más, pensamos mejor”."
+    },
+    {
+      "image": "demosbb.png",
+      "links": [ { "text": "bahiablanca.democracyos.org", "url": "http://bahiablanca.democracyos.org" } ],
+      "description": "Demos Bahía Blanca es una iniciativa en colaboración con la Agencia de Gobierno Abierto del Municipio de Bahía Blanca. Encaramos el desafío de usar la tecnología para abrir ordenanzas y decretos para someterlos a discusión de todos los ciudadanos."
+    },
+    {
+      "image": "sole.jpg",
+      "links": [
+        { "text": "soleargentina.org", "url": "http://www.soleargentina.org" }
+      ],
+      "description": "SOLE crea entornos de aprendizaje autoorganizados, basados en la pedagogía de Sugata Mitra, que incluyen muchos chicos, algunas computadoras y una pregunta. Internet transforma la forma de aprender, también, en escuelas de la Ciudad de Buenos Aires."
+    },
+    {
+      "image": "academia.jpg",
+      "description": "Academia es un espacio de encuentro con artistas, investigadores y personas que vienen pensando y experimentando el cruce entre el poder y el mundo digital. La democracia en la era de internet trae nuevas inquietudes y escenarios que asombran."
+    },
+    {
+      "image": "update.png",
+      "links": [
+        { "text": "demos.legislatura.gov.ar", "url": "http://demos.legislatura.gov.ar" }
+      ],
+      "description": "UPDATE nace en São Paulo, con un grupo de activistas que empezó a preguntarse si es posible construir una nueva categoría dentro del activismo social: los Hackers de la Política. Nos unimos para mapear y conectar activistas que usan Internet para cuestionar y transformar la forma en que se hace política dentro y fuera de las instituciones."
+    },
+    {
+      "image": "3x3.png",
+      "description": "TRES POR TRES es un ciclo de conversaciones de muchos a muchos, con temáticas específicas. Tres eventos y tres organizaciones discuten, sin oradores y sin palestras, el impacto de la tecnología en la política argentina."
+    }
+  ]
+}

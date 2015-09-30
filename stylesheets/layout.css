@@ -539,7 +539,33 @@ section.section.proyectos {
   min-height: 400px;
 }
 
-section.section.proyectos .proyectos-content .educacion,
+section.section.proyectos .proyectos-content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+section.section.proyectos .proyectos-content .proyectos-item {
+  position: relative;
+  min-width: 250px;
+  max-width: 300px;
+}
+
+section.section.proyectos .proyectos-content .description-overlay {
+  display: none;
+  z-index: 10;
+  position: absolute;
+  background-color: red;
+  top: 0px;
+  width: 600px;
+  height: 300px;
+}
+
+section.section.proyectos .proyectos-content .description-overlay.show {
+  display: block;
+}
+
+/*section.section.proyectos .proyectos-content .educacion,
 section.section.proyectos .proyectos-content .investigacion {
   width: 48%;
   float: left;
@@ -552,7 +578,7 @@ section.section.proyectos .proyectos-content .investigacion {
 }
 section.section.proyectos .proyectos-content .educacion p:not(.first),
 section.section.proyectos .proyectos-content .investigacion p:not(.first),
-/*section.section.argentina .argentina-content .what-we-need p:not(.first)*/ {
+/*section.section.argentina .argentina-content .what-we-need p:not(.first) {
   font-size: 15px;
   line-height: 27px;
   color: #545454;
@@ -603,7 +629,7 @@ section.section.proyectos .proyectos-content .btn.btn-join:hover{
   background-color:#54c2b6; 
   color:#fff;
 }
-
+*/
 ul.team-avatars {
   overflow: hidden;
   padding: 0;
