@@ -1,7 +1,7 @@
 {
   "name": "democraciaenred-website",
-  "version": "0.0.1",
-  "description": "Democracia en Red =================",
+  "version": "1.0.1",
+  "description": "Democracia en Red website",
   "main": "index.js",
   "scripts": {
     "start": "ws",
