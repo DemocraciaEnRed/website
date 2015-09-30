@@ -5,9 +5,9 @@ mixin project(data)
 section.proyectos.section#proyectos
   .section-title
     img(src="images/icons/icon-1.png")
-    h2 Proyectos
+    h2=projects.title
 
   .proyectos-content.clearfix
     .description-overlay
-    - each projectData in projects
+    - each projectData in projects.list
       +project(projectData)
