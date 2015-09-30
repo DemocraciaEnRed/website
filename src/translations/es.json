@@ -51,5 +51,28 @@
         "image": "3x3.png",
         "description": "TRES POR TRES es un ciclo de conversaciones de muchos a muchos, con temáticas específicas. Tres eventos y tres organizaciones discuten, sin oradores y sin palestras, el impacto de la tecnología en la política argentina."
       }
-    ]}
+    ]
+  },
+  "team": [
+    { "name": "Agustín Frizzera", "image": "af.jpg", "bio": "", "social": { } },
+    { "name": "Guido Vilariño", "image": "af.jpg", "bio": "", "social": { } },
+    { "name": "Esteban Brenman", "image": "af.jpg", "bio": "", "social": { } },
+    { "name": "Gastón Silberman", "image": "af.jpg", "bio": "", "social": { } },
+    { "name": "Sebastián Fernández", "image": "af.jpg", "bio": "", "social": { } },
+    { "name": "Matías Lescano", "image": "af.jpg", "bio": "", "social": { } },
+    { "name": "Florencia Polimeni", "image": "af.jpg", "bio": "", "social": { } },
+    { "name": "Mair Williams", "image": "af.jpg", "bio": "", "social": { } },
+    { "name": "Sebastián Ghelerman", "image": "af.jpg", "bio": "", "social": { } },
+    { "name": "Gonzalo Argüello", "image": "af.jpg", "bio": "", "social": { } },
+    { "name": "Mariano Gómez Bidondo", "image": "af.jpg", "bio": "", "social": { } },
+    { "name": "José Fresco", "image": "af.jpg", "bio": "", "social": { } },
+    { "name": "Sacha Lifszyc", "image": "af.jpg", "bio": "", "social": { } },
+    { "name": "Don Powa", "image": "af.jpg", "bio": "", "social": { } },
+    { "name": "Mariano Lopata", "image": "af.jpg", "bio": "", "social": { } },
+    { "name": "Liliana Haydee Jalabe", "image": "af.jpg", "bio": "", "social": { } },
+    { "name": "Ana Lis Rodríguez Nardelli", "image": "af.jpg", "bio": "", "social": { } },
+    { "name": "Inti Bonomo", "image": "af.jpg", "bio": "", "social": { } },
+    { "name": "Martín Galanternik", "image": "af.jpg", "bio": "", "social": { } },
+    { "name": "Felipe Muñoz", "image": "af.jpg", "bio": "", "social": { } }
+  ]
 }

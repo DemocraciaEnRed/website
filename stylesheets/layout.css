@@ -630,7 +630,7 @@ section.section.proyectos .proyectos-content .btn.btn-join:hover{
   color:#fff;
 }
 */
-ul.team-avatars {
+/*ul.team-avatars {
   overflow: hidden;
   padding: 0;
   margin: 0 auto;
@@ -689,6 +689,20 @@ ul.padrinos-avatars li em {
   margin: 0 0 30px;
   display: block;
   font-size: 16px;
+}*/
+
+section.who-we-are .team .team-avatars {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+section.who-we-are .team .team-avatars .avatar {
+  padding: 10px 10px;
+  text-align: center;
+}
+section.who-we-are .team .team-avatars .avatar img {
+  border-radius: 3px;
 }
 section.section.who-we-are {
   background: #f9f9f9;
