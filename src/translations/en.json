@@ -1,0 +1,95 @@
+{
+  "projects": {
+    "title": "Projects",
+    "list": [
+      {
+        "image": "dos.jpg",
+        "links": [
+          { "text": "Net Party", "url": "http://dos.partidodelared.org/" },
+          { "text": "EVoks", "url": "http://evoks.hu" },
+          { "text": "Debatics PAMI", "url": "http://debatics.pami.org.ar" },
+          { "text": "Política de Datos Abiertos de México", "url": "http://politica.datos.gob.mx" },
+          { "text": "Barcelona en Comu", "url": "http://participa.confluenciacodietic.cat/" },
+          { "text": "Eu Voto", "url": "http://euvoto.org" }
+        ],
+        "description": "DemocracyOS es una herramienta de código abierto pensada para facilitar la participación ciudadana en procesos de toma de decisión. Es la manifestación tecnológica de nuestra misión principal: acercar el sistema político a las tecnologías y hábitos de este siglo."
+      },
+      {
+        "image": "civic.jpg",
+        "links": [ { "text": "civicstack.org", "url": "http://www.civicstack.org" } ],
+        "description": "Civic Stack es un repositorio de aplicaciones de código abierto diseñadas para generar impacto cívico. Fue pensado colaborativamente como una ventana para agrupar y facilitar el acceso a tecnologías con el objetivo de empoderar ciudadanos."
+      },
+      {
+        "image": "demos.jpg",
+        "links": [ { "text": "demos.legislatura.gov.ar", "url": "http://demos.legislatura.gov.ar" } ],
+        "description": "Demos Legislatura Porteña es un proyecto que hicimos en colaboración con la Legislatura Porteña. La experiencia permitió a todos los ciudadanos de Buenos Aires informarse, debatir y votar sobre 3 proyectos de ley elegidos por ellos mismos. Una apuesta institucional por la idea de que “más, pensamos mejor”."
+      },
+      {
+        "image": "demosbb.png",
+        "links": [ { "text": "bahiablanca.democracyos.org", "url": "http://bahiablanca.democracyos.org" } ],
+        "description": "Demos Bahía Blanca es una iniciativa en colaboración con la Agencia de Gobierno Abierto del Municipio de Bahía Blanca. Encaramos el desafío de usar la tecnología para abrir ordenanzas y decretos para someterlos a discusión de todos los ciudadanos."
+      },
+      {
+        "image": "sole.jpg",
+        "links": [
+          { "text": "soleargentina.org", "url": "http://www.soleargentina.org" }
+        ],
+        "description": "SOLE crea entornos de aprendizaje autoorganizados, basados en la pedagogía de Sugata Mitra, que incluyen muchos chicos, algunas computadoras y una pregunta. Internet transforma la forma de aprender, también, en escuelas de la Ciudad de Buenos Aires."
+      },
+      {
+        "image": "academia.jpg",
+        "description": "Academia es un espacio de encuentro con artistas, investigadores y personas que vienen pensando y experimentando el cruce entre el poder y el mundo digital. La democracia en la era de internet trae nuevas inquietudes y escenarios que asombran."
+      },
+      {
+        "image": "update.png",
+        "links": [
+          { "text": "demos.legislatura.gov.ar", "url": "http://demos.legislatura.gov.ar" }
+        ],
+        "description": "UPDATE nace en São Paulo, con un grupo de activistas que empezó a preguntarse si es posible construir una nueva categoría dentro del activismo social: los Hackers de la Política. Nos unimos para mapear y conectar activistas que usan Internet para cuestionar y transformar la forma en que se hace política dentro y fuera de las instituciones."
+      },
+      {
+        "image": "3x3.png",
+        "description": "TRES POR TRES es un ciclo de conversaciones de muchos a muchos, con temáticas específicas. Tres eventos y tres organizaciones discuten, sin oradores y sin palestras, el impacto de la tecnología en la política argentina."
+      }
+    ]
+  },
+  "team": [
+    { "name": "Agustín Frizzera", "image": "af.jpg", "bio": "", "social": { } },
+    { "name": "Guido Vilariño", "image": "af.jpg", "bio": "", "social": { } },
+    { "name": "Esteban Brenman", "image": "af.jpg", "bio": "", "social": { } },
+    { "name": "Gastón Silberman", "image": "af.jpg", "bio": "", "social": { } },
+    { "name": "Sebastián Fernández", "image": "af.jpg", "bio": "", "social": { } },
+    { "name": "Matías Lescano", "image": "af.jpg", "bio": "", "social": { } },
+    { "name": "Florencia Polimeni", "image": "af.jpg", "bio": "", "social": { } },
+    { "name": "Mair Williams", "image": "af.jpg", "bio": "", "social": { } },
+    { "name": "Sebastián Ghelerman", "image": "af.jpg", "bio": "", "social": { } },
+    { "name": "Gonzalo Argüello", "image": "af.jpg", "bio": "", "social": { } },
+    { "name": "Mariano Gómez Bidondo", "image": "af.jpg", "bio": "", "social": { } },
+    { "name": "José Fresco", "image": "af.jpg", "bio": "", "social": { } },
+    { "name": "Sacha Lifszyc", "image": "af.jpg", "bio": "", "social": { } },
+    { "name": "Don Powa", "image": "af.jpg", "bio": "", "social": { } },
+    { "name": "Mariano Lopata", "image": "af.jpg", "bio": "", "social": { } },
+    { "name": "Liliana Haydee Jalabe", "image": "af.jpg", "bio": "", "social": { } },
+    { "name": "Ana Lis Rodríguez Nardelli", "image": "af.jpg", "bio": "", "social": { } },
+    { "name": "Inti Bonomo", "image": "af.jpg", "bio": "", "social": { } },
+    { "name": "Martín Galanternik", "image": "af.jpg", "bio": "", "social": { } },
+    { "name": "Felipe Muñoz", "image": "af.jpg", "bio": "", "social": { } }
+  ],
+  "press": {
+    "links": [
+      { "url": "http://ccaa.elpais.com/ccaa/2015/01/27/madrid/1422375720_783629.html", "logo": "elpais.png" },
+      { "url": "https://www.youtube.com/watch?v=qJn3XVme-oQ", "logo": "tedmtvd.png" },
+      { "url": "http://www.ted.com/talks/pia_mancini_how_to_upgrade_democracy_for_the_internet_era", "logo": "ted.png" },
+      { "url": "http://www.wired.com/2014/05/democracy-os/", "logo": "wired.png" },
+      { "url": "http://www.fastcompany.com/3043388/the-y-combinator-chronicles/why-y-combinator-funded-a-radical-political-party-in-argentina", "logo": "fast.png" },
+      { "url": "http://www.lapoliticaonline.com/nota/85129-tratatan-proyectos-votados-en-internet/", "logo": "lpo.png" },
+      { "url": "http://www.lanacion.com.ar/1745336-los-portenos-eligieron-prohibir-a-los-cuidacoches", "logo": "lanacion.png" },
+      { "url": "http://elargentino.infonews.com/2014/11/16/el-argentino-caba-172586-los-portenos-pueden-votar-proyectos-en-la-web.php", "logo": "infonews.png" }
+    ]
+  },
+  "collaborate": {
+    "title": "¿Cómo puedo colaborar?",
+    "description": "Ayudanos a llegar a más personas. Sumate a nuestras redes para amplificar el mensaje. Hay muchas maneras de colaborar.",
+    "callToAction": "Escribinos"
+  }
+}
