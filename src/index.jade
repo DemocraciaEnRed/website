@@ -35,16 +35,4 @@ body(data-offset="120", data-spy="scroll", data-target=".navbar")
 
   include footer/index
 
-  script.
-    $('.members a').popover({
-      trigger: 'hover',
-      placement: function (tip, element) {
-          var offset = $(element).offset()
-              , width = $(document).outerWidth()
-              , horiz = 0.5 * width - offset.left
-              , horizPlacement = horiz > 0 ? 'right' : 'left'
-          return horizPlacement;
-        }
-        });
-
   include utils/ga
