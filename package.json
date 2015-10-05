@@ -6,6 +6,7 @@
   "scripts": {
     "start": "ws",
     "build": "jade src/index.jade --out . -O src/translations/es.json",
+    "stylus": "stylus --compress < src/index.styl --include-css > ./app.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,6 +21,7 @@
   "homepage": "https://github.com/DemocraciaEnRed/democraciaenred.github.io#readme",
   "devDependencies": {
     "jade": "^1.11.0",
-    "local-web-server": "^0.5.23"
+    "local-web-server": "^0.5.23",
+    "stylus": "^0.52.4"
   }
 }
