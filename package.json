@@ -4,11 +4,7 @@
   "description": "Democracia en Red website",
   "main": "index.js",
   "scripts": {
-    "start": "ws",
-    "build": "jade src/index.jade --out . -O src/translations/es.json",
-    "stylus": "stylus --compress < src/index.styl --include-css > stylesheets/app.css",
-    "js": "browserify src/index.js -o javascripts/site.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "ws"
   },
   "repository": {
     "type": "git",
