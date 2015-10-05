@@ -1,18 +1,19 @@
+(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 $(function(){
 
-	$('.members a').popover({
-		trigger: 'hover',
-		placement: function (tip, element) {
-			var offset = $(element).offset()
-				, width = $(document).outerWidth()
-				, horiz = 0.5 * width - offset.left
-				, horizPlacement = horiz > 0 ? 'right' : 'left'
-			return horizPlacement;
-		}
-	});
+  $('.members a').popover({
+    trigger: 'hover',
+    placement: function (tip, element) {
+      var offset = $(element).offset()
+        , width = $(document).outerWidth()
+        , horiz = 0.5 * width - offset.left
+        , horizPlacement = horiz > 0 ? 'right' : 'left'
+      return horizPlacement;
+    }
+  });
 
 
-	$('#subForm').submit(function (e) {
+  $('#subForm').submit(function (e) {
     e.preventDefault();
     $.getJSON(
     this.action + "?callback=?",
@@ -29,89 +30,88 @@ $(function(){
     });
   });
 
-	$(".toggle-content").click(function(){
-		$(this).fadeOut();
-		$(this).parent().find("p:not(.first)").fadeToggle();
-		return false;
-	});
-	$('.videos-section .modal').bind('hide', function () {
-		var iframe = $(this).children('div.modal-body').find('iframe');
-		var src = iframe.attr('src').replace("?rel=0&autoplay=1", '');
-		// alert($(this).children('div.modal-body').html());
-		iframe.attr('src', '');
-		iframe.attr('src', src);
-	});
+  $(".toggle-content").click(function(){
+    $(this).fadeOut();
+    $(this).parent().find("p:not(.first)").fadeToggle();
+    return false;
+  });
+  $('.videos-section .modal').bind('hide', function () {
+    var iframe = $(this).children('div.modal-body').find('iframe');
+    var src = iframe.attr('src').replace("?rel=0&autoplay=1", '');
+    // alert($(this).children('div.modal-body').html());
+    iframe.attr('src', '');
+    iframe.attr('src', src);
+  });
 
-	$('.videos-section .modal').bind('show', function () {
-		var iframe = $(this).children('div.modal-body').find('iframe');
-		var src = iframe.attr('src');
-		// alert($(this).children('div.modal-body').html());
-		iframe.attr('src', '');
-		iframe.attr('src', src + '?rel=0&autoplay=1');
-	});
+  $('.videos-section .modal').bind('show', function () {
+    var iframe = $(this).children('div.modal-body').find('iframe');
+    var src = iframe.attr('src');
+    // alert($(this).children('div.modal-body').html());
+    iframe.attr('src', '');
+    iframe.attr('src', src + '?rel=0&autoplay=1');
+  });
 
 
-	// $('.splash .').css('top', );
+  // $('.splash .').css('top', );
 
-	$('a[href*="#"]').click(function(event){
-		//prevent the default action for the click event
-		event.preventDefault();
+  $('a[href*="#"]').click(function(event){
+    //prevent the default action for the click event
+    event.preventDefault();
  
-		//get the full url - like mysitecom/index.htm#home
-		var full_url = this.href;
+    //get the full url - like mysitecom/index.htm#home
+    var full_url = this.href;
  
-		//split the url by # and get the anchor target name - home in mysitecom/index.htm#home
-		var parts = full_url.split("#");
-		var trgt = parts[1];
+    //split the url by # and get the anchor target name - home in mysitecom/index.htm#home
+    var parts = full_url.split("#");
+    var trgt = parts[1];
  
-		//get the top offset of the target anchor
-		var target_offset = $("#"+trgt).offset();
-		var target_top = target_offset.top;
+    //get the top offset of the target anchor
+    var target_offset = $("#"+trgt).offset();
+    var target_top = target_offset.top;
 
-		$('.navbar li').removeClass('active');
+    $('.navbar li').removeClass('active');
 
-		$(this).addClass('active').parent().addClass('active');
+    $(this).addClass('active').parent().addClass('active');
  
-		//goto that anchor by setting the body scroll top to anchor top
-		$('html, body').animate({scrollTop:target_top}, 500);
-	});
+    //goto that anchor by setting the body scroll top to anchor top
+    $('html, body').animate({scrollTop:target_top}, 500);
+  });
 
 
-	$('section.section.splash .section-content').animate({opacity: 1}, 3000);
+  $('section.section.splash .section-content').animate({opacity: 1}, 3000);
 
-	var new_height = $(window).height();
+  var new_height = $(window).height();
 
-	$('section.section.splash').css({height: new_height}, 1000, function(){
-		$('.navbar').scrollspy();
-	});
+  $('section.section.splash').css({height: new_height}, 1000, function(){
+    $('.navbar').scrollspy();
+  });
 
-	$(window).resize(function() {
+  $(window).resize(function() {
 
-		var new_height = $(window).height();
+    var new_height = $(window).height();
 
-		$('section.section.splash').css({height: new_height}, 10);
-	});
+    $('section.section.splash').css({height: new_height}, 10);
+  });
 
-	$('.dot').popover({trigger: 'hover'})
+  $('.dot').popover({trigger: 'hover'})
 
-	$('.dot').hover(function(){
-		$(this).children('.mapMarkGlow').hide();
-	});
+  $('.dot').hover(function(){
+    $(this).children('.mapMarkGlow').hide();
+  });
 
 
-	// $('.members a').popover({trigger: 'hover'})
+  // $('.members a').popover({trigger: 'hover'})
 
-	// 	$('.popover-ajax').each(function(index){
+  //  $('.popover-ajax').each(function(index){
 
-	//     var el=$(this);
+  //     var el=$(this);
 
-	//     $.get(el.attr('data-load'),function(d){
-	//         el.popover({content: d});       
-	//     });     
+  //     $.get(el.attr('data-load'),function(d){
+  //         el.popover({content: d});       
+  //     });     
 
-	// });
+  // });
 
 });
 
-
-
+},{}]},{},[1]);
