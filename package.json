@@ -7,6 +7,7 @@
     "start": "ws",
     "build": "jade src/index.jade --out . -O src/translations/es.json",
     "stylus": "stylus --compress < src/index.styl --include-css > stylesheets/app.css",
+    "js": "browserify src/index.js -o javascripts/site.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,6 +21,7 @@
   },
   "homepage": "https://github.com/DemocraciaEnRed/democraciaenred.github.io#readme",
   "devDependencies": {
+    "browserify": "^11.2.0",
     "jade": "^1.11.0",
     "local-web-server": "^0.5.23",
     "stylus": "^0.52.4"
