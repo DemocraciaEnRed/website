@@ -74,5 +74,10 @@
     { "name": "Inti Bonomo", "image": "af.jpg", "bio": "", "social": { } },
     { "name": "Martín Galanternik", "image": "af.jpg", "bio": "", "social": { } },
     { "name": "Felipe Muñoz", "image": "af.jpg", "bio": "", "social": { } }
-  ]
+  ],
+  "collaborate": {
+    "title": "¿Cómo puedo colaborar?",
+    "description": "Ayudanos a llegar a más personas. Sumate a nuestras redes para amplificar el mensaje. Hay muchas maneras de colaborar.",
+    "callToAction": "Escribinos"
+  }
 }
