@@ -1,0 +1,8 @@
+mixin links(data)
+  - each link in data
+    .link
+      a(href='#{link.url}'): img(src='images/' + link.logo)
+
+section.press.section#press
+  .links
+    +links(press.links)

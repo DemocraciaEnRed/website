@@ -575,6 +575,16 @@ section.section.proyectos .proyectos-content .description-overlay .close {
   float: right;
 }
 
+section.section.press .links {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+section.section.press .links .link {
+  padding: 10px 10px;
+}
+
 section.who-we-are .team .team-avatars {
   display: flex;
   flex-flow: row wrap;
