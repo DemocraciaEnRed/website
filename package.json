@@ -21,5 +21,8 @@
     "jade": "^1.11.0",
     "local-web-server": "^0.5.23",
     "stylus": "^0.52.4"
+  },
+  "dependencies": {
+    "dominus": "^5.0.6"
   }
 }

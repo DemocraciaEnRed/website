@@ -112,3 +112,5 @@ $(function(){
   // });
 
 });
+
+require('./sections/projects')
