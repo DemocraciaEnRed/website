@@ -3,7 +3,10 @@ mixin project(data)
     a.expand(href='#'): img(src='images/' + data.image)
     .description-overlay
       button.close ×
-      p=data.description
+      .screenshots
+        img(src='images/ip1-dos.png')
+      .text
+        p=data.description
 
 section.proyectos.section#proyectos
   .section-title
