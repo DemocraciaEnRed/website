@@ -21,6 +21,9 @@ section.section.proyectos
       height 200px
       transition all 0.4s ease
 
+      .expand
+        position relative
+
       .description-overlay
         position absolute
         top auto
@@ -38,5 +41,20 @@ section.section.proyectos
       &.expanded
         height 460px
 
+        .expand:after
+          top auto
+          border solid transparent
+          content " "
+          height 0
+          width 0
+          position absolute
+          pointer-events none
+          border-bottom-color red
+          border-width 15px
+          left 50%
+          margin -20px 0 0 -15px
+          bottom -92px
+
         .description-overlay
           height 200px
+
