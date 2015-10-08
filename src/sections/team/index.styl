@@ -6,8 +6,38 @@ section.who-we-are
       justify-content center
 
       .avatar
+        position relative
         padding 10px 10px
-        text-align center
+        text-align left
+        width 290px
+        height 450px
+        margin-bottom 10px
+        border-radius 3px
 
-        img
-          border-radius 3px
+        .picture
+          img
+            height 290px
+            border-radius 3px 3px 0 0
+
+        .content
+          position absolute
+          top 300px
+          padding 5px 10px
+          width 270px
+          height 160px
+          border-radius 0 3px
+          background-color white
+          transition all 0.5s ease
+          .bio
+            opacity 0
+            visibility hidden
+            transition opacity 0.5s ease
+
+        &:hover
+          .content
+            top 10px
+            height 450px
+
+            .bio
+              opacity 1
+              visibility visible

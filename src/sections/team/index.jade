@@ -1,8 +1,11 @@
 mixin avatar(data)
   .avatar
-    img(src='images/avatar/' + data.image)
-    p=data.name
-
+    .picture
+      img(src=data.image)
+    .content
+      h4=data.name
+      p=data.role
+      p.bio=data.bio
 
 section.who-we-are.section.clearfix#quienes-somos
   .section-title
