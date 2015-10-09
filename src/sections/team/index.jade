@@ -1,11 +1,33 @@
+mixin button(data)
+  - var url = '';
+  case data.type
+    when 'twitter'
+      - url += 'http://www.twitter.com/' + data.handle;
+    when 'facebook'
+      - url += 'http://www.facebook.com/' + data.handle;
+    when 'github'
+      - url += 'http://www.github.com/' + data.handle;
+    when 'linkedin'
+      - url += 'https://www.linkedin.com/in/' + data.handle;
+    when 'email'
+      - url += 'mailto:' + data.address
+    default
+      - url = '#'
+
+  a(href=url, target='_blank')
+    span.flaticon.social(class='flaticon-' + data.type)
+
 mixin avatar(data)
   .avatar
     .picture
       img(src=data.image)
     .content
-      h4=data.name
-      p=data.role
+      h4.name=data.name
+      p.role=data.role
       p.bio=data.bio
+      .social
+        each s in data.social
+          +button(s)
 
 section.who-we-are.section.clearfix#quienes-somos
   .section-title

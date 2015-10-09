@@ -22,16 +22,32 @@ section.who-we-are
         .content
           position absolute
           top 300px
-          padding 5px 10px
-          width 270px
+          padding 10px 15px
+          width 260px
           height 160px
           border-radius 0 3px
           background-color white
           transition all 0.5s ease
+
           .bio
             opacity 0
             visibility hidden
             transition opacity 0.5s ease
+
+          .social
+            position absolute
+            bottom 15px
+            margin-left -5px
+
+            a
+              color darkgrey
+              &:hover
+                color black
+                text-decoration none
+              span
+                position relative
+                font-size 22px
+                margin-left 0px
 
         &:hover
           .content
