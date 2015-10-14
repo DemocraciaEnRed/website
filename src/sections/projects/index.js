@@ -6,12 +6,16 @@ function reset () {
 
 var cards = dom('.project-card .expand')
 cards.on('click', function () {
-  reset()
-  dom(this).parents('.project-card').addClass('expanded')
+  var card = dom(this).parents('.project-card')
+  if (card.hasClass('expanded')) {
+    reset()
+  } else {
+    reset()
+    card.addClass('expanded')
+  }
 })
 
 var closeButtons = dom('.description-overlay button.close')
 closeButtons.on('click', function () {
   reset()
 })
-
