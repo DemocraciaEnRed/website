@@ -1,5 +1,6 @@
 section.who-we-are
-  background bg-color-1
+  background #fff url("../images/bg-mafalda.jpg") fixed
+  background-size cover
   padding 80px 0 100px 0
 
   .section-title
@@ -18,64 +19,65 @@ section.who-we-are
     &.left
       margin-right 4%
 
-  .team
-    .team-avatars
-      display flex
-      flex-flow row wrap
-      justify-content center
+section.team
+  background-color bg-color-2
+  .team-avatars
+    display flex
+    flex-flow row wrap
+    justify-content center
 
-      .avatar
-        position relative
-        padding 10px 10px
-        text-align left
-        width 290px
-        height 450px
-        margin-bottom 10px
-        border-radius 3px
+    .avatar
+      position relative
+      padding 10px 10px
+      text-align left
+      width 290px
+      height 450px
+      margin-bottom 10px
+      border-radius 3px
 
-        .picture
-          img
-            height 290px
-            border-radius 3px 3px 0 0
+      .picture
+        img
+          height 290px
+          border-radius 3px 3px 0 0
 
-        .content
+      .content
+        position absolute
+        top 300px
+        padding 10px 15px
+        width 260px
+        height 160px
+        border-radius 0 3px
+        background-color white
+        transition all default-duration ease
+
+        .bio
+          opacity 0
+          visibility hidden
+          transition opacity default-duration ease
+
+        .social
           position absolute
-          top 300px
-          padding 10px 15px
-          width 260px
-          height 160px
-          border-radius 0 3px
-          background-color white
-          transition all 0.5s ease
+          bottom 15px
+          margin-left -5px
+
+          a
+            color darkgrey
+            &:hover
+              color black
+              text-decoration none
+            span
+              position relative
+              font-size 22px
+              margin-left 0px
+
+      &:hover
+        .content
+          top 10px
+          height 450px
 
           .bio
-            opacity 0
-            visibility hidden
-            transition opacity 0.5s ease
-
-          .social
-            position absolute
-            bottom 15px
-            margin-left -5px
-
-            a
-              color darkgrey
-              &:hover
-                color black
-                text-decoration none
-              span
-                position relative
-                font-size 22px
-                margin-left 0px
-
-        &:hover
-          .content
-            top 10px
-            height 450px
-
-            .bio
-              opacity 1
-              visibility visible
+            opacity 1
+            visibility visible
 
   .members
     a
