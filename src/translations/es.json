@@ -1,4 +1,8 @@
 {
+  "site": {
+    "title": "Fundación Democracia en Red",
+    "description": "Nos unimos para innovar donde nadie esta innovando aún, en el sistema político."
+  },
   "projects": {
     "title": "Proyectos",
     "list": [

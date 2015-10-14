@@ -2,12 +2,25 @@ doctype html
 html(lang="en")
   head
     meta(charset="utf-8")
-    title Democracia en Red
-    meta(content="Nos unimos para innovar donde nadie esta innovando aún, en el sistema político.", name="description")
+    title=site.title
+    meta(content=site.description, name="description")
     meta(content="Pía Mancini @piamancini", name="author")
     meta(content="Ricardo Rauch @gravityonmars", name="author")
     meta(content="HAkIFHrAksbGkWhFocPXjNqA6JDUjF3V2dA0SLKBIYc", name="google-site-verification")
     meta(content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0", name="viewport")
+
+    meta(property='og:title', content=site.title)
+    meta(property='og:description', content=site.description)
+    meta(property='og:type', content='website')
+    meta(property='og:image', content='logo-card.png')
+    meta(property='og:url', content='http://democraciaenred.org')
+
+    meta(name='twitter:card', content='summary')
+    meta(name='twitter:site', content='@fundacionder')
+    meta(name='twitter:title', content=site.title)
+    meta(name='twitter:description', content=site.description)
+    meta(name='twitter:image', content='logo-card.png')
+
     link(href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css", rel="stylesheet")
     link(href="stylesheets/fonts/social.css", rel="stylesheet")
     link(href="stylesheets/app.css", rel="stylesheet")
