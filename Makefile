@@ -13,11 +13,9 @@ stylesheets: node_modules
 
 index.html: node_modules
 	$(BIN)jade -O src/translations/es.json -p . < src/index.jade > index.html
-	# $(BIN)jade src/index.jade --out . -O src/translations/es.json
 
 index-en.html: node_modules
 	$(BIN)jade -O src/translations/en.json -p . < src/index.jade > index-en.html
-	# $(BIN)jade src/index.jade --out ./ -O src/translations/en.json
 
 node_modules:
 	npm install
