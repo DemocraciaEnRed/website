@@ -6,7 +6,13 @@ mixin project(data)
       .screenshots
         img(src='images/ip1-dos.png')
       .text
+        .title
+          h4=data.title
         p=data.description
+        .links
+          if (data.links)
+            - var link = data.links[0]
+            a.btn(href=link.url, target='_blank')=link.text
 
 section.proyectos.section#proyectos
   .section-title

@@ -4,8 +4,10 @@ header.site-header.clearfix
       .container
         h1: a(href="#splash", title="Democracia en Red"): | Democracia en Red
         ul.nav.languages
-          li: a(href="./en", title=""): | EN
-          li.selected: a(href="#", title=""): | ES
+          li(class=lang === 'en' ? 'selected' : '')
+            a(href="/index-en.html", title="") EN
+          li(class=lang === 'es' ? 'selected' : '' )
+            a(href="/index.html", title="") ES
         .social
 
         ul.nav.nav-collapse.collapse

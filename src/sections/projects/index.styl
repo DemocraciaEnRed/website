@@ -1,5 +1,5 @@
 section.section.proyectos
-  background #fff
+  background bg-color-2
   background-size 110%
   min-height 400px
 
@@ -19,7 +19,8 @@ section.section.proyectos
 
     .project-card
       height 200px
-      transition all 0.4s ease
+      padding 7px 7px
+      transition all default-duration ease
 
       .expand
         position relative
@@ -32,7 +33,7 @@ section.section.proyectos
         height 0
         background-color #f9f9f9
         overflow hidden
-        transition all 0.4s ease
+        transition all default-duration ease
 
         .screenshots
           width 50%
@@ -45,11 +46,11 @@ section.section.proyectos
         .text
           width 50%
           float right
+          text-align left
 
           p
-            padding-top 20px
+            padding 20px 0
             padding-right 40px
-            padding-left 0
 
         /* Screenshots won't be shown on small screen */
         @media screen and (max-width: 780px)
