@@ -1,0 +1,12 @@
+{
+  "rules": {
+    "semi": [2, "never"],
+    "quotes": [2, "single"],
+    "no-unused-vars": 1,
+    "strict": 0
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  }
+}
