@@ -4,6 +4,9 @@
     "title": "Fundación Democracia en Red",
     "description": "Nos unimos para innovar donde nadie esta innovando aún, en el sistema político."
   },
+  "home": {
+    "description": "Pensamos que internet puede transformar el sistema político. Con más y mejor participación ciudadana, podemos pasar de la agitación a la construcción."
+  },
   "projects": {
     "title": "Proyectos",
     "list": [

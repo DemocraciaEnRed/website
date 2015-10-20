@@ -4,6 +4,9 @@
     "title": "Democracia en Red Foundation",
     "description": "We come together to innovate where no one is innovating yet: in the political system."
   },
+  "home": {
+    "description": "Pensamos que internet puede transformar el sistema político. Con más y mejor participación ciudadana, podemos pasar de la agitación a la construcción."
+  },
   "projects": {
     "title": "Projects",
     "list": [
