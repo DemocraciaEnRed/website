@@ -1,5 +1,13 @@
 {
   "lang": "es",
+  "header": {
+    "items": [
+      { "id": "proyectos", "description": "Proyectos" },
+      { "id": "quienes-somos", "description": "Quiénes somos" },
+      { "id": "press", "description": "Prensa" },
+      { "id": "collaborate", "description": "Colaborar" }
+    ]
+  },
   "site": {
     "title": "Fundación Democracia en Red",
     "description": "Nos unimos para innovar donde nadie esta innovando aún, en el sistema político."
