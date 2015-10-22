@@ -69,7 +69,10 @@
       }
     ]
   },
-  "team": [
+  "we": {
+    "intro": "Venimos de distintos lugares, nos encontramos porque tenemos cosas en común: todos usamos internet, creemos en la política y vemos un sistema democrático que necesita actualizarse. Fundamentalmente, coincidimos en una cosa: cuantas más voces sean tenidas en cuenta, mejor democracia vamos a tener. Somos artistas, investigadores, hackers, diseñadores, activistas, emprendedores. Somos humanos. Nos gusta pensar sistemas."
+  },
+ "team": [
     { "name": "Agustín Frizzera", "image": "http://semantic-ui.com/images/avatar2/large/matthew.png", "bio": "", "social": { } },
     { "name": "Guido Vilariño", "image": "http://semantic-ui.com/images/avatar2/large/matthew.png", "bio": "", "social": { } },
     { "name": "Esteban Brenman", "image": "http://semantic-ui.com/images/avatar2/large/matthew.png", "bio": "", "social": { } },
