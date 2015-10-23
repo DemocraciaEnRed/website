@@ -4,7 +4,8 @@ mixin project(data)
     .description-overlay
       button.close ×
       .screenshots
-        img(src='images/ip1-dos.png')
+        - if (data.screenshots && data.screenshots.length)
+          img.screenshot(src='images/' + data.screenshots[0])
       .text
         .title
           h4=data.title
