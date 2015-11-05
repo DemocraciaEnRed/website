@@ -13,7 +13,7 @@
     ]
   },
   "home": {
-    "description": "Pensamos que internet puede transformar el sistema político. Con más y mejor participación ciudadana, podemos pasar de la agitación a la construcción."
+    "description": "We think the Internet can change the political system. With more and better citizen participation, we can move from agitation to construction."
   },
   "projects": {
     "title": "Projects",
@@ -29,25 +29,25 @@
           { "text": "Barcelona en Comu", "url": "http://participa.confluenciacodietic.cat/" },
           { "text": "Eu Voto", "url": "http://euvoto.org" }
         ],
-        "description": "DemocracyOS es una herramienta de código abierto pensada para facilitar la participación ciudadana en procesos de toma de decisión. Es la manifestación tecnológica de nuestra misión principal: acercar el sistema político a las tecnologías y hábitos de este siglo."
+        "description": "DemocracyOS is an open-source web application designed to improve the chances of citizen to participate in decision-making processes. This is the technological manifestation of our main mision: to bring the political system closer to those behaviors and technologies of this century."
       },
       {
         "image": "civic.jpg",
         "screenshots": ["cap-civic.png"],
         "links": [ { "text": "civicstack.org", "url": "http://www.civicstack.org" } ],
-        "description": "Civic Stack es un repositorio de aplicaciones de código abierto diseñadas para generar impacto cívico. Fue pensado colaborativamente como una ventana para agrupar y facilitar el acceso a tecnologías con el objetivo de empoderar ciudadanos."
+        "description": "Civic stack is a showcase for open-source civic tech. It has been designed collaboratively as a window to show together all these technologies that are meant to empower citizens."
       },
       {
         "image": "demos.jpg",
         "screenshots": ["cap-demos.jpg"],
         "links": [ { "text": "demos.legislatura.gov.ar", "url": "http://demos.legislatura.gov.ar" } ],
-        "description": "Demos Legislatura Porteña es un proyecto que hicimos en colaboración con la Legislatura Porteña. La experiencia permitió a todos los ciudadanos de Buenos Aires informarse, debatir y votar sobre 3 proyectos de ley elegidos por ellos mismos. Una apuesta institucional por la idea de que “más, pensamos mejor”."
+        "description": "Demos Legislatura Porteña is a project we did in collaboration with the Legislature of the City of Buenos Aires. The experience allowed every citizen of Buenos Aires to get informed, debate and vote on 3 pieces of proposed legislation selected by themselves. An institutional bet on the idea of collective intelligence."
       },
       {
         "image": "demosbb.png",
         "screenshots": ["cap-demosbb.png"],
         "links": [ { "text": "bahiablanca.democracyos.org", "url": "http://bahiablanca.democracyos.org" } ],
-        "description": "Demos Bahía Blanca es una iniciativa en colaboración con la Agencia de Gobierno Abierto del Municipio de Bahía Blanca. Encaramos el desafío de usar la tecnología para abrir ordenanzas y decretos para someterlos a discusión de todos los ciudadanos."
+        "description": "Demos Bahia Blanca is an initiative in collaboration with the Agency of Open Gov from the city of Bahia Blanca. We face the challenge of using technology to open legislation to citizen debate."
       },
       {
         "image": "sole.jpg",
@@ -55,12 +55,12 @@
         "links": [
           { "text": "soleargentina.org", "url": "http://www.soleargentina.org" }
         ],
-        "description": "SOLE crea entornos de aprendizaje autoorganizados, basados en la pedagogía de Sugata Mitra, que incluyen muchos chicos, algunas computadoras y una pregunta. Internet transforma la forma de aprender, también, en escuelas de la Ciudad de Buenos Aires."
+        "description": "SOLE crafts self-organized learning environments, based on the pedagogy of Sugata Mitra. It involves many children, a few computers and one big question. The Internet transforms the way we learn, also in the schools of Buenos Aires."
       },
       {
         "image": "academia.jpg",
         "screenshots": ["cap-academia.jpg"],
-        "description": "Academia es un espacio de encuentro con artistas, investigadores y personas que vienen pensando y experimentando el cruce entre el poder y el mundo digital. La democracia en la era de internet trae nuevas inquietudes y escenarios que asombran."
+        "description": "Academia is a space where artists, researchers and those who have been experimenting and thinking the intersection between technology and power come together. Democracy in the Internet Era brings new questions and surprising scenarios. We explore them."
       },
       {
         "image": "update.png",
@@ -68,17 +68,19 @@
         "links": [
           { "text": "demos.legislatura.gov.ar", "url": "http://demos.legislatura.gov.ar" }
         ],
-        "description": "UPDATE nace en São Paulo, con un grupo de activistas que empezó a preguntarse si es posible construir una nueva categoría dentro del activismo social: los Hackers de la Política. Nos unimos para mapear y conectar activistas que usan Internet para cuestionar y transformar la forma en que se hace política dentro y fuera de las instituciones."
+        "description": "UPDATE project was born in Sao Paulo, with a group of activists who started to ask if it was possible to build a new category in social activism: the Political Hacker. We collaborate mapping and connecting activists who use the Internet to question and re-shape the way of making politics inside and outside the traditional institutions."
       },
       {
         "image": "3x3.png",
         "screenshots": ["cap-tresportres.jpg"],
-        "description": "TRES POR TRES es un ciclo de conversaciones de muchos a muchos, con temáticas específicas. Tres eventos y tres organizaciones discuten, sin oradores y sin palestras, el impacto de la tecnología en la política argentina."
+        "description": "Tres Por Tres (3 ON 3) is a series of conversations held by many people on specific subjects like electronic voting, candidate’s promises of openness and digital divide. Three organizations host three events to discuss, without speakers or lecterns, the impact of technology in Argentine politics."
       }
     ]
   },
   "we": {
-    "intro": "Venimos de distintos lugares, nos encontramos porque tenemos cosas en común: todos usamos internet, creemos en la política y vemos un sistema democrático que necesita actualizarse. Fundamentalmente, coincidimos en una cosa: cuantas más voces sean tenidas en cuenta, mejor democracia vamos a tener. Somos artistas, investigadores, hackers, diseñadores, activistas, emprendedores. Somos humanos. Nos gusta pensar sistemas."
+    "title": "Who we are",
+    "team": "The team",
+    "intro": "We come together from many different places with something in common: we all use the Internet, we believe in politics and we see a democratic system that needs to upgrade. The more voices can express and be heard, the better democracy we will have. We are artists, researchers, developers, designers, activists, entrepreneurs. We are human. We like to think systems."
   },
  "team": [
     { "name": "Agustín Frizzera", "image": "http://semantic-ui.com/images/avatar2/large/matthew.png", "bio": "", "social": { } },
@@ -115,8 +117,8 @@
     ]
   },
   "collaborate": {
-    "title": "¿Cómo puedo colaborar?",
-    "description": "Ayudanos a llegar a más personas. Sumate a nuestras redes para amplificar el mensaje. Hay muchas maneras de colaborar.",
-    "callToAction": "Escribinos"
+    "title": "How can I collaborate?",
+    "description": "Help us connect more people to this network. Amplify the message in social media. If you have questions, ideas or suggestions to share with us",
+    "callToAction": "Drop us a line"
   }
 }

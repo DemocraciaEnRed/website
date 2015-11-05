@@ -32,13 +32,13 @@ mixin avatar(data)
 section.who-we-are.section.clearfix#quienes-somos
   .section-title
     img(src="images/icons/icon-4.png")
-    h2 Quienes Somos
+    h2=we.title
 
     .clearfix
       p.description=we.intro
 section.team.section.clearfix#team
   .section-title
-    h2 Equipo
+    h2=we.team
   .team-avatars
     - each pal in team
       +avatar(pal)
