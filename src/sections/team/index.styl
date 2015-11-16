@@ -1,3 +1,4 @@
+width = 200px
 section.who-we-are
   background #fff url("../images/foto_todosbn.jpg") fixed
   background-size cover
@@ -29,23 +30,23 @@ section.team
 
     .avatar
       position relative
-      padding 10px 10px
+      padding 20px 20px
       text-align left
-      width 290px
-      height 450px
+      width 200px
+      height width + 150px
       margin-bottom 20px
       border-radius 3px
 
       .picture
         img
-          height 290px
+          height 200px
           border-radius 3px 3px 0 0
 
       .content
         position absolute
-        top 300px
+        top width + 10px
         padding 10px 15px
-        width 260px
+        width width - 30px
         height 160px
         border-radius 0 3px
         background-color white
@@ -87,7 +88,7 @@ section.team
       &:hover
         .content
           top 10px
-          height 450px
+          height width + 160px
 
           .bio
             opacity 1
