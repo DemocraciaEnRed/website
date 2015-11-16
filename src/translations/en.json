@@ -82,27 +82,138 @@
     "team": "The team",
     "intro": "We come together from many different places with something in common: we all use the Internet, we believe in politics and we see a democratic system that needs to upgrade. The more voices can express and be heard, the better democracy we will have. We are artists, researchers, developers, designers, activists, entrepreneurs. We are human. We like to think systems."
   },
- "team": [
-    { "name": "Agustín Frizzera", "image": "http://semantic-ui.com/images/avatar2/large/matthew.png", "bio": "", "social": { } },
-    { "name": "Guido Vilariño", "image": "http://semantic-ui.com/images/avatar2/large/matthew.png", "bio": "", "social": { } },
-    { "name": "Esteban Brenman", "image": "http://semantic-ui.com/images/avatar2/large/matthew.png", "bio": "", "social": { } },
-    { "name": "Gastón Silberman", "image": "http://semantic-ui.com/images/avatar2/large/matthew.png", "bio": "", "social": { } },
-    { "name": "Sebastián Fernández", "image": "http://semantic-ui.com/images/avatar2/large/matthew.png", "bio": "", "social": { } },
-    { "name": "Matías Lescano", "image": "http://semantic-ui.com/images/avatar2/large/matthew.png", "bio": "", "social": { } },
-    { "name": "Florencia Polimeni", "image": "http://semantic-ui.com/images/avatar2/large/matthew.png", "bio": "", "social": { } },
-    { "name": "Mair Williams", "image": "http://semantic-ui.com/images/avatar2/large/matthew.png", "bio": "", "social": { } },
-    { "name": "Sebastián Ghelerman", "image": "http://semantic-ui.com/images/avatar2/large/matthew.png", "bio": "", "social": { } },
-    { "name": "Gonzalo Argüello", "image": "http://semantic-ui.com/images/avatar2/large/matthew.png", "bio": "", "social": { } },
-    { "name": "Mariano Gómez Bidondo", "image": "http://semantic-ui.com/images/avatar2/large/matthew.png", "bio": "", "social": { } },
-    { "name": "José Fresco", "image": "http://semantic-ui.com/images/avatar2/large/matthew.png", "bio": "", "social": { } },
-    { "name": "Sacha Lifszyc", "image": "http://semantic-ui.com/images/avatar2/large/matthew.png", "bio": "", "social": { } },
-    { "name": "Don Powa", "image": "http://semantic-ui.com/images/avatar2/large/matthew.png", "bio": "", "social": { } },
-    { "name": "Mariano Lopata", "image": "http://semantic-ui.com/images/avatar2/large/matthew.png", "bio": "", "social": { } },
-    { "name": "Liliana Haydee Jalabe", "image": "http://semantic-ui.com/images/avatar2/large/matthew.png", "bio": "", "social": { } },
-    { "name": "Ana Lis Rodríguez Nardelli", "image": "http://semantic-ui.com/images/avatar2/large/matthew.png", "bio": "", "social": { } },
-    { "name": "Inti Bonomo", "image": "http://semantic-ui.com/images/avatar2/large/matthew.png", "bio": "", "social": { } },
-    { "name": "Martín Galanternik", "image": "http://semantic-ui.com/images/avatar2/large/matthew.png", "bio": "", "social": { } },
-    { "name": "Felipe Muñoz", "image": "http://semantic-ui.com/images/avatar2/large/matthew.png", "bio": "", "social": { } }
+  "team": [
+    {
+      "name": "Agustín Frizzera",
+      "image": "images/avatar-agustin.jpg",
+      "role": "Executive director",
+      "bio": "Sociologist with a major in urban management. Porteño (from Buenos Aires), music and films lover and something more.",
+      "social": [{ "type": "twitter", "handle": "agustinfrizzera" }]
+    },
+    {
+      "name": "Guido Vilariño",
+      "image": "images/avatar-guido.jpg",
+      "role": "",
+      "bio": "Rock. Clear explanations of complicated hacking concepts for granted. Lean product design guru.",
+      "social": [{ "type": "twitter", "handle": "gvilarino" }]
+    },
+    {
+      "name": "Esteban Brenman",
+      "image": "images/avatar-esteban.jpg",
+      "role": "Vicepresident",
+      "bio": "I make @trilapp",
+      "social": [{ "type": "twitter", "handle": "ebrenman" }]
+    },
+    {
+      "name": "Gastón Silberman",
+      "image": "images/avatar-gaston",
+      "role": "",
+      "bio": "Designer, photographer and entrepreneur at Tril and Proyecto Cartele",
+      "social": [{ "type": "twitter", "handle": "gastt" }]
+    },
+    {
+      "name": "Sebastián Fernández",
+      "image": "images/avatar-sebaf.jpg",
+      "role": "Graphic designer",
+      "bio": "Designer, photographer, joke teller, owner of a beard.",
+      "social": []
+    },
+    {
+      "name": "Matías Lescano",
+      "image": "images/avatar-matias.jpg",
+      "role": "Software engineer",
+      "bio": "Pragmatic programmer with an eye for design and chronic good mood.",
+      "social": []
+    },
+    {
+      "name": "Florencia Polimeni",
+      "image": "images/avatar-florencia.png",
+      "role": "President",
+      "bio": "Political scientist with a vocation for exploration. Crafting, traveling, mother, art collector and militant.",
+      "social": [{ "type": "twitter", "handle": "juicyminerva" }]
+    },
+    {
+      "name": "Sebastián Ghelerman",
+      "image": "images/avatar-sebag.jpg",
+      "role": "",
+      "bio": "Anthropologist, also philosopher, boat captain and other mystic stuff.",
+      "social": []
+    },
+    {
+      "name": "Gonzalo Argüello",
+      "image": "images/avatar-gonzalo.jpg",
+      "role": "",
+      "bio": "Informatic and social entrepreneur. Peer of Partido de la Red. Dancer",
+      "social": [{ "type": "twitter", "handle": "gonza_arguello" }]
+    },
+    {
+      "name": "Mariano Gómez Bidondo",
+      "image": "images/avatar-marianogb.jpg",
+      "role": "Adviser",
+      "bio": "Skilfull tech guy. Friend of all devices yet to come.",
+      "social": []
+    },
+    {
+      "name": "José Fresco",
+      "image": "images/avatar-jose.jpg",
+      "role": "Software engineer",
+      "bio": "Killed two issues in his first day. Master of the coffee machine among others. Keanu Reeves looks like him",
+      "social": [{ "type": "twitter", "handle": "jfresco82" }, { "type": "github", "handle": "jfresco" }] },
+    {
+      "name": "Sacha Lifszyc",
+      "image": "images/avatar-sacha.jpg",
+      "role": "Software engineer",
+      "bio": "All day JavaScript thinker, programmer and teacher. ",
+      "social": [{ "type": "twitter", "handle": "slifszyc" }, { "type": "github", "handle": "slifszyc" }]
+    },
+    {
+      "name": "Don Powa",
+      "image": "images/avatar-powa.jpg",
+      "role": "",
+      "bio": "Curious, dislexic and compulsive. Emotional optimist and brain pessimist.",
+      "social": [{ "type": "twitter", "handle": "donpowa" }]
+    },
+    {
+      "name": "Mariano Lopata",
+      "image": "images/avatar-marianol.jpg",
+      "role": "Adviser",
+      "bio": "Part of SOLE Argentina. Precise teacher of simple and powerful ideas.",
+      "social": [{ "type": "twitter", "handle": "marianolopata" }]
+    },
+    {
+      "name": "Liliana Haydee Jalabe",
+      "image": "images/avatar-liliana.jpg",
+      "role": "Adviser",
+      "bio": "Lover of universal networks.",
+      "social": [{ "type": "twitter", "handle": "lilijalabe" }]
+    },
+    {
+      "name": "Ana Lis Rodríguez Nardelli",
+      "image": "images/avatar-ana.jpg",
+      "role": "Researcher",
+      "bio": "Anthropologist, researcher, militant. A lot of poetry and a lot of fun.",
+      "social": [{ "type": "twitter", "handle": "annagramma" }]
+    },
+    {
+      "name": "Inti Bonomo",
+      "image": "images/avatar-inti.jpg",
+      "role": "",
+      "bio": "Environmentalist by profession, politician by vocation and teacher by destiny.",
+      "social": [{ "type": "twitter", "handle": "intibonomo" }]
+    },
+    {
+      "name": "Martín Galanternik",
+      "image": "images/avatar-mart.jpg",
+      "role": "",
+      "bio": "Political scientist. Founder and director of Minu. Everything you have to know to organize.",
+      "social": [{ "type": "twitter", "handle": "mgalanternik" }] },
+    {
+      "name": "Felipe Muñoz",
+      "image": "images/avatar-felipe.jpg",
+      "role": "",
+      "bio": "On ne tue point les idées.",
+      "social": [{ "type": "twitter", "handle": "felipemuni" }]
+    }
   ],
   "press": {
     "links": [
