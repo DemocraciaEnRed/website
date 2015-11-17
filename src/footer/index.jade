@@ -1,8 +1,7 @@
 footer
   nav
-    p Es hora de que resolvamos los problemas de hoy con las herramientas de hoy
+    p=footer.motto
     ul.nav
-      li: a(href="#argentina", title="") Nosotros
-      li: a(href="#proyectos", title="") Proyectos
-      li: a(href="#quienes-somos", title="") Quienes Somos
-      li: a(href="#colaborar", title="") Colaborar
+      - each item in header.items
+        li: a(href="#" + item.id, title="")=item.description
+

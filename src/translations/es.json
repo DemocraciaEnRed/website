@@ -13,7 +13,8 @@
     "description": "Nos unimos para innovar donde nadie esta innovando aún, en el sistema político."
   },
   "home": {
-    "description": "Pensamos que internet puede transformar el sistema político. Con más y mejor participación ciudadana, podemos pasar de la agitación a la construcción."
+    "description": "Pensamos que internet puede transformar el sistema político. Con más y mejor participación ciudadana, podemos pasar de la agitación a la construcción.",
+    "call-to-action": "Difundamos"
   },
   "projects": {
     "title": "Proyectos",
@@ -238,5 +239,8 @@
     "title": "¿Cómo puedo colaborar?",
     "description": "Ayudanos a llegar a más personas. Sumate a nuestras redes para amplificar el mensaje. Hay muchas maneras de colaborar.",
     "callToAction": "Escribinos"
+  },
+  "footer": {
+    "motto": "Es hora de que resolvamos los problemas de hoy con las herramientas de hoy"
   }
 }

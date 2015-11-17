@@ -13,7 +13,8 @@
     ]
   },
   "home": {
-    "description": "We think the Internet can change the political system. With more and better citizen participation, we can move from agitation to construction."
+    "description": "We think the Internet can change the political system. With more and better citizen participation, we can move from agitation to construction.",
+    "call-to-action": "Spread the word"
   },
   "projects": {
     "title": "Projects",
@@ -231,5 +232,8 @@
     "title": "How can I collaborate?",
     "description": "Help us connect more people to this network. Amplify the message in social media. If you have questions, ideas or suggestions to share with us",
     "callToAction": "Drop us a line"
+  },
+  "footer": {
+    "motto": "It's time we solve todays' problems with todays' tools"
   }
 }
