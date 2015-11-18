@@ -2,7 +2,7 @@
   "lang": "en",
   "site": {
     "title": "Democracia en Red Foundation",
-    "description": "We come together to innovate where no one is innovating yet: in the political system."
+    "description": "Internet is changing the political system. We develop strategies to upgrade the democratic system to the XXIst Century."
   },
   "header": {
     "items": [
@@ -22,14 +22,7 @@
       {
         "image": "dos.jpg",
         "screenshots": ["cap-dos.jpg"],
-        "links": [
-          { "text": "Net Party", "url": "http://dos.partidodelared.org/" },
-          { "text": "EVoks", "url": "http://evoks.hu" },
-          { "text": "Debatics PAMI", "url": "http://debatics.pami.org.ar" },
-          { "text": "Política de Datos Abiertos de México", "url": "http://politica.datos.gob.mx" },
-          { "text": "Barcelona en Comu", "url": "http://participa.confluenciacodietic.cat/" },
-          { "text": "Eu Voto", "url": "http://euvoto.org" }
-        ],
+        "links": [ { "text": "democracyos.org", "url": "http://democracyos.org/" } ],
         "description": "DemocracyOS is an open-source web application designed to improve the chances of citizen to participate in decision-making processes. This is the technological manifestation of our main mision: to bring the political system closer to those behaviors and technologies of this century."
       },
       {
@@ -41,14 +34,11 @@
       {
         "image": "demos.jpg",
         "screenshots": ["cap-demos.jpg"],
-        "links": [ { "text": "demos.legislatura.gov.ar", "url": "http://demos.legislatura.gov.ar" } ],
-        "description": "Demos Legislatura Porteña is a project we did in collaboration with the Legislature of the City of Buenos Aires. The experience allowed every citizen of Buenos Aires to get informed, debate and vote on 3 pieces of proposed legislation selected by themselves. An institutional bet on the idea of collective intelligence."
-      },
-      {
-        "image": "demosbb.png",
-        "screenshots": ["cap-demosbb.png"],
-        "links": [ { "text": "bahiablanca.democracyos.org", "url": "http://bahiablanca.democracyos.org" } ],
-        "description": "Demos Bahia Blanca is an initiative in collaboration with the Agency of Open Gov from the city of Bahia Blanca. We face the challenge of using technology to open legislation to citizen debate."
+        "links": [
+          { "text": "Legislatura CABA", "url": "http://demos.legislatura.gov.ar" },
+          { "text": "Bahía Blanca", "url": "http://bahiablanca.democracyos.org" }
+        ],
+        "description": "Demos is a project that seeks openess in political institutions. The experience allows every citizen to get informed, debate and vote on pieces of proposed legislation. An institutional bet on the idea of collective intelligence."
       },
       {
         "image": "sole.jpg",
@@ -64,14 +54,6 @@
         "description": "Academia is a space where artists, researchers and those who have been experimenting and thinking the intersection between technology and power come together. Democracy in the Internet Era brings new questions and surprising scenarios. We explore them."
       },
       {
-        "image": "update.png",
-        "screenshots": ["cap-update.png"],
-        "links": [
-          { "text": "demos.legislatura.gov.ar", "url": "http://demos.legislatura.gov.ar" }
-        ],
-        "description": "UPDATE project was born in Sao Paulo, with a group of activists who started to ask if it was possible to build a new category in social activism: the Political Hacker. We collaborate mapping and connecting activists who use the Internet to question and re-shape the way of making politics inside and outside the traditional institutions."
-      },
-      {
         "image": "3x3.png",
         "screenshots": ["cap-tresportres.jpg"],
         "description": "Tres Por Tres (3 ON 3) is a series of conversations held by many people on specific subjects like electronic voting, candidate’s promises of openness and digital divide. Three organizations host three events to discuss, without speakers or lecterns, the impact of technology in Argentine politics."
@@ -81,20 +63,20 @@
   "we": {
     "title": "Who we are",
     "team": "The team",
-    "intro": "We come together from many different places with something in common: we all use the Internet, we believe in politics and we see a democratic system that needs to upgrade. The more voices can express and be heard, the better democracy we will have. We are artists, researchers, developers, designers, activists, entrepreneurs. We are human. We like to think systems."
+    "intro": "We are humans. We like to think systems. We believe in politics and we got together to think about upgrading the democratic system. We come from many different places, we are artists, researchers, developers, designers, activists, entrepreneurs with a common belief: The more voices can express and be heard, the better democracy we will have."
   },
   "team": [
     {
       "name": "Agustín Frizzera",
       "image": "images/avatar-agustin.jpg",
-      "role": "Executive director",
+      "role": "Executive Director",
       "bio": "Sociologist with a major in urban management. Porteño (from Buenos Aires), music and films lover and something more.",
       "social": [{ "type": "twitter", "handle": "agustinfrizzera" }]
     },
     {
       "name": "Guido Vilariño",
       "image": "images/avatar-guido.jpg",
-      "role": "",
+      "role": "Software Consultant",
       "bio": "Rock. Clear explanations of complicated hacking concepts for granted. Lean product design guru.",
       "social": [{ "type": "twitter", "handle": "gvilarino" }]
     },
@@ -106,16 +88,9 @@
       "social": [{ "type": "twitter", "handle": "ebrenman" }]
     },
     {
-      "name": "Gastón Silberman",
-      "image": "images/avatar-gaston",
-      "role": "",
-      "bio": "Designer, photographer and entrepreneur at Tril and Proyecto Cartele",
-      "social": [{ "type": "twitter", "handle": "gastt" }]
-    },
-    {
       "name": "Sebastián Fernández",
       "image": "images/avatar-sebaf.jpg",
-      "role": "Graphic designer",
+      "role": "Designer",
       "bio": "Designer, photographer, joke teller, owner of a beard.",
       "social": []
     },
@@ -132,27 +107,6 @@
       "role": "President",
       "bio": "Political scientist with a vocation for exploration. Crafting, traveling, mother, art collector and militant.",
       "social": [{ "type": "twitter", "handle": "juicyminerva" }]
-    },
-    {
-      "name": "Sebastián Ghelerman",
-      "image": "images/avatar-sebag.jpg",
-      "role": "",
-      "bio": "Anthropologist, also philosopher, boat captain and other mystic stuff.",
-      "social": []
-    },
-    {
-      "name": "Gonzalo Argüello",
-      "image": "images/avatar-gonzalo.jpg",
-      "role": "",
-      "bio": "Informatic and social entrepreneur. Peer of Partido de la Red. Dancer",
-      "social": [{ "type": "twitter", "handle": "gonza_arguello" }]
-    },
-    {
-      "name": "Mariano Gómez Bidondo",
-      "image": "images/avatar-marianogb.jpg",
-      "role": "Adviser",
-      "bio": "Skilfull tech guy. Friend of all devices yet to come.",
-      "social": []
     },
     {
       "name": "José Fresco",
@@ -177,16 +131,9 @@
     {
       "name": "Mariano Lopata",
       "image": "images/avatar-marianol.jpg",
-      "role": "Adviser",
+      "role": "SOLE Project",
       "bio": "Part of SOLE Argentina. Precise teacher of simple and powerful ideas.",
       "social": [{ "type": "twitter", "handle": "marianolopata" }]
-    },
-    {
-      "name": "Liliana Haydee Jalabe",
-      "image": "images/avatar-liliana.jpg",
-      "role": "Adviser",
-      "bio": "Lover of universal networks.",
-      "social": [{ "type": "twitter", "handle": "lilijalabe" }]
     },
     {
       "name": "Ana Lis Rodríguez Nardelli",
@@ -196,16 +143,9 @@
       "social": [{ "type": "twitter", "handle": "annagramma" }]
     },
     {
-      "name": "Inti Bonomo",
-      "image": "images/avatar-inti.jpg",
-      "role": "",
-      "bio": "Environmentalist by profession, politician by vocation and teacher by destiny.",
-      "social": [{ "type": "twitter", "handle": "intibonomo" }]
-    },
-    {
       "name": "Martín Galanternik",
       "image": "images/avatar-mart.jpg",
-      "role": "",
+      "role": "Director of Projects",
       "bio": "Political scientist. Founder and director of Minu. Everything you have to know to organize.",
       "social": [{ "type": "twitter", "handle": "mgalanternik" }] },
     {
@@ -234,6 +174,7 @@
     "callToAction": "Drop us a line"
   },
   "footer": {
-    "motto": "It's time we solve todays' problems with todays' tools"
+    "motto": "It's time we solve todays' problems with todays' tools",
+    "rights": "Some rights reserved to Democracia en Red."
   }
 }

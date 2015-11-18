@@ -13,7 +13,7 @@
     "description": "Nos unimos para innovar donde nadie esta innovando aún, en el sistema político."
   },
   "home": {
-    "description": "Pensamos que internet puede transformar el sistema político. Con más y mejor participación ciudadana, podemos pasar de la agitación a la construcción.",
+    "description": "Internet está cambiando el sistema político. Desarrollamos estrategias para llevar la democracia al siglo XXI.",
     "call-to-action": "Difundamos"
   },
   "projects": {
@@ -23,14 +23,7 @@
         "title": "DemocracyOS",
         "image": "dos.jpg",
         "screenshots": ["cap-dos.jpg"],
-        "links": [
-          { "text": "Partido de la Red", "url": "http://dos.partidodelared.org/" },
-          { "text": "EVoks", "url": "http://evoks.hu" },
-          { "text": "Debatics PAMI", "url": "http://debatics.pami.org.ar" },
-          { "text": "Política de Datos Abiertos de México", "url": "http://politica.datos.gob.mx" },
-          { "text": "Barcelona en Comu", "url": "http://participa.confluenciacodietic.cat/" },
-          { "text": "Eu Voto", "url": "http://euvoto.org" }
-        ],
+        "links": [ { "text": "democracyos.org", "url": "https://democracyos.org/" } ],
         "description": "DemocracyOS es una herramienta de código abierto pensada para facilitar la participación ciudadana en procesos de toma de decisión. Es la manifestación tecnológica de nuestra misión principal: acercar el sistema político a las tecnologías y hábitos de este siglo."
       },
       {
@@ -44,15 +37,11 @@
         "title": "Demos",
         "image": "demos.jpg",
         "screenshots": ["cap-demos.jpg"],
-        "links": [ { "text": "demos.legislatura.gov.ar", "url": "http://demos.legislatura.gov.ar" } ],
-        "description": "Demos Legislatura Porteña es un proyecto que hicimos en colaboración con la Legislatura Porteña. La experiencia permitió a todos los ciudadanos de Buenos Aires informarse, debatir y votar sobre 3 proyectos de ley elegidos por ellos mismos. Una apuesta institucional por la idea de que “más, pensamos mejor”."
-      },
-      {
-        "title": "Demos Bahia Blanca",
-        "image": "demosbb.png",
-        "screenshots": ["cap-demosbb.png"],
-        "links": [ { "text": "bahiablanca.democracyos.org", "url": "http://bahiablanca.democracyos.org" } ],
-        "description": "Demos Bahía Blanca es una iniciativa en colaboración con la Agencia de Gobierno Abierto del Municipio de Bahía Blanca. Encaramos el desafío de usar la tecnología para abrir ordenanzas y decretos para someterlos a discusión de todos los ciudadanos."
+        "links": [
+          { "text": "Legislatura CABA", "url": "https://docs.google.com/document/d/1bZOd09bd-y_aPgUat9SQ8EchUawroMtmYQn0vm-BvQU/edit?usp=sharing" },
+          { "text": "Bahía Blanca", "url": "http://bahiablanca.democracyos.org" }
+        ],
+        "description": "Demos es un proyecto en para fomentar la apertura en instituciones políticas. Sus implementaciones permiten a la ciudadanía informarse, debatir y votar sobre proyectos de ley. Una apuesta institucional por la idea de que \"más, pensamos mejor\"."
       },
       {
         "title": "Proyecto SOLE",
@@ -70,15 +59,6 @@
         "description": "Academia es un espacio de encuentro con artistas, investigadores y personas que vienen pensando y experimentando el cruce entre el poder y el mundo digital. La democracia en la era de internet trae nuevas inquietudes y escenarios que asombran."
       },
       {
-        "title": "Update",
-        "image": "update.png",
-        "screenshots": ["cap-update.png"],
-        "links": [
-          { "text": "demos.legislatura.gov.ar", "url": "http://demos.legislatura.gov.ar" }
-        ],
-        "description": "UPDATE nace en São Paulo, con un grupo de activistas que empezó a preguntarse si es posible construir una nueva categoría dentro del activismo social: los Hackers de la Política. Nos unimos para mapear y conectar activistas que usan Internet para cuestionar y transformar la forma en que se hace política dentro y fuera de las instituciones."
-      },
-      {
         "title": "Tres por tres",
         "image": "3x3.png",
         "screenshots": ["cap-tresportres.jpg"],
@@ -89,20 +69,20 @@
   "we": {
     "title": "Quienes somos",
     "team": "Equipo",
-    "intro": "Venimos de distintos lugares, nos encontramos porque tenemos cosas en común: todos usamos internet, creemos en la política y vemos un sistema democrático que necesita actualizarse. Fundamentalmente, coincidimos en una cosa: cuantas más voces sean tenidas en cuenta, mejor democracia vamos a tener. Somos artistas, investigadores, hackers, diseñadores, activistas, emprendedores. Somos humanos. Nos gusta pensar sistemas."
+    "intro": "Somos humanos. Nos gusta pensar sistemas. Creemos en la política y nos encontramos para ayudar a mejorar el sistema democrático. Venimos de distintos lugares, somos activistas, artistas, investigadores, hackers, diseñadores, emprendedores. Coincidimos en que cuantas más voces sean tenidas en cuenta, mejor democracia vamos a tener."
   },
   "team": [
     {
       "name": "Agustín Frizzera",
       "image": "images/avatar-agustin.jpg",
-      "role": "Director ejecutivo",
+      "role": "Director Ejecutivo",
       "bio": "Sociologo y Máster en Gestión Urbanística. Porteño, melómano, cinéfilo, y algo más",
       "social": [{ "type": "twitter", "handle": "agustinfrizzera" }]
     },
     {
       "name": "Guido Vilariño",
       "image": "images/avatar-guido.jpg",
-      "role": "",
+      "role": "Consultor Software",
       "bio": "Rock. Explicaciones claras de conceptos informaticos garantizadas. Guru del desarrollo lean.",
       "social": [{ "type": "twitter", "handle": "gvilarino" }]
     },
@@ -112,13 +92,6 @@
       "role": "Vicepresidente",
       "bio": "Emprendedor compulsivo. Hago @trilapp",
       "social": [{ "type": "twitter", "handle": "ebrenman" }]
-    },
-    {
-      "name": "Gastón Silberman",
-      "image": "images/avatar-gaston",
-      "role": "",
-      "bio": "Diseñador, fotógrafo y emprendedor en Tril + Proyecto Cartele",
-      "social": [{ "type": "twitter", "handle": "gastt" }]
     },
     {
       "name": "Sebastián Fernández",
@@ -142,27 +115,6 @@
       "social": [{ "type": "twitter", "handle": "juicyminerva" }]
     },
     {
-      "name": "Sebastián Ghelerman",
-      "image": "images/avatar-sebag.jpg",
-      "role": "",
-      "bio": "Antropologo, tambien filosofo, capitan de barco y otras cosas misticas.",
-      "social": []
-    },
-    {
-      "name": "Gonzalo Argüello",
-      "image": "images/avatar-gonzalo.jpg",
-      "role": "",
-      "bio": "Emprendedor informatico y social, par del Partido de la Red, buen bailarin.",
-      "social": [{ "type": "twitter", "handle": "gonza_arguello" }]
-    },
-    {
-      "name": "Mariano Gómez Bidondo",
-      "image": "images/avatar-marianogb.jpg",
-      "role": "Miembro del consejo consultivo",
-      "bio": "Tecnologo ingenioso y amigo de los dispositivos que todavia estan por salir.",
-      "social": []
-    },
-    {
       "name": "José Fresco",
       "image": "images/avatar-jose.jpg",
       "role": "Desarrollador",
@@ -178,47 +130,33 @@
     {
       "name": "Don Powa",
       "image": "images/avatar-powa.jpg",
-      "role": "",
+      "role": "Comunicación",
       "bio": "Curioso, disléxico y compulsivo. Optimista emocional y pesimista cerebral.",
       "social": [{ "type": "twitter", "handle": "donpowa" }]
     },
     {
       "name": "Mariano Lopata",
       "image": "images/avatar-marianol.jpg",
-      "role": "Miembro del consejo consultivo",
+      "role": "Proyecto SOLE",
       "bio": "Miembro de SOLE Argentina. Maestro nitido de ideas simples y poderosas.",
       "social": [{ "type": "twitter", "handle": "marianolopata" }]
     },
     {
-      "name": "Liliana Haydee Jalabe",
-      "image": "images/avatar-liliana.jpg",
-      "role": "Miembro del consejo consultivo",
-      "bio": "Amante de las redes universales.",
-      "social": [{ "type": "twitter", "handle": "lilijalabe" }]
-    },
-    {
       "name": "Ana Lis Rodríguez Nardelli",
       "image": "images/avatar-ana.jpg",
-      "role": "Investigadora",
+      "role": "Investigación",
       "bio": "Antropologa, investigadora, militante. Poesia y buen humor.",
       "social": [{ "type": "twitter", "handle": "annagramma" }]
     },
     {
-      "name": "Inti Bonomo",
-      "image": "images/avatar-inti.jpg",
-      "role": "",
-      "bio": "Ambientologo por Profesión, Político por Vocación y Docente por Obligación.",
-      "social": [{ "type": "twitter", "handle": "intibonomo" }]
-    },
-    {
       "name": "Martín Galanternik",
       "image": "images/avatar-mart.jpg",
-      "role": "",
+      "role": "Director de Proyectos",
       "bio": "Politologo. Fundador y director de Minu. Todo lo que hay que saber para organizarse.", "social": [{ "type": "twitter", "handle": "mgalanternik" }] },
     {
       "name": "Felipe Muñoz",
       "image": "images/avatar-felipe.jpg",
-      "role": "",
+      "role": "Implementador DemocracyOS",
       "bio": "On ne tue point les idées.",
       "social": [{ "type": "twitter", "handle": "felipemuni" }]
     }
@@ -241,6 +179,7 @@
     "callToAction": "Escribinos"
   },
   "footer": {
-    "motto": "Es hora de que resolvamos los problemas de hoy con las herramientas de hoy"
+    "motto": "Es hora de que resolvamos los problemas de hoy con las herramientas de hoy",
+    "rights": "Algunos derechos reservados."
   }
 }
