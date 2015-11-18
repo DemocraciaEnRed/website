@@ -77,88 +77,89 @@
       "image": "images/avatar-agustin.jpg",
       "role": "Director Ejecutivo",
       "bio": "Sociologo y Máster en Gestión Urbanística. Porteño, melómano, cinéfilo, y algo más",
-      "social": [{ "type": "twitter", "handle": "agustinfrizzera" }]
+      "social": [{ "type": "twitter", "handle": "agustinfrizzera" }, { "type": "email", "address": "agustin@democraciaenred.org" }]
     },
     {
       "name": "Guido Vilariño",
       "image": "images/avatar-guido.jpg",
       "role": "Consultor Software",
       "bio": "Rock. Explicaciones claras de conceptos informaticos garantizadas. Guru del desarrollo lean.",
-      "social": [{ "type": "twitter", "handle": "gvilarino" }]
+      "social": [{ "type": "twitter", "handle": "gvilarino" }, { "type": "email", "address": "guido@democraciaenred.org" }]
     },
     {
       "name": "Esteban Brenman",
       "image": "images/avatar-esteban.jpg",
       "role": "Vicepresidente",
       "bio": "Emprendedor compulsivo. Hago @trilapp",
-      "social": [{ "type": "twitter", "handle": "ebrenman" }]
+      "social": [{ "type": "twitter", "handle": "ebrenman" }, { "type": "email", "address": "esteban@democraciaenred.org" }]
     },
     {
       "name": "Sebastián Fernández",
       "image": "images/avatar-sebaf.jpg",
       "role": "Diseñador",
       "bio": "Diseñador, fotografo, contador de chistes y dueño de una barba.",
-      "social": []
+      "social": [{ "type": "email", "address": "sebastian@democraciaenred.org" }]
     },
     {
       "name": "Matías Lescano",
       "image": "images/avatar-matias.jpg",
       "role": "Desarrollador",
       "bio": "Programador practico con ojo para el diseño y buen humor cronico.",
-      "social": []
+      "social": [{ "type": "email", "address": "matias@democraciaenred.org" }]
     },
     {
       "name": "Florencia Polimeni",
       "image": "images/avatar-florencia.png",
       "role": "Presidenta",
       "bio": "Es politóloga de formación y exploradora de vocación. Artesana, viajera, madre, coleccionista de arte y militante.",
-      "social": [{ "type": "twitter", "handle": "juicyminerva" }]
+      "social": [{ "type": "twitter", "handle": "juicyminerva" }, { "type": "email", "address": "florencia@democraciaenred.org" }]
     },
     {
       "name": "José Fresco",
       "image": "images/avatar-jose.jpg",
       "role": "Desarrollador",
       "bio": "Mató dos issues en su primer dia. Maestro de la maquina de cafe, entre otras. Keanu Reeves se parece a él.",
-      "social": [{ "type": "twitter", "handle": "jfresco82" }, { "type": "github", "handle": "jfresco" }] },
+      "social": [{ "type": "twitter", "handle": "jfresco82" }, { "type": "github", "handle": "jfresco" }, { "type": "email", "address": "jose@democraciaenred.org" }] },
     {
       "name": "Sacha Lifszyc",
       "image": "images/avatar-sacha.jpg",
       "role": "Desarrollador",
       "bio": "Pensando en JavaScript todo el tiempo. Programador y maestro. ",
-      "social": [{ "type": "twitter", "handle": "slifszyc" }, { "type": "github", "handle": "slifszyc" }]
+      "social": [{ "type": "twitter", "handle": "slifszyc" }, { "type": "github", "handle": "slifszyc" }, { "type": "email", "address": "sacha@democraciaenred.org" }]
     },
     {
       "name": "Don Powa",
       "image": "images/avatar-powa.jpg",
       "role": "Comunicación",
       "bio": "Curioso, disléxico y compulsivo. Optimista emocional y pesimista cerebral.",
-      "social": [{ "type": "twitter", "handle": "donpowa" }]
+      "social": [{ "type": "twitter", "handle": "donpowa" }, { "type": "email", "address": "powa@democraciaenred.org" }]
     },
     {
       "name": "Mariano Lopata",
       "image": "images/avatar-marianol.jpg",
       "role": "Proyecto SOLE",
       "bio": "Miembro de SOLE Argentina. Maestro nitido de ideas simples y poderosas.",
-      "social": [{ "type": "twitter", "handle": "marianolopata" }]
+      "social": [{ "type": "twitter", "handle": "marianolopata" }, { "type": "email", "address": "mglopata@democraciaenred.org" }]
     },
     {
       "name": "Ana Lis Rodríguez Nardelli",
       "image": "images/avatar-ana.jpg",
       "role": "Investigación",
       "bio": "Antropologa, investigadora, militante. Poesia y buen humor.",
-      "social": [{ "type": "twitter", "handle": "annagramma" }]
+      "social": [{ "type": "twitter", "handle": "annagramma" }, { "type": "email", "address": "ana@democraciaenred.org" }]
     },
     {
       "name": "Martín Galanternik",
       "image": "images/avatar-mart.jpg",
       "role": "Director de Proyectos",
-      "bio": "Politologo. Fundador y director de Minu. Todo lo que hay que saber para organizarse.", "social": [{ "type": "twitter", "handle": "mgalanternik" }] },
+      "bio": "Politologo. Fundador y director de Minu. Todo lo que hay que saber para organizarse.",
+      "social": [{ "type": "twitter", "handle": "mgalanternik" }, { "type": "email", "address": "martin@democraciaenred.org" }] },
     {
       "name": "Felipe Muñoz",
       "image": "images/avatar-felipe.jpg",
       "role": "Implementador DemocracyOS",
       "bio": "On ne tue point les idées.",
-      "social": [{ "type": "twitter", "handle": "felipemuni" }]
+      "social": [{ "type": "twitter", "handle": "felipemuni" }, { "type": "email", "address": "felipe@democraciaenred.org" }]
     }
   ],
   "press": {
