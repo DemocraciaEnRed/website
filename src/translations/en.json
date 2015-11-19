@@ -156,6 +156,12 @@
       "social": [{ "type": "twitter", "handle": "felipemuni" }, { "type": "email", "address": "felipe@democraciaenred.org" }]
     }
   ],
+  "book": {
+    "title": "¿Qué democracia para el siglo XXI?",
+    "description": "La democracia es un espacio vivo, en constante transformación: no estamos condenados a las instituciones que heredamos sino que podemos cuestionarlas, transformarlas. En este libro, activistas y organizaciones de toda América Latina se preguntan: ¿qué democracia queremos y podemos construir en el contexto social y tecnológico que estamos atravesando?",
+    "downloadUrl": "http://www.democraciaparaelsiglo21.org/",
+    "downloadText": "Download"
+  },
   "press": {
     "links": [
       { "url": "http://ccaa.elpais.com/ccaa/2015/01/27/madrid/1422375720_783629.html", "logo": "elpais.png" },
