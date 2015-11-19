@@ -12,8 +12,8 @@ mixin project(data)
         p=data.description
         .links
           if (data.links)
-            - var link = data.links[0]
-            a.btn(href=link.url, target='_blank')=link.text
+            each link in data.links
+              a.btn(href=link.url, target='_blank')=link.text
 
 section.proyectos.section#proyectos
   .section-title
