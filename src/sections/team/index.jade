@@ -35,7 +35,8 @@ section.who-we-are.section.clearfix#quienes-somos
     h2=we.title
 
     .clearfix
-      p.description=we.intro
+      - each paragraph in we.intro
+        p.description=paragraph
 section.team.section.clearfix#team
   .section-title
     h2=we.team

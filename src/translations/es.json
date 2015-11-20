@@ -70,7 +70,12 @@
   "we": {
     "title": "Quienes somos",
     "team": "Equipo",
-    "intro": "Somos humanos. Nos gusta pensar sistemas. Creemos en la política y nos encontramos para ayudar a mejorar el sistema democrático. Venimos de distintos lugares, somos activistas, artistas, investigadores, hackers, diseñadores, emprendedores. Coincidimos en que cuantas más voces sean tenidas en cuenta, mejor democracia vamos a tener."
+    "intro": [
+      "Somos humanos. Nos gusta pensar sistemas.",
+      "Creemos en la política y nos encontramos para ayudar a mejorar el sistema democrático.",
+      "Venimos de distintos lugares, somos activistas, artistas, investigadores, hackers, diseñadores, emprendedores.",
+      "Coincidimos en que cuantas más voces sean tenidas en cuenta, mejor democracia vamos a tener."
+    ]
   },
   "team": [
     {
