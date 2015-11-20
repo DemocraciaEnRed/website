@@ -1,5 +1,5 @@
 mixin project(data)
-  li.project-card(data-description=data.description)
+  .project-card(data-description=data.description)
     a.expand(href='#'): img(src='images/' + data.image)
     .description-overlay
       button.close ×
@@ -20,6 +20,6 @@ section.proyectos.section#proyectos
     img(src="images/icons/icon-1.png")
     h2=projects.title
 
-  ul.inline.projects
+   .projects
     - each projectData in projects.list
       +project(projectData)
