@@ -13,7 +13,8 @@
     "description": "Nos unimos para innovar donde nadie esta innovando aún, en el sistema político."
   },
   "home": {
-    "description": "Internet está cambiando el sistema político. Desarrollamos estrategias para llevar la democracia al siglo XXI.",
+    "description-line1": "Internet está cambiando el sistema político.",
+    "description-line2": "Desarrollamos estrategias para llevar la democracia al siglo XXI.",
     "call-to-action": "Difundamos"
   },
   "projects": {

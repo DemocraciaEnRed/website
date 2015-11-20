@@ -13,7 +13,8 @@
     ]
   },
   "home": {
-    "description": "We think the Internet can change the political system. With more and better citizen participation, we can move from agitation to construction.",
+    "description-line1": "Internet is changing the political system.",
+    "description-line2": "We develop strategies to upgrade the democratic system to the XXIst Century.",
     "call-to-action": "Spread the word"
   },
   "projects": {
