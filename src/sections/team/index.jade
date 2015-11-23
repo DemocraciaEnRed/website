@@ -33,13 +33,7 @@ section.who-we-are.section.clearfix#quienes-somos
   .section-title
     img(src="images/icons/icon-4.png")
     h2=we.title
-
-    .clearfix
-      - each paragraph in we.intro
-        p.description=paragraph
 section.team.section.clearfix#team
-  .section-title
-    h2=we.team
   .team-avatars
     - each pal in team.sort(function(a, b) { return a.name < b.name ? -1 : 1 })
       +avatar(pal)

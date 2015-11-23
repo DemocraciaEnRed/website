@@ -62,13 +62,7 @@
     ]
   },
   "we": {
-    "title": "Who we are",
-    "team": "The team",
-    "intro": [
-      "We are humans. We like to think systems.",
-      "We believe in politics and we got together to think about upgrading the democratic system.",
-      "We come from many different places, we are artists, researchers, developers, designers, activists, entrepreneurs with a common belief: The more voices can express and be heard, the better democracy we will have."
-    ]
+    "title": "Who we are"
   },
   "team": [
     {
