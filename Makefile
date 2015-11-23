@@ -3,18 +3,18 @@ BIN=./node_modules/.bin/
 run: build
 	npm start
 
-build: javascripts stylesheets index.html index-en.html
+build: node_modules javascripts stylesheets index.html index-en.html
 
-javascripts: node_modules
+javascripts:
 	$(BIN)browserify src/index.js  > javascripts/site.js
 
-stylesheets: node_modules
+stylesheets:
 	$(BIN)stylus --compress < src/index.styl --include-css > stylesheets/app.css
 
-index.html: node_modules
+index.html:
 	$(BIN)jade -O src/translations/es.json -p . < src/index.jade > index.html
 
-index-en.html: node_modules
+index-en.html:
 	$(BIN)jade -O src/translations/en.json -p . < src/index.jade > index-en.html
 
 node_modules:
