@@ -19,8 +19,7 @@ mixin button(data)
 
 mixin avatar(data)
   .avatar
-    .picture
-      img(src=data.image)
+    .picture(style="background-image: url('#{data.image}')")
     .content
       h4.name=data.name
       p.role=data.role
