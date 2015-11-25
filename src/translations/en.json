@@ -180,8 +180,25 @@
   },
   "transparency": {
     "title": "Our funding",
-    "description": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.",
-    "callToAction": "View"
+    "description": "Who funds us? How we spend? Here is all accounting summary information and documentary support.",
+    "actions": [
+      {
+        "title": "Income/Expenses 2015",
+        "url": "https://docs.google.com/spreadsheets/d/1y-jtDt62SbST3k1h2NEdNtHp_c7WJ7zX1uB_WpbLn0Q"
+      },
+      {
+        "title": "Balance 2014-15",
+        "url": "images/balances/2014-2015.pdf"
+      },
+      {
+        "title": "Balance 2013-14",
+        "url": "images/balances/2013-2014.pdf"
+      },
+      {
+        "title": "Balance 2012-13",
+        "url": "images/balances/2012-2013.pdf"
+      }
+    ]
   },
   "footer": {
     "motto": "It's time we solve todays' problems with todays' tools."
