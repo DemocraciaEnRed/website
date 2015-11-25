@@ -21,7 +21,7 @@ section.section.proyectos
 
     .project-card
       height 200px
-      padding 7px 7px
+      padding 0 1px 1px 0
       transition all default-duration ease
 
       .expand
@@ -37,43 +37,45 @@ section.section.proyectos
         overflow hidden
         transition all default-duration ease
 
+      .screenshots
+        width 50%
+        height 100%
+        float left
+        text-align right
+
+        img
+          box-sizing border-box
+          position relative
+          padding 20px
+          max-height 400px
+
+      .text
+        width 50%
+        float right
+        text-align left
+
+        p
+          padding-top 20px
+          padding-bottom 20px
+          padding-right 40px
+
+        .links
+          .btn
+            margin-right 10px
+
+      /* Screenshots won't be shown on small screen */
+      @media screen and (max-width: 780px)
         .screenshots
-          width 50%
-          height 100%
-          float left
-
-          img
-            position relative
-            width 90%
-            padding 40px 20px
-
+          display none
         .text
-          width 50%
-          float right
-          text-align left
+          width 100%
+          & > *
+            padding-left 20px
 
-          p
-            padding-top 20px
-            padding-bottom 20px
-            padding-right 40px
-
-          .links
-            .btn
-              margin-right 10px
-
-        /* Screenshots won't be shown on small screen */
-        @media screen and (max-width: 780px)
-          .screenshots
-            display none
-          .text
-            width 100%
-            & > *
-              padding-left 20px
-
-        .close
-          float right
-          font-size 40px
-          padding 10px 10px
+      .close
+        float right
+        font-size 40px
+        padding 10px 10px
 
       /* When the description is expanded */
       &.expanded
