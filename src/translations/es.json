@@ -22,21 +22,21 @@
     "list": [
       {
         "title": "DemocracyOS",
-        "image": "dos.jpg",
+        "image": "projects-dos.jpg",
         "screenshots": ["cap-dos.jpg"],
         "links": [ { "text": "democracyos.org", "url": "https://democracyos.org/" } ],
         "description": "DemocracyOS es una herramienta de código abierto pensada para facilitar la participación ciudadana en procesos de toma de decisión. Es la manifestación tecnológica de nuestra misión principal: acercar el sistema político a las tecnologías y hábitos de este siglo."
       },
       {
         "title": "Civic Stack",
-        "image": "civic.jpg",
+        "image": "projects-civic.jpg",
         "screenshots": ["cap-civic.png"],
         "links": [ { "text": "civicstack.org", "url": "http://www.civicstack.org" } ],
         "description": "Civic Stack es un repositorio de aplicaciones de código abierto diseñadas para generar impacto cívico. Fue pensado colaborativamente como una ventana para agrupar y facilitar el acceso a tecnologías con el objetivo de empoderar ciudadanos."
       },
       {
         "title": "Demos",
-        "image": "demos.jpg",
+        "image": "projects-demos.jpg",
         "screenshots": ["cap-demos.jpg"],
         "links": [
           { "text": "Legislatura CABA", "url": "https://docs.google.com/document/d/1bZOd09bd-y_aPgUat9SQ8EchUawroMtmYQn0vm-BvQU/edit?usp=sharing" },
@@ -46,7 +46,7 @@
       },
       {
         "title": "Proyecto SOLE",
-        "image": "sole.jpg",
+        "image": "projects-sole.jpg",
         "screenshots": ["cap-sole.jpg"],
         "links": [
           { "text": "soleargentina.org", "url": "http://www.soleargentina.org" }
@@ -55,13 +55,13 @@
       },
       {
         "title": "Academia",
-        "image": "academia.jpg",
+        "image": "projects-academia.jpg",
         "screenshots": ["cap-academia.jpg"],
         "description": "Academia es un espacio de encuentro con artistas, investigadores y personas que vienen pensando y experimentando el cruce entre el poder y el mundo digital. La democracia en la era de internet trae nuevas inquietudes y escenarios que asombran."
       },
       {
         "title": "Tres por tres",
-        "image": "3x3.png",
+        "image": "projects-3x3.png",
         "screenshots": ["cap-tresportres.jpg"],
         "description": "TRES POR TRES es un ciclo de conversaciones de muchos a muchos, con temáticas específicas. Tres eventos y tres organizaciones discuten, sin oradores y sin palestras, el impacto de la tecnología en la política argentina."
       }
