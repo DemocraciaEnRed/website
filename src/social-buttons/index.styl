@@ -1,26 +1,18 @@
 .social-buttons
-  position fixed
-  top 130px
-  right 0
+  position relative
+  text-align center
+  font-size 1em
 
   .social-button
-    padding 10px 10px
-    padding-bottom 8px
+    display inline-block
+    padding 10px 10px 8px
+
     a
       margin 2px 2px
       color white
+      text-decoration none
+      opacity .7
+      transition all .15s linear
 
-      &:hover, &:active, &:focus
-        text-decoration none
-
-    &.social-button-facebook
-      background-color #3B5B93
-
-    &.social-button-twitter
-      background-color #63AEEB
-
-    &.social-button-github
-      background-color #F5F5F5
-      a
-        color black
-
+      &:hover
+        opacity 1
