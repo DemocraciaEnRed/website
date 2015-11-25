@@ -178,6 +178,11 @@
     "description": "Help us connect more people to this network. Amplify the message in social media. If you have questions, ideas or suggestions to share with us",
     "callToAction": "Drop us a line"
   },
+  "transparency": {
+    "title": "Our funding",
+    "description": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.",
+    "callToAction": "View"
+  },
   "footer": {
     "motto": "It's time we solve todays' problems with todays' tools."
   }

@@ -184,6 +184,11 @@
     "description": "Ayudanos a llegar a más personas. Sumate a nuestras redes para amplificar el mensaje. Hay muchas maneras de colaborar.",
     "callToAction": "Escribinos"
   },
+  "transparency": {
+    "title": "Nuestra Financiación",
+    "description": "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.",
+    "callToAction": "Ver"
+  },
   "footer": {
     "motto": "Es hora de que resolvamos los problemas de hoy con las herramientas de hoy."
   }
