@@ -21,19 +21,19 @@
     "title": "Projects",
     "list": [
       {
-        "image": "projects-dos.jpg",
+        "image": "projects-dos.png",
         "screenshots": ["cap-dos.jpg"],
         "links": [ { "text": "democracyos.org", "url": "http://democracyos.org/" } ],
         "description": "DemocracyOS is an open-source web application designed to improve the chances of citizen to participate in decision-making processes. This is the technological manifestation of our main mision: to bring the political system closer to those behaviors and technologies of this century."
       },
       {
-        "image": "projects-civic.jpg",
+        "image": "projects-civic.png",
         "screenshots": ["cap-civic.png"],
         "links": [ { "text": "civicstack.org", "url": "http://www.civicstack.org" } ],
         "description": "Civic stack is a showcase for open-source civic tech. It has been designed collaboratively as a window to show together all these technologies that are meant to empower citizens."
       },
       {
-        "image": "projects-demos.jpg",
+        "image": "projects-demos.png",
         "screenshots": ["cap-demos.jpg"],
         "links": [
           { "text": "Legislatura CABA", "url": "http://demos.legislatura.gov.ar" },
@@ -42,7 +42,7 @@
         "description": "Demos is a project that seeks openess in political institutions. The experience allows every citizen to get informed, debate and vote on pieces of proposed legislation. An institutional bet on the idea of collective intelligence."
       },
       {
-        "image": "projects-sole.jpg",
+        "image": "projects-sole.png",
         "screenshots": ["cap-sole.jpg"],
         "links": [
           { "text": "soleargentina.org", "url": "http://www.soleargentina.org" }
@@ -50,7 +50,7 @@
         "description": "SOLE crafts self-organized learning environments, based on the pedagogy of Sugata Mitra. It involves many children, a few computers and one big question. The Internet transforms the way we learn, also in the schools of Buenos Aires."
       },
       {
-        "image": "projects-academia.jpg",
+        "image": "projects-academia.png",
         "screenshots": ["cap-academia.jpg"],
         "description": "Academia is a space where artists, researchers and those who have been experimenting and thinking the intersection between technology and power come together. Democracy in the Internet Era brings new questions and surprising scenarios. We explore them."
       },
