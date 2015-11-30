@@ -2,16 +2,16 @@ header.site-header.clearfix
   .navbar.navbar-inverse.navbar-fixed-top
     .navbar-inner
       .container
-        h1: a(href="#splash", title="Democracia en Red"): | Democracia en Red
+        h1.logo
+          a(href="#splash", title="Democracia en Red") Democracia en Red
         ul.nav.languages
           li(class=lang === 'en' ? 'selected' : '')
             a(href="/index-en.html", title="") EN
           li(class=lang === 'es' ? 'selected' : '' )
-            a(href="/index.html", title="") ES
-        .social
+            a(href="/", title="") ES
 
         ul.nav.nav-collapse.collapse
-          li.hide.active: a(href="#splash", title=""): | Somos Red
+          li.hide: a(href="#splash")
           each item in header.items
             li: a(href="#" + item.id, title="")=item.description
 

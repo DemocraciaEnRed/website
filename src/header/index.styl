@@ -13,7 +13,15 @@ header.site-header
   letter-spacing 1px
   overflow hidden
 
-  h1
+  &.show-logo
+    .logo
+      padding-left 40px
+      background-image url('../images/logo-card.png')
+      background-size 35px auto
+      background-position left center
+      background-repeat no-repeat
+
+  .logo
     font-size 12px
     line-height 12px
     display inline-block
@@ -80,12 +88,22 @@ header.site-header
               color #333
 
           &.hide
-            display: none;
+            display none
 
         &.languages
+          margin-left 1em
+
           li
             a
-              margin-right 0
+              margin 0
+              padding-left 1em
+              padding-right 1em
+              font-weight 100
+
+          li:last-child
+            a
+              margin-right -1em
+
         &.in
           float none
           margin 0

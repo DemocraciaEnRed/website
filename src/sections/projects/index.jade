@@ -1,6 +1,6 @@
 mixin project(data)
   .project-card(data-description=data.description)
-    a.expand(href='#'): img(src='images/' + data.image)
+    a.expand: img(src='images/' + data.image)
     .description-overlay
       button.close ×
       .screenshots

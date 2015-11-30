@@ -9,13 +9,14 @@ section.section.book
 
     img
       max-width 26%
+      margin-right 4%
 
     .text
       position relative
       max-width 70%
       display inline-block
       vertical-align top
-      padding 0 0 0 2em
+      box-sizing border-box
 
     .description
       line-height 1.7
@@ -24,3 +25,13 @@ section.section.book
 
     .btn
       margin-top 20px
+
+    @media all and (max-width: 540px)
+      img
+        display none
+
+      .text
+        max-width none
+
+      .btn
+        display block

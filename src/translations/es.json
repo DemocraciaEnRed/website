@@ -1,20 +1,20 @@
 {
   "lang": "es",
+  "site": {
+    "title": "Democracia en Red",
+    "description": "Nos unimos para innovar donde nadie esta innovando aún, en el sistema político."
+  },
   "header": {
     "items": [
       { "id": "proyectos", "description": "Proyectos" },
       { "id": "quienes-somos", "description": "Quiénes somos" },
       { "id": "press", "description": "Prensa" },
-      { "id": "collaborate", "description": "Colaborar" }
+      { "id": "collaborate", "description": "Colaborar" },
+      { "id": "transparency", "description": "Transparencia" }
     ]
   },
-  "site": {
-    "title": "Fundación Democracia en Red",
-    "description": "Nos unimos para innovar donde nadie esta innovando aún, en el sistema político."
-  },
   "home": {
-    "description-line1": "Internet está cambiando el sistema político.",
-    "description-line2": "Desarrollamos estrategias para llevar la democracia al siglo XXI.",
+    "description": "Desarrollamos estrategias para llevar la democracia al siglo XXI.",
     "call-to-action": "Difundamos"
   },
   "projects": {

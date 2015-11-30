@@ -9,12 +9,12 @@
       { "id": "proyectos", "description": "Projects" },
       { "id": "quienes-somos", "description": "Who we are" },
       { "id": "press", "description": "Press" },
-      { "id": "collaborate", "description": "Collaborate" }
+      { "id": "collaborate", "description": "Collaborate" },
+      { "id": "transparency", "description": "Transparency" }
     ]
   },
   "home": {
-    "description-line1": "Internet is changing the political system.",
-    "description-line2": "We develop strategies to upgrade the democratic system to the XXIst Century.",
+    "description": "We develop strategies to upgrade the democratic system to the 21st Century.",
     "call-to-action": "Spread the word"
   },
   "projects": {
