@@ -75,35 +75,35 @@
       "name": "Agustín Frizzera",
       "image": "images/avatar-agustin.jpg",
       "role": "Director Ejecutivo",
-      "bio": "Sociologo y Máster en Gestión Urbanística. Porteño, melómano, cinéfilo, y algo más",
+      "bio": "Sociólogo y Máster en Gestión Urbanística. Porteño, melómano, cinéfilo, y algo más.",
       "social": [{ "type": "twitter", "handle": "agustinfrizzera" }, { "type": "email", "address": "agustin@democraciaenred.org" }]
     },
     {
       "name": "Guido Vilariño",
       "image": "images/avatar-guido.jpg",
       "role": "Consultor Software",
-      "bio": "Rock. Explicaciones claras de conceptos informaticos garantizadas. Guru del desarrollo lean.",
+      "bio": "Rock. Explicaciones claras de conceptos informáticos garantizadas. Gurú del desarrollo lean.",
       "social": [{ "type": "twitter", "handle": "gvilarino" }, { "type": "email", "address": "guido@democraciaenred.org" }]
     },
     {
       "name": "Esteban Brenman",
       "image": "images/avatar-esteban.jpg",
       "role": "Vicepresidente",
-      "bio": "Emprendedor compulsivo. Hago @trilapp",
+      "bio": "Emprendedor compulsivo. Hace @trilapp",
       "social": [{ "type": "twitter", "handle": "ebrenman" }, { "type": "email", "address": "esteban@democraciaenred.org" }]
     },
     {
       "name": "Sebastián Fernández",
       "image": "images/avatar-sebaf.jpg",
       "role": "Diseñador",
-      "bio": "Diseñador, fotografo, contador de chistes y dueño de una barba.",
+      "bio": "Diseñador, fotógrafo, contador de chistes y dueño de una barba.",
       "social": [{ "type": "email", "address": "sebastian@democraciaenred.org" }]
     },
     {
       "name": "Matías Lescano",
       "image": "images/avatar-matias.jpg",
       "role": "Desarrollador",
-      "bio": "Programador practico con ojo para el diseño y buen humor cronico.",
+      "bio": "Programador práctico con ojo para el diseño y buen humor crónico.",
       "social": [{ "type": "email", "address": "matias@democraciaenred.org" }]
     },
     {
@@ -117,13 +117,13 @@
       "name": "José Fresco",
       "image": "images/avatar-jose.jpg",
       "role": "Desarrollador",
-      "bio": "Mató dos issues en su primer dia. Maestro de la maquina de cafe, entre otras. Keanu Reeves se parece a él.",
+      "bio": "Mató dos issues en su primer día. Maestro de la máquina de cafe, entre otras. Keanu Reeves se parece a él.",
       "social": [{ "type": "twitter", "handle": "jfresco82" }, { "type": "github", "handle": "jfresco" }, { "type": "email", "address": "jose@democraciaenred.org" }] },
     {
       "name": "Sacha Lifszyc",
       "image": "images/avatar-sacha.jpg",
       "role": "Desarrollador",
-      "bio": "Pensando en JavaScript todo el tiempo. Programador y maestro. ",
+      "bio": "Pensando en JavaScript todo el tiempo. Programador y maestro.",
       "social": [{ "type": "twitter", "handle": "slifszyc" }, { "type": "github", "handle": "slifszyc" }, { "type": "email", "address": "sacha@democraciaenred.org" }]
     },
     {
@@ -137,14 +137,14 @@
       "name": "Mariano Lopata",
       "image": "images/avatar-marianol.jpg",
       "role": "Proyecto SOLE",
-      "bio": "Miembro de SOLE Argentina. Maestro nitido de ideas simples y poderosas.",
+      "bio": "Miembro de SOLE Argentina. Maestro nítido de ideas simples y poderosas.",
       "social": [{ "type": "twitter", "handle": "marianolopata" }, { "type": "email", "address": "mglopata@democraciaenred.org" }]
     },
     {
       "name": "Ana Lis Rodríguez Nardelli",
       "image": "images/avatar-ana.jpg",
       "role": "Investigación",
-      "bio": "Antropologa, investigadora, militante. Poesia y buen humor.",
+      "bio": "Antropóloga, investigadora, militante. Poesía y buen humor.",
       "social": [{ "type": "twitter", "handle": "annagramma" }, { "type": "email", "address": "ana@democraciaenred.org" }]
     },
     {

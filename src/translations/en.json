@@ -111,13 +111,13 @@
       "name": "José Fresco",
       "image": "images/avatar-jose.jpg",
       "role": "Software engineer",
-      "bio": "Killed two issues in his first day. Master of the coffee machine among others. Keanu Reeves looks like him",
+      "bio": "Killed two issues in his first day. Master of the coffee machine among others. Keanu Reeves looks like him.",
       "social": [{ "type": "twitter", "handle": "jfresco82" }, { "type": "github", "handle": "jfresco" }, { "type": "email", "address": "jose@democraciaenred.org" }] },
     {
       "name": "Sacha Lifszyc",
       "image": "images/avatar-sacha.jpg",
       "role": "Software engineer",
-      "bio": "All day JavaScript thinker, programmer and teacher. ",
+      "bio": "All day JavaScript thinker, programmer and teacher.",
       "social": [{ "type": "twitter", "handle": "slifszyc" }, { "type": "github", "handle": "slifszyc" }, { "type": "email", "address": "sacha@democraciaenred.org" }]
     },
     {
