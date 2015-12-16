@@ -1,5 +1,57 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 (function (global){
+
+var NativeCustomEvent = global.CustomEvent;
+
+function useNative () {
+  try {
+    var p = new NativeCustomEvent('cat', { detail: { foo: 'bar' } });
+    return  'cat' === p.type && 'bar' === p.detail.foo;
+  } catch (e) {
+  }
+  return false;
+}
+
+/**
+ * Cross-browser `CustomEvent` constructor.
+ *
+ * https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent.CustomEvent
+ *
+ * @public
+ */
+
+module.exports = useNative() ? NativeCustomEvent :
+
+// IE >= 9
+'function' === typeof document.createEvent ? function CustomEvent (type, params) {
+  var e = document.createEvent('CustomEvent');
+  if (params) {
+    e.initCustomEvent(type, params.bubbles, params.cancelable, params.detail);
+  } else {
+    e.initCustomEvent(type, false, false, void 0);
+  }
+  return e;
+} :
+
+// IE <= 8
+function CustomEvent (type, params) {
+  var e = document.createEventObject();
+  e.type = type;
+  if (params) {
+    e.bubbles = Boolean(params.bubbles);
+    e.cancelable = Boolean(params.cancelable);
+    e.detail = params.detail;
+  } else {
+    e.bubbles = false;
+    e.cancelable = false;
+    e.detail = void 0;
+  }
+  return e;
+}
+
+}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
+},{}],2:[function(require,module,exports){
+(function (global){
 'use strict';
 
 var customEvent = require('custom-event');
@@ -103,7 +155,7 @@ function find (el, type, fn) {
 }
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./eventmap":2,"custom-event":3}],2:[function(require,module,exports){
+},{"./eventmap":3,"custom-event":1}],3:[function(require,module,exports){
 (function (global){
 'use strict';
 
@@ -120,59 +172,123 @@ for (eventname in global) {
 module.exports = eventmap;
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],3:[function(require,module,exports){
+},{}],4:[function(require,module,exports){
+var poser = require('./src/node');
+
+module.exports = poser;
+
+['Array', 'Function', 'Object', 'Date', 'String'].forEach(pose);
+
+function pose (type) {
+  poser[type] = function poseComputedType () { return poser(type); };
+}
+
+},{"./src/node":5}],5:[function(require,module,exports){
 (function (global){
+'use strict';
 
-var NativeCustomEvent = global.CustomEvent;
+var d = global.document;
 
-function useNative () {
-  try {
-    var p = new NativeCustomEvent('cat', { detail: { foo: 'bar' } });
-    return  'cat' === p.type && 'bar' === p.detail.foo;
-  } catch (e) {
-  }
-  return false;
+function poser (type) {
+  var iframe = d.createElement('iframe');
+
+  iframe.style.display = 'none';
+  d.body.appendChild(iframe);
+
+  return map(type, iframe.contentWindow);
 }
 
-/**
- * Cross-browser `CustomEvent` constructor.
- *
- * https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent.CustomEvent
- *
- * @public
- */
+function map (type, source) { // forward polyfills to the stolen reference!
+  var original = window[type].prototype;
+  var value = source[type];
+  var prop;
 
-module.exports = useNative() ? NativeCustomEvent :
-
-// IE >= 9
-'function' === typeof document.createEvent ? function CustomEvent (type, params) {
-  var e = document.createEvent('CustomEvent');
-  if (params) {
-    e.initCustomEvent(type, params.bubbles, params.cancelable, params.detail);
-  } else {
-    e.initCustomEvent(type, false, false, void 0);
+  for (prop in original) {
+    value.prototype[prop] = original[prop];
   }
-  return e;
-} :
 
-// IE <= 8
-function CustomEvent (type, params) {
-  var e = document.createEventObject();
-  e.type = type;
-  if (params) {
-    e.bubbles = Boolean(params.bubbles);
-    e.cancelable = Boolean(params.cancelable);
-    e.detail = params.detail;
-  } else {
-    e.bubbles = false;
-    e.cancelable = false;
-    e.detail = void 0;
-  }
-  return e;
+  return value;
 }
+
+module.exports = poser;
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],4:[function(require,module,exports){
+},{}],6:[function(require,module,exports){
+(function (global){
+'use strict';
+
+var expando = 'sektor-' + Date.now();
+var rsiblings = /[+~]/;
+var document = global.document;
+var del = document.documentElement || {};
+var match = (
+  del.matches ||
+  del.webkitMatchesSelector ||
+  del.mozMatchesSelector ||
+  del.oMatchesSelector ||
+  del.msMatchesSelector ||
+  never
+);
+
+module.exports = sektor;
+
+sektor.matches = matches;
+sektor.matchesSelector = matchesSelector;
+
+function qsa (selector, context) {
+  var existed, id, prefix, prefixed, adapter, hack = context !== document;
+  if (hack) { // id hack for context-rooted queries
+    existed = context.getAttribute('id');
+    id = existed || expando;
+    prefix = '#' + id + ' ';
+    prefixed = prefix + selector.replace(/,/g, ',' + prefix);
+    adapter = rsiblings.test(selector) && context.parentNode;
+    if (!existed) { context.setAttribute('id', id); }
+  }
+  try {
+    return (adapter || context).querySelectorAll(prefixed || selector);
+  } catch (e) {
+    return [];
+  } finally {
+    if (existed === null) { context.removeAttribute('id'); }
+  }
+}
+
+function sektor (selector, ctx, collection, seed) {
+  var element;
+  var context = ctx || document;
+  var results = collection || [];
+  var i = 0;
+  if (typeof selector !== 'string') {
+    return results;
+  }
+  if (context.nodeType !== 1 && context.nodeType !== 9) {
+    return []; // bail if context is not an element or document
+  }
+  if (seed) {
+    while ((element = seed[i++])) {
+      if (matchesSelector(element, selector)) {
+        results.push(element);
+      }
+    }
+  } else {
+    results.push.apply(results, qsa(selector, context));
+  }
+  return results;
+}
+
+function matches (selector, elements) {
+  return sektor(selector, null, null, elements);
+}
+
+function matchesSelector (element, selector) {
+  return match.call(element, selector);
+}
+
+function never () { return false; }
+
+}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
+},{}],7:[function(require,module,exports){
 'use strict';
 
 var poser = require('poser');
@@ -180,7 +296,7 @@ var Dominus = poser.Array();
 
 module.exports = Dominus;
 
-},{"poser":16}],5:[function(require,module,exports){
+},{"poser":4}],8:[function(require,module,exports){
 'use strict';
 
 var $ = require('./public');
@@ -388,7 +504,7 @@ Dominus.prototype.focus = function () {
 
 module.exports = require('./public');
 
-},{"./Dominus.ctor":4,"./classes":8,"./custom":9,"./dom":10,"./flatten":12,"./public":13}],6:[function(require,module,exports){
+},{"./Dominus.ctor":7,"./classes":11,"./custom":12,"./dom":13,"./flatten":15,"./public":16}],9:[function(require,module,exports){
 'use strict';
 
 var Dominus = require('./Dominus.ctor');
@@ -415,7 +531,7 @@ function ensure (key) {
 
 module.exports = apply;
 
-},{"./Dominus.ctor":4}],7:[function(require,module,exports){
+},{"./Dominus.ctor":7}],10:[function(require,module,exports){
 (function (global){
 'use strict';
 
@@ -447,7 +563,7 @@ function cast (a) {
 module.exports = cast;
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./Dominus.ctor":4,"./apply":6,"./test":14}],8:[function(require,module,exports){
+},{"./Dominus.ctor":7,"./apply":9,"./test":17}],11:[function(require,module,exports){
 'use strict';
 
 var trim = /^\s+|\s+$/g;
@@ -509,7 +625,7 @@ module.exports = {
   get: classes
 };
 
-},{"./test":14}],9:[function(require,module,exports){
+},{"./test":17}],12:[function(require,module,exports){
 'use strict';
 
 var handlers = {};
@@ -553,7 +669,7 @@ module.exports = {
   handlers: handlers
 };
 
-},{}],10:[function(require,module,exports){
+},{}],13:[function(require,module,exports){
 (function (global){
 'use strict';
 
@@ -904,12 +1020,12 @@ api.setCss = function (props) {
 };
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./Dominus.ctor":4,"./apply":6,"./cast":7,"./test":14,"./text":15,"crossvent":1,"sektor":18}],11:[function(require,module,exports){
+},{"./Dominus.ctor":7,"./apply":9,"./cast":10,"./test":17,"./text":18,"crossvent":2,"sektor":6}],14:[function(require,module,exports){
 'use strict';
 
 module.exports = require('./Dominus.prototype');
 
-},{"./Dominus.prototype":5}],12:[function(require,module,exports){
+},{"./Dominus.prototype":8}],15:[function(require,module,exports){
 'use strict';
 
 var Dominus = require('./Dominus.ctor');
@@ -927,7 +1043,7 @@ function flatten (a, cache) {
 
 module.exports = flatten;
 
-},{"./Dominus.ctor":4}],13:[function(require,module,exports){
+},{"./Dominus.ctor":7}],16:[function(require,module,exports){
 'use strict';
 
 var dom = require('./dom');
@@ -963,7 +1079,7 @@ api.custom = custom.register;
 
 module.exports = api;
 
-},{"./Dominus.ctor":4,"./cast":7,"./custom":9,"./dom":10}],14:[function(require,module,exports){
+},{"./Dominus.ctor":7,"./cast":10,"./custom":12,"./dom":13}],17:[function(require,module,exports){
 'use strict';
 
 var elementObjects = typeof HTMLElement === 'object';
@@ -993,7 +1109,7 @@ module.exports = {
   isCheckable: isCheckable
 };
 
-},{}],15:[function(require,module,exports){
+},{}],18:[function(require,module,exports){
 'use strict';
 
 function hyphenToCamel (hyphens) {
@@ -1013,122 +1129,6 @@ module.exports = {
   hyphenate: hyphenate
 };
 
-},{}],16:[function(require,module,exports){
-var poser = require('./src/node');
-
-module.exports = poser;
-
-['Array', 'Function', 'Object', 'Date', 'String'].forEach(pose);
-
-function pose (type) {
-  poser[type] = function poseComputedType () { return poser(type); };
-}
-
-},{"./src/node":17}],17:[function(require,module,exports){
-(function (global){
-'use strict';
-
-var d = global.document;
-
-function poser (type) {
-  var iframe = d.createElement('iframe');
-
-  iframe.style.display = 'none';
-  d.body.appendChild(iframe);
-
-  return map(type, iframe.contentWindow);
-}
-
-function map (type, source) { // forward polyfills to the stolen reference!
-  var original = window[type].prototype;
-  var value = source[type];
-  var prop;
-
-  for (prop in original) {
-    value.prototype[prop] = original[prop];
-  }
-
-  return value;
-}
-
-module.exports = poser;
-
-}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],18:[function(require,module,exports){
-(function (global){
-'use strict';
-
-var expando = 'sektor-' + Date.now();
-var rsiblings = /[+~]/;
-var document = global.document;
-var del = document.documentElement || {};
-var match = (
-  del.matches ||
-  del.webkitMatchesSelector ||
-  del.mozMatchesSelector ||
-  del.oMatchesSelector ||
-  del.msMatchesSelector ||
-  never
-);
-
-module.exports = sektor;
-
-sektor.matches = matches;
-sektor.matchesSelector = matchesSelector;
-
-function qsa (selector, context) {
-  var existed, id, prefix, prefixed, adapter, hack = context !== document;
-  if (hack) { // id hack for context-rooted queries
-    existed = context.getAttribute('id');
-    id = existed || expando;
-    prefix = '#' + id + ' ';
-    prefixed = prefix + selector.replace(/,/g, ',' + prefix);
-    adapter = rsiblings.test(selector) && context.parentNode;
-    if (!existed) { context.setAttribute('id', id); }
-  }
-  try {
-    return (adapter || context).querySelectorAll(prefixed || selector);
-  } catch (e) {
-    return [];
-  } finally {
-    if (existed === null) { context.removeAttribute('id'); }
-  }
-}
-
-function sektor (selector, ctx, collection, seed) {
-  var element;
-  var context = ctx || document;
-  var results = collection || [];
-  var i = 0;
-  if (typeof selector !== 'string') {
-    return results;
-  }
-  if (context.nodeType !== 1 && context.nodeType !== 9) {
-    return []; // bail if context is not an element or document
-  }
-  if (seed) {
-    while ((element = seed[i++])) {
-      if (matchesSelector(element, selector)) {
-        results.push(element);
-      }
-    }
-  } else {
-    results.push.apply(results, qsa(selector, context));
-  }
-  return results;
-}
-
-function matches (selector, elements) {
-  return sektor(selector, null, null, elements);
-}
-
-function matchesSelector (element, selector) {
-  return match.call(element, selector);
-}
-
-function never () { return false; }
-
-}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{}],19:[function(require,module,exports){
 $(function(){
 
@@ -1270,4 +1270,4 @@ closeButtons.on('click', function () {
   reset()
 })
 
-},{"dominus":11}]},{},[19]);
+},{"dominus":14}]},{},[19]);
