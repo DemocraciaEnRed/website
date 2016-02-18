@@ -24,7 +24,7 @@
     "browserify": "^11.2.0",
     "chokidar-cli": "^1.2.0",
     "jade": "^1.11.0",
-    "jstransformer-markdown": "^1.1.0",
+    "jstransformer-remarkable": "^1.1.1",
     "local-web-server": "^0.5.23",
     "stylus": "^0.52.4"
   },
