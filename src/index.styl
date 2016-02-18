@@ -25,6 +25,9 @@ default-duration = 0.4s
 /* #Site Styles
 ================================================== */
 
+.navbar-inner
+  border-radius 0
+
 .align-center
   text-align center
 
@@ -38,7 +41,7 @@ a
 
 body
   font-family "Open Sans", sans-serif
-  background #fff url("../images/bg-splash.jpg") left bottom fixed
+  background #fff url("/images/bg-splash.jpg") left bottom fixed
   background-size cover
   -webkit-font-smoothing antialiased
   /* Fix for webkit rendering */
@@ -104,14 +107,14 @@ h6,
       display block
       width 32px
       height 32px
-      background url(../images/github-logo.png) no-repeat top
+      background url(/images/github-logo.png) no-repeat top
       position absolute
       top 5px
       left 10px
 
     &:hover
       &:before
-        background url(../images/github-logo.png) no-repeat bottom
+        background url(/images/github-logo.png) no-repeat bottom
 
   &.mexico
     margin-left 28px
@@ -175,7 +178,7 @@ section.section
 @import 'src/social-buttons/index'
 
 section.section.how-to-join {
-  background: #fff url("../images/bg-mafalda.jpg") fixed;
+  background: #fff url("/images/bg-mafalda.jpg") fixed;
   background-size: cover;
   color: #000;
 }
@@ -200,17 +203,17 @@ section.section.how-to-join .colaborate-box .help-link {
   letter-spacing: 1px;
   font-size: 11px;
   border-radius: 3px;
-  background: #54c2b6 url("../images/logo-bitcoin.png") center 65px no-repeat;
+  background: #54c2b6 url("/images/logo-bitcoin.png") center 65px no-repeat;
 }
 
 section.section.how-to-join .colaborate-box .help-link.ideame {
-  background: #fff url("../images/logo-ideame.png") center 40px no-repeat;
+  background: #fff url("/images/logo-ideame.png") center 40px no-repeat;
   color: #333;
 }
 
 section.section.how-to-join .colaborate-box .help-link.help-sign {
 /*margin-right: 0;*/
-  background: #7b4c94 url("../images/icon-sign.png") center 30px no-repeat;
+  background: #7b4c94 url("/images/icon-sign.png") center 30px no-repeat;
   padding-top: 120px;
 }
 
@@ -660,3 +663,5 @@ color: rgb(255, 255, 255);
 .MP-common-green-CDl:link {
 color: rgb(255, 255, 255);
 }
+
+@import './src/jobs/index.styl'

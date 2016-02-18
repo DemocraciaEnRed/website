@@ -1,5 +1,6 @@
 {
   "lang": "es",
+  "langUrl": "",
   "site": {
     "title": "Democracia en Red",
     "description": "Nos unimos para innovar donde nadie esta innovando aún, en el sistema político."
@@ -22,21 +23,21 @@
     "list": [
       {
         "title": "DemocracyOS",
-        "image": "projects-dos.png",
+        "image": "/images/projects-dos.png",
         "screenshots": ["cap-dos.jpg"],
         "links": [ { "text": "democracyos.org", "url": "https://democracyos.org/" } ],
         "description": "DemocracyOS es una herramienta de código abierto pensada para facilitar la participación ciudadana en procesos de toma de decisión. Es la manifestación tecnológica de nuestra misión principal: acercar el sistema político a las tecnologías y hábitos de este siglo."
       },
       {
         "title": "Civic Stack",
-        "image": "projects-civic.png",
+        "image": "/images/projects-civic.png",
         "screenshots": ["cap-civic.png"],
         "links": [ { "text": "civicstack.org", "url": "http://www.civicstack.org" } ],
         "description": "Civic Stack es un repositorio de aplicaciones de código abierto diseñadas para generar impacto cívico. Fue pensado colaborativamente como una ventana para agrupar y facilitar el acceso a tecnologías con el objetivo de empoderar ciudadanos."
       },
       {
         "title": "Demos",
-        "image": "projects-demos.png",
+        "image": "/images/projects-demos.png",
         "screenshots": ["cap-demos.jpg"],
         "links": [
           { "text": "Legislatura CABA", "url": "https://docs.google.com/document/d/1bZOd09bd-y_aPgUat9SQ8EchUawroMtmYQn0vm-BvQU/edit?usp=sharing" },
@@ -46,7 +47,7 @@
       },
       {
         "title": "Proyecto SOLE",
-        "image": "projects-sole.png",
+        "image": "/images/projects-sole.png",
         "screenshots": ["cap-sole.jpg"],
         "links": [
           { "text": "soleargentina.org", "url": "http://www.soleargentina.org" }
@@ -55,13 +56,13 @@
       },
       {
         "title": "Academia",
-        "image": "projects-academia.png",
+        "image": "/images/projects-academia.png",
         "screenshots": ["cap-academia.jpg"],
         "description": "Academia es un espacio de encuentro con artistas, investigadores y personas que vienen pensando y experimentando el cruce entre el poder y el mundo digital. La democracia en la era de internet trae nuevas inquietudes y escenarios que asombran."
       },
       {
         "title": "Tres por tres",
-        "image": "projects-3x3.png",
+        "image": "/images/projects-3x3.png",
         "screenshots": ["cap-tresportres.jpg"],
         "description": "TRES POR TRES es un ciclo de conversaciones de muchos a muchos, con temáticas específicas. Tres eventos y tres organizaciones discuten, sin oradores y sin palestras, el impacto de la tecnología en la política argentina."
       }
@@ -73,89 +74,89 @@
   "team": [
     {
       "name": "Agustín Frizzera",
-      "image": "images/avatar-agustin.jpg",
+      "image": "/images/avatar-agustin.jpg",
       "role": "Director Ejecutivo",
       "bio": "Sociólogo y Máster en Gestión Urbanística. Porteño, melómano, cinéfilo, y algo más.",
       "social": [{ "type": "twitter", "handle": "agustinfrizzera" }, { "type": "email", "address": "agustin@democraciaenred.org" }]
     },
     {
       "name": "Guido Vilariño",
-      "image": "images/avatar-guido.jpg",
+      "image": "/images/avatar-guido.jpg",
       "role": "Consultor Software",
       "bio": "Rock. Explicaciones claras de conceptos informáticos garantizadas. Gurú del desarrollo lean.",
       "social": [{ "type": "twitter", "handle": "gvilarino" }, { "type": "email", "address": "guido@democraciaenred.org" }]
     },
     {
       "name": "Esteban Brenman",
-      "image": "images/avatar-esteban.jpg",
+      "image": "/images/avatar-esteban.jpg",
       "role": "Vicepresidente",
       "bio": "Emprendedor compulsivo. Hace @trilapp",
       "social": [{ "type": "twitter", "handle": "ebrenman" }, { "type": "email", "address": "esteban@democraciaenred.org" }]
     },
     {
       "name": "Sebastián Fernández",
-      "image": "images/avatar-sebaf.jpg",
+      "image": "/images/avatar-sebaf.jpg",
       "role": "Diseñador",
       "bio": "Diseñador, fotógrafo, contador de chistes y dueño de una barba.",
       "social": [{ "type": "email", "address": "sebastian@democraciaenred.org" }]
     },
     {
       "name": "Matías Lescano",
-      "image": "images/avatar-matias.jpg",
+      "image": "/images/avatar-matias.jpg",
       "role": "Desarrollador",
       "bio": "Programador práctico con ojo para el diseño y buen humor crónico.",
       "social": [{ "type": "email", "address": "matias@democraciaenred.org" }]
     },
     {
       "name": "Florencia Polimeni",
-      "image": "images/avatar-florencia.png",
+      "image": "/images/avatar-florencia.png",
       "role": "Presidenta",
       "bio": "Es politóloga de formación y exploradora de vocación. Artesana, viajera, madre, coleccionista de arte y militante.",
       "social": [{ "type": "twitter", "handle": "juicyminerva" }, { "type": "email", "address": "florencia@democraciaenred.org" }]
     },
     {
       "name": "José Fresco",
-      "image": "images/avatar-jose.jpg",
+      "image": "/images/avatar-jose.jpg",
       "role": "Desarrollador",
       "bio": "Mató dos issues en su primer día. Maestro de la máquina de cafe, entre otras. Keanu Reeves se parece a él.",
       "social": [{ "type": "twitter", "handle": "jfresco82" }, { "type": "github", "handle": "jfresco" }, { "type": "email", "address": "jose@democraciaenred.org" }] },
     {
       "name": "Sacha Lifszyc",
-      "image": "images/avatar-sacha.jpg",
+      "image": "/images/avatar-sacha.jpg",
       "role": "Desarrollador",
       "bio": "Pensando en JavaScript todo el tiempo. Programador y maestro.",
       "social": [{ "type": "twitter", "handle": "slifszyc" }, { "type": "github", "handle": "slifszyc" }, { "type": "email", "address": "sacha@democraciaenred.org" }]
     },
     {
       "name": "Don Powa",
-      "image": "images/avatar-powa.jpg",
+      "image": "/images/avatar-powa.jpg",
       "role": "Comunicación",
       "bio": "Curioso, disléxico y compulsivo. Optimista emocional y pesimista cerebral.",
       "social": [{ "type": "linkedin", "handle": "don-powa-59290473" }, { "type": "email", "address": "powa@democraciaenred.org" }]
     },
     {
       "name": "Mariano Lopata",
-      "image": "images/avatar-marianol.jpg",
+      "image": "/images/avatar-marianol.jpg",
       "role": "Director de Educación",
       "bio": "Psicólogo; Especialista en Metodología y Director de Investigación de SOLE Argentina. Maestro nítido de ideas simples y poderosas.",
       "social": [{ "type": "twitter", "handle": "marianolopata" }, { "type": "email", "address": "mglopata@democraciaenred.org" }]
     },
     {
       "name": "Ana Lis Rodríguez Nardelli",
-      "image": "images/avatar-ana.jpg",
+      "image": "/images/avatar-ana.jpg",
       "role": "Investigación",
       "bio": "Antropóloga, investigadora, militante. Poesía y buen humor.",
       "social": [{ "type": "twitter", "handle": "annagramma" }, { "type": "email", "address": "ana@democraciaenred.org" }]
     },
     {
       "name": "Martín Galanternik",
-      "image": "images/avatar-mart.jpg",
+      "image": "/images/avatar-mart.jpg",
       "role": "Director de Proyectos",
       "bio": "Politologo. Fundador y director de Minu. Todo lo que hay que saber para organizarse.",
       "social": [{ "type": "twitter", "handle": "mgalanternik" }, { "type": "email", "address": "martin@democraciaenred.org" }] },
     {
       "name": "Felipe Muñoz",
-      "image": "images/avatar-felipe.jpg",
+      "image": "/images/avatar-felipe.jpg",
       "role": "Implementador DemocracyOS",
       "bio": "On ne tue point les idées.",
       "social": [{ "type": "twitter", "handle": "felipemuni" }, { "type": "email", "address": "felipe@democraciaenred.org" }]
@@ -207,6 +208,11 @@
     ]
   },
   "footer": {
-    "motto": "Es hora de que resolvamos los problemas de hoy con las herramientas de hoy."
+    "motto": "Es hora de que resolvamos los problemas de hoy con las herramientas de hoy.",
+    "jobs": "Trabajos"
+  },
+  "jobs": {
+    "title": "Trabajos | Democracia en Red Foundation",
+    "description": "Nos unimos para innovar donde nadie esta innovando aún, en el sistema político."
   }
 }

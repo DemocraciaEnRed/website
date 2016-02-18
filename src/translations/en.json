@@ -1,5 +1,6 @@
 {
   "lang": "en",
+  "langUrl": "en/",
   "site": {
     "title": "Democracia en Red Foundation",
     "description": "Internet is changing the political system. We develop strategies to upgrade the democratic system to the XXIst Century."
@@ -21,19 +22,19 @@
     "title": "Projects",
     "list": [
       {
-        "image": "projects-dos.png",
+        "image": "/images/projects-dos.png",
         "screenshots": ["cap-dos.jpg"],
         "links": [ { "text": "democracyos.org", "url": "http://democracyos.org/" } ],
         "description": "DemocracyOS is an open-source web application designed to improve the chances of citizen to participate in decision-making processes. This is the technological manifestation of our main mision: to bring the political system closer to those behaviors and technologies of this century."
       },
       {
-        "image": "projects-civic.png",
+        "image": "/images/projects-civic.png",
         "screenshots": ["cap-civic.png"],
         "links": [ { "text": "civicstack.org", "url": "http://www.civicstack.org" } ],
         "description": "Civic stack is a showcase for open-source civic tech. It has been designed collaboratively as a window to show together all these technologies that are meant to empower citizens."
       },
       {
-        "image": "projects-demos.png",
+        "image": "/images/projects-demos.png",
         "screenshots": ["cap-demos.jpg"],
         "links": [
           { "text": "Legislatura CABA", "url": "http://demos.legislatura.gov.ar" },
@@ -42,7 +43,7 @@
         "description": "Demos is a project that seeks openess in political institutions. The experience allows every citizen to get informed, debate and vote on pieces of proposed legislation. An institutional bet on the idea of collective intelligence."
       },
       {
-        "image": "projects-sole.png",
+        "image": "/images/projects-sole.png",
         "screenshots": ["cap-sole.jpg"],
         "links": [
           { "text": "soleargentina.org", "url": "http://www.soleargentina.org" }
@@ -50,12 +51,12 @@
         "description": "SOLE crafts self-organized learning environments, based on the pedagogy of Sugata Mitra. It involves many children, a few computers and one big question. The Internet transforms the way we learn, also in the schools of Buenos Aires."
       },
       {
-        "image": "projects-academia.png",
+        "image": "/images/projects-academia.png",
         "screenshots": ["cap-academia.jpg"],
         "description": "Academia is a space where artists, researchers and those who have been experimenting and thinking the intersection between technology and power come together. Democracy in the Internet Era brings new questions and surprising scenarios. We explore them."
       },
       {
-        "image": "projects-3x3.png",
+        "image": "/images/projects-3x3.png",
         "screenshots": ["cap-tresportres.jpg"],
         "description": "Tres Por Tres (3 ON 3) is a series of conversations held by many people on specific subjects like electronic voting, candidate’s promises of openness and digital divide. Three organizations host three events to discuss, without speakers or lecterns, the impact of technology in Argentine politics."
       }
@@ -67,89 +68,89 @@
   "team": [
     {
       "name": "Agustín Frizzera",
-      "image": "images/avatar-agustin.jpg",
+      "image": "/images/avatar-agustin.jpg",
       "role": "Executive Director",
       "bio": "Sociologist with a major in urban management. Porteño (from Buenos Aires), music and films lover and something more.",
       "social": [{ "type": "twitter", "handle": "agustinfrizzera" }, { "type": "email", "address": "agustin@democraciaenred.org" }]
     },
     {
       "name": "Guido Vilariño",
-      "image": "images/avatar-guido.jpg",
+      "image": "/images/avatar-guido.jpg",
       "role": "Software Consultant",
       "bio": "Rock. Clear explanations of complicated hacking concepts for granted. Lean product design guru.",
       "social": [{ "type": "twitter", "handle": "gvilarino" }, { "type": "email", "address": "guido@democraciaenred.org" }]
     },
     {
       "name": "Esteban Brenman",
-      "image": "images/avatar-esteban.jpg",
+      "image": "/images/avatar-esteban.jpg",
       "role": "Vicepresident",
       "bio": "I make @trilapp",
       "social": [{ "type": "twitter", "handle": "ebrenman" }, { "type": "email", "address": "esteban@democraciaenred.org" }]
     },
     {
       "name": "Sebastián Fernández",
-      "image": "images/avatar-sebaf.jpg",
+      "image": "/images/avatar-sebaf.jpg",
       "role": "Designer",
       "bio": "Designer, photographer, joke teller, owner of a beard.",
       "social": [{ "type": "email", "address": "sebastian@democraciaenred.org" }]
     },
     {
       "name": "Matías Lescano",
-      "image": "images/avatar-matias.jpg",
+      "image": "/images/avatar-matias.jpg",
       "role": "Software engineer",
       "bio": "Pragmatic programmer with an eye for design and chronic good mood.",
       "social": [{ "type": "email", "address": "matias@democraciaenred.org" }]
     },
     {
       "name": "Florencia Polimeni",
-      "image": "images/avatar-florencia.png",
+      "image": "/images/avatar-florencia.png",
       "role": "President",
       "bio": "Political scientist with a vocation for exploration. Crafting, traveling, mother, art collector and militant.",
       "social": [{ "type": "twitter", "handle": "juicyminerva" }, { "type": "email", "address": "florencia@democraciaenred.org" }]
     },
     {
       "name": "José Fresco",
-      "image": "images/avatar-jose.jpg",
+      "image": "/images/avatar-jose.jpg",
       "role": "Software engineer",
       "bio": "Killed two issues in his first day. Master of the coffee machine among others. Keanu Reeves looks like him.",
       "social": [{ "type": "twitter", "handle": "jfresco82" }, { "type": "github", "handle": "jfresco" }, { "type": "email", "address": "jose@democraciaenred.org" }] },
     {
       "name": "Sacha Lifszyc",
-      "image": "images/avatar-sacha.jpg",
+      "image": "/images/avatar-sacha.jpg",
       "role": "Software engineer",
       "bio": "All day JavaScript thinker, programmer and teacher.",
       "social": [{ "type": "twitter", "handle": "slifszyc" }, { "type": "github", "handle": "slifszyc" }, { "type": "email", "address": "sacha@democraciaenred.org" }]
     },
     {
       "name": "Don Powa",
-      "image": "images/avatar-powa.jpg",
+      "image": "/images/avatar-powa.jpg",
       "role": "Communication",
       "bio": "Curious, dislexic and compulsive. Emotional optimist and brain pessimist.",
       "social": [{ "type": "linkedin", "handle": "don-powa-59290473" }, { "type": "email", "address": "powa@democraciaenred.org" }]
     },
     {
       "name": "Mariano Lopata",
-      "image": "images/avatar-marianol.jpg",
+      "image": "/images/avatar-marianol.jpg",
       "role": "Director of Education",
       "bio": "Psychologist; Specialist in Methodology and Director of Research in SOLE Argentina. Part of SOLE Argentina. Precise teacher of simple and powerful ideas. Distinct master of simple and powerful ideas",
       "social": [{ "type": "twitter", "handle": "marianolopata" }, { "type": "email", "address": "mglopata@democraciaenred.org" }]
     },
     {
       "name": "Ana Lis Rodríguez Nardelli",
-      "image": "images/avatar-ana.jpg",
+      "image": "/images/avatar-ana.jpg",
       "role": "Researcher",
       "bio": "Anthropologist, researcher, militant. A lot of poetry and a lot of fun.",
       "social": [{ "type": "twitter", "handle": "annagramma" }, { "type": "email", "address": "ana@democraciaenred.org" }]
     },
     {
       "name": "Martín Galanternik",
-      "image": "images/avatar-mart.jpg",
+      "image": "/images/avatar-mart.jpg",
       "role": "Director of Projects",
       "bio": "Political scientist. Founder and director of Minu. Everything you have to know to organize.",
       "social": [{ "type": "twitter", "handle": "mgalanternik" }, { "type": "email", "address": "martin@democraciaenred.org" }] },
     {
       "name": "Felipe Muñoz",
-      "image": "images/avatar-felipe.jpg",
+      "image": "/images/avatar-felipe.jpg",
       "role": "DemocracyOS Implementer",
       "bio": "On ne tue point les idées.",
       "social": [{ "type": "twitter", "handle": "felipemuni" }, { "type": "email", "address": "felipe@democraciaenred.org" }]
@@ -201,6 +202,11 @@
     ]
   },
   "footer": {
-    "motto": "It's time we solve todays' problems with todays' tools."
+    "motto": "It's time we solve todays' problems with todays' tools.",
+    "jobs": "Jobs"
+  },
+  "jobs": {
+    "title": "Jobs | Democracia en Red Foundation",
+    "description": "Internet is changing the political system. We develop strategies to upgrade the democratic system to the XXIst Century."
   }
 }

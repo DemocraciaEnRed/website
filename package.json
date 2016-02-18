@@ -7,7 +7,7 @@
     "start": "ws",
     "watch:js": "chokidar './src/*.js' './src/**/*.js' -c 'make javascripts'",
     "watch:css": "chokidar './src/*.styl' './src/**/*.styl' -c 'make stylesheets'",
-    "watch:html": "chokidar './src/*.jade' './src/**/*.jade' './src/**/*.json' -c 'make index.html index-en.html'",
+    "watch:html": "chokidar './src/*.jade' './src/**/*.jade' './src/**/*.json' -c 'make index.html index-en.html jobs.html jobs-en.html'",
     "watch": "make && npm run watch:js & npm run watch:css & npm run watch:html"
   },
   "repository": {
@@ -24,6 +24,7 @@
     "browserify": "^11.2.0",
     "chokidar-cli": "^1.2.0",
     "jade": "^1.11.0",
+    "jstransformer-markdown": "^1.1.0",
     "local-web-server": "^0.5.23",
     "stylus": "^0.52.4"
   },

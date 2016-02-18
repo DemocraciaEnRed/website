@@ -3,5 +3,6 @@ footer
     p=footer.motto
     ul.nav
       - each item in header.items
-        li: a(href="#" + item.id, title="")=item.description
+        li: a(href="#" + item.id)=item.description
+      li: a(href='/' + langUrl + 'jobs.html')= footer.jobs
     include ../social-buttons/index

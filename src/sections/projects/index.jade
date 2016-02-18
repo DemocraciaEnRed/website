@@ -1,11 +1,11 @@
 mixin project(data)
   .project-card(data-description=data.description)
-    a.expand: img.image(src='images/' + data.image)
+    a.expand: img.image(src=data.image)
     .description-overlay
       button.close ×
       .screenshots
         - if (data.screenshots && data.screenshots.length)
-          img.screenshot(src='images/' + data.screenshots[0])
+          img.screenshot(src=data.screenshots[0])
       .text
         .title
           h4=data.title
@@ -17,7 +17,7 @@ mixin project(data)
 
 section.proyectos.section#proyectos
   .section-title
-    img(src="images/icons/icon-1.png")
+    img(src="/images/icons/icon-1.png")
     h2=projects.title
 
    .projects

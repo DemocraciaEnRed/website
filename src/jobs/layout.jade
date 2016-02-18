@@ -1,0 +1,35 @@
+doctype html
+html(lang=lang)
+  head
+    meta(charset="utf-8")
+    title=site.title
+    meta(content=site.description, name="description")
+    meta(content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0", name="viewport")
+
+    meta(property='og:type', content='website')
+    meta(property='og:image', content='logo-card.png')
+    meta(property='og:url', content='http://democraciaenred.org')
+
+    meta(name='twitter:card', content='summary')
+    meta(name='twitter:site', content='@fundacionder')
+    meta(name='twitter:image', content='logo-card.png')
+
+    link(href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css", rel="stylesheet")
+    link(href="/stylesheets/fonts/social.css", rel="stylesheet")
+    link(href="/stylesheets/app.css", rel="stylesheet")
+    link(href="/images/der-favicon.ico", rel="shortcut icon")
+
+    //- <!--[if lt IE 9]>
+    //- <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    //- <![endif]-->
+
+    link(href='https://fonts.googleapis.com/css?family=Muli:400,300', rel='stylesheet', type='text/css')
+
+body.jobs
+  header
+    a(href="/", title="Home")
+      img.logo(src="/images/logo-der-home.png")
+
+  block content
+
+  include ../utils/ga
