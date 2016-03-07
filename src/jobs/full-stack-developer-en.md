@@ -28,4 +28,4 @@ We've recently been through [YCombinator](http://www.ycombinator.com/) and are b
 
 We are [100% open source](https://github.com/DemocracyOS) and will always stay that way. We also have a habit of giving back to the Open Source community either by collaborating on other OSS projects, or by joining international hackathons related to Open Data initiatives, civic hacking, and the like. Our development community is large and strong, and our main repo has over 1100 stars and 350 forks, as well as available in over 19 languages.
 
-Learn more about us on our [site](http://democraciaenred.org/index-en.html).
+Learn more about us on our [site](http://democraciaenred.org/en).
