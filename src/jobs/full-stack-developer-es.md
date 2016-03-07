@@ -26,4 +26,4 @@ Fuimos una de las 3 organizaciones sin fines de lucro en Y Combinator en el 2015
 
 Todos nuestros desarrollos son [100% Open Source](https://github.com/DemocracyOS). También tenemos el compromiso de contribuir a la comunidad de código abierto, ya sea mediante la colaboración en otros proyectos de software libre, o uniéndonos a hackatones internacionales relacionados con iniciativas de Open Data, mejora de roles cívicos, y similares. Nuestra comunidad de desarrollo es grande y activa: nuestro principal repositorio tiene más de 1100 stars y 350 forks y se encuentra disponible en más de 19 idiomas.
 
-Más info en [democraciaenred.org](http://democraciaenred.org/index-en.html).
+Más info en [democraciaenred.org](http://democraciaenred.org/).
