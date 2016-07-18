@@ -94,19 +94,6 @@
       "social": [{ "type": "twitter", "handle": "juicyminerva" }, { "type": "email", "address": "florencia@democraciaenred.org" }]
     },
     {
-      "name": "José Fresco",
-      "image": "/images/avatar-jose.jpg",
-      "role": "Desarrollador",
-      "bio": "Mató dos issues en su primer día. Maestro de la máquina de cafe, entre otras. Keanu Reeves se parece a él.",
-      "social": [{ "type": "twitter", "handle": "jfresco82" }, { "type": "github", "handle": "jfresco" }, { "type": "email", "address": "jose@democraciaenred.org" }] },
-    {
-      "name": "Sacha Lifszyc",
-      "image": "/images/avatar-sacha.jpg",
-      "role": "Desarrollador",
-      "bio": "Pensando en JavaScript todo el tiempo. Programador y maestro.",
-      "social": [{ "type": "twitter", "handle": "slifszyc" }, { "type": "github", "handle": "slifszyc" }, { "type": "email", "address": "sacha@democraciaenred.org" }]
-    },
-    {
       "name": "Don Powa",
       "image": "/images/avatar-powa.jpg",
       "role": "Comunicación",
@@ -132,13 +119,7 @@
       "image": "/images/avatar-mart.jpg",
       "role": "Director de Proyectos",
       "bio": "Politologo. Fundador y director de Minu. Todo lo que hay que saber para organizarse.",
-      "social": [{ "type": "twitter", "handle": "mgalanternik" }, { "type": "email", "address": "martin@democraciaenred.org" }] },
-    {
-      "name": "Felipe Muñoz",
-      "image": "/images/avatar-felipe.jpg",
-      "role": "Implementador DemocracyOS",
-      "bio": "On ne tue point les idées.",
-      "social": [{ "type": "twitter", "handle": "felipemuni" }, { "type": "email", "address": "felipe@democraciaenred.org" }]
+      "social": [{ "type": "twitter", "handle": "mgalanternik" }, { "type": "email", "address": "martin@democraciaenred.org" }]
     }
   ],
   "book": {
