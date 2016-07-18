@@ -1,16 +1,18 @@
-Full Stack Developer
+UX/UI Designer
 ===
 
-Te estamos buscando para ayudarnos a concebir el futuro de la participación ciudadana.
+En Democracia en Red te estamos buscando para ayudarnos a concebir nuevas formas de participación ciudadana. Vas a ayudarnos a definir el producto, diseñar nuestra identidad online, y crear e idear prototipos de forma colaborativa.
 
 Si te apasiona la construcción de experiencias significativas con un impacto profundo, global, social y cívico, queremos que seas parte de Democracia en Red!
 
 ## Requerimientos
 
-- Experiencia relevante desarrollando aplicaciones medianas o grandes.
-- Capacidad para establecer metas en proyectos y traducirlas en Issues.
-- Experiencia con JavaScript.
-- Fuerte experiencia con HTML y CSS, buen ojo para los detalles implementando diseños.
+- Experiencia usando Sketch o Adobe CC.
+- Conocimientos de UX & User reaserch.
+- Interés en herramientas de prototipado (Invision, Framer, Principle, Flinto, Origami, etc.).
+- Meticulosidad.
+- Inglés intermedio.
+- Ser crack en HTML y CSS suma.
 
 ## ¡Sumate!
 

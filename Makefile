@@ -6,7 +6,7 @@ run: build
 build: node_modules javascripts stylesheets index.html index-en.html jobs.html jobs-en.html
 
 javascripts:
-	$(BIN)browserify src/index.js  > javascripts/site.js
+	$(BIN)browserify src/index.js  > javascripts/site.js && browserify src/jobs/index.js  > javascripts/jobs.js
 
 stylesheets:
 	$(BIN)stylus --compress < src/index.styl --include-css > stylesheets/app.css

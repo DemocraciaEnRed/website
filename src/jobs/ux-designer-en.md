@@ -1,16 +1,17 @@
-Full Stack Developer
-====================
+UX/UI Designer
+===
 
-We're looking for a Full Stack Developer to help us conceive the future of citizen participation.
+We're looking for a UX/UI Designer to help us conceive the future of citizen participation. You will help us to define the right product strategy, design our online identity, and to ideating and creating prototypes in an iterative and collaborative process.
 
 If you're passionate about building meaningful experiences with deep, global, social and civic impact, our team needs you!
 
 ## Qualifications
 
-- Relevant experience developing mid or large size applications on a team.
-- Ability to set goals for projects and putting them on issues.
-- Strong experience with JavaScript.
-- Strong experience with HTML and CSS, with a keen eye for details on implementations.
+- Proficiency in in Sketch or Adobe CC.
+- Love for UX & User research.
+- Interest in prototyping tools and demonstrated proficiency in a tool of choosing (Invision, Framer, Principle, Flinto, Origami, etc.).
+- Keen for details.
+- Writing HTML y CSS is a plus.
 
 ## Join us!
 

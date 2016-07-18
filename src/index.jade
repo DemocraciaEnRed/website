@@ -22,15 +22,11 @@ html(lang=lang)
     link(href="/stylesheets/fonts/social.css", rel="stylesheet")
     link(href="/stylesheets/app.css", rel="stylesheet")
     link(href="/images/der-favicon.ico", rel="shortcut icon")
+    
     //- <!--[if lt IE 9]>
     //- <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     //- <![endif]-->
-
-    script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js", type="text/javascript")
-    script(src="/javascripts/vendor/jquery.scrollTo.min.js", type="text/javascript")
-    script(src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js", type="text/javascript")
-    link(href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800', rel='stylesheet', type='text/css')
-
+    
 body(data-offset="120", data-spy="scroll", data-target=".navbar")
   include src/header/index
 
@@ -45,5 +41,11 @@ body(data-offset="120", data-spy="scroll", data-target=".navbar")
 
   include src/footer/index
 
+  script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js", type="text/javascript")
+  script(src="/javascripts/vendor/jquery.scrollTo.min.js", type="text/javascript")
+  script(src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js", type="text/javascript")
   script(src="/javascripts/site.js", type="text/javascript")
+
+  link(href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800', rel='stylesheet', type='text/css')
+  
   include src/utils/ga
