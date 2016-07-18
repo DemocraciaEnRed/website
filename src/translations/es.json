@@ -36,16 +36,6 @@
         "description": "Civic Stack es un repositorio de aplicaciones de código abierto diseñadas para generar impacto cívico. Es una ventana que agrupa y facilita el acceso a tecnologías diseñadas para empoderar a la ciudadanía."
       },
       {
-        "title": "Demos",
-        "image": "/images/projects-demos.png",
-        "screenshots": ["/images/cap-demos.jpg"],
-        "links": [
-          { "text": "Legislatura CABA", "url": "https://docs.google.com/document/d/1bZOd09bd-y_aPgUat9SQ8EchUawroMtmYQn0vm-BvQU/edit?usp=sharing" },
-          { "text": "Bahía Blanca", "url": "http://bahiablanca.democracyos.org" }
-        ],
-        "description": "Demos es un proyecto para fomentar la apertura en instituciones políticas. Sus implementaciones permiten a la ciudadanía informarse, debatir y votar sobre proyectos de ley, bajo la premisa de que “más, pensamos mejor”."
-      },
-      {
         "title": "Proyecto SOLE",
         "image": "/images/projects-sole.png",
         "screenshots": ["/images/cap-sole.jpg"],
@@ -54,18 +44,6 @@
           { "text": "soleargentina.org", "url": "http://www.soleargentina.org" }
         ],
         "description": "SOLE (en inglés, “Self-Organised-Learning-Enviroments”) crea entornos de aprendizaje autoorganizados para aprender a través del uso compartido de computadoras y preguntas disparadoras. Basados en la pedagogía de Sugata Mitra, estamos evolucionando la forma de aprender, también, en escuelas públicas de la Ciudad de Buenos Aires."
-      },
-      {
-        "title": "Academia",
-        "image": "/images/projects-academia.png",
-        "screenshots": ["/images/cap-academia.jpg"],
-        "description": "Academia es un espacio de encuentro con artistas, investigadores y personas que vienen pensando y experimentando el cruce entre el poder y el mundo digital. La democracia en la era de internet trae nuevas inquietudes y escenarios que asombran."
-      },
-      {
-        "title": "Tres por tres",
-        "image": "/images/projects-3x3.png",
-        "screenshots": ["/images/cap-tresportres.jpg"],
-        "description": "TRES POR TRES es un ciclo de conversaciones de muchos a muchos, con temáticas específicas. Tres eventos y tres organizaciones discuten, sin oradores y sin palestras, el impacto de la tecnología en la política argentina."
       }
     ]
   },

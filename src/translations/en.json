@@ -34,31 +34,12 @@
         "description": "Civic stack is a showcase for open-source civic tech. It has been designed collaboratively as a window to show together all these technologies that are meant to empower citizens."
       },
       {
-        "image": "/images/projects-demos.png",
-        "screenshots": ["/images/cap-demos.jpg"],
-        "links": [
-          { "text": "Legislatura CABA", "url": "http://demos.legislatura.gov.ar" },
-          { "text": "Bahía Blanca", "url": "http://bahiablanca.democracyos.org" }
-        ],
-        "description": "Demos is a project that seeks openess in political institutions. The experience allows every citizen to get informed, debate and vote on pieces of proposed legislation. An institutional bet on the idea of collective intelligence."
-      },
-      {
         "image": "/images/projects-sole.png",
         "screenshots": ["/images/cap-sole.jpg"],
         "links": [
           { "text": "soleargentina.org", "url": "http://www.soleargentina.org" }
         ],
         "description": "SOLE crafts self-organized learning environments, based on the pedagogy of Sugata Mitra. It involves many children, a few computers and one big question. The Internet transforms the way we learn, also in the schools of Buenos Aires."
-      },
-      {
-        "image": "/images/projects-academia.png",
-        "screenshots": ["/images/cap-academia.jpg"],
-        "description": "Academia is a space where artists, researchers and those who have been experimenting and thinking the intersection between technology and power come together. Democracy in the Internet Era brings new questions and surprising scenarios. We explore them."
-      },
-      {
-        "image": "/images/projects-3x3.png",
-        "screenshots": ["/images/cap-tresportres.jpg"],
-        "description": "Tres Por Tres (3 ON 3) is a series of conversations held by many people on specific subjects like electronic voting, candidate’s promises of openness and digital divide. Three organizations host three events to discuss, without speakers or lecterns, the impact of technology in Argentine politics."
       }
     ]
   },
