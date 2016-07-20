@@ -8,13 +8,16 @@ Si te apasiona la construcción de experiencias significativas con un impacto pr
 ## Requerimientos
 
 - Experiencia usando Sketch o Adobe CC.
-- Conocimientos de UX & User reaserch.
-- Interés en herramientas de prototipado (Invision, Framer, Principle, Flinto, Origami, etc.).
+- Conocimientos de UX y User-centered design.
+- Seguir la máxima "Prototipo, luego existo".
 - Meticulosidad.
 - Inglés intermedio.
-- Ser crack en HTML y CSS suma.
 
-## ¡Sumate!
+## Sumás con
+- Interés en herramientas de prototipado (Invision, Framer, Principle, Flinto, Origami, etc.).
+- Ser crack en HTML y CSS.
+
+## ¡Venite!
 
 Es un trabajo a tiempo completo en nuestras oficinas en Palermo, Buenos Aires, para trabajar en nuestro proyecto principal [DemocracyOS](http://github.com/DemocracyOS/democracyos), así como otros proyectos y sitios web.
 

@@ -8,10 +8,13 @@ If you're passionate about building meaningful experiences with deep, global, so
 ## Qualifications
 
 - Proficiency in in Sketch or Adobe CC.
-- Love for UX & User research.
+- Experience with UX & User-centered design.
+- Follow the principle "I prototype, therefore I am".
+- Have a keen eye for details.
+
+## Plus Points
 - Interest in prototyping tools and demonstrated proficiency in a tool of choosing (Invision, Framer, Principle, Flinto, Origami, etc.).
-- Keen for details.
-- Writing HTML y CSS is a plus.
+- Writing HTML y CSS.
 
 ## Join us!
 
