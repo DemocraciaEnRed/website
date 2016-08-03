@@ -14,6 +14,7 @@ Si te apasiona la construcción de experiencias significativas con un impacto pr
 - Inglés intermedio.
 
 ## Sumás con
+
 - Interés en herramientas de prototipado (Invision, Framer, Principle, Flinto, Origami, etc.).
 - Ser crack en HTML y CSS.
 

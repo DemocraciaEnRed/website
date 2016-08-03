@@ -9,7 +9,7 @@ If you're passionate about building meaningful experiences with deep, global, so
 
 - Relevant experience developing mid or large size applications on a team.
 - Ability to set goals for projects and putting them on issues.
-- Strong experience with JavaScript.
+- Strong experience with JavaScript (Back or Front).
 - Strong experience with HTML and CSS, with a keen eye for details on implementations.
 
 ## Join us!
