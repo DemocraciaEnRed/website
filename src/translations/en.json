@@ -83,6 +83,13 @@
       "social": [{ "type": "email", "address": "matias@democraciaenred.org" }]
     },
     {
+      "name": "Inti Bonomo",
+      "image": "/images/avatar-inti.jpg",
+      "role": "Pedagogy and Politics",
+      "bio": "or political pedagogy actually. Sensitive Man and Funk Fundamentalist",
+      "social": [{ "type": "email", "address": "inti@democraciaenred.org" }]
+    },
+    {
       "name": "Florencia Polimeni",
       "image": "/images/avatar-florencia.png",
       "role": "President",

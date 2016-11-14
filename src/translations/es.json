@@ -87,6 +87,13 @@
       "social": [{ "type": "email", "address": "matias@democraciaenred.org" }]
     },
     {
+      "name": "Inti Bonomo",
+      "image": "/images/avatar-inti.jpg",
+      "role": "Pedagogía y Política",
+      "bio": "o pedagogía política porque son indivisibles. Hombre sensible y fundamentalista del Funk.",
+      "social": [{ "type": "email", "address": "inti@democraciaenred.org" }]
+    },
+    {
       "name": "Florencia Polimeni",
       "image": "/images/avatar-florencia.png",
       "role": "Presidenta",
