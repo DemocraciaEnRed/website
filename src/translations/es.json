@@ -129,7 +129,13 @@
       "social": [{ "type": "twitter", "handle": "mgalanternik" }, { "type": "email", "address": "martin@democraciaenred.org" }]
     }
   ],
-  "book": {
+  "bookone": {
+    "title": "Recuperar la política",
+    "description": "Las transformaciones económicas, tecnológicas y culturales de las últimas décadas abren nuevos interrogantes: ¿De qué modo hacemos frente a estos desafíos? ¿Cómo se organiza el poder y la democracia en una sociedad líquida? ¿Cómo se definen las jurisdicciones de políticas públicas en sociedades, economías y problemas cada vez más globales?. Es en este marco que surgen y cobran significado las iniciativas para renovar la política.",
+    "downloadUrl": "http://www.recuperarlapolitica.org/",
+    "downloadText": "Descargar el libro"
+  },
+  "booktwo": {
     "title": "¿Qué democracia para el siglo XXI?",
     "description": "Activistas y organizaciones de toda América Latina nos preguntamos: ¿qué democracia podemos construir en nuestro contexto social y tecnológico?",
     "downloadUrl": "http://www.democraciaparaelsiglo21.org/",
@@ -156,8 +162,12 @@
     "description": "¿Quién nos financia? ¿Cómo gastamos? <br>Aquí toda la información contable resumida y con su soporte documental.",
     "actions": [
       {
-        "title": "Ingresos/Gastos 2015-16",
+        "title": "Ingresos/Gastos 2015-17",
         "url": "https://docs.google.com/spreadsheets/d/1y-jtDt62SbST3k1h2NEdNtHp_c7WJ7zX1uB_WpbLn0Q"
+      },
+      {
+        "title": "Balance 2015-16",
+        "url": "images/balances/2014-2015.pdf"
       },
       {
         "title": "Balance 2014-15",
@@ -166,10 +176,6 @@
       {
         "title": "Balance 2013-14",
         "url": "images/balances/2013-2014.pdf"
-      },
-      {
-        "title": "Balance 2012-13",
-        "url": "images/balances/2012-2013.pdf"
       }
     ]
   },
