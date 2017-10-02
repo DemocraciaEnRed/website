@@ -125,7 +125,16 @@
       "social": [{ "type": "twitter", "handle": "mgalanternik" }, { "type": "email", "address": "martin@democraciaenred.org" }]
     }
   ],
-  "book": {
+  "rinnp": {
+    "description": "We’re a group of Latin Americans affected by the state of democracy in our region. On July 1st, 2016, we met up in Buenos Aires and set ourselves the aim of building a network. Our first step was to collectively write a letter that speaks of our principles, values and political goals. We are united by the dream of a democracy of commons, a democracy that redistributes power, increases political inclusion and promotes human rights."
+  },
+  "bookone": {
+    "title": "Recuperar la política",
+    "description": "The economic, technological and cultural transformations of the last decades raise new questions: How do we face these challenges? How are power and democracy organized in a liquid society? How are jurisdictions of public policies defined in increasingly global societies, economies and issues? It is in this setting where initiatives to renew politics arise and find meaning.",
+    "downloadUrl": "http://www.recuperarlapolitica.org/",
+    "downloadText": "Download the book"
+  },
+  "booktwo": {
     "title": "¿Qué democracia para el siglo XXI?",
     "description": "As social and political activists from all over Latin America we wonder: What democracy can we build in our social and technological context?",
     "downloadUrl": "http://www.democraciaparaelsiglo21.org/",
@@ -152,20 +161,20 @@
     "description": "Who funds us? How we spend?<br>Here is all accounting summary information and documentary support.",
     "actions": [
       {
-        "title": "Income/Expenses 2015-16",
+        "title": "Income/Expenses 2015-17",
         "url": "https://docs.google.com/spreadsheets/d/1y-jtDt62SbST3k1h2NEdNtHp_c7WJ7zX1uB_WpbLn0Q"
       },
       {
+        "title": "Balance 2015-16",
+        "url": "/images/balances/2015-2016.pdf"
+      },
+      {
         "title": "Balance 2014-15",
-        "url": "images/balances/2014-2015.pdf"
+        "url": "/images/balances/2014-2015.pdf"
       },
       {
         "title": "Balance 2013-14",
-        "url": "images/balances/2013-2014.pdf"
-      },
-      {
-        "title": "Balance 2012-13",
-        "url": "images/balances/2012-2013.pdf"
+        "url": "/images/balances/2013-2014.pdf"
       }
     ]
   },
