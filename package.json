@@ -1,14 +1,12 @@
 {
   "name": "democraciaenred-website",
-  "version": "1.0.3",
+  "version": "2.0.0",
   "description": "Democracia en Red website",
   "main": "index.js",
   "scripts": {
-    "start": "ws",
-    "watch:js": "chokidar './src/*.js' './src/**/*.js' -c 'make javascripts'",
-    "watch:css": "chokidar './src/*.styl' './src/**/*.styl' -c 'make stylesheets'",
-    "watch:html": "chokidar './src/*.jade' './src/**/*.jade' './src/**/*.json' -c 'make index.html index-en.html jobs.html jobs-en.html'",
-    "watch": "make && npm run watch:js & npm run watch:css & npm run watch:html"
+    "dev": "next",
+    "build": "next build && next export",
+    "start": "next start"
   },
   "repository": {
     "type": "git",
@@ -20,15 +18,10 @@
     "url": "https://github.com/DemocraciaEnRed/democraciaenred.github.io/issues"
   },
   "homepage": "https://github.com/DemocraciaEnRed/democraciaenred.github.io#readme",
-  "devDependencies": {
-    "browserify": "^11.2.0",
-    "chokidar-cli": "^1.2.0",
-    "jade": "^1.11.0",
-    "jstransformer-remarkable": "^1.1.1",
-    "local-web-server": "^0.5.23",
-    "stylus": "^0.52.4"
-  },
+  "devDependencies": {},
   "dependencies": {
-    "dominus": "^5.0.6"
+    "next": "^4.1.2",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
   }
 }
