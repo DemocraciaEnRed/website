@@ -8,6 +8,7 @@ const SocialBar = () => (
       .social-bar {
         display: flexbox;
         flex-direction: column;
+        align-self: flex-end;
       }
 			.social-bar a{
 				background-size: auto 20px;

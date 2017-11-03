@@ -8,16 +8,20 @@ const Header = () => (
 		<Submit />
 		<SocialBar />
 		<style jsx>{`
-    	 header {
+    	header {
      		background-color: #dedede;
-    	 }
-    	 header h1 {
+        display: flex;
+        flex-direction: column;
+        padding: 94px 40px 32px 85px;
+    	}
+    	header h1 {
     		color: var(--white);
-    	 }
-    	 header p {
+    	}
+    	header p {
     		color: var(--white);
+        margin: 24px 0 48px;
         max-width: 598px;
-    	 }
+    	}
   	`}</style>
 	</header>
 	)
