@@ -1,0 +1,91 @@
+@font-face {
+  font-family: Dosis-Regular;
+  src: url(./fonts/Dosis-Regular.ttf);
+}
+
+@font-face {
+  font-family: Dosis-Bold;
+  src: url(./fonts/Dosis-Bold.ttf);
+}
+
+@font-face {
+  font-family: Dosis-SemiBold;
+  src: url(./fonts/Dosis-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: Dosis-Medium;
+  src: url(./fonts/Dosis-Medium.ttf);
+}
+
+@font-face {
+  font-family: Dosis-Light;
+  src: url(./fonts/Dosis-Light.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Dosis-Regular', 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #000;
+}
+
+body {
+  width: 100vw;
+  background-color: #fff;
+}
+
+h1 {
+  font-family: 'Dosis-Bold';
+  font-weight: bold;
+  font-size: 48px;
+}
+
+h2 {
+  font-family: 'Dosis-SemiBold';
+  font-weight: 600;
+  font-size: 42px;
+}
+
+h3 {
+  font-family: 'Dosis-Bold';
+  font-weight: bold;
+  font-size: 24px;
+}
+
+h4 {
+  font-family: 'Dosis-Medium';
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #565656;
+}
+
+p {
+  font-family: 'Dosis-Regular';
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.8px;
+}
+
+.btn {
+  background-color: #a763bf;
+  color: #fff;
+  border-radius: 100px;
+}
+
+.action-text {
+  font-family: 'Dosis-Medium';
+  font-weight: 500;
+  font-size: 32px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+/* INSERT MEDIA QUERIES */
+
+section {
+  padding: 48px 85px 42px;
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="272px" height="306px" viewBox="0 0 272 306" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 9</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-Copy" transform="translate(-85.000000, -1362.000000)">
+            <g id="Group-10" transform="translate(85.000000, 1362.000000)">
+                <g id="Group-9">
+                    <g id="Group-5">
+                        <rect id="Rectangle-23" fill="#F9F9F9" x="0" y="0" width="272" height="306"></rect>
+                        <rect id="Rectangle-23" fill="#BEBEBE" x="0" y="0" width="272" height="142.48337"></rect>
+                        <text id="Lorem-ipsum-dolor-si" font-family="Dosis-Medium, Dosis" font-size="24" font-weight="400" line-spacing="36" fill="#565656">
+                            <tspan x="22" y="179">Lorem ipsum dolor sit </tspan>
+                            <tspan x="22" y="215">amet this is title</tspan>
+                        </text>
+                        <text id="Label-here,-lorem-ip" font-family="Dosis-ExtraLight, Dosis" font-size="16" font-weight="300" line-spacing="36" fill="#565656">
+                            <tspan x="22" y="257">Label here, lorem ipsum</tspan>
+                        </text>
+                    </g>
+                    <g id="Group" transform="translate(106.000000, 44.000000)">
+                        <rect id="Rectangle-58" fill="#CACCCC" x="0" y="-1.13686838e-13" width="60" height="54.1666667"></rect>
+                        <polygon id="Triangle-1" fill="#F0F2F2" points="16.2354892 35 30.6799337 54.1983122 1.79104478 54.1983122"></polygon>
+                        <polygon id="Triangle-2" fill="#E3E5E6" points="37.7860697 25.8333333 59.4527363 53.9451477 16.119403 53.9451477"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
