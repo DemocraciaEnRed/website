@@ -6,9 +6,8 @@ const SocialBar = () => (
 		<a href='' className='github'></a>
 		<style jsx>{`
       .social-bar {
-        display: flexbox;
-        flex-direction: column;
         align-self: flex-end;
+        margin-top: 30px;
       }
 			.social-bar a{
 				background-size: auto 20px;
@@ -31,6 +30,14 @@ const SocialBar = () => (
     	.github {
     		background-image: url('/static/assets/icons/Github.svg');
     	}
+      @media (max-width: 500px) {
+        .social-bar {
+          align-self: center;
+        }
+        .social-bar a {
+          margin: 0;
+        }
+      }
   	`}</style>
   </nav>
 	)
