@@ -23,68 +23,105 @@
   src: url(./fonts/Dosis-Light.ttf);
 }
 
+@font-face {
+  font-family: Dosis-ExtraLight;
+  src: url(./fonts/Dosis-ExtraLight.ttf);
+}
+
+:root {
+  /* COLOURS */
+  --dark-accent: #a664be;
+  --light-accent: #a764bf;
+  --white: #fff;
+  --black: #000;
+  --gray: #565656;
+  --light-gray: #efefef;
+
+  /* FONTS */
+  --regular: 'Dosis-Regular';
+  --medium: 'Dosis-Medium';
+  --semibold: 'Dosis-Semibold';
+  --bold: 'Dosis-Bold';
+  --light: 'Dosis-Light';
+  --extralight: 'Dosis-ExtraLight';
+  
+  font-size: 10px;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Dosis-Regular', 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #000;
+  font-family: var(--regular), 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: var(--black);
 }
 
 body {
   width: 100vw;
   background-color: #fff;
-
-  --accent: #a664be;
-  --white: #fff;
-  --black: #000;
 }
 
 h1 {
-  font-family: 'Dosis-Bold';
+  font-family: var(--bold);
   font-weight: bold;
-  font-size: 48px;
+  font-size: 4.8rem;
 }
 
-h2 {
-  font-family: 'Dosis-SemiBold';
+.section-title {
+  font-family: var(--semibold);
   font-weight: 600;
-  font-size: 42px;
+  font-size: 4.2rem;
 }
 
-h3 {
-  font-family: 'Dosis-Bold';
+.subtitle {
+  font-family: var(--bold);
   font-weight: bold;
-  font-size: 24px;
+  font-size: 2.4rem;
 }
 
-h4 {
-  font-family: 'Dosis-Medium';
+.subtext {
+  font-family: var(--medium);
   font-weight: 500;
-  font-size: 24px;
+  font-size: 2.4rem;
   line-height: 1.5;
-  color: #565656;
+  color: var(--gray);
 }
 
-p {
-  font-family: 'Dosis-Regular';
-  font-size: 18px;
+.regular-text {
+  font-family: var(--regular);
+  font-size: 1.8rem;
   line-height: 2;
-  letter-spacing: 0.8px;
+  letter-spacing: 0.08rem;
+  color: var(--white);
+}
+
+.card-label {
+  font-family: var(--extralight);
+  font-weight: 200;
+  font-size: 1.6rem;
+  line-height: 2;
+  color: var(--gray);
 }
 
 .btn {
-  background-color: #a763bf;
-  color: #fff;
-  border-radius: 100px;
+  background-color: var(--light-accent);
+  color: var(--white);
+  border-radius: 10rem;
 }
 
 .action-text {
-  font-family: 'Dosis-Medium';
+  font-family: var(--medium);
   font-weight: 500;
-  font-size: 32px;
+  font-size: 3.2rem;
   text-align: center;
   text-transform: uppercase;
+}
+
+.submit-text {
+  font-family: var(--bold)
+  font-weight: bold;
+  font-size: 2.4rem;
+  color: var(--white);
 }
 
 
@@ -92,4 +129,12 @@ p {
 
 section {
   padding: 48px 85px 42px;
+}
+
+section:nth-child(odd) {
+  background-color: var(--white);
+}
+
+section:nth-child(even) {
+  background-color: var(--light-gray);
 }
