@@ -51,7 +51,7 @@ const AboutUs = () => (
       @media (max-width: 500px) {
         .about-us-container {
           flex-direction: column;
-          margin: 40px 0 0;
+          margin: 0;
         }
         .about-us-section button {
           display: none;

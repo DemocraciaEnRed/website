@@ -29,12 +29,14 @@ const Milestone = ( props ) => (
         .milestone-container .milestone-img {
           height: 140px;
           width: 140px;
+          margin-bottom: 0;
         }
         .milestone-container .subtitle {
           font-size: 1.9rem;
           margin: 21px 0 5.5px;
         }
         .milestone-container .subtext {
+          width: 80%;
           font-size: 1.9rem;
         }
       }
