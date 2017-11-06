@@ -67,6 +67,18 @@ h1 {
   font-size: 4.8rem;
 }
 
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  border: none;
+}
+
 .section-title {
   font-family: var(--semibold);
   font-weight: 600;
@@ -104,9 +116,22 @@ h1 {
 }
 
 .btn {
+  width: 30rem;
+  height: 5.5rem;
   background-color: var(--light-accent);
-  color: var(--white);
   border-radius: 10rem;
+  border-left: 1px solid var(--dark-accent);
+  border-right: 1px solid var(--dark-accent);
+  border-bottom: 3px solid var(--dark-accent);
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn:active {
+  border-bottom: 1px solid var(--dark-accent);
+  margin-top: 0.3rem;
 }
 
 .action-text {
@@ -115,26 +140,27 @@ h1 {
   font-size: 3.2rem;
   text-align: center;
   text-transform: uppercase;
+  color: var(--white);
 }
 
 .submit-text {
-  font-family: var(--bold)
+  font-family: var(--bold);
   font-weight: bold;
   font-size: 2.4rem;
   color: var(--white);
 }
 
 
-/* INSERT MEDIA QUERIES */
+/* REMINDER: INSERT MEDIA QUERIES? */
 
 section {
   padding: 48px 85px 42px;
 }
 
-section:nth-child(odd) {
+section:nth-child(even) {
   background-color: var(--white);
 }
 
-section:nth-child(even) {
+section:nth-child(odd) {
   background-color: var(--light-gray);
 }

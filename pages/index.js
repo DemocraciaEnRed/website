@@ -11,6 +11,7 @@ export default () => (
     <Layout>
       <section>
         <h1>Helloooooooo wooorld</h1>
+        <button className='btn'><span className='action-text'>Haz click!</span></button>
       </section>
     </Layout>
   </div>
