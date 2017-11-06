@@ -156,6 +156,10 @@ button {
   margin-top: 0.3rem;
 }
 
+.btn:hover {
+  opacity: 0.8;
+}
+
 .action-text {
   font-family: var(--medium);
   font-weight: 500;
