@@ -4,7 +4,7 @@ import SocialBar from '../components/SocialBar.js'
 const Header = () => (
 	<header>
 		<h1>Democracia en Red</h1>
-		<p className='subtitle'>Imaginamos, diseñamos e implementamos innovaciones en el sistema político para abrir los procesos de decisión y redistribuir el poder.</p>
+		<p className='subtext'>Imaginamos, diseñamos e implementamos innovaciones en el sistema político para abrir los procesos de decisión y redistribuir el poder.</p>
 		<Submit />
 		<SocialBar />
 		<style jsx>{`

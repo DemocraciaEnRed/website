@@ -33,6 +33,9 @@ const SocialBar = () => (
       @media (max-width: 500px) {
         .social-bar {
           align-self: center;
+          display: flex;
+          justify-content: space-around;
+          width: 100%;
         }
         .social-bar a {
           margin: 0;

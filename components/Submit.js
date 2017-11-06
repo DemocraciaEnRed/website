@@ -18,6 +18,9 @@ const Submit = () => (
     		height: 100%;
     		width: 75%;
     	}
+      .submit input:focus {
+        border: none;
+      }
     	.submit button {
     		background-color: var(--light-accent);
     		border: none;
@@ -30,6 +33,9 @@ const Submit = () => (
         .submit {
           max-width: 100%;
           height: 34px;
+        }
+        .submit-text {
+          font-size: 1.6rem;
         }
       }
   	`}</style>
