@@ -67,6 +67,14 @@ h1 {
   font-size: 4.8rem;
 }
 
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
 .section-title {
   font-family: var(--semibold);
   font-weight: 600;
@@ -107,6 +115,10 @@ h1 {
   background-color: var(--light-accent);
   color: var(--white);
   border-radius: 10rem;
+}
+
+.btn:hover {
+  opacity: 0.8;
 }
 
 .action-text {
