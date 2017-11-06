@@ -23,6 +23,7 @@ const AboutUs = () => (
       .about-us-section {
         display: flex;
         flex-direction: column;
+        alignt-content: space-between;
       }
       .about-us-container {
         display: flex;
