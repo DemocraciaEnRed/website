@@ -18,6 +18,7 @@ const Milestone = ( props ) => (
         background-color: var(--light-gray);
         border-radius: 100%;
         height: 173px;
+        margin-bottom: 23px;
         width: 173px;
       }
       .milestone-container .subtitle {

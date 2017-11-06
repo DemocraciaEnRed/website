@@ -23,12 +23,14 @@ const AboutUs = () => (
       .about-us-section {
         display: flex;
         flex-direction: column;
-        alignt-content: space-between;
+        justify-content: space-between;
+        height: 600px;
       }
       .about-us-container {
         display: flex;
         flex-wrap: nowrap;
         justify-content: space-between;
+        margin: 64px 0 30px;
       }
       .about-us-section .btn {
         align-self: center;
