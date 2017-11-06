@@ -1,4 +1,5 @@
 import CaseStudiesCard from '../components/CaseStudiesCard'
+import Flickity from 'flickity'
 
 const example = [
   {title: 'Lorem ipsum dolor sit amet', subtitle: 'Lorem ipsum dolor sit amet'},

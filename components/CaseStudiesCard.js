@@ -28,7 +28,7 @@ const CaseStudiesCard = (props) => (
       .case-studies-card-body .card-label {
         margin-top: 15px;
       }
-      @media (max-width: 500px) {
+      @media (max-width: 1024px) {
         .case-studies-card {
           height: 270px;
           width: 240px;
