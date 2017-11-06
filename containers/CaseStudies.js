@@ -1,10 +1,10 @@
 import CaseStudiesCard from '../components/CaseStudiesCard'
 
 const example = [
-  {title: 'Lorem ipsum dolor sit amet', subtitle: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'},
-  {title: 'Lorem ipsum dolor sit amet', subtitle: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'},
-  {title: 'Lorem ipsum dolor sit amet', subtitle: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'},
-  {title: 'Lorem ipsum dolor sit amet', subtitle: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'}
+  {title: 'Lorem ipsum dolor sit amet', subtitle: 'Lorem ipsum dolor sit amet'},
+  {title: 'Lorem ipsum dolor sit amet', subtitle: 'Lorem ipsum dolor sit amet'},
+  {title: 'Lorem ipsum dolor sit amet', subtitle: 'Lorem ipsum dolor sit amet'},
+  {title: 'Lorem ipsum dolor sit amet', subtitle: 'Lorem ipsum dolor sit amet'}
 ]
 
 const CaseStudies = () => (
@@ -29,6 +29,7 @@ const CaseStudies = () => (
       }
       .case-studies-section .case-studies-container{
         display: flex;
+        justify-content: space-between;
       }
       .case-studies-section .btn {
         align-self: center;

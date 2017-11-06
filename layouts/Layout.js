@@ -1,6 +1,7 @@
 import Navbar from '../containers/Navbar'
 import AboutUs from '../containers/AboutUs'
 import Header from '../containers/Header'
+import CaseStudies from '../containers/CaseStudies'
 
 const Layout = (props) => (
   <div>
@@ -8,6 +9,7 @@ const Layout = (props) => (
     <Header />
     {props.children}
     <AboutUs />
+    <CaseStudies />
   <style jsx>{`
     div {
       width: 100vw;
