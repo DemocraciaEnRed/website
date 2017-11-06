@@ -65,11 +65,11 @@ section {
   padding: 48px 85px 42px;
 }
 
-section:nth-child(even) {
+section:nth-child(odd) {
   background-color: var(--white);
 }
 
-section:nth-child(odd) {
+section:nth-child(even) {
   background-color: var(--light-gray);
 }
 
