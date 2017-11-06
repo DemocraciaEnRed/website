@@ -14,7 +14,7 @@ const CaseStudies = () => (
     </h2>
     <div className='case-studies-container'>
       {example.map((card, i) => {
-        return <CaseStudiesCard title={card.title} subtitle={card.subtitle} />
+        return <CaseStudiesCard key={i} title={card.title} subtitle={card.subtitle} />
       })}
     </div>
     <button className='btn'>
@@ -36,6 +36,22 @@ const CaseStudies = () => (
       }
       .case-studies-section .btn .action-text {
         color: var(--white);
+      }
+      @media (max-width: 500px) {
+        .case-studies-section .section-title {
+          font-size: 3.0rem;
+        }
+        .case-studies-section .case-studies-container {
+          flex-direction: column;
+          align-items: center;
+        }
+        .case-studies-section .btn {
+          height: 36.7px;
+          width: 200px;
+        }
+        .case-studies-section .btn .action-text {
+          font-size: 2.1rem;
+        }
       }
     `}</style>
   </section>

@@ -28,6 +28,27 @@ const CaseStudiesCard = (props) => (
       .case-studies-card-body .card-label {
         margin-top: 15px;
       }
+      @media (max-width: 500px) {
+        .case-studies-card {
+          height: 270px;
+          width: 240px;
+        }
+        .case-studies-card-img {
+          height: 125px;
+          width: 100%;
+        }
+        .case-studies-card-body {
+          padding: 10px 20px 27px;
+        }
+        .case-studies-card-body .subtext {
+          font-size: 2.1rem;
+          line-height: 1.5;
+          max-height: 63px;
+        }
+        .case-studies-card-body .card-label {
+          font-size: 1.4rem;
+        }
+      }
     `}</style>
   </div>
 )
