@@ -118,7 +118,7 @@ h1 {
 }
 
 .submit-text {
-  font-family: var(--bold)
+  font-family: var(--bold);
   font-weight: bold;
   font-size: 2.4rem;
   color: var(--white);

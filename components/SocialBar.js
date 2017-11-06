@@ -10,7 +10,7 @@ const SocialBar = () => (
         margin-top: 30px;
       }
 			.social-bar a{
-				background-size: auto 20px;
+				background-size: contain;
       	background-repeat: no-repeat;
       	background-position: center;
       	display: inline-block;
@@ -37,8 +37,9 @@ const SocialBar = () => (
           justify-content: space-around;
           width: 100%;
         }
-        .social-bar a {
-          margin: 0;
+        .social-bar a{
+          background-size: contain;
+          margin-left: 0px;
         }
       }
   	`}</style>

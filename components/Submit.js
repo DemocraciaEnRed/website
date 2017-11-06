@@ -22,7 +22,7 @@ const Submit = () => (
         border: none;
       }
     	.submit button {
-    		background-color: var(--light-accent);
+    		background-color: var(--dark-accent);
     		border: none;
     		border-radius: 0 10rem 10rem 0;
   			color: var(--white);

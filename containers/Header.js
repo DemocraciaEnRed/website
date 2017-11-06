@@ -19,13 +19,15 @@ const Header = () => (
     	}
     	header p {
     		color: var(--white);
+        line-height: 1.5;
+        letter-spacing: 0.08rem;
         margin: 24px 0 48px;
         max-width: 598px;
     	}
       @media (max-width: 500px) {
         header {
           align-items: center;
-          padding: 30px;
+          padding: 30px 26px 37px;
           text-align: center;
         }
         header h1 {
@@ -33,6 +35,8 @@ const Header = () => (
         }
         header p {
           font-size: 2.0rem;
+          letter-spacing: 0.07rem;
+          line-height: 3.6rem;
         }
       }
   	`}</style>
