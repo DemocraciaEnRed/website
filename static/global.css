@@ -30,7 +30,7 @@
 
 :root {
   /* COLOURS */
-  --dark-accent: #a664be;
+  --dark-accent: #8a509f;
   --light-accent: #a764bf;
   --white: #fff;
   --black: #000;
@@ -61,6 +61,18 @@ body {
   background-color: #fff;
 }
 
+section {
+  padding: 48px 85px 42px;
+}
+
+section:nth-child(even) {
+  background-color: var(--white);
+}
+
+section:nth-child(odd) {
+  background-color: var(--light-gray);
+}
+
 h1 {
   font-family: var(--bold);
   font-weight: bold;
@@ -73,6 +85,10 @@ a {
 
 ul {
   list-style-type: none;
+}
+
+button {
+  border: none;
 }
 
 .section-title {
@@ -112,9 +128,22 @@ ul {
 }
 
 .btn {
+  width: 30rem;
+  height: 5.5rem;
   background-color: var(--light-accent);
-  color: var(--white);
   border-radius: 10rem;
+  border-left: 1px solid var(--dark-accent);
+  border-right: 1px solid var(--dark-accent);
+  border-bottom: 3px solid var(--dark-accent);
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn:active {
+  border-bottom: 1px solid var(--dark-accent);
+  margin-top: 0.3rem;
 }
 
 .btn:hover {
@@ -127,26 +156,63 @@ ul {
   font-size: 3.2rem;
   text-align: center;
   text-transform: uppercase;
+  color: var(--white);
 }
 
 .submit-text {
-  font-family: var(--bold)
+  font-family: var(--bold);
   font-weight: bold;
   font-size: 2.4rem;
   color: var(--white);
 }
 
 
-/* INSERT MEDIA QUERIES */
+/* MEDIA QUERIES */
 
-section {
-  padding: 48px 85px 42px;
-}
+@media screen and (max-width: 1024px) {
 
-section:nth-child(odd) {
-  background-color: var(--white);
-}
+  section {
+    padding: 24px 24px 42px;
+  }
 
-section:nth-child(even) {
-  background-color: var(--light-gray);
+  h1 {
+    font-size: 2.6rem;
+  }
+
+  .section-title {
+    font-size: 3rem;
+  }
+
+  .subtitle {
+    font-size: 2rem;
+  }
+
+  .subtext {
+    font-size: 2rem;
+    /*line-height: 2.9rem;*/
+  }
+
+  .regular-text {
+    font-size: 1.8rem;
+    /*line-height: 2.4rem;*/
+  }
+
+  .card-label {
+    font-size: 1.4rem;
+    /*line-height: 3.8rem;*/
+  }
+
+  .btn {
+    width: 20rem;
+    height: 3.6rem;
+  }
+
+  .action-text {
+    font-size: 2.2rem;
+  }
+
+  .submit-text {
+    font-size: 1.5rem;
+  }
+
 }
