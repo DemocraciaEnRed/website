@@ -24,6 +24,24 @@ const Milestone = ( props ) => (
       .milestone-container .subtitle {
         text-transform: uppercase;
       }
+      @media (max-width: 1024px) {
+        .milestone-container .milestone-img {
+          height: 139px;
+          width: 139px;
+        }
+        .milestone-container .subtitle {
+          font-size: 1.9rem;
+        }
+        .milestone-container .subtext {
+          font-size: 1.9rem;
+        }
+      }
+      @media (max-width: 500px) {
+        .milestone-container {
+          width: 100%;
+          margin-bottom: 42px;
+        }
+      }
     `}</style>
   </div>
 )

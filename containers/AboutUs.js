@@ -24,7 +24,6 @@ const AboutUs = () => (
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 600px;
       }
       .about-us-container {
         display: flex;
@@ -39,6 +38,20 @@ const AboutUs = () => (
       }
       .about-us-section .btn span {
         color: var(--white);
+      }
+      @media (max-width: 1024px) {
+        .about-us-section .section-title {
+          font-size: 3.0rem;
+        }
+      }
+      @media (max-width: 500px) {
+        .about-us-container {
+          flex-direction: column;
+          margin: 40px 0 0;
+        }
+        .about-us-section button {
+          display: none;
+        }
       }
     `}</style>
 	</section>
