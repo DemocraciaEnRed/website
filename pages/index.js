@@ -9,9 +9,6 @@ export default () => (
       <link rel="stylesheet" type="text/css" href="/static/global.css" />
     </Head>
     <Layout>
-      <section>
-        <h1>Helloooooooo wooorld</h1>
-      </section>
     </Layout>
   </div>
   )
