@@ -18,19 +18,21 @@ const Milestone = ( props ) => (
         background-color: var(--light-gray);
         border-radius: 100%;
         height: 173px;
-        margin-bottom: 23px;
+        margin-bottom: 26px;
         width: 173px;
       }
       .milestone-container .subtitle {
         text-transform: uppercase;
+        margin-top: 7px;
       }
       @media (max-width: 1024px) {
         .milestone-container .milestone-img {
-          height: 139px;
-          width: 139px;
+          height: 140px;
+          width: 140px;
         }
         .milestone-container .subtitle {
           font-size: 1.9rem;
+          margin: 21px 0 5.5px;
         }
         .milestone-container .subtext {
           font-size: 1.9rem;
@@ -39,7 +41,7 @@ const Milestone = ( props ) => (
       @media (max-width: 500px) {
         .milestone-container {
           width: 100%;
-          margin-bottom: 42px;
+          margin-top: 42px;
         }
       }
     `}</style>

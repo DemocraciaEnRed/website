@@ -35,6 +35,7 @@ const AboutUs = () => (
         align-self: center;
         height: 55px;
         width: 300px;
+        margin-top: 30px;
       }
       .about-us-section .btn span {
         color: var(--white);
