@@ -1,20 +1,28 @@
 import React from 'react';
-
-
 let isChecked = 'Submit';
 
-function probando () {
-  isChecked = 'Cambie';
-}
-
 export default class Submit extends React.Component {
+  constructor (props) {
+    super(props);
+    this.state = {
+      checked: false
+    }
+  }
+
+  checkingButton = () => {
+    this.setState({checked: true})
+    setTimeout(() => this.setState({
+      checked: false,
+    }), 2000)
+  }
+
   render () {
     return (
       <div className='submit'>
         <input type='email' />
-        <button onClick={probando()}>
+        <button onClick={this.checkingButton}>
           <span className='submit-text'>
-      	 	 {isChecked} 
+      	 	 {this.state.checked ? 'Cambie' : 'Submit'} 
           </span>
         </button>
         <style jsx>{`
