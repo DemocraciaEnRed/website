@@ -76,7 +76,7 @@ section:nth-child(even) {
 
 h1 {
   font-family: var(--bold);
-  font-weight: bold;
+  font-weight: 500;
   font-size: 4.8rem;
 }
 
@@ -94,13 +94,13 @@ button {
 
 .section-title {
   font-family: var(--semibold);
-  font-weight: 600;
+  font-weight: 500;
   font-size: 4.2rem;
 }
 
 .subtitle {
   font-family: var(--bold);
-  font-weight: bold;
+  font-weight: 500;
   font-size: 2.4rem;
 }
 

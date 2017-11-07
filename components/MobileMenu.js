@@ -13,13 +13,13 @@ const MobileMenu = (props) => (
   <nav className='mobile-menu' role='navigation'>
     <header>
       <a className='logo' href='/'></a>
-      <a className='close-menu'></a>
+      <a className='close-menu' onClick={props.handleMobileMenu}></a>
     </header>
     <ul className='primary-links'>
       {props.links.map((link, i) => {
         return (
           <li key={i}>
-            <a className='nav-link'>{link.text}</a>
+            <a className='mobile-link'>{link.text}</a>
           </li>
         )
       })}
@@ -74,7 +74,7 @@ const MobileMenu = (props) => (
 
       .primary-links, .secondary-links {
         display: inline-block;
-        margin: 24px 0 0 72px;
+        margin: 24px 0 0 4em;
         width: fit-content;
         padding-top: 24px;
         border-top: solid 2px var(--dark-accent);
