@@ -10,7 +10,6 @@ export default class Submit extends React.Component {
   }
 
   checkingButton = () => {
-    this.isChecked = true
     this.setState({
       checked: true,
       hasClicked: true
