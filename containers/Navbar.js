@@ -29,7 +29,7 @@ render () {
   const links = [
   {
     href: "/",
-    text: "Selected"
+    text: "Item1"
   },
   {
     href: "#header",
@@ -69,7 +69,8 @@ render () {
       {this.state.mobile &&
         <MobileMenu
         links={links}
-        handleMobileMenu={this.handleMobileMenu} />
+        handleMobileMenu={this.handleMobileMenu}
+        activeLink={this.state.active} />
       }
       <style jsx>{`
         nav {
