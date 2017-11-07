@@ -51,8 +51,9 @@ const Navbar = () => (
         )
       })}
     </ul>
-    <div className='mobile-button' role='navigation'></div>
-    <MobileMenu />
+    <a className='mobile-button' role='navigation'></a>
+    <MobileMenu
+      links={links} />
     <style jsx>{`
       nav {
         position: fixed;
