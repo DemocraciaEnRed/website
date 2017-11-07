@@ -1,5 +1,4 @@
 import React from 'react';
-let isChecked = 'Submit';
 
 export default class Submit extends React.Component {
   constructor (props) {
