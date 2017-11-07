@@ -26,7 +26,7 @@ export default class Submit extends React.Component {
         <input type='email' />
         <button onClick={this.checkingButton}>
           {this.state.checked ?
-            <div className='checkbox' />
+            <object className='checkbox' data='./static/assets/checked.svg' />
            :
             <span className={`submit-text ${this.state.hasClicked ? 'submit-text-checked' : ''}`}>
       	 	   Submit
@@ -71,10 +71,10 @@ export default class Submit extends React.Component {
             to   { opacity: 1; }
           }
           .submit button .checkbox {
-            background-image: url('/static/assets/checked.svg');
+            /*background-image: url('/static/assets/checked.svg');
             background-size: contain;
             background-repeat: no-repeat;
-            background-position: center;
+            background-position: center;*/
             width: 40px;
             height: 40px;
           }

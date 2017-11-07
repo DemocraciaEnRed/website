@@ -4,7 +4,7 @@
         stroke-linecap: round;
         stroke-dasharray: 27;
         stroke-dashoffset: -23;
-        animation: dash 1000ms ease forwards;
+        animation: dash 500ms ease forwards;
       }
       @keyframes dash {
         to {
