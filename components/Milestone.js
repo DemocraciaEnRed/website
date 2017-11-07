@@ -4,7 +4,11 @@ const Milestone = ( props ) => (
     <h3 className='subtitle'>{props.title}</h3>
     <h4 className='subtext'>{props.subtitle}</h4>
     {props.button &&
-      <button className='btn'>Ver más</button>
+      <button className='btn'>
+        <span className='action-text'>
+          {props.button}
+        </span>
+      </button>
     }
     <style jsx>{`
       .milestone-container {
@@ -14,8 +18,11 @@ const Milestone = ( props ) => (
         text-align: center;
         width: 290px;
       }
+      .collaborate-container .milestone-container {
+        width: 424px;
+      }
       .milestone-img {
-        background-color: var(--light-gray);
+        background-color: var(--gray);
         border-radius: 100%;
         height: 173px;
         margin-bottom: 26px;
@@ -24,6 +31,9 @@ const Milestone = ( props ) => (
       .milestone-container .subtitle {
         text-transform: uppercase;
         margin-top: 7px;
+      }
+      .milestone-container .btn {
+        margin-top: 36px;
       }
       @media (max-width: 1024px) {
         .milestone-container .milestone-img {
