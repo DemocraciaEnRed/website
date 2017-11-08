@@ -25,32 +25,6 @@ handleMainMenu = (e) => {
 }
 
 render () {
-  const links = [
-  {
-    href: "/",
-    text: "Item1"
-  },
-  {
-    href: "#header",
-    text: "Item2"
-  },
-  {
-    href: "#about",
-    text: "Item3"
-  },
-  {
-    href: "#about",
-    text: "Item4"
-  },
-  {
-    href: "#about",
-    text: "Item5"
-  },
-  {
-    href: "#about",
-    text: "Item6"
-  }
-  ]
 
   return (
     <nav role='banner'>
@@ -58,7 +32,6 @@ render () {
       <a className='menu-button' role='navigation' onClick={this.handleMainMenu}></a>
       {this.state.menu &&
         <MainMenu
-        links={links}
         handleMainMenu={this.handleMainMenu}
         handleActiveLink={this.handleActiveLink}
         activeLink={this.state.active} />

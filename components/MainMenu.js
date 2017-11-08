@@ -1,12 +1,39 @@
+const primaryLinks = [
+  {
+    href: "/",
+    text: "Item1"
+  },
+  {
+    href: "#header",
+    text: "Item2"
+  },
+  {
+    href: "#about",
+    text: "Item3"
+  },
+  {
+    href: "#about",
+    text: "Item4"
+  },
+  {
+    href: "#about",
+    text: "Item5"
+  },
+  {
+    href: "#about",
+    text: "Item6"
+  }
+]
+
 const secondaryLinks = [
-{
-  href: "/contact",
-  text: "Contact"
-},
-{
-  href: "/jobs",
-  text: "Jobs"
-}
+  {
+    href: "/contact",
+    text: "Contact"
+  },
+  {
+    href: "/jobs",
+    text: "Jobs"
+  }
 ]
 
 
@@ -17,7 +44,7 @@ const MainMenu = (props) => (
       <a className='close-menu' onClick={props.handleMainMenu}></a>
     </header>
     <ul className='primary-links'>
-      {props.links.map((link, i) => {
+      {primaryLinks.map((link, i) => {
         return (
           <li key={i}>
             <a onClick={props.handleActiveLink(link.text)} className={`menu-link ${props.activeLink === link.text ? ' active' : ''}`}>{link.text}</a>
