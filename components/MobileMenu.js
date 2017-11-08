@@ -20,7 +20,7 @@ const MobileMenu = (props) => (
       {props.links.map((link, i) => {
         return (
           <li key={i}>
-            <a className='mobile-link'>{link.text}</a>
+            <a onClick={props.handleActiveLink(link.text)} className={`mobile-link ${props.activeLink === link.text ? ' active' : ''}`}>{link.text}</a>
           </li>
         )
       })}
@@ -29,7 +29,7 @@ const MobileMenu = (props) => (
       {secondaryLinks.map((link, i) => {
         return (
           <li key={i}>
-            <a className='mobile-link'>{link.text}</a>
+            <a onClick={props.handleActiveLink(link.text)} className={`mobile-link ${props.activeLink === link.text ? ' active' : ''}`}>{link.text}</a>
           </li>
         )
       })}

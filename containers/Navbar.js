@@ -70,6 +70,7 @@ render () {
         <MobileMenu
         links={links}
         handleMobileMenu={this.handleMobileMenu}
+        handleActiveLink={this.handleActiveLink}
         activeLink={this.state.active} />
       }
       <style jsx>{`
