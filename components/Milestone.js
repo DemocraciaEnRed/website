@@ -16,10 +16,7 @@ const Milestone = ( props ) => (
         flex-direction: column;
         align-items: center;
         text-align: center;
-        width: 290px;
-      }
-      .collaborate-container .milestone-container {
-        width: 424px;
+        width: ${props.containerWidth};
       }
       .milestone-img {
         background-color: var(--gray);

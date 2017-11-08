@@ -24,7 +24,8 @@ const Collaborate = () => (
             className='collaborate-milestone'
             title={it.subtitle} 
             subtitle={it.paragraph} 
-            button={it.button} />
+            button={it.button}
+            containerWidth={'auto'} />
         </div>     
     )}
     <style jsx>{`

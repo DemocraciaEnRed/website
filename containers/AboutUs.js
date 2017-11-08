@@ -11,7 +11,7 @@ const AboutUs = () => (
 		<h2 className='section-title'>About us</h2>
     <div className='about-us-container'>
       {items.map((item, i) => {
-        return <Milestone key={i} title={item.title} subtitle={item.subtitle} />
+        return <Milestone key={i} title={item.title} subtitle={item.subtitle} containerWidth={'290px'} />
       })}
     </div>
     <button className='btn'>
