@@ -129,7 +129,7 @@ button {
 }
 
 .btn {
-  width: 22.5rem;
+  width: 20rem;
   height: 5.5rem;
   background-color: var(--light-accent);
   border-radius: 10rem;
@@ -154,7 +154,7 @@ button {
 .action-text {
   font-family: var(--medium);
   font-weight: 500;
-  font-size: 3.2rem;
+  font-size: 2.4rem;
   text-align: center;
   text-transform: uppercase;
   color: var(--white);
