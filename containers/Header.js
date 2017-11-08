@@ -24,7 +24,7 @@ const Header = () => (
         margin: 24px 0 48px;
         max-width: 598px;
     	}
-      @media (max-width: 500px) {
+      @media (max-width: 1024px) {
         header {
           align-items: center;
           padding: 30px 26px 37px;

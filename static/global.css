@@ -156,6 +156,10 @@ button {
   font-size: 3.2rem;
   text-align: center;
   text-transform: uppercase;
+}
+
+.submit-text {
+  font-family: var(--bold);
   color: var(--white);
 }
 
@@ -166,7 +170,18 @@ button {
   color: var(--white);
 }
 
+/* INSERT MEDIA QUERIES */
 
+section {
+  padding: 48px 85px 42px;
+}
+
+section:nth-child(odd) {
+  background-color: var(--white);
+}
+
+section:nth-child(even) {
+  background-color: var(--light-gray);
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1024px) {
@@ -214,5 +229,4 @@ button {
   .submit-text {
     font-size: 1.5rem;
   }
-
 }
