@@ -9,6 +9,7 @@ const secondaryLinks = [
 }
 ]
 
+
 const MobileMenu = (props) => (
   <nav className='mobile-menu' role='navigation'>
     <header>
@@ -43,6 +44,7 @@ const MobileMenu = (props) => (
         display: flex;
         flex-direction: column;
         width: 100vw;
+        height: 100vh;
         background-color: var(--white);
         overflow-y: auto;
       }
@@ -50,6 +52,7 @@ const MobileMenu = (props) => (
       header {
         display: flex;
         justify-content: space-between;
+        flex: none;
       }
 
       .logo {
@@ -92,7 +95,7 @@ const MobileMenu = (props) => (
         text-transform: uppercase;
       }
 
-      .mobile-link:hover{
+      .active, .mobile-link:hover {
         color: var(--dark-accent);
       }
 
