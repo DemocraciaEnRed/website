@@ -1,4 +1,5 @@
 import React from 'react';
+import CheckedButton from './CheckedButton.js'
 
 export default class Submit extends React.Component {
   constructor (props) {
@@ -25,7 +26,7 @@ export default class Submit extends React.Component {
         <input type='email' />
         <button onClick={this.checkingButton}>
           {this.state.checked ?
-            <object className='checkbox' data='./static/assets/checked.svg' />
+            <CheckedButton />
            :
             <span className={`submit-text ${this.state.hasClicked ? 'submit-text-checked' : ''}`}>
       	 	   Submit
@@ -42,7 +43,7 @@ export default class Submit extends React.Component {
     		    border: none;
     		    border-radius: 10rem 0 0 10rem;
     		    height: 100%;
-    		    width: 75%;
+    		    width: 386px;
     	    }
           .submit input:focus {
             border: none;
@@ -55,7 +56,7 @@ export default class Submit extends React.Component {
             display: flex;
             justify-content: center;
     		    height: 100%;
-    		    width: 25%;
+    		    width: 202px;
     	    }
           .submit-text-checked {
             -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
@@ -68,14 +69,6 @@ export default class Submit extends React.Component {
           @keyframes fadein {
             from { opacity: 0; }
             to   { opacity: 1; }
-          }
-          .submit button .checkbox {
-            /*background-image: url('/static/assets/checked.svg');
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;*/
-            width: 40px;
-            height: 40px;
           }
           @media (max-width: 1024px) {
             .submit {
