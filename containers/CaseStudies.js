@@ -1,4 +1,7 @@
+import dynamic from 'next/dynamic'
 import CaseStudiesCard from '../components/CaseStudiesCard'
+
+const DynamicComponent = dynamic(import Flickity from ('flickity'))
 
 const example = [
   {title: 'Lorem ipsum dolor sit amet', subtitle: 'Lorem ipsum dolor sit amet'},
