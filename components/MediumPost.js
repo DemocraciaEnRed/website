@@ -12,17 +12,11 @@ const MediumPost = (props) => (
       margin-right: 72px;
       width: 371px;
       height: 305px;
-      padding: 38px 20px;
+      padding: 58px 30px 39px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       background-color: rgba(0,0,0,0.82);
-    }
-
-    .post-snippet {
-      display: flex;
-      align-items: center;
-      flex-grow: 1;
     }
 
     .snippet-text {
@@ -30,6 +24,7 @@ const MediumPost = (props) => (
     }
 
     .post-data {
+      margin-top: 19px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -41,6 +36,11 @@ const MediumPost = (props) => (
       font-size: 2rem;
       text-transform: uppercase;
       color: var(--white);
+    }
+
+    .likes {
+      display: inline-flex;
+      align-items: center;
     }
 
     .likes .heart {
