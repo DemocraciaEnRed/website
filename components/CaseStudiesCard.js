@@ -32,6 +32,7 @@ const CaseStudiesCard = (props) => (
         .case-studies-card {
           height: 270px;
           width: 240px;
+          margin: 24px 10px 36px;
         }
         .case-studies-card-img {
           height: 125px;

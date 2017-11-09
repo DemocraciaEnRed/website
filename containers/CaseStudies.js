@@ -4,10 +4,10 @@ import CaseStudiesCard from '../components/CaseStudiesCard'
 let Flickity;
 
 const example = [
-  {title: 'Lorem ipsum dolor sit amet', subtitle: 'Lorem ipsum dolor sit amet'},
-  {title: 'Lorem ipsum dolor sit amet', subtitle: 'Lorem ipsum dolor sit amet'},
-  {title: 'Lorem ipsum dolor sit amet', subtitle: 'Lorem ipsum dolor sit amet'},
-  {title: 'Lorem ipsum dolor sit amet', subtitle: 'Lorem ipsum dolor sit amet'}
+  {title: 'Sarasa', subtitle: 'Lorem ipsum dolor sit amet'},
+  {title: 'Sarasa 2', subtitle: 'Lorem ipsum dolor sit amet'},
+  {title: 'Sarasa 3', subtitle: 'Lorem ipsum dolor sit amet'},
+  {title: 'Sarasa 4', subtitle: 'Lorem ipsum dolor sit amet'}
 ]
 
 class CaseStudies extends Component  {
@@ -21,7 +21,7 @@ class CaseStudies extends Component  {
 
   componentDidMount () {
     Flickity = require('flickity')
-    if (window.innerWidth < 1024) {
+    if (window.innerWidth <= 1024) {
       this.setState({
         mobile: true
       })
@@ -29,19 +29,28 @@ class CaseStudies extends Component  {
   }
 
   componentDidUpdate(){
-    if (this.flkty) this.flkty.destroy()
-    const options = {
-      animate: true,
-      pageDots: false,
-      autoplay: true,
-      cellAlign: 'center'
-      
+    Flickity = require('flickity')
+    if (this.state.mobile) {
+      if (this.flkty) this.flkty.destroy()
+      const options = {
+        cellCelector: '.case-studies-card',
+        pageDots: false,
+        autoplay: true,
+        wrapAround: true,
+        alignCells: 'center',
+        draggable: true,
+        friction: 0.2,
+        contain: true
+      }
+      this.flkty = new Flickity(this.refs.carousel, options)
     }
-    this.flkty = new Flickity(this.refs.carousel, options)
   }
 
   componentWillUnmount () {
-    this.flkty.destroy()
+    Flickity = require('flickity')
+    if (this.state.mobile) {
+      this.flkty.destroy()
+    }
   }
 
   render () {
@@ -50,7 +59,7 @@ class CaseStudies extends Component  {
         <h2 className='section-title'>
           Case Studies
         </h2>
-        <div className='case-studies-container carousel' ref='carousel'>
+        <div className={`case-studies-container ${this.state.mobile ? 'carousel' : ''}`} ref='carousel'>
           {example.map((card, i) => (
             <CaseStudiesCard key={i} title={card.title} subtitle={card.subtitle} />
           ))}
@@ -65,7 +74,7 @@ class CaseStudies extends Component  {
           display: flex;
           flex-direction: column;
         }
-        .case-studies-section .case-studies-container{
+        .case-studies-container{
           display: flex;
           justify-content: space-between;
         }
@@ -76,21 +85,36 @@ class CaseStudies extends Component  {
           color: var(--white);
         }
         @media (max-width: 1024px) {
+          .case-studies-section {
+            flex-direction: column;
+          }
           .case-studies-section .case-studies-container {
-
+            display: block;
+            overflow: hidden;
+          }
+          .case-studies-container .carousel .flickity-enabled .is-draggable {
+            height: 326px;
           }
           .case-studies-section .section-title {
             font-size: 3.0rem;
           }
           .case-studies-section .btn {
+            align-self: center;
             height: 36.7px;
             width: 200px;
           }
           .case-studies-section .btn .action-text {
             font-size: 2.1rem;
           }
+
+          @import '../node_modules/flickity/css/flickity.css'
         }
-        @import '../node_modules/flickity/css/flickity.css'
+        @media (max-width: 425px) {
+          .case-studies-section .case-studies-container {
+            margin-left: -24px;
+            margin-right: -24px;
+          }
+        }
     `}</style>
   </section>
   )
