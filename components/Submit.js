@@ -38,6 +38,7 @@ export default class Submit extends React.Component {
     		    display: flex;
     		    height: 39px;
     		    width: 470px;
+            margin-bottom: 45px;
           }
           .submit input {
     		    border: none;
@@ -73,11 +74,17 @@ export default class Submit extends React.Component {
           }
           @media (max-width: 1024px) {
             .submit {
-              max-width: 100%;
+              width: 361px;
               height: 34px;
+              margin-bottom: 37px;
             }
-            .submit-text {
-            font-size: 1.6rem;
+            .submit-input {
+              height: 100%;
+              width: 236px;
+            }
+            .submit-button {
+              height: 100%;
+              width: 124px;
             }
           }
   	`}</style>
