@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
-import dynamic from 'next/dynamic'
+import MediaQuery from 'react-responsive'
 import CaseStudiesCard from '../components/CaseStudiesCard'
 let Flickity;
 
 const example = [
-  {title: 'Sarasa', subtitle: 'Lorem ipsum dolor sit amet'},
-  {title: 'Sarasa 2', subtitle: 'Lorem ipsum dolor sit amet'},
-  {title: 'Sarasa 3', subtitle: 'Lorem ipsum dolor sit amet'},
-  {title: 'Sarasa 4', subtitle: 'Lorem ipsum dolor sit amet'}
+  {title: 'Lorem ipsum', subtitle: 'Lorem ipsum dolor sit amet'},
+  {title: 'Lorem ipsum', subtitle: 'Lorem ipsum dolor sit amet'},
+  {title: 'Lorem ipsum', subtitle: 'Lorem ipsum dolor sit amet'},
+  {title: 'Lorem ipsum', subtitle: 'Lorem ipsum dolor sit amet'}
 ]
 
 class CaseStudies extends Component  {
@@ -29,7 +29,6 @@ class CaseStudies extends Component  {
   }
 
   componentDidUpdate(){
-    Flickity = require('flickity')
     if (this.state.mobile) {
       if (this.flkty) this.flkty.destroy()
       const options = {
@@ -47,7 +46,6 @@ class CaseStudies extends Component  {
   }
 
   componentWillUnmount () {
-    Flickity = require('flickity')
     if (this.state.mobile) {
       this.flkty.destroy()
     }
@@ -59,11 +57,20 @@ class CaseStudies extends Component  {
         <h2 className='section-title'>
           Case Studies
         </h2>
-        <div className={`case-studies-container ${this.state.mobile ? 'carousel' : ''}`} ref='carousel'>
-          {example.map((card, i) => (
-            <CaseStudiesCard key={i} title={card.title} subtitle={card.subtitle} />
-          ))}
-        </div>
+        <MediaQuery minDeviceWidth={1025}>
+          <div className ='case-studies-container carousel'>
+            {example.map((card, i) => (
+              <CaseStudiesCard key={i} title={card.title} subtitle={card.subtitle} />
+            ))}
+          </div>
+        </MediaQuery>
+        <MediaQuery maxDeviceWidth={1024}>
+          <div className ='case-studies-container carousel' ref='carousel'>
+            {example.map((card, i) => (
+              <CaseStudiesCard key={i} title={card.title} subtitle={card.subtitle} />
+            ))}
+          </div>
+        </MediaQuery>
         <button className='btn'>
           <span className='action-text'>
             Ver más
@@ -74,7 +81,7 @@ class CaseStudies extends Component  {
           display: flex;
           flex-direction: column;
         }
-        .case-studies-container{
+        .case-studies-container.carousel{
           display: flex;
           justify-content: space-between;
         }
@@ -85,15 +92,15 @@ class CaseStudies extends Component  {
           color: var(--white);
         }
         @media (max-width: 1024px) {
+          @import '../node_modules/flickity/css/flickity.css'
+
           .case-studies-section {
             flex-direction: column;
           }
-          .case-studies-section .case-studies-container {
+          .case-studies-container.carousel{
+            height: 326px;
             display: block;
             overflow: hidden;
-          }
-          .case-studies-container .carousel .flickity-enabled .is-draggable {
-            height: 326px;
           }
           .case-studies-section .section-title {
             font-size: 3.0rem;
@@ -106,8 +113,9 @@ class CaseStudies extends Component  {
           .case-studies-section .btn .action-text {
             font-size: 2.1rem;
           }
-
-          @import '../node_modules/flickity/css/flickity.css'
+          .carousel .flickity-prev-next-button {
+            display: none;
+          }
         }
         @media (max-width: 425px) {
           .case-studies-section .case-studies-container {
