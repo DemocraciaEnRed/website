@@ -21,6 +21,7 @@
   "devDependencies": {},
   "dependencies": {
     "flickity": "^2.0.10",
+    "isomorphic-unfetch": "^2.0.0",
     "next": "^4.1.3",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
