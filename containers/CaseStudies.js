@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import MediaQuery from 'react-responsive'
 import CaseStudiesCard from '../components/CaseStudiesCard'
 let Flickity;
 
@@ -13,7 +12,6 @@ const example = [
 class CaseStudies extends Component  {
   constructor (props) {
     super(props)
-    this.flkty = null
     this.state = {
       mobile: false
     }
@@ -30,7 +28,6 @@ class CaseStudies extends Component  {
 
   componentDidUpdate(){
     if (this.state.mobile) {
-      if (this.flkty) this.flkty.destroy()
       const options = {
         cellCelector: '.case-studies-card',
         pageDots: false,
@@ -41,13 +38,7 @@ class CaseStudies extends Component  {
         friction: 0.2,
         contain: true
       }
-      this.flkty = new Flickity(this.refs.carousel, options)
-    }
-  }
-
-  componentWillUnmount () {
-    if (this.state.mobile) {
-      this.flkty.destroy()
+      new Flickity(this.refs.carousel, options)
     }
   }
 
@@ -57,20 +48,11 @@ class CaseStudies extends Component  {
         <h2 className='section-title'>
           Case Studies
         </h2>
-        <MediaQuery minDeviceWidth={1025}>
-          <div className ='case-studies-container carousel'>
-            {example.map((card, i) => (
-              <CaseStudiesCard key={i} title={card.title} subtitle={card.subtitle} />
-            ))}
-          </div>
-        </MediaQuery>
-        <MediaQuery maxDeviceWidth={1024}>
           <div className ='case-studies-container carousel' ref='carousel'>
             {example.map((card, i) => (
               <CaseStudiesCard key={i} title={card.title} subtitle={card.subtitle} />
             ))}
           </div>
-        </MediaQuery>
         <button className='btn'>
           <span className='action-text'>
             Ver más
