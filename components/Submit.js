@@ -36,14 +36,15 @@ export default class Submit extends React.Component {
         <style jsx>{`
           .submit {
     		    display: flex;
-    		    height: 55px;
-    		    width: 588px;
+    		    height: 39px;
+    		    width: 470px;
           }
           .submit input {
     		    border: none;
     		    border-radius: 10rem 0 0 10rem;
     		    height: 100%;
-    		    width: 386px;
+            padding-left: 20px;
+    		    width: 309px;
     	    }
           .submit input:focus {
             border: none;
@@ -56,7 +57,7 @@ export default class Submit extends React.Component {
             display: flex;
             justify-content: center;
     		    height: 100%;
-    		    width: 202px;
+    		    width: 162px;
     	    }
           .submit-text-checked {
             -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
