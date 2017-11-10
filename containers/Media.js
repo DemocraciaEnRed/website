@@ -18,6 +18,19 @@ const Media = () => (
         <MediaLink key={i} url={link.url} logo={link.logo} />
       )}
     </div>
+    <style jsx>{`
+      .media-section {
+        padding-bottom: 203px;
+      }
+      .media-container {
+        align-content: space-between;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 79px;
+        height: 220px;
+      }
+    `}</style>
   </section>
 )
 
