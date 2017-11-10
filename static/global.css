@@ -152,16 +152,12 @@ button {
 }
 
 .action-text {
+  color: var(--white);
   font-family: var(--medium);
   font-weight: 500;
   font-size: 2.4rem;
   text-align: center;
   text-transform: uppercase;
-}
-
-.submit-text {
-  font-family: var(--bold);
-  color: var(--white);
 }
 
 .submit-text {
@@ -183,6 +179,7 @@ section:nth-child(odd) {
 
 section:nth-child(even) {
   background-color: var(--light-gray);
+}
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1024px) {
