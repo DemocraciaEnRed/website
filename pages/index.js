@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Layout from '../layouts/Layout'
 import Header from '../containers/Header'
 import AboutUs from '../containers/AboutUs'
+import WhoWeAre from '../containers/WhoWeAre'
 
 export default () => (
   <div>
@@ -13,6 +14,7 @@ export default () => (
     <Layout>
       <Header />
       <AboutUs />
+      <WhoWeAre />
     </Layout>
   </div>
   )
