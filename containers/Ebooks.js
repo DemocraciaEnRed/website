@@ -28,7 +28,20 @@ const Ebooks = () => (
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        margin: 59px 0 160px;
+        margin: 59px 0 118px;
+      }
+      @media screen and (max-width: 1024px) {
+        .ebooks-section {
+          padding: 25px 25px 144px 25px ;
+        }
+        .ebooks-container {
+          margin: 84px 0 0;
+        }
+      }
+      @media screen and (max-width: 500px) {
+        .ebook-container {
+          justify-content: center;
+        }
       }
     `}</style>
   </section>

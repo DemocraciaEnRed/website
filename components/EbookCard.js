@@ -38,6 +38,34 @@ const EbookCard = ( {img, title, description, link}) => (
       .action-text {
         font-size: 2.1rem;
       }
+      @media screen and (max-width: 1024px) {
+        .ebook-card {
+          grid-column-gap: 28px;
+          grid-template-columns: 129px 146px;
+          grid-template-rows: 20px auto 39px;
+          height: 176px;
+        }
+        .ebook-title {
+          font-size: 1.5rem;
+        }
+        .ebook-description {
+          font-size: 1.5rem;
+          margin-top: 22px;
+        }
+        .ebook-btn {
+          height: 27px;
+          margin-bottom: 12px;
+          width: 146px;
+        }
+        .action-text {
+        font-size: 1.4rem;
+        }
+      }
+      @media screen and (max-width: 500px) {
+        .ebook-card:nth-child(even) {
+          margin-top: 5px;
+        }
+      }
     `}</style>
   </div>
 
