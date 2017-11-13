@@ -3,8 +3,8 @@ const CheckedButton = () => (
     <polyline className="path" fill="none" points="20,6 9,17 4,12" stroke="#FFFFFF" strokeMiterlimit="10" strokeWidth="2" />
     <style jsx>{`
       #Layer_1 {
-        height: 40px;
-        width: 40px;
+        height: 30px;
+        width: 30px;
       }
       .path {
         animation: dash 500ms ease forwards;
