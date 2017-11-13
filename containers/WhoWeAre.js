@@ -1,16 +1,16 @@
 import ProfileCard from '../components/ProfileCard'
 
 const profiles = [
-  {'name': 'Vicky Guareschi', 'bio': 'UX/UI padawan', 'handle': '@vickyguareschi', 'img': ''},
-  {'name': 'Vicky Guareschi', 'bio': 'UX/UI padawan', 'handle': '@vickyguareschi', 'img': ''},
-  {'name': 'Vicky Guareschi', 'bio': 'UX/UI padawan', 'handle': '@vickyguareschi', 'img': ''},
-  {'name': 'Vicky Guareschi', 'bio': 'UX/UI padawan', 'handle': '@vickyguareschi', 'img': ''},
-  {'name': 'Vicky Guareschi', 'bio': 'UX/UI padawan', 'handle': '@vickyguareschi', 'img': ''},
-  {'name': 'Vicky Guareschi', 'bio': 'UX/UI padawan', 'handle': '@vickyguareschi', 'img': ''},
-  {'name': 'Vicky Guareschi', 'bio': 'UX/UI padawan', 'handle': '@vickyguareschi', 'img': ''},
-  {'name': 'Vicky Guareschi', 'bio': 'UX/UI padawan', 'handle': '@vickyguareschi', 'img': ''},
-  {'name': 'Vicky Guareschi', 'bio': 'UX/UI padawan', 'handle': '@vickyguareschi', 'img': ''},
-  {'name': 'Vicky Guareschi', 'bio': 'UX/UI padawan', 'handle': '@vickyguareschi', 'img': ''}
+  {'name': 'Vicky Guareschi', 'bio': 'UX/UI padawan', 'handle': 'vickyguareschi', 'img': '../static/assets/profile.jpg'},
+  {'name': 'Vicky Guareschi', 'bio': 'UX/UI padawan', 'handle': 'vickyguareschi', 'img': '../static/assets/profile.jpg'},
+  {'name': 'Vicky Guareschi', 'bio': 'UX/UI padawan', 'handle': 'vickyguareschi', 'img': '../static/assets/profile.jpg'},
+  {'name': 'Vicky Guareschi', 'bio': 'UX/UI padawan', 'handle': 'vickyguareschi', 'img': '../static/assets/profile.jpg'},
+  {'name': 'Vicky Guareschi', 'bio': 'UX/UI padawan', 'handle': 'vickyguareschi', 'img': '../static/assets/profile.jpg'},
+  {'name': 'Vicky Guareschi', 'bio': 'UX/UI padawan', 'handle': 'vickyguareschi', 'img': '../static/assets/profile.jpg'},
+  {'name': 'Vicky Guareschi', 'bio': 'UX/UI padawan', 'handle': 'vickyguareschi', 'img': '../static/assets/profile.jpg'},
+  {'name': 'Vicky Guareschi', 'bio': 'UX/UI padawan', 'handle': 'vickyguareschi', 'img': '../static/assets/profile.jpg'},
+  {'name': 'Vicky Guareschi', 'bio': 'UX/UI padawan', 'handle': 'vickyguareschi', 'img': '../static/assets/profile.jpg'},
+  {'name': 'Vicky Guareschi', 'bio': 'UX/UI padawan', 'handle': 'vickyguareschi', 'img': '../static/assets/profile.jpg'}
 ]
 
 const WhoWeAre = () => (
@@ -28,7 +28,9 @@ const WhoWeAre = () => (
       .profile-container {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
         margin-top: 72px;
+        width: 100%;
       }
     `}</style>
   </section>
