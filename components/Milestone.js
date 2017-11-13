@@ -30,7 +30,7 @@ const Milestone = ( props ) => (
         margin-top: 7px;
       }
       .milestone-container .btn {
-        margin-top: 36px;
+        margin-top: 42px;
       }
       @media (max-width: 1024px) {
         .milestone-container .milestone-img {
