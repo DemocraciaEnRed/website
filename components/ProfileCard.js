@@ -19,9 +19,11 @@ const ProfileCard = ( {name, bio, handle, img} ) => (
       justify-content: center;
       width: 250px;
     }
+    
     .profile-card-container {
       display: none;
     }
+
     .profile-card:hover .profile-card-container {
       animation: fadeInFromNone 0.5s ease;
       background-color: rgba(0,0,0,0.8); 
@@ -47,61 +49,124 @@ const ProfileCard = ( {name, bio, handle, img} ) => (
       color: #eaeaea;
     }
     @-webkit-keyframes fadeInFromNone {
-    0% {
+      0% {
         opacity: 0;
-    }
+      }
 
-    1% {
+      1% {
         opacity: 0.5;
-    }
+      }
 
-    100% {
+      100% {
         opacity: 1;
+      }
     }
-}
 
-@-moz-keyframes fadeInFromNone {
-    0% {
+    @-moz-keyframes fadeInFromNone {
+      0% {
         opacity: 0;
-    }
+      }
 
-    1% {
+      1% {
         opacity: 0.5;
-    }
+      }
 
-    100% {
+      100% {
         opacity: 1;
+      }
     }
-}
 
-@-o-keyframes fadeInFromNone {
-    0% {
+    @-o-keyframes fadeInFromNone {
+      0% {
         opacity: 0;
-    }
+      }
 
-    1% {
+      1% {
         opacity: 0.5;
-    }
+      }
 
-    100% {
+      100% {
         opacity: 1;
+      }
     }
-}
 
-@keyframes fadeInFromNone {
-    0% {
+    @keyframes fadeInFromNone {
+      0% {
         opacity: 0;
-    }
+      }
 
-    1% {
+      1% {
         opacity: 0.5;
-    }
+      }
 
-    100% {
+      100% {
         opacity: 1;
+      }
     }
-}
-
+    @media screen and (min-width: 1440px) {
+      .profile-card {
+        margin-right: 10px;
+      }
+    }
+    @media screen and (max-width: 1024px) {
+      .profile-card {
+        height: 270px;
+        width: 270px;
+      }
+      .profile-card-container {
+        width: 100%;
+        height: 100%;
+        padding: 69px 42px;
+      }
+      .profile-title {
+      font-size: 3.0rem;
+      }
+      .profile-bio {
+        font-size: 2.2rem;
+        font-weight: 300;
+        color: #eaeaea;
+      }
+      .profile-handle {
+      font-size: 2.2rem;
+      font-weight: 300;
+      color: #eaeaea;
+      }
+    }
+    @media screen and (max-width: 375px) {
+      .profile-card {
+        height: 230px;
+        width: 230px;
+      }
+      .profile-title {
+        font-size: 2.2rem;
+      }
+      .profile-bio {
+        font-size: 1.6rem;
+      }
+      .profile-handle {
+        font-size: 1.6rem;
+      }
+    }
+    @media screen and (max-width: 322px) {
+      .profile-card {
+        height: 170px;
+        width: 170px;
+      }
+      .profile-card:hover .profile-card-container {
+        width: 100%;
+        height: 100%;
+        padding: 35px;
+      }
+      .profile-title {
+        font-size: 1.6rem;
+      }
+      .profile-bio {
+        font-size: 1.2rem;
+      }
+      .profile-handle {
+        font-size: 1.2rem;
+      }
+    }
   `}</style>
   </div>
 )
