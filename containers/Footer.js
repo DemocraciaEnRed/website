@@ -1,14 +1,15 @@
+import MediaQuery from 'react-responsive'
 import SocialBar from '../components/SocialBar'
 import Link from 'next/link'
 
 const Footer = () => (
   <footer>
-    <div className='footer-container'>
+    <MediaQuery minDeviceWidth={1024} className='footer-container'>
       <SocialBar alignSelf={'flex-start'} iconsSize={'47px'} width={'473px'}/>
       <Link href='/'>
         <a className='footer-link'>términos y condiciones</a>
       </Link>
-    </div>
+    </MediaQuery>
     <style jsx>{`
       footer {
         align-items: flex-start;
@@ -17,7 +18,7 @@ const Footer = () => (
         flex-direction: column;
         height: 596px;
         justify-content: flex-end;
-        padding: 0 115px 30px;
+        padding: 0 115px 33px;
       }
       .footer-container {
         display: flex;
@@ -30,7 +31,18 @@ const Footer = () => (
         font-weight: 300px;
         margin-top: 33px;
       }
-
+      @media (max-width: 1024px) {
+        footer {
+          align-items: center;
+          height: 466px;
+          padding: 0 60px 60px;
+        }
+      }
+      @media (max-width: 768px) {
+        .footer-link {
+          display: none;
+        }
+      }
     `}</style>
   </footer>
 )
