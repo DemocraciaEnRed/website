@@ -155,6 +155,7 @@ button {
   font-family: var(--medium);
   font-weight: 500;
   font-size: 2.4rem;
+  color: var(--white);
   text-align: center;
   text-transform: uppercase;
 }
@@ -162,13 +163,8 @@ button {
 .submit-text {
   font-family: var(--bold);
   color: var(--white);
-}
-
-.submit-text {
-  font-family: var(--bold);
   font-weight: bold;
-  font-size: 2.4rem;
-  color: var(--white);
+  font-size: 1.9rem;
 }
 
 /* INSERT MEDIA QUERIES */
@@ -183,6 +179,7 @@ section:nth-child(odd) {
 
 section:nth-child(even) {
   background-color: var(--light-gray);
+}
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1024px) {

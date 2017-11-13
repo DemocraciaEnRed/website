@@ -2,6 +2,8 @@ import Head from 'next/head'
 import Layout from '../layouts/Layout'
 import Header from '../containers/Header'
 import AboutUs from '../containers/AboutUs'
+import CaseStudies from '../containers/CaseStudies'
+import Collaborate from '../containers/Collaborate'
 import Media from '../containers/Media'
 
 export default () => (
@@ -14,6 +16,8 @@ export default () => (
     <Layout>
       <Header />
       <AboutUs />
+      <CaseStudies />
+      <Collaborate />
       <Media />
     </Layout>
   </div>
