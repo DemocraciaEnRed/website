@@ -4,8 +4,14 @@ import Link from 'next/link'
 
 const Footer = () => (
   <footer>
-    <MediaQuery minDeviceWidth={1024} className='footer-container'>
+    <MediaQuery minDeviceWidth={1025} className='footer-container'>
       <SocialBar alignSelf={'flex-start'} iconsSize={'47px'} width={'473px'}/>
+      <Link href='/'>
+        <a className='footer-link'>términos y condiciones</a>
+      </Link>
+    </MediaQuery>
+    <MediaQuery maxDeviceWidth={1024} className='footer-container'>
+      <SocialBar alignSelf={'flex-start'} iconsSize={'28px'} />
       <Link href='/'>
         <a className='footer-link'>términos y condiciones</a>
       </Link>
