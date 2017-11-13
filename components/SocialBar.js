@@ -1,4 +1,4 @@
-const SocialBar = ( { alignSelf, iconsSize, width } ) => (
+const SocialBar = ( { alignSelf, iconsSize, width, mobileWidth, justifyContent } ) => (
 	<nav className='social-bar'>
 		<a href='' className='fb'></a>
 		<a href='' className='tw'></a>
@@ -35,8 +35,8 @@ const SocialBar = ( { alignSelf, iconsSize, width } ) => (
         .social-bar {
           align-self: center;
           display: flex;
-          justify-content: space-around;
-          width: 100%;
+          justify-content: ${justifyContent};
+          width: ${mobileWidth};
         }
         .social-bar a{
           background-size: contain;

@@ -6,7 +6,7 @@ const Header = () => (
 		<h1>Democracia en Red</h1>
 		<p className='subtext'>Imaginamos, diseñamos e implementamos innovaciones en el sistema político para abrir los procesos de decisión y redistribuir el poder.</p>
 		<Submit />
-		<SocialBar alignSelf={'flex-end'} iconsSize={'30px'} width={'300px'}/>
+		<SocialBar alignSelf={'flex-end'} iconsSize={'30px'} width={'300px'} mobileWidth={'100%'} justifyContent={'space-around'}/>
 		<style jsx>{`
     	header {
      		background-color: #dedede;
