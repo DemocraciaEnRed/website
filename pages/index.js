@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout'
 import Header from '../containers/Header'
 import AboutUs from '../containers/AboutUs'
 import CaseStudies from '../containers/CaseStudies'
+import Collaborate from '../containers/Collaborate'
 
 export default () => (
   <div>
@@ -15,7 +16,7 @@ export default () => (
       <Header />
       <AboutUs />
       <CaseStudies />
-  
+      <Collaborate />
     </Layout>
   </div>
   )
