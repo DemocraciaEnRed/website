@@ -19,8 +19,8 @@ export default () => (
       <AboutUs />
       <CaseStudies />
       <Collaborate />
-      <Media />
       <Ebooks />
+      <Media />
     </Layout>
   </div>
   )
