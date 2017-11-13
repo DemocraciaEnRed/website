@@ -49,6 +49,9 @@ const Collaborate = () => (
           flex-direction: column;
           align-items: center;
         }
+        .collaborate-container {
+        width: 100%;
+        }
       }
     `}</style>
   </section>

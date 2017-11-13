@@ -87,6 +87,17 @@ export default class Submit extends React.Component {
               width: 124px;
             }
           }
+          @media (max-width: 375px) {
+            .submit {
+              width: 90%;
+            }
+            .submit-input{
+              width: 80%;
+            }
+            .submit-button{
+              width: 20%;
+            }
+          }
   	`}</style>
     </div>
     )}
