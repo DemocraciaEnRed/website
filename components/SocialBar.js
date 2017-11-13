@@ -1,4 +1,4 @@
-const SocialBar = ( { alignSelf, iconsSize} ) => (
+const SocialBar = ( { alignSelf, iconsSize, width } ) => (
 	<nav className='social-bar'>
 		<a href='' className='fb'></a>
 		<a href='' className='tw'></a>
@@ -6,7 +6,10 @@ const SocialBar = ( { alignSelf, iconsSize} ) => (
 		<a href='' className='github'></a>
 		<style jsx>{`
       .social-bar {
+        justify-content: space-between;
         align-self: ${alignSelf};
+        display: flex;
+        width: ${width};
       }
 			.social-bar a{
 				background-size: contain;
@@ -14,7 +17,6 @@ const SocialBar = ( { alignSelf, iconsSize} ) => (
       	background-position: center;
       	display: inline-block;
         height: ${iconsSize};
-        margin-left: 61px;
         width: ${iconsSize};
 			}
     	.fb {

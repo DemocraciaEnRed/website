@@ -3,10 +3,12 @@ import Link from 'next/link'
 
 const Footer = () => (
   <footer>
-    <SocialBar alignSelf={'flex-start'} iconsSize={'47px'}/>
-    <Link href='/'>
-      <a>Términos y Condiciones</a>
-    </Link>
+    <div className='footer-container'>
+      <SocialBar alignSelf={'flex-start'} iconsSize={'47px'} width={'473px'}/>
+      <Link href='/'>
+        <a className='footer-link'>términos y condiciones</a>
+      </Link>
+    </div>
     <style jsx>{`
       footer {
         align-items: flex-start;
@@ -16,6 +18,17 @@ const Footer = () => (
         height: 596px;
         justify-content: flex-end;
         padding: 0 115px 30px;
+      }
+      .footer-container {
+        display: flex;
+        flex-direction: column;
+      }
+      .footer-link {
+        align-self: center;
+        color: var(--white);
+        font-size: 24px;
+        font-weight: 300px;
+        margin-top: 33px;
       }
 
     `}</style>
