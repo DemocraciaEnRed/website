@@ -4,6 +4,7 @@ import Header from '../containers/Header'
 import AboutUs from '../containers/AboutUs'
 import CaseStudies from '../containers/CaseStudies'
 import Collaborate from '../containers/Collaborate'
+import Ebooks from '../containers/Ebooks'
 import Media from '../containers/Media'
 
 export default () => (
@@ -19,6 +20,7 @@ export default () => (
       <CaseStudies />
       <Collaborate />
       <Media />
+      <Ebooks />
     </Layout>
   </div>
   )

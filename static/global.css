@@ -152,6 +152,7 @@ button {
 }
 
 .action-text {
+  color: var(--white);
   font-family: var(--medium);
   font-weight: 500;
   font-size: 2.4rem;
@@ -166,8 +167,6 @@ button {
   font-weight: bold;
   font-size: 1.9rem;
 }
-
-/* INSERT MEDIA QUERIES */
 
 section {
   padding: 48px 85px 42px;
