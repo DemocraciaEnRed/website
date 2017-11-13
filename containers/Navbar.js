@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import MainMenu from '../components/MainMenu'
+import MobileMenu from '../components/MobileMenu'
 
 class Navbar extends Component {
   constructor (props) {
@@ -31,7 +31,7 @@ render () {
       <a className='logo' href='/'></a>
       <a className='menu-button' role='navigation' onClick={this.handleMainMenu}></a>
       {this.state.menu &&
-        <MainMenu
+        <MobileMenu
         handleMainMenu={this.handleMainMenu}
         handleActiveLink={this.handleActiveLink}
         activeLink={this.state.active} />
