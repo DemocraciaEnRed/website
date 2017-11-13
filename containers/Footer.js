@@ -3,17 +3,19 @@ import Link from 'next/link'
 
 const Footer = () => (
   <footer>
-    <SocialBar />
-    <Link href=''>
+    <SocialBar alignSelf={'flex-start'} iconsSize={'47px'}/>
+    <Link href='/'>
       <a>Términos y Condiciones</a>
     </Link>
     <style jsx>{`
       footer {
-        align-items: flex-end;
+        align-items: flex-start;
         background-color: #383737;
         display: flex;
-        flex-wrap: wrap;
-        padding: 455px 115px 33px;
+        flex-direction: column;
+        height: 596px;
+        justify-content: flex-end;
+        padding: 0 115px 30px;
       }
 
     `}</style>
