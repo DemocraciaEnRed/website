@@ -56,10 +56,10 @@ const Media = () => (
       }
       @media screen and (max-width: 375px) {
         .media-container {
-          align-items: space-between;
+          align-items: space-around;
           flex-direction: column;
           align-items: center;
-          height: 280px;
+          height: 360px;
         }
       }
     `}</style>

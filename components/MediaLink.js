@@ -1,5 +1,5 @@
 const MediaLink = ( {url, logo, className}) => (
-  <a href ={url} target='_blank' rel='external' className={className}>
+  <a href ={url} target='_blank' rel='external' className={`media-link ${className}`}>
     <img src={logo} className='media-link-image' />
     <style jsx>{`
       .media-link-image {
