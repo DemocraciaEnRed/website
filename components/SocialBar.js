@@ -7,7 +7,6 @@ const SocialBar = () => (
 		<style jsx>{`
       .social-bar {
         align-self: flex-end;
-        margin-top: 30px;
       }
 			.social-bar a{
 				background-size: contain;
