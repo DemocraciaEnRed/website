@@ -44,6 +44,12 @@ const Collaborate = () => (
         align-self: flex-start;
         margin-bottom: 53px;
       }
+      @media (max-width: 768px) {
+        .collaborate-section {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
     `}</style>
   </section>
 )
