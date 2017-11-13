@@ -183,6 +183,7 @@ section:nth-child(odd) {
 
 section:nth-child(even) {
   background-color: var(--light-gray);
+}
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1024px) {
