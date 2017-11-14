@@ -16,6 +16,9 @@ const MediaLink = ( {url, logo, className}) => (
         }
       }
       @media screen and (max-width: 600px) {
+        .media-link-image {
+          height: 30px;
+        }
         .wired {
           order: 1;
         }
@@ -30,6 +33,7 @@ const MediaLink = ( {url, logo, className}) => (
         }
         .lanacion {
           order: 5;
+          width: 212px;
         }
         .lpo {
           order: 6;
@@ -37,6 +41,11 @@ const MediaLink = ( {url, logo, className}) => (
         .bbc {
           order: 7;
           margin: auto;
+        }
+      }
+      @media screen and (max-width: 450px) {
+        .lanacion {
+          width: auto;
         }
       }
       @media screen and (max-width: 375px) {
