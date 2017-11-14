@@ -21,7 +21,7 @@ handleActiveLink = (link) => (e) => {
 
 handleMainMenu = (e) => {
   e.preventDefault()
-  let mobileMenu = window.innerWidth < 1024 ? true : false
+  let mobileMenu = window.innerWidth <= 1024 ? true : false
   this.setState({
     menu: !this.state.menu,
     mobile: mobileMenu
