@@ -73,7 +73,7 @@ const DesktopMenu = (props) => (
         left: 0;
         right: 0;
         margin: 61px auto;
-        padding: 18px 18px 126px 90px;
+        padding: 32px 18px 126px 90px;
         position: absolute;
         top: 0;
         width: 1420px;
@@ -82,15 +82,13 @@ const DesktopMenu = (props) => (
       .close-menu {
         position: absolute;
         right: 0;
-        align-self: flex-start;
-        display: block;
+        margin-right: 32px;
         width: 18px;
         height: 18px;
         background-image: url('/static/assets/close-menu.svg');
         background-size: contain;
         background-repeat: no-repeat;
         cursor: pointer;
-        margin-bottom: 62px;
       }
       .primary-links-container {
         align-items: space-between;
@@ -100,6 +98,7 @@ const DesktopMenu = (props) => (
         height: 261px;
         justify-content: space-between;
         width: 680px;
+        margin-top: 62px;
       }
       .secondary-links-container {
         align-items: space-between;
@@ -108,6 +107,7 @@ const DesktopMenu = (props) => (
         flex-wrap: wrap;
         justify-content: flex-start;
         width: 168px;
+        margin-top: 62px;
       }
       .desktop-menu-link {
         display: block;
@@ -116,6 +116,25 @@ const DesktopMenu = (props) => (
         letter-spacing: 1.1px;
         text-transform: uppercase;
         margin-bottom: 16px;
+      }
+      .desktop-menu-link {
+        display: block;
+        color: var(--black);
+        font-size: 3.2rem;
+        letter-spacing: 1.1px;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+      }
+      .desktop-menu-link:hover {
+        color: var(--light-accent);
+      }
+      .desktop-menu-link.active {
+        color: var(--dark-accent);
+      }
+      @media screen and (max-width: 1420px) {
+        .main-menu {
+          width: 95%;
+        }
       }
     `}</style>
   </nav>
