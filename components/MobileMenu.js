@@ -37,7 +37,7 @@ const secondaryLinks = [
 ]
 
 
-const MainMenu = (props) => (
+const MobileMenu = (props) => (
   <nav className='main-menu' role='navigation'>
     <header>
       <a className='logo' href='/'></a>
@@ -130,4 +130,4 @@ const MainMenu = (props) => (
   </nav>
 )
 
-export default MainMenu
+export default MobileMenu

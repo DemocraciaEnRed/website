@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import MainMenu from '../components/MainMenu'
+import DesktopMenu from '../components/DesktopMenu'
+import MobileMenu from '../components/MobileMenu'
 
 class Navbar extends Component {
   constructor (props) {
@@ -7,6 +8,7 @@ class Navbar extends Component {
 
     this.state = {
       menu: false,
+      mobile: false,
       active: null
     }
   }
@@ -19,8 +21,10 @@ handleActiveLink = (link) => (e) => {
 
 handleMainMenu = (e) => {
   e.preventDefault()
+  let mobileMenu = window.innerWidth < 1024 ? true : false
   this.setState({
-    menu: !this.state.menu
+    menu: !this.state.menu,
+    mobile: mobileMenu
   })
 }
 
@@ -30,8 +34,14 @@ render () {
     <nav role='banner'>
       <a className='logo' href='/'></a>
       <a className='menu-button' role='navigation' onClick={this.handleMainMenu}></a>
-      {this.state.menu &&
-        <MainMenu
+      {this.state.menu && this.state.mobile &&
+        <MobileMenu
+        handleMainMenu={this.handleMainMenu}
+        handleActiveLink={this.handleActiveLink}
+        activeLink={this.state.active} />
+      }
+      {this.state.menu && !this.state.mobile &&
+        <DesktopMenu
         handleMainMenu={this.handleMainMenu}
         handleActiveLink={this.handleActiveLink}
         activeLink={this.state.active} />
