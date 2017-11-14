@@ -1,7 +1,7 @@
 import MediaLink from '../components/MediaLink'
 
 const mediaLinks = [
-  { "url": "http://www.fastcompany.com/3043388/the-y-combinator-chronicles/why-y-combinator-funded-a-radical-political-party-in-argentina", "logo": "static/assets/media/fast.png", "className": "fast" },
+  { "url": "http://www.fastcompany.com/3043388/the-y-combinator-chronicles/why-y-combinator-funded-a-radical-political-party-in-argentina", "logo": "static/assets/media/fast.svg", "className": "fast" },
   { "url": "https://www.youtube.com/watch?v=7bAOT-57KeE", "logo": "static/assets/media/bbc.svg", "className": "bbc" },
   { "url": "http://www.lapoliticaonline.com/nota/85129-tratatan-proyectos-votados-en-internet/", "logo": "static/assets/media/lpo.png", "className": "lpo" },
   { "url": "http://ccaa.elpais.com/ccaa/2015/01/27/madrid/1422375720_783629.html", "logo": "static/assets/media/elpais.svg", "className": "elpais" },
