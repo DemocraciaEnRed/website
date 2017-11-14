@@ -22,24 +22,38 @@ const Publications = () => (
         timestamp={timestamp}
         likes={likes} />
     </div>
-    <MediaQuery maxDeviceWidth={1024} >
+    <MediaQuery maxDeviceWidth={1024}>
       <button className='btn'>
         <span className='action-text'>
           Ver más
         </span>
       </button>
-    <MediaQuery />
-  <style jsx>{`
-    .publications-section {
-      padding-bottom: 151px;
-    }
-    .posts-container {
-      margin-top: 43px;
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-    }
-  `}</style>
+    </MediaQuery>
+    <style jsx>{`
+      .publications-section {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 151px;
+      }
+      .posts-container {
+        margin-top: 43px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+      @media (max-width: 1024px) {
+        .publications-section {
+          padding: 24px 24px 40px;
+        }
+        .posts-container {
+          margin: 61px 0 26px;
+          flex-wrap: wrap;
+        }
+        .btn {
+          margin: auto;
+        }
+      }
+    `}</style>
   </section>
 )
 
