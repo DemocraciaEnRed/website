@@ -5,6 +5,9 @@ const MediaLink = ( {url, logo, className}) => (
       .media-link-image {
         height: 60px;
       }
+      .ln {
+        max-width: 439px;
+      }
       @media screen and (max-width: 1024px) {
         .media-link-image {
           height: 40px;
