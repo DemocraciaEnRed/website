@@ -43,12 +43,14 @@ const MediaLink = ( {url, logo, className}) => (
           margin: auto;
         }
       }
+      @media screen and (max-width: 450px) {
+        .lanacion {
+          width: auto;
+        }
+      }
       @media screen and (max-width: 375px) {
         .bbc {
           margin: 0;
-        }
-        .lanacion {
-          width: auto;
         }
       }
     `}</style>
