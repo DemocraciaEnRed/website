@@ -16,11 +16,20 @@ const Publications = () => (
         snippet={snippet}
         timestamp={timestamp}
         likes={likes} />
+        <MediumPost
+        snippet={snippet}
+        timestamp={timestamp}
+        likes={likes} />
     </div>
   <style jsx>{`
+    .publications-section {
+      padding-bottom: 151px;
+    }
     .posts-container {
-      margin: 43px 0;
+      margin-top: 43px;
       display: flex;
+      justify-content: space-between;
+      width: 100%;
     }
   `}</style>
   </section>

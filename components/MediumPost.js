@@ -9,7 +9,6 @@ const MediumPost = (props) => (
     </div>
   <style jsx>{`
     .medium-post {
-      margin-right: 72px;
       width: 371px;
       height: 305px;
       padding: 58px 30px 39px;
@@ -47,6 +46,24 @@ const MediumPost = (props) => (
       width: 21px;
       height: 20px;
       margin-right: 15px;
+    }
+    @media (max-width: 1024px) {
+      .medium-post {
+        height: 229px;
+        padding: 43px 22px 28px;
+        width: 279px;
+      }
+      .snippet-text {
+        font-size: 1.8rem;
+        line-height: 1.33;
+      }
+      .post-data span {
+        font-size: 1.5rem;
+      }
+      .likes .heart {
+        width: 16px;
+        height: 15px;
+      }
     }
   `}</style>
   </article>
