@@ -1,3 +1,4 @@
+import MediaQuery from 'react-responsive'
 import Milestone from '../components/Milestone'
 
 const collaborateItems = [
@@ -17,7 +18,8 @@ const collaborateItems = [
 
 const Collaborate = () => (
   <section className='collaborate-section'>
-    {collaborateItems.map((it, i)=> 
+    <MediaQuery minDeviceWidth={1025} >
+      {collaborateItems.map((it, i)=> 
         <div className='collaborate-container' key={i}>
           <h2 className='section-title'> {it.title} </h2>
           <Milestone 
@@ -27,7 +29,20 @@ const Collaborate = () => (
             button={it.button}
             containerWidth={'auto'} />
         </div>     
-    )}
+      )}
+    </MediaQuery>
+    <MediaQuery maxDeviceWidth={1024} >
+      {collaborateItems.map((it, i)=> 
+        <div className='collaborate-container' key={i}>
+          <h2 className='section-title'> {it.title} </h2>
+          <Milestone 
+            className='collaborate-milestone'
+            title={it.subtitle} 
+            subtitle={it.paragraph} 
+            containerWidth={'auto'} />
+        </div>     
+      )}
+    </MediaQuery>
     <style jsx>{`
       .collaborate-section {
         display: flex;
