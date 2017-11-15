@@ -117,10 +117,6 @@ const ProfileCard = ( {name, bio, handle, img} ) => (
       }
     }
     @media screen and (max-width: 1024px) {
-      .profile-card {
-        height: 270px;
-        width: 270px;
-      }
       .profile-card-container {
         width: 100%;
         height: 100%;
