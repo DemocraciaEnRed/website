@@ -115,7 +115,7 @@ button {
 .regular-text {
   font-family: var(--regular);
   font-size: 1.8rem;
-  line-height: 2;
+  /*line-height: 2;*/
   letter-spacing: 0.08rem;
   color: var(--white);
 }
