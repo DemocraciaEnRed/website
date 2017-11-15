@@ -57,6 +57,11 @@ const AboutUs = () => (
           display: none;
         }
       }
+      @media (min-width: 1600px) {
+        .about-us-container {
+          justify-content: space-around;
+        }
+      }
     `}</style>
 	</section>
 )
