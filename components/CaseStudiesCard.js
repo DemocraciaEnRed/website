@@ -31,15 +31,15 @@ const CaseStudiesCard = (props) => (
       @media (max-width: 1024px) {
         .case-studies-card {
           height: 270px;
-          width: 240px;
-          margin: 24px 10px 36px;
+          width: 280px;
+          margin: 24px 24px 36px;
         }
         .case-studies-card-img {
-          height: 125px;
+          height: 126px;
           width: 100%;
         }
         .case-studies-card-body {
-          padding: 10px 20px 27px;
+          padding: 10px 23px 27px;
         }
         .case-studies-card-body .subtext {
           font-size: 2.1rem;
