@@ -44,13 +44,24 @@ const Collaborate = () => (
         align-self: flex-start;
         margin-bottom: 53px;
       }
-      @media (max-width: 768px) {
+      @media (max-width: 1024px) {
+        .collaborate-container .section-title {
+          margin-bottom: 75px;
+        }
         .collaborate-section {
           flex-direction: column;
           align-items: center;
         }
         .collaborate-container {
         width: 100%;
+        }
+      }
+      @media (min-width: 1600px) {
+        .collaborate-section {
+          justify-content: space-around;
+        }
+        .collaborate-section .collaborate-container:nth-child(2) h2 {
+          align-self: flex-end;
         }
       }
     `}</style>
