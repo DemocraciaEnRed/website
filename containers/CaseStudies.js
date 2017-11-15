@@ -31,9 +31,8 @@ class CaseStudies extends Component  {
       const options = {
         cellCelector: '.case-studies-card',
         pageDots: false,
-        autoplay: true,
         wrapAround: true,
-        alignCells: 'center',
+        cellAlign: 'left',
         draggable: true,
         friction: 0.2,
         contain: true
@@ -94,9 +93,6 @@ class CaseStudies extends Component  {
           }
           .case-studies-section .btn .action-text {
             font-size: 2.1rem;
-          }
-          .carousel .flickity-prev-next-button {
-            display: none;
           }
         }
         @media (max-width: 425px) {
