@@ -103,6 +103,14 @@ const ProfileCard = ( {name, bio, handle, img} ) => (
         opacity: 1;
       }
     }
+    @media screen and (min-width: 1200px) {
+      .profile-card:nth-child(9) {
+        margin-left: 25%
+      }
+      .profile-card:nth-child(10) {
+        margin-right: 25%
+      }
+    }
     @media screen and (min-width: 1440px) {
       .profile-card {
         margin-right: 10px;

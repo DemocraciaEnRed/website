@@ -36,6 +36,8 @@ const MediaLink = ( {url, logo, className}) => (
         }
         .lanacion {
           order: 5;
+        }
+        .lanacion img {
           width: 212px;
         }
         .lpo {

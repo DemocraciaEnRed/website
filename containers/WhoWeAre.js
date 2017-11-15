@@ -44,8 +44,6 @@ const WhoWeAre = () => (
         .who-we-are-section {
           padding: 25px 72px 97px;
         }
-      }
-      @media screen and (max-width: 768px) {
         .profile-container {
           height: auto;
         }
