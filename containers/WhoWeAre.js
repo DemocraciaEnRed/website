@@ -16,11 +16,42 @@ const profiles = [
 ]
 
 class WhoWeAre extends Component {
+  constructor (props) {
+    super(props)
+    this.state = {
+      mobile: false
+    }
+  }
+
+  componentDidMount () {
+    Flickity = require('flickity')
+    if (window.innerWidth <= 1024) {
+      this.setState({
+        mobile: true
+      })
+    }
+  }
+
+  componentDidUpdate(){
+    if (this.state.mobile) {
+      const options = {
+        cellCelector: '.profile-card',
+        pageDots: false,
+        wrapAround: false,
+        cellAlign: 'center',
+        draggable: true,
+        friction: 0.2,
+        contain: true
+      }
+      new Flickity(this.refs.carousel, options)
+    }
+  }
+
   render() {
     return (
       <section className='who-we-are-section'>
         <h2 className='section-title'>Who we are</h2>
-        <div className='profile-container'>
+        <div className='profile-container' ref='carousel'>
           {profiles.map((p, i) => 
             <ProfileCard key={i} name={p.name} bio={p.bio} handle={p.handle} img={p.img} />
           )}
@@ -45,11 +76,16 @@ class WhoWeAre extends Component {
             }
           }
           @media screen and (max-width: 1024px) {
+            @import '../node_modules/flickity/css/flickity.css';
+
             .who-we-are-section {
-              padding: 25px 72px 97px;
+              padding: 24px 24px 112px;
             }
             .profile-container {
-              height: auto;
+              display: block;
+              margin-top: 33px;
+              overflow: hidden;
+              height: 250px;
             }
           }
         `}</style>
