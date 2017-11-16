@@ -8,12 +8,42 @@ let timestamp = '14:20 PM, Tuesday'
 let likes = 123
 
 class Publications extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      mobile: false
+    }
+  }
+
+  componentDidMount () {
+    Flickity = require('flickity')
+    if (window.innerWidth <= 1024) {
+      this.setState({
+        mobile: true
+      })
+    }
+  }
+
+  componentDidUpdate(){
+    if (this.state.mobile) {
+      const options = {
+        cellCelector: '.medium-post',
+        pageDots: false,
+        wrapAround: true,
+        cellAlign: 'left',
+        draggable: true,
+        friction: 0.2,
+        contain: true
+      }
+      new Flickity(this.refs.carousel, options)
+    }
+  }
 
   render() {
     return (
       <section className='publications-section'>
         <h2 className='section-title'>Publicaciones</h2>
-        <div className='posts-container'>
+        <div className='posts-container' ref='carousel'>
           <MediumPost
             snippet={snippet}
             timestamp={timestamp}
@@ -47,17 +77,28 @@ class Publications extends Component {
             width: 100%;
           }
           @media (max-width: 1024px) {
+            @import '../node_modules/flickity/css/flickity.css'
             .publications-section {
               padding: 24px 24px 40px;
             }
             .posts-container {
               margin: 61px 0 26px;
-              flex-wrap: wrap;
+              display: block;
+              overflow: hidden;
+              width: 100%;
             }
             .btn {
               margin: auto;
             }
           }
+          @media (max-width: 425px) {
+          .publications-section {
+            padding-right: 0px;
+          }
+          .posts-container {
+            margin-right: -24px;
+          }
+        }
         `}</style>
       </section>
     )
