@@ -77,15 +77,17 @@ class Publications extends Component {
             width: 100%;
           }
           @media (max-width: 1024px) {
-            @import '../node_modules/flickity/css/flickity.css'
+            @import '../node_modules/flickity/css/flickity.css';
+
             .publications-section {
-              padding: 24px 24px 40px;
+              padding-bottom: 42px;
             }
             .posts-container {
-              margin: 61px 0 26px;
+              margin: 24px 0 33px;
               display: block;
               overflow: hidden;
               width: 100%;
+              height: 229px;
             }
             .btn {
               margin: auto;
@@ -94,6 +96,7 @@ class Publications extends Component {
           @media (max-width: 425px) {
           .publications-section {
             padding-right: 0px;
+            padding-bottom: 42px;
           }
           .posts-container {
             margin-right: -24px;
