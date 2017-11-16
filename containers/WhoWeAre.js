@@ -36,14 +36,16 @@ class WhoWeAre extends Component {
     if (this.state.mobile) {
       const options = {
         cellCelector: '.profile-card',
-        pageDots: false,
-        wrapAround: false,
         cellAlign: 'center',
-        draggable: true,
-        friction: 0.2,
-        contain: true
+        prevNextButtons: true
       }
-      new Flickity(this.refs.carousel, options)
+      this.flickity = new Flickity(this.refs.carousel, options)
+    }
+  }
+
+  componentWillUnmount() {
+    if (this.flickity) {
+      this.flickity.destroy();
     }
   }
 
@@ -51,7 +53,7 @@ class WhoWeAre extends Component {
     return (
       <section className='who-we-are-section'>
         <h2 className='section-title'>Who we are</h2>
-        <div className='profile-container' ref='carousel'>
+        <div className='profile-container carousel' ref='carousel'>
           {profiles.map((p, i) => 
             <ProfileCard key={i} name={p.name} bio={p.bio} handle={p.handle} img={p.img} />
           )}
@@ -76,16 +78,21 @@ class WhoWeAre extends Component {
             }
           }
           @media screen and (max-width: 1024px) {
-            @import '../node_modules/flickity/css/flickity.css';
-
             .who-we-are-section {
               padding: 24px 24px 112px;
             }
             .profile-container {
               display: block;
               margin-top: 33px;
-              overflow: hidden;
               height: 250px;
+            }
+            .flickity-prev-next-button {
+              width: 100px;
+              height: 100px;
+              background: transparent;
+            }
+            .flickity-prev-next-button .arrow {
+              fill: black;
             }
           }
         `}</style>

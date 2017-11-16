@@ -73,8 +73,6 @@ class CaseStudies extends Component  {
           color: var(--white);
         }
         @media (max-width: 1024px) {
-          @import '../node_modules/flickity/css/flickity.css';
-
           .case-studies-section {
             flex-direction: column;
           }
