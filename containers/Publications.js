@@ -33,7 +33,8 @@ class Publications extends Component {
         cellAlign: 'left',
         draggable: true,
         friction: 0.2,
-        contain: true
+        contain: true,
+        prevNextButtons: false
       }
       new Flickity(this.refs.carousel, options)
     }
@@ -77,8 +78,6 @@ class Publications extends Component {
             width: 100%;
           }
           @media (max-width: 1024px) {
-            @import '../node_modules/flickity/css/flickity.css';
-
             .publications-section {
               padding-bottom: 42px;
             }

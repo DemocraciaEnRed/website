@@ -44,7 +44,8 @@ class Ebooks extends Component {
         draggable: true,
         friction: 0.2,
         contain: true,
-        freeScroll: false
+        freeScroll: false,
+        prevNextButtons: false
       }
       new Flickity(this.refs.carousel, options)
     }

@@ -35,7 +35,8 @@ class CaseStudies extends Component  {
         cellAlign: 'left',
         draggable: true,
         friction: 0.2,
-        contain: true
+        contain: true,
+        prevNextButtons: false
       }
       new Flickity(this.refs.carousel, options)
     }

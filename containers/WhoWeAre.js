@@ -37,7 +37,7 @@ class WhoWeAre extends Component {
       const options = {
         cellCelector: '.profile-card',
         cellAlign: 'center',
-        prevNextButtons: true
+        pageDots: false
       }
       this.flickity = new Flickity(this.refs.carousel, options)
     }
@@ -91,8 +91,11 @@ class WhoWeAre extends Component {
               height: 100px;
               background: transparent;
             }
+            .flickity-prev-next-button:hover {
+              background: transparent;
+            }
             .flickity-prev-next-button .arrow {
-              fill: black;
+              fill: #C5A3D1;
             }
           }
         `}</style>
