@@ -97,7 +97,6 @@ class CaseStudies extends Component  {
         }
         @media (max-width: 425px) {
           .case-studies-section .case-studies-container {
-            margin-left: -24px;
             margin-right: -24px;
           }
         }
