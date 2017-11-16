@@ -29,7 +29,7 @@ class Publications extends Component {
       const options = {
         cellCelector: '.medium-post',
         pageDots: false,
-        wrapAround: true,
+        wrapAround: false,
         cellAlign: 'left',
         draggable: true,
         friction: 0.2,

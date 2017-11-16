@@ -44,6 +44,7 @@ const EbookCard = ( {img, title, description, link}) => (
           grid-template-columns: 129px 146px;
           grid-template-rows: 20px auto 39px;
           height: 176px;
+          margin-right: 24px;
         }
         .ebook-title {
           font-size: 1.5rem;

@@ -31,7 +31,7 @@ class CaseStudies extends Component  {
       const options = {
         cellCelector: '.case-studies-card',
         pageDots: false,
-        wrapAround: true,
+        wrapAround: false,
         cellAlign: 'left',
         draggable: true,
         friction: 0.2,

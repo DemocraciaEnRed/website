@@ -24,11 +24,37 @@ class Ebooks extends Component {
       mobile: false
     }
   }
+
+  componentDidMount () {
+    Flickity = require('flickity')
+    if (window.innerWidth <= 1024) {
+      this.setState({
+        mobile: true
+      })
+    }
+  }
+
+  componentDidUpdate(){
+    if (this.state.mobile) {
+      const options = {
+        cellCelector: '.ebook-card',
+        pageDots: false,
+        wrapAround: false,
+        cellAlign: 'left',
+        draggable: true,
+        friction: 0.2,
+        contain: true,
+        freeScroll: false
+      }
+      new Flickity(this.refs.carousel, options)
+    }
+  }
+
   render () {
     return (
       <section className='ebooks-section'>
         <h2 className='section-title'>E-books</h2>
-        <div className='ebooks-container'>
+        <div className='ebooks-container' ref='carousel'>
           {dataEbooks.map((item,i) => 
             <EbookCard key={i} img={item.img} title={item.title} description={item.description} link={item.link} />
           )}
@@ -45,12 +71,15 @@ class Ebooks extends Component {
               padding: 24px 24px 111px 24px ;
             }
             .ebooks-container {
+              height: 176px;
+              display: block;
+              overflow: hidden;
               margin: 17px 0 0;
             }
           }
-          @media screen and (max-width: 500px) {
-            .ebook-container {
-              justify-content: center;
+          @media screen and (max-width: 425px) {
+            .ebooks-container {
+              margin-right: -24px;
             }
           }
         `}</style>
