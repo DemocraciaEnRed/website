@@ -56,7 +56,6 @@ class Collaborate extends Component {
     return (
       <section className='collaborate-section'>
         <MediaQuery minDeviceWidth={1025}>
-          <div className='carousel' ref='carousel'>
             {collaborateItems.map((it, i)=> 
               <div className='collaborate-container' key={i}>
                 <h2 className='section-title'> {it.title} </h2>
@@ -68,7 +67,6 @@ class Collaborate extends Component {
                   containerWidth={'auto'} />
               </div>     
             )}
-          </div>
         </MediaQuery>
         <MediaQuery maxDeviceWidth={1024}>
           <div className='carousel' ref='carousel'>
