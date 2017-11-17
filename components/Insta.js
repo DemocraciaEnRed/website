@@ -5,7 +5,7 @@ const Insta = () => (
     <defs>
         <polygon id="path-1" points="0 29.9964286 29.9905357 29.9964286 29.9905357 0.00946428571 0 0.00946428571"></polygon>
     </defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" className='cls-2'>
+    <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd" className='cls-2'>
         <g id="Mobile" transform="translate(-187.000000, -4627.000000)">
             <g id="Group-17" transform="translate(50.000000, 4627.000000)">
                 <g id="glyph-logo_May2016" transform="translate(137.000000, 0.000000)">
