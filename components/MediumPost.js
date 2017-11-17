@@ -19,6 +19,7 @@ const MediumPost = (props) => (
     }
 
     .snippet-text {
+      font-family: var(--regular);
       font-size: 2.4rem;
     }
 
