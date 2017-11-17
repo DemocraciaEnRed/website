@@ -149,6 +149,11 @@ class Collaborate extends Component {
               align-self: flex-end;
             }
           }
+          @media (max-width: 338px) {
+            .carousel {
+              z-index: 10;
+            }
+          }
         `}</style>
       </section>
     )
