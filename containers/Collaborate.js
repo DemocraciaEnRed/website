@@ -38,7 +38,7 @@ class Collaborate extends Component {
   componentDidUpdate(){
     if (this.state.mobile) {
       const options = {
-        cellCelector: '.profile-card',
+        cellCelector: '.collaborate-container',
         cellAlign: 'center',
         pageDots: false
       }
@@ -56,7 +56,7 @@ class Collaborate extends Component {
     return (
       <section className='collaborate-section'>
         <MediaQuery minDeviceWidth={1025}>
-          <div className='Collaborate-mediaquery-container'>
+          <div className='collaborate-mediaquery-container'>
             {collaborateItems.map((it, i)=> 
               <div className='collaborate-container' key={i}>
                 <h2 className='section-title'> {it.title} </h2>
@@ -69,27 +69,28 @@ class Collaborate extends Component {
               </div>     
             )}
             <div className='section-number'>
-          <span>03</span>
-        </div>
+              <span>03</span>
+            </div>
           </div>
-
         </MediaQuery>
         <MediaQuery maxDeviceWidth={1024}>
-          <div className='carousel' ref='carousel'>
-            {collaborateItems.map((it, i)=> 
-              <div className='collaborate-container' key={i}>
-                <h2 className='section-title'> {it.title} </h2>
-                <Milestone 
-                  className='collaborate-milestone'
-                  title={it.subtitle} 
-                  subtitle={it.paragraph} 
-                  containerWidth={'auto'} />
-              </div>     
-            )}
-          </div>
+            <div className='carousel' ref='carousel'>
+              {collaborateItems.map((it, i)=> 
+                <div className='collaborate-container' key={i}>
+                  <h2 className='section-title'> {it.title} </h2>
+                  <Milestone 
+                    className='collaborate-milestone'
+                    title={it.subtitle} 
+                    subtitle={it.paragraph} 
+                    containerWidth={'auto'} />
+                </div>     
+              )}
+            </div>
+        </MediaQuery>
+        <MediaQuery maxDeviceWidth={1024}>
           <div className='section-number'>
-          <span>03</span>
-        </div>
+            <span>03</span>
+          </div>
         </MediaQuery>
         <style jsx>{`
           .collaborate-section {
@@ -97,7 +98,7 @@ class Collaborate extends Component {
             justify-content: space-between;
             padding-bottom: 50px;
           }
-          .Collaborate-mediaquery-container {
+          .collaborate-mediaquery-container {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
@@ -116,7 +117,6 @@ class Collaborate extends Component {
           @media (max-width: 1024px) {
             .carousel {
               display: block;
-              overflow: visible;
               height: 375px;
               width: 100%;
             }
@@ -130,6 +130,12 @@ class Collaborate extends Component {
             }
             .collaborate-container {
               width: 100%;
+            }
+            .flickity-prev-next-button.previous{
+              margin-left: -35px;
+            }
+            .flickity-prev-next-button.next{
+              margin-right: -35px;
             }
           }
           @media (min-width: 1600px) {

@@ -89,6 +89,7 @@ class WhoWeAre extends Component {
               display: block;
               margin-top: 33px;
               height: 250px;
+              overflow: hidden;
             }
             .flickity-prev-next-button {
               width: 100px;

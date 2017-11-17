@@ -55,6 +55,9 @@ const AboutUs = () => (
           margin-top: -7px;
         }
       }
+      .section-number {
+        right: 12px;
+      }
       @media (max-width: 500px) {
         .about-us-container {
           flex-direction: column;
