@@ -58,6 +58,9 @@ class CaseStudies extends Component  {
             Ver más
           </span>
         </button>
+        <div className='section-number'>
+          <span>02</span>
+        </div>
       <style jsx>{`
         .case-studies-section {
           display: flex;

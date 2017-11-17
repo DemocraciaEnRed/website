@@ -64,6 +64,7 @@ body {
 
 section {
   padding: 48px 85px 42px;
+  position: relative;
 }
 
 section:nth-child(odd) {
@@ -130,7 +131,7 @@ button {
 
 .btn {
   width: 20rem;
-  height: 5.5rem;
+  height: 4.5rem;
   background-color: var(--light-accent);
   border-radius: 10rem;
   border-left: 1px solid var(--dark-accent);
@@ -168,17 +169,26 @@ button {
   font-size: 1.9rem;
 }
 
-section {
-  padding: 48px 85px 42px;
+.section-number {
+  position: absolute;
+  bottom: -70px;
+  right: 34px;
 }
 
-section:nth-child(odd) {
-  background-color: var(--white);
+.section-number span {
+  font-size: 20rem;
+  font-weight: 500;
 }
 
-section:nth-child(even) {
-  background-color: var(--light-gray);
+section:nth-child(odd) .section-number span {
+  color: #eaeaea;
 }
+
+section:nth-child(even) .section-number span {
+  color: #bebebe;
+}
+
+
 
 /* MEDIA QUERIES */
 
@@ -226,5 +236,14 @@ section:nth-child(even) {
 
   .submit-text {
     font-size: 1.5rem;
+  }
+
+  .section-number {
+    bottom: -35px;
+    right: 8px;
+  }
+
+  .section-number span {
+    font-size: 10rem;
   }
 }

@@ -19,6 +19,9 @@ const AboutUs = () => (
         Ver más
       </span>
     </button>
+    <div className='section-number'>
+      <span>01</span>
+    </div>
     <style jsx>{`
       .about-us-section {
         display: flex;
@@ -38,6 +41,9 @@ const AboutUs = () => (
       .about-us-section .btn span {
         color: var(--white);
       }
+      .section-number {
+        right: 83px;
+      }
       @media (max-width: 1024px) {
         .about-us-container {
           margin-top: 24px;
@@ -48,6 +54,9 @@ const AboutUs = () => (
         .about-us-section .btn {
           margin-top: -7px;
         }
+      }
+      .section-number {
+        right: 12px;
       }
       @media (max-width: 500px) {
         .about-us-container {
