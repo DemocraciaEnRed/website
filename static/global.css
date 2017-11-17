@@ -64,6 +64,7 @@ body {
 
 section {
   padding: 48px 85px 42px;
+  position: relative;
 }
 
 section:nth-child(odd) {
@@ -130,7 +131,7 @@ button {
 
 .btn {
   width: 20rem;
-  height: 5.5rem;
+  height: 4.5rem;
   background-color: var(--light-accent);
   border-radius: 10rem;
   border-left: 1px solid var(--dark-accent);
@@ -166,18 +167,6 @@ button {
   color: var(--white);
   font-weight: bold;
   font-size: 1.9rem;
-}
-
-section {
-  padding: 48px 85px 42px;
-}
-
-section:nth-child(odd) {
-  background-color: var(--white);
-}
-
-section:nth-child(even) {
-  background-color: var(--light-gray);
 }
 
 /* MEDIA QUERIES */
