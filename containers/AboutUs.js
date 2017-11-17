@@ -41,6 +41,9 @@ const AboutUs = () => (
       .about-us-section .btn span {
         color: var(--white);
       }
+      .section-number {
+        right: 83px;
+      }
       @media (max-width: 1024px) {
         .about-us-container {
           margin-top: 24px;

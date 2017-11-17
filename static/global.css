@@ -172,7 +172,7 @@ button {
 .section-number {
   position: absolute;
   bottom: -70px;
-  right: 36px;
+  right: 34px;
 }
 
 .section-number span {
@@ -236,5 +236,14 @@ section:nth-child(even) .section-number span {
 
   .submit-text {
     font-size: 1.5rem;
+  }
+
+  .section-number {
+    bottom: -35px;
+    right: 8px;
+  }
+
+  .section-number span {
+    font-size: 10rem;
   }
 }

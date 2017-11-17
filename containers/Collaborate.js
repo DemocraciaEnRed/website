@@ -68,7 +68,11 @@ class Collaborate extends Component {
                   containerWidth={'auto'} />
               </div>     
             )}
+            <div className='section-number'>
+          <span>03</span>
+        </div>
           </div>
+
         </MediaQuery>
         <MediaQuery maxDeviceWidth={1024}>
           <div className='carousel' ref='carousel'>
@@ -83,6 +87,9 @@ class Collaborate extends Component {
               </div>     
             )}
           </div>
+          <div className='section-number'>
+          <span>03</span>
+        </div>
         </MediaQuery>
         <style jsx>{`
           .collaborate-section {
