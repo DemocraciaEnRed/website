@@ -21,7 +21,7 @@ class Ebooks extends Component {
   constructor(props){
     super(props)
     this.state = {
-      mobile: false
+      mobile: null
     }
   }
 
@@ -31,10 +31,29 @@ class Ebooks extends Component {
       this.setState({
         mobile: true
       })
+    } else {
+      this.setState({
+        mobile: false
+      })
     }
   }
 
   componentDidUpdate(){
+    if (!this.state.mobile) {
+      console.log('hola')
+      const options = {
+        cellCelector: '.ebook-card',
+        pageDots: false,
+        wrapAround: false,
+        cellAlign: 'center',
+        draggable: true,
+        friction: 0.2,
+        contain: true,
+        freeScroll: false,
+        prevNextButtons: true
+      }
+      new Flickity(this.refs.carousel, options)
+    }
     if (this.state.mobile) {
       const options = {
         cellCelector: '.ebook-card',
@@ -55,17 +74,18 @@ class Ebooks extends Component {
     return (
       <section className='ebooks-section'>
         <h2 className='section-title'>E-books</h2>
-        <div className='ebooks-container' ref='carousel'>
+        <div className='ebooks-container carousel' ref='carousel'>
           {dataEbooks.map((item,i) => 
             <EbookCard key={i} img={item.img} title={item.title} description={item.description} link={item.link} />
           )}
         </div>
         <style jsx>{`
+          .ebooks-section {
+            padding-bottom: 160px;
+          }
           .ebooks-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            margin: 59px 0 118px;
+            display: block;
+            margin-top: 59px;
           }
           @media screen and (max-width: 1024px) {
             .ebooks-section {

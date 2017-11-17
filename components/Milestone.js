@@ -33,6 +33,9 @@ const Milestone = ( props ) => (
         margin-top: 42px;
       }
       @media (max-width: 1024px) {
+        .milestone-container {
+          margin-bottom: 40px;
+        }
         .milestone-container .milestone-img {
           height: 140px;
           width: 140px;

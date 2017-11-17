@@ -56,6 +56,7 @@ class Collaborate extends Component {
     return (
       <section className='collaborate-section'>
         <MediaQuery minDeviceWidth={1025}>
+          <div className='Collaborate-mediaquery-container'>
             {collaborateItems.map((it, i)=> 
               <div className='collaborate-container' key={i}>
                 <h2 className='section-title'> {it.title} </h2>
@@ -67,6 +68,7 @@ class Collaborate extends Component {
                   containerWidth={'auto'} />
               </div>     
             )}
+          </div>
         </MediaQuery>
         <MediaQuery maxDeviceWidth={1024}>
           <div className='carousel' ref='carousel'>
@@ -87,6 +89,12 @@ class Collaborate extends Component {
             display: flex;
             justify-content: space-between;
             padding-bottom: 50px;
+          }
+          .Collaborate-mediaquery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 100%;
           }
           .collaborate-container {
             display: flex;
@@ -111,6 +119,7 @@ class Collaborate extends Component {
             .collaborate-section {
               flex-direction: column;
               align-items: center;
+              padding-bottom: 77px;
             }
             .collaborate-container {
               width: 100%;
@@ -118,6 +127,9 @@ class Collaborate extends Component {
           }
           @media (min-width: 1600px) {
             .collaborate-section {
+              justify-content: space-around;
+            }
+            .Collaborate-mediaquery-container {
               justify-content: space-around;
             }
             .collaborate-section .collaborate-container:nth-child(2) h2 {

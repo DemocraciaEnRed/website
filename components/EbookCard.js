@@ -17,6 +17,7 @@ const EbookCard = ( {img, title, description, link}) => (
           "sidebar main"
           "sidebar footer";
         height: 280px;
+        margin-right: 137px;
       }
       .ebook-img {
         background-color: var(--gray);

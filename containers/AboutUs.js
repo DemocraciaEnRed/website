@@ -33,28 +33,25 @@ const AboutUs = () => (
       }
       .about-us-section .btn {
         align-self: center;
-        height: 55px;
-        width: 300px;
         margin-top: 30px;
-      }
-      .about-us-section .btn:active {
-        margin-top: 33px;
       }
       .about-us-section .btn span {
         color: var(--white);
       }
       @media (max-width: 1024px) {
+        .about-us-container {
+          margin-top: 24px;
+        }
         .about-us-section .section-title {
           font-size: 3.0rem;
+        }
+        .about-us-section .btn {
+          margin-top: -7px;
         }
       }
       @media (max-width: 500px) {
         .about-us-container {
           flex-direction: column;
-          margin: 0;
-        }
-        .about-us-section button {
-          display: none;
         }
       }
       @media (min-width: 1600px) {
