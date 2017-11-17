@@ -33,6 +33,9 @@ const Milestone = ( props ) => (
         margin-top: 42px;
       }
       @media (max-width: 1024px) {
+        .milestone-container {
+          margin-bottom: 40px;
+        }
         .milestone-container .milestone-img {
           height: 140px;
           width: 140px;
@@ -40,7 +43,7 @@ const Milestone = ( props ) => (
         }
         .milestone-container .subtitle {
           font-size: 1.9rem;
-          margin: 21px 0 5.5px;
+          margin: 42px 0 5.5px;
         }
         .milestone-container .subtext {
           width: 80%;
@@ -50,7 +53,6 @@ const Milestone = ( props ) => (
       @media (max-width: 500px) {
         .milestone-container {
           width: 100%;
-          margin-top: 42px;
         }
       }
     `}</style>

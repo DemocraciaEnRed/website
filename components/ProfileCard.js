@@ -117,23 +117,8 @@ const ProfileCard = ( {name, bio, handle, img} ) => (
       }
     }
     @media screen and (max-width: 1024px) {
-      .profile-card-container {
-        width: 100%;
-        height: 100%;
-        padding: 69px 42px;
-      }
-      .profile-title {
-      font-size: 3.0rem;
-      }
-      .profile-bio {
-        font-size: 2.2rem;
-        font-weight: 300;
-        color: #eaeaea;
-      }
-      .profile-handle {
-      font-size: 2.2rem;
-      font-weight: 300;
-      color: #eaeaea;
+      .profile-card {
+        margin: 0 45px;
       }
     }
     @media screen and (max-width: 375px) {

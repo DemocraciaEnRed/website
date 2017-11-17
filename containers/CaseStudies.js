@@ -31,12 +31,12 @@ class CaseStudies extends Component  {
       const options = {
         cellCelector: '.case-studies-card',
         pageDots: false,
-        autoplay: true,
-        wrapAround: true,
-        alignCells: 'center',
+        wrapAround: false,
+        cellAlign: 'left',
         draggable: true,
         friction: 0.2,
-        contain: true
+        contain: true,
+        prevNextButtons: false
       }
       new Flickity(this.refs.carousel, options)
     }
@@ -74,8 +74,6 @@ class CaseStudies extends Component  {
           color: var(--white);
         }
         @media (max-width: 1024px) {
-          @import '../node_modules/flickity/css/flickity.css'
-
           .case-studies-section {
             flex-direction: column;
           }
@@ -95,13 +93,9 @@ class CaseStudies extends Component  {
           .case-studies-section .btn .action-text {
             font-size: 2.1rem;
           }
-          .carousel .flickity-prev-next-button {
-            display: none;
-          }
         }
         @media (max-width: 425px) {
           .case-studies-section .case-studies-container {
-            margin-left: -24px;
             margin-right: -24px;
           }
         }
