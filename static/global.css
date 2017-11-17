@@ -150,10 +150,6 @@ button {
   margin-top: 0.3rem;
 }
 
-.btn:hover {
-  opacity: 0.8;
-}
-
 .action-text {
   color: var(--white);
   font-family: var(--medium);

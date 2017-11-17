@@ -72,6 +72,7 @@ class CaseStudies extends Component  {
         }
         .case-studies-section .btn {
           align-self: center;
+          margin-top: -3px;
         }
         .case-studies-section .btn .action-text {
           color: var(--white);
@@ -87,11 +88,6 @@ class CaseStudies extends Component  {
           }
           .case-studies-section .section-title {
             font-size: 3.0rem;
-          }
-          .case-studies-section .btn {
-            align-self: center;
-            height: 36.7px;
-            width: 200px;
           }
           .case-studies-section .btn .action-text {
             font-size: 2.1rem;
