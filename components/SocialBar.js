@@ -1,9 +1,22 @@
+import Facebook from './Facebook'
+import Twitter from './Twitter'
+import Github from './Github'
+import Insta from './Insta'
+
 const SocialBar = ( { alignSelf, iconsSize, width, mobileWidth, justifyContent } ) => (
 	<nav className='social-bar'>
-		<a href='' className='fb'></a>
-		<a href='' className='tw'></a>
-		<a href='' className='insta'></a>
-		<a href='' className='github'></a>
+		<a href='' className='fb'>
+      <Facebook />
+    </a>
+		<a href='' className='tw'>
+      <Twitter />
+    </a>
+		<a href='' className='insta'>
+      <Insta />
+    </a>
+		<a href='' className='github'>
+      <Github />
+    </a>
 		<style jsx>{`
       .social-bar {
         justify-content: space-between;
@@ -19,19 +32,8 @@ const SocialBar = ( { alignSelf, iconsSize, width, mobileWidth, justifyContent }
         height: ${iconsSize};
         width: ${iconsSize};
 			}
-    	.fb {
-      	background-image: url('/static/assets/icons/Facebook.svg');
-    	}
-    	.tw {
-    		background-image: url('/static/assets/icons/Twitter.svg');
-    	}
-    	.insta {
-    		background-image: url('/static/assets/icons/Insta.svg');
-    	}
-    	.github {
-    		background-image: url('/static/assets/icons/Github.svg');
-    	}
-      @media (max-width: 500px) {
+
+      @media (max-width: 1024px) {
         .social-bar {
           align-self: center;
           display: flex;
