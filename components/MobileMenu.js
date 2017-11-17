@@ -1,27 +1,35 @@
 const primaryLinks = [
   {
     href: "/",
-    text: "Item1"
+    text: "About us"
   },
   {
     href: "#header",
-    text: "Item2"
+    text: "Case studies"
   },
   {
     href: "#about",
-    text: "Item3"
+    text: "Collaborate"
   },
   {
     href: "#about",
-    text: "Item4"
+    text: "Transparency"
   },
   {
     href: "#about",
-    text: "Item5"
+    text: "Publications"
   },
   {
     href: "#about",
-    text: "Item6"
+    text: "E-books"
+  },
+  {
+    href: "#about",
+    text: "Media"
+  },
+  {
+    href: "#about",
+    text: "Who we are"
   }
 ]
 
@@ -56,7 +64,7 @@ const MobileMenu = (props) => (
       {secondaryLinks.map((link, i) => {
         return (
           <li key={i}>
-            <a onClick={props.handleActiveLink(link.text)} className={`menu-link ${props.activeLink === link.text ? ' active' : ''}`}>{link.text}</a>
+            <a href={link.href} onClick={props.handleActiveLink(link.text)} className={`menu-link ${props.activeLink === link.text ? ' active' : ''}`}>{link.text}</a>
           </li>
         )
       })}
