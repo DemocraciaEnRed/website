@@ -58,9 +58,13 @@ class WhoWeAre extends Component {
             <ProfileCard key={i} name={p.name} bio={p.bio} handle={p.handle} img={p.img} />
           )}
         </div>
+        <div className='section-number'>
+          <span>07</span>
+        </div>
         <style jsx>{`
           .who-we-are-section {
             padding-bottom: 173px;
+            overflow-y: hidden;
           }
           .profile-container {
             align-content: space-between;

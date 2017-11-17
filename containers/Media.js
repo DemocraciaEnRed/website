@@ -18,6 +18,9 @@ const Media = () => (
         <MediaLink key={i} url={link.url} logo={link.logo} className={link.className} />
       )}
     </div>
+    <div className='section-number'>
+          <span>06</span>
+        </div>
     <style jsx>{`
       .media-section {
         padding-bottom: 203px;
