@@ -85,6 +85,7 @@ class Ebooks extends Component {
           }
           .ebooks-container {
             display: block;
+            overflow: hidden;
             margin-top: 59px;
           }
           @media screen and (max-width: 1024px) {
