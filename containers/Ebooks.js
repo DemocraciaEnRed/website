@@ -90,6 +90,8 @@ class Ebooks extends Component {
             display: block;
             overflow: hidden;
             margin-top: 59px;
+            padding-left: 70px;
+            padding-right: 70px;
           }
           @media screen and (max-width: 1024px) {
             .ebooks-section {
@@ -105,6 +107,12 @@ class Ebooks extends Component {
           @media screen and (max-width: 425px) {
             .ebooks-container {
               margin-right: -24px;
+            }
+          }
+          @media screen and (max-width: 1354px), screen and (min-width: 1025px) {
+            .ebooks-container {
+              padding-right: 50px;
+              padding-left: 50px;
             }
           }
         `}</style>
