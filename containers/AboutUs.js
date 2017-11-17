@@ -47,6 +47,9 @@ const AboutUs = () => (
       @media (max-width: 1024px) {
         .about-us-container {
           margin-top: 24px;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
         }
         .about-us-section .section-title {
           font-size: 3.0rem;
@@ -57,16 +60,6 @@ const AboutUs = () => (
       }
       .section-number {
         right: 12px;
-      }
-      @media (max-width: 500px) {
-        .about-us-container {
-          flex-direction: column;
-        }
-      }
-      @media (min-width: 1600px) {
-        .about-us-container {
-          justify-content: space-around;
-        }
       }
     `}</style>
 	</section>

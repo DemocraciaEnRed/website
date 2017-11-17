@@ -33,7 +33,7 @@ const SocialBar = ( { alignSelf, iconsSize, width, mobileWidth, justifyContent }
         width: ${iconsSize};
 			}
 
-      @media (max-width: 500px) {
+      @media (max-width: 1024px) {
         .social-bar {
           align-self: center;
           display: flex;

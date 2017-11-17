@@ -1,5 +1,5 @@
 const Twitter = () => (
-  <svg width="47px" height="47px" viewBox="0 0 37 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" className='cls-2'>
+  <svg viewBox="0 0 37 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" className='cls-2'>
     <title>Logo__x2014__FIXED</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
