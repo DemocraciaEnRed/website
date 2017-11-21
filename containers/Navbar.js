@@ -14,8 +14,8 @@ class Navbar extends Component {
   }
 
 handleActiveLink = (link, href) => (e) => {
-  e.preventDefault()
   if (href) {
+    e.preventDefault()
     this.handleScroll(href)
   }
   this.setState({

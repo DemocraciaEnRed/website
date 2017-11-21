@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 const primaryLinks = [
   {
     href: "about",
@@ -12,7 +14,7 @@ const primaryLinks = [
     text: "Collaborate"
   },
   {
-    href: "transparency",
+    href: "collaborate",
     text: "Transparency"
   },
   {
@@ -64,7 +66,9 @@ const MobileMenu = (props) => (
       {secondaryLinks.map((link, i) => {
         return (
           <li key={i}>
-            <a href={link.href} onClick={props.handleActiveLink(link.text)} className={`menu-link ${props.activeLink === link.text ? ' active' : ''}`}>{link.text}</a>
+            <Link href={link.href}>
+              <a onClick={props.handleActiveLink(link.text)} className={`menu-link ${props.activeLink === link.text ? ' active' : ''}`}>{link.text}</a>
+            </Link >
           </li>
         )
       })}

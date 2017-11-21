@@ -56,11 +56,11 @@ class Collaborate extends Component {
 
   render () {
     return (
-      <section className='collaborate-section'>
+      <section className='collaborate-section' id='collaborate'>
         <MediaQuery minDeviceWidth={1025}>
           <div className='collaborate-mediaquery-container'>
             {collaborateItems.map((it, i)=> 
-              <div className='collaborate-container' key={i} id={it.id}>
+              <div className='collaborate-container' key={i}>
                 <h2 className='section-title'> {it.title} </h2>
                 <Milestone 
                   className='collaborate-milestone'
@@ -78,7 +78,7 @@ class Collaborate extends Component {
         <MediaQuery maxDeviceWidth={1024}>
             <div className='carousel' ref='carousel'>
               {collaborateItems.map((it, i)=> 
-                <div className='collaborate-container' key={i} id={it.id}>
+                <div className='collaborate-container' key={i} >
                   <h2 className='section-title'> {it.title} </h2>
                   <Milestone 
                     className='collaborate-milestone'
