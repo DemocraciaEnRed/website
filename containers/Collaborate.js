@@ -6,12 +6,14 @@ let Flickity;
 const collaborateItems = [
   {
     title: 'Collaborate',
+    id: 'collaborate',
     subtitle: '¿Cómo puedo colaborar?',
     paragraph: 'Ayudanos a llegar a más personas. Hay muchas maneras de colaborar.',
     button: 'Escribinos'
   },
   {
     title: 'Transparency',
+    id: 'transparency',
     subtitle: '¿Quién nos financia? ¿Cómo gastamos?',
     paragraph: 'Aquí toda la información contable resumida y con su soporte documental.',
     button: 'Action'
@@ -58,7 +60,7 @@ class Collaborate extends Component {
         <MediaQuery minDeviceWidth={1025}>
           <div className='collaborate-mediaquery-container'>
             {collaborateItems.map((it, i)=> 
-              <div className='collaborate-container' key={i}>
+              <div className='collaborate-container' key={i} id={it.id}>
                 <h2 className='section-title'> {it.title} </h2>
                 <Milestone 
                   className='collaborate-milestone'
@@ -76,7 +78,7 @@ class Collaborate extends Component {
         <MediaQuery maxDeviceWidth={1024}>
             <div className='carousel' ref='carousel'>
               {collaborateItems.map((it, i)=> 
-                <div className='collaborate-container' key={i}>
+                <div className='collaborate-container' key={i} id={it.id}>
                   <h2 className='section-title'> {it.title} </h2>
                   <Milestone 
                     className='collaborate-milestone'

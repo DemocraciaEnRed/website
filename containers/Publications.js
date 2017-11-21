@@ -42,7 +42,7 @@ class Publications extends Component {
 
   render() {
     return (
-      <section className='publications-section'>
+      <section className='publications-section' id='publications'>
         <h2 className='section-title'>Publicaciones</h2>
         <div className='posts-container' ref='carousel'>
           <MediumPost

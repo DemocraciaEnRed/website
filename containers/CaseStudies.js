@@ -44,7 +44,7 @@ class CaseStudies extends Component  {
 
   render () {
     return (
-      <section className='case-studies-section'>
+      <section className='case-studies-section' id='case-studies'>
         <h2 className='section-title'>
           Case Studies
         </h2>

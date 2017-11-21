@@ -16,11 +16,10 @@ class Navbar extends Component {
 handleActiveLink = (link) => (e) => {
   this.setState({
     active: link
-  })
+  }, () =>  this.handleMainMenu())
 }
 
-handleMainMenu = (e) => {
-  e.preventDefault()
+handleMainMenu = () => {
   let mobileMenu = window.innerWidth <= 1024 ? true : false
   this.setState({
     menu: !this.state.menu,

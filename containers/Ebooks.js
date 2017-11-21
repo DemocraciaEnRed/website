@@ -40,7 +40,6 @@ class Ebooks extends Component {
 
   componentDidUpdate(){
     if (!this.state.mobile) {
-      console.log('hola')
       const options = {
         cellCelector: '.ebook-card',
         pageDots: false,
@@ -72,7 +71,7 @@ class Ebooks extends Component {
 
   render () {
     return (
-      <section className='ebooks-section'>
+      <section className='ebooks-section' id='ebooks'>
         <h2 className='section-title'>E-books</h2>
         <div className='ebooks-container carousel' ref='carousel'>
           {dataEbooks.map((item,i) => 

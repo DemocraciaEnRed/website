@@ -1,34 +1,34 @@
 const primaryLinks = [
   {
-    href: '/',
+    href: '#about',
     title: 'About us'
   },
   {
-    href: '/',
+    href: '#case-studies',
     title: 'Case studies'
   },
   {
-    href: '/',
+    href: '#collaborate',
     title: 'Collaborate'
   },
   {
-    href: '/',
+    href: '#transparency',
     title: 'Transparency'
   },
   {
-    href: '/',
+    href: '#publications',
     title: 'Publications'
   },
   {
-    href: '/',
+    href: '#ebooks',
     title: 'E-books'
   },
   {
-    href: '/',
+    href: '#media',
     title: 'Media'
   },
   {
-    href: '/',
+    href: '#who-we-are',
     title: 'Who we are'
   }
 ]
