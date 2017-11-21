@@ -1,34 +1,34 @@
 const primaryLinks = [
   {
-    href: '#about',
+    href: 'about',
     title: 'About us'
   },
   {
-    href: '#case-studies',
+    href: 'case-studies',
     title: 'Case studies'
   },
   {
-    href: '#collaborate',
+    href: 'collaborate',
     title: 'Collaborate'
   },
   {
-    href: '#transparency',
+    href: 'transparency',
     title: 'Transparency'
   },
   {
-    href: '#publications',
+    href: 'publications',
     title: 'Publications'
   },
   {
-    href: '#ebooks',
+    href: 'ebooks',
     title: 'E-books'
   },
   {
-    href: '#media',
+    href: 'media',
     title: 'Media'
   },
   {
-    href: '#who-we-are',
+    href: 'who-we-are',
     title: 'Who we are'
   }
 ]
@@ -51,7 +51,7 @@ const DesktopMenu = (props) => (
     <ul className='primary-links-container'>
       {primaryLinks.map((link, i)=> 
         <li key={i}>
-          <a onClick={props.handleActiveLink(link.title)} className={`desktop-menu-link ${props.activeLink === link.title ? ' active' : ''}`}>{link.title}</a>
+          <a onClick={props.handleActiveLink(link.title, link.href)} className={`desktop-menu-link ${props.activeLink === link.title ? ' active' : ''}`}>{link.title}</a>
         </li>
       )}
     </ul>

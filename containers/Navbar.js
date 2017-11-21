@@ -13,10 +13,14 @@ class Navbar extends Component {
     }
   }
 
-handleActiveLink = (link) => (e) => {
+handleActiveLink = (link, href) => (e) => {
+  e.preventDefault()
+  if (href) {
+    this.handleScroll(href)
+  }
   this.setState({
     active: link
-  }, () =>  this.handleMainMenu())
+  }, this.handleMainMenu())
 }
 
 handleMainMenu = () => {
@@ -25,6 +29,11 @@ handleMainMenu = () => {
     menu: !this.state.menu,
     mobile: mobileMenu
   })
+}
+
+handleScroll = (id) => {
+  let anchor = document.getElementById(id)
+  window.scrollTo(0, anchor.offsetTop -40)
 }
 
 render () {

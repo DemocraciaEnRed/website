@@ -1,34 +1,34 @@
 const primaryLinks = [
   {
-    href: "#about",
+    href: "about",
     text: "About us"
   },
   {
-    href: "#case-studies",
+    href: "case-studies",
     text: "Case studies"
   },
   {
-    href: "#collaborate",
+    href: "collaborate",
     text: "Collaborate"
   },
   {
-    href: "#transparency",
+    href: "transparency",
     text: "Transparency"
   },
   {
-    href: "#publications",
+    href: "publications",
     text: "Publications"
   },
   {
-    href: "#ebooks",
+    href: "ebooks",
     text: "E-books"
   },
   {
-    href: "#media",
+    href: "media",
     text: "Media"
   },
   {
-    href: "#who-we-are",
+    href: "who-we-are",
     text: "Who we are"
   }
 ]
@@ -55,7 +55,7 @@ const MobileMenu = (props) => (
       {primaryLinks.map((link, i) => {
         return (
           <li key={i}>
-            <a onClick={props.handleActiveLink(link.text)} href={link.href} className={`menu-link ${props.activeLink === link.text ? ' active' : ''}`}>{link.text}</a>
+            <a onClick={props.handleActiveLink(link.text, link.href)} className={`menu-link ${props.activeLink === link.text ? ' active' : ''}`}>{link.text}</a>
           </li>
         )
       })}
