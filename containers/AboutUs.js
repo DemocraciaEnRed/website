@@ -7,7 +7,7 @@ const items = [
 ]
 
 const AboutUs = () => (
-	<section className='about-us-section'>
+	<section className='about-us-section' id='about'>
 		<h2 className='section-title'>About us</h2>
     <div className='about-us-container'>
       {items.map((item, i) => {

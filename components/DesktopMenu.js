@@ -1,45 +1,47 @@
+import Link from 'next/link'
+
 const primaryLinks = [
   {
-    href: '/',
+    href: 'about',
     title: 'About us'
   },
   {
-    href: '/',
+    href: 'case-studies',
     title: 'Case studies'
   },
   {
-    href: '/',
+    href: 'collaborate',
     title: 'Collaborate'
   },
   {
-    href: '/',
+    href: 'collaborate',
     title: 'Transparency'
   },
   {
-    href: '/',
+    href: 'publications',
     title: 'Publications'
   },
   {
-    href: '/',
+    href: 'ebooks',
     title: 'E-books'
   },
   {
-    href: '/',
+    href: 'media',
     title: 'Media'
   },
   {
-    href: '/',
+    href: 'who-we-are',
     title: 'Who we are'
   }
 ]
 
 const secondaryLinks = [
   {
-    href: '/',
+    href: '/contact',
     title: 'Contact us'
   },
   {
-    href: '/',
+    href: '/jobs',
     title: 'Jobs'
   }
 ]
@@ -49,18 +51,24 @@ const DesktopMenu = (props) => (
   <nav className='main-menu' role='navigation'>
     <a className='close-menu' onClick={props.handleMainMenu}></a>
     <ul className='primary-links-container'>
-      {primaryLinks.map((link, i)=> 
-        <li key={i}>
-          <a onClick={props.handleActiveLink(link.title)} className={`desktop-menu-link ${props.activeLink === link.title ? ' active' : ''}`}>{link.title}</a>
-        </li>
-      )}
+      {primaryLinks.map((link, i)=> {
+        return (
+          <li key={i}>
+            <a onClick={props.handleActiveLink(link.title, link.href)} className={`desktop-menu-link ${props.activeLink === link.title ? ' active' : ''}`}>{link.title}</a>
+          </li>
+        )
+      })}
     </ul>
     <ul className='secondary-links-container'>
-      {secondaryLinks.map((link, i)=> 
-        <li key={i}>
-          <a onClick={props.handleActiveLink(link.title)} className={`desktop-menu-link ${props.activeLink === link.title ? ' active' : ''}`}>{link.title}</a>
-        </li>
-      )}
+      {secondaryLinks.map((link, i)=> {
+        return (
+          <li key={i}>
+            <Link href={link.href}>
+              <a onClick={props.handleActiveLink(link.title)} className={`desktop-menu-link ${props.activeLink === link.title ? ' active' : ''}`}>{link.title}</a>
+            </Link >
+          </li>
+        )
+      })}
     </ul>
     <style jsx>{`
       .main-menu {

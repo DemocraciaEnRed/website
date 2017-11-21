@@ -51,7 +51,7 @@ class WhoWeAre extends Component {
 
   render() {
     return (
-      <section className='who-we-are-section'>
+      <section className='who-we-are-section' id='who-we-are'>
         <h2 className='section-title'>Who we are</h2>
         <div className='profile-container carousel' ref='carousel'>
           {profiles.map((p, i) => 

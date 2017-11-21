@@ -11,7 +11,7 @@ const mediaLinks = [
 ]
 
 const Media = () => (
-  <section className='media-section'>
+  <section className='media-section' id='media'>
     <h2 className='section-title'>Media</h2>
     <div className='media-container'>
       {mediaLinks.map((link, i) =>

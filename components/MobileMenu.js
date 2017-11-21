@@ -1,27 +1,37 @@
+import Link from 'next/link'
+
 const primaryLinks = [
   {
-    href: "/",
-    text: "Item1"
+    href: "about",
+    text: "About us"
   },
   {
-    href: "#header",
-    text: "Item2"
+    href: "case-studies",
+    text: "Case studies"
   },
   {
-    href: "#about",
-    text: "Item3"
+    href: "collaborate",
+    text: "Collaborate"
   },
   {
-    href: "#about",
-    text: "Item4"
+    href: "collaborate",
+    text: "Transparency"
   },
   {
-    href: "#about",
-    text: "Item5"
+    href: "publications",
+    text: "Publications"
   },
   {
-    href: "#about",
-    text: "Item6"
+    href: "ebooks",
+    text: "E-books"
+  },
+  {
+    href: "media",
+    text: "Media"
+  },
+  {
+    href: "who-we-are",
+    text: "Who we are"
   }
 ]
 
@@ -47,7 +57,7 @@ const MobileMenu = (props) => (
       {primaryLinks.map((link, i) => {
         return (
           <li key={i}>
-            <a onClick={props.handleActiveLink(link.text)} className={`menu-link ${props.activeLink === link.text ? ' active' : ''}`}>{link.text}</a>
+            <a onClick={props.handleActiveLink(link.text, link.href)} className={`menu-link ${props.activeLink === link.text ? ' active' : ''}`}>{link.text}</a>
           </li>
         )
       })}
@@ -56,7 +66,9 @@ const MobileMenu = (props) => (
       {secondaryLinks.map((link, i) => {
         return (
           <li key={i}>
-            <a onClick={props.handleActiveLink(link.text)} className={`menu-link ${props.activeLink === link.text ? ' active' : ''}`}>{link.text}</a>
+            <Link href={link.href}>
+              <a onClick={props.handleActiveLink(link.text)} className={`menu-link ${props.activeLink === link.text ? ' active' : ''}`}>{link.text}</a>
+            </Link >
           </li>
         )
       })}
