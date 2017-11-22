@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Head from 'next/head'
-import Polyglot from 'node-polyglot'
-import es from '../translations/es.json'
+import polyglot from '../components/polyglot'
+import es from '../translations/es'
 import Layout from '../layouts/Layout'
 import Header from '../containers/Header'
 import AboutUs from '../containers/AboutUs'
@@ -15,9 +15,8 @@ import Publications from '../containers/Publications'
 class Index extends Component {
   constructor (props) {
     super(props)
-    console.log(polyglot)
-    var polyglot = new Polyglot({phrases : es, locale : 'es'})
-    console.log(polyglot)
+    polyglot.extend(es)
+    console.log('estoy en el index', polyglot.t('header.title'))
   }
 
   render () {
