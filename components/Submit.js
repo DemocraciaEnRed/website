@@ -1,4 +1,5 @@
-import React from 'react';
+import React from 'react'
+import { t } from '../polyglot-modules/polyglot'
 import CheckedButton from './CheckedButton.js'
 
 export default class Submit extends React.Component {
@@ -29,7 +30,7 @@ export default class Submit extends React.Component {
             <CheckedButton />
            :
             <span className={`submit-text ${this.state.hasClicked ? 'submit-text-checked' : ''}`}>
-      	 	   Submit
+      	 	   {t('header.callToAction')}
             </span>
           }
         </button>

@@ -1,12 +1,11 @@
-import polyglot from '../components/polyglot'
+import { t } from '../polyglot-modules/polyglot'
 import Submit from '../components/Submit'
 import SocialBar from '../components/SocialBar.js'
 
 const Header = () => (
 	<header>
-    {console.log('estoy en el header', polyglot.t('header.title'))}
-		<h1>Democracia en Red</h1>
-		<p className='subtext'>Imaginamos, diseñamos e implementamos innovaciones en el sistema político para abrir los procesos de decisión y redistribuir el poder.</p>
+		<h1>{t('header.title')}</h1>
+		<p className='subtext'>{t('header.subtitle')}</p>
 		<Submit />
 		<SocialBar alignSelf={'flex-end'} iconsSize={'30px'} width={'300px'} mobileWidth={'100%'} justifyContent={'space-around'}/>
 		<style jsx>{`
