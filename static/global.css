@@ -1,0 +1,246 @@
+@font-face {
+  font-family: Dosis-Regular;
+  src: url(./fonts/Dosis-Regular.ttf);
+}
+
+@font-face {
+  font-family: Dosis-Bold;
+  src: url(./fonts/Dosis-Bold.ttf);
+}
+
+@font-face {
+  font-family: Dosis-SemiBold;
+  src: url(./fonts/Dosis-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: Dosis-Medium;
+  src: url(./fonts/Dosis-Medium.ttf);
+}
+
+@font-face {
+  font-family: Dosis-Light;
+  src: url(./fonts/Dosis-Light.ttf);
+}
+
+@font-face {
+  font-family: Dosis-ExtraLight;
+  src: url(./fonts/Dosis-ExtraLight.ttf);
+}
+
+:root {
+  /* COLOURS */
+  --dark-accent: #8a509f;
+  --light-accent: #a764bf;
+  --white: #fff;
+  --black: #000;
+  --dark-gray: #434347;
+  --gray: #565656;
+  --light-gray: #efefef;
+
+  /* FONTS */
+  --regular: 'Dosis-Regular';
+  --medium: 'Dosis-Medium';
+  --semibold: 'Dosis-Semibold';
+  --bold: 'Dosis-Bold';
+  --light: 'Dosis-Light';
+  --extralight: 'Dosis-ExtraLight';
+  
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--regular), 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: var(--black);
+}
+
+body {
+  width: 100vw;
+  background-color: #fff;
+}
+
+section {
+  padding: 48px 85px 42px;
+  position: relative;
+}
+
+section:nth-child(odd) {
+  background-color: var(--white);
+}
+
+section:nth-child(even) {
+  background-color: var(--light-gray);
+}
+
+h1 {
+  font-family: var(--bold);
+  font-weight: 500;
+  font-size: 4.8rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  border: none;
+}
+
+.section-title {
+  font-family: var(--semibold);
+  font-weight: 500;
+  font-size: 4.2rem;
+}
+
+.subtitle {
+  font-family: var(--bold);
+  font-weight: 500;
+  font-size: 2.4rem;
+}
+
+.subtext {
+  font-family: var(--medium);
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 1.5;
+  color: var(--gray);
+}
+
+.regular-text {
+  font-family: var(--regular);
+  font-size: 1.8rem;
+  /*line-height: 2;*/
+  letter-spacing: 0.08rem;
+  color: var(--white);
+}
+
+.card-label {
+  font-family: var(--extralight);
+  font-weight: 200;
+  font-size: 1.6rem;
+  line-height: 2;
+  color: var(--gray);
+}
+
+.btn {
+  width: 20rem;
+  height: 4.5rem;
+  background-color: var(--light-accent);
+  border-radius: 10rem;
+  border-left: 1px solid var(--dark-accent);
+  border-right: 1px solid var(--dark-accent);
+  border-bottom: 3px solid var(--dark-accent);
+  align-self: center;
+  z-index: 10;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn:active {
+  border-bottom: 1px solid var(--dark-accent);
+  margin-top: 0.3rem;
+}
+
+.action-text {
+  color: var(--white);
+  font-family: var(--medium);
+  font-weight: 500;
+  font-size: 2.4rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.submit-text {
+  font-family: var(--bold);
+  color: var(--white);
+  font-weight: bold;
+  font-size: 1.9rem;
+}
+
+.section-number {
+  position: absolute;
+  bottom: -70px;
+  right: 34px;
+}
+
+.section-number span {
+  font-size: 20rem;
+  font-weight: 500;
+}
+
+section:nth-child(odd) .section-number span {
+  color: #eaeaea;
+}
+
+section:nth-child(even) .section-number span {
+  color: #bebebe;
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1024px) {
+
+  section {
+    padding: 24px 24px 42px;
+  }
+
+  h1 {
+    font-size: 2.6rem;
+  }
+
+  .section-title {
+    font-size: 3rem;
+  }
+
+  .subtitle {
+    font-size: 2rem;
+  }
+
+  .subtext {
+    font-size: 2rem;
+    /*line-height: 2.9rem;*/
+  }
+
+  .regular-text {
+    font-size: 1.8rem;
+    /*line-height: 2.4rem;*/
+  }
+
+  .card-label {
+    font-size: 1.4rem;
+    /*line-height: 3.8rem;*/
+  }
+
+  .btn {
+    width: 20rem;
+    height: 3.6rem;
+  }
+
+  .action-text {
+    font-size: 2.2rem;
+  }
+
+  .submit-text {
+    font-size: 1.5rem;
+  }
+
+  .section-number {
+    bottom: -35px;
+    right: 8px;
+  }
+
+  .section-number span {
+    font-size: 10rem;
+  }
+}
