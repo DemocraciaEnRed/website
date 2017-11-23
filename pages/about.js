@@ -3,6 +3,9 @@ import Layout from '../layouts/Layout'
 import Header from '../sections/about/containers/Header'
 import AboutUs from '../sections/about/containers/AboutUs'
 import SectionMilestone from '../sections/about/containers/SectionMilestone'
+import Content from '../sections/about/containers/Content'
+import DemocracyOs from '../sections/about/components/DemocracyOs'
+import CivicStack from '../sections/about/components/CivicStack'
 
 const About = () => (
   <div>
@@ -15,6 +18,10 @@ const About = () => (
       <Header />
       <AboutUs />
       <SectionMilestone title='Abrir el gobierno' text='Participación ciudadana facilitada por la tecnología.' />
+      <Content>
+        <DemocracyOs />
+        <CivicStack />
+      </Content>
       <SectionMilestone title='Repensar la educación' text='Nuevas didácticas y pedagogía educativa.' />
       <SectionMilestone title='Promover liderazgos' text='Redes regionales de proyectos político-sociales. ' />
     </Layout>

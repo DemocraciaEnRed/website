@@ -12,8 +12,6 @@ const SectionMilestone = ( {title, text, img} ) => (
         justify-content: center;
         align-items: center;
         align-content: center;
-        padding-left: 456px;
-        padding-right: 456px;
       }
       .section-milestone-img {
         background-color: #d8d8d8;
