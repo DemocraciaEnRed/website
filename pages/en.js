@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Link from 'next/link'
 import { polyglot } from '../polyglot-modules/polyglot'
 import Head from 'next/head'
 import en from '../translations/en'
@@ -30,11 +29,6 @@ class Index extends Component {
         </Head>
         <Layout>
           <Header />
-          <div>
-            <Link href="/">
-              <a>ES</a>
-            </Link>
-          </div>
           <AboutUs />
           <CaseStudies />
           <Collaborate />
