@@ -39,6 +39,9 @@ const CivicStack = () => (
         margin: 42px 0px;
         text-align: center;
       }
+      .btn {
+        margin-top: -3px;
+      }
     `}</style>
   </div>
 )

@@ -1,4 +1,4 @@
-import Github from '../../../components/Github'
+import Github from '../components/Github'
 
 const DemocracyOs = () => (
   <div className='democracy-os-container'>
@@ -11,6 +11,7 @@ const DemocracyOs = () => (
     </p>
     <div className='buttons-container'>
       <button className='btn'>
+        <Github />
         <span className='action-text'>Repositorio</span>
       </button>
       <button className='btn'>
@@ -40,6 +41,9 @@ const DemocracyOs = () => (
         justify-content: space-between;
         margin-top: 42px;
         width: 511px;
+      }
+      .btn {
+        margin-top: -3px;
       }
     `}</style>
   </div>

@@ -54,6 +54,9 @@ const Sole = () => (
         list-style-type: disc;
         margin: 41px 192px 42px;
       }
+      .sole-container .btn {
+        margin-top: -3px;
+      }
     `}</style>
   </div>
 )
