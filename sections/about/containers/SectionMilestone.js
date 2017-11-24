@@ -5,13 +5,15 @@ const SectionMilestone = ( {title, text, img} ) => (
     <p className='section-milestone-text'>{text}</p>
     <style jsx>{`
       .section-milestone {
+        align-items: center;
+        align-content: center;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         height: 600px;
         justify-content: center;
-        align-items: center;
-        align-content: center;
+        padding-top: 0px;
+        padding-bottom: 0px;
       }
       .section-milestone-img {
         background-color: #d8d8d8;
