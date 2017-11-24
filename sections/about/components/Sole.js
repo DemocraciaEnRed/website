@@ -57,6 +57,12 @@ const Sole = () => (
       .sole-container .btn {
         margin-top: -3px;
       }
+      @media (max-width: 768px) {
+        .sole-container ul {
+          margin-left: 100px;
+          margin-right: 100px;
+        }
+      }
     `}</style>
   </div>
 )

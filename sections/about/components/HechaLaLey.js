@@ -29,6 +29,11 @@ const HechaLaLey = () => (
       .hechalaley-container .btn {
         margin-top: 42px;
       }
+      @media (max-width: 1024px) {
+        .hechalaley-container h2 {
+          font-size: 3rem;
+        }
+      }
     `}</style>
   </div>
 )

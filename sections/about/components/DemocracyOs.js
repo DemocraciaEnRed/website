@@ -45,6 +45,15 @@ const DemocracyOs = () => (
       .btn {
         margin-top: -3px;
       }
+      @media (max-width: 520px) {
+        .buttons-container {
+          flex-direction: column;
+          width: 100%;
+        }
+        .buttons-container .btn:first-child {
+          margin-bottom: 20px;
+        }
+      }
     `}</style>
   </div>
 )

@@ -25,12 +25,18 @@ const SectionMilestone = ( {title, text, img} ) => (
         font-size: 3.6rem;
         font-weight: var(--bold);
         margin: 16px 0;
+        text-align: center;
         text-transform: uppercase;
       }
       .section-milestone-text {
         font-size: 2.4rem;
         letter-spacing: 0.13rem;
         text-align: center;
+      }
+      @media (max-width: 1024px) {
+        .section-milestone-title {
+          font-size: 3rem;
+        }
       }
     `}</style>
   </section>
