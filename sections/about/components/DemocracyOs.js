@@ -2,6 +2,7 @@ import Github from '../components/Github'
 
 const DemocracyOs = () => (
   <div className='democracy-os-container'>
+    <img src='/static/assets/about/logodOS.svg' alt='Democracy OS logo'/>
     <p>DemocracyOS es una plataforma de participación que permite a los ciudadanos informarse, debatir y votar en forma rápida y sencilla. </p>
     <p>DemocracyOS está concebida como una aplicación web versátil, simple y escalable de toma de decisiones colectivas que sirve como herramienta para los ciudadanos interesados en mejorar el acceso a la información, la participación cívica y abrir canales de interacción entre nuevos espacios de construcción de poder y el sistema político: activistas cívicos, organizaciones civiles y actores gubernamentales.</p>
     <p>Desarrollada en código abierto, con más de 50000 usuarios. <br />

@@ -17,6 +17,7 @@ const content = {
 
 const Sole = () => (
   <div className='sole-container'>
+    <img src='/static/assets/about/logosole.svg' alt='SOLE logo'/>
     <div>
       {content.text.map((it, i)=> {
         return <p key={i}>{it}</p>
