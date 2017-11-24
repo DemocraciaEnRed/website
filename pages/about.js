@@ -6,6 +6,7 @@ import SectionMilestone from '../sections/about/containers/SectionMilestone'
 import Content from '../sections/about/containers/Content'
 import DemocracyOs from '../sections/about/components/DemocracyOs'
 import CivicStack from '../sections/about/components/CivicStack'
+import HechaLaLey from '../sections/about/components/HechaLaLey'
 
 const About = () => (
   <div>
@@ -21,6 +22,7 @@ const About = () => (
       <Content>
         <DemocracyOs />
         <CivicStack />
+        <HechaLaLey />
       </Content>
       <SectionMilestone title='Repensar la educación' text='Nuevas didácticas y pedagogía educativa.' />
       <SectionMilestone title='Promover liderazgos' text='Redes regionales de proyectos político-sociales. ' />

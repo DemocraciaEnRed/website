@@ -11,10 +11,7 @@ const DemocracyOs = () => (
     </p>
     <div className='buttons-container'>
       <button className='btn'>
-        <a className='github-icon action-text'>
-          <Github />
-          <span className='action-text'>Repositorio</span>
-        </a>
+        <span className='action-text'>Repositorio</span>
       </button>
       <button className='btn'>
         <span className='action-text'>Más info</span>
@@ -43,11 +40,6 @@ const DemocracyOs = () => (
         justify-content: space-between;
         margin-top: 42px;
         width: 511px;
-      }
-      .github-icon {
-        height: 20px;
-        margin-right: 6px;
-        width: 20px;
       }
     `}</style>
   </div>

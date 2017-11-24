@@ -8,11 +8,19 @@ const CivicStack = () => (
     </button>
     <style jsx>{`
       .civic-stack-container {
+        border-bottom-style: solid;
+        border-top-style: solid;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         padding-bottom: 100px;
         padding-top: 100px;
       }
       .civic-stack-text {
+        font-size: 2rem;
+        letter-spacing: 0.13rem;
         margin: 42px 0px;
+        text-align: center;
       }
     `}</style>
   </div>
