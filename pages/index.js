@@ -3,14 +3,15 @@ import { polyglot } from '../polyglot-modules/polyglot'
 import Head from 'next/head'
 import es from '../translations/es'
 import Layout from '../layouts/Layout'
-import Header from '../containers/Header'
-import AboutUs from '../containers/AboutUs'
-import CaseStudies from '../containers/CaseStudies'
-import Collaborate from '../containers/Collaborate'
-import Ebooks from '../containers/Ebooks'
-import Media from '../containers/Media'
-import WhoWeAre from '../containers/WhoWeAre'
-import Publications from '../containers/Publications'
+import Header from '../sections/index/containers/Header'
+import AboutUs from '../sections/index/containers/AboutUs'
+import CaseStudies from '../sections/index/containers/CaseStudies'
+import Collaborate from '../sections/index/containers/Collaborate'
+import Ebooks from '../sections/index/containers/Ebooks'
+import Media from '../sections/index/containers/Media'
+import WhoWeAre from '../sections/index/containers/WhoWeAre'
+import Publications from '../sections/index/containers/Publications'
+import Footer from '../sections/index/containers/Footer'
 
 class Index extends Component {
   constructor (props) {
@@ -36,6 +37,7 @@ class Index extends Component {
           <Ebooks />
           <Media />
           <WhoWeAre />
+          <Footer />
         </Layout>
       </div>
     )

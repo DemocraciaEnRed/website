@@ -1,6 +1,6 @@
-import { t } from '../polyglot-modules/polyglot'
+import { t } from '../../../polyglot-modules/polyglot.js'
 import Submit from '../components/Submit'
-import SocialBar from '../components/SocialBar.js'
+import SocialBar from '../../../components/SocialBar.js'
 
 const Header = () => (
 	<header>

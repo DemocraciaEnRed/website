@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Milestone from '../components/Milestone'
 
 const items = [
@@ -14,11 +15,13 @@ const AboutUs = () => (
         return <Milestone key={i} title={item.title} subtitle={item.subtitle} containerWidth={'290px'} />
       })}
     </div>
-    <button className='btn'>
-      <span className='action-text'>
-        Ver más
-      </span>
-    </button>
+    <Link href="/about">
+      <button className='btn'>
+        <span className='action-text'>
+          Ver más
+        </span>
+      </button>
+    </Link>
     <div className='section-number'>
       <span>01</span>
     </div>

@@ -121,6 +121,11 @@ button {
   color: var(--white);
 }
 
+.about-text {
+  font-size: 2rem;
+  letter-spacing: 0.13rem;
+  text-align: center;
+}
 .card-label {
   font-family: var(--extralight);
   font-weight: 200;

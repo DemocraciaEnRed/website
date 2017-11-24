@@ -93,7 +93,6 @@ render () {
             padding: 0 24px;
           }
         }
-
       `}</style>
     </nav>
   )
