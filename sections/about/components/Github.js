@@ -1,5 +1,5 @@
 const Github = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.58 31.77" className='cls-2'>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.58 31.77" className='cls-3'>
     <defs>
     </defs><title>Asset 1</title>
     <g id="Layer_2" dataname="Layer 2">
@@ -7,7 +7,7 @@ const Github = () => (
       </g>
     </g>
     <style>{`
-      .cls-2 {
+      .cls-3 {
         height: 20px;
         margin-right: 6px;
         width: 20px;

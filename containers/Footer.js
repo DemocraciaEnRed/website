@@ -1,5 +1,5 @@
 import MediaQuery from 'react-responsive'
-import SocialBar from '../../../components/SocialBar'
+import SocialBar from '../components/SocialBar'
 import Link from 'next/link'
 
 const Footer = () => (
