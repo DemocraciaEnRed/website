@@ -78,6 +78,12 @@ const Rinp = () => (
         width   : 80%;
         border-bottom:1px solid #979797;
       }
+      @media (max-width: 768px) {
+        .rinp-list {
+          margin-left: 100px;
+          margin-right: 100px;
+        }
+      }
     `}</style>
   </div>
 )

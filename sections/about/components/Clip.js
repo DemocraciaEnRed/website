@@ -44,6 +44,11 @@ const Clip = () => (
       .clip-text p:last-child {
         margin-top: 30px;
       }
+      @media (max-width: 1024px) {
+        .clip-title {
+          font-size: 3rem;
+        }
+      }
     `}</style>
   </div>
 )
