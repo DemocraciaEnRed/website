@@ -1,6 +1,7 @@
 const data = {
   text: [
-    'La crisis de representación es latinoamericana y, por lo tanto, los debates deben ser, también, latinoamericanos. Pensar soluciones escalables en diferentes países, aprender de las experiencias locales y debatir sobre implementaciones de las mismas herramientas en diferentes contextos socio-económicos e institucionales. Desde Democracia en Red estamos comprometidos con esta red de personas en América Latina que estamos trabajando, desde el sistema político y/o la sociedad civil, en el paradigma de la innovación cívica.',
+    'La crisis de representación es latinoamericana y, por lo tanto, los debates deben ser, también, latinoamericanos. Pensar soluciones escalables en diferentes países, aprender de las experiencias locales y debatir sobre implementaciones de las mismas herramientas en diferentes contextos socio-económicos e institucionales.',
+    'Desde Democracia en Red estamos comprometidos con esta red de personas en América Latina que estamos trabajando, desde el sistema político y/o la sociedad civil, en el paradigma de la innovación cívica.',
     'Luego del encuentro fundacional de Buenos Aires, en Julio de 2016, trabajamos juntos en el desarrollo de innovaciones que nos permitan participar en el diseño de instancias nuevas de participación ciudadana con impacto en el sistema político. '
   ],
   list: {
@@ -15,18 +16,18 @@ const data = {
 }
 
 const Rinp = () => (
-  <div className='redi-container'>
+  <div className='rinp-container'>
     <img src='/static/assets/about/logoredi.svg' alt='Red de Innovación Política Logo'/>
-    <div className='redi-text'>
+    <div className='rinp-text'>
       {data.text.map((it,i)=> {
-        return <p>{it}</p>
+        return <p key={i}>{it}</p>
       })}
     </div>
-    <div className='redi-list'>
+    <div className='rinp-list'>
       <p>{data.list.title}</p>
       <ul>
         {data.list.items.map((it, i)=> {
-          return <li>{it}</li>
+          return <li key={i}>{it}</li>
         })}
       </ul>
     </div>
@@ -35,6 +36,48 @@ const Rinp = () => (
         {data.callToAction}
       </span>
     </button>
+    <style jsx>{`
+      .rinp-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 100px 0;
+      }
+      .rinp-text {
+        margin-top: 41px;
+      }
+      .rinp-text p {
+        font-size: 2rem;
+        letter-spacing: 0.13rem;
+        text-align: center;
+      }
+      .rinp-text p:last-child {
+        margin-top: 38px;
+      }
+      .rinp-list {
+        margin: 38px 192px 42px;
+      }
+      .rinp-list p {
+        font-size: 2rem;
+        letter-spacing: 0.13rem;
+        text-align: left;
+        margin-bottom: 38px;
+      }
+      .rinp-list ul {
+        font-size: 2rem;
+        letter-spacing: 0.13rem;
+        list-style-type: disc;
+      }
+      .rinp-container:after{
+        content : '';
+        position: absolute;
+        left    : 10%;
+        bottom  : 0;
+        height  : 1px;
+        width   : 80%;
+        border-bottom:1px solid #979797;
+      }
+    `}</style>
   </div>
 )
 

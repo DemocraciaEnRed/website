@@ -9,6 +9,7 @@ import CivicStack from '../sections/about/components/CivicStack'
 import HechaLaLey from '../sections/about/components/HechaLaLey'
 import Sole from '../sections/about/components/Sole'
 import Rinp from '../sections/about/components/Rinp'
+import Clip from '../sections/about/components/Clip'
 
 const About = () => (
   <div>
@@ -33,6 +34,7 @@ const About = () => (
       <SectionMilestone title='Promover liderazgos' text='Redes regionales de proyectos político-sociales. ' />
       <Content>
         <Rinp />
+        <Clip />
       </Content>
     </Layout>
     <style jsx>{`
