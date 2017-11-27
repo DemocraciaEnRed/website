@@ -1,12 +1,12 @@
 import MediaQuery from 'react-responsive'
-import SocialBar from '../../../components/SocialBar'
+import SocialBar from '../components/SocialBar'
 import Link from 'next/link'
 
 const Footer = () => (
   <footer>
     <MediaQuery minDeviceWidth={1025} >
       <div className='footer-container'>
-        <SocialBar alignSelf={'flex-start'} iconsSize={'47px'} width={'473px'} mobileWidth={'283px'}/>
+        <SocialBar alignSelf={'flex-start'} iconsSize={'47px'} width={'473px'} mobileWidth={'283px'} />
         <Link href='/'>
           <a className='footer-link'>términos y condiciones</a>
         </Link>
@@ -17,7 +17,7 @@ const Footer = () => (
     </MediaQuery>
     <MediaQuery maxDeviceWidth={1024} >
       <div className='mobile-footer-container'>
-        <SocialBar alignSelf={'flex-start'} iconsSize={'28px'}  width={'473px'} mobileWidth={'283px'} justifyContent={'space-between'}/>
+        <SocialBar alignSelf={'flex-start'} iconsSize={'28px'}  width={'473px'} mobileWidth={'283px'} justifyContent={'space-between'} />
         <div className='end-text'>
           <span>the end</span>
         </div>

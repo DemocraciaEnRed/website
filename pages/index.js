@@ -11,7 +11,6 @@ import Ebooks from '../sections/index/containers/Ebooks'
 import Media from '../sections/index/containers/Media'
 import WhoWeAre from '../sections/index/containers/WhoWeAre'
 import Publications from '../sections/index/containers/Publications'
-import Footer from '../sections/index/containers/Footer'
 
 class Index extends Component {
   constructor (props) {
@@ -37,7 +36,6 @@ class Index extends Component {
           <Ebooks />
           <Media />
           <WhoWeAre />
-          <Footer />
         </Layout>
       </div>
     )
