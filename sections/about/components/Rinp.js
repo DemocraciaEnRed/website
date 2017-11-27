@@ -42,6 +42,7 @@ const Rinp = () => (
         flex-wrap: wrap;
         justify-content: center;
         padding: 100px 0;
+        position: relative;
       }
       .rinp-text {
         margin-top: 41px;

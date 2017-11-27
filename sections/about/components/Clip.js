@@ -9,7 +9,7 @@ const data = {
 
 const Clip = () => (
   <div className='clip-container'>
-    <h2>{data.title}</h2>
+    <h2 className='clip-title'>{data.title}</h2>
     <div className='clip-text'>
       {data.text.map((it, i)=> {
         return <p key={i}>{it}</p>
@@ -20,6 +20,31 @@ const Clip = () => (
         {data.callToAction}
       </span>
     </button>
+    <style jsx>{`
+      .clip-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 100px 0;
+      }
+      .clip-title {
+        font-size: 3.6rem;
+        letter-spacing: 0.13rem;
+        text-align: center;
+        text-transform: uppercase;
+      }
+      .clip-text {
+        margin: 42px 0;
+      }
+      .clip-text p {
+        font-size: 2rem;
+        letter-spacing: 0.13rem;
+        text-align: center;
+      }
+      .clip-text p:last-child {
+        margin-top: 30px;
+      }
+    `}</style>
   </div>
 )
 
