@@ -8,6 +8,7 @@ import DemocracyOs from '../sections/about/components/DemocracyOs'
 import CivicStack from '../sections/about/components/CivicStack'
 import HechaLaLey from '../sections/about/components/HechaLaLey'
 import Sole from '../sections/about/components/Sole'
+import Rinp from '../sections/about/components/Rinp'
 
 const About = () => (
   <div>
@@ -30,6 +31,9 @@ const About = () => (
         <Sole />
       </Content>
       <SectionMilestone title='Promover liderazgos' text='Redes regionales de proyectos político-sociales. ' />
+      <Content>
+        <Rinp />
+      </Content>
     </Layout>
     <style jsx>{`
       section {
