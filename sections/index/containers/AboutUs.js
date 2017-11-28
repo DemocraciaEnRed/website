@@ -1,24 +1,21 @@
+import { t } from '../../../polyglot-modules/polyglot.js'
 import Link from 'next/link'
 import Milestone from '../components/Milestone'
 
-const items = [
-	{title: 'Abrir el gobierno', subtitle: 'Participación ciudadana facilitada por la tecnología'},
-  {title: 'Repensar la educación', subtitle: 'Nuevas didácticas y pedagogías educativas'},
-  {title: 'Promover liderazgos', subtitle: 'Redes regionales de proyectos político-sociales innovadores'}
-]
+const items = [0, 1, 2]
 
 const AboutUs = () => (
 	<section className='about-us-section' id='about'>
-		<h2 className='section-title'>About us</h2>
+		<h2 className='section-title'>{t('index.aboutUs.title')}</h2>
     <div className='about-us-container'>
-      {items.map((item, i) => {
-        return <Milestone key={i} title={item.title} subtitle={item.subtitle} containerWidth={'290px'} />
+      {items.map((i) => {
+        return <Milestone key={i} title={t(`index.aboutUs.content.${i}.title`)} subtitle={t(`index.aboutUs.content.${i}.subtitle`)} containerWidth={'290px'} />
       })}
     </div>
     <Link href="/about">
       <button className='btn'>
         <span className='action-text'>
-          Ver más
+          {t('index.aboutUs.callToAction')}
         </span>
       </button>
     </Link>

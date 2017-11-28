@@ -30,7 +30,7 @@ export default class Submit extends React.Component {
             <CheckedButton />
            :
             <span className={`submit-text ${this.state.hasClicked ? 'submit-text-checked' : ''}`}>
-      	 	   sarasa
+      	 	   {t('index.header.callToAction')}
             </span>
           }
         </button>

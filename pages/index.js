@@ -15,7 +15,8 @@ import Publications from '../sections/index/containers/Publications'
 class Index extends Component {
   constructor (props) {
     super(props)
-    console.log(es)
+    polyglot.extend(es)
+    console.log(polyglot)
   }
 
   render () {

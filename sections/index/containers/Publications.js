@@ -1,11 +1,10 @@
 import React, { Component } from 'react'
+import { t } from '../../../polyglot-modules/polyglot.js'
 import MediumPost from '../components/MediumPost'
 import MediaQuery from 'react-responsive'
 let Flickity;
 
-let snippet = 'A wonderful serenity has taken possession of my entire soul, like this.'
-let timestamp = '14:20 PM, Tuesday'
-let likes = 123
+const data = [0, 1, 2]
 
 class Publications extends Component {
   constructor(props) {
@@ -43,25 +42,20 @@ class Publications extends Component {
   render() {
     return (
       <section className='publications-section' id='publications'>
-        <h2 className='section-title'>Publicaciones</h2>
+        <h2 className='section-title'>{t('index.publications.title')}</h2>
         <div className='posts-container' ref='carousel'>
-          <MediumPost
-            snippet={snippet}
-            timestamp={timestamp}
-            likes={likes} />
-          <MediumPost
-            snippet={snippet}
-            timestamp={timestamp}
-            likes={likes} />
-          <MediumPost
-            snippet={snippet}
-            timestamp={timestamp}
-            likes={likes} />
+          {data.map((i)=> {
+          return <MediumPost 
+              key={i}
+              snippet={t(`index.publications.content.${i}.text`)}
+              timestamp={t(`index.publications.content.${i}.date`)}
+              likes={t(`index.publications.content.${i}.likes`)} />
+          })}
         </div>
         <MediaQuery maxDeviceWidth={1024}>
           <button className='btn'>
             <span className='action-text'>
-              Ver más
+              {t('index.publications.callToAction')}
             </span>
           </button>
         </MediaQuery>

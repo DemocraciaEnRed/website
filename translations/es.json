@@ -24,8 +24,13 @@
       "callToAction": "Ver más"
     },
     "caseStudies": {
-      "title": "Case studies",
+      "title": "Case Studies",
       "content": [
+        {
+          "title": "Lorem ipsum dolor sit amet this is title",
+          "subtitle": "Label here, lorem ipsum",
+          "img": " "
+        },
         {
           "title": "Lorem ipsum dolor sit amet this is title",
           "subtitle": "Label here, lorem ipsum",
@@ -60,7 +65,7 @@
         }
       ]
     },
-    "publicaciones": {
+    "publications": {
       "title": "Publicaciones",
       "content": [
         {
@@ -78,7 +83,8 @@
           "date": "14:20 PM, Tuesday",
           "likes": "269"
         }
-      ]
+      ],
+      "callToAction": "Ver más"
     },
     "ebooks": {
       "title": "Ebooks",
@@ -86,14 +92,15 @@
         {
           "title": "Lorem ipsum",
           "subtitle": "Lorem ipsum dolor sit amet this is title",
-          "callToAction": "Descargar"
+          "link": "/"
         },
         {
           "title": "Lorem ipsum",
           "subtitle": "Lorem ipsum dolor sit amet this is title",
-          "callToAction": "Descargar"
+          "link": "/"
         }
-      ]
+      ],
+      "callToAction": "Descargar"
     },
     "media": {
       "title": "Media",
@@ -271,6 +278,14 @@
           "Taller de “campañas políticas innovadoras” para miembros de la Bancada Ativista (bancadaativista.org), fue realizado en Sao Paulo, en agosto de 2016, con 5 integrantes de la Red (Agustín Frizzera, DeR, Arg; Rodrigo Etchecopar, RD, Chi; Caio Tendolini, UpDate, Br; Susana Ochoa y Alejandra Parra, WikiPolítica, Mx) como expositores."
         ]
       },
+      "callToAction": "Más info"
+    },
+    "clip": {
+      "title": "Conexiones Latinoamericanas de Innovación Política",
+      "text": [
+        "La Iniciativa CLIP apunta a crear condiciones, reformas institucionales y una cultura política diferente, desde el presente y para el mediano y largo plazo, que contribuyan a mejorar y transformar la democracia para una redistribución efectiva del poder.",
+        "Como parte de su Consejo Estratégico, DeR está comprometida con el CLIP en tanto busca generar conocimiento desde lo teórico/práctico sobre los dilemas del desarrollo sustentable y los nuevos marcos de ejercicio político; articular experiencias y lecciones aprendidas entre los participantes de la iniciativa; acompañar y preparar a los actores cuando deciden participar en la disputa electoral o sumarse a una gestión pública estatal."
+      ],
       "callToAction": "Más info"
     }
   }

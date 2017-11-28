@@ -1,10 +1,12 @@
+import { t } from '../../../polyglot-modules/polyglot.js'
+
 const EbookCard = ( {img, title, description, link}) => (
   <div className='ebook-card'>
     <img className='ebook-img' src={img} />
     <h3 className='subtitle ebook-title'>{title}</h3>
     <p className='subtext ebook-description'>{description}</p>
     <button className='btn ebook-btn'>
-      <span className='action-text'>Descargar</span>
+      <span className='action-text'>{t('index.ebooks.callToAction')}</span>
     </button>
     <style jsx>{`
       .ebook-card {

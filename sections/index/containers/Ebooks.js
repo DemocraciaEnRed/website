@@ -1,21 +1,9 @@
 import React, { Component } from 'react'
+import { t } from '../../../polyglot-modules/polyglot.js'
 import EbookCard from '../components/EbookCard'
 let Flickity;
 
-const dataEbooks = [
-  {
-    img: '',
-    title: 'Lorem ipsum',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-    link: ''
-  },
-  {
-    img: '',
-    title: 'Lorem ipsum',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-    link: ''
-  }
-]
+const data = [0, 1]
 
 class Ebooks extends Component {
   constructor(props){
@@ -72,10 +60,10 @@ class Ebooks extends Component {
   render () {
     return (
       <section className='ebooks-section' id='ebooks'>
-        <h2 className='section-title'>E-books</h2>
+        <h2 className='section-title'>{t('index.ebooks.title')}</h2>
         <div className='ebooks-container carousel' ref='carousel'>
-          {dataEbooks.map((item,i) => 
-            <EbookCard key={i} img={item.img} title={item.title} description={item.description} link={item.link} />
+          {data.map((i) => 
+            <EbookCard key={i} img={''} title={t(`index.ebooks.content.${i}.title`)} description={t(`index.ebooks.content.${i}.subtitle`)} link={t(`index.ebooks.content.${i}.link`)} />
           )}
         </div>
         <div className='section-number'>
