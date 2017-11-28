@@ -1,3 +1,4 @@
+import { t } from '../polyglot-modules/polyglot.js'
 import MediaQuery from 'react-responsive'
 import SocialBar from '../components/SocialBar'
 import Link from 'next/link'
@@ -8,7 +9,7 @@ const Footer = () => (
       <div className='footer-container'>
         <SocialBar alignSelf={'flex-start'} iconsSize={'47px'} width={'473px'} mobileWidth={'283px'} />
         <Link href='/'>
-          <a className='footer-link'>términos y condiciones</a>
+          <a className='footer-link'>{t('footer.terms')}</a>
         </Link>
         <div className='end-text'>
           <span>the end</span>

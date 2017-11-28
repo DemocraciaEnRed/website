@@ -1,50 +1,8 @@
 import Link from 'next/link'
+import { t } from '../polyglot-modules/polyglot.js'
 
-const primaryLinks = [
-  {
-    href: "about",
-    text: "About us"
-  },
-  {
-    href: "case-studies",
-    text: "Case studies"
-  },
-  {
-    href: "collaborate",
-    text: "Collaborate"
-  },
-  {
-    href: "collaborate",
-    text: "Transparency"
-  },
-  {
-    href: "publications",
-    text: "Publications"
-  },
-  {
-    href: "ebooks",
-    text: "E-books"
-  },
-  {
-    href: "media",
-    text: "Media"
-  },
-  {
-    href: "who-we-are",
-    text: "Who we are"
-  }
-]
-
-const secondaryLinks = [
-  {
-    href: "/contact",
-    text: "Contact"
-  },
-  {
-    href: "/jobs",
-    text: "Jobs"
-  }
-]
+const primaryLinks = [0, 1, 2, 3, 4, 5, 6, 7]
+const secondaryLinks = [0, 1]
 
 
 const MobileMenu = (props) => (
@@ -54,20 +12,24 @@ const MobileMenu = (props) => (
       <a className='close-menu' onClick={props.handleMainMenu}></a>
     </header>
     <ul className='primary-links'>
-      {primaryLinks.map((link, i) => {
+      {primaryLinks.map((i)=> {
+        let linkTitle = t(`nav.primaryLinks.${i}.title`)
+        let linkHref = t(`nav.primaryLinks.${i}.href`)
         return (
           <li key={i}>
-            <a onClick={props.handleActiveLink(link.text, link.href)} className={`menu-link ${props.activeLink === link.text ? ' active' : ''}`}>{link.text}</a>
+            <a onClick={props.handleActiveLink(linkTitle, linkHref)} className={`menu-link ${props.activeLink === linkTitle ? ' active' : ''}`}>{linkTitle}</a>
           </li>
         )
       })}
     </ul>
     <ul className='secondary-links'>
-      {secondaryLinks.map((link, i) => {
+      {secondaryLinks.map((i)=> {
+        let linkTitle = t(`nav.secondaryLinks.${i}.title`)
+        let linkHref = t(`nav.secondaryLinks.${i}.href`)
         return (
           <li key={i}>
-            <Link href={link.href}>
-              <a onClick={props.handleActiveLink(link.text)} className={`menu-link ${props.activeLink === link.text ? ' active' : ''}`}>{link.text}</a>
+            <Link href={linkHref}>
+              <a onClick={props.handleActiveLink(linkTitle)} className={`menu-link ${props.activeLink === linkTitle ? ' active' : ''}`}>{linkTitle}</a>
             </Link >
           </li>
         )

@@ -288,5 +288,54 @@
       ],
       "callToAction": "Más info"
     }
+  },
+  "nav": {
+    "primaryLinks": [
+      {
+        "href": "about",
+        "title": "About us"
+      },
+      {
+        "href": "case-studies",
+        "title": "Case studies"
+      },
+      {
+        "href": "collaborate",
+        "title": "Collaborate"
+      },
+      {
+        "href": "collaborate",
+        "title": "Transparency"
+      },
+      {
+        "href": "publications",
+        "title": "Publications"
+      },
+      {
+        "href": "ebooks",
+        "title": "E-books"
+      },
+      {
+        "href": "media",
+        "title": "Media"
+      },
+      {
+        "href": "who-we-are",
+        "title": "Who we are"
+      }
+    ],
+    "secondaryLinks" : [
+      {
+        "href": "/contact",
+        "title": "Contact us"
+      },
+      {
+        "href": "/jobs",
+        "title": "Jobs"
+      }
+    ]
+  },
+  "footer": {
+    "terms": "términos y condiciones"
   }
 }
