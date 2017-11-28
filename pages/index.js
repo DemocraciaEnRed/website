@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { polyglot } from '../polyglot-modules/polyglot'
-import { es } from '../translations/es.json'
+import es from '../translations/es.json'
 import Head from 'next/head'
 import Layout from '../layouts/Layout'
 import Header from '../sections/index/containers/Header'
@@ -15,6 +15,7 @@ import Publications from '../sections/index/containers/Publications'
 class Index extends Component {
   constructor (props) {
     super(props)
+    console.log(es)
   }
 
   render () {
