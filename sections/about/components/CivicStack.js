@@ -1,12 +1,13 @@
+import { t } from '../../../polyglot-modules/polyglot.js'
 import CivicStackLogo from './CivicStackLogo.js'
 
 const CivicStack = () => (
   <div className='civic-stack-container'>
     <CivicStackLogo />
-    <p className='civic-stack-text'> CivicStack es un repositorio de tecnologías de código libre para la participación ciudadana desarrolladas promovidas por organizaciones que usan o desarrollan tecnología abierta para mejorar procesos ciudadanos, fomentar la apertura de información y facilitar comportamientos cívicos online. </p>
+    <p className='civic-stack-text'>{t('aboutUs.civicStack.text')}</p>
     <button className='btn'>
       <span className='action-text'>
-        Más info
+        {t('aboutUs.civicStack.callToAction')}
       </span>
     </button>
     <style jsx>{`

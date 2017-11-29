@@ -225,9 +225,16 @@
       "img": "/static/assets/about/logodOS.svg",
       "text": [
         "DemocracyOS es una plataforma de participación que permite a los ciudadanos informarse, debatir y votar en forma rápida y sencilla.",
-        "DemocracyOS está concebida como una aplicación web versátil, simple y escalable de toma de decisiones colectivas que sirve como herramienta para los ciudadanos interesados en mejorar el acceso a la información, la participación cívica y abrir canales de interacción entre nuevos espacios de construcción de poder y el sistema político: activistas cívicos, organizaciones civiles y actores gubernamentales.",
-        "Desarrollada en código abierto, con más de 50000 usuarios. <br /> Utilizada por más de 40 instituciones, movimientos y partidos políticos de todo el mundo. <br /> Disponible en 17 idiomas.<br /> Funciona en cualquier dispositivo con un navegador web."
-      ]
+        "DemocracyOS está concebida como una aplicación web versátil, simple y escalable de toma de decisiones colectivas que sirve como herramienta para los ciudadanos interesados en mejorar el acceso a la información, la participación cívica y abrir canales de interacción entre nuevos espacios de construcción de poder y el sistema político: activistas cívicos, organizaciones civiles y actores gubernamentales."
+      ],
+      "list": [
+        "Desarrollada en código abierto, con más de 50000 usuarios.",
+        "Utilizada por más de 40 instituciones, movimientos y partidos políticos de todo el mundo.",
+        "Disponible en 17 idiomas.",
+        "Funciona en cualquier dispositivo con un navegador web."
+      ],
+      "repo": "Repositorio",
+      "callToAction": "Más info"
     },
     "civicStack": {
       "text": "CivicStack es un repositorio de tecnologías de código libre para la participación ciudadana desarrolladas promovidas por organizaciones que usan o desarrollan tecnología abierta para mejorar procesos ciudadanos, fomentar la apertura de información y facilitar comportamientos cívicos online.",
