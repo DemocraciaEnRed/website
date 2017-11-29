@@ -16,7 +16,6 @@ class Index extends Component {
   constructor (props) {
     super(props)
     polyglot.extend(es)
-    console.log(polyglot)
   }
 
   render () {
