@@ -1,3 +1,4 @@
+import { t } from '../polyglot-modules/polyglot.js'
 import Head from 'next/head'
 import Layout from '../layouts/Layout'
 import Header from '../sections/about/containers/Header'
@@ -21,17 +22,17 @@ const About = () => (
     <Layout>
       <Header />
       <AboutUs />
-      <SectionMilestone title='Abrir el gobierno' text='Participación ciudadana facilitada por la tecnología.' />
+      <SectionMilestone title={t('aboutUs.openGov.title')} text={t('aboutUs.openGov.subtitle')}  />
       <Content>
         <DemocracyOs />
         <CivicStack />
         <HechaLaLey />
       </Content>
-      <SectionMilestone title='Repensar la educación' text='Nuevas didácticas y pedagogía educativa.' />
+      <SectionMilestone title={t('aboutUs.education.title')} text={t('aboutUs.education.subtitle')} />
       <Content>
         <Sole />
       </Content>
-      <SectionMilestone title='Promover liderazgos' text='Redes regionales de proyectos político-sociales. ' />
+      <SectionMilestone title={t('aboutUs.lidership.title')} text={t('aboutUs.lidership.subtitle')} />
       <Content>
         <Rinp />
         <Clip />

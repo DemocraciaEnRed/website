@@ -1,7 +1,348 @@
-{
-  "header": {
-    "title": "Democracia en Red",
-    "subtitle": "Imaginamos, diseñamos e implementamos innovaciones en el sistema político para abrir los procesos de decisión y redistribuir el poder.",
-    "callToAction": "Enviar"
+{ 
+  "index": {
+    "header": {
+      "title": "Democracia en Red",
+      "subtitle": "Imaginamos, diseñamos e implementamos innovaciones en el sistema político para abrir los procesos de decisión y redistribuir el poder.",
+      "callToAction": "Enviar"
+    },
+    "aboutUs": {
+      "title": "About us",
+      "content": [
+        {
+          "title": "Abrir el gobierno",
+          "subtitle": "Participación ciudadana facilitada por la tecnología"
+        },
+        {
+          "title": "Repensar la educación",
+          "subtitle": "Nuevas didácticas y pedagogías educativas"
+        },
+        {
+          "title": "Promover liderazgos",
+          "subtitle": "Redes regionales de proyectos político-sociales innovadores"
+        }
+      ],
+      "callToAction": "Ver más"
+    },
+    "caseStudies": {
+      "title": "Case Studies",
+      "content": [
+        {
+          "title": "Lorem ipsum dolor sit amet this is title",
+          "subtitle": "Label here, lorem ipsum",
+          "img": " "
+        },
+        {
+          "title": "Lorem ipsum dolor sit amet this is title",
+          "subtitle": "Label here, lorem ipsum",
+          "img": " "
+        },
+        {
+          "title": "Lorem ipsum dolor sit amet this is title",
+          "subtitle": "Label here, lorem ipsum",
+          "img": " "
+        },
+        {
+          "title": "Lorem ipsum dolor sit amet this is title",
+          "subtitle": "Label here, lorem ipsum",
+          "img": " "
+        }
+      ],
+      "callToAction": "Ver más"
+    },
+    "collaborate": {
+      "content": [
+        { 
+          "title": "Collaborate",
+          "subtitle": "¿Cómo puedo colaborar?",
+          "text": "Ayudanos a llegar a más personas. Hay muchas maneras de colaborar.",
+          "callToAction": "Escribinos"
+        },
+        {
+          "title": "Transparency",
+          "subtitle": "¿Quién nos financia? ¿Cómo gastamos?",
+          "text": "Aquí toda la información contable resumida y con su soporte documental.",
+          "callToAction": "Descargar PDF"
+        }
+      ]
+    },
+    "publications": {
+      "title": "Publicaciones",
+      "content": [
+        {
+          "text": "A wonderful serenity has taken possession of my entire soul, like these.",
+          "date": "14:20 PM, Tuesday",
+          "likes": "269"
+        },
+        {
+          "text": "A wonderful serenity has taken possession of my entire soul, like these.",
+          "date": "14:20 PM, Tuesday",
+          "likes": "269"
+        },
+        {
+          "text": "A wonderful serenity has taken possession of my entire soul, like these.",
+          "date": "14:20 PM, Tuesday",
+          "likes": "269"
+        }
+      ],
+      "callToAction": "Ver más"
+    },
+    "ebooks": {
+      "title": "Ebooks",
+      "content": [
+        {
+          "title": "Lorem ipsum",
+          "subtitle": "Lorem ipsum dolor sit amet this is title",
+          "link": "/"
+        },
+        {
+          "title": "Lorem ipsum",
+          "subtitle": "Lorem ipsum dolor sit amet this is title",
+          "link": "/"
+        }
+      ],
+      "callToAction": "Descargar"
+    },
+    "media": {
+      "title": "Media",
+      "links": [
+        {
+          "url": "http://www.fastcompany.com/3043388/the-y-combinator-chronicles/why-y-combinator-funded-a-radical-political-party-in-argentina",
+          "logo": "static/assets/media/fast.svg",
+          "className": "fast"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=7bAOT-57KeE",
+          "logo": "static/assets/media/bbc.svg",
+          "className": "bbc"
+        },
+        {
+          "url": "http://www.lapoliticaonline.com/nota/85129-tratatan-proyectos-votados-en-internet/",
+          "logo": "static/assets/media/lpo.png",
+          "className": "lpo"
+        },
+        {
+          "url": "http://ccaa.elpais.com/ccaa/2015/01/27/madrid/1422375720_783629.html",
+          "logo": "static/assets/media/elpais.svg",
+          "className": "elpais"
+        },
+        {
+          "url": "http://www.wired.com/2014/05/democracy-os/",
+          "logo": "static/assets/media/wired.svg",
+          "className": "wired"
+        },
+        {
+          "url": "http://www.lanacion.com.ar/1745336-los-portenos-eligieron-prohibir-a-los-cuidacoches",
+          "logo": "static/assets/media/lanacion.svg",
+          "className": "lanacion"
+        },
+        {
+          "url": "http://www.ted.com/talks/pia_mancini_how_to_upgrade_democracy_for_the_internet_era",
+          "logo": "static/assets/media/ted.svg",
+          "className": "ted"
+        }
+      ]
+    },
+    "whoWeAre": {
+      "title": "Who we are",
+      "team": [
+        {
+          "name": "Vicky Guareschi",
+          "bio": "UX/UI padawan",
+          "handle": "vickyguareschi",
+          "img": "../static/assets/profile.jpg"
+        },
+        {
+          "name": "Vicky Guareschi",
+          "bio": "UX/UI padawan",
+          "handle": "vickyguareschi",
+          "img": "../static/assets/profile.jpg"
+        },
+        {
+          "name": "Vicky Guareschi",
+          "bio": "UX/UI padawan",
+          "handle": "vickyguareschi",
+          "img": "../static/assets/profile.jpg"
+        },
+        {
+          "name": "Vicky Guareschi",
+          "bio": "UX/UI padawan",
+          "handle": "vickyguareschi",
+          "img": "../static/assets/profile.jpg"
+        },
+        {
+          "name": "Vicky Guareschi",
+          "bio": "UX/UI padawan",
+          "handle": "vickyguareschi",
+          "img": "../static/assets/profile.jpg"
+        },
+        {
+          "name": "Vicky Guareschi",
+          "bio": "UX/UI padawan",
+          "handle": "vickyguareschi",
+          "img": "../static/assets/profile.jpg"
+        },
+        {
+          "name": "Vicky Guareschi",
+          "bio": "UX/UI padawan",
+          "handle": "vickyguareschi",
+          "img": "../static/assets/profile.jpg"
+        },
+        {
+          "name": "Vicky Guareschi",
+          "bio": "UX/UI padawan",
+          "handle": "vickyguareschi",
+          "img": "../static/assets/profile.jpg"
+        },
+        {
+          "name": "Vicky Guareschi",
+          "bio": "UX/UI padawan",
+          "handle": "vickyguareschi",
+          "img": "../static/assets/profile.jpg"
+        },
+        {
+          "name": "Vicky Guareschi",
+          "bio": "UX/UI padawan",
+          "handle": "vickyguareschi",
+          "img": "../static/assets/profile.jpg"
+        }
+      ]
+    }
+  },
+  "aboutUs": {
+    "title": "About us",
+    "der": {
+      "title": "Democracia en red",
+      "text": [
+        "DeR es una ONG fundada en 2014, que nace a partir de un diagnóstico sobre el status quo y porque nos hartamos de los diagnósticos y los diagnosticadores. Nacimos para construir práctica, técnica y poesía que permitan imaginar e implementar innovaciones en el sistema político para abrir los procesos de decisión, para redistribuir el poder.",
+        "Para nosotros “incidir” significa propiciar cambios efectivos en la relación entre representantes y representados, un cambio que habilite nuevos esquemas de gobernanza (más colaborativos), nuevas lógicas burocráticas (más sensibles) y nuevos espacios públicos (digitales y territoriales)."
+      ]
+    },
+    "openGov": {
+      "title": "Abrir el gobierno",
+      "subtitle": "Participación ciudadana facilitada por la tecnología"
+    },
+    "democracyOs": {
+      "img": "/static/assets/about/logodOS.svg",
+      "text": [
+        "DemocracyOS es una plataforma de participación que permite a los ciudadanos informarse, debatir y votar en forma rápida y sencilla.",
+        "DemocracyOS está concebida como una aplicación web versátil, simple y escalable de toma de decisiones colectivas que sirve como herramienta para los ciudadanos interesados en mejorar el acceso a la información, la participación cívica y abrir canales de interacción entre nuevos espacios de construcción de poder y el sistema político: activistas cívicos, organizaciones civiles y actores gubernamentales."
+      ],
+      "list": [
+        "Desarrollada en código abierto, con más de 50000 usuarios.",
+        "Utilizada por más de 40 instituciones, movimientos y partidos políticos de todo el mundo.",
+        "Disponible en 17 idiomas.",
+        "Funciona en cualquier dispositivo con un navegador web."
+      ],
+      "repo": "Repositorio",
+      "callToAction": "Más info"
+    },
+    "civicStack": {
+      "text": "CivicStack es un repositorio de tecnologías de código libre para la participación ciudadana desarrolladas promovidas por organizaciones que usan o desarrollan tecnología abierta para mejorar procesos ciudadanos, fomentar la apertura de información y facilitar comportamientos cívicos online.",
+      "callToAction": "Más info"
+    },
+    "hechaLaLey": {
+      "title": "Hecha la ley",
+      "text": "Inspirado en la idea de bill-tracking, “Hecha la Ley” es un desarrollo de código abierto que funciona calculando las diferencias en un proyecto de Ley en la medida en que avanza en el trámite parlamentario. Hoy en etapa de prueba, es una herramienta concebida para la prensa especializada y el cuerpo profesional (asesores y periodistas) de los parlamentos.",
+      "callToAction": "Más info"
+    },
+    "education": {
+      "title": "Repensar la educación",
+      "subtitle": "Nuevas didácticas y pedagogía educativa."
+    },
+    "sole": {
+      "img": "/static/assets/about/logosole.svg",
+      "text" : [
+        "Es necesario repensar el modelo educativo. Hoy, se sigue educando niños para la sociedad industrial: ciudadanos-consumidores que sólo aprenden a elegir entre opciones y acceden a un conocimiento estandarizado, administrado verticalmente y munido de dinámicas disciplinarias de “premios y castigos”.",
+        "Los Entornos de Aprendizaje Auto Organizado (S.O.L.E., sus siglas en inglés) son espacios que a simple vista parecen algo caóticos: muchos niños, algunas computadoras y una gran pregunta. La propuesta organiza el acceso en grupos a las computadoras para investigar y responder a una pregunta estimulante. Así, surgen en el aula nuevas interacciones. La magia desatada por esta experiencia enciende la curiosidad y el asombro de los niños, los grandes motores de este dispositivo.",
+        "Basada en la metodología del Dr. Sugata Mitra, el enfoque S.O.L.E. está concluyendo su aplicación piloto en la Escuela N° 20 de la Ciudad de Buenos Aires, gracias a un convenio con el Ministerio de Educación. En total, realizamos más de 160 sesiones S.O.L.E., en 4 etapas en 2015 y 2016, en 5 grados de educación inicial de dicha Escuela.",
+        "Entre sus resultados y aprendizajes, destacamos los siguientes:"
+      ],
+      "items" : [
+        "En el 94% de las sesiones, los niños lograron construir una respuesta apropiada para la pregunta curricular planteada",
+        "En la prueba de retención de conocimiento realizada al final de la etapa 4 (junio 2016), los alumnos recordaban el 80% de los contenidos trabajados en SOLE.",
+        "Los docentes reportan mejoras en las habilidades de comprensión lectora, fundamentalmente cuando se realiza en grupos.",
+        "La evaluación de la capacidad de adquirir conocimientos en Internet (CACI) dio mejores resultados un 20% superiores a los de las escuelas constituidas como “grupos de control”.",
+        "A  partir del enfoque y las actividades desarrolladas, se logró impactar sobre las metas aspiracionales de algunos estudiantes."
+      ],
+      "callToAction": "Más info"
+    },
+    "lidership": {
+      "title": "Promover liderazgos",
+      "subtitle": "Redes regionales de proyectos político-sociales."
+    },
+    "rinp": {
+      "img": "/static/assets/about/logoredi.svg",
+      "text": [
+        "La crisis de representación es latinoamericana y, por lo tanto, los debates deben ser, también, latinoamericanos. Pensar soluciones escalables en diferentes países, aprender de las experiencias locales y debatir sobre implementaciones de las mismas herramientas en diferentes contextos socio-económicos e institucionales.",
+        "Desde Democracia en Red estamos comprometidos con esta red de personas en América Latina que estamos trabajando, desde el sistema político y/o la sociedad civil, en el paradigma de la innovación cívica.",
+        "Luego del encuentro fundacional de Buenos Aires, en Julio de 2016, trabajamos juntos en el desarrollo de innovaciones que nos permitan participar en el diseño de instancias nuevas de participación ciudadana con impacto en el sistema político."
+      ],
+      "list": {
+        "title": "Como productos de la Red podemos destacar:",
+        "items": [
+          "El futuro lanzamiento de “Politica Recuperada” (octubre 2016), material audiovisual de entrevistas a miembros de la Red.", 
+          "El futuro lanzamiento de “Que democracia para el Siglo XXI. volII”(febrero 2017), publicación de formato epub con reflexiones sobre nuevas vías para la representación democrática y el sujeto político del siglo XXI.",
+          "Taller de “campañas políticas innovadoras” para miembros de la Bancada Ativista (bancadaativista.org), fue realizado en Sao Paulo, en agosto de 2016, con 5 integrantes de la Red (Agustín Frizzera, DeR, Arg; Rodrigo Etchecopar, RD, Chi; Caio Tendolini, UpDate, Br; Susana Ochoa y Alejandra Parra, WikiPolítica, Mx) como expositores."
+        ]
+      },
+      "callToAction": "Más info"
+    },
+    "clip": {
+      "title": "Conexiones Latinoamericanas de Innovación Política",
+      "text": [
+        "La Iniciativa CLIP apunta a crear condiciones, reformas institucionales y una cultura política diferente, desde el presente y para el mediano y largo plazo, que contribuyan a mejorar y transformar la democracia para una redistribución efectiva del poder.",
+        "Como parte de su Consejo Estratégico, DeR está comprometida con el CLIP en tanto busca generar conocimiento desde lo teórico/práctico sobre los dilemas del desarrollo sustentable y los nuevos marcos de ejercicio político; articular experiencias y lecciones aprendidas entre los participantes de la iniciativa; acompañar y preparar a los actores cuando deciden participar en la disputa electoral o sumarse a una gestión pública estatal."
+      ],
+      "callToAction": "Más info"
+    }
+  },
+  "nav": {
+    "primaryLinks": [
+      {
+        "href": "about",
+        "title": "About us"
+      },
+      {
+        "href": "case-studies",
+        "title": "Case studies"
+      },
+      {
+        "href": "collaborate",
+        "title": "Collaborate"
+      },
+      {
+        "href": "collaborate",
+        "title": "Transparency"
+      },
+      {
+        "href": "publications",
+        "title": "Publications"
+      },
+      {
+        "href": "ebooks",
+        "title": "E-books"
+      },
+      {
+        "href": "media",
+        "title": "Media"
+      },
+      {
+        "href": "who-we-are",
+        "title": "Who we are"
+      }
+    ],
+    "secondaryLinks" : [
+      {
+        "href": "/contact",
+        "title": "Contact us"
+      },
+      {
+        "href": "/jobs",
+        "title": "Jobs"
+      }
+    ]
+  },
+  "footer": {
+    "terms": "términos y condiciones"
   }
 }

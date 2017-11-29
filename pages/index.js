@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { polyglot } from '../polyglot-modules/polyglot'
+import es from '../translations/es.json'
 import Head from 'next/head'
-import es from '../translations/es'
 import Layout from '../layouts/Layout'
 import Header from '../sections/index/containers/Header'
 import AboutUs from '../sections/index/containers/AboutUs'

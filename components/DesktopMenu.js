@@ -1,70 +1,33 @@
 import Link from 'next/link'
+import { t } from '../polyglot-modules/polyglot.js'
 
-const primaryLinks = [
-  {
-    href: 'about',
-    title: 'About us'
-  },
-  {
-    href: 'case-studies',
-    title: 'Case studies'
-  },
-  {
-    href: 'collaborate',
-    title: 'Collaborate'
-  },
-  {
-    href: 'collaborate',
-    title: 'Transparency'
-  },
-  {
-    href: 'publications',
-    title: 'Publications'
-  },
-  {
-    href: 'ebooks',
-    title: 'E-books'
-  },
-  {
-    href: 'media',
-    title: 'Media'
-  },
-  {
-    href: 'who-we-are',
-    title: 'Who we are'
-  }
-]
+const primaryLinks = [0, 1, 2, 3, 4, 5, 6, 7]
 
-const secondaryLinks = [
-  {
-    href: '/contact',
-    title: 'Contact us'
-  },
-  {
-    href: '/jobs',
-    title: 'Jobs'
-  }
-]
+const secondaryLinks = [0, 1]
 
 
 const DesktopMenu = (props) => (
   <nav className='main-menu' role='navigation'>
     <a className='close-menu' onClick={props.handleMainMenu}></a>
     <ul className='primary-links-container'>
-      {primaryLinks.map((link, i)=> {
+      {primaryLinks.map((i)=> {
+        let linkTitle = t(`nav.primaryLinks.${i}.title`)
+        let linkHref = t(`nav.primaryLinks.${i}.href`)
         return (
           <li key={i}>
-            <a onClick={props.handleActiveLink(link.title, link.href)} className={`desktop-menu-link ${props.activeLink === link.title ? ' active' : ''}`}>{link.title}</a>
+            <a onClick={props.handleActiveLink(linkTitle, linkHref)} className={`desktop-menu-link ${props.activeLink === linkTitle ? ' active' : ''}`}>{linkTitle}</a>
           </li>
         )
       })}
     </ul>
     <ul className='secondary-links-container'>
-      {secondaryLinks.map((link, i)=> {
+      {secondaryLinks.map((i)=> {
+        let linkTitle = t(`nav.secondaryLinks.${i}.title`)
+        let linkHref = t(`nav.secondaryLinks.${i}.href`)
         return (
           <li key={i}>
-            <Link href={link.href}>
-              <a onClick={props.handleActiveLink(link.title)} className={`desktop-menu-link ${props.activeLink === link.title ? ' active' : ''}`}>{link.title}</a>
+            <Link href={linkHref}>
+              <a onClick={props.handleActiveLink(linkTitle)} className={`desktop-menu-link ${props.activeLink === linkTitle ? ' active' : ''}`}>{linkTitle}</a>
             </Link >
           </li>
         )

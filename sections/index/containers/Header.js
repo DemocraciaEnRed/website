@@ -4,8 +4,8 @@ import SocialBar from '../../../components/SocialBar.js'
 
 const Header = () => (
 	<header>
-		<h1>{t('header.title')}</h1>
-		<p className='subtext'>{t('header.subtitle')}</p>
+		<h1>{t('index.header.title')}</h1>
+		<p className='subtext'>{t('index.header.subtitle')}</p>
 		<Submit />
 		<SocialBar alignSelf={'flex-end'} iconsSize={'30px'} width={'300px'} mobileWidth={'100%'} justifyContent={'space-around'}/>
 		<style jsx>{`

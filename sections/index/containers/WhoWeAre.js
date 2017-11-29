@@ -1,19 +1,9 @@
 import React, { Component } from 'react'
+import { t } from '../../../polyglot-modules/polyglot.js'
 import ProfileCard from '../components/ProfileCard'
 let Flickity;
 
-const profiles = [
-  {'name': 'Vicky Guareschi', 'bio': 'UX/UI padawan', 'handle': 'vickyguareschi', 'img': '../static/assets/profile.jpg'},
-  {'name': 'Vicky Guareschi', 'bio': 'UX/UI padawan', 'handle': 'vickyguareschi', 'img': '../static/assets/profile.jpg'},
-  {'name': 'Vicky Guareschi', 'bio': 'UX/UI padawan', 'handle': 'vickyguareschi', 'img': '../static/assets/profile.jpg'},
-  {'name': 'Vicky Guareschi', 'bio': 'UX/UI padawan', 'handle': 'vickyguareschi', 'img': '../static/assets/profile.jpg'},
-  {'name': 'Vicky Guareschi', 'bio': 'UX/UI padawan', 'handle': 'vickyguareschi', 'img': '../static/assets/profile.jpg'},
-  {'name': 'Vicky Guareschi', 'bio': 'UX/UI padawan', 'handle': 'vickyguareschi', 'img': '../static/assets/profile.jpg'},
-  {'name': 'Vicky Guareschi', 'bio': 'UX/UI padawan', 'handle': 'vickyguareschi', 'img': '../static/assets/profile.jpg'},
-  {'name': 'Vicky Guareschi', 'bio': 'UX/UI padawan', 'handle': 'vickyguareschi', 'img': '../static/assets/profile.jpg'},
-  {'name': 'Vicky Guareschi', 'bio': 'UX/UI padawan', 'handle': 'vickyguareschi', 'img': '../static/assets/profile.jpg'},
-  {'name': 'Vicky Guareschi', 'bio': 'UX/UI padawan', 'handle': 'vickyguareschi', 'img': '../static/assets/profile.jpg'}
-]
+const data = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 class WhoWeAre extends Component {
   constructor (props) {
@@ -52,10 +42,10 @@ class WhoWeAre extends Component {
   render() {
     return (
       <section className='who-we-are-section' id='who-we-are'>
-        <h2 className='section-title'>Who we are</h2>
+        <h2 className='section-title'>{t('index.whoWeAre.title')}</h2>
         <div className='profile-container carousel' ref='carousel'>
-          {profiles.map((p, i) => 
-            <ProfileCard key={i} name={p.name} bio={p.bio} handle={p.handle} img={p.img} />
+          {data.map((i) => 
+            <ProfileCard key={i} name={t(`index.whoWeAre.team.${i}.name`)} bio={t(`index.whoWeAre.team.${i}.bio`)} handle={t(`index.whoWeAre.team.${i}.handle`)} img={t(`index.whoWeAre.team.${i}.img`)} />
           )}
         </div>
         <div className='section-number'>

@@ -1,24 +1,10 @@
 import React, { Component } from 'react'
+import { t } from '../../../polyglot-modules/polyglot.js'
 import MediaQuery from 'react-responsive'
 import Milestone from '../components/Milestone'
 let Flickity;
 
-const collaborateItems = [
-  {
-    title: 'Collaborate',
-    id: 'collaborate',
-    subtitle: '¿Cómo puedo colaborar?',
-    paragraph: 'Ayudanos a llegar a más personas. Hay muchas maneras de colaborar.',
-    button: 'Escribinos'
-  },
-  {
-    title: 'Transparency',
-    id: 'transparency',
-    subtitle: '¿Quién nos financia? ¿Cómo gastamos?',
-    paragraph: 'Aquí toda la información contable resumida y con su soporte documental.',
-    button: 'Action'
-  }
-]
+const data = [0, 1]
 
 class Collaborate extends Component {
   constructor (props) {
@@ -59,14 +45,14 @@ class Collaborate extends Component {
       <section className='collaborate-section' id='collaborate'>
         <MediaQuery minDeviceWidth={1025}>
           <div className='collaborate-mediaquery-container'>
-            {collaborateItems.map((it, i)=> 
+            {data.map((i)=> 
               <div className='collaborate-container' key={i}>
-                <h2 className='section-title'> {it.title} </h2>
+                <h2 className='section-title'> {t(`index.collaborate.content.${i}.title`)} </h2>
                 <Milestone 
                   className='collaborate-milestone'
-                  title={it.subtitle} 
-                  subtitle={it.paragraph} 
-                  button={it.button}
+                  title={t(`index.collaborate.content.${i}.subtitle`)} 
+                  subtitle={t(`index.collaborate.content.${i}.text`)}
+                  button={t(`index.collaborate.content.${i}.callToAction`)}
                   containerWidth={'auto'} />
               </div>     
             )}
@@ -77,13 +63,13 @@ class Collaborate extends Component {
         </MediaQuery>
         <MediaQuery maxDeviceWidth={1024}>
             <div className='carousel' ref='carousel'>
-              {collaborateItems.map((it, i)=> 
+              {data.map((i)=> 
                 <div className='collaborate-container' key={i} >
-                  <h2 className='section-title'> {it.title} </h2>
+                  <h2 className='section-title'> {t(`index.collaborate.content.${i}.title`)} </h2>
                   <Milestone 
                     className='collaborate-milestone'
-                    title={it.subtitle} 
-                    subtitle={it.paragraph} 
+                    title={t(`index.collaborate.content.${i}.subtitle`)} 
+                    subtitle={t(`index.collaborate.content.${i}.text`)}
                     containerWidth={'auto'} />
                 </div>     
               )}

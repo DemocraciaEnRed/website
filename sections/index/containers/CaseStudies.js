@@ -1,13 +1,9 @@
 import React, { Component } from 'react'
+import { t } from '../../../polyglot-modules/polyglot.js'
 import CaseStudiesCard from '../components/CaseStudiesCard'
 let Flickity;
 
-const example = [
-  {title: 'Lorem ipsum', subtitle: 'Lorem ipsum dolor sit amet'},
-  {title: 'Lorem ipsum', subtitle: 'Lorem ipsum dolor sit amet'},
-  {title: 'Lorem ipsum', subtitle: 'Lorem ipsum dolor sit amet'},
-  {title: 'Lorem ipsum', subtitle: 'Lorem ipsum dolor sit amet'}
-]
+const items = [0, 1, 2, 3]
 
 class CaseStudies extends Component  {
   constructor (props) {
@@ -46,16 +42,16 @@ class CaseStudies extends Component  {
     return (
       <section className='case-studies-section' id='case-studies'>
         <h2 className='section-title'>
-          Case Studies
+          {t('index.caseStudies.title')}
         </h2>
           <div className ='case-studies-container carousel' ref='carousel'>
-            {example.map((card, i) => (
-              <CaseStudiesCard key={i} title={card.title} subtitle={card.subtitle} />
+            {items.map((i) => (
+              <CaseStudiesCard key={i} title={t(`index.caseStudies.content.${i}.title`)} subtitle={t(`index.caseStudies.content.${i}.subtitle`)} />
             ))}
           </div>
         <button className='btn'>
           <span className='action-text'>
-            Ver más
+            {t('index.caseStudies.callToAction')}
           </span>
         </button>
         <div className='section-number'>

@@ -1,22 +1,29 @@
+import { t } from '../../../polyglot-modules/polyglot.js'
 import Github from '../components/Github'
+
+const data = [0, 1]
+const items = [0, 1, 2, 3]
 
 const DemocracyOs = () => (
   <div className='democracy-os-container'>
-    <img src='/static/assets/about/logodOS.svg' alt='Democracy OS logo'/>
-    <p>DemocracyOS es una plataforma de participación que permite a los ciudadanos informarse, debatir y votar en forma rápida y sencilla. </p>
-    <p>DemocracyOS está concebida como una aplicación web versátil, simple y escalable de toma de decisiones colectivas que sirve como herramienta para los ciudadanos interesados en mejorar el acceso a la información, la participación cívica y abrir canales de interacción entre nuevos espacios de construcción de poder y el sistema político: activistas cívicos, organizaciones civiles y actores gubernamentales.</p>
-    <p>Desarrollada en código abierto, con más de 50000 usuarios. <br />
-      Utilizada por más de 40 instituciones, movimientos y partidos políticos de todo el mundo. <br />
-      Disponible en 17 idiomas.<br />
-      Funciona en cualquier dispositivo con un navegador web.
-    </p>
+    <img src={t('aboutUs.democracyOs.img')} alt='Democracy OS logo' className='democracyOs-logo'/>
+    <div>
+      {data.map((i)=> {
+        return <p key={i}>{t(`aboutUs.democracyOs.text.${i}`)}</p>
+      })}
+    </div>
+    <ul className='democracy-os-list'>
+      {items.map((i)=>{
+        return <li key={i}>{t(`aboutUs.democracyOs.list.${i}`)}</li>
+      })}
+    </ul>
     <div className='buttons-container'>
       <button className='btn'>
         <Github />
-        <span className='action-text'>Repositorio</span>
+        <span className='action-text'>{t('aboutUs.democracyOs.repo')}</span>
       </button>
       <button className='btn'>
-        <span className='action-text'>Más info</span>
+        <span className='action-text'>{t('aboutUs.democracyOs.callToAction')}</span>
       </button>
     </div>
     <style jsx>{`
@@ -28,6 +35,9 @@ const DemocracyOs = () => (
         padding-bottom: 100px;
         padding-top: 100px;
       }
+      .democracyOs-logo {
+        margin-bottom: 38px;
+      }
       p{
         font-size: 2rem;
         letter-spacing: 0.13rem;
@@ -36,11 +46,16 @@ const DemocracyOs = () => (
       p:nth-child(2) {
         margin: 40px 0;
       }
+      .democracy-os-list {
+        list-style: disc;
+        font-size: 2.0rem;
+        letter-spacing: 0.13rem;
+      }
       .buttons-container {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin-top: 42px;
+        margin-top: 45px;
         width: 511px;
       }
       .btn {
