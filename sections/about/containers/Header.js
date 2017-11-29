@@ -1,6 +1,8 @@
+import { t } from '../../../polyglot-modules/polyglot.js'
+
 const Header = () => (
   <header>
-    <h1 className='about-us-title'>About us</h1>
+    <h1 className='about-us-title'>{t('aboutUs.title')}</h1>
     <style jsx>{`
       header {
         background-color: #dedede;

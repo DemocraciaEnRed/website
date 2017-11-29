@@ -1,14 +1,13 @@
-const content = [
- 'DeR es una ONG fundada en 2014, que nace a partir de un diagnóstico sobre el status quo y porque nos hartamos de los diagnósticos y los diagnosticadores. Nacimos para construir práctica, técnica y poesía que permitan imaginar e implementar innovaciones en el sistema político para abrir los procesos de decisión, para redistribuir el poder.',
- 'Para nosotros “incidir” significa propiciar cambios efectivos en la relación entre representantes y representados, un cambio que habilite nuevos esquemas de gobernanza (más colaborativos), nuevas lógicas burocráticas (más sensibles) y nuevos espacios públicos (digitales y territoriales).'
-]
+import { t } from '../../../polyglot-modules/polyglot.js'
+
+const text = [0, 1]
 
 const AboutUs = () => (
   <section className='about-us-section'>
-    <h2 className='section-title'>Democracia en Red</h2>
+    <h2 className='section-title'>{t('aboutUs.der.title')}</h2>
     <div>
-      {content.map((it, i)=> {
-        return <p key={i}>{it}</p>
+      {text.map((i)=> {
+        return <p key={i}>{t(`aboutUs.der.text.${i}`)}</p>
       })}
     </div>
     <style jsx>{`
