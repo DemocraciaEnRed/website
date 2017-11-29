@@ -1,10 +1,12 @@
+import { t } from '../../../polyglot-modules/polyglot.js'
+
 const HechaLaLey = () => (
   <div className='hechalaley-container'>
-    <h2>Hecha la ley</h2>
-    <p>Inspirado en la idea de bill-tracking, “Hecha la Ley” es un desarrollo de código abierto que funciona calculando las diferencias en un proyecto de Ley en la medida en que avanza en el trámite parlamentario. Hoy en etapa de prueba, es una herramienta concebida para la prensa especializada y el cuerpo profesional (asesores y periodistas) de los parlamentos.</p>
+    <h2>{t('aboutUs.hechaLaLey.title')}</h2>
+    <p>{t('aboutUs.hechaLaLey.text')}</p>
     <button className='btn'>
       <span className='action-text'>
-        Más info
+        {t('aboutUs.hechaLaLey.callToAction')}
       </span>
     </button>
     <style jsx>{`

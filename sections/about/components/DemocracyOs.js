@@ -55,7 +55,7 @@ const DemocracyOs = () => (
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin-top: 42px;
+        margin-top: 45px;
         width: 511px;
       }
       .btn {
