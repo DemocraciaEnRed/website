@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Link from 'next/link'
 import DesktopMenu from '../components/DesktopMenu'
 import MobileMenu from '../components/MobileMenu'
 
@@ -40,7 +41,9 @@ render () {
 
   return (
     <nav role='banner'>
-      <a className='logo' href='/'></a>
+      <Link href='/'>
+        <a className='logo' />
+      </Link>
       <a className='menu-button' role='navigation' onClick={this.handleMainMenu}></a>
       {this.state.menu && this.state.mobile &&
         <MobileMenu

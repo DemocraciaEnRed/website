@@ -8,7 +8,7 @@ const Media = () => (
     <h2 className='section-title'>{t('index.media.title')}</h2>
     <div className='media-container'>
       {data.map((i) =>
-        <MediaLink key={i} url={t(`index.media.links.${i}.url`)} logo={t(`index.media.links.${i}.logo`)} className={t(`index.media.links.${i}.className`)} />
+        <MediaLink key={i} url={`index.media.links.${i}.url`} logo={`index.media.links.${i}.logo`} className={`index.media.links.${i}.className`} />
       )}
     </div>
     <div className='section-number'>

@@ -7,6 +7,7 @@ import Head from 'next/head'
 import Layout from '../layouts/Layout'
 import Header from '../sections/about/containers/Header'
 import AboutUs from '../sections/about/containers/AboutUs'
+import LangBar from '../components/LangBar'
 import SectionMilestone from '../sections/about/containers/SectionMilestone'
 import Content from '../sections/about/containers/Content'
 import DemocracyOs from '../sections/about/components/DemocracyOs'
@@ -19,7 +20,18 @@ import Clip from '../sections/about/components/Clip'
 export default class extends Component {
   constructor (props) {
     super(props)
-    polyglot.extend(es)
+    this.state = {
+      changeLanguage: false
+    }
+    if (Object.values(polyglot.phrases).length === 0) {
+      polyglot.extend(es)
+    }
+  }
+
+  changeState = () => {
+    this.setState({
+      changeLanguage: !this.state.changeLanguage
+    }, ()=> console.log(this.state.changeLanguage))
   }
   
   render () {
@@ -32,6 +44,7 @@ export default class extends Component {
         </Head>
         <Layout>
           <Header />
+          <LangBar changeState={this.changeState} />
           <AboutUs />
           <SectionMilestone title={t('aboutUs.openGov.title')} text={t('aboutUs.openGov.subtitle')}  />
           <Content>
