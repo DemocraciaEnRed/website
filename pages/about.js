@@ -1,4 +1,7 @@
+import { polyglot } from '../polyglot-modules/polyglot'
 import { t } from '../polyglot-modules/polyglot.js'
+import es from '../translations/es.json'
+import en from '../translations/en.json'
 import Head from 'next/head'
 import Layout from '../layouts/Layout'
 import Header from '../sections/about/containers/Header'
