@@ -1,3 +1,4 @@
+import React, { Component } from 'react'
 import { polyglot } from '../polyglot-modules/polyglot'
 import { t } from '../polyglot-modules/polyglot.js'
 import es from '../translations/es.json'
@@ -15,39 +16,46 @@ import Sole from '../sections/about/components/Sole'
 import Rinp from '../sections/about/components/Rinp'
 import Clip from '../sections/about/components/Clip'
 
-const About = () => (
-  <div>
-    <Head>
-      <title>Democracia en Red</title>
-      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      <link rel="stylesheet" type="text/css" href="/static/global.css" />
-    </Head>
-    <Layout>
-      <Header />
-      <AboutUs />
-      <SectionMilestone title={t('aboutUs.openGov.title')} text={t('aboutUs.openGov.subtitle')}  />
-      <Content>
-        <DemocracyOs />
-        <CivicStack />
-        <HechaLaLey />
-      </Content>
-      <SectionMilestone title={t('aboutUs.education.title')} text={t('aboutUs.education.subtitle')} />
-      <Content>
-        <Sole />
-      </Content>
-      <SectionMilestone title={t('aboutUs.lidership.title')} text={t('aboutUs.lidership.subtitle')} />
-      <Content>
-        <Rinp />
-        <Clip />
-      </Content>
-    </Layout>
-    <style jsx>{`
-      section {
-        padding-left: 100px;
-        padding-right: 100px;
-      }
-    `}</style>
-  </div>
-)
-
-export default About
+export default class extends Component {
+  constructor (props) {
+    super(props)
+    polyglot.extend(es)
+  }
+  
+  render () {
+    return (
+      <div>
+        <Head>
+          <title>Democracia en Red</title>
+          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+          <link rel="stylesheet" type="text/css" href="/static/global.css" />
+        </Head>
+        <Layout>
+          <Header />
+          <AboutUs />
+          <SectionMilestone title={t('aboutUs.openGov.title')} text={t('aboutUs.openGov.subtitle')}  />
+          <Content>
+            <DemocracyOs />
+            <CivicStack />
+            <HechaLaLey />
+          </Content>
+          <SectionMilestone title={t('aboutUs.education.title')} text={t('aboutUs.education.subtitle')} />
+          <Content>
+            <Sole />
+          </Content>
+          <SectionMilestone title={t('aboutUs.lidership.title')} text={t('aboutUs.lidership.subtitle')} />
+          <Content>
+            <Rinp />
+            <Clip />
+          </Content>
+        </Layout>
+        <style jsx>{`
+          section {
+            padding-left: 100px;
+            padding-right: 100px;
+          }
+        `}</style>
+      </div>
+    )
+  }
+}
