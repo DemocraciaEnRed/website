@@ -61,8 +61,8 @@ const EbookCard = ( {img, title, description, link}) => (
         }
         .ebook-btn {
           height: 27px;
-          margin-bottom: 12px;
-          width: 146px;
+          margin-bottom: 23px;
+          width: 134px;
         }
         .action-text {
         font-size: 1.4rem;
