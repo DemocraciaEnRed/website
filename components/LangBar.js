@@ -4,7 +4,8 @@ import en from '../translations/en.json'
 
 const settingLanguage = (lang, changeState) => () => {
     polyglot.extend(lang) 
-    polyglot.locale(lang.language) 
+    polyglot.locale(lang.language)
+    localStorage.setItem('lang', lang.language) 
     changeState()
 }
 

@@ -334,11 +334,11 @@
     ],
     "secondaryLinks" : [
       {
-        "href": "/contact",
+        "href": "/",
         "title": "Contact us"
       },
       {
-        "href": "/jobs",
+        "href": "/",
         "title": "Jobs"
       }
     ]

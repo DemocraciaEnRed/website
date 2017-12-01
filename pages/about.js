@@ -18,20 +18,29 @@ import Rinp from '../sections/about/components/Rinp'
 import Clip from '../sections/about/components/Clip'
 
 export default class extends Component {
-  constructor (props) {
+    constructor (props) {
     super(props)
     this.state = {
       changeLanguage: false
     }
     if (Object.values(polyglot.phrases).length === 0) {
       polyglot.extend(es)
+      polyglot.locale(es.language)
+    }
+  }
+
+  componentDidMount () {
+    const lang = localStorage.getItem('lang')
+    if (lang !== null && lang !== polyglot.currentLocale) {
+      lang === 'es' ? polyglot.extend(es) : polyglot.extend(en)
+      this.changeState()
     }
   }
 
   changeState = () => {
     this.setState({
       changeLanguage: !this.state.changeLanguage
-    }, ()=> console.log(this.state.changeLanguage))
+    })
   }
   
   render () {
@@ -44,7 +53,6 @@ export default class extends Component {
         </Head>
         <Layout>
           <Header />
-          <LangBar changeState={this.changeState} />
           <AboutUs />
           <SectionMilestone title={t('aboutUs.openGov.title')} text={t('aboutUs.openGov.subtitle')}  />
           <Content>
