@@ -19,9 +19,6 @@ const AboutUs = () => (
         </span>
       </button>
     </Link>
-    <div className='section-number'>
-      <span>01</span>
-    </div>
     <style jsx>{`
       .about-us-section {
         display: flex;

@@ -59,9 +59,6 @@ class Publications extends Component {
             </span>
           </button>
         </MediaQuery>
-        <div className='section-number'>
-          <span>04</span>
-        </div>
         <style jsx>{`
           .publications-section {
             display: flex;

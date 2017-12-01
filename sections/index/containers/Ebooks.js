@@ -66,9 +66,6 @@ class Ebooks extends Component {
             <EbookCard key={i} img={''} title={t(`index.ebooks.content.${i}.title`)} description={t(`index.ebooks.content.${i}.subtitle`)} link={t(`index.ebooks.content.${i}.link`)} />
           )}
         </div>
-        <div className='section-number'>
-          <span>05</span>
-        </div>
         <style jsx>{`
           .ebooks-section {
             padding-bottom: 160px;

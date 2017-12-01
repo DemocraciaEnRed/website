@@ -48,9 +48,6 @@ class WhoWeAre extends Component {
             <ProfileCard key={i} name={t(`index.whoWeAre.team.${i}.name`)} bio={t(`index.whoWeAre.team.${i}.bio`)} handle={t(`index.whoWeAre.team.${i}.handle`)} img={t(`index.whoWeAre.team.${i}.img`)} />
           )}
         </div>
-        <div className='section-number'>
-          <span>07</span>
-        </div>
         <style jsx>{`
           .who-we-are-section {
             padding-bottom: 173px;

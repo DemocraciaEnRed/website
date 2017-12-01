@@ -54,9 +54,6 @@ class CaseStudies extends Component  {
             {t('index.caseStudies.callToAction')}
           </span>
         </button>
-        <div className='section-number'>
-          <span>02</span>
-        </div>
       <style jsx>{`
         .case-studies-section {
           display: flex;

@@ -171,27 +171,6 @@ button {
   font-size: 1.9rem;
 }
 
-.section-number {
-  position: absolute;
-  bottom: -70px;
-  right: 34px;
-}
-
-.section-number span {
-  font-size: 20rem;
-  font-weight: 500;
-}
-
-section:nth-child(odd) .section-number span {
-  color: #eaeaea;
-}
-
-section:nth-child(even) .section-number span {
-  color: #bebebe;
-}
-
-
-
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1024px) {

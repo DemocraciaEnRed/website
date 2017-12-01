@@ -56,9 +56,6 @@ class Collaborate extends Component {
                   containerWidth={'auto'} />
               </div>     
             )}
-            <div className='section-number'>
-              <span>03</span>
-            </div>
           </div>
         </MediaQuery>
         <MediaQuery maxDeviceWidth={1024}>
@@ -74,11 +71,6 @@ class Collaborate extends Component {
                 </div>     
               )}
             </div>
-        </MediaQuery>
-        <MediaQuery maxDeviceWidth={1024}>
-          <div className='section-number'>
-            <span>03</span>
-          </div>
         </MediaQuery>
         <style jsx>{`
           .collaborate-section {
