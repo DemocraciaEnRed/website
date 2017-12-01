@@ -1,6 +1,7 @@
+import { t } from '../../../polyglot-modules/polyglot.js'
 const MediaLink = ( {url, logo, className}) => (
-  <a href ={url} target='_blank' rel='external' className={`media-link ${className}`}>
-    <img src={logo} className='media-link-image' />
+  <a href ={t(url)} target='_blank' rel='external' className={`media-link ${t(className)}`}>
+    <img src={t(logo)} className='media-link-image' />
     <style jsx>{`
       .media-link-image {
         height: 60px;

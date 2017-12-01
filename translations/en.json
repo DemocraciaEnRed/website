@@ -1,8 +1,9 @@
 { 
+  "language": "en",
   "index": {
     "header": {
       "title": "Democracia en Red",
-      "subtitle": "Imaginamos, diseñamos e implementamos innovaciones en el sistema político para abrir los procesos de decisión y redistribuir el poder.",
+      "subtitle": "Lorem ipsum",
       "callToAction": "Submit"
     },
     "aboutUs": {
@@ -107,37 +108,37 @@
       "links": [
         {
           "url": "http://www.fastcompany.com/3043388/the-y-combinator-chronicles/why-y-combinator-funded-a-radical-political-party-in-argentina",
-          "logo": "static/assets/media/fast.svg",
+          "logo": "/static/assets/media/fast.svg",
           "className": "fast"
         },
         {
           "url": "https://www.youtube.com/watch?v=7bAOT-57KeE",
-          "logo": "static/assets/media/bbc.svg",
+          "logo": "/static/assets/media/bbc.svg",
           "className": "bbc"
         },
         {
           "url": "http://www.lapoliticaonline.com/nota/85129-tratatan-proyectos-votados-en-internet/",
-          "logo": "static/assets/media/lpo.png",
+          "logo": "/static/assets/media/lpo.png",
           "className": "lpo"
         },
         {
           "url": "http://ccaa.elpais.com/ccaa/2015/01/27/madrid/1422375720_783629.html",
-          "logo": "static/assets/media/elpais.svg",
+          "logo": "/static/assets/media/elpais.svg",
           "className": "elpais"
         },
         {
           "url": "http://www.wired.com/2014/05/democracy-os/",
-          "logo": "static/assets/media/wired.svg",
+          "logo": "/static/assets/media/wired.svg",
           "className": "wired"
         },
         {
           "url": "http://www.lanacion.com.ar/1745336-los-portenos-eligieron-prohibir-a-los-cuidacoches",
-          "logo": "static/assets/media/lanacion.svg",
+          "logo": "/static/assets/media/lanacion.svg",
           "className": "lanacion"
         },
         {
           "url": "http://www.ted.com/talks/pia_mancini_how_to_upgrade_democracy_for_the_internet_era",
-          "logo": "static/assets/media/ted.svg",
+          "logo": "/static/assets/media/ted.svg",
           "className": "ted"
         }
       ]
@@ -213,7 +214,7 @@
     "der": {
       "title": "Democracia en red",
       "text": [
-        "DeR es una ONG fundada en 2014, que nace a partir de un diagnóstico sobre el status quo y porque nos hartamos de los diagnósticos y los diagnosticadores. Nacimos para construir práctica, técnica y poesía que permitan imaginar e implementar innovaciones en el sistema político para abrir los procesos de decisión, para redistribuir el poder.",
+        "Lorem ipsum",
         "Para nosotros “incidir” significa propiciar cambios efectivos en la relación entre representantes y representados, un cambio que habilite nuevos esquemas de gobernanza (más colaborativos), nuevas lógicas burocráticas (más sensibles) y nuevos espacios públicos (digitales y territoriales)."
       ]
     },
@@ -333,16 +334,16 @@
     ],
     "secondaryLinks" : [
       {
-        "href": "/contact",
+        "href": "/",
         "title": "Contact us"
       },
       {
-        "href": "/jobs",
+        "href": "/",
         "title": "Jobs"
       }
     ]
   },
   "footer": {
-    "terms": "terms and conditions"
+    "terms": "términos y condiciones"
   }
 }
