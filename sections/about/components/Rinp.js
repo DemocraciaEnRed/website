@@ -68,8 +68,8 @@ const Rinp = () => (
       }
       @media (max-width: 768px) {
         .rinp-list {
-          margin-left: 100px;
-          margin-right: 100px;
+          margin-left: 24px;
+          margin-right: 0;
         }
       }
     `}</style>

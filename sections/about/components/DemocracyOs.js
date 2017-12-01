@@ -6,7 +6,7 @@ const items = [0, 1, 2, 3]
 
 const DemocracyOs = () => (
   <div className='democracy-os-container'>
-    <img src={t('aboutUs.democracyOs.img')} alt='Democracy OS logo' className='democracyOs-logo'/>
+    <img src={t('aboutUs.democracyOs.img')} alt='Democracy OS logo' className='democracy-os-logo'/>
     <div>
       {data.map((i)=> {
         return <p key={i}>{t(`aboutUs.democracyOs.text.${i}`)}</p>
@@ -35,7 +35,7 @@ const DemocracyOs = () => (
         padding-bottom: 100px;
         padding-top: 100px;
       }
-      .democracyOs-logo {
+      .democracy-os-logo {
         margin-bottom: 38px;
       }
       p{
@@ -61,6 +61,12 @@ const DemocracyOs = () => (
       .btn {
         margin-top: -3px;
       }
+      @media (max-width: 768px) {
+        .democracy-os-list {
+          margin-left: 24px;
+          margin-right: 0;
+        }
+      }
       @media (max-width: 520px) {
         .buttons-container {
           flex-direction: column;
@@ -68,6 +74,11 @@ const DemocracyOs = () => (
         }
         .buttons-container .btn:first-child {
           margin-bottom: 20px;
+        }
+      }
+      @media (max-width: 375px) {
+        .democracy-os-logo {
+          width: 300px;
         }
       }
     `}</style>
