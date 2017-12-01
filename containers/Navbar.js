@@ -14,15 +14,15 @@ class Navbar extends Component {
     }
   }
 
-handleActiveLink = (link, href) => (e) => {
-  if (href) {
-    e.preventDefault()
-    this.handleScroll(href)
-  }
-  this.setState({
-    active: link
-  }, this.handleMainMenu())
-}
+//handleActiveLink = (link, href) => (e) => {
+//if (href) {
+//    e.preventDefault()
+//    this.handleScroll(href)
+//  }
+//  this.setState({
+//    active: link
+//  }, this.handleMainMenu())
+//}
 
 handleMainMenu = () => {
   let mobileMenu = window.innerWidth <= 1024 ? true : false
@@ -30,11 +30,6 @@ handleMainMenu = () => {
     menu: !this.state.menu,
     mobile: mobileMenu
   })
-}
-
-handleScroll = (id) => {
-  let anchor = document.getElementById(id)
-  window.scrollTo(0, anchor.offsetTop -40)
 }
 
 render () {
@@ -47,15 +42,15 @@ render () {
       <a className='menu-button' role='navigation' onClick={this.handleMainMenu}></a>
       {this.state.menu && this.state.mobile &&
         <MobileMenu
-        handleMainMenu={this.handleMainMenu}
-        handleActiveLink={this.handleActiveLink}
-        activeLink={this.state.active} />
+        //handleActiveLink={this.handleActiveLink}
+        //activeLink={this.state.active}
+        handleMainMenu={this.handleMainMenu} />
       }
       {this.state.menu && !this.state.mobile &&
         <DesktopMenu
-        handleMainMenu={this.handleMainMenu}
-        handleActiveLink={this.handleActiveLink}
-        activeLink={this.state.active} />
+        //handleActiveLink={this.handleActiveLink}
+        //activeLink={this.state.active}
+        handleMainMenu={this.handleMainMenu} />
       }
       <style jsx>{`
         nav {

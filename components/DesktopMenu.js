@@ -3,42 +3,33 @@ import { t } from '../polyglot-modules/polyglot.js'
 
 const primaryLinks = [0, 1, 2, 3, 4, 5, 6, 7]
 const secondaryLinks = [0, 1]
-let linkTitle;
-let linkHref;
-let hash;
-
 
 const DesktopMenu = (props) => (
   <nav className='main-menu' role='navigation'>
     <a className='close-menu' onClick={props.handleMainMenu}></a>
     <ul className='primary-links-container'>
       {primaryLinks.map((i)=> {
-        linkTitle = t(`nav.primaryLinks.${i}.title`)
-        linkHref = t(`nav.primaryLinks.${i}.href`)
-        hash = '#'+linkHref
         return (
-          <li key={i}>
-            <Link href={{ pathname: '/', hash: linkHref  }}>
-              <a className={`desktop-menu-link ${window.location.hash != hash ? '' : 'active'}`}>  
-                {linkTitle}
+          <Link href={{ pathname: '/', hash: t(`nav.primaryLinks.${i}.href`)  }} key={i} >
+            <li>
+              <a className={`desktop-menu-link ${window.location.hash != t(`nav.primaryLinks.${i}.href`) ? '' : 'active'}`} onClick={props.handleMainMenu}>  
+                {t(`nav.primaryLinks.${i}.title`)}
               </a>
-            </Link>
-          </li>
+            </li>
+          </Link>
         )
       })}
     </ul>
     <ul className='secondary-links-container'>
       {secondaryLinks.map((i)=> {
-        linkTitle = t(`nav.secondaryLinks.${i}.title`)
-        linkHref = t(`nav.secondaryLinks.${i}.href`)
         return (
-          <li key={i}>
-            <Link href={linkHref}>
-              <a className={`desktop-menu-link ${window.location.pathname != linkHref ? '' : 'active'}`}>  
-                {linkTitle}
+          <Link href={t(`nav.secondaryLinks.${i}.href`)} key={i} >
+            <li>
+              <a className={`desktop-menu-link ${window.location.pathname != t(`nav.secondaryLinks.${i}.href`) ? '' : 'active'}`} onClick={props.handleMainMenu}>  
+                {t(`nav.secondaryLinks.${i}.title`)}
               </a>
-            </Link>
-          </li>
+            </li>
+          </Link>
         )
       })}
     </ul>
