@@ -50,7 +50,6 @@ class WhoWeAre extends Component {
         </div>
         <style jsx>{`
           .who-we-are-section {
-            padding-bottom: 173px;
             overflow-y: hidden;
           }
           .profile-container {
@@ -69,9 +68,6 @@ class WhoWeAre extends Component {
             }
           }
           @media screen and (max-width: 1024px) {
-            .who-we-are-section {
-              padding: 24px 24px 112px;
-            }
             .profile-container {
               display: block;
               margin-top: 33px;

@@ -63,7 +63,7 @@ class Publications extends Component {
           .publications-section {
             display: flex;
             flex-wrap: wrap;
-            padding-bottom: 151px;
+            padding-bottom: 85px;
           }
           .posts-container {
             margin-top: 43px;
