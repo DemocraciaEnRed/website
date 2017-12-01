@@ -63,8 +63,7 @@ body {
 }
 
 section {
-  padding: 48px 85px 42px;
-  position: relative;
+  padding: 48px 85px 85px;
 }
 
 section:nth-child(odd) {
@@ -176,7 +175,7 @@ button {
 @media screen and (max-width: 1024px) {
 
   section {
-    padding: 24px 24px 42px;
+    padding: 24px 24px 24px;
   }
 
   h1 {
@@ -217,14 +216,5 @@ button {
 
   .submit-text {
     font-size: 1.5rem;
-  }
-
-  .section-number {
-    bottom: -35px;
-    right: 8px;
-  }
-
-  .section-number span {
-    font-size: 10rem;
   }
 }
