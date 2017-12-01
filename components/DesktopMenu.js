@@ -2,8 +2,10 @@ import Link from 'next/link'
 import { t } from '../polyglot-modules/polyglot.js'
 
 const primaryLinks = [0, 1, 2, 3, 4, 5, 6, 7]
-
 const secondaryLinks = [0, 1]
+let linkTitle;
+let linkHref;
+let hash;
 
 
 const DesktopMenu = (props) => (
@@ -11,24 +13,31 @@ const DesktopMenu = (props) => (
     <a className='close-menu' onClick={props.handleMainMenu}></a>
     <ul className='primary-links-container'>
       {primaryLinks.map((i)=> {
-        let linkTitle = t(`nav.primaryLinks.${i}.title`)
-        let linkHref = t(`nav.primaryLinks.${i}.href`)
+        linkTitle = t(`nav.primaryLinks.${i}.title`)
+        linkHref = t(`nav.primaryLinks.${i}.href`)
+        hash = '#'+linkHref
         return (
           <li key={i}>
-            <a onClick={props.handleActiveLink(linkTitle, linkHref)} className={`desktop-menu-link ${props.activeLink === linkTitle ? ' active' : ''}`}>{linkTitle}</a>
+            <Link href={{ pathname: '/', hash: linkHref  }}>
+              <a className={`desktop-menu-link ${window.location.hash != hash ? '' : 'active'}`}>  
+                {linkTitle}
+              </a>
+            </Link>
           </li>
         )
       })}
     </ul>
     <ul className='secondary-links-container'>
       {secondaryLinks.map((i)=> {
-        let linkTitle = t(`nav.secondaryLinks.${i}.title`)
-        let linkHref = t(`nav.secondaryLinks.${i}.href`)
+        linkTitle = t(`nav.secondaryLinks.${i}.title`)
+        linkHref = t(`nav.secondaryLinks.${i}.href`)
         return (
           <li key={i}>
             <Link href={linkHref}>
-              <a onClick={props.handleActiveLink(linkTitle)} className={`desktop-menu-link ${props.activeLink === linkTitle ? ' active' : ''}`}>{linkTitle}</a>
-            </Link >
+              <a className={`desktop-menu-link ${window.location.pathname != linkHref ? '' : 'active'}`}>  
+                {linkTitle}
+              </a>
+            </Link>
           </li>
         )
       })}
