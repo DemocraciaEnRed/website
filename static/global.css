@@ -166,7 +166,6 @@ button {
 .submit-text {
   font-family: var(--bold);
   color: var(--white);
-  font-weight: bold;
   font-size: 1.9rem;
 }
 
