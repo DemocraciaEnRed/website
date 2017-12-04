@@ -52,6 +52,7 @@ class Collaborate extends Component {
                   className='collaborate-milestone'
                   title={t(`index.collaborate.content.${i}.subtitle`)} 
                   subtitle={t(`index.collaborate.content.${i}.text`)}
+                  icon={t(`index.collaborate.content.${i}.icon`)}
                   button={t(`index.collaborate.content.${i}.callToAction`)}
                   containerWidth={'auto'} />
               </div>     
@@ -66,6 +67,7 @@ class Collaborate extends Component {
                   <Milestone 
                     className='collaborate-milestone'
                     title={t(`index.collaborate.content.${i}.subtitle`)} 
+                    icon={t(`index.collaborate.content.${i}.icon`)}
                     subtitle={t(`index.collaborate.content.${i}.text`)}
                     containerWidth={'auto'} />
                 </div>     
@@ -126,6 +128,16 @@ class Collaborate extends Component {
             }
             .collaborate-section .collaborate-container:nth-child(2) h2 {
               align-self: flex-end;
+            }
+          }
+          @media (max-width: 425px) {
+            .collaborate-section {
+              padding-bottom: 80px;
+            }
+          }
+          @media (max-width: 375px) {
+            .collaborate-section {
+              padding-bottom: 100px;
             }
           }
           @media (max-width: 338px) {

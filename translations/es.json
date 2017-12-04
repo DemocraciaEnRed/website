@@ -11,15 +11,18 @@
       "content": [
         {
           "title": "Abrir el gobierno",
-          "subtitle": "Participación ciudadana facilitada por la tecnología"
+          "subtitle": "Participación ciudadana facilitada por la tecnología",
+          "icon": "/static/assets/icons/opengov.svg"
         },
         {
           "title": "Repensar la educación",
-          "subtitle": "Nuevas didácticas y pedagogías educativas"
+          "subtitle": "Nuevas didácticas y pedagogías educativas",
+          "icon": "/static/assets/icons/education.svg"
         },
         {
           "title": "Promover liderazgos",
-          "subtitle": "Redes regionales de proyectos político-sociales innovadores"
+          "subtitle": "Redes regionales de proyectos político-sociales innovadores",
+          "icon": "/static/assets/icons/leaders.svg"
         }
       ],
       "callToAction": "Ver más"
@@ -56,12 +59,14 @@
           "title": "Collaborate",
           "subtitle": "¿Cómo puedo colaborar?",
           "text": "Ayudanos a llegar a más personas. Hay muchas maneras de colaborar.",
+          "icon": "/static/assets/icons/collaborate.svg",
           "callToAction": "Escribinos"
         },
         {
           "title": "Transparency",
           "subtitle": "¿Quién nos financia? ¿Cómo gastamos?",
           "text": "Aquí toda la información contable resumida y con su soporte documental.",
+          "icon": "/static/assets/icons/transparency.svg",
           "callToAction": "Descargar PDF"
         }
       ]
@@ -209,7 +214,7 @@
       ]
     }
   },
-  "aboutUs": {
+"aboutUs": {
     "title": "About us",
     "der": {
       "title": "Democracia en red",
@@ -220,7 +225,8 @@
     },
     "openGov": {
       "title": "Abrir el gobierno",
-      "subtitle": "Participación ciudadana facilitada por la tecnología"
+      "subtitle": "Participación ciudadana facilitada por la tecnología",
+      "icon": "/static/assets/icons/opengov.svg"
     },
     "democracyOs": {
       "img": "/static/assets/about/logodOS.svg",
@@ -248,7 +254,8 @@
     },
     "education": {
       "title": "Repensar la educación",
-      "subtitle": "Nuevas didácticas y pedagogía educativa."
+      "subtitle": "Nuevas didácticas y pedagogía educativa.",
+      "icon": "/static/assets/icons/education.svg"
     },
     "sole": {
       "img": "/static/assets/about/logosole.svg",
@@ -269,7 +276,8 @@
     },
     "lidership": {
       "title": "Promover liderazgos",
-      "subtitle": "Redes regionales de proyectos político-sociales."
+      "subtitle": "Redes regionales de proyectos político-sociales.",
+      "icon": "/static/assets/icons/leaders.svg"
     },
     "rinp": {
       "img": "/static/assets/about/logoredi.svg",

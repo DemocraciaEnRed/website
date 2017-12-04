@@ -9,7 +9,7 @@ const AboutUs = () => (
 		<h2 className='section-title'>{t('index.aboutUs.title')}</h2>
     <div className='about-us-container'>
       {items.map((i) => {
-        return <Milestone key={i} title={t(`index.aboutUs.content.${i}.title`)} subtitle={t(`index.aboutUs.content.${i}.subtitle`)} containerWidth={'290px'} />
+        return <Milestone key={i} title={t(`index.aboutUs.content.${i}.title`)} subtitle={t(`index.aboutUs.content.${i}.subtitle`)} icon={t(`index.aboutUs.content.${i}.icon`)}containerWidth={'290px'} />
       })}
     </div>
     <Link href="/about">
