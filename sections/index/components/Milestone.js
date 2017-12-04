@@ -3,11 +3,13 @@ const Milestone = ( props ) => (
     <img className='milestone-img' src={props.icon}/>
     <h3 className='subtitle'>{props.title}</h3>
     <h4 className='subtext'>{props.subtitle}</h4>
-    {props.button &&
+    {props.button && props.href &&
       <button className='btn'>
-        <span className='action-text'>
-          {props.button}
-        </span>
+        <a href={props.href} rel='external' target='_blank'>
+          <span className='action-text'>
+            {props.button}
+          </span>
+        </a>
       </button>
     }
     <style jsx>{`

@@ -54,6 +54,7 @@ class Collaborate extends Component {
                   subtitle={t(`index.collaborate.content.${i}.text`)}
                   icon={t(`index.collaborate.content.${i}.icon`)}
                   button={t(`index.collaborate.content.${i}.callToAction`)}
+                  href={t(`index.collaborate.content.${i}.href`)}
                   containerWidth={'auto'} />
               </div>     
             )}
@@ -69,6 +70,7 @@ class Collaborate extends Component {
                     title={t(`index.collaborate.content.${i}.subtitle`)} 
                     icon={t(`index.collaborate.content.${i}.icon`)}
                     subtitle={t(`index.collaborate.content.${i}.text`)}
+                    href={t(`index.collaborate.content.${i}.href`)}
                     containerWidth={'auto'} />
                 </div>     
               )}

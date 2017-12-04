@@ -60,14 +60,16 @@
           "subtitle": "¿Cómo puedo colaborar?",
           "text": "Ayudanos a llegar a más personas. Hay muchas maneras de colaborar.",
           "icon": "/static/assets/icons/collaborate.svg",
-          "callToAction": "Escribinos"
+          "callToAction": "Escribinos",
+          "href": "mailto:contacto@democraciaenred.org"
         },
         {
           "title": "Transparency",
           "subtitle": "¿Quién nos financia? ¿Cómo gastamos?",
           "text": "Aquí toda la información contable resumida y con su soporte documental.",
           "icon": "/static/assets/icons/transparency.svg",
-          "callToAction": "Descargar PDF"
+          "callToAction": "Descargar PDF",
+          "href": "/"
         }
       ]
     },
