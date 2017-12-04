@@ -7,7 +7,6 @@ import Layout from '../layouts/Layout'
 import Header from '../sections/index/containers/Header'
 import LangBar from '../components/LangBar'
 import AboutUs from '../sections/index/containers/AboutUs'
-import CaseStudies from '../sections/index/containers/CaseStudies'
 import Collaborate from '../sections/index/containers/Collaborate'
 import Ebooks from '../sections/index/containers/Ebooks'
 import Media from '../sections/index/containers/Media'
@@ -52,7 +51,6 @@ export default class extends Component {
         <Layout>
           <Header />
           <AboutUs />
-          <CaseStudies />
           <Collaborate />
           <Publications />
           <Ebooks />
