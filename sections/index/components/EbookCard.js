@@ -44,6 +44,11 @@ const EbookCard = ( {img, title, description, link}) => (
       .action-text {
         font-size: 2.1rem;
       }
+      @media screen and (max-width: 1339x) {
+        .ebook-card{
+          margin-right: 120px;
+        }
+      }
       @media screen and (max-width: 1024px) {
         .ebook-card {
           grid-column-gap: 28px;

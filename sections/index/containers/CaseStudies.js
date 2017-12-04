@@ -34,7 +34,13 @@ class CaseStudies extends Component  {
         contain: true,
         prevNextButtons: false
       }
-      new Flickity(this.refs.carousel, options)
+      this.flickity = new Flickity(this.refs.carousel, options)
+    }
+  }
+
+  componentWillUnmount() {
+    if (this.flickity) {
+      this.flickity.destroy();
     }
   }
 

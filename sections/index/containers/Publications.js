@@ -25,17 +25,24 @@ class Publications extends Component {
 
   componentDidUpdate(){
     if (this.state.mobile) {
+      const align= window.innerWidth > 768 ? 'center' : 'left'
       const options = {
         cellCelector: '.medium-post',
         pageDots: false,
         wrapAround: false,
-        cellAlign: 'left',
+        cellAlign: align,
         draggable: true,
         friction: 0.2,
         contain: true,
         prevNextButtons: false
       }
-      new Flickity(this.refs.carousel, options)
+      this.flickity = new Flickity(this.refs.carousel, options)
+    }
+  }
+
+  componentWillUnmount() {
+    if (this.flickity) {
+      this.flickity.destroy();
     }
   }
 

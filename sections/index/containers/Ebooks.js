@@ -32,14 +32,14 @@ class Ebooks extends Component {
         cellCelector: '.ebook-card',
         pageDots: false,
         wrapAround: false,
-        cellAlign: 'center',
+        cellAlign: 'left',
         draggable: true,
         friction: 0.2,
         contain: true,
         freeScroll: false,
         prevNextButtons: true
       }
-      new Flickity(this.refs.carousel, options)
+      this.flickity = new Flickity(this.refs.carousel, options)
     }
     if (this.state.mobile) {
       const options = {
@@ -53,7 +53,13 @@ class Ebooks extends Component {
         freeScroll: false,
         prevNextButtons: false
       }
-      new Flickity(this.refs.carousel, options)
+      this.flickity = new Flickity(this.refs.carousel, options)
+    }
+  }
+
+  componentWillUnmount() {
+    if (this.flickity) {
+      this.flickity.destroy();
     }
   }
 
