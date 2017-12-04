@@ -1,6 +1,7 @@
-const SectionMilestone = ( {title, text, img} ) => (
+const SectionMilestone = ( {title, text, icon} ) => (
   <section className='section-milestone'>
-    <img  alt='' className='section-milestone-img' />
+    {console.log(icon)}
+    <img className='section-milestone-img' src={icon} />
     <h1 className='section-milestone-title'>{title}</h1>
     <p className='section-milestone-text'>{text}</p>
     <style jsx>{`
@@ -16,8 +17,6 @@ const SectionMilestone = ( {title, text, img} ) => (
         padding-bottom: 0px;
       }
       .section-milestone-img {
-        background-color: #d8d8d8;
-        border-radius: 100%;
         height: 100px;
         width: 100px;
       }

@@ -226,7 +226,7 @@
     "openGov": {
       "title": "Abrir el gobierno",
       "subtitle": "Participación ciudadana facilitada por la tecnología",
-      "icon": "/static/assets/icons/openGov.svg"
+      "icon": "/static/assets/icons/opengov.svg"
     },
     "democracyOs": {
       "img": "/static/assets/about/logodOS.svg",

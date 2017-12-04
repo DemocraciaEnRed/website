@@ -54,17 +54,29 @@ export default class extends Component {
         <Layout>
           <Header />
           <AboutUs />
-          <SectionMilestone title={t('aboutUs.openGov.title')} text={t('aboutUs.openGov.subtitle')}  />
+          <SectionMilestone 
+            title={t('aboutUs.openGov.title')} 
+            text={t('aboutUs.openGov.subtitle')}
+            icon={t('aboutUs.openGov.icon')}  
+          />
           <Content>
             <DemocracyOs />
             <CivicStack />
             <HechaLaLey />
           </Content>
-          <SectionMilestone title={t('aboutUs.education.title')} text={t('aboutUs.education.subtitle')} />
+          <SectionMilestone 
+            title={t('aboutUs.education.title')} 
+            text={t('aboutUs.education.subtitle')} 
+            icon={t('aboutUs.education.icon')}
+          />
           <Content>
             <Sole />
           </Content>
-          <SectionMilestone title={t('aboutUs.lidership.title')} text={t('aboutUs.lidership.subtitle')} />
+          <SectionMilestone 
+            title={t('aboutUs.lidership.title')} 
+            text={t('aboutUs.lidership.subtitle')} 
+            icon={t('aboutUs.lidership.icon')} 
+          />
           <Content>
             <Rinp />
             <Clip />
