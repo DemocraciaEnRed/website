@@ -11,7 +11,7 @@ const Header = () => (
         background-size: cover;
         display: flex;
         align-items: flex-end;
-        height: 350px;
+        height: 475px;
         padding: 49px 81px 21px;
         width: 100%;
       }

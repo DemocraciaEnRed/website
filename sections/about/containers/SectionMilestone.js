@@ -1,6 +1,5 @@
 const SectionMilestone = ( {title, text, icon} ) => (
   <section className='section-milestone'>
-    {console.log(icon)}
     <img className='section-milestone-img' src={icon} />
     <h1 className='section-milestone-title'>{title}</h1>
     <p className='section-milestone-text'>{text}</p>
