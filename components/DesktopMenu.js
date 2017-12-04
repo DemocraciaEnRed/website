@@ -69,7 +69,7 @@ const DesktopMenu = (props) => (
         height: 261px;
         justify-content: flex-start;
         width: 680px;
-        margin-top: 62px;
+        margin-top: 81px;
       }
       .secondary-links-container {
         align-items: space-between;
@@ -78,7 +78,7 @@ const DesktopMenu = (props) => (
         flex-wrap: wrap;
         justify-content: flex-start;
         width: 168px;
-        margin-top: 62px;
+        margin-top: 81px;
       }
       .desktop-menu-link {
         display: block;
