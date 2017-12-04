@@ -6,9 +6,11 @@ const CivicStack = () => (
     <CivicStackLogo />
     <p className='civic-stack-text'>{t('aboutUs.civicStack.text')}</p>
     <button className='btn'>
-      <span className='action-text'>
-        {t('aboutUs.civicStack.callToAction')}
-      </span>
+      <a href={t('aboutUs.civicStack.href')} target='_blank' rel='external'>
+        <span className='action-text'>
+          {t('aboutUs.civicStack.callToAction')}
+        </span>
+      </a>
     </button>
     <style jsx>{`
       .civic-stack-container {

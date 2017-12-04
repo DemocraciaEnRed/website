@@ -19,11 +19,15 @@ const DemocracyOs = () => (
     </ul>
     <div className='buttons-container'>
       <button className='btn'>
-        <Github />
-        <span className='action-text'>{t('aboutUs.democracyOs.repo')}</span>
+        <a href={t('aboutUs.democracyOs.repourl')}  target='_blank' rel='external'>
+          <Github />
+          <span className='action-text'>{t('aboutUs.democracyOs.repo')}</span>
+        </a>
       </button>
       <button className='btn'>
-        <span className='action-text'>{t('aboutUs.democracyOs.callToAction')}</span>
+        <a href={t('aboutUs.democracyOs.href')}  target='_blank' rel='external'>
+          <span className='action-text'>{t('aboutUs.democracyOs.callToAction')}</span>
+        </a>
       </button>
     </div>
     <style jsx>{`

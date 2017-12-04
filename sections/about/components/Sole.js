@@ -17,9 +17,11 @@ const Sole = () => (
       })}
     </ul>
     <button className='btn'>
-      <span className='action-text'>
-        {t('aboutUs.sole.callToAction')}
-      </span>
+      <a href={t('aboutUs.sole.href')} target='_blank' rel='external'>
+        <span className='action-text'>
+          {t('aboutUs.sole.callToAction')}
+        </span>
+      </a>
     </button>
     <style jsx>{`
       .sole-container {

@@ -243,11 +243,14 @@
         "Funciona en cualquier dispositivo con un navegador web."
       ],
       "repo": "Repositorio",
-      "callToAction": "Más info"
+      "callToAction": "Más info",
+      "href": "http://democracyos.org/",
+      "repourl": "https://github.com/DemocracyOS/democracyos"
     },
     "civicStack": {
       "text": "CivicStack es un repositorio de tecnologías de código libre para la participación ciudadana desarrolladas promovidas por organizaciones que usan o desarrollan tecnología abierta para mejorar procesos ciudadanos, fomentar la apertura de información y facilitar comportamientos cívicos online.",
-      "callToAction": "Más info"
+      "callToAction": "Más info",
+      "href": "http://www.civicstack.org/"
     },
     "hechaLaLey": {
       "title": "Hecha la ley",
@@ -274,7 +277,8 @@
         "La evaluación de la capacidad de adquirir conocimientos en Internet (CACI) dio mejores resultados un 20% superiores a los de las escuelas constituidas como “grupos de control”.",
         "A  partir del enfoque y las actividades desarrolladas, se logró impactar sobre las metas aspiracionales de algunos estudiantes."
       ],
-      "callToAction": "Más info"
+      "callToAction": "Más info",
+      "href": "http://www.soleargentina.org/"
     },
     "lidership": {
       "title": "Promover liderazgos",
@@ -296,7 +300,8 @@
           "Taller de “campañas políticas innovadoras” para miembros de la Bancada Ativista (bancadaativista.org), fue realizado en Sao Paulo, en agosto de 2016, con 5 integrantes de la Red (Agustín Frizzera, DeR, Arg; Rodrigo Etchecopar, RD, Chi; Caio Tendolini, UpDate, Br; Susana Ochoa y Alejandra Parra, WikiPolítica, Mx) como expositores."
         ]
       },
-      "callToAction": "Más info"
+      "callToAction": "Más info",
+      "href": "http://redinnovacionpolitica.org/"
     },
     "clip": {
       "title": "Conexiones Latinoamericanas de Innovación Política",

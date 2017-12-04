@@ -5,16 +5,16 @@ import Insta from './Insta'
 
 const SocialBar = ( { alignSelf, iconsSize, width, mobileWidth, justifyContent } ) => (
 	<nav className='social-bar'>
-		<a href='https://www.facebook.com/democraciaenred' className='fb' target='_blanck' rel='external'>
+		<a href='https://www.facebook.com/democraciaenred' className='fb' target='_blank' rel='external'>
       <Facebook />
     </a>
-		<a href='https://twitter.com/fundacionder' className='tw' target='_blanck' rel='external'>
+		<a href='https://twitter.com/fundacionder' className='tw' target='_blank' rel='external'>
       <Twitter />
     </a>
-		<a href='' className='insta' target='_blanck' rel='external'>
+		<a href='' className='insta' target='_blank' rel='external'>
       <Insta />
     </a>
-		<a href='https://github.com/democraciaenred' className='github' target='_blanck' rel='external'>
+		<a href='https://github.com/democraciaenred' className='github' target='_blank' rel='external'>
       <Github />
     </a>
 		<style jsx>{`

@@ -20,9 +20,11 @@ const Rinp = () => (
       </ul>
     </div>
     <button className='btn'>
-      <span className='action-text'>
-        {t('aboutUs.rinp.callToAction')}
-      </span>
+      <a href={t('aboutUs.rinp.href')} rel='external' target="_blank">
+        <span className='action-text'>
+          {t('aboutUs.rinp.callToAction')}
+        </span>
+      </a>
     </button>
     <style jsx>{`
       .rinp-container {
