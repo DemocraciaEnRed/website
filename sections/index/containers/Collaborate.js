@@ -130,6 +130,16 @@ class Collaborate extends Component {
               align-self: flex-end;
             }
           }
+          @media (max-width: 425px) {
+            .collaborate-section {
+              padding-bottom: 80px;
+            }
+          }
+          @media (max-width: 375px) {
+            .collaborate-section {
+              padding-bottom: 100px;
+            }
+          }
           @media (max-width: 338px) {
             .carousel {
               z-index: 10;
