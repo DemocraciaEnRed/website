@@ -11,7 +11,7 @@ const Header = () => (
 		<style jsx>{`
     	header {
      		background-image: url('../static/assets/header/headerWeb.jpg');
-        background-repeat: none;
+        background-repeat: no-repeat;
         background-size: cover;
         display: flex;
         flex-direction: column;

@@ -7,7 +7,7 @@ const Header = () => (
       header {
         background-image: url('../static/assets/header/headerAbout.jpg');
         background-position: center center;
-        background-repeat: none;
+        background-repeat: no-repeat;
         background-size: cover;
         display: flex;
         align-items: flex-end;

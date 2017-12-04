@@ -1,6 +1,6 @@
 const Milestone = ( props ) => (
   <div className='milestone-container'>
-    <div className='milestone-img'></div>
+    <img className='milestone-img' src={props.icon}/>
     <h3 className='subtitle'>{props.title}</h3>
     <h4 className='subtext'>{props.subtitle}</h4>
     {props.button &&
@@ -19,8 +19,6 @@ const Milestone = ( props ) => (
         width: ${props.containerWidth};
       }
       .milestone-img {
-        background-color: var(--gray);
-        border-radius: 100%;
         height: 173px;
         margin-bottom: 26px;
         width: 173px;

@@ -11,15 +11,18 @@
       "content": [
         {
           "title": "Abrir el gobierno",
-          "subtitle": "Participación ciudadana facilitada por la tecnología"
+          "subtitle": "Participación ciudadana facilitada por la tecnología",
+          "icon": "/static/assets/icons/opengov.svg"
         },
         {
           "title": "Repensar la educación",
-          "subtitle": "Nuevas didácticas y pedagogías educativas"
+          "subtitle": "Nuevas didácticas y pedagogías educativas",
+          "icon": "/static/assets/icons/education.svg"
         },
         {
           "title": "Promover liderazgos",
-          "subtitle": "Redes regionales de proyectos político-sociales innovadores"
+          "subtitle": "Redes regionales de proyectos político-sociales innovadores",
+          "icon": "/static/assets/icons/leaders.svg"
         }
       ],
       "callToAction": "Ver más"
