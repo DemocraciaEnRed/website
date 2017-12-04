@@ -10,7 +10,9 @@ const Header = () => (
 		<SocialBar alignSelf={'flex-end'} iconsSize={'30px'} width={'300px'} mobileWidth={'100%'} justifyContent={'space-around'}/>
 		<style jsx>{`
     	header {
-     		background-color: #dedede;
+     		background-image: url('../static/assets/header/headerWeb.jpg');
+        background-repeat: none;
+        background-size: cover;
         display: flex;
         flex-direction: column;
         padding: 144px 40px 32px 85px;
