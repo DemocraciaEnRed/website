@@ -34,7 +34,13 @@ class CaseStudies extends Component  {
         contain: true,
         prevNextButtons: false
       }
-      new Flickity(this.refs.carousel, options)
+      this.flickity = new Flickity(this.refs.carousel, options)
+    }
+  }
+
+  componentWillUnmount() {
+    if (this.flickity) {
+      this.flickity.destroy();
     }
   }
 
@@ -54,9 +60,6 @@ class CaseStudies extends Component  {
             {t('index.caseStudies.callToAction')}
           </span>
         </button>
-        <div className='section-number'>
-          <span>02</span>
-        </div>
       <style jsx>{`
         .case-studies-section {
           display: flex;

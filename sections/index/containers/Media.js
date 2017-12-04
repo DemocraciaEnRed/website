@@ -11,13 +11,7 @@ const Media = () => (
         <MediaLink key={i} url={`index.media.links.${i}.url`} logo={`index.media.links.${i}.logo`} className={`index.media.links.${i}.className`} />
       )}
     </div>
-    <div className='section-number'>
-          <span>06</span>
-        </div>
     <style jsx>{`
-      .media-section {
-        padding-bottom: 203px;
-      }
       .media-container {
         align-content: space-between;
         display: flex;
@@ -33,16 +27,13 @@ const Media = () => (
         }
       }
       @media screen and (max-width: 768px) {
-        .media-section {
-          padding-bottom: 110px;
-        }
         .media-container {
           height: 193px;
         }
       }
       @media screen and (max-width: 600px) {
         .media-section {
-          padding: 24px 27px 110px 24px;
+          padding: 24px 27px 48px 24px;
         }
         .media-container {
           height: 245px;

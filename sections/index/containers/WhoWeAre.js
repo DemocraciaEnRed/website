@@ -24,10 +24,11 @@ class WhoWeAre extends Component {
 
   componentDidUpdate(){
     if (this.state.mobile) {
+      const wrapAround= window.innerWidth >= 768 ? true : false
       const options = {
         cellCelector: '.profile-card',
         cellAlign: 'center',
-        pageDots: false
+        pageDots: false,
       }
       this.flickity = new Flickity(this.refs.carousel, options)
     }
@@ -48,12 +49,8 @@ class WhoWeAre extends Component {
             <ProfileCard key={i} name={t(`index.whoWeAre.team.${i}.name`)} bio={t(`index.whoWeAre.team.${i}.bio`)} handle={t(`index.whoWeAre.team.${i}.handle`)} img={t(`index.whoWeAre.team.${i}.img`)} />
           )}
         </div>
-        <div className='section-number'>
-          <span>07</span>
-        </div>
         <style jsx>{`
           .who-we-are-section {
-            padding-bottom: 173px;
             overflow-y: hidden;
           }
           .profile-container {
@@ -72,9 +69,6 @@ class WhoWeAre extends Component {
             }
           }
           @media screen and (max-width: 1024px) {
-            .who-we-are-section {
-              padding: 24px 24px 112px;
-            }
             .profile-container {
               display: block;
               margin-top: 33px;

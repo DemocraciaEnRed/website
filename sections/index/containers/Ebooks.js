@@ -32,14 +32,14 @@ class Ebooks extends Component {
         cellCelector: '.ebook-card',
         pageDots: false,
         wrapAround: false,
-        cellAlign: 'center',
+        cellAlign: 'left',
         draggable: true,
         friction: 0.2,
         contain: true,
         freeScroll: false,
         prevNextButtons: true
       }
-      new Flickity(this.refs.carousel, options)
+      this.flickity = new Flickity(this.refs.carousel, options)
     }
     if (this.state.mobile) {
       const options = {
@@ -53,7 +53,13 @@ class Ebooks extends Component {
         freeScroll: false,
         prevNextButtons: false
       }
-      new Flickity(this.refs.carousel, options)
+      this.flickity = new Flickity(this.refs.carousel, options)
+    }
+  }
+
+  componentWillUnmount() {
+    if (this.flickity) {
+      this.flickity.destroy();
     }
   }
 
@@ -66,12 +72,9 @@ class Ebooks extends Component {
             <EbookCard key={i} img={''} title={t(`index.ebooks.content.${i}.title`)} description={t(`index.ebooks.content.${i}.subtitle`)} link={t(`index.ebooks.content.${i}.link`)} />
           )}
         </div>
-        <div className='section-number'>
-          <span>05</span>
-        </div>
         <style jsx>{`
           .ebooks-section {
-            padding-bottom: 160px;
+            padding-bottom: 85px;
           }
           .ebooks-container {
             display: block;
@@ -82,7 +85,7 @@ class Ebooks extends Component {
           }
           @media screen and (max-width: 1024px) {
             .ebooks-section {
-              padding: 24px 24px 111px 24px ;
+              padding: 24px 24px 48px 24px ;
             }
             .ebooks-container {
               height: 176px;

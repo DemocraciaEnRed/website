@@ -25,17 +25,24 @@ class Publications extends Component {
 
   componentDidUpdate(){
     if (this.state.mobile) {
+      const align= window.innerWidth > 768 ? 'center' : 'left'
       const options = {
         cellCelector: '.medium-post',
         pageDots: false,
         wrapAround: false,
-        cellAlign: 'left',
+        cellAlign: align,
         draggable: true,
         friction: 0.2,
         contain: true,
         prevNextButtons: false
       }
-      new Flickity(this.refs.carousel, options)
+      this.flickity = new Flickity(this.refs.carousel, options)
+    }
+  }
+
+  componentWillUnmount() {
+    if (this.flickity) {
+      this.flickity.destroy();
     }
   }
 
@@ -59,14 +66,11 @@ class Publications extends Component {
             </span>
           </button>
         </MediaQuery>
-        <div className='section-number'>
-          <span>04</span>
-        </div>
         <style jsx>{`
           .publications-section {
             display: flex;
             flex-wrap: wrap;
-            padding-bottom: 151px;
+            padding-bottom: 85px;
           }
           .posts-container {
             margin-top: 43px;

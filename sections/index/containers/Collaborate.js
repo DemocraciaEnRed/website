@@ -56,9 +56,6 @@ class Collaborate extends Component {
                   containerWidth={'auto'} />
               </div>     
             )}
-            <div className='section-number'>
-              <span>03</span>
-            </div>
           </div>
         </MediaQuery>
         <MediaQuery maxDeviceWidth={1024}>
@@ -75,16 +72,10 @@ class Collaborate extends Component {
               )}
             </div>
         </MediaQuery>
-        <MediaQuery maxDeviceWidth={1024}>
-          <div className='section-number'>
-            <span>03</span>
-          </div>
-        </MediaQuery>
         <style jsx>{`
           .collaborate-section {
             display: flex;
             justify-content: space-between;
-            padding-bottom: 50px;
           }
           .collaborate-mediaquery-container {
             display: flex;
@@ -114,7 +105,7 @@ class Collaborate extends Component {
             .collaborate-section {
               flex-direction: column;
               align-items: center;
-              padding-bottom: 77px;
+              padding-bottom: 48px;
             }
             .collaborate-container {
               width: 100%;
