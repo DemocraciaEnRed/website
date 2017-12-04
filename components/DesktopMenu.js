@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { t } from '../polyglot-modules/polyglot.js'
 
-const primaryLinks = [0, 1, 2, 3, 4, 5, 6, 7]
+const primaryLinks = [0, 1, 2, 3, 4, 5, 6]
 const secondaryLinks = [0, 1]
 
 const DesktopMenu = (props) => (
@@ -67,7 +67,7 @@ const DesktopMenu = (props) => (
         flex-direction: column;
         flex-wrap: wrap;
         height: 261px;
-        justify-content: space-between;
+        justify-content: flex-start;
         width: 680px;
         margin-top: 62px;
       }

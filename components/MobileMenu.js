@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { t } from '../polyglot-modules/polyglot.js'
 
-const primaryLinks = [0, 1, 2, 3, 4, 5, 6, 7]
+const primaryLinks = [0, 1, 2, 3, 4, 5, 6]
 const secondaryLinks = [0, 1]
 
 const MobileMenu = (props) => (
