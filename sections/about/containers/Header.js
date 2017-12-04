@@ -5,10 +5,13 @@ const Header = () => (
     <h1 className='about-us-title'>{t('aboutUs.title')}</h1>
     <style jsx>{`
       header {
-        background-color: #dedede;
+        background-image: url('../static/assets/header/headerAbout.jpg');
+        background-position: center center;
+        background-repeat: none;
+        background-size: cover;
         display: flex;
         align-items: flex-end;
-        height: 35rem;
+        height: 350px;
         padding: 49px 81px 21px;
         width: 100%;
       }
