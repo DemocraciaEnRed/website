@@ -5,7 +5,7 @@ const items = [0, 1, 2, 3, 4]
 
 const Sole = () => (
   <div className='sole-container'>
-    <img src={t('aboutUs.sole.img')} alt='SOLE logo'/>
+    <img src={t('aboutUs.sole.img')} alt='SOLE'/>
     <div>
       {text.map((i)=> {
         return <p key={i}>{t(`aboutUs.sole.text.${i}`)}</p>

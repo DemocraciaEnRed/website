@@ -6,7 +6,7 @@ const items = [0, 1, 2, 3]
 
 const DemocracyOs = () => (
   <div className='democracy-os-container'>
-    <img src={t('aboutUs.democracyOs.img')} alt='Democracy OS logo' className='democracy-os-logo'/>
+    <img src={t('aboutUs.democracyOs.img')} alt='Democracy OS' className='democracy-os-logo'/>
     <div>
       {data.map((i)=> {
         return <p key={i}>{t(`aboutUs.democracyOs.text.${i}`)}</p>
