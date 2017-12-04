@@ -4,11 +4,13 @@ const HechaLaLey = () => (
   <div className='hechalaley-container'>
     <h2>{t('aboutUs.hechaLaLey.title')}</h2>
     <p>{t('aboutUs.hechaLaLey.text')}</p>
-    <button className='btn'>
-      <span className='action-text'>
-        {t('aboutUs.hechaLaLey.callToAction')}
-      </span>
-    </button>
+    <a href={t('aboutUs.hechaLaLey.href')} target='_blank' rol='external'>
+      <button className='btn'>
+        <span className='action-text'>
+          {t('aboutUs.hechaLaLey.callToAction')}
+        </span>
+      </button>
+    </a>
     <style jsx>{`
       .hechalaley-container {
         display: flex;

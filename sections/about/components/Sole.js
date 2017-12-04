@@ -16,13 +16,13 @@ const Sole = () => (
         return <li key={i}>{t(`aboutUs.sole.items.${i}`)}</li>
       })}
     </ul>
-    <button className='btn'>
-      <a href={t('aboutUs.sole.href')} target='_blank' rel='external'>
+    <a href={t('aboutUs.sole.href')} target='_blank' rel='external'>
+      <button className='btn'>
         <span className='action-text'>
           {t('aboutUs.sole.callToAction')}
         </span>
-      </a>
-    </button>
+      </button>
+    </a>
     <style jsx>{`
       .sole-container {
         display: flex;

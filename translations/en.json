@@ -255,7 +255,8 @@
     "hechaLaLey": {
       "title": "Hecha la ley",
       "text": "Inspirado en la idea de bill-tracking, “Hecha la Ley” es un desarrollo de código abierto que funciona calculando las diferencias en un proyecto de Ley en la medida en que avanza en el trámite parlamentario. Hoy en etapa de prueba, es una herramienta concebida para la prensa especializada y el cuerpo profesional (asesores y periodistas) de los parlamentos.",
-      "callToAction": "Más info"
+      "callToAction": "Más info",
+      "href": "https://hechalaley.org/"
     },
     "education": {
       "title": "Repensar la educación",

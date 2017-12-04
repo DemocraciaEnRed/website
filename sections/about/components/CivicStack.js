@@ -5,13 +5,13 @@ const CivicStack = () => (
   <div className='civic-stack-container'>
     <CivicStackLogo />
     <p className='civic-stack-text'>{t('aboutUs.civicStack.text')}</p>
-    <button className='btn'>
-      <a href={t('aboutUs.civicStack.href')} target='_blank' rel='external'>
+    <a href={t('aboutUs.civicStack.href')} target='_blank' rel='external'>
+      <button className='btn'>
         <span className='action-text'>
           {t('aboutUs.civicStack.callToAction')}
         </span>
-      </a>
-    </button>
+      </button>
+    </a>
     <style jsx>{`
       .civic-stack-container {
         display: flex;

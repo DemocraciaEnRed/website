@@ -18,17 +18,17 @@ const DemocracyOs = () => (
       })}
     </ul>
     <div className='buttons-container'>
-      <button className='btn'>
-        <a href={t('aboutUs.democracyOs.repourl')}  target='_blank' rel='external'>
+      <a href={t('aboutUs.democracyOs.repourl')}  target='_blank' rel='external'>
+        <button className='btn'>
           <Github />
           <span className='action-text'>{t('aboutUs.democracyOs.repo')}</span>
-        </a>
-      </button>
-      <button className='btn'>
-        <a href={t('aboutUs.democracyOs.href')}  target='_blank' rel='external'>
+        </button>
+      </a>
+      <a href={t('aboutUs.democracyOs.href')}  target='_blank' rel='external'>
+        <button className='btn'>
           <span className='action-text'>{t('aboutUs.democracyOs.callToAction')}</span>
-        </a>
-      </button>
+        </button>
+      </a>
     </div>
     <style jsx>{`
       .democracy-os-container {
