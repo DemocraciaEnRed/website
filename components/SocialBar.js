@@ -11,7 +11,7 @@ const SocialBar = ( { alignSelf, iconsSize, width, mobileWidth, justifyContent }
 		<a href='https://twitter.com/fundacionder' className='tw' target='_blank' rel='external'>
       <Twitter />
     </a>
-		<a href='' className='insta' target='_blank' rel='external'>
+		<a href='https://www.instagram.com/democracia_en_red/' className='insta' target='_blank' rel='external'>
       <Insta />
     </a>
 		<a href='https://github.com/democraciaenred' className='github' target='_blank' rel='external'>

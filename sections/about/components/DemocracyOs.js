@@ -73,6 +73,7 @@ const DemocracyOs = () => (
       }
       @media (max-width: 520px) {
         .buttons-container {
+          align-items: center;
           flex-direction: column;
           width: 100%;
         }
