@@ -9,19 +9,15 @@ class Ebooks extends Component {
   constructor(props){
     super(props)
     this.state = {
-      mobile: null
+      mobile: false
     }
   }
 
   componentDidMount () {
     Flickity = require('flickity')
-    if (window.innerWidth <= 1024) {
+    if (window.innerWidth < 768) {
       this.setState({
         mobile: true
-      })
-    } else {
-      this.setState({
-        mobile: false
       })
     }
   }
@@ -80,10 +76,15 @@ class Ebooks extends Component {
           .ebooks-container {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: space-around;
             margin-top: 59px;
           }
-          @media screen and (max-width: 1024px) {
+          @media screen and (max-width: 1260px) {
+            .ebooks-container {
+              justify-content: space-between;
+            }
+          }
+          @media screen and (max-width: 766px) {
             .ebooks-section {
               padding: 24px 24px 48px 24px ;
             }
