@@ -318,31 +318,31 @@
   "nav": {
     "primaryLinks": [
       {
-        "href": "#about",
+        "href": "about",
         "title": "About us"
       },
       {
-        "href": "#collaborate",
+        "href": "collaborate",
         "title": "Collaborate"
       },
       {
-        "href": "#collaborate",
+        "href": "collaborate",
         "title": "Transparency"
       },
       {
-        "href": "#publications",
+        "href": "publications",
         "title": "Publications"
       },
       {
-        "href": "#ebooks",
+        "href": "ebooks",
         "title": "E-books"
       },
       {
-        "href": "#media",
+        "href": "media",
         "title": "Media"
       },
       {
-        "href": "#who-we-are",
+        "href": "who-we-are",
         "title": "Who we are"
       }
     ],

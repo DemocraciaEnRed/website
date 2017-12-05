@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import Link from 'next/link'
+import Router from 'next/router'
+import jump from 'jump.js'
 import DesktopMenu from '../components/DesktopMenu'
 import MobileMenu from '../components/MobileMenu'
 
@@ -14,15 +16,11 @@ class Navbar extends Component {
     }
   }
 
-//handleActiveLink = (link, href) => (e) => {
-//if (href) {
-//    e.preventDefault()
-//    this.handleScroll(href)
-//  }
-//  this.setState({
-//    active: link
-//  }, this.handleMainMenu())
-//}
+handleLink = (hash) => (e) => {
+  const node = document.getElementById(hash)
+  this.handleMainMenu()
+  window.location.pathname !== '/' ? Router.push({pathname: '/', hash: '#'+hash}) : jump(node, {offset: -50})
+}
 
 handleMainMenu = () => {
   let mobileMenu = window.innerWidth <= 1024 ? true : false
@@ -42,14 +40,12 @@ render () {
       <a className='menu-button' role='navigation' onClick={this.handleMainMenu}></a>
       {this.state.menu && this.state.mobile &&
         <MobileMenu
-        //handleActiveLink={this.handleActiveLink}
-        //activeLink={this.state.active}
+        handleLink={this.handleLink}
         handleMainMenu={this.handleMainMenu} />
       }
       {this.state.menu && !this.state.mobile &&
         <DesktopMenu
-        //handleActiveLink={this.handleActiveLink}
-        //activeLink={this.state.active}
+        handleLink={this.handleLink}
         handleMainMenu={this.handleMainMenu} />
       }
       <style jsx>{`

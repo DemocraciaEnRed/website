@@ -13,13 +13,11 @@ const MobileMenu = (props) => (
     <ul className='primary-links'>
       {primaryLinks.map((i)=> {
         return (
-          <Link href={{ pathname: '/', hash: t(`nav.primaryLinks.${i}.href`)  }} key={i} >
-            <li>
-              <a className={`menu-link ${window.location.hash != t(`nav.primaryLinks.${i}.href`) ? '' : 'active'}`} onClick={props.handleMainMenu}>  
-                {t(`nav.primaryLinks.${i}.title`)}
-              </a>
-            </li>
-          </Link>
+          <li key={i}>
+            <a className={`menu-link ${window.location.hash != t(`nav.primaryLinks.${i}.href`) ? '' : 'active'}`} onClick={props.handleLink(t(`nav.primaryLinks.${i}.href`))} >  
+              {t(`nav.primaryLinks.${i}.title`)}
+            </a>
+          </li>
         )
       })}
     </ul>
