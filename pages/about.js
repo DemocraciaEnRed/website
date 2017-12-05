@@ -3,7 +3,6 @@ import { polyglot } from '../polyglot-modules/polyglot'
 import { t } from '../polyglot-modules/polyglot.js'
 import es from '../translations/es.json'
 import en from '../translations/en.json'
-import Head from 'next/head'
 import Layout from '../layouts/Layout'
 import Header from '../sections/about/containers/Header'
 import AboutUs from '../sections/about/containers/AboutUs'
@@ -46,11 +45,6 @@ export default class extends Component {
   render () {
     return (
       <div>
-        <Head>
-          <title>Democracia en Red</title>
-          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-          <link rel="stylesheet" type="text/css" href="/static/global.css" />
-        </Head>
         <Layout>
           <Header />
           <AboutUs />
