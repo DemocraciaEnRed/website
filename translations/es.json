@@ -7,7 +7,7 @@
       "callToAction": "Enviar"
     },
     "aboutUs": {
-      "title": "About us",
+      "title": "Sobre nosotros",
       "content": [
         {
           "title": "Abrir el gobierno",
@@ -28,7 +28,7 @@
       "callToAction": "Ver más"
     },
     "caseStudies": {
-      "title": "Case Studies",
+      "title": "Casos de Estudio",
       "content": [
         {
           "title": "Lorem ipsum dolor sit amet this is title",
@@ -56,7 +56,7 @@
     "collaborate": {
       "content": [
         { 
-          "title": "Collaborate",
+          "title": "Colaborar",
           "subtitle": "¿Cómo puedo colaborar?",
           "text": "Ayudanos a llegar a más personas. Hay muchas maneras de colaborar.",
           "icon": "/static/assets/icons/collaborate.svg",
@@ -64,7 +64,7 @@
           "href": "mailto:contacto@democraciaenred.org"
         },
         {
-          "title": "Transparency",
+          "title": "Transparencia",
           "subtitle": "¿Quién nos financia? ¿Cómo gastamos?",
           "text": "Aquí toda la información contable resumida y con su soporte documental.",
           "icon": "/static/assets/icons/transparency.svg",
@@ -111,7 +111,7 @@
       "callToAction": "Descargar"
     },
     "media": {
-      "title": "Media",
+      "title": "Prensa",
       "links": [
         {
           "url": "http://www.fastcompany.com/3043388/the-y-combinator-chronicles/why-y-combinator-funded-a-radical-political-party-in-argentina",
@@ -217,7 +217,7 @@
     }
   },
 "aboutUs": {
-    "title": "About us",
+    "title": "Sobre nosotros",
     "der": {
       "title": "Democracia en red",
       "text": [
@@ -248,7 +248,7 @@
       "repourl": "https://github.com/DemocracyOS/democracyos"
     },
     "civicStack": {
-      "text": "CivicStack es un repositorio de tecnologías de código libre para la participación ciudadana desarrolladas promovidas por organizaciones que usan o desarrollan tecnología abierta para mejorar procesos ciudadanos, fomentar la apertura de información y facilitar comportamientos cívicos online.",
+      "text": "CivicStack es un repositorio de tecnologías de código libre para la participación ciudadana promovidas por organizaciones que usan o desarrollan tecnología abierta para mejorar procesos ciudadanos, fomentar la apertura de información y facilitar comportamientos cívicos online.",
       "callToAction": "Más info",
       "href": "http://www.civicstack.org/"
     },
@@ -317,7 +317,7 @@
     "primaryLinks": [
       {
         "href": "#about",
-        "title": "About us"
+        "title": "Sobre nosotros"
       },
       {
         "href": "#collaborate",
@@ -347,11 +347,11 @@
     "secondaryLinks" : [
       {
         "href": "/",
-        "title": "Contact us"
+        "title": "Contacto"
       },
       {
         "href": "/",
-        "title": "Jobs"
+        "title": "Trabajos"
       }
     ]
   },

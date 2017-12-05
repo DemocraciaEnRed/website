@@ -73,9 +73,9 @@ export default class extends Component {
             <Sole />
           </Content>
           <SectionMilestone 
-            title={t('aboutUs.lidership.title')} 
-            text={t('aboutUs.lidership.subtitle')} 
-            icon={t('aboutUs.lidership.icon')} 
+            title={t('aboutUs.leadership.title')} 
+            text={t('aboutUs.leadership.subtitle')} 
+            icon={t('aboutUs.leadership.icon')} 
           />
           <Content>
             <Rinp />

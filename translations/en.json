@@ -3,29 +3,29 @@
   "index": {
     "header": {
       "title": "Democracia en Red",
-      "subtitle": "Lorem ipsum",
+      "subtitle": "We imagine, design and implement  innovations in the political system, to open decision processes, to redistribute power.",
       "callToAction": "Submit"
     },
     "aboutUs": {
       "title": "About us",
       "content": [
         {
-          "title": "Abrir el gobierno",
-          "subtitle": "Participación ciudadana facilitada por la tecnología",
+          "title": "Open the government",
+          "subtitle": "Citizen participation facilitated by technology",
           "icon": "/static/assets/icons/opengov.svg"
         },
         {
-          "title": "Repensar la educación",
-          "subtitle": "Nuevas didácticas y pedagogías educativas",
+          "title": "Rethinking education",
+          "subtitle": "New didactics and educational pedagogy",
           "icon": "/static/assets/icons/education.svg"
         },
         {
-          "title": "Promover liderazgos",
-          "subtitle": "Redes regionales de proyectos político-sociales innovadores",
+          "title": "Promote leadership",
+          "subtitle": "Regional networks of political-social projects",
           "icon": "/static/assets/icons/leaders.svg"
         }
       ],
-      "callToAction": "Ver más"
+      "callToAction": "More info"
     },
     "caseStudies": {
       "title": "Case Studies",
@@ -57,24 +57,24 @@
       "content": [
         { 
           "title": "Collaborate",
-          "subtitle": "¿Cómo puedo colaborar?",
-          "text": "Ayudanos a llegar a más personas. Hay muchas maneras de colaborar.",
+          "subtitle": "How can I collaborate?",
+          "text": "Help us to reach more people. There are many ways to collaborate.",
           "icon": "/static/assets/icons/collaborate.svg",
-          "callToAction": "Escribinos",
+          "callToAction": "Drop us a line",
           "href": "mailto:contacto@democraciaenred.org"
         },
         {
           "title": "Transparency",
-          "subtitle": "¿Quién nos financia? ¿Cómo gastamos?",
-          "text": "Aquí toda la información contable resumida y con su soporte documental.",
+          "subtitle": "Who funds us? How we spend?",
+          "text": "Here is all accounting summary information and documentary support.",
           "icon": "/static/assets/icons/transparency.svg",
-          "callToAction": "Descargar PDF",
+          "callToAction": "Download PDF",
           "href": "/"
         }
       ]
     },
     "publications": {
-      "title": "Publicaciones",
+      "title": "Publications",
       "content": [
         {
           "text": "A wonderful serenity has taken possession of my entire soul, like these.",
@@ -92,7 +92,7 @@
           "likes": "269"
         }
       ],
-      "callToAction": "Ver más"
+      "callToAction": "More info"
     },
     "ebooks": {
       "title": "Ebooks",
@@ -108,7 +108,7 @@
           "link": "/"
         }
       ],
-      "callToAction": "Descargar"
+      "callToAction": "Download"
     },
     "media": {
       "title": "Media",
@@ -221,126 +221,126 @@
     "der": {
       "title": "Democracia en red",
       "text": [
-        "Lorem ipsum",
-        "Para nosotros “incidir” significa propiciar cambios efectivos en la relación entre representantes y representados, un cambio que habilite nuevos esquemas de gobernanza (más colaborativos), nuevas lógicas burocráticas (más sensibles) y nuevos espacios públicos (digitales y territoriales)."
+        "DeR is an NGO founded in 2014, that was born from a diagnosis about the status quo and because fed up of diagnoses and diagnosticians. We were born to build practice, technique and poetry that allow us to imagine and implement innovations in the political system, to open decision processes, to redistribute power.",
+        "For us “to influence” means to promote effective changes in the relationship between representatives and represented, a change that enables new governance schemes (more collaborative), new bureaucratic logics (more sensitive) and new public spaces (both digital and territorial)."
       ]
     },
     "openGov": {
-      "title": "Abrir el gobierno",
-      "subtitle": "Participación ciudadana facilitada por la tecnología",
+      "title": "Open the government",
+      "subtitle": "Citizen participation facilitated by technology.",
       "icon": "/static/assets/icons/opengov.svg"
     },
     "democracyOs": {
       "img": "/static/assets/about/logodOS.svg",
       "text": [
-        "DemocracyOS es una plataforma de participación que permite a los ciudadanos informarse, debatir y votar en forma rápida y sencilla.",
-        "DemocracyOS está concebida como una aplicación web versátil, simple y escalable de toma de decisiones colectivas que sirve como herramienta para los ciudadanos interesados en mejorar el acceso a la información, la participación cívica y abrir canales de interacción entre nuevos espacios de construcción de poder y el sistema político: activistas cívicos, organizaciones civiles y actores gubernamentales."
+        "DemocracyOS is a participation platform that allows citizens to inform, debate and vote on a more quick and easy way.",
+        "DemocracyOS is conceived as a versatile, simple and scalable web application for collective decision-making that serves as a tool for citizens interested in improving access to information, civic participation and opening channels of interaction between new power building spaces and the political system: civic activists, civil organizations and government actors."
       ],
       "list": [
-        "Desarrollada en código abierto, con más de 50000 usuarios.",
-        "Utilizada por más de 40 instituciones, movimientos y partidos políticos de todo el mundo.",
-        "Disponible en 17 idiomas.",
-        "Funciona en cualquier dispositivo con un navegador web."
+        "Developed as open source, with more than 50000 users.",
+        "Used by over 40 institutions, movements and political parties around the world.",
+        "Available in 17 languages.",
+        "It works on any device with a web browser."
       ],
       "repo": "Repository",
-      "callToAction": "Más info",
+      "callToAction": "More info",
       "href": "http://democracyos.org/",
       "repourl": "https://github.com/DemocracyOS/democracyos"
     },
     "civicStack": {
-      "text": "CivicStack es un repositorio de tecnologías de código libre para la participación ciudadana desarrolladas promovidas por organizaciones que usan o desarrollan tecnología abierta para mejorar procesos ciudadanos, fomentar la apertura de información y facilitar comportamientos cívicos online.",
-      "callToAction": "Más info",
+      "text": "CivicStack is a repository of open source technologies for citizen participation promoted by organizations that use or develop open (source) technology to improve citizen processes, encourage the opening of information and facilitate online civic behavior.",
+      "callToAction": "More info",
       "href": "http://www.civicstack.org/"
     },
     "hechaLaLey": {
       "title": "Hecha la ley",
-      "text": "Inspirado en la idea de bill-tracking, “Hecha la Ley” es un desarrollo de código abierto que funciona calculando las diferencias en un proyecto de Ley en la medida en que avanza en el trámite parlamentario. Hoy en etapa de prueba, es una herramienta concebida para la prensa especializada y el cuerpo profesional (asesores y periodistas) de los parlamentos.",
-      "callToAction": "Más info",
+      "text": "Inspired by the idea of bill-tracking, “Hecha la ley” is an open source development that works by calculating the differences in a bill as it progresses in the parliamentary process. Today in the testing stage, it is a tool designed for the specialized press and the professional body (advisors and journalists) of the parliaments.",
+      "callToAction": "More info",
       "href": "https://hechalaley.org/"
     },
     "education": {
-      "title": "Repensar la educación",
-      "subtitle": "Nuevas didácticas y pedagogía educativa.",
+      "title": "Rethinking education",
+      "subtitle": "New didactics and educational pedagogy.",
       "icon": "/static/assets/icons/education.svg"
     },
     "sole": {
       "img": "/static/assets/about/logosole.svg",
       "text" : [
-        "Es necesario repensar el modelo educativo. Hoy, se sigue educando niños para la sociedad industrial: ciudadanos-consumidores que sólo aprenden a elegir entre opciones y acceden a un conocimiento estandarizado, administrado verticalmente y munido de dinámicas disciplinarias de “premios y castigos”.",
-        "Los Entornos de Aprendizaje Auto Organizado (S.O.L.E., sus siglas en inglés) son espacios que a simple vista parecen algo caóticos: muchos niños, algunas computadoras y una gran pregunta. La propuesta organiza el acceso en grupos a las computadoras para investigar y responder a una pregunta estimulante. Así, surgen en el aula nuevas interacciones. La magia desatada por esta experiencia enciende la curiosidad y el asombro de los niños, los grandes motores de este dispositivo.",
-        "Basada en la metodología del Dr. Sugata Mitra, el enfoque S.O.L.E. está concluyendo su aplicación piloto en la Escuela N° 20 de la Ciudad de Buenos Aires, gracias a un convenio con el Ministerio de Educación. En total, realizamos más de 160 sesiones S.O.L.E., en 4 etapas en 2015 y 2016, en 5 grados de educación inicial de dicha Escuela.",
-        "Entre sus resultados y aprendizajes, destacamos los siguientes:"
+        "It is necessary to rethink the educational model. Today, children continue to be educated for the industrial society: citizens-consumers who only learn to choose between options and access standardized knowledge, administered vertically and with disciplinary dynamics of “rewards and punishments”.",
+        "The Self-Organized Learning Environments (S.O.L.E.) are spaces that at first sight seem somewhat chaotic: many children, some / a few computers and a big question. The proposal organizes group access to computers to investigate and answer a stimulating question. Thus, new interactions arise in the classroom. The magic unleashed by this experience ignites the curiosity and amazement of children, the great engines of this device.",
+        "Based on the methodology of Dr. Sugata Mitra, the approach of S.O.L.E. is concluding its pilot application in School No. 20 of the City of Buenos Aires, thanks to an agreement with the Ministry of Education. In total, we conducted more than 160 sessions of S.O.L.E., in 4 stages in 2015 and 2016, in 5 grades of initial education of said School.",
+        "Among its results and learning, we highlight the following:"
       ],
       "items" : [
-        "En el 94% de las sesiones, los niños lograron construir una respuesta apropiada para la pregunta curricular planteada",
-        "En la prueba de retención de conocimiento realizada al final de la etapa 4 (junio 2016), los alumnos recordaban el 80% de los contenidos trabajados en SOLE.",
-        "Los docentes reportan mejoras en las habilidades de comprensión lectora, fundamentalmente cuando se realiza en grupos.",
-        "La evaluación de la capacidad de adquirir conocimientos en Internet (CACI) dio mejores resultados un 20% superiores a los de las escuelas constituidas como “grupos de control”.",
-        "A  partir del enfoque y las actividades desarrolladas, se logró impactar sobre las metas aspiracionales de algunos estudiantes."
+        "In 94% of the sessions, the children were able to construct an appropriate response to the curricular question that was proposed.",
+        "In the knowledge retention test carried out at the end of stage 4 (June 2016), the students remembered 80% of the contents worked on in SOLE.",
+        "Teachers report improvements in reading comprehension skills, mainly when done in groups.",
+        "The evaluation of the ability to acquire knowledge on the Internet (CACI) gave better results, 20% higher than those of schools set up as “control groups”.",
+        "From the focus and activities developed, it was possible to impact on the aspirational goals of some students."
       ],
-      "callToAction": "Más info",
+      "callToAction": "More info",
       "href": "http://www.soleargentina.org/"
     },
-    "lidership": {
-      "title": "Promover liderazgos",
-      "subtitle": "Redes regionales de proyectos político-sociales.",
+    "leadership": {
+      "title": "Promote leadership",
+      "subtitle": "Regional networks of political-social projects.",
       "icon": "/static/assets/icons/leaders.svg"
     },
     "rinp": {
       "img": "/static/assets/about/logoredi.svg",
       "text": [
-        "La crisis de representación es latinoamericana y, por lo tanto, los debates deben ser, también, latinoamericanos. Pensar soluciones escalables en diferentes países, aprender de las experiencias locales y debatir sobre implementaciones de las mismas herramientas en diferentes contextos socio-económicos e institucionales.",
-        "Desde Democracia en Red estamos comprometidos con esta red de personas en América Latina que estamos trabajando, desde el sistema político y/o la sociedad civil, en el paradigma de la innovación cívica.",
-        "Luego del encuentro fundacional de Buenos Aires, en Julio de 2016, trabajamos juntos en el desarrollo de innovaciones que nos permitan participar en el diseño de instancias nuevas de participación ciudadana con impacto en el sistema político."
+        "The crisis of representation is Latin American and, therefore, the debates must also be Latin American. Think of scalable solutions in different countries, learn from local experiences and discuss implementations of the same tools in different socio-economic and institutional contexts.",
+        "From Democracia en Red we are committed to this network of people in Latin America who are working, from the political system and / or civil society, on the paradigm of civic innovation.",
+        "After the founding meeting of Buenos Aires, in July 2016, we worked together on the development of innovations that allow us to participate in the design of new instances of citizen participation with an impact on the political system."
       ],
       "list": {
-        "title": "Como productos de la Red podemos destacar:",
+        "title": "As products of the Network we can highlight:",
         "items": [
-          "El futuro lanzamiento de “Politica Recuperada” (octubre 2016), material audiovisual de entrevistas a miembros de la Red.", 
-          "El futuro lanzamiento de “Que democracia para el Siglo XXI. volII”(febrero 2017), publicación de formato epub con reflexiones sobre nuevas vías para la representación democrática y el sujeto político del siglo XXI.",
-          "Taller de “campañas políticas innovadoras” para miembros de la Bancada Ativista (bancadaativista.org), fue realizado en Sao Paulo, en agosto de 2016, con 5 integrantes de la Red (Agustín Frizzera, DeR, Arg; Rodrigo Etchecopar, RD, Chi; Caio Tendolini, UpDate, Br; Susana Ochoa y Alejandra Parra, WikiPolítica, Mx) como expositores."
+          "The future release of “Recovered Politics” (October 2016), audio-visual material of interviews with members of the Network.", 
+          "The future release of “What democracy for the XXI Century. volII ”(February 2017), publication of epub format with reflections on new ways for democratic representation and the political subject of the XXI century.",
+          "Workshop on “innovative political campaigns” for members of the Ativista Bank (bancadaativista.org), was held in Sao Paulo in August 2016, with 5 members of the Network (Agustín Frizzera, DeR, Arg, Rodrigo Etchecopar, RD, Chi, Caio Tendolini, UpDate, Br, Susana Ochoa and Alejandra Parra, WikiPolítica, Mx) as exhibitors."
         ]
       },
-      "callToAction": "Más info",
+      "callToAction": "More info",
       "href": "http://redinnovacionpolitica.org/"
     },
     "clip": {
-      "title": "Conexiones Latinoamericanas de Innovación Política",
+      "title": "Latin American connections of Political Innovation",
       "text": [
-        "La Iniciativa CLIP apunta a crear condiciones, reformas institucionales y una cultura política diferente, desde el presente y para el mediano y largo plazo, que contribuyan a mejorar y transformar la democracia para una redistribución efectiva del poder.",
-        "Como parte de su Consejo Estratégico, DeR está comprometida con el CLIP en tanto busca generar conocimiento desde lo teórico/práctico sobre los dilemas del desarrollo sustentable y los nuevos marcos de ejercicio político; articular experiencias y lecciones aprendidas entre los participantes de la iniciativa; acompañar y preparar a los actores cuando deciden participar en la disputa electoral o sumarse a una gestión pública estatal."
+        "The CLIP Initiative aims to create conditions, institutional reforms and a different political culture, from the present and for the medium and long term, that  contribute to improve and transform democracy for an effective redistribution of power.",
+        "As part of its Strategic Council, DeR is committed to the CLIP as it seeks to generate knowledge from the theoretical / practical on the dilemmas of sustainable development and the new frameworks for political exercise; articulate experiences and lessons learned among the participants of the initiative; accompany and prepare the actors when they decide to participate in the electoral dispute or join a state public management."
       ],
-      "callToAction": "Más info"
+      "callToAction": "More info"
     }
   },
   "nav": {
     "primaryLinks": [
       {
-        "href": "about",
+        "href": "#about",
         "title": "About us"
       },
       {
-        "href": "collaborate",
+        "href": "#collaborate",
         "title": "Collaborate"
       },
       {
-        "href": "collaborate",
+        "href": "#collaborate",
         "title": "Transparency"
       },
       {
-        "href": "publications",
+        "href": "#publications",
         "title": "Publications"
       },
       {
-        "href": "ebooks",
+        "href": "#ebooks",
         "title": "E-books"
       },
       {
-        "href": "media",
+        "href": "#media",
         "title": "Media"
       },
       {
-        "href": "who-we-are",
+        "href": "#who-we-are",
         "title": "Who we are"
       }
     ],
@@ -356,6 +356,6 @@
     ]
   },
   "footer": {
-    "terms": "términos y condiciones"
+    "terms": "terms and conditions"
   }
 }
