@@ -27,6 +27,7 @@ class Ebooks extends Component {
   }
 
   componentDidUpdate(){
+/*  Slider in desktop. Uncomment this when there are more than two books   
     if (!this.state.mobile) {
       const options = {
         cellCelector: '.ebook-card',
@@ -40,7 +41,7 @@ class Ebooks extends Component {
         prevNextButtons: true
       }
       this.flickity = new Flickity(this.refs.carousel, options)
-    }
+    }*/
     if (this.state.mobile) {
       const options = {
         cellCelector: '.ebook-card',
@@ -69,7 +70,7 @@ class Ebooks extends Component {
         <h2 className='section-title'>{t('index.ebooks.title')}</h2>
         <div className='ebooks-container carousel' ref='carousel'>
           {data.map((i) => 
-            <EbookCard key={i} img={''} title={t(`index.ebooks.content.${i}.title`)} description={t(`index.ebooks.content.${i}.subtitle`)} link={t(`index.ebooks.content.${i}.link`)} />
+            <EbookCard key={i} img={t(`index.ebooks.content.${i}.img`)} title={t(`index.ebooks.content.${i}.title`)} description={t(`index.ebooks.content.${i}.subtitle`)} link={t(`index.ebooks.content.${i}.link`)} />
           )}
         </div>
         <style jsx>{`
@@ -77,11 +78,10 @@ class Ebooks extends Component {
             padding-bottom: 85px;
           }
           .ebooks-container {
-            display: block;
-            overflow: hidden;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
             margin-top: 59px;
-            padding-left: 70px;
-            padding-right: 70px;
           }
           @media screen and (max-width: 1024px) {
             .ebooks-section {
@@ -99,12 +99,6 @@ class Ebooks extends Component {
           @media screen and (max-width: 425px) {
             .ebooks-container {
               margin-right: -24px;
-            }
-          }
-          @media screen and (max-width: 1354px) and (min-width: 1025px) {
-            .ebooks-container {
-              padding-right: 50px;
-              padding-left: 50px;
             }
           }
         `}</style>

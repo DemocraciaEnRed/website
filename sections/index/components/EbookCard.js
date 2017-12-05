@@ -5,9 +5,11 @@ const EbookCard = ( {img, title, description, link}) => (
     <img className='ebook-img' src={img} />
     <h3 className='subtitle ebook-title'>{title}</h3>
     <p className='subtext ebook-description'>{description}</p>
-    <button className='btn ebook-btn'>
-      <span className='action-text'>{t('index.ebooks.callToAction')}</span>
-    </button>
+    <a href={link} rel='external' target='_blank'>
+      <button className='btn ebook-btn'>
+        <span className='action-text'>{t('index.ebooks.callToAction')}</span>
+      </button>
+    </a>
     <style jsx>{`
       .ebook-card {
         display: grid;
@@ -19,18 +21,20 @@ const EbookCard = ( {img, title, description, link}) => (
           "sidebar main"
           "sidebar footer";
         height: 280px;
-        margin-right: 137px;
       }
       .ebook-img {
         background-color: var(--gray);
         grid-area: sidebar;
+        width: 100%;
       }
       .ebook-title {
         grid-area: header;
       }
       .ebook-description {
         grid-area: main;
+        max-height: 200px;
         margin-top: 37px;
+        overflow: hidden;
       }
       .ebook-btn {
         grid-area: footer;
@@ -44,11 +48,6 @@ const EbookCard = ( {img, title, description, link}) => (
       .action-text {
         font-size: 2.1rem;
       }
-      @media screen and (max-width: 1339x) {
-        .ebook-card{
-          margin-right: 120px;
-        }
-      }
       @media screen and (max-width: 1024px) {
         .ebook-card {
           grid-column-gap: 28px;
@@ -59,6 +58,9 @@ const EbookCard = ( {img, title, description, link}) => (
         }
         .ebook-title {
           font-size: 1.5rem;
+        }
+        .ebook-img {
+          height: 100%;
         }
         .ebook-description {
           font-size: 1.5rem;

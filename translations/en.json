@@ -98,14 +98,16 @@
       "title": "Ebooks",
       "content": [
         {
-          "title": "Lorem ipsum",
-          "subtitle": "Lorem ipsum dolor sit amet this is title",
-          "link": "/"
+          "title": "Recuperar la política",
+          "subtitle": "The economic, technological and cultural transformations of the last decades raise new questions: How do we face these challenges? How are power and democracy organized in a liquid society? How are jurisdictions of public policies defined in increasingly global societies, economies and issues? It is in this setting where initiatives to renew politics arise and find meaning.",
+          "link": "http://www.recuperarlapolitica.org/",
+          "img": "/static/assets/ebooks/recuperarlapolitica.jpg"
         },
         {
-          "title": "Lorem ipsum",
-          "subtitle": "Lorem ipsum dolor sit amet this is title",
-          "link": "/"
+          "title": "¿Qué democracia para el siglo XXI?",
+          "subtitle": "As social and political activists from all over Latin America we wonder: What democracy can we build in our social and technological context?",
+          "link": "http://www.democraciaparaelsiglo21.org/",
+          "img": "/static/assets/ebooks/quedemocracia.jpg"
         }
       ],
       "callToAction": "Download"
