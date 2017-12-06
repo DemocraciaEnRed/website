@@ -1,4 +1,4 @@
-import JobCard from '../sections/jobs/components/JobCard'
+import JobCard from '../components/JobCard'
 
 const JobGrid = () => (
   <section className='jobs-section'>
@@ -7,6 +7,7 @@ const JobGrid = () => (
       <p className='regular-text'>¡Estamos buscando gente para sumar a nuestro equipo!</p>
     </div>
     <div className='jobs-container'>
+      <JobCard />
     </div>
     <style jsx>{`
       .jobs-section {
@@ -35,6 +36,7 @@ const JobGrid = () => (
         flex-wrap: wrap;
         justify-content: space-between;
         margin-top: 83px;
+        width: 100%;
       }
     `}</style>
   </section>
