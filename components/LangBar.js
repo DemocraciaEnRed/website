@@ -1,8 +1,8 @@
-const LangBar = ( {changeLang} ) => (
+const LangBar = ( {changeLang, currentLang} ) => (
   <div className='lang-bar'>
-    <a className={'es' === 'es' ? 'active' : ''} onClick={() => changeLang('es')}>ES</a>
+    <a className={currentLang === 'es' ? 'active' : ''} onClick={() => changeLang('es')}>ES</a>
     <span>/</span>
-    <a className={'es' === 'en' ? 'active' : ''} onClick={() => changeLang('en')}>EN</a>
+    <a className={currentLang === 'en' ? 'active' : ''} onClick={() => changeLang('en')}>EN</a>
     <style jsx>{`
       .lang-bar {
         margin-left: auto;

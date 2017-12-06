@@ -20,7 +20,7 @@ export default class extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      currentLang : ''
+      currentLang : 'es'
     }
     if (Object.values(polyglot.phrases).length === 0) {
       polyglot.extend(es)
@@ -39,13 +39,16 @@ export default class extends Component {
     const newLang = lang === 'es' ? es : en
     polyglot.extend(newLang) 
     polyglot.locale(newLang.language)
+    localStorage.setItem('lang', lang)
     this.setState({currentLang: lang})
   }
   
   render () {
     return (
       <div>
-        <Layout changeLang={this.changeLang}>
+        <Layout 
+          changeLang={this.changeLang}
+          currentLang={this.state.currentLang} >
           <Header />
           <AboutUs />
           <SectionMilestone 

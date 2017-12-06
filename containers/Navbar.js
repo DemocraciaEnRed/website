@@ -37,7 +37,10 @@ class Navbar extends Component {
         <Link href='/'>
           <a className='logo' />
         </Link>
-        <LangBar changeLang={this.props.changeLang} />
+        <LangBar 
+          changeLang={this.props.changeLang}
+          currentLang={this.props.currentLang} 
+        />
         <a className='menu-button' role='navigation' onClick={this.handleMainMenu}></a>
         {this.state.menu && this.state.mobile &&
           <MobileMenu
