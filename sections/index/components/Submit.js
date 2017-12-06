@@ -23,8 +23,8 @@ export default class Submit extends React.Component {
 
   render () {
     return (
-      <div className='submit'>
-        <input type='email' />
+      <form className='submit'>
+        <input type='email' placeholder= {t('index.header.placeholder')} required />
         <button onClick={this.checkingButton}>
           {this.state.checked ?
             <CheckedButton />
@@ -48,6 +48,11 @@ export default class Submit extends React.Component {
             padding-left: 20px;
     		    width: 309px;
     	    }
+          .submit input::placeholder {
+            color: #999999;
+            font-size: 1.4rem;
+            letter-spacing: 0.13rem;
+          }
           .submit input:focus {
             border: none;
           }
@@ -100,6 +105,6 @@ export default class Submit extends React.Component {
             }
           }
   	`}</style>
-    </div>
+    </form>
     )}
 	}

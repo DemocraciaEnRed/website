@@ -4,7 +4,8 @@
     "header": {
       "title": "Democracia en Red",
       "subtitle": "Imaginamos, diseñamos e implementamos innovaciones en el sistema político para abrir los procesos de decisión y redistribuir el poder.",
-      "callToAction": "Enviar"
+      "callToAction": "Enviar",
+      "placeholder": "¡Ingresá tu email para recibir novedades!"
     },
     "aboutUs": {
       "title": "Sobre nosotros",
@@ -69,7 +70,7 @@
           "text": "Aquí toda la información contable resumida y con su soporte documental.",
           "icon": "/static/assets/icons/transparency.svg",
           "callToAction": "Descargar PDF",
-          "href": "/"
+          "href": "https://drive.google.com/file/d/18-rWaYPOXxVCjzH4zNySzl9c5HtFhr4x/view"
         }
       ]
     },
@@ -312,7 +313,8 @@
         "La Iniciativa CLIP apunta a crear condiciones, reformas institucionales y una cultura política diferente, desde el presente y para el mediano y largo plazo, que contribuyan a mejorar y transformar la democracia para una redistribución efectiva del poder.",
         "Como parte de su Consejo Estratégico, DeR está comprometida con el CLIP en tanto busca generar conocimiento desde lo teórico/práctico sobre los dilemas del desarrollo sustentable y los nuevos marcos de ejercicio político; articular experiencias y lecciones aprendidas entre los participantes de la iniciativa; acompañar y preparar a los actores cuando deciden participar en la disputa electoral o sumarse a una gestión pública estatal."
       ],
-      "callToAction": "Más info"
+      "callToAction": "Más info",
+      "href": "http://clip.lat/"
     }
   },
   "nav": {

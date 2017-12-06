@@ -4,7 +4,8 @@
     "header": {
       "title": "Democracia en Red",
       "subtitle": "We imagine, design and implement  innovations in the political system, to open decision processes, to redistribute power.",
-      "callToAction": "Submit"
+      "callToAction": "Submit",
+      "placeholder": "¡Ingresá tu email para recibir novedades!"
     },
     "aboutUs": {
       "title": "About us",
@@ -69,7 +70,7 @@
           "text": "Here is all accounting summary information and documentary support.",
           "icon": "/static/assets/icons/transparency.svg",
           "callToAction": "Download PDF",
-          "href": "/"
+          "href": "https://drive.google.com/file/d/18-rWaYPOXxVCjzH4zNySzl9c5HtFhr4x/view"
         }
       ]
     },
@@ -312,7 +313,8 @@
         "The CLIP Initiative aims to create conditions, institutional reforms and a different political culture, from the present and for the medium and long term, that  contribute to improve and transform democracy for an effective redistribution of power.",
         "As part of its Strategic Council, DeR is committed to the CLIP as it seeks to generate knowledge from the theoretical / practical on the dilemmas of sustainable development and the new frameworks for political exercise; articulate experiences and lessons learned among the participants of the initiative; accompany and prepare the actors when they decide to participate in the electoral dispute or join a state public management."
       ],
-      "callToAction": "More info"
+      "callToAction": "More info",
+      "href": "http://clip.lat/"
     }
   },
   "nav": {
