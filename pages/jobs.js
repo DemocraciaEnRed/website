@@ -3,6 +3,8 @@ import { polyglot } from '../polyglot-modules/polyglot'
 import es from '../translations/es.json'
 import en from '../translations/en.json'
 import Layout from '../layouts/Layout'
+import Header from '../containers/Header'
+import JobGrid from '../sections/jobs/containers/JobGrid'
 
 export default class extends Component {
   constructor (props) {
@@ -30,10 +32,16 @@ export default class extends Component {
     localStorage.setItem('lang', lang)
     this.setState({currentLang: lang})
   }
-  
+
   render () {
     return (
       <div>
+        <Layout changeLang={this.changeLang} currentLang={this.state.currentLang}>
+          <Header 
+            title={'JOBS'}
+            bg={'../static/assets/header/headerAbout.jpg'}/>
+          <JobsGrid />
+        </Layout>
       </div>
     )
   }

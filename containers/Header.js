@@ -1,11 +1,9 @@
-import { t } from '../../../polyglot-modules/polyglot.js'
-
-const Header = () => (
+const Header = ( { title, bg }) => (
   <header>
-    <h1 className='about-us-title'>{t('aboutUs.title')}</h1>
+    <h1 className='about-us-title'>{title}</h1>
     <style jsx>{`
       header {
-        background-image: url('../static/assets/header/headerAbout.jpg');
+        background-image: url(${bg});
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
