@@ -34,12 +34,6 @@ class WhoWeAre extends Component {
     }
   }
 
-  componentWillUnmount() {
-    if (this.flickity) {
-      this.flickity.destroy();
-    }
-  }
-
   render() {
     return (
       <section className='who-we-are-section' id='who-we-are'>

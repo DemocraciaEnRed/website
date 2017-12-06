@@ -38,11 +38,6 @@ class CaseStudies extends Component  {
     }
   }
 
-  componentWillUnmount() {
-    if (this.flickity) {
-      this.flickity.destroy();
-    }
-  }
 
   render () {
     return (

@@ -40,12 +40,6 @@ class Publications extends Component {
     }
   }
 
-  componentWillUnmount() {
-    if (this.flickity) {
-      this.flickity.destroy();
-    }
-  }
-
   render() {
     return (
       <section className='publications-section' id='publications'>

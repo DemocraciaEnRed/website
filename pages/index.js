@@ -16,7 +16,7 @@ export default class extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      changeLanguage: false
+      currentLang : ''
     }
     if (Object.values(polyglot.phrases).length === 0) {
       polyglot.extend(es)
@@ -26,22 +26,23 @@ export default class extends Component {
 
   componentDidMount () {
     const lang = localStorage.getItem('lang')
-    if (lang !== null && lang !== polyglot.currentLocale) {
-      lang === 'es' ? polyglot.extend(es) : polyglot.extend(en)
-      this.changeState()
+    if (lang === null || lang !== polyglot.currentLocale) {
+      this.changeLang('en')
     }
   }
 
-  changeState = () => {
-    this.setState({
-      changeLanguage: !this.state.changeLanguage
-    })
+  changeLang = (lang) => {
+    const newLang = lang === 'es' ? es : en
+    polyglot.extend(newLang) 
+    polyglot.locale(newLang.language)
+    localStorage.setItem('lang', lang)
+    this.setState({currentLang: lang})
   }
 
   render () {
     return (
       <div>
-        <Layout>
+        <Layout changeLang={this.changeLang} >
           <Header />
           <AboutUs />
           <Collaborate />

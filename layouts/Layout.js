@@ -11,7 +11,7 @@ const Layout = (props) => (
       <link rel="stylesheet" type="text/css" href="/static/flickity.css" />
       <link rel="stylesheet" type="text/css" href="/static/global.css" />
     </Head>
-    <Navbar />
+    <Navbar changeLang={props.changeLang} />
     {props.children}
     <Footer />
     <style jsx>{`
