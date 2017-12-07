@@ -4,7 +4,7 @@ import { t } from '../polyglot-modules/polyglot.js'
 import es from '../translations/es.json'
 import en from '../translations/en.json'
 import Layout from '../layouts/Layout'
-import Header from '../sections/about/containers/Header'
+import Header from '../containers/Header'
 import AboutUs from '../sections/about/containers/AboutUs'
 import LangBar from '../components/LangBar'
 import SectionMilestone from '../sections/about/containers/SectionMilestone'
@@ -49,7 +49,9 @@ export default class extends Component {
         <Layout 
           changeLang={this.changeLang}
           currentLang={this.state.currentLang} >
-          <Header />
+          <Header 
+            title={t('aboutUs.title')}
+            bg={'../static/assets/header/headerAbout.jpg'} />
           <AboutUs />
           <SectionMilestone 
             title={t('aboutUs.openGov.title')} 
