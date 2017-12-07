@@ -21,6 +21,7 @@ const JobCard = () => (
         flex-direction: column;
         height: 268px;
         justify-content: space-between;
+        margin-bottom: 23px;
         padding: 16px;
         width: 313px;
       }
