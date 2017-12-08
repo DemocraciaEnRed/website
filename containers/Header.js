@@ -17,6 +17,15 @@ const Header = ( { title, bg }) => (
         color: var(--white);
         font-size: 4.2rem;
       }
+      @media screen and (max-width: 1024px) {
+        header {
+          justify-content: center;
+          padding: 21px;
+        }
+        header h1 {
+          font-size: 3.6rem;
+        }
+      }
     `}</style>
   </header>
 )
