@@ -16,7 +16,7 @@ class Collaborate extends Component {
 
   componentDidMount () {
     Flickity = require('flickity')
-    if (window.innerWidth <= 1024) {
+    if (window.innerWidth < 1024) {
       this.setState({
         mobile: true
       })
@@ -30,7 +30,7 @@ class Collaborate extends Component {
         cellAlign: 'center',
         pageDots: false
       }
-      this.flickity = new Flickity(this.refs.carousel, options)
+      new Flickity(this.refs.carousel, options)
     }
   }
 
@@ -38,8 +38,7 @@ class Collaborate extends Component {
   render () {
     return (
       <section className='collaborate-section' id='collaborate'>
-        <MediaQuery minDeviceWidth={1025}>
-          <div className='collaborate-mediaquery-container'>
+           <div className='carousel' ref='carousel'>
             {data.map((i)=> 
               <div className='collaborate-container' key={i}>
                 <h2 className='section-title'> {t(`index.collaborate.content.${i}.title`)} </h2>
@@ -54,29 +53,12 @@ class Collaborate extends Component {
               </div>     
             )}
           </div>
-        </MediaQuery>
-        <MediaQuery maxDeviceWidth={1024}>
-            <div className='carousel' ref='carousel'>
-              {data.map((i)=> 
-                <div className='collaborate-container' key={i} >
-                  <h2 className='section-title'> {t(`index.collaborate.content.${i}.title`)} </h2>
-                  <Milestone 
-                    className='collaborate-milestone'
-                    title={t(`index.collaborate.content.${i}.subtitle`)} 
-                    icon={t(`index.collaborate.content.${i}.icon`)}
-                    subtitle={t(`index.collaborate.content.${i}.text`)}
-                    href={t(`index.collaborate.content.${i}.href`)}
-                    containerWidth={'auto'} />
-                </div>     
-              )}
-            </div>
-        </MediaQuery>
         <style jsx>{`
           .collaborate-section {
             display: flex;
             justify-content: space-between;
           }
-          .collaborate-mediaquery-container {
+          .carousel {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
@@ -92,10 +74,20 @@ class Collaborate extends Component {
             align-self: flex-start;
             margin-bottom: 53px;
           }
+          @media (min-width: 1600px) {
+            .collaborate-section {
+              justify-content: space-around;
+            }
+            .carousel {
+              justify-content: space-around;
+            }
+            .collaborate-section .collaborate-container:nth-child(2) h2 {
+              align-self: flex-end;
+            }
+          }
           @media (max-width: 1024px) {
             .carousel {
               display: block;
-              height: 375px;
               width: 100%;
             }
             .collaborate-container .section-title {
@@ -116,30 +108,9 @@ class Collaborate extends Component {
               margin-right: -35px;
             }
           }
-          @media (min-width: 1600px) {
-            .collaborate-section {
-              justify-content: space-around;
-            }
-            .Collaborate-mediaquery-container {
-              justify-content: space-around;
-            }
-            .collaborate-section .collaborate-container:nth-child(2) h2 {
-              align-self: flex-end;
-            }
-          }
           @media (max-width: 425px) {
             .collaborate-section {
-              padding-bottom: 80px;
-            }
-          }
-          @media (max-width: 375px) {
-            .collaborate-section {
-              padding-bottom: 100px;
-            }
-          }
-          @media (max-width: 338px) {
-            .carousel {
-              z-index: 10;
+              padding-bottom: 0px;
             }
           }
         `}</style>
