@@ -17,12 +17,6 @@ const Layout = (props) => (
     />
     {props.children}
     <Footer />
-    <style jsx>{`
-      div {
-        width: 100vw;
-        background-color: #fff;
-      }
-    `}</style>
   </div>
 )
 
