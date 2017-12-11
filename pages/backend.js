@@ -3,7 +3,8 @@ import { polyglot } from '../polyglot-modules/polyglot'
 import es from '../translations/es.json'
 import en from '../translations/en.json'
 import JobLayout from '../layouts/JobLayout'
-
+import ReactMarkdown from 'react-markdown'
+const input = require('../jobs/job.md')
 
 export default class extends Component {
   constructor (props) {
@@ -37,7 +38,11 @@ export default class extends Component {
   render () {
     return (
       <div>
-        <JobLayout />
+        <JobLayout 
+          changeLang={this.changeLang} 
+          currentLang={this.state.currentLang}>
+          {console.log(ReactMarkdown, input)}
+        </JobLayout>
       </div>
     )
   }

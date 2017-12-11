@@ -1,6 +1,6 @@
 import JobCard from '../components/JobCard'
 import ClosedSearch from '../components/ClosedSearch'
-import jobs from '../../../jobs.json'
+import jobs from '../../../jobs/jobs.json'
 
 const JobGrid = () => (
   <section className='jobs-section'>
