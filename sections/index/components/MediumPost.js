@@ -49,12 +49,16 @@ const MediumPost = (props) => (
       height: 20px;
       margin-right: 15px;
     }
+    @media (max-width: 1360px) {
+      .medium-post {
+        margin-right: 10px;
+      }
+    }
     @media (max-width: 1300px) {
       .medium-post {
         height: 229px;
         padding: 43px 22px 28px;
         width: 279px;
-        margin-right: 15px;
       }
       .snippet-text {
         font-size: 1.8rem;
