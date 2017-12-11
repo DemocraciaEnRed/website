@@ -1,11 +1,11 @@
-const JobCard = () => (
+const JobCard = ( props ) => (
   <div className='job-card'>
-    <span className='job-card-category'>Desarrollo</span>
-    <h5 className='job-card-title'>Back-end dev</h5>
+    <span className='job-card-category'>{props.category}</span>
+    <h5 className='job-card-title'>{props.job}</h5>
     <ul className='job-card-list'>
-      <li>Semi-senior</li>
-      <li>Full-time</li>
-      <li>Oficina/WFH</li>
+      <li>{props.seniority}</li>
+      <li>{props.type}</li>
+      <li>{props.location}</li>
     </ul>
     <button className='btn job-card-btn'>
       <span className='action-text job-card-action-text'>
@@ -45,6 +45,11 @@ const JobCard = () => (
       }
       .job-card-action-text {
         font-size: 1.8rem;
+      }
+      @media (max-width: 353px) {
+        .job-card-title {
+          font-size: 3.0rem;
+        }
       }
     `}</style>
   </div>

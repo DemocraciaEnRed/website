@@ -66,6 +66,11 @@ const JobGrid = () => (
           font-size: 3.0rem;
         }
       }
+      @media (max-width: 666px) {
+        .jobs-container {
+          justify-content: center;
+        }
+      }
     `}</style>
   </section>
 )
