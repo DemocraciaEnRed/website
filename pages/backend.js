@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { polyglot } from '../polyglot-modules/polyglot'
 import es from '../translations/es.json'
 import en from '../translations/en.json'
+import JobLayout from '../layouts/JobLayout'
 
 
 export default class extends Component {
@@ -36,6 +37,7 @@ export default class extends Component {
   render () {
     return (
       <div>
+        <JobLayout />
       </div>
     )
   }
