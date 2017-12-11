@@ -19,12 +19,13 @@ class Publications extends Component {
 
   componentDidMount () {
     const lang = localStorage.getItem('lang')
-    const apiUrl = `${api}publicaciones?lang=${lang}`
+    const apiUrl = `${api}publicaciones?lang=${lang === null ? 'es' : lang}`
     fetch(apiUrl)
       .then( r => r.json() )
       .then( data => {
-        console.log(data)
+        this.setState({ posts: data })
     })
+
     Flickity = require('flickity')
     if (window.innerWidth <= 1024) {
       this.setState({
@@ -34,7 +35,7 @@ class Publications extends Component {
   }
 
   componentDidUpdate(){
-    const align= window.innerWidth > 768 ? 'center' : 'left'
+/*    const align= window.innerWidth > 768 ? 'center' : 'left'
       const options = {
         cellCelector: '.medium-post',
         pageDots: false,
@@ -45,7 +46,7 @@ class Publications extends Component {
         contain: true,
         prevNextButtons: false
       }
-      this.flickity = new Flickity(this.refs.carousel, options)
+      this.flickity = new Flickity(this.refs.carousel, options)*/
   }
 
   render() {
@@ -53,14 +54,13 @@ class Publications extends Component {
       <section className='publications-section' id='publications'>
         <h2 className='section-title'>{t('index.publications.title')}</h2>
         <div className='posts-container' ref='carousel'>
-          {//posts.map((post, i)=> 
-            //<MediumPost 
-              //key={i}
-              //snippet={post.title}
-              //timestamp={post.createdAt}
-              //likes={post.claps} />
-          //)
-          }
+          {this.state.posts.map((post, i)=> 
+            <MediumPost 
+              key={i}
+              snippet={post.title}
+              timestamp={post.createdAt}
+              likes={post.claps} />
+          )}
         </div>
         <MediaQuery maxDeviceWidth={1024}>
           <button className='btn'>
