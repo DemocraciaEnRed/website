@@ -76,23 +76,6 @@
     },
     "publications": {
       "title": "Publications",
-      "content": [
-        {
-          "text": "A wonderful serenity has taken possession of my entire soul, like these.",
-          "date": "14:20 PM, Tuesday",
-          "likes": "269"
-        },
-        {
-          "text": "A wonderful serenity has taken possession of my entire soul, like these.",
-          "date": "14:20 PM, Tuesday",
-          "likes": "269"
-        },
-        {
-          "text": "A wonderful serenity has taken possession of my entire soul, like these.",
-          "date": "14:20 PM, Tuesday",
-          "likes": "269"
-        }
-      ],
       "callToAction": "More info"
     },
     "ebooks": {
@@ -100,13 +83,13 @@
       "content": [
         {
           "title": "Recuperar la política",
-          "subtitle": "Recuperarla significa honrarla. ¿Cómo se organiza el poder y la democracia en una sociedad líquida?",
+          "subtitle": "To recover Politics means to honor it. How are power and democracy organized in a liquid society?",
           "link": "http://www.recuperarlapolitica.org/",
           "img": "/static/assets/ebooks/recuperarlapolitica.jpg"
         },
         {
           "title": "¿Qué democracia para el siglo XXI?",
-          "subtitle": "Nos preguntamos: ¿qué democracia podemos construir en este contexto social y tecnológico?",
+          "subtitle": "We wonder: What democracy can we build in our social and technological context?",
           "link": "http://www.democraciaparaelsiglo21.org/",
           "img": "/static/assets/ebooks/quedemocracia.jpg"
         }
