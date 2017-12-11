@@ -18,9 +18,7 @@
     "url": "https://github.com/DemocraciaEnRed/democraciaenred.github.io/issues"
   },
   "homepage": "https://github.com/DemocraciaEnRed/democraciaenred.github.io#readme",
-  "devDependencies": {
-    "raw-loader": "^0.5.1"
-  },
+  "devDependencies": {},
   "dependencies": {
     "flickity": "^2.0.10",
     "isomorphic-unfetch": "^2.0.0",
@@ -29,7 +27,6 @@
     "node-polyglot": "^2.2.2",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
-    "react-markdown": "^3.1.1",
     "react-responsive": "^3.0.0"
   }
 }
