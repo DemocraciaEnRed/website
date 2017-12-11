@@ -1,5 +1,6 @@
 import JobCard from '../components/JobCard'
 import ClosedSearch from '../components/ClosedSearch'
+import jobs from '../../../jobs.json'
 
 const JobGrid = () => (
   <section className='jobs-section'>
@@ -7,8 +8,21 @@ const JobGrid = () => (
       <h2 className='section-title'>Trabajá con nosotros</h2>
       <p className='regular-text'>¡Estamos buscando gente para sumar a nuestro equipo!</p>
     </div>
-    <ClosedSearch />
     <div className='jobs-container'>
+      { //if json is empty, render ClosedSearch. Otherwise render JobCard
+        jobs.length === 0 ? ( <ClosedSearch />) 
+        : jobs.map((j, i)=> (
+           <JobCard 
+            key={i}
+            job={j.job}
+            category={j.category}
+            seniority={j.seniority}
+            type={j.type}
+            location={j.location}
+            url={j.url}
+            />
+        ))
+      } 
     </div>
     <style jsx>{`
       .jobs-section {
@@ -40,6 +54,17 @@ const JobGrid = () => (
         justify-content: space-between;
         margin-top: 83px;
         width: 100%;
+      }
+      @media (max-width: 1024px) {
+        .jobs-section {
+          padding: 24px 24px 48px;
+        }
+        .regular-text {
+          font-size: 2.2rem;
+        }
+        .section-title {
+          font-size: 3.0rem;
+        }
       }
     `}</style>
   </section>
