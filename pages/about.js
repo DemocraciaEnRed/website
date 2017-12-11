@@ -15,6 +15,7 @@ import HechaLaLey from '../sections/about/components/HechaLaLey'
 import Sole from '../sections/about/components/Sole'
 import Rinp from '../sections/about/components/Rinp'
 import Clip from '../sections/about/components/Clip'
+import Footer from '../containers/Footer'
 
 export default class extends Component {
   constructor (props) {
@@ -82,6 +83,7 @@ export default class extends Component {
             <Rinp />
             <Clip />
           </Content>
+          <Footer />
         </Layout>
         <style jsx>{`
           section {

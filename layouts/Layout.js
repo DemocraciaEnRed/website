@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Navbar from '../containers/Navbar'
-import Footer from '../containers/Footer'
 
 const Layout = (props) => (
   <div>
@@ -16,7 +15,6 @@ const Layout = (props) => (
       currentLang={props.currentLang}
     />
     {props.children}
-    <Footer />
   </div>
 )
 

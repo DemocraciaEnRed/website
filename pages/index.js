@@ -11,6 +11,7 @@ import Ebooks from '../sections/index/containers/Ebooks'
 import Media from '../sections/index/containers/Media'
 import WhoWeAre from '../sections/index/containers/WhoWeAre'
 import Publications from '../sections/index/containers/Publications'
+import Footer from '../containers/Footer'
 
 export default class extends Component {
   constructor (props) {
@@ -52,6 +53,7 @@ export default class extends Component {
           <Ebooks />
           <Media />
           <WhoWeAre />
+          <Footer />
         </Layout>
       </div>
     )
