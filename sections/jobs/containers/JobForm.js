@@ -1,55 +1,57 @@
 const JobForm = () => (
-  <form>
-    <div className='job-section'>
-      <div className='job-title'>
-        <h5>Datos Personales</h5>
+  <section className='form-wrapper'>
+    <form>
+      <div className='job-section'>
+        <div className='job-title'>
+          <h5>Datos Personales</h5>
+        </div>
+        <div className='job-input-container'>
+          <label htmlFor='name' className='required-field'>
+            <span>Nombre y apellido</span>
+          </label>
+          <input type='text' name='name' required />
+          <label htmlFor='email' className='required-field'>
+            <span>Email</span>
+          </label>
+          <input type='email' name='email' required />
+          <label htmlFor='phone' className='required-field'>
+            <span>Teléfono</span>
+          </label>
+          <input type='number' name='phone' required />
+        </div>
       </div>
-      <div className='job-input-container'>
-        <label for='name' className='required-field'>
-          <span>Nombre y apellido</span>
-        </label>
-        <input type='text' name='name' required />
-        <label for='email' className='required-field'>
-          <span>Email</span>
-        </label>
-        <input type='email' name='email' required />
-         <label for='phone' className='required-field'>
-          <span>Teléfono</span>
-        </label>
-        <input type='number' name='phone' required />
+      <div className='job-section'>
+        <div className='job-title'>
+          <h5>Carga tu CV</h5>
+        </div>
+        <div className='job-input-container'>
+          <label className='file-label'>
+            <span className='file-span'>Cargar archivo</span>
+            <input type='file' />
+          </label>
+          <span className='optional-field'>Este campo es opcional</span>
+        </div>
       </div>
-    </div>
-    <div className='job-section'>
-      <div className='job-title'>
-        <h5>Carga tu CV</h5>
+      <div className='job-section'>
+        <div className='job-title'>
+          <h5>Comentarios o consultas</h5>
+        </div>
+        <div className='job-input-container'>
+          <label htmlFor='comments'>
+            <span>¿Algo más que nos quieras decir?</span>
+          </label>
+          <textarea name='comments' />
+          <span className='optional-field'>Este campo es opcional</span>
+        </div>
       </div>
-      <div className='job-input-container'>
-        <label className='file-label'>
-          <span className='file-span'>Cargar archivo</span>
-          <input type='file' />
-        </label>
-        <span className='optional-field'>Este campo es opcional</span>
+      <div className='btn-container'>
+        <button className='btn'>
+          <span className='action-text'>
+            Aplicar ahora
+          </span>
+        </button>
       </div>
-    </div>
-    <div className='job-section'>
-      <div className='job-title'>
-        <h5>Comentarios o consultas</h5>
-      </div>
-      <div className='job-input-container'>
-        <label for='comments'>
-          <span>¿Algo más que nos quieras decir?</span>
-        </label>
-        <textarea name='comments' />
-        <span className='optional-field'>Este campo es opcional</span>
-      </div>
-    </div>
-    <div className='btn-container'>
-      <button className='btn'>
-        <span className='action-text'>
-          Aplicar ahora
-        </span>
-      </button>
-    </div>
+    </form>
     <style jsx>{`
       form {
         width: 100%;
@@ -70,6 +72,7 @@ const JobForm = () => (
         flex-wrap: wrap;
         flex-direction: column;
         padding-left: 63px;
+        width: 778px;
       }
       h5 {
         color: var(--light-accent);
@@ -94,7 +97,7 @@ const JobForm = () => (
         border-radius: 10px;
         border: solid 1px #979797;
         height: 43px;
-        width: 715px;
+        width: 100%;
       }
       input:not(last-child) {
         margin-bottom: 22px;
@@ -105,7 +108,7 @@ const JobForm = () => (
         letter-spacing: 0.13rem;
       }
       textarea {
-        width: 715px;
+        width: 100%;
         height: 150px;
         margin-bottom: 19px;
         border-radius: 10px;
@@ -136,8 +139,13 @@ const JobForm = () => (
         justify-content: center;
         margin-top: 26px;
       }
+      @media (max-width: 1024px) {
+        .job-input-container {
+          width: 600px;
+        }
+      }
     `}</style>
-  </form>
+  </section>
 )
 
 export default JobForm

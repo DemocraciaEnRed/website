@@ -24,7 +24,7 @@ export default class Submit extends React.Component {
   render () {
     return (
       <form className='submit'>
-        <input type='email' placeholder= {t('index.header.placeholder')} required />
+        <input type='email' placeholder= {t('index.header.placeholder')} required validate/>
         <button onClick={this.checkingButton}>
           {this.state.checked ?
             <CheckedButton />

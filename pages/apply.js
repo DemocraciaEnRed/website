@@ -4,7 +4,7 @@ import es from '../translations/es.json'
 import en from '../translations/en.json'
 import Layout from '../layouts/Layout'
 import Header from '../containers/Header'
-import JobForm from '../sections/jobs/components/JobForm'
+import JobForm from '../sections/jobs/containers/JobForm'
 
 export default class extends Component {
   constructor (props) {
