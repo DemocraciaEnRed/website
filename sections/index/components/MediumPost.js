@@ -9,13 +9,14 @@ const MediumPost = (props) => (
     </div>
   <style jsx>{`
     .medium-post {
-      width: 371px;
-      height: 305px;
-      padding: 58px 30px 39px;
+      background-color: rgba(0,0,0,0.82);
       display: flex;
       flex-direction: column;
+      height: 305px;
       justify-content: space-between;
-      background-color: rgba(0,0,0,0.82);
+      margin-right: 72px;
+      padding: 58px 30px 39px;
+      width: 371px;
     }
 
     .snippet-text {

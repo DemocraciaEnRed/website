@@ -18,6 +18,7 @@ class Publications extends Component {
   }
 
   componentDidMount () {
+    Flickity = require('flickity')
     const lang = localStorage.getItem('lang')
     const apiUrl = `${api}publicaciones?lang=${lang === null ? 'es' : lang}`
     fetch(apiUrl)
@@ -25,28 +26,20 @@ class Publications extends Component {
       .then( data => {
         this.setState({ posts: data })
     })
-
-    Flickity = require('flickity')
-    if (window.innerWidth <= 1024) {
-      this.setState({
-        mobile: true
-      })
-    }
   }
 
   componentDidUpdate(){
-/*    const align= window.innerWidth > 768 ? 'center' : 'left'
-      const options = {
-        cellCelector: '.medium-post',
-        pageDots: false,
-        wrapAround: false,
-        cellAlign: align,
-        draggable: true,
-        friction: 0.2,
-        contain: true,
-        prevNextButtons: false
-      }
-      this.flickity = new Flickity(this.refs.carousel, options)*/
+    const options = {
+      cellCelector: '.medium-post',
+      pageDots: false,
+      wrapAround: false,
+      cellAlign: 'left',
+      draggable: true,
+      friction: 0.2,
+      contain: true,
+      prevNextButtons: false
+    }
+    this.flickity = new Flickity(this.refs.carousel, options)
   }
 
   render() {
@@ -77,8 +70,6 @@ class Publications extends Component {
           }
           .posts-container {
             margin-top: 43px;
-            display: flex;
-            justify-content: space-between;
             width: 100%;
           }
           @media (max-width: 1024px) {
