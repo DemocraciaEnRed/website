@@ -52,7 +52,8 @@ class Publications extends Component {
               key={i}
               snippet={post.title}
               timestamp={post.createdAt}
-              likes={post.claps} />
+              likes={post.claps}
+              img={post.image} />
           )}
         </div>
         <MediaQuery maxDeviceWidth={1024}>

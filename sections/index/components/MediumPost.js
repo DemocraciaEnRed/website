@@ -1,5 +1,7 @@
 const MediumPost = (props) => (
   <article className='medium-post'>
+    <div className='post-overlay'>
+    </div>
     <div className='post-snippet'>
       <p className='regular-text snippet-text'>{props.snippet}</p>
     </div>
@@ -9,16 +11,32 @@ const MediumPost = (props) => (
     </div>
   <style jsx>{`
     .medium-post {
-      background-color: rgba(0,0,0,0.82);
+      background-image: url(${props.img});
+      background-size: contain;
+      cursor: pointer;
       display: flex;
       flex-direction: column;
       height: 305px;
       justify-content: space-between;
       margin-right: 72px;
       padding: 58px 30px 39px;
+      position: relative;
       width: 371px;
     }
-
+    .post-overlay {
+      background-color: rgba(0,0,0,0.8);
+      bottom: 0;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100%;
+      z-index: 0;
+    }
+    .post-snippet, .post-data {
+      z-index: 1;
+    }
     .snippet-text {
       font-family: var(--regular);
       font-size: 2.4rem;
