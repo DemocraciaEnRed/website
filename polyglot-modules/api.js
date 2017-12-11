@@ -1,0 +1,1 @@
+export default 'https://der-api-unbenybfsn.now.sh/'

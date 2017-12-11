@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
-import { t } from '../../../polyglot-modules/polyglot.js'
+import fetch from 'isomorphic-unfetch'
+import { t, polyglot } from '../../../polyglot-modules/polyglot.js'
+import api from '../../../polyglot-modules/api.js'
 import MediumPost from '../components/MediumPost'
 import MediaQuery from 'react-responsive'
 let Flickity;
@@ -10,11 +12,19 @@ class Publications extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      mobile: false
+      mobile: false,
+      posts : []
     }
   }
 
   componentDidMount () {
+    const lang = localStorage.getItem('lang')
+    const apiUrl = `${api}publicaciones?lang=${lang}`
+    fetch(apiUrl)
+      .then( r => r.json() )
+      .then( data => {
+        console.log(data)
+    })
     Flickity = require('flickity')
     if (window.innerWidth <= 1024) {
       this.setState({
@@ -24,8 +34,7 @@ class Publications extends Component {
   }
 
   componentDidUpdate(){
-    if (this.state.mobile) {
-      const align= window.innerWidth > 768 ? 'center' : 'left'
+    const align= window.innerWidth > 768 ? 'center' : 'left'
       const options = {
         cellCelector: '.medium-post',
         pageDots: false,
@@ -37,7 +46,6 @@ class Publications extends Component {
         prevNextButtons: false
       }
       this.flickity = new Flickity(this.refs.carousel, options)
-    }
   }
 
   render() {
@@ -45,13 +53,14 @@ class Publications extends Component {
       <section className='publications-section' id='publications'>
         <h2 className='section-title'>{t('index.publications.title')}</h2>
         <div className='posts-container' ref='carousel'>
-          {data.map((i)=> {
-          return <MediumPost 
-              key={i}
-              snippet={t(`index.publications.content.${i}.text`)}
-              timestamp={t(`index.publications.content.${i}.date`)}
-              likes={t(`index.publications.content.${i}.likes`)} />
-          })}
+          {//posts.map((post, i)=> 
+            //<MediumPost 
+              //key={i}
+              //snippet={post.title}
+              //timestamp={post.createdAt}
+              //likes={post.claps} />
+          //)
+          }
         </div>
         <MediaQuery maxDeviceWidth={1024}>
           <button className='btn'>

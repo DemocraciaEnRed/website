@@ -30,7 +30,9 @@ export default class extends Component {
 
   componentDidMount () {
     const lang = localStorage.getItem('lang')
-    if (lang === null || lang !== polyglot.currentLocale) {
+    if (lang === null) {
+      localStorage.setItem('lang', 'es')
+    } else if (lang !== polyglot.currentLocale) {
       this.changeLang('en')
     }
   }
