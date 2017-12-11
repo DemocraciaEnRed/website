@@ -147,6 +147,26 @@ const JobForm = () => (
           width: 600px;
         }
       }
+      @media (max-width: 768px) {
+        .job-section {
+          flex-direction: column;
+        }
+        .job-input-container {
+          border-left: 0;
+          padding: 30px 0 0;
+        }
+        .job-section:not(last-child) {
+          margin-bottom: 50px;
+        }
+        h5 {
+          width: auto;
+        }
+      }
+      @media (max-width: 641px) {
+        .job-input-container {
+          width: 100%;
+        }
+      }
     `}</style>
   </section>
 )
