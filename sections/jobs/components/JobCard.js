@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 const JobCard = ( props ) => (
   <div className='job-card'>
     <span className='job-card-category'>{props.category}</span>
@@ -7,11 +9,13 @@ const JobCard = ( props ) => (
       <li>{props.type}</li>
       <li>{props.location}</li>
     </ul>
-    <button className='btn job-card-btn'>
-      <span className='action-text job-card-action-text'>
-        Aplicar
-      </span>
-    </button>
+    <Link href={props.url}>
+      <button className='btn job-card-btn'>
+        <span className='action-text job-card-action-text'>
+          Aplicar
+        </span>
+      </button>
+    </Link>
     <style jsx>{`
       .job-card {
         align-items: flex-start;

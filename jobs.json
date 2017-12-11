@@ -5,7 +5,7 @@
     "seniority": "Semi-senior",
     "type": "Full-time",
     "location": "Oficina/WFH",
-    "url": "/"
+    "url": "/backend"
   },
   {
     "job": "Front-end developer",
@@ -13,7 +13,7 @@
     "seniority": "Semi-senior",
     "type": "Full-time",
     "location": "Oficina/WFH",
-    "url": "/"
+    "url": "/backend"
   },
   {
     "job": "Back-end developer",
@@ -21,7 +21,7 @@
     "seniority": "Senior",
     "type": "Full-time",
     "location": "Oficina/WFH",
-    "url": "/"
+    "url": "/backend"
   },
   {
     "job": "Front-end developer",
@@ -29,6 +29,6 @@
     "seniority": "Junior",
     "type": "Full-time",
     "location": "Oficina/WFH",
-    "url": "/"
+    "url": "/backend"
   }
 ]
