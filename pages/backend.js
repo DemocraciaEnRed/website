@@ -3,6 +3,7 @@ import { polyglot } from '../polyglot-modules/polyglot'
 import es from '../translations/es.json'
 import en from '../translations/en.json'
 import JobLayout from '../layouts/JobLayout'
+import Content from '../jobs/backend-job.js'
 
 export default class extends Component {
   constructor (props) {
@@ -38,8 +39,9 @@ export default class extends Component {
       <div>
         <JobLayout 
           changeLang={this.changeLang} 
-          currentLang={this.state.currentLang}
-          filepath={'../jobs/job.md'} />
+          currentLang={this.state.currentLang}>
+          <Content />
+        </JobLayout>
       </div>
     )
   }

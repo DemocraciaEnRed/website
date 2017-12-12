@@ -36,7 +36,7 @@ const JobCard = ( props ) => (
       }
       .job-card-title {
         color: var(--dark-accent);
-        font-size: 3.6rem;
+        font-size: 3.4rem;
       }
       .job-card-list li{
         color: var(--gray);
