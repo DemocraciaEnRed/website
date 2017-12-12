@@ -4,6 +4,7 @@ import es from '../translations/es.json'
 import en from '../translations/en.json'
 import Layout from '../layouts/Layout'
 import Header from '../containers/Header'
+import Breadcrumbs from '../sections/jobs/components/Breadcrumbs'
 import JobForm from '../sections/jobs/containers/JobForm'
 
 export default class extends Component {
@@ -25,6 +26,7 @@ export default class extends Component {
     } else if (lang !== polyglot.currentLocale) {
       this.changeLang('en')
     }
+    console.log('////////////')
   }
 
   changeLang = (lang) => {

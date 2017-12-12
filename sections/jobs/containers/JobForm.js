@@ -55,6 +55,7 @@ const JobForm = () => (
     <style jsx>{`
       .form-wrapper {
         padding-bottom: 64px;
+        padding-top: 31px;
       }
       form {
         width: 100%;

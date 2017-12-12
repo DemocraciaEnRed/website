@@ -1,6 +1,8 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import Navbar from '../containers/Navbar'
 import Header from '../containers/Header'
+import Breadcrumbs from '../sections/jobs/components/Breadcrumbs'
 
 const JobLayout = (props) => (
   <div>
@@ -18,19 +20,24 @@ const JobLayout = (props) => (
       title={'JOBS'}
       bg={'../static/assets/header/headerAbout.jpg'} />
       <section>
+        <Breadcrumbs 
+          routes={props.breadcrumbs} />
         {props.children}
-        <button className='btn'>
-          <span className='action-text'>
-            Aplicar ahora
-          </span>
-        </button>
+        <Link prefetch href= {{ pathname: '/apply',  query: { job: props.job, category: props.category} }}>
+          <button className='btn'>
+            <span className='action-text'>
+              Aplicar ahora
+            </span>
+          </button>
+        </Link>
       </section>
       <style jsx>{`
         section {
+          align-content: center;
           display: flex;
           flex-wrap: wrap;
           flex-direction: column;
-          align-content: center;
+          padding-top: 31px;
         }
       `}</style>
   </div>

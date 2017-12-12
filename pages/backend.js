@@ -5,6 +5,21 @@ import en from '../translations/en.json'
 import JobLayout from '../layouts/JobLayout'
 import Content from '../jobs/backend-job.js'
 
+const routes = [
+  {
+    title: 'Jobs',
+    path: '/jobs'
+  },
+  {
+    title: 'Desarrollo',
+    path: ''
+  },
+  {
+    title: 'Back-end Dev',
+    path: '/backend'
+  }
+]
+
 export default class extends Component {
   constructor (props) {
     super(props)
@@ -39,7 +54,10 @@ export default class extends Component {
       <div>
         <JobLayout 
           changeLang={this.changeLang} 
-          currentLang={this.state.currentLang}>
+          currentLang={this.state.currentLang}
+          category={'Desarrollo'}
+          job={'Back-end dev'}
+          breadcrumbs={routes} >
             <Content />
         </JobLayout>
       </div>
