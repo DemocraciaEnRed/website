@@ -40,7 +40,7 @@ export default class extends Component {
         <JobLayout 
           changeLang={this.changeLang} 
           currentLang={this.state.currentLang}>
-          <Content />
+            <Content />
         </JobLayout>
       </div>
     )

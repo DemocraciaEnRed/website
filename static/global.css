@@ -170,6 +170,52 @@ button {
   font-size: 1.9rem;
 }
 
+
+/*MARKDOWN FILES STYLES*/
+._markdown_ {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 75px;
+}
+
+._markdown_ h2 {
+  align-self: center;
+  color: var(--dark-accent);
+  font-size: 3.6rem;
+  margin-bottom: 49px;
+  text-transform: uppercase;
+}
+
+._markdown_ p span {
+  color: var(--light-accent);
+  font-size: 2.0rem;
+  letter-spacing: 0.13rem;
+  text-transform: uppercase;
+}
+
+._markdown_ p {
+  color: var(--black);
+  font-size: 2.0rem;
+  letter-spacing: 0.13rem;
+}
+
+._markdown_ h3 {
+  color: var(--dark-accent);
+  font-size: 1.8rem;
+  letter-spacing: 0.13rem;
+  margin: 49px 197px 0;
+}
+
+._markdown_ ul {
+  color: var(--black);
+  font-size: 1.4rem;
+  letter-spacing: 0.13rem;
+  list-style-type: disc;
+  margin: 10px 220px 0;
+}
+
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1024px) {

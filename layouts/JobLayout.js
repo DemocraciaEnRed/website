@@ -17,7 +17,22 @@ const JobLayout = (props) => (
     <Header 
       title={'JOBS'}
       bg={'../static/assets/header/headerAbout.jpg'} />
-    {props.children}
+      <section>
+        {props.children}
+        <button className='btn'>
+          <span className='action-text'>
+            Aplicar ahora
+          </span>
+        </button>
+      </section>
+      <style jsx>{`
+        section {
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column;
+          align-content: center;
+        }
+      `}</style>
   </div>
 )
 
