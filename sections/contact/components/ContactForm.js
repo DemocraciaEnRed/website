@@ -16,13 +16,13 @@ const ContactForm = () => (
       <label htmlFor='contact-info'>
         <span>¿Cómo nos conociste?</span>
       </label>
-      <input type='text' name='contact-info' required />  
+      <input type='text' name='contact-info' />  
     </div>
     <div className='input-wrapper'>
       <label htmlFor='comments'>
         <span>Acá podés dejarnos tu mensaje!</span>
       </label>
-      <textarea name='comments' />
+      <textarea name='comments' required />
     </div>
     <div className='btn-container'>
       <button className='btn'>

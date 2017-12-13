@@ -12,12 +12,21 @@ const ContactTitle = () => (
       .section-title {
         font-size: 3.6rem;
         margin-bottom: 7px;
+        text-align: center;
         text-transform: uppercase;
       }
       .regular-text {
         color: var(--black);
         font-size: 2.4rem;
         text-align: center;
+      }
+      @media (max-width: 1024px) {
+        .section-title {
+          font-size: 3rem;
+        }
+        .regular-text {
+          font-size: 1.8rem;
+        }
       }
     `}</style>
   </div>

@@ -62,7 +62,7 @@
           "text": "Ayudanos a llegar a más personas. Hay muchas maneras de colaborar.",
           "icon": "/static/assets/icons/collaborate.svg",
           "callToAction": "Escribinos",
-          "href": "mailto:contacto@democraciaenred.org"
+          "href": "/contact"
         },
         {
           "title": "Transparencia",

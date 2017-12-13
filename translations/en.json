@@ -62,7 +62,7 @@
           "text": "Help us to reach more people. There are many ways to collaborate.",
           "icon": "/static/assets/icons/collaborate.svg",
           "callToAction": "Drop us a line",
-          "href": "mailto:contacto@democraciaenred.org"
+          "href": "/contact"
         },
         {
           "title": "Transparency",

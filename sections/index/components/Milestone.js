@@ -1,16 +1,20 @@
+import Link from 'next/link'
+
 const Milestone = ( props ) => (
   <div className='milestone-container'>
     <img className='milestone-img' src={props.icon}/>
     <h3 className='subtitle'>{props.title}</h3>
     <h4 className='subtext'>{props.subtitle}</h4>
     {props.button && props.href &&
-      <button className='btn'>
-        <a href={props.href} rel='external' target='_blank'>
-          <span className='action-text'>
-            {props.button}
-          </span>
+      <Link href={props.href}>
+        <a>
+          <button className='btn'>
+            <span className='action-text'>
+              {props.button}
+            </span>
+          </button>
         </a>
-      </button>
+      </Link>
     }
     <style jsx>{`
       .milestone-container {
