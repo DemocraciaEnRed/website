@@ -234,6 +234,7 @@
       "repourl": "https://github.com/DemocracyOS/democracyos"
     },
     "civicStack": {
+      "img": "/static/assets/about/logocivic.svg",
       "text": "CivicStack es un repositorio de tecnologías de código libre para la participación ciudadana promovidas por organizaciones que usan o desarrollan tecnología abierta para mejorar procesos ciudadanos, fomentar la apertura de información y facilitar comportamientos cívicos online.",
       "callToAction": "Más info",
       "href": "http://www.civicstack.org/"

@@ -1,9 +1,8 @@
 import { t } from '../../../polyglot-modules/polyglot.js'
-import CivicStackLogo from './CivicStackLogo.js'
 
 const CivicStack = () => (
   <div className='civic-stack-container'>
-    <CivicStackLogo />
+    <img src={t('aboutUs.civicStack.img')} alt='Civic Stack' />
     <p className='civic-stack-text'>{t('aboutUs.civicStack.text')}</p>
     <a href={t('aboutUs.civicStack.href')} target='_blank' rel='external'>
       <button className='btn'>
