@@ -32,6 +32,9 @@ const SectionMilestone = ( {title, text, icon} ) => (
         text-align: center;
       }
       @media (max-width: 1024px) {
+        .section-milestone {
+          height: 400px;
+        }
         .section-milestone-title {
           font-size: 3rem;
         }
