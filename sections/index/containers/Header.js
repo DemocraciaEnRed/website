@@ -7,7 +7,7 @@ const Header = () => (
 		<h1>{t('index.header.title')}</h1>
 		<p className='subtext'>{t('index.header.subtitle')}</p>
 		<Submit />
-		<SocialBar alignSelf={'flex-end'} iconsSize={'30px'} width={'300px'} mobileWidth={'100%'} justifyContent={'space-around'} iconHover={'#444'} iconMobileHover={'#999'} />
+		<SocialBar alignSelf={'flex-end'} iconsSize={'30px'} width={'214px'} mobileWidth={'100%'} justifyContent={'space-around'} iconHover={'#444'} iconMobileHover={'#999'} />
 		<style jsx>{`
     	header {
      		background-image: url('../static/assets/header/headerWeb.jpg');
