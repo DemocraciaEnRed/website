@@ -263,4 +263,24 @@ button {
   .submit-text {
     font-size: 1.5rem;
   }
+
+  /*MARKDOWN FILES STYLES*/
+  ._markdown_ h2 {
+  font-size: 3rem;
+  margin-bottom: 49px;
+  }
+  ._markdown_ p {
+    font-size: 1.8rem;
+  }
+  ._markdown_ p span {
+    font-size: 1.8rem;
+  }
+  ._markdown_ h3 {
+    font-size: 1.8rem;
+    margin: 49px 24px 0;
+  }
+
+  ._markdown_ ul {
+    margin: 10px 24px 0;
+  }
 }

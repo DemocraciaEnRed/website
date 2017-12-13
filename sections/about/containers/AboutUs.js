@@ -39,7 +39,7 @@ const AboutUs = () => (
       }
       @media (max-width: 768px) {
         .about-us-section {
-          padding: 135px 24px;
+          padding: 100px 24px;
         }
       }
     `}</style>

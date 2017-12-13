@@ -55,9 +55,6 @@ const AboutUs = () => (
           margin-top: -7px;
         }
       }
-      .section-number {
-        right: 12px;
-      }
     `}</style>
 	</section>
 )

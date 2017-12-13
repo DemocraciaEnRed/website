@@ -52,7 +52,7 @@ const EbookCard = ( {img, title, description, link}) => (
         .ebook-card {
           grid-column-gap: 28px;
           grid-template-columns: 129px 146px;
-          grid-template-rows: 20px auto 39px;
+          grid-template-rows: auto auto 39px;
           height: 176px;
           margin-right: 48px;
         }
@@ -63,8 +63,8 @@ const EbookCard = ( {img, title, description, link}) => (
           height: 100%;
         }
         .ebook-description {
-          font-size: 1.5rem;
-          margin-top: 22px;
+          font-size: 1.4rem;
+          margin-top: 0;
         }
         .ebook-btn {
           height: 27px;

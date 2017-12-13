@@ -103,6 +103,9 @@ export default class Submit extends React.Component {
             .submit-button{
               width: 20%;
             }
+            .submit input::placeholder {
+              font-size: 1rem;
+            }
           }
   	`}</style>
     </form>

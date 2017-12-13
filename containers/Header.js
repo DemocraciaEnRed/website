@@ -19,7 +19,7 @@ const Header = ( { title, bg }) => (
       }
       @media screen and (max-width: 1024px) {
         header {
-          height: 400px;
+          height: 349px;
           justify-content: left;
           padding: 21px;
         }
