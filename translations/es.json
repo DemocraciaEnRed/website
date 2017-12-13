@@ -5,7 +5,8 @@
       "title": "Democracia en Red",
       "subtitle": "Imaginamos, diseñamos e implementamos innovaciones en el sistema político para abrir los procesos de decisión y redistribuir el poder.",
       "callToAction": "Enviar",
-      "placeholder": "Recibí novedades en tu e-mail"
+      "placeholder": "¡Ingresá tu e-mail para recibir novedades!",
+      "mobilePlaceholder": "Recibí novedades en tu e-mail"
     },
     "aboutUs": {
       "title": "Sobre nosotros",

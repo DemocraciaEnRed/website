@@ -1,7 +1,6 @@
 import Facebook from './Facebook'
 import Twitter from './Twitter'
 import Github from './Github'
-import Insta from './Insta'
 
 const SocialBar = ( { alignSelf, iconsSize, width, mobileWidth, justifyContent, iconHover, iconMobileHover } ) => (
 	<nav className='social-bar'>

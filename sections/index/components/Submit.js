@@ -7,10 +7,16 @@ export default class Submit extends React.Component {
     super(props);
     this.state = {
       checked: false,
-      hasClicked: false
+      hasClicked: false,
+      placeholder: ''
     }
   }
 
+  componentDidMount () {
+    window.innerWidth < 1024 
+    ? this.setState({placeholder: t('index.header.mobilePlaceholder')})
+    : this.setState({placeholder: t('index.header.placeholder')})
+  }
   checkingButton = () => {
     this.setState({
       checked: true,
@@ -24,7 +30,7 @@ export default class Submit extends React.Component {
   render () {
     return (
       <form className='submit'>
-        <input type='email' placeholder= {t('index.header.placeholder')} required />
+        <input type='email' placeholder= {this.state.placeholder} required />
         <button onClick={this.checkingButton}>
           {this.state.checked ?
             <CheckedButton />
