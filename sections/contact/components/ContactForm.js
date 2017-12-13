@@ -1,3 +1,5 @@
+import ContactButton from './ContactButton'
+
 const ContactForm = () => (
   <form>
     <div className='input-wrapper'>
@@ -24,13 +26,7 @@ const ContactForm = () => (
       </label>
       <textarea name='comments' required />
     </div>
-    <div className='btn-container'>
-      <button className='btn'>
-        <span className='action-text'>
-          Enviar
-        </span>
-      </button>
-    </div>
+    <ContactButton />
     <style jsx>{`
       form {
         width: 100%;
@@ -69,10 +65,6 @@ const ContactForm = () => (
       }
       div.input-wrapper:not(last-child){
         margin-bottom: 22px;
-      }
-      .btn-container {
-        display: flex;
-        justify-content: center;
       }
     `}</style>
   </form>

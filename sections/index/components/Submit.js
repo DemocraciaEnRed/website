@@ -1,6 +1,6 @@
 import React from 'react'
 import { t } from '../../../polyglot-modules/polyglot.js'
-import CheckedButton from './CheckedButton.js'
+import CheckedButton from '../../../components/CheckedButton.js'
 
 export default class Submit extends React.Component {
   constructor (props) {
