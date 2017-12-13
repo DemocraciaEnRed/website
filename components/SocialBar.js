@@ -3,19 +3,19 @@ import Twitter from './Twitter'
 import Github from './Github'
 import Insta from './Insta'
 
-const SocialBar = ( { alignSelf, iconsSize, width, mobileWidth, justifyContent } ) => (
+const SocialBar = ( { alignSelf, iconsSize, width, mobileWidth, justifyContent, iconHover, iconMobileHover } ) => (
 	<nav className='social-bar'>
 		<a href='https://www.facebook.com/democraciaenred' className='fb' target='_blank' rel='external'>
-      <Facebook />
+      <Facebook hover={iconHover} mobileHover={iconMobileHover} />
     </a>
 		<a href='https://twitter.com/fundacionder' className='tw' target='_blank' rel='external'>
-      <Twitter />
+      <Twitter hover={iconHover} mobileHover={iconMobileHover} />
     </a>
 		<a href='https://www.instagram.com/democracia_en_red/' className='insta' target='_blank' rel='external'>
-      <Insta />
+      <Insta hover={iconHover} mobileHover={iconMobileHover} />
     </a>
 		<a href='https://github.com/democraciaenred' className='github' target='_blank' rel='external'>
-      <Github />
+      <Github hover={iconHover} mobileHover={iconMobileHover} />
     </a>
 		<style jsx>{`
       .social-bar {

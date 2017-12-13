@@ -1,4 +1,4 @@
-const Facebook = () => (
+const Facebook = (props) => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 266.89 266.89" className='cls-2'>
     <defs>
     </defs>
@@ -13,7 +13,11 @@ const Facebook = () => (
           fill:#fff;
         }
         .cls-2:hover .cls-1{
-          fill: #bebebe;
+          fill: ${props.hover};
+        }
+        @media (max-width: 1024px) {
+          .cls-2:hover .cls-1{
+          fill: ${props.mobileHover};
         }
       `}</style>
   </svg>

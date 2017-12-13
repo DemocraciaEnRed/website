@@ -1,4 +1,4 @@
-const Twitter = () => (
+const Twitter = ( props ) => (
   <svg viewBox="0 0 37 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" className='cls-2'>
     <title>Logo__x2014__FIXED</title>
     <desc>Created with Sketch.</desc>
@@ -13,11 +13,15 @@ const Twitter = () => (
         </g>
     </g>
     <style jsx>{`
-        .cls-1 {
-            fill: #FFF;
+        .cls-1{
+          fill:#fff;
         }
-        .cls-2:hover .cls-1{
-            fill: #bebebe;
+        .cls-2:hover .cls-1:hover{
+          fill: ${props.hover};
+        }
+        @media (max-width: 1024px) {
+          .cls-2:hover .cls-1:hover{
+          fill: ${props.mobileHover};
         }
     `}</style>
 </svg>

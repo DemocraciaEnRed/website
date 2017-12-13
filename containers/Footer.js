@@ -7,7 +7,7 @@ const Footer = () => (
   <footer>
     <MediaQuery minDeviceWidth={1025} >
       <div className='footer-container'>
-        <SocialBar alignSelf={'flex-start'} iconsSize={'47px'} width={'473px'} mobileWidth={'283px'} />
+        <SocialBar alignSelf={'flex-start'} iconsSize={'47px'} width={'473px'} mobileWidth={'283px'} iconHover={'#bebebe'} iconMobileHover={'#bebebe'} />
         <Link href='/'>
           <a className='footer-link'>{t('footer.terms')}</a>
         </Link>
@@ -18,7 +18,7 @@ const Footer = () => (
     </MediaQuery>
     <MediaQuery maxDeviceWidth={1024} >
       <div className='mobile-footer-container'>
-        <SocialBar alignSelf={'flex-start'} iconsSize={'28px'}  width={'473px'} mobileWidth={'283px'} justifyContent={'space-between'} />
+        <SocialBar alignSelf={'flex-start'} iconsSize={'28px'}  width={'473px'} mobileWidth={'283px'} justifyContent={'space-between'} iconHover={'#bebebe'} iconMobileHover={'#bebebe'} />
         <div className='end-text'>
           <span>the end</span>
         </div>
