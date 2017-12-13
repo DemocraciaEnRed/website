@@ -107,6 +107,11 @@ export default class Submit extends React.Component {
               font-size: 1rem;
             }
           }
+          @media (max-width: 320px) {
+            .submit input::placeholder {
+              font-size: 0.9rem;
+            }
+          }
   	`}</style>
     </form>
     )}

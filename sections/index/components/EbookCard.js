@@ -80,6 +80,11 @@ const EbookCard = ( {img, title, description, link}) => (
           margin-right: 24px;
         }
       }
+      @media screen and (max-width: 320px) {
+        .ebook-card {
+          grid-column-gap: 20px;
+        }
+      }
     `}</style>
   </div>
 
