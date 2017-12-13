@@ -13,7 +13,7 @@ const ContactForm = () => (
       <input type='email' name='email' required />
     </div>
     <div className='input-wrapper'>
-      <label htmlFor='contact-info' className='required-field'>
+      <label htmlFor='contact-info'>
         <span>¿Cómo nos conociste?</span>
       </label>
       <input type='text' name='contact-info' required />  
@@ -31,6 +31,50 @@ const ContactForm = () => (
         </span>
       </button>
     </div>
+    <style jsx>{`
+      form {
+        width: 100%;
+        margin-top: 48px;
+      }
+      .input-wrapper {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+      label {
+        font-size: 1.6rem;
+        letter-spacing: 0.13rem;
+        margin-bottom: 10px;
+      }
+      label.required-field :after {
+        color: #ff0000;
+        content: '*';
+        font-size: 1.6rem;
+        letter-spacing: 0.13rem;
+      }
+      input {
+        border-radius: 10px;
+        border: solid 1px #979797;
+        padding: 10px;
+        height: 43px;
+        width: 100%;
+      }
+      textarea {
+        border-radius: 10px;
+        border: solid 1px #979797;
+        height: 150px;
+        margin-bottom: 48px;
+        padding: 10px;
+        width: 100%;
+      }
+      div.input-wrapper:not(last-child){
+        margin-bottom: 22px;
+      }
+      .btn-container {
+        display: flex;
+        justify-content: center;
+      }
+    `}</style>
   </form>
 )
 

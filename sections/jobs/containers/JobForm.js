@@ -101,6 +101,7 @@ const JobForm = () => (
         border-radius: 10px;
         border: solid 1px #979797;
         height: 43px;
+        padding: 10px;
         width: 100%;
       }
       input:not(last-child) {
@@ -115,6 +116,7 @@ const JobForm = () => (
         width: 100%;
         height: 150px;
         margin-bottom: 19px;
+        padding: 10px;
         border-radius: 10px;
         border: solid 1px #979797;
       }
