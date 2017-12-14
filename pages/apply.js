@@ -79,8 +79,10 @@ export default class extends Component {
           <Header 
             title={'JOBS'}
             bg={'../static/assets/header/headerAbout.jpg'}/>
-          {this.state.routes && <Breadcrumbs routes={this.state.routes} /> }
-          <JobForm />
+          <section>
+            {this.state.routes && <Breadcrumbs routes={this.state.routes} /> }
+            <JobForm />
+          </section>
         </Layout>
       </div>
     )

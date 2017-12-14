@@ -1,5 +1,5 @@
 const JobForm = () => (
-  <section className='form-wrapper'>
+  <div className='form-wrapper'>
     <form>
       <div className='job-section'>
         <div className='job-title'>
@@ -54,7 +54,8 @@ const JobForm = () => (
     </form>
     <style jsx>{`
       .form-wrapper {
-        padding-bottom: 64px;
+        background-color: var(--white);
+        padding-bottom: 16px;
         padding-top: 31px;
       }
       form {
@@ -146,6 +147,9 @@ const JobForm = () => (
         margin-top: 26px;
       }
       @media (max-width: 1024px) {
+        .form-wrapper {
+          padding-top: 0;
+        }
         .job-input-container {
           width: 600px;
         }
@@ -171,7 +175,7 @@ const JobForm = () => (
         }
       }
     `}</style>
-  </section>
+  </div>
 )
 
 export default JobForm

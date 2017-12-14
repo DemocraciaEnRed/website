@@ -7,14 +7,5 @@
     "type": "Full-time",
     "location": "Oficina/WFH",
     "url": "/backend"
-  },
-  {
-    "id": "front_end_dev",
-    "job": "Fron-end developer",
-    "category": "Desarrollo",
-    "seniority": "Semi-senior",
-    "type": "Full-time",
-    "location": "Oficina/WFH",
-    "url": "/backend"
   }
 ]

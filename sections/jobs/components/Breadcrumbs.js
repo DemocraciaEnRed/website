@@ -25,6 +25,14 @@ const Breadcrumbs = ( { routes } ) => (
       a.active {
         color: var(--dark-accent);
       }
+      @media (max-width: 1024px) {
+        .breadcrumbs-container {
+          margin-bottom: 50px;
+        }
+        a {
+          font-size: 2.0rem;
+        }
+      }
     `}</style>
   </div>
 )
