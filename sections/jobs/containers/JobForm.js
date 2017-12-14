@@ -27,7 +27,7 @@ const JobForm = () => (
         <div className='job-input-container'>
           <label className='file-label'>
             <span className='file-span'>Cargar archivo</span>
-            <input type='file' />
+            <input type='file' name='cv'/>
           </label>
           <span className='optional-field'>Este campo es opcional</span>
         </div>

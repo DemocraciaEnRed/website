@@ -20,7 +20,8 @@ export default class extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      currentLang : 'es'
+      currentLang : 'es',
+      id: 'back_end_dev'
     }
     if (Object.values(polyglot.phrases).length === 0) {
       polyglot.extend(es)
@@ -53,7 +54,8 @@ export default class extends Component {
           currentLang={this.state.currentLang}
           category={'Desarrollo'}
           job={'Back-end dev'}
-          breadcrumbs={routes} >
+          breadcrumbs={routes}
+          id={this.state.id} >
             <Content />
         </JobLayout>
       </div>

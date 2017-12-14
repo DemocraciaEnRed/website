@@ -15,10 +15,10 @@ const ContactForm = () => (
       <input type='email' name='email' required />
     </div>
     <div className='input-wrapper'>
-      <label htmlFor='contact-info'>
+      <label htmlFor='reference'>
         <span>¿Cómo nos conociste?</span>
       </label>
-      <input type='text' name='contact-info' />  
+      <input type='text' name='reference' />  
     </div>
     <div className='input-wrapper'>
       <label htmlFor='comments'>

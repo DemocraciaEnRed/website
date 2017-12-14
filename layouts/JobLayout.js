@@ -23,7 +23,7 @@ const JobLayout = (props) => (
         <Breadcrumbs 
           routes={props.breadcrumbs} />
         {props.children}
-        <Link prefetch href= {{ pathname: '/apply',  query: { job: props.job, category: props.category} }}>
+        <Link prefetch href= {{ pathname: '/apply',  query: { id: props.id} }}>
           <button className='btn'>
             <span className='action-text'>
               Aplicar ahora
