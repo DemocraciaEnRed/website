@@ -3,21 +3,50 @@ import MediaQuery from 'react-responsive'
 import SocialBar from '../components/SocialBar'
 import Link from 'next/link'
 
+const primaryLinks = [0, 1, 2, 3, 4, 5, 6]
+const secondaryLinks = [0, 1]
+
 const Footer = () => (
   <footer>
     <MediaQuery minDeviceWidth={1025} >
-      <div className='footer-container'>
+      <div>
+        <p>{t('footer.copy')}</p>
+      </div>
+      <nav className='footer-navbar' role='navigation'>
+        <ul className='primary-links-container'>
+          {primaryLinks.map((i)=> {
+            return (
+              <li key={i}>
+                <a>  
+                  {t(`nav.primaryLinks.${i}.title`)}
+                </a>
+              </li>
+            )
+          })}
+        </ul>
+        <ul className='secondary-links-container'>
+        {secondaryLinks.map((i)=> {
+          return (
+            <Link href={t(`nav.secondaryLinks.${i}.href`)} key={i} >
+              <li>
+                <a>  
+                  {t(`nav.secondaryLinks.${i}.title`)}
+                </a>
+              </li>
+            </Link>
+          )
+        })}
+    </ul>
+      </nav>
+      <div className='media-bar-container'>
         <SocialBar alignSelf={'flex-start'} iconsSize={'47px'} width={'473px'} mobileWidth={'283px'} iconHover={'#bebebe'} iconMobileHover={'#bebebe'} />
-        <Link href='/'>
-          <a className='footer-link'>{t('footer.terms')}</a>
-        </Link>
         <div className='end-text'>
           <span>the end</span>
         </div>
       </div>
     </MediaQuery>
     <MediaQuery maxDeviceWidth={1024} >
-      <div className='mobile-footer-container'>
+      <div className='media-bar-container'>
         <SocialBar alignSelf={'flex-start'} iconsSize={'28px'}  width={'473px'} mobileWidth={'283px'} justifyContent={'space-between'} iconHover={'#bebebe'} iconMobileHover={'#bebebe'} />
         <div className='end-text'>
           <span>the end</span>
@@ -36,17 +65,10 @@ const Footer = () => (
         position: relative;
         overflow-y: hidden;
       }
-      .footer-container {
+      .media-bar-container {
         align-items: center;
         display: flex;
         flex-direction: column;
-      }
-      .footer-link {
-        align-self: center;
-        color: var(--white);
-        font-size: 24px;
-        font-weight: 300;
-        margin-top: 33px;
       }
       .end-text {
         position: absolute;
@@ -73,7 +95,7 @@ const Footer = () => (
         }
       }
       @media (max-width: 768px) {
-        .mobile-footer-container {
+        .media-bar-container {
           display: flex;
           justify-content: center;
           width: 100%;
