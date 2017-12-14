@@ -1,6 +1,8 @@
 import React from 'react'
+import fetch from 'isomorphic-unfetch'
 import { t } from '../../../polyglot-modules/polyglot.js'
 import CheckedButton from '../../../components/CheckedButton.js'
+const regexp = /^(?:[\w!#\$%&'\*\+\-\/=\?\^`\{\|\}~]+\.)*[\w!#\$%&'\*\+\-\/=\?\^`\{\|\}~]+@(?:(?:(?:[a-zA-Z0-9](?:[a-zA-Z0-9\-](?!\.)){0,61}[a-zA-Z0-9]?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9\-](?!$)){0,61}[a-zA-Z0-9]?)|(?:\[(?:(?:[01]?\d{1,2}|2[0-4]\d|25[0-5])\.){3}(?:[01]?\d{1,2}|2[0-4]\d|25[0-5])\]))$/
 
 export default class Submit extends React.Component {
   constructor (props) {
@@ -8,8 +10,12 @@ export default class Submit extends React.Component {
     this.state = {
       checked: false,
       hasClicked: false,
-      placeholder: ''
+      placeholder: '',
+      value: ''
     }
+
+    this.handleChange = this.handleChange.bind(this)
+    this.handleSubmit = this.handleSubmit.bind(this)
   }
 
   componentDidMount () {
@@ -17,6 +23,28 @@ export default class Submit extends React.Component {
     ? this.setState({placeholder: t('index.header.mobilePlaceholder')})
     : this.setState({placeholder: t('index.header.placeholder')})
   }
+
+  handleChange (e) {
+    this.setState({value: e.target.value})
+  }
+
+  handleSubmit(e) {
+    e.preventDefault()
+    const email = this.state.value
+    if (email === '' || !regexp.test(email)) {
+      alert('error')
+    } else {
+      fetch('https://der-api.now.sh/validar-subscripcion', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({mail: email})
+      })
+      .then( r => console.log(r))
+      }
+  }
+
   checkingButton = () => {
     this.setState({
       checked: true,
@@ -29,9 +57,12 @@ export default class Submit extends React.Component {
 
   render () {
     return (
-      <form className='submit'>
-        <input type='email' placeholder= {this.state.placeholder} required />
-        <button onClick={this.checkingButton}>
+      <form className='submit' onSubmit={this.handleSubmit}>
+        <label htmlFor='email'>E-mail</label>
+        <input type='email' placeholder= {this.state.placeholder} required value={this.state.value} onChange={this.handleChange} />
+        <button type='submit' 
+        //onClick={this.checkingButton}
+        >
           {this.state.checked ?
             <CheckedButton />
            :
@@ -46,6 +77,9 @@ export default class Submit extends React.Component {
     		    height: 39px;
     		    width: 470px;
             margin-bottom: 45px;
+          }
+          .submit label {
+            display: none;
           }
           .submit input {
     		    border: none;

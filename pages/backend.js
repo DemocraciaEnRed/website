@@ -11,10 +11,6 @@ const routes = [
     path: '/jobs'
   },
   {
-    title: 'Desarrollo',
-    path: ''
-  },
-  {
     title: 'Back-end Dev',
     path: '/backend'
   }

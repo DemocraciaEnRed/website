@@ -19,6 +19,9 @@ const Breadcrumbs = ( { routes } ) => (
         content: '>';
         margin: 0 5px;
       }
+      a:last-child {
+        color: var(--dark-accent);
+      }
       a.active {
         color: var(--dark-accent);
       }
