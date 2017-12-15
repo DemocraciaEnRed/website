@@ -68,7 +68,7 @@ const Footer = () => (
         display: flex;
         flex-wrap: wrap;
         height: 202px;
-        width: 482px;
+        width: 650px;
       }
       .primary-links-container li {
         width: 50%;
