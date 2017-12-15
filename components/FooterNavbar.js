@@ -1,15 +1,23 @@
 import Link from 'next/link'
+import Router from 'next/router'
+import jump from 'jump.js'
 import { t } from '../polyglot-modules/polyglot.js'
 
 const primaryLinks = [0, 1, 2, 3, 4, 5, 6]
 const secondaryLinks = [0, 1]
+
+
+const handleLink = (hash) => (e) => {
+    const node = document.getElementById(hash)
+    window.location.pathname !== '/' ? Router.push({pathname: '/', hash: '#'+hash}) : jump(node, {offset: -50})
+}
 
 const FooterNavbar = () => (
   <nav className='footer-navbar' role='navigation'>
     <ul className='primary-links-container'>
       {primaryLinks.map((i)=> (
         <li key={i}>
-          <a className='footer-navbar-link'>  
+          <a className='footer-navbar-link' onClick={handleLink(t(`nav.primaryLinks.${i}.href`))}>  
             {t(`nav.primaryLinks.${i}.title`)}
           </a>
         </li>
