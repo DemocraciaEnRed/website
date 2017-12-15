@@ -13,7 +13,8 @@ export default class extends Component {
     super(props)
     this.state = {
       currentLang : 'es',
-      routes: []
+      routes: [],
+      id: ''
     }
     if (Object.values(polyglot.phrases).length === 0) {
       polyglot.extend(es)
@@ -38,7 +39,8 @@ export default class extends Component {
           title: 'Apply',
           path: location.pathname
         }
-      ]
+      ],
+      id: job.id
     })
     const lang = localStorage.getItem('lang')
     if (lang === null) {
@@ -81,7 +83,7 @@ export default class extends Component {
             bg={'../static/assets/header/headerAbout.jpg'}/>
           <section>
             {this.state.routes && <Breadcrumbs routes={this.state.routes} /> }
-            <JobForm />
+            <JobForm id={this.state.id} />
           </section>
         </Layout>
       </div>

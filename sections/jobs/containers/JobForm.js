@@ -1,4 +1,4 @@
-const JobForm = () => (
+const JobForm = ( {id} ) => (
   <div className='form-wrapper'>
     <form>
       <div className='job-section'>
@@ -6,6 +6,9 @@ const JobForm = () => (
           <h5>Datos Personales</h5>
         </div>
         <div className='job-input-container'>
+          <label htmlFor='id' className='hidden-field'>
+            <input type='text' name='id' defaultValue={id} />
+          </label>
           <label htmlFor='name' className='required-field'>
             <span>Nombre y apellido</span>
           </label>
@@ -107,6 +110,9 @@ const JobForm = () => (
       }
       input:not(last-child) {
         margin-bottom: 22px;
+      }
+      .hidden-field {
+        display: none;
       }
       .optional-field {
         color: #999;
