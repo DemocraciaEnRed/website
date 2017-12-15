@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import fetch from 'isomorphic-unfetch'
 import { t, polyglot } from '../../../polyglot-modules/polyglot.js'
-import api from '../../../polyglot-modules/api.js'
 import MediumPost from '../components/MediumPost'
 import MediaQuery from 'react-responsive'
 let Flickity;
