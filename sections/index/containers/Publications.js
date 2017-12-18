@@ -67,6 +67,7 @@ class Publications extends Component {
             display: flex;
             flex-wrap: wrap;
             padding-bottom: 85px;
+            overflow-x: hidden;
           }
           .posts-container {
             margin-top: 43px;
@@ -87,7 +88,7 @@ class Publications extends Component {
               margin: auto;
             }
           }
-          @media (max-width: 425px) {
+          @media (max-width: 475px) {
           .publications-section {
             padding-right: 0px;
             padding-bottom: 42px;

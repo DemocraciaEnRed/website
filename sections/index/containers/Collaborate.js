@@ -57,6 +57,7 @@ class Collaborate extends Component {
           .collaborate-section {
             display: flex;
             justify-content: space-between;
+            overflow-x: hidden;
           }
           .carousel {
             display: flex;

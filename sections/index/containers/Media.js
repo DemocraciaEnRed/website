@@ -23,7 +23,6 @@ const Media = () => (
       @media screen and (max-width: 1024px) {
         .media-section .section-title {
           font-size: 3.0rem;
-          font-weight: 600;
         }
       }
       @media screen and (max-width: 768px) {
@@ -43,9 +42,9 @@ const Media = () => (
       }
       @media screen and (max-width: 375px) {
         .media-container {
-          align-items: space-around;
-          flex-direction: column;
+          align-content: center;
           align-items: center;
+          flex-direction: column;
           height: 360px;
         }
       }

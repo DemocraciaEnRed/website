@@ -5,7 +5,7 @@ const Layout = (props) => (
   <div>
     <Head>
       <title>Democracia en Red</title>
-      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <meta name='viewport' content='width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0' />
       <link rel="shortcut icon" type="favicon" href="/static/assets/icons/der-favicon.ico" />
       <link rel="stylesheet" type="text/css" href="/static/flickity.css" />
       <link rel="stylesheet" type="text/css" href="/static/global.css" />
