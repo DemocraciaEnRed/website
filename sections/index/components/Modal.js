@@ -49,21 +49,25 @@ const Modal = ( {content, hideModal} ) => (
         text-align: center;
       }
       @media (max-width: 1024px) {
+        .regular-text {
+          font-size: 2.0rem;
+        }
+      }
+      @media (max-width: 600px) {
         .modal-container {
-          top: 150px;
+          top: 75px;
         }
       }
       @media (max-width: 550px) {
         .modal-container {
           width: 300px;
         }
-        .regular-text {
-          font-size: 2.0rem;
-        }
       }
-      @media (max-width: 550px) {
+      @media (max-width: 475px) {
         .modal-container {
-          width: 200px;
+          height: auto;
+          top: 75px;
+          width: 300px;
         }
       }
     `}</style>
