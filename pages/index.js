@@ -35,10 +35,9 @@ export default class extends Component {
     }
     const isSubscribed = this.getQueryVariable('subscripto')
     if (isSubscribed !== undefined) {
-      const text = isSubscribed === 'true' ? 'Ya estás subscripto a Democracia en Red. ¡Pronto recibirás novedades!' : 'Link inválido, asegurate de validar el link antes de dos días y de utilizar el link del último mail de confirmación'
       this.setState({
         modal: true,
-        content: text
+        content: isSubscribed === 'true' ? 'Ya estás subscripto a Democracia en Red. ¡Pronto recibirás novedades!' : 'Link inválido, asegurate de validar el link antes de dos días y de utilizar el link del último mail de confirmación'
       })
     }
   }
@@ -60,11 +59,15 @@ export default class extends Component {
     }
   }
 
+  hideModal = () => {
+    this.setState({modal: false})
+  }
+
   render () {
     return (
       <div>
         <Layout changeLang={this.changeLang} currentLang={this.state.currentLang}>
-          <Header modal={this.state.modal} content={this.state.content} />
+          <Header modal={this.state.modal} content={this.state.content} hideModal={this.hideModal} />
           <AboutUs />
           <Collaborate />
           <Publications />

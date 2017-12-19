@@ -3,14 +3,14 @@ import Modal from '../components/Modal'
 import Submit from '../components/Submit'
 import SocialBar from '../../../components/SocialBar.js'
 
-const Header = ( {modal, content} ) => (
+const Header = ( {modal, content, hideModal} ) => (
 	<header>
 		<h1>{t('index.header.title')}</h1>
 		<p className='subtext'>{t('index.header.subtitle')}</p>
 		<Submit />
 		<SocialBar alignSelf={'flex-end'} iconsSize={'30px'} width={'214px'} mobileWidth={'100%'} justifyContent={'space-around'} iconHover={'#444'} iconMobileHover={'#999'} />
 		{modal && 
-      <Modal content={content} />
+      <Modal content={content} hideModal={hideModal} />
     }
     <style jsx>{`
     	header {
