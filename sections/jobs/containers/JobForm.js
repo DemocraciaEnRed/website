@@ -15,9 +15,6 @@ export default class JobForm extends Component {
     const form = new FormData(e.target)
     fetch('https://der-api.now.sh/trabajo',{
       method: 'POST',
-      headers: {
-        'content-type': 'multipart/form-data'
-      },
       body: form
     })
     .then(r => console.log(r.status))

@@ -31,19 +31,14 @@ export default class Submit extends React.Component {
   handleSubmit(e) {
     e.preventDefault()
     const email = this.state.value
-    console.log(JSON.stringify({email: email}))
-    if (email === '' || !regexp.test(email)) {
-      alert('error')
-    } else {
-      fetch('https://der-api.now.sh/validar-subscripcion', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({email: email})
-      })
-      .then(r => console.log(r.status))
-    }
+    fetch('https://der-api.now.sh/validar-subscripcion', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({email: email})
+    })
+    .then(r => console.log(r.status))
   }
 
   checkingButton = () => {
@@ -61,9 +56,7 @@ export default class Submit extends React.Component {
       <form className='submit' onSubmit={this.handleSubmit}>
         <label htmlFor='email'>E-mail</label>
         <input type='email' placeholder= {this.state.placeholder} required value={this.state.value} onChange={this.handleChange} />
-        <button type='submit' 
-        //onClick={this.checkingButton}
-        >
+        <button type='submit' >
           {this.state.checked ?
             <CheckedButton />
            :

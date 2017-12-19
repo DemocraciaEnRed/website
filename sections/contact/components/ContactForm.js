@@ -9,7 +9,7 @@ const submitForm = (e) => {
       headers: {
         'content-type': 'application/json'
       },
-      body: form
+      body: JSON.stringify(form)
     })
     .then(r => console.log(r.status))
 }

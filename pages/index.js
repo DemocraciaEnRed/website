@@ -31,6 +31,8 @@ export default class extends Component {
     } else if (lang !== polyglot.currentLocale) {
       this.changeLang('en')
     }
+    const isSubscribed = this.getQueryVariable('subscripto')
+    console.log(isSubscribed)
   }
 
   changeLang = (lang) => {
@@ -39,6 +41,15 @@ export default class extends Component {
     polyglot.locale(newLang.language)
     localStorage.setItem('lang', lang)
     this.setState({currentLang: lang})
+  }
+
+  getQueryVariable = (variable) => {
+    var query = window.location.search.substring(1)
+    var vars = query.split("&")
+    for (var i=0;i<vars.length;i++) {
+      var pair = vars[i].split("=")
+      if(pair[0] == variable){return pair[1]}
+    }
   }
 
   render () {
