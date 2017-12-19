@@ -16,7 +16,9 @@ export default class extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      currentLang : 'es'
+      currentLang : 'es',
+      modal: false,
+      content: ''
     }
     if (Object.values(polyglot.phrases).length === 0) {
       polyglot.extend(es)
@@ -32,7 +34,13 @@ export default class extends Component {
       this.changeLang('en')
     }
     const isSubscribed = this.getQueryVariable('subscripto')
-    console.log(isSubscribed)
+    if (isSubscribed !== undefined) {
+      const text = isSubscribed === 'true' ? 'Ya estás subscripto a Democracia en Red. ¡Pronto recibirás novedades!' : 'Link inválido, asegurate de validar el link antes de dos días y de utilizar el link del último mail de confirmación'
+      this.setState({
+        modal: true,
+        content: text
+      })
+    }
   }
 
   changeLang = (lang) => {
@@ -56,7 +64,7 @@ export default class extends Component {
     return (
       <div>
         <Layout changeLang={this.changeLang} currentLang={this.state.currentLang}>
-          <Header />
+          <Header modal={this.state.modal} content={this.state.content} />
           <AboutUs />
           <Collaborate />
           <Publications />
@@ -65,6 +73,11 @@ export default class extends Component {
           <WhoWeAre />
           <Footer />
         </Layout>
+        <style jsx>{`
+          div {
+            position: relative;
+          }
+        `}</style>
       </div>
     )
   }

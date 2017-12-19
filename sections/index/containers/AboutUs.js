@@ -12,7 +12,7 @@ const AboutUs = () => (
         return <Milestone key={i} title={t(`index.aboutUs.content.${i}.title`)} subtitle={t(`index.aboutUs.content.${i}.subtitle`)} icon={t(`index.aboutUs.content.${i}.icon`)}containerWidth={'290px'} />
       })}
     </div>
-    <Link href="/about">
+    <Link href='/about'>
       <button className='btn'>
         <span className='action-text'>
           {t('index.aboutUs.callToAction')}

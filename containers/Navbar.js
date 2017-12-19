@@ -63,7 +63,7 @@ class Navbar extends Component {
             align-items: center;
             background-color: var(--dark-accent);
             box-shadow: inset 0 -1px 0 0 #555555;
-            z-index: 1000;
+            z-index: 10;
           }
           .logo {
             width: 106px;

@@ -1,14 +1,18 @@
 import { t } from '../../../polyglot-modules/polyglot.js'
+import Modal from '../components/Modal'
 import Submit from '../components/Submit'
 import SocialBar from '../../../components/SocialBar.js'
 
-const Header = () => (
+const Header = ( {modal, content} ) => (
 	<header>
 		<h1>{t('index.header.title')}</h1>
 		<p className='subtext'>{t('index.header.subtitle')}</p>
 		<Submit />
 		<SocialBar alignSelf={'flex-end'} iconsSize={'30px'} width={'214px'} mobileWidth={'100%'} justifyContent={'space-around'} iconHover={'#444'} iconMobileHover={'#999'} />
-		<style jsx>{`
+		{modal && 
+      <Modal content={content} />
+    }
+    <style jsx>{`
     	header {
      		background-image: url('../static/assets/header/headerWeb.jpg');
         background-repeat: no-repeat;
