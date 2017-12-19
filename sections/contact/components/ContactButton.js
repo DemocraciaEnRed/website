@@ -23,8 +23,7 @@ export default class Submit extends React.Component {
 
   render () {
     return (
-     <div className='btn-container'>
-      <button className='btn' onClick={this.checkingButton}>
+      <button className='btn' onClick={this.checkingButton} type='submit'>
         {this.state.checked ?
           <CheckedButton />
           :
@@ -32,13 +31,6 @@ export default class Submit extends React.Component {
             Enviar
           </span>
         }
-      </button>
-      <style jsx>{`
-        .btn-container {
-          display: flex;
-          justify-content: center;
-        }
-      `}</style>
-    </div>
+    </button>
     )}
   }

@@ -1,7 +1,21 @@
+import fetch from 'isomorphic-unfetch'
 import ContactButton from './ContactButton'
 
+const submitForm = (e) => {
+  e.preventDefault()
+  const form = new FormData(e.target)
+  fetch('https://der-api.now.sh/contacto',{
+      method: 'POST',
+      headers: {
+        'content-type': 'application/json'
+      },
+      body: form
+    })
+    .then(r => console.log(r.status))
+}
+
 const ContactForm = () => (
-  <form>
+  <form onSubmit={submitForm}>
     <div className='input-wrapper'>
       <label htmlFor='name' className='required-field'>
         <span>Nombre y apellido</span>
@@ -26,7 +40,9 @@ const ContactForm = () => (
       </label>
       <textarea name='comments' required />
     </div>
-    <ContactButton />
+    <div className='btn-container'>
+      <ContactButton />
+    </div>
     <style jsx>{`
       form {
         width: 100%;
@@ -65,6 +81,10 @@ const ContactForm = () => (
       }
       div.input-wrapper:not(last-child){
         margin-bottom: 22px;
+      }
+      .btn-container {
+        display: flex;
+        justify-content: center;
       }
     `}</style>
   </form>
