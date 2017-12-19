@@ -1,14 +1,18 @@
+import Link from 'next/link'
+
 const MediumPost = (props) => (
-  <article className='medium-post'>
-    <div className='post-overlay'>
-    </div>
-    <div className='post-snippet'>
-      <p className='regular-text snippet-text'>{props.snippet}</p>
-    </div>
-    <div className='post-data'>
-      <span className='timestamp'>{props.timestamp}</span>
-      <span className='likes'><img className='heart' src='/static/assets/heart.svg' />{props.likes}</span>
-    </div>
+  <a href={props.url} rel='author' target='_blank'>
+    <article className='medium-post'>
+      <div className='post-overlay'>
+      </div>
+      <div className='post-snippet'>
+        <p className='regular-text snippet-text'>{props.snippet}</p>
+      </div>
+      <div className='post-data'>
+        <span className='timestamp'>{props.timestamp}</span>
+        <span className='likes'><img className='heart' src='/static/assets/heart.svg' />{props.likes}</span>
+      </div>
+    </article>
   <style jsx>{`
     .medium-post {
       background-image: url(${props.img});
@@ -91,7 +95,7 @@ const MediumPost = (props) => (
       }
     }
   `}</style>
-  </article>
+  </a>
 )
 
 export default MediumPost

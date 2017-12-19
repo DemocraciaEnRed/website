@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import fetch from 'isomorphic-unfetch'
 import { t, polyglot } from '../../../polyglot-modules/polyglot.js'
 import MediumPost from '../components/MediumPost'
-import MediaQuery from 'react-responsive'
 let Flickity;
 
 const data = [0, 1, 2]
@@ -52,16 +51,19 @@ class Publications extends Component {
               snippet={post.title}
               timestamp={post.createdAt}
               likes={post.claps}
-              img={post.image} />
+              img={post.image}
+              url={post.url} />
           )}
         </div>
-        <MediaQuery maxDeviceWidth={1024}>
-          <button className='btn'>
-            <span className='action-text'>
-              {t('index.publications.callToAction')}
-            </span>
-          </button>
-        </MediaQuery>
+        <div className='btn-container'>
+          <a href='https://medium.com/@multitudes' role='author' target='_blank'>
+            <button className='btn'>
+              <span className='action-text'>
+                {t('index.publications.callToAction')}
+              </span>
+            </button>
+          </a>
+        </div>
         <style jsx>{`
           .publications-section {
             display: flex;
@@ -72,6 +74,9 @@ class Publications extends Component {
           .posts-container {
             margin-top: 43px;
             width: 100%;
+          }
+          .btn-container {
+            display: none;
           }
           @media (max-width: 1024px) {
             .publications-section {
@@ -84,7 +89,10 @@ class Publications extends Component {
               width: 100%;
               height: 229px;
             }
-            .btn {
+            .btn-container {
+              align-self: center;
+              display: flex;
+              justify-content: center;
               margin: auto;
             }
           }
