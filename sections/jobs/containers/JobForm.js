@@ -10,12 +10,17 @@ export default class JobForm extends Component {
     this.handleSubmit = this.handleSubmit.bind(this)
   }
 
-  handleSubmit = async(e) => {
+  handleSubmit = (e) => {
     e.preventDefault()
     const form = new FormData(e.target)
-    for (var [key, value] of form.entries()) { 
-            console.log(key, value);
-        }
+    fetch('https://der-api.now.sh/trabajo',{
+      method: 'POST',
+      headers: {
+        'content-type': 'multipart/form-data'
+      },
+      body: form
+    })
+    .then(r => console.log(r.status))
   }
 
   render () {
