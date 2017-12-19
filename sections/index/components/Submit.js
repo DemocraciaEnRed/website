@@ -31,6 +31,7 @@ export default class Submit extends React.Component {
   handleSubmit(e) {
     e.preventDefault()
     const email = this.state.value
+    console.log(JSON.stringify({email: email}))
     if (email === '' || !regexp.test(email)) {
       alert('error')
     } else {
@@ -39,10 +40,10 @@ export default class Submit extends React.Component {
         headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify({mail: email})
+        body: JSON.stringify({email: email})
       })
-      .then( r => console.log(r))
-      }
+      .then(r => console.log(r.status))
+    }
   }
 
   checkingButton = () => {
