@@ -81,14 +81,7 @@ const DesktopMenu = (props) => (
       .desktop-menu-link {
         display: block;
         color: var(--black);
-        font-size: 3.2rem;
-        letter-spacing: 1.1px;
-        text-transform: uppercase;
-        margin-bottom: 16px;
-      }
-      .desktop-menu-link {
-        display: block;
-        color: var(--black);
+        cursor: pointer;
         font-size: 3.2rem;
         letter-spacing: 1.1px;
         text-transform: uppercase;
