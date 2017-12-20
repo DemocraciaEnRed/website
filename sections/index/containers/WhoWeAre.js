@@ -58,8 +58,15 @@ class WhoWeAre extends Component {
             width: 100%;
           }
           @media screen and (min-width: 1440px) {
+            .who-we-are-section {
+              align-items: center;
+              flex-direction: column;
+            }
             .profile-container {
               width: 1270px;
+            }
+            .section-title {
+              align-self: flex-start;
             }
           }
           @media screen and (max-width: 1024px) {

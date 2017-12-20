@@ -56,7 +56,7 @@ class Publications extends Component {
           )}
         </div>
         <div className='btn-container'>
-          <a href='https://medium.com/@multitudes' role='author' target='_blank'>
+          <a href='https://medium.com/multitudes' role='author' target='_blank'>
             <button className='btn'>
               <span className='action-text'>
                 {t('index.publications.callToAction')}
