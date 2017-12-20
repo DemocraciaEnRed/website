@@ -7,7 +7,7 @@ const items = [0, 1, 2, 3]
 const DemocracyOs = () => (
   <div className='democracy-os-container'>
     <img src={t('aboutUs.democracyOs.img')} alt='Democracy OS' className='democracy-os-logo'/>
-    <div>
+    <div className='democracy-os-text'>
       {data.map((i)=> {
         return <p key={i}>{t(`aboutUs.democracyOs.text.${i}`)}</p>
       })}
@@ -69,6 +69,11 @@ const DemocracyOs = () => (
         .democracy-os-list {
           margin-left: 24px;
           margin-right: 0;
+        }
+      }
+      @media (min-width: 1441px) {
+        .democracy-os-text, .democracy-os-list {
+          max-width: 1270px;
         }
       }
       @media (max-width: 520px) {

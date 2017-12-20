@@ -60,6 +60,7 @@ class WhoWeAre extends Component {
           @media screen and (min-width: 1440px) {
             .who-we-are-section {
               align-items: center;
+              display: flex;
               flex-direction: column;
             }
             .profile-container {

@@ -4,13 +4,15 @@ const HechaLaLey = () => (
   <div className='hechalaley-container'>
     <h2>{t('aboutUs.hechaLaLey.title')}</h2>
     <p>{t('aboutUs.hechaLaLey.text')}</p>
-    <a href={t('aboutUs.hechaLaLey.href')} target='_blank' rol='external'>
-      <button className='btn'>
-        <span className='action-text'>
-          {t('aboutUs.hechaLaLey.callToAction')}
-        </span>
-      </button>
-    </a>
+    <div className='btn-container'>
+      <a href={t('aboutUs.hechaLaLey.href')} target='_blank' rol='external'>
+        <button className='btn'>
+          <span className='action-text'>
+            {t('aboutUs.hechaLaLey.callToAction')}
+          </span>
+        </button>
+      </a>
+    </div>
     <style jsx>{`
       .hechalaley-container {
         display: flex;
@@ -32,6 +34,15 @@ const HechaLaLey = () => (
       }
       .hechalaley-container .btn {
         margin-top: 42px;
+      }
+      @media (min-width: 1441px) {
+        .hechalaley-container {
+          align-items: center;
+          flex-direction: column;
+        }
+        .hechalaley-container p {
+          max-width: 1270px;
+        }
       }
       @media (max-width: 1024px) {
         .hechalaley-container h2 {

@@ -48,6 +48,18 @@ const Sole = () => (
       .sole-container .btn {
         margin-top: -3px;
       }
+      @media (min-width: 1441px) {
+        .sole-container {
+          align-items: center;
+          flex-direction: column;
+        }
+        .sole-container p {
+          max-width: 1270px;
+        }
+        .sole-container ul {
+          max-width: 886px;
+        }
+      }
       @media (max-width: 768px) {
         .sole-container ul {
           margin-left: 24px;

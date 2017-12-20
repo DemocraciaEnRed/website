@@ -28,7 +28,7 @@ const AboutUs = () => (
       .about-us-container {
         display: flex;
         flex-wrap: nowrap;
-        justify-content: space-between;
+        justify-content: space-around;
         margin: 64px 0 30px;
       }
       .about-us-section .btn {
@@ -40,6 +40,11 @@ const AboutUs = () => (
       }
       .section-number {
         right: 83px;
+      }
+      @media (max-width: 1440px) {
+        .about-us-container {
+          justify-content: space-between;
+        }
       }
       @media (max-width: 1024px) {
         .about-us-container {

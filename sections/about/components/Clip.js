@@ -11,11 +11,13 @@ const Clip = () => (
         return <p key={i}>{t(`aboutUs.clip.text.${i}`)}</p>
       })}
     </div>
-    <button className='btn'>
-      <span className='action-text'>
-        {t('aboutUs.clip.callToAction')}
-      </span>
-    </button>
+    <div className='btn-container'>
+      <button className='btn'>
+        <span className='action-text'>
+          {t('aboutUs.clip.callToAction')}
+        </span>
+      </button>
+    </div>
     <style jsx>{`
       .clip-container {
         display: flex;
@@ -31,6 +33,7 @@ const Clip = () => (
       }
       .clip-text {
         margin: 42px 0;
+        max-width: 1270px;
       }
       .clip-text p {
         font-size: 2rem;
@@ -39,6 +42,16 @@ const Clip = () => (
       }
       .clip-text p:last-child {
         margin-top: 30px;
+      }
+      @media (min-width: 1441px) {
+        .clip-container {
+          align-items: center;
+          flex-direction: column;
+        }
+        .btn-container {
+          display: flex;
+          justify-content: center;
+        }
       }
       @media (max-width: 1024px) {
         .clip-title {

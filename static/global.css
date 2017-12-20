@@ -217,7 +217,11 @@ button {
 }
 
 /* MEDIA QUERIES */
-
+@media screen and (min-width: 2000px) {
+  section {
+    padding: 24px 300px 48px;
+  }
+}
 @media screen and (max-width: 1024px) {
 
   section {

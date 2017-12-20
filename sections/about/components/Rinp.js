@@ -68,6 +68,15 @@ const Rinp = () => (
         width   : 80%;
         border-bottom:1px solid #979797;
       }
+      @media (min-width: 1441px) {
+        .rinp-container {
+          align-items: center;
+          flex-direction: column;
+        }
+        .rinp-text, .rinp-list {
+          max-width: 1270px;
+        }
+      }
       @media (max-width: 768px) {
         .rinp-list {
           margin-left: 24px;
