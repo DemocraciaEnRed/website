@@ -66,7 +66,7 @@ class Ebooks extends Component {
         </div>
         <style jsx>{`
           .ebooks-section {
-            padding-bottom: 85px;
+            padding-bottom: 100px;
           }
           .ebooks-container {
             display: flex;
@@ -79,10 +79,12 @@ class Ebooks extends Component {
               justify-content: space-between;
             }
           }
-          @media screen and (max-width: 766px) {
+          @media screen and (max-width: 1024px) {
             .ebooks-section {
               padding: 24px 24px 48px 24px ;
             }
+          }
+          @media screen and (max-width: 766px) {
             .ebooks-container {
               height: 176px;
               display: block;
