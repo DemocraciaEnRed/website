@@ -11,7 +11,8 @@ export default class Submit extends React.Component {
       checked: false,
       hasClicked: false,
       placeholder: '',
-      value: ''
+      value: '',
+      response: ''
     }
 
     this.handleChange = this.handleChange.bind(this)
@@ -24,11 +25,11 @@ export default class Submit extends React.Component {
     : this.setState({placeholder: t('index.header.placeholder')})
   }
 
-  handleChange (e) {
+  handleChange = (e) => {
     this.setState({value: e.target.value})
   }
 
-  handleSubmit(e) {
+  handleSubmit= (e) => {
     e.preventDefault()
     const email = this.state.value
     fetch('https://der-api.now.sh/validar-subscripcion', {
@@ -38,18 +39,33 @@ export default class Submit extends React.Component {
       },
       body: JSON.stringify({email: email})
     })
-    .then(r => console.log(r.status))
-  }
+    .then((r)=> {
+    if (r.ok) {
+      return r
+    }
+    console.log(r.json())
+    throw Error('sarasa')
+    }).then((r)=> {
+      return r.json()
+    }).then((data)=> {
+      console.log('Request succeeded with JSON response:', data);
+    }).catch((error)=> {
+    console.log('Request failed:', error);
+  })
+}
+  
 
-  checkingButton = () => {
+  succesfulSubmit = () => {
     this.setState({
       checked: true,
-      hasClicked: true
+      hasClicked: true,
+      response: 'Te enviamos un mail a tu dirección para confirmar la subscripción.'
     })
     setTimeout(() => this.setState({
-      checked: false,
+    checked: false,
     }), 2000)
   }
+
 
   render () {
     return (
