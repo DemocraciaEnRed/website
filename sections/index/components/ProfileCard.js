@@ -17,21 +17,11 @@ const ProfileCard = ( {name, bio, handle, img} ) => (
       flex-wrap: wrap;
       height: 250px;
       justify-content: center;
+      position: relative;
       width: 250px;
     }
-    
     .profile-card-container {
       display: none;
-    }
-
-    .profile-card:hover .profile-card-container {
-      animation: fadeInFromNone 0.5s ease;
-      background-color: rgba(0,0,0,0.8); 
-      border-radius: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 64px 39px 63px;
     }
     .profile-title {
       font-size: 2.8rem;
@@ -103,6 +93,12 @@ const ProfileCard = ( {name, bio, handle, img} ) => (
         opacity: 1;
       }
     }
+    
+    @media screen and (min-width: 1440px) {
+      .profile-card {
+        margin-right: 10px;
+      }
+    }
     @media screen and (min-width: 1200px) {
       .profile-card:nth-child(9) {
         margin-left: 25%
@@ -111,14 +107,38 @@ const ProfileCard = ( {name, bio, handle, img} ) => (
         margin-right: 25%
       }
     }
-    @media screen and (min-width: 1440px) {
-      .profile-card {
-        margin-right: 10px;
+    @media screen and (min-width: 1024px) {
+      .profile-card:hover .profile-card-container {
+        animation: fadeInFromNone 0.5s ease;
+        background-color: rgba(0,0,0,0.8); 
+        border-radius: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 64px 39px 63px;
+      }
+      .profile-card:hover overlay {
+        z-index: -1;
       }
     }
     @media screen and (max-width: 1024px) {
       .profile-card {
         margin: 0 45px;
+      }
+      .profile-card:hover .profile-card-container {
+        animation: fadeInFromNone 0.5s ease;
+        background-color: rgba(0,0,0,0.8); 
+        border-radius: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 64px 39px 63px;
+      }
+      .profile-handle {
+        pointer-events: none;
+      }
+      .profile-card-container:hover .profile-handle {
+        pointer-events: auto;
       }
     }
     @media screen and (max-width: 375px) {
