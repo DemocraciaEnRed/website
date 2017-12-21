@@ -3,6 +3,7 @@ import fetch from 'isomorphic-unfetch'
 import { t } from '../../../polyglot-modules/polyglot.js'
 import CheckedButton from '../../../components/CheckedButton.js'
 const regexp = /^(?:[\w!#\$%&'\*\+\-\/=\?\^`\{\|\}~]+\.)*[\w!#\$%&'\*\+\-\/=\?\^`\{\|\}~]+@(?:(?:(?:[a-zA-Z0-9](?:[a-zA-Z0-9\-](?!\.)){0,61}[a-zA-Z0-9]?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9\-](?!$)){0,61}[a-zA-Z0-9]?)|(?:\[(?:(?:[01]?\d{1,2}|2[0-4]\d|25[0-5])\.){3}(?:[01]?\d{1,2}|2[0-4]\d|25[0-5])\]))$/
+let response;
 
 export default class Submit extends React.Component {
   constructor (props) {
@@ -12,7 +13,8 @@ export default class Submit extends React.Component {
       hasClicked: false,
       placeholder: '',
       value: '',
-      response: ''
+      response: false,
+      disabled: false
     }
 
     this.handleChange = this.handleChange.bind(this)
@@ -31,6 +33,7 @@ export default class Submit extends React.Component {
 
   handleSubmit= (e) => {
     e.preventDefault()
+    this.setState({disabled: true})
     const email = this.state.value
     fetch('https://der-api.now.sh/validar-subscripcion', {
       method: 'POST',
@@ -39,74 +42,113 @@ export default class Submit extends React.Component {
       },
       body: JSON.stringify({email: email})
     })
-    .then((r)=> {
-    if (r.ok) {
-      return r
-    }
-    console.log(r.json())
-    throw Error('sarasa')
-    }).then((r)=> {
-      return r.json()
-    }).then((data)=> {
-      console.log('Request succeeded with JSON response:', data);
-    }).catch((error)=> {
-    console.log('Request failed:', error);
-  })
-}
+    .then(r => {
+      if (!r.ok) {
+        const data = r.json()
+        .then(data => {
+          switch (data.error) {
+            case 'invalid-email':
+              response = t('index.header.invalidMail')
+            break
+            case 'internal-error':
+              response= t('index.header.internalError')
+            break
+            case 'is-in-list':
+              response= t('index.header.isInList')
+            break
+          }
+          this.unsuccesfulSubmit(response)
+        })
+      } else {
+        this.succesfulSubmit()
+      }
+    })
+  }
   
+  unsuccesfulSubmit = (response) => {
+    this.setState({
+          response: response
+    })
+    setTimeout(() => this.setState({
+      response: false,
+      checked: false,
+      disabled: false
+    }), 5000)
+  }
 
   succesfulSubmit = () => {
     this.setState({
       checked: true,
       hasClicked: true,
-      response: 'Te enviamos un mail a tu dirección para confirmar la subscripción.'
+      response: t('index.header.mailSuscribed')
     })
     setTimeout(() => this.setState({
-    checked: false,
-    }), 2000)
+      response: false,
+      checked: false,
+      disabled: false
+    }), 5000)
   }
-
 
   render () {
     return (
       <form className='submit' onSubmit={this.handleSubmit}>
-        <label htmlFor='email'>E-mail</label>
-        <input type='email' placeholder= {this.state.placeholder} required value={this.state.value} onChange={this.handleChange} />
-        <button type='submit' >
-          {this.state.checked ?
-            <CheckedButton />
-           :
-            <span className={`submit-text ${this.state.hasClicked ? 'submit-text-checked' : ''}`}>
-      	 	   {t('index.header.callToAction')}
-            </span>
+        <div className='form-response-container'>
+          {this.state.response &&
+            <p className='regular-text form-response'>{this.state.response}</p>
           }
-        </button>
+        </div>
+        <div className='input-container'>
+          <label htmlFor='email'>E-mail</label>
+          <input type='email' placeholder= {this.state.placeholder} required value={this.state.value} onChange={this.handleChange} />
+          <button type='submit' disabled={this.state.disabled} >
+            {this.state.checked ?
+              <CheckedButton />
+            :
+              <span className={`submit-text ${this.state.hasClicked ? 'submit-text-checked' : ''}`}>
+      	 	     {t('index.header.callToAction')}
+              </span>
+            }
+          </button>
+        </div>
         <style jsx>{`
           .submit {
     		    display: flex;
-    		    height: 39px;
-    		    width: 470px;
+            flex-wrap: wrap;
             margin-bottom: 45px;
           }
-          .submit label {
+          .form-response-container {
+            height: 17px;
+            margin-bottom: 10px;
+            padding: 10px;
+            width: 100%;
+          }
+          .form-response {
+            font-size: 1.4rem;
+          }
+          .input-container {
+            display: flex;
+            height: 39px;
+            width: 470px;
+          }
+          .input-container label {
             display: none;
           }
-          .submit input {
+          .input-container input {
     		    border: none;
     		    border-radius: 10rem 0 0 10rem;
     		    height: 100%;
             padding-left: 20px;
     		    width: 309px;
     	    }
-          .submit input::placeholder {
+          .input-container input::placeholder {
             color: #999999;
             font-size: 1.4rem;
             letter-spacing: 0.13rem;
           }
-          .submit input:focus {
+          .input-container input:focus {
             border: none;
           }
-    	    .submit button {
+    	    .input-container button {
     		    background-color: var(--dark-accent);
     		    border: none;
     		    border-radius: 0 10rem 10rem 0;
@@ -116,7 +158,7 @@ export default class Submit extends React.Component {
     		    height: 100%;
     		    width: 162px;
     	    }
-          .submit-text-checked {
+          .form-response, .submit-text-checked {
             -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
             -moz-animation: fadein 2s; /* Firefox < 16 */
             -ms-animation: fadein 2s; /* Internet Explorer */
@@ -130,8 +172,6 @@ export default class Submit extends React.Component {
           }
           @media (max-width: 1024px) {
             .submit {
-              width: 361px;
-              height: 34px;
               margin-bottom: 37px;
             }
             .submit-input {
@@ -141,6 +181,14 @@ export default class Submit extends React.Component {
             .submit-button {
               height: 100%;
               width: 124px;
+            }
+            .form-response-container {
+              height: 27px;
+            }
+            .input-container {
+              margin: 0 auto;
+              height: 34px;
+              width: 361px;
             }
           }
           @media (max-width: 375px) {
@@ -156,10 +204,24 @@ export default class Submit extends React.Component {
             .submit input::placeholder {
               font-size: 1rem;
             }
+            .form-response {
+              font-size: 1.2rem;
+            }
+            .input-container {
+              width: 100%;
+            }
+          }
+          @media (max-width: 370px) {
+            .form-response-container {
+              height: 40px;
+            }
           }
           @media (max-width: 320px) {
             .submit input::placeholder {
               font-size: 0.9rem;
+            }
+            .form-response {
+              font-size: 1.0rem;
             }
           }
   	`}</style>

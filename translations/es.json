@@ -6,7 +6,11 @@
       "subtitle": "Imaginamos, diseñamos e implementamos innovaciones en el sistema político para abrir los procesos de decisión y redistribuir el poder.",
       "callToAction": "Enviar",
       "placeholder": "¡Ingresá tu e-mail para recibir novedades!",
-      "mobilePlaceholder": "Recibí novedades en tu e-mail"
+      "mobilePlaceholder": "Recibí novedades en tu e-mail",
+      "mailSuscribed": "Te enviamos un mail a tu dirección para confirmar la subscripción.",
+      "invalidMail": "El mail ingresado es inválido",
+      "isInList": "El mail ingresado ya se encuentra en la lista",
+      "internalError": "Ocurrió un error. Por favor, intentalo de nuevo más tarde."
     },
     "aboutUs": {
       "title": "Sobre nosotros",

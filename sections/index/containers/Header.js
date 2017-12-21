@@ -28,7 +28,7 @@ const Header = ( {modal, content, hideModal} ) => (
     		color: var(--white);
         line-height: 1.5;
         letter-spacing: 0.08rem;
-        margin: 24px 0 80px;
+        margin: 24px 0 53px;
         max-width: 598px;
     	}
       @media (max-width: 1024px) {
@@ -44,7 +44,7 @@ const Header = ( {modal, content, hideModal} ) => (
           font-size: 2.0rem;
           letter-spacing: 0.07rem;
           line-height: 3.6rem;
-          margin: 25px 0px 33px;
+          margin: 25px 0px 6px;
         }
       }
   	`}</style>

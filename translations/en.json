@@ -5,8 +5,12 @@
       "title": "Democracia en Red",
       "subtitle": "We imagine, design and implement  innovations in the political system, to open decision processes, to redistribute power.",
       "callToAction": "Submit",
-      "placeholder": "¡Ingresá tu e-mail para recibir novedades!",
-      "mobilePlaceholder": "Recibí novedades en tu e-mail"
+      "placeholder": "Sign up with your email for updates!",
+      "mobilePlaceholder": "Receive updates in your email.",
+      "mailSuscribed": "We have sent an email with a confirmation link to your email address",
+      "invalidMail": "The email address is in an invalid format.",
+      "isInList": "This email is already subscribed.",
+      "internalError": "There was an error, please try again later."
     },
     "aboutUs": {
       "title": "About us",
@@ -345,6 +349,6 @@
     ]
   },
   "footer": {
-   "copy": "De Buenos Aires para el mundo <3"
+   "copy": "From Buenos Aires to the world <3"
   }
 }
