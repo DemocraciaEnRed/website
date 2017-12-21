@@ -1,23 +1,47 @@
 import React, { Component } from 'react'
 import fetch from 'isomorphic-unfetch'
+import { t } from '../../../polyglot-modules/polyglot.js'
+import CheckedButton from '../../../components/CheckedButton'
 
 export default class JobForm extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      message: 'Cargar archivo'
+      message: 'Cargar archivo',
+      disabled: false,
+      error: false,
+      success: false
     }
     this.handleSubmit = this.handleSubmit.bind(this)
   }
 
   handleSubmit = (e) => {
     e.preventDefault()
+    this.setState({disabled: true})
     const form = new FormData(e.target)
     fetch('https://der-api.now.sh/trabajo',{
       method: 'POST',
       body: form
     })
-    .then(r => console.log(r.status))
+    .then(r => {
+      if (r.status === 200){
+        this.setState({
+          success: true
+        })
+        setTimeout(() => this.setState({
+          disabled: false,
+          success: false
+        }), 4000)
+      } else {
+        this.setState({
+          error: true
+        })
+        setTimeout(() => this.setState({
+          disabled: false,
+          error: false
+        }), 4000)
+      }
+    })
   }
 
   render () {
@@ -29,7 +53,7 @@ export default class JobForm extends Component {
             </div>
             <div className='job-input-container'>
               <label htmlFor='id' className='hidden-field'>
-                <input type='text' name='id' defaultValue={this.props.id} />
+                <input type='hidden' name='id' value={this.props.id} />
               </label>
               <label htmlFor='name' className='required-field'>
                 <span>Nombre y apellido</span>
@@ -70,10 +94,18 @@ export default class JobForm extends Component {
             </div>
           </div>
           <div className='btn-container'>
-            <button type='submit' className='btn'>
-              <span className='action-text'>
-                Aplicar ahora
-              </span>
+            {this.state.error &&
+              <span className='regular-text'>{t('index.header.internalError')}</span>
+            }
+            <button type='submit' className='btn' disabled={this.state.disabled}>
+              {!this.state.success &&
+                <span className='action-text'>
+                  Aplicar ahora
+                </span>
+              }
+              {this.state.success &&
+                <CheckedButton />
+              }
             </button>
           </div>
         <style jsx>{`
@@ -172,9 +204,17 @@ export default class JobForm extends Component {
             display: none;
           }
           .btn-container {
+            align-items: center;
             display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
             justify-content: center;
             margin-top: 26px;
+          }
+          .regular-text {
+            color: var(--dark-accent);
+            margin-bottom: 10px;
+            text-align: center;
           }
           @media (max-width: 1024px) {
             form {

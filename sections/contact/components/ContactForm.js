@@ -3,13 +3,15 @@ import ContactButton from './ContactButton'
 
 const submitForm = (e) => {
   e.preventDefault()
+  console.log(e.target)
   const form = new FormData(e.target)
+
   fetch('https://der-api.now.sh/contacto',{
       method: 'POST',
       headers: {
         'content-type': 'application/json'
       },
-      body: JSON.stringify(form)
+      body: {}
     })
     .then(r => console.log(r.status))
 }
