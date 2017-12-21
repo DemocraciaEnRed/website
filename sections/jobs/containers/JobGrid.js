@@ -55,6 +55,12 @@ const JobGrid = () => (
         margin-top: 83px;
         width: 100%;
       }
+      @media screen and (min-width: 2000px){
+        .jobs-section {
+          padding-left: 300px;
+          padding-right: 300px;
+        }
+      }
       @media (max-width: 1024px) {
         .jobs-section {
           padding: 24px 24px 48px;

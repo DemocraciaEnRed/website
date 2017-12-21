@@ -5,9 +5,10 @@ const ContactTitle = () => (
     <p className='regular-text'>Aquí podés hacerlo.</p>
     <style jsx>{`
       .contact-title-container {
+        align-items: center;
         display: flex;
+        flex-direction: column;
         flex-wrap: wrap;
-        justify-content: center;
       }
       .section-title {
         font-size: 3.6rem;

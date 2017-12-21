@@ -7,7 +7,16 @@ const ContactWrapper = () => (
     <ContactForm />
     <style jsx>{`
       .contact-wrapper {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap: 
         padding: 83px 350px 91px;
+      }
+      @media (min-width: 2000px) {
+        .contact-wrapper {
+          padding: 83px 350px 91px;
+        }
       }
       @media (max-width: 1024px) {
         .contact-wrapper {

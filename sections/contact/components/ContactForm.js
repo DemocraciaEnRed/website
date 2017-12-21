@@ -45,8 +45,9 @@ const ContactForm = () => (
     </div>
     <style jsx>{`
       form {
-        width: 100%;
         margin-top: 48px;
+        max-width: 718px;
+        width: 100%;
       }
       .input-wrapper {
         display: flex;
@@ -67,6 +68,7 @@ const ContactForm = () => (
       input {
         border-radius: 10px;
         border: solid 1px #979797;
+        max-width: 718px;
         padding: 10px;
         height: 43px;
         width: 100%;
@@ -76,6 +78,7 @@ const ContactForm = () => (
         border: solid 1px #979797;
         height: 150px;
         margin-bottom: 48px;
+        max-width: 718px;
         padding: 10px;
         width: 100%;
       }

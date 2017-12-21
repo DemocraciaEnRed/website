@@ -24,6 +24,9 @@ const AboutUs = () => (
         margin-bottom: 77px;
         text-transform: uppercase;
       }
+      .about-us-section div p{
+        max-width: 1014px;
+      }
       .about-us-section p {
         font-size: 2rem;
         letter-spacing: 0.13rem;
@@ -31,6 +34,11 @@ const AboutUs = () => (
       }
       .about-us-section p:first-child {
         margin-bottom: 20px;
+      }
+      @media (min-width: 1747px) {
+        .about-us-section {
+          flex-direction: column;
+        }
       }
       @media (max-width: 1024px) {
         .section-title {
