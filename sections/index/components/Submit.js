@@ -73,7 +73,7 @@ export default class Submit extends React.Component {
       response: false,
       checked: false,
       disabled: false
-    }), 5000)
+    }), 4000)
   }
 
   succesfulSubmit = () => {
@@ -86,7 +86,7 @@ export default class Submit extends React.Component {
       response: false,
       checked: false,
       disabled: false
-    }), 5000)
+    }), 4000)
   }
 
   render () {
@@ -153,6 +153,7 @@ export default class Submit extends React.Component {
     		    border: none;
     		    border-radius: 0 10rem 10rem 0;
   			    color: var(--white);
+            cursor: pointer;
             display: flex;
             justify-content: center;
     		    height: 100%;
@@ -165,7 +166,6 @@ export default class Submit extends React.Component {
             -o-animation: fadein 2s; /* Opera < 12.1 */
             animation: fadein 0.5s;
           }
-
           @keyframes fadein {
             from { opacity: 0; }
             to   { opacity: 1; }
