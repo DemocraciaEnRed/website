@@ -7,6 +7,10 @@ export default class JobForm extends Component {
   constructor () {
     super()
     this.state = {
+      name: '',
+      email: '',
+      reference: '',
+      comments: '',
       disabled: false,
       error: false,
       success: false
@@ -14,15 +18,24 @@ export default class JobForm extends Component {
     this.handleSubmit = this.handleSubmit.bind(this)
   }
 
+  handleChange = (e) => {
+    this.setState({[e.target.name]: e.target.value})
+  }
+
   handleSubmit = (e) => {
     e.preventDefault()
-    const form = new FormData(e.target)
+    const form = {
+      name: this.state.name,
+      email: this.state.email,
+      reference: this.state.reference,
+      comments: this.state.comments
+    }
     fetch('https://der-api.now.sh/contacto',{
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json'
+        "Content-Type": "application/json"
       },
-      body: JSON.stringify({"name": "Flor", "email": "florencia@democracyos.io"})
+      body: JSON.stringify(form)
     })
     .then(r => {
       if (r.status === 200){
@@ -52,25 +65,25 @@ export default class JobForm extends Component {
           <label htmlFor='name' className='required-field'>
             <span>{t('contact.form.name')}</span>
           </label>
-          <input type='text' name='name' required />
+          <input type='text' name='name' onChange={this.handleChange.bind(this)} required />
         </div>
         <div className='input-wrapper'> 
           <label htmlFor='email' className='required-field'>
             <span>{t('contact.form.email')}</span>
           </label>
-          <input type='email' name='email' required />
+          <input type='email' name='email' onChange={this.handleChange.bind(this)} required />
         </div>
         <div className='input-wrapper'>
           <label htmlFor='reference'>
             <span>{t('contact.form.reference')}</span>
           </label>
-          <input type='text' name='reference' />  
+          <input type='text' name='reference' onChange={this.handleChange.bind(this)} />  
         </div>
         <div className='input-wrapper'>
           <label htmlFor='comments'>
             <span>{t('contact.form.message')}</span>
           </label>
-          <textarea name='comments' />
+          <textarea name='comments' onChange={this.handleChange.bind(this)} />
         </div>
         <div className='btn-container'>
           <div className='message-container'>
