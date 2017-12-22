@@ -1,8 +1,10 @@
+import { t } from '../../../polyglot-modules/polyglot.js'
+
 const ContactTitle = () => (
   <div className='contact-title-container'>
-    <h2 className='section-title'>Contactate con nosotros</h2>
-    <p className='regular-text'>Tenés dudas, recomendaciones, querés colaborar o solamente saludarnos?</p>
-    <p className='regular-text'>Aquí podés hacerlo.</p>
+    <h2 className='section-title'>{t('contact.contactUs')}</h2>
+    <p className='regular-text'>{t('contact.copy.0')}</p>
+    <p className='regular-text'>{t('contact.copy.1')}</p>
     <style jsx>{`
       .contact-title-container {
         align-items: center;

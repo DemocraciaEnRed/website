@@ -43,7 +43,7 @@ export default class extends Component {
           changeLang={this.changeLang}
           currentLang={this.state.currentLang} >
           <Header 
-            title='CONTACTO'
+            title={t('contact.title')}
             bg={'../static/assets/header/headerAbout.jpg'} />
             <ContactWrapper />
         </Layout>

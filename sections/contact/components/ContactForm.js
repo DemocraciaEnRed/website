@@ -19,16 +19,16 @@ export default class JobForm extends Component {
     const form = new FormData(e.target)
     fetch('https://der-api.now.sh/contacto',{
       method: 'POST',
-      header: {
+      headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify(form)
+      body: JSON.stringify({"name": "Flor", "email": "florencia@democracyos.io"})
     })
     .then(r => {
       if (r.status === 200){
         this.setState({
           success: true
-        }, () => console.log(this.state))
+        })
         setTimeout(() => this.setState({
           disabled: false,
           success: false
@@ -50,25 +50,25 @@ export default class JobForm extends Component {
       <form onSubmit={this.handleSubmit}>
         <div className='input-wrapper'>
           <label htmlFor='name' className='required-field'>
-            <span>Nombre y apellido</span>
+            <span>{t('contact.form.name')}</span>
           </label>
           <input type='text' name='name' required />
         </div>
         <div className='input-wrapper'> 
           <label htmlFor='email' className='required-field'>
-            <span>Email</span>
+            <span>{t('contact.form.email')}</span>
           </label>
           <input type='email' name='email' required />
-        </    div>
+        </div>
         <div className='input-wrapper'>
           <label htmlFor='reference'>
-            <span>¿Cómo nos conociste?</span>
+            <span>{t('contact.form.reference')}</span>
           </label>
           <input type='text' name='reference' />  
         </div>
         <div className='input-wrapper'>
           <label htmlFor='comments'>
-            <span>Acá podés dejarnos tu mensaje!</span>
+            <span>{t('contact.form.message')}</span>
           </label>
           <textarea name='comments' />
         </div>
@@ -83,7 +83,7 @@ export default class JobForm extends Component {
               <CheckedButton />
             :
               <span className='action-text'>
-                Enviar
+                {t('contact.callToAction')}
               </span>
             }
           </button>

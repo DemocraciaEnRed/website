@@ -306,6 +306,21 @@
       "href": "http://clip.lat/"
     }
   },
+  "contact": {
+    "title": "CONTACT",
+    "contactUs": "Contact us",
+    "copy": [
+      "Do you have questions, recommendations, want to collaborate or just say Hi?",
+      "You can do it here."
+    ], 
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "reference": "How did you hear about us?",
+      "message": "You can leave us your message here!"
+    },
+    "callToAction": "Submit"
+  },
   "nav": {
     "primaryLinks": [
       {
