@@ -12,11 +12,13 @@ const Clip = () => (
       })}
     </div>
     <div className='btn-container'>
-      <button className='btn'>
-        <span className='action-text'>
-          {t('aboutUs.clip.callToAction')}
-        </span>
-      </button>
+      <a href={t('aboutUs.clip.href')} target='_blank' rol='external'>
+        <button className='btn'>
+          <span className='action-text'>
+            {t('aboutUs.clip.callToAction')}
+          </span>
+        </button>
+      </a>
     </div>
     <style jsx>{`
       .clip-container {
