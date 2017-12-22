@@ -24,11 +24,12 @@ class WhoWeAre extends Component {
 
   componentDidUpdate(){
     if (this.state.mobile) {
-      const wrapAround= window.innerWidth >= 768 ? true : false
+      const wrapAround= window.innerWidth >= 980 ? true : false
       const options = {
         cellCelector: '.profile-card',
         cellAlign: 'center',
         pageDots: false,
+        wrapAround: wrapAround
       }
       this.flickity = new Flickity(this.refs.carousel, options)
     }

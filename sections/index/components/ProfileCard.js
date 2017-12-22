@@ -141,6 +141,16 @@ const ProfileCard = ( {name, bio, handle, img} ) => (
         pointer-events: auto;
       }
     }
+    @media screen and (max-width: 910px) and (min-width: 740px) {
+      .profile-card {
+        margin: 0 220px;
+      }
+    }
+    @media screen and (max-width: 739px) {
+      .profile-card {
+        margin: 0 45px;
+      }
+    }
     @media screen and (max-width: 375px) {
       .profile-card {
         height: 230px;
