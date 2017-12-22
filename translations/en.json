@@ -321,6 +321,32 @@
     },
     "callToAction": "Submit"
   },
+  "jobs": {
+    "title": "JOBS",
+    "workWithUs": "Work with us",
+    "copy": "We are looking for people to join our team",
+    "callToAction": "Apply",
+    "closedSearch": {
+      "text": [
+        "We currently have no open positions.",
+        "But you can contact us "
+      ],
+      "link": "here."
+    },
+    "applyNow": "Apply now",
+    "form": {
+      "personalInfo": "Personal info",
+      "name": "Name",
+      "email": "E-mail",
+      "phone": "Phone",
+      "loadCv": "Upload your CV",
+      "cv": "Upload file",
+      "fileSize": "This is an optional field. Max 5 mb.",
+      "comments": "Comments & questions",
+      "commentsCopy": "Is there anything else we should know about you?",
+      "optionalField": "This is an optional field."
+    }
+  },
   "nav": {
     "primaryLinks": [
       {

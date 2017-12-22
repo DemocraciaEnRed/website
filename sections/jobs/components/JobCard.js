@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { t } from '../../../polyglot-modules/polyglot.js'
 
 const JobCard = ( props ) => (
   <div className='job-card'>
@@ -13,7 +14,7 @@ const JobCard = ( props ) => (
       <Link href={props.url}>
         <button className='btn job-card-btn'>
           <span className='action-text job-card-action-text'>
-            Aplicar
+            {t('jobs.callToAction')}
           </span>
         </button>
       </Link>

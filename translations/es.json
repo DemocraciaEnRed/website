@@ -315,11 +315,37 @@
     ], 
     "form": {
       "name": "Nombre y apellido",
-      "email": "Email",
+      "email": "E-mail",
       "reference": "¿Cómo nos conociste?",
       "message": "¡Acá podés dejarnos tu mensaje!"
     },
     "callToAction": "Enviar"
+  },
+  "jobs": {
+    "title": "JOBS",
+    "workWithUs": "Trabaja con nosotros",
+    "copy": "¡Estamos buscando gente para sumar a nuestro equipo!",
+    "callToAction": "Aplicar",
+    "closedSearch": {
+      "text": [
+        "No tenemos ninguna búsqueda abierta en este momento.",
+        "Pero podés contactarnos "
+      ],
+      "link": "por aquí."
+    },
+    "applyNow": "Aplicar ahora",
+    "form": {
+      "personalInfo": "Datos personales",
+      "name": "Nombre y apellido",
+      "email": "E-mail",
+      "phone": "Teléfono",
+      "loadCv": "Cargá tu CV",
+      "cv": "Cargar archivo",
+      "fileSize": "Este campo es opcional. Máximo 5 mb.",
+      "comments": "Comentarios o consultas",
+      "commentsCopy": "¿Algo más que nos quieras decir?",
+      "optionalField": "Este campo es opcional."
+    }
   },
   "nav": {
     "primaryLinks": [
@@ -359,7 +385,7 @@
       },
       {
         "href": "/jobs",
-        "title": "Trabajos"
+        "title": "Jobs"
       }
     ]
   },

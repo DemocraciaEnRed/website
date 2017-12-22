@@ -7,7 +7,7 @@ export default class JobForm extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      message: 'Cargar archivo',
+      message: 'jobs.form.cv',
       disabled: false,
       error: false,
       success: false
@@ -49,48 +49,48 @@ export default class JobForm extends Component {
         <form onSubmit={this.handleSubmit}>
           <div className='job-section'>
             <div className='job-title'>
-              <h5>Datos Personales</h5>
+              <h5>{t('jobs.form.personalInfo')}</h5>
             </div>
             <div className='job-input-container'>
               <label htmlFor='id' className='hidden-field'>
                 <input type='hidden' name='id' value={this.props.id} />
               </label>
               <label htmlFor='name' className='required-field'>
-                <span>Nombre y apellido</span>
+                <span>{t('jobs.form.name')}</span>
               </label>
               <input type='text' name='name' required />
               <label htmlFor='email' className='required-field'>
-                <span>Email</span>
+                <span>{t('jobs.form.email')}</span>
               </label>
               <input type='email' name='email' required />
               <label htmlFor='phone' className='required-field'>
-                <span>Teléfono</span>
+                <span>{t('jobs.form.phone')}</span>
               </label>
               <input type='number' name='phone' required />
             </div>
           </div>
           <div className='job-section'>
             <div className='job-title'>
-              <h5>Carga tu CV</h5>
+              <h5>{t('jobs.form.loadCv')}</h5>
             </div>
             <div className='job-input-container'>
               <label className='file-label'>
-                <span className='file-span'>{this.state.message}</span>
+                <span className='file-span'>{t(this.state.message)}</span>
                 <input type='file' name='cv' ref='file' onChange={() => this.setState({message: this.refs.file.value})}/>
               </label>
-              <span className='optional-field'>Este campo es opcional. Máximo 5 mb.</span>
+              <span className='optional-field'>{t('jobs.form.fileSize')}</span>
             </div>
           </div>
           <div className='job-section'>
             <div className='job-title'>
-              <h5>Comentarios o consultas</h5>
+              <h5>{t('jobs.form.comments')}</h5>
             </div>
             <div className='job-input-container'>
               <label htmlFor='comments'>
-                <span>¿Algo más que nos quieras decir?</span>
+                <span>{t('jobs.form.commentsCopy')}</span>
               </label>
               <textarea name='comments' />
-              <span className='optional-field'>Este campo es opcional</span>
+              <span className='optional-field'>{t('jobs.form.optionalField')}</span>
             </div>
           </div>
           <div className='btn-container'>
@@ -100,7 +100,7 @@ export default class JobForm extends Component {
             <button type='submit' className='btn' disabled={this.state.disabled}>
               {!this.state.success &&
                 <span className='action-text'>
-                  Aplicar ahora
+                  {t('jobs.applyNow')}
                 </span>
               }
               {this.state.success &&

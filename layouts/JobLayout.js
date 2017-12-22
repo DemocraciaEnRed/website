@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import { t } from '../polyglot-modules/polyglot'
 import Navbar from '../containers/Navbar'
 import Header from '../containers/Header'
 import Breadcrumbs from '../sections/jobs/components/Breadcrumbs'
@@ -26,7 +27,7 @@ const JobLayout = (props) => (
         <Link prefetch href= {{ pathname: '/apply',  query: { id: props.id} }}>
           <button className='btn'>
             <span className='action-text'>
-              Aplicar ahora
+              {t('jobs.applyNow')}
             </span>
           </button>
         </Link>

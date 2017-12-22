@@ -1,3 +1,4 @@
+import { t } from '../../../polyglot-modules/polyglot.js'
 import JobCard from '../components/JobCard'
 import ClosedSearch from '../components/ClosedSearch'
 import jobs from '../../../jobs/jobs.json'
@@ -5,8 +6,8 @@ import jobs from '../../../jobs/jobs.json'
 const JobGrid = () => (
   <section className='jobs-section'>
     <div className='jobs-header'>
-      <h2 className='section-title'>Trabajá con nosotros</h2>
-      <p className='regular-text'>¡Estamos buscando gente para sumar a nuestro equipo!</p>
+      <h2 className='section-title'>{t('jobs.workWithUs')}</h2>
+      <p className='regular-text'>{t('jobs.copy')}</p>
     </div>
     <div className='jobs-container'>
       { //if json is empty, render ClosedSearch. Otherwise render JobCard

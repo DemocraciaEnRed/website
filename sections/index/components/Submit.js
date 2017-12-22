@@ -23,8 +23,8 @@ export default class Submit extends React.Component {
 
   componentDidMount () {
     window.innerWidth < 1024 
-    ? this.setState({placeholder: t('index.header.mobilePlaceholder')})
-    : this.setState({placeholder: t('index.header.placeholder')})
+    ? this.setState({placeholder: ('index.header.mobilePlaceholder')})
+    : this.setState({placeholder: ('index.header.placeholder')})
   }
 
   handleChange = (e) => {
@@ -99,7 +99,7 @@ export default class Submit extends React.Component {
         </div>
         <div className='input-container'>
           <label htmlFor='email'>E-mail</label>
-          <input type='email' placeholder= {this.state.placeholder} required value={this.state.value} onChange={this.handleChange} />
+          <input type='email' placeholder={this.state.placeholder === '' ? '' : t(this.state.placeholder)} required value={this.state.value} onChange={this.handleChange} />
           <button type='submit' disabled={this.state.disabled} >
             {this.state.checked ?
               <CheckedButton />
