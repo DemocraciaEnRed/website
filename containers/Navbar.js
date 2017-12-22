@@ -35,7 +35,9 @@ class Navbar extends Component {
     return (
       <nav role='banner'>
         <Link href='/'>
-          <a className='logo' />
+          <a>
+            <img src='/static/assets/logo-der.svg' className='logo' />
+          </a>
         </Link>
         <LangBar 
           changeLang={this.props.changeLang}
@@ -61,16 +63,14 @@ class Navbar extends Component {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            align-content: center;
             background-color: var(--dark-accent);
             box-shadow: inset 0 -1px 0 0 #555555;
             z-index: 10;
           }
           .logo {
-            width: 106px;
-            height: 30px;
-            background-image: url('/static/assets/logo-der.svg');
-            background-size: contain;
-            background-repeat: no-repeat;
+            width: 115px;
+            height: 45px;
             flex: none;
           }
           .menu-button {
