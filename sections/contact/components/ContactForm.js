@@ -131,6 +131,12 @@ export default class JobForm extends Component {
             height: 43px;
             width: 100%;
           }
+          input:required {
+            box-shadow: none;
+          }
+          input:focus {
+            box-shadow: 0 0 1.5px 1px red;
+          }
           textarea {
             border-radius: 10px;
             border: solid 1px #979797;

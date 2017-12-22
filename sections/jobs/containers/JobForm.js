@@ -159,6 +159,12 @@ export default class JobForm extends Component {
             padding: 10px;
             width: 100%;
           }
+          input:required {
+            box-shadow: none;
+          }
+          input:focus {
+            box-shadow: 0 0 1.5px 1px red;
+          }
           input:not(last-child) {
             margin-bottom: 22px;
           }
