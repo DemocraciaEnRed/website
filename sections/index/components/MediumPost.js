@@ -94,6 +94,11 @@ const MediumPost = (props) => (
         height: 15px;
       }
     }
+    @media (max-width: 1024px) and (min-width: 911px) {
+      .medium-post {
+        margin-right: 40px;
+      }
+    }
   `}</style>
   </a>
 )
