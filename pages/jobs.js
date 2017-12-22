@@ -42,7 +42,7 @@ export default class extends Component {
           <Header 
             title={'JOBS'}
             bg={'../static/assets/header/headerAbout.jpg'}/>
-          <JobGrid />
+          <JobGrid active={true} />
         </Layout>
       </div>
     )

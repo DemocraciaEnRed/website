@@ -3,7 +3,7 @@ import JobCard from '../components/JobCard'
 import ClosedSearch from '../components/ClosedSearch'
 import jobs from '../../../jobs/jobs.json'
 
-const JobGrid = () => (
+const JobGrid = ( {active} ) => (
   <section className='jobs-section'>
     <div className='jobs-header'>
       <h2 className='section-title'>{t('jobs.workWithUs')}</h2>
@@ -11,7 +11,7 @@ const JobGrid = () => (
     </div>
     <div className='jobs-container'>
       { //if json is empty, render ClosedSearch. Otherwise render JobCard
-        jobs.length === 0 ? ( <ClosedSearch />) 
+        !active ? ( <ClosedSearch />) 
         : jobs.map((j, i)=> (
            <JobCard 
             key={i}
@@ -52,7 +52,7 @@ const JobGrid = () => (
         align-items: space-between;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-around;
         margin-top: 83px;
         width: 100%;
       }

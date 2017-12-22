@@ -1,9 +1,10 @@
+import Link from 'next/link'
 import { t } from '../../../polyglot-modules/polyglot.js'
 
 const ClosedSearch = () => (
   <div className='closed-search-container'>
     <p className='closed-search-text'>{t('jobs.closedSearch.text.0')}<br/>
-      {t('jobs.closedSearch.text.1')}<a className='closed-search-link'>{t('jobs.closedSearch.link')}</a></p>
+      {t('jobs.closedSearch.text.1')}<Link href='/contact'><a className='closed-search-link'>{t('jobs.closedSearch.link')}</a></Link></p>
   <style>{`
     .closed-search-container {
       display: flex;
