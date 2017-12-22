@@ -142,7 +142,7 @@ export default class Submit extends React.Component {
     		    width: 309px;
     	    }
           .input-container input::placeholder {
-            color: #999999;
+            color: var(--gray);
             font-size: 1.4rem;
             letter-spacing: 0.13rem;
           }
