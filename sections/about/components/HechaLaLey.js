@@ -2,7 +2,7 @@ import { t } from '../../../polyglot-modules/polyglot.js'
 
 const HechaLaLey = () => (
   <div className='hechalaley-container'>
-    <h2>{t('aboutUs.hechaLaLey.title')}</h2>
+    <img src='/static/assets/about/logohechalaley.png' alt='Hecha la ley' className='logo' />
     <p>{t('aboutUs.hechaLaLey.text')}</p>
     <div className='btn-container'>
       <a href={t('aboutUs.hechaLaLey.href')} target='_blank' rol='external'>
@@ -34,6 +34,10 @@ const HechaLaLey = () => (
       }
       .hechalaley-container .btn {
         margin-top: 42px;
+      }
+      .logo {
+        width: 295px;
+        height: 30px;
       }
       @media (min-width: 1441px) {
         .hechalaley-container {
