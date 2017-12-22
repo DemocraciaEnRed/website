@@ -150,6 +150,7 @@ export default class JobForm extends Component {
             flex-direction: column;
           }
           .message-container {
+            text-align: center;
             min-height: 22px;
             margin-bottom: 15px;
           }
