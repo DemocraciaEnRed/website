@@ -146,9 +146,6 @@ export default class Submit extends React.Component {
             font-size: 1.4rem;
             letter-spacing: 0.13rem;
           }
-          .input-container input:focus {
-            box-shadow: 0 0 1.5px 1px red;
-          }
     	    .input-container button {
     		    background-color: var(--dark-accent);
     		    border: none;
