@@ -1,6 +1,8 @@
 require('dotenv').config()
 
 const multer = require('multer')
+const express = require('express')
+const Router = express.Router()
 
 const {
   mandarConfirmacion,
@@ -16,10 +18,11 @@ const {
 
 const upload = multer({ limits: { fileSize: 5000000, files: 1 } }) // 1 file 5MB max
 
-module.exports = Router => {  
-  Router.get('/publicaciones', getPublicaciones)
-  Router.post('/validar-subscripcion', mandarConfirmacion)
-  Router.get('/subscripcion', agregarEmail)
-  Router.post('/contacto', mailContacto)
-  Router.post('/trabajo', upload.single('cv'), mailTrabajo, mailTrabajoError) 
-}
+
+Router.get('/publicaciones', getPublicaciones)
+Router.post('/validar-subscripcion', mandarConfirmacion)
+Router.get('/subscripcion', agregarEmail)
+Router.post('/contacto', mailContacto)
+Router.post('/trabajo', upload.single('cv'), mailTrabajo, mailTrabajoError) 
+
+module.exports = Router
