@@ -30,7 +30,7 @@ export default class JobForm extends Component {
       reference: this.state.reference,
       comments: this.state.comments
     }
-    fetch('https://der-api.now.sh/contacto',{
+    fetch('api/contacto',{
       method: 'POST',
       headers: {
         "Content-Type": "application/json"

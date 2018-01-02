@@ -35,7 +35,7 @@ export default class Submit extends React.Component {
     e.preventDefault()
     this.setState({disabled: true})
     const email = this.state.value
-    fetch('https://der-api.now.sh/validar-subscripcion', {
+    fetch('api/validar-subscripcion', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

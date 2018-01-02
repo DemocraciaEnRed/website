@@ -18,7 +18,7 @@ class Publications extends Component {
   componentDidMount () {
     Flickity = require('flickity')
     const lang = localStorage.getItem('lang')
-    const apiUrl = `https://der-api.now.sh/publicaciones?lang=${lang === null ? 'es' : lang}`
+    const apiUrl = `api/publicaciones?lang=${lang === null ? 'es' : lang}`
     fetch(apiUrl)
       .then( r => r.json() )
       .then( data => {

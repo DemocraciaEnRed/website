@@ -19,7 +19,7 @@ export default class JobForm extends Component {
     e.preventDefault()
     this.setState({disabled: true})
     const form = new FormData(e.target)
-    fetch('https://der-api.now.sh/trabajo',{
+    fetch('api/trabajo',{
       method: 'POST',
       body: form
     })
