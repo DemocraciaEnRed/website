@@ -64,7 +64,7 @@
         { 
           "title": "Collaborate",
           "subtitle": "How can I collaborate?",
-          "text": "Help us to reach more people. There are many ways to collaborate.",
+          "text": "Help us reach more people. There are many ways to collaborate.",
           "icon": "/static/assets/icons/collaborate.svg",
           "callToAction": "Drop us a line",
           "href": "/contact"
@@ -320,7 +320,7 @@
           "Workshop on “innovative political campaigns” for members of the Ativista Bank (bancadaativista.org), was held in Sao Paulo in August 2016, with 5 members of the Network (Agustín Frizzera, DeR, Arg, Rodrigo Etchecopar, RD, Chi, Caio Tendolini, UpDate, Br, Susana Ochoa and Alejandra Parra, WikiPolítica, Mx) as exhibitors."
         ]
       },
-      "callToAction": "More info",
+      "callToAction": "See More",
       "href": "http://redinnovacionpolitica.org/"
     },
     "clip": {
@@ -329,7 +329,7 @@
         "The CLIP Initiative aims to create conditions, institutional reforms and a different political culture, from the present and for the medium and long term, that  contribute to improve and transform democracy for an effective redistribution of power.",
         "As part of its Strategic Council, DeR is committed to the CLIP as it seeks to articulate experiences and lessons learned in the field of political innovation and accompany the actors that decide to participate in the electoral dispute or join a state public management."
       ],
-      "callToAction": "More info",
+      "callToAction": "See More",
       "href": "http://clip.lat/"
     }
   },
@@ -415,8 +415,5 @@
         "title": "Jobs"
       }
     ]
-  },
-  "footer": {
-   "copy": "From Buenos Aires to the world <3"
   }
 }

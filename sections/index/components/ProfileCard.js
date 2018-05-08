@@ -106,7 +106,14 @@ const ProfileCard = ( {name, bio, handle, img} ) => (
         margin-right: 10px;
       }
     }
-    
+    @media screen and (min-width: 1200px) {
+      .profile-card:nth-child(13) {
+        margin-left: 25%
+      }
+      .profile-card:nth-child(14) {
+        margin-right: 25%
+      }
+    }
     @media screen and (min-width: 1024px) {
       .profile-card:hover .profile-card-container {
         heigth:260px;
