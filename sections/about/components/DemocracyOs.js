@@ -2,6 +2,7 @@ import { t } from '../../../polyglot-modules/polyglot.js'
 import Github from '../components/Github'
 
 const data = [0, 1]
+const data2 = [0]
 const items = [0, 1, 2, 3]
 
 const DemocracyOs = () => (
@@ -17,6 +18,11 @@ const DemocracyOs = () => (
         return <li key={i}>{t(`aboutUs.democracyOs.list.${i}`)}</li>
       })}
     </ul>
+    <div className='democracy-os-text'>
+      {data2.map((i)=> {
+        return <p key={i}>{t(`aboutUs.democracyOs.text-2.${i}`)}</p>
+      })}
+    </div>
     <div className='buttons-container'>
       <a href={t('aboutUs.democracyOs.repourl')}  target='_blank' rel='external'>
         <button className='btn'>
@@ -54,13 +60,14 @@ const DemocracyOs = () => (
         list-style: disc;
         font-size: 2.0rem;
         letter-spacing: 0.13rem;
+        padding-bottom:3rem;
       }
       .buttons-container {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         margin-top: 45px;
-        width: 511px;
+        width: 700px;
       }
       .btn {
         margin-top: -3px;

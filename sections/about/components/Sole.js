@@ -1,6 +1,6 @@
 import { t } from '../../../polyglot-modules/polyglot.js'
 
-const text = [0, 1, 2, 3]
+const text = [0, 1]
 const items = [0, 1, 2, 3, 4]
 
 const Sole = () => (
@@ -11,18 +11,43 @@ const Sole = () => (
         return <p key={i}>{t(`aboutUs.sole.text.${i}`)}</p>
       })}
     </div>
-    <ul>
-      {items.map((i)=> {
-        return <li key={i}>{t(`aboutUs.sole.items.${i}`)}</li>
-      })}
-    </ul>
+
+    <div className='buttons-container'>
     <a href={t('aboutUs.sole.href')} target='_blank' rel='external'>
-      <button className='btn'>
-        <span className='action-text'>
-          {t('aboutUs.sole.callToAction')}
-        </span>
-      </button>
-    </a>
+    <button className='btn'>
+      <span className='action-text'>
+        {t('aboutUs.sole.callToAction')}
+      </span>
+    </button>
+  </a>
+  <a href={t('aboutUs.sole.href2')} target='_blank' rel='external'>
+  <button className='btn'>
+    <span className='action-text'>
+      {t('aboutUs.sole.callToAction2')}
+    </span>
+  </button>
+</a>
+<a href={t('aboutUs.sole.href3')} target='_blank' rel='external'>
+    <button className='btn'>
+      <span className='action-text'>
+        {t('aboutUs.sole.callToAction3')}
+      </span>
+    </button>
+  </a>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+   
     <style jsx>{`
       .sole-container {
         display: flex;
@@ -39,6 +64,9 @@ const Sole = () => (
       .sole-container p:first-child{
         margin-top: 43px;
       }
+      .sole-container p:last-child{
+        margin-bottom: 43px;
+      }
       .sole-container ul {
         font-size: 2rem;
         letter-spacing: 0.13rem;
@@ -47,6 +75,13 @@ const Sole = () => (
       }
       .sole-container .btn {
         margin-top: -3px;
+      }
+      .buttons-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 45px;
+        width: 70%;
       }
       @media (min-width: 1441px) {
         .sole-container {
@@ -66,6 +101,7 @@ const Sole = () => (
           margin-right: 0;
         }
       }
+
     `}</style>
   </div>
 )

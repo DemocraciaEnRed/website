@@ -5,7 +5,7 @@ const data = [0, 1]
 
 const Clip = () => (
   <div className='clip-container'>
-    <h2 className='clip-title'>{t('aboutUs.clip.title')}</h2>
+    <img src={t('aboutUs.clip.img')} alt='conexiones latinoamericanas de innovación política'/>
     <div className='clip-text'>
       {data.map((i)=> {
         return <p key={i}>{t(`aboutUs.clip.text.${i}`)}</p>
@@ -41,6 +41,10 @@ const Clip = () => (
         font-size: 2rem;
         letter-spacing: 0.13rem;
         text-align: center;
+      }
+      img {
+        max-width: 332px;
+        max-height: 120px;
       }
       .clip-text p:last-child {
         margin-top: 30px;

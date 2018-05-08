@@ -19,9 +19,16 @@ const ProfileCard = ( {name, bio, handle, img} ) => (
       justify-content: center;
       position: relative;
       width: 250px;
+      margin-bottom:30px;
     }
     .profile-card-container {
       display: none;
+      
+    }
+
+    .profile-card:hover .profile-card-container{
+      flex-direction:column;
+      align-items:center;
     }
     .profile-title {
       font-size: 2.8rem;
@@ -99,16 +106,12 @@ const ProfileCard = ( {name, bio, handle, img} ) => (
         margin-right: 10px;
       }
     }
-    @media screen and (min-width: 1200px) {
-      .profile-card:nth-child(9) {
-        margin-left: 25%
-      }
-      .profile-card:nth-child(10) {
-        margin-right: 25%
-      }
-    }
+    
     @media screen and (min-width: 1024px) {
       .profile-card:hover .profile-card-container {
+        heigth:260px;
+        width:260px;
+        overflow:hidden;
         animation: fadeInFromNone 0.5s ease;
         background-color: rgba(0,0,0,0.8); 
         border-radius: 100%;
@@ -126,6 +129,9 @@ const ProfileCard = ( {name, bio, handle, img} ) => (
         margin: 0 45px;
       }
       .profile-card:hover .profile-card-container {
+        heigth:260px;
+        width:260px;
+        overflow:hidden;
         animation: fadeInFromNone 0.5s ease;
         background-color: rgba(0,0,0,0.8); 
         border-radius: 100%;

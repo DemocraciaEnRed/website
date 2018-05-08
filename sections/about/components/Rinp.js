@@ -11,14 +11,6 @@ const Rinp = () => (
         return <p key={i}>{t(`aboutUs.rinp.text.${i}`)}</p>
       })}
     </div>
-    <div className='rinp-list'>
-      <p>{t('aboutUs.rinp.list.title')}</p>
-      <ul>
-        {items.map((i)=> {
-          return <li key={i}>{t(`aboutUs.rinp.list.items.${i}`)}</li>
-        })}
-      </ul>
-    </div>
     <a href={t('aboutUs.rinp.href')} rel='external' target="_blank">
       <button className='btn'>
         <span className='action-text'>
@@ -44,6 +36,7 @@ const Rinp = () => (
       }
       .rinp-text p:last-child {
         margin-top: 38px;
+        margin-bottom:45px;
       }
       .rinp-list {
         margin: 38px 192px 42px;
