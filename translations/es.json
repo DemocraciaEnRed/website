@@ -147,85 +147,99 @@
         {
           "name": "Agustín",
           "bio": "Director",
-          "handle": "agustin",
+          "handle": "/static/assets/icons/Twitter.svg", 
+          "url": "https://twitter.com/agustinfrizzera",
           "img": "../static/assets/profiles/agustin.jpg"
         },
         {
           "name": "Esteban",
           "bio": "Vicepresidente",
-          "handle": "esteban",
+          "handle": "/static/assets/icons/Twitter.svg",
+          "url": "",
           "img": "../static/assets/profiles/esteban.jpg"
         },
         {
           "name": "Florencia",
           "bio": "Presidenta",
-          "handle": "florencia-presi",
+          "handle": "/static/assets/icons/Twitter.svg",
+          "url": "",
           "img": "../static/assets/profiles/florencia-presi.jpg"
         },
         {
           "name": "Francisco",
           "bio": "Producto",
-          "handle": "frn",
+          "handle": "/static/assets/icons/github.png",
+          "url": "https://www.github.com/franciclo",
           "img": "../static/assets/profiles/francisco.jpg"
         },
         {
           "name": "Guido",
           "bio": "CTO",
-          "handle": "guido",
+          "handle": "/static/assets/icons/Twitter.svg",
+          "url": "https://twitter.com/gvilarino",
           "img": "../static/assets/profiles/guido.jpg"
         },
         {
           "name": "Martín",
           "bio": "Educación",
-          "handle": "martin",
+          "handle": "/static/assets/icons/Twitter.svg",
+          "url": "",
           "img": "../static/assets/profiles/martin.jpg"
         },
         {
           "name": "Powa",
           "bio": "Cuentas",
-          "handle": "powa",
+          "handle": "/static/assets/icons/linkedin.png",
+          "url": "https://www.linkedin.com/in/don-powa-59290473/",
           "img": "../static/assets/profiles/powa.jpg"
         },
         {
           "name": "Daniela",
           "bio": "Investigación",
-          "handle": "daniela",
+          "handle": "/static/assets/icons/linkedin.png",
+          "url": "https://ar.linkedin.com/in/daniela-mazzoni-222861115",
           "img": "../static/assets/profiles/daniela.jpg"
         },
         {
           "name": "Florencia",
           "bio": "Desarrollo",
-          "handle": "florencia-dev",
+          "handle": "/static/assets/icons/github.png",
+          "url": "https://www.github.com/florlafuente",
           "img": "../static/assets/profiles/florencia-dev.jpg"
         },
         {
           "name": "Franco",
           "bio": "Investigación",
-          "handle": "franco",
+          "handle": "/static/assets/icons/mail.png",
+          "url": "mailto:franco@democracyos.io",
           "img": "../static/assets/profiles/franco.jpg"
         },
         {
           "name": "Laura",
           "bio": "Desarrollo",
-          "handle": "laura",
+          "handle": "/static/assets/icons/github.png",
+          "url": "https://www.github.com/luarar",
           "img": "../static/assets/profiles/laura.jpg"
         },
         {
           "name": "Matías",
           "bio": "Desarrollo",
-          "handle": "matias",
+          "handle": "/static/assets/icons/mail.png",
+          "url": "https://matiaslescano.com.ar",
           "img": "../static/assets/profiles/matias.jpg"
         },
         {
           "name": "Florencia",
           "bio": "Proyectos",
-          "handle": "florencia",
+          "handle": "/static/assets/icons/Twitter.svg",
+          "url": "https://twitter.com/pitucaffarone",
           "img": "../static/assets/profiles/florencia-dir.jpg"
         },
         {
           "name": "Guille",
           "bio": "Desarrollo",
-          "handle": "guille",
+          "handle": "/static/assets/icons/Twitter.svg",
+          "url": "https://twitter.com/guillermocroppi",
           "img": "../static/assets/profiles/guille.jpg"
         }
       ]

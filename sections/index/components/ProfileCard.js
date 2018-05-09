@@ -1,9 +1,10 @@
-const ProfileCard = ( {name, bio, handle, img} ) => (
+const ProfileCard = ( {name, bio, handle, img, url} ) => (
   <div className='profile-card'>
     <div className='profile-card-container'>
       <h3 className='profile-title'>{name}</h3>
       <p className='profile-bio'>{bio}</p>
-      <a href={`http://www.twitter.com/${handle}`}className='profile-handle'>{'@'+handle}</a>
+      <a href={`${url}`}className='profile-handle'><img className='profile-icon' src={`${handle}`}/> </a>
+   {   /*  <a href={`${url}`}className='profile-handle'>{ <img src={`${handle}`}/>}</a> */ }
     </div>
   <style jsx>{`
     .profile-card {
@@ -44,6 +45,9 @@ const ProfileCard = ( {name, bio, handle, img} ) => (
       font-size: 21.1px;
       font-weight: 300;
       color: #eaeaea;
+    }
+    .profile-icon {
+      padding-top:10px;
     }
     @-webkit-keyframes fadeInFromNone {
       0% {
