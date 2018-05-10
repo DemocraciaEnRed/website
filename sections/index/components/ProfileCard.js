@@ -3,8 +3,8 @@ const ProfileCard = ( {name, bio, handle, img, url} ) => (
     <div className='profile-card-container'>
       <h3 className='profile-title'>{name}</h3>
       <p className='profile-bio'>{bio}</p>
-      <a href={`${url}`}className='profile-handle'><img className='profile-icon' src={`${handle}`}/> </a>
-   {   /*  <a href={`${url}`}className='profile-handle'>{ <img src={`${handle}`}/>}</a> */ }
+   <a href={`${url}`}>  <div className={`${handle}`}></div>   </a>
+     
     </div>
   <style jsx>{`
     .profile-card {
@@ -24,9 +24,32 @@ const ProfileCard = ( {name, bio, handle, img, url} ) => (
     }
     .profile-card-container {
       display: none;
-      
+      ∫
     }
-
+    .ln{
+      height:30px;
+      width:30px;
+      background-image: url("/static/assets/icons/ln.svg");
+      margin-top:10px;
+    }
+    .mail{
+      height:30px;
+      width:35px;
+      background-image: url("/static/assets/icons/mail.svg");
+      margin-top:10px;
+    }
+    .github{
+      height:29px;
+      width:30px;
+      background-image: url("/static/assets/icons/github.svg");
+      margin-top:10px;
+    }
+    .tw{
+      height:30px;
+      width:35px;
+      background-image: url("/static/assets/icons/twitter.svg");
+      margin-top:10px;
+    }
     .profile-card:hover .profile-card-container{
       flex-direction:column;
       align-items:center;
@@ -36,11 +59,23 @@ const ProfileCard = ( {name, bio, handle, img, url} ) => (
       font-weight: 500;
       color: #eaeaea;
     }
-    .profile-bio {
-      font-size: 2.1rem;
+    .profile-bio  {
+      font-size: 2rem;
       font-weight: 300;
       color: #eaeaea;
+      text-align:center;
     }
+    
+    .profile-card:nth-child(8) .profile-bio,
+    .profile-card:nth-child(9) .profile-bio,
+    .profile-card:nth-child(10) .profile-bio {
+    font-size: 1.6rem;
+      
+    }
+    
+    
+    
+   
     .profile-handle {
       font-size: 21.1px;
       font-weight: 300;
@@ -48,6 +83,8 @@ const ProfileCard = ( {name, bio, handle, img, url} ) => (
     }
     .profile-icon {
       padding-top:10px;
+      max-height:10px;
+      max-width:10px;
     }
     @-webkit-keyframes fadeInFromNone {
       0% {

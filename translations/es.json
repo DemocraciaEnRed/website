@@ -106,7 +106,7 @@
       "links": [
         {
           "url": "https://www.opendemocracy.net/digitaliberties/marco-deseriis-guido-vilari-o/simplicity-openness-and-modifiability",
-          "logo": "/static/assets/media/opendemocracy.png",
+          "logo": "/static/assets/media/openDemocracy.png",
           "className": "opendemocracy"
         },
         {
@@ -121,7 +121,7 @@
         },
         {
           "url": "https://www.lacapital.com.ar/la-ciudad/javkin-queremos-escuchar-proponer-y-construir-juntos-n1431351.html",
-          "logo": "/static/assets/media/lacapital.png",
+          "logo": "/static/assets/media/laCapital.png",
           "className": "lacapital"
         },
         {
@@ -146,99 +146,100 @@
       "team": [
         {
           "name": "Agustín",
-          "bio": "Director",
-          "handle": "/static/assets/icons/Twitter.svg", 
+          "bio": "Director Ejecutivo",
+          "handle": "tw", 
           "url": "https://twitter.com/agustinfrizzera",
           "img": "../static/assets/profiles/agustin.jpg"
         },
         {
-          "name": "Esteban",
-          "bio": "Vicepresidente",
-          "handle": "/static/assets/icons/Twitter.svg",
-          "url": "",
-          "img": "../static/assets/profiles/esteban.jpg"
-        },
-        {
           "name": "Florencia",
           "bio": "Presidenta",
-          "handle": "/static/assets/icons/Twitter.svg",
+          "handle": "tw",
           "url": "",
           "img": "../static/assets/profiles/florencia-presi.jpg"
         },
         {
-          "name": "Francisco",
-          "bio": "Producto",
-          "handle": "/static/assets/icons/github.png",
-          "url": "https://www.github.com/franciclo",
-          "img": "../static/assets/profiles/francisco.jpg"
+          "name": "Esteban",
+          "bio": "Vicepresidente",
+          "handle": "tw",
+          "url": "",
+          "img": "../static/assets/profiles/esteban.jpg"
         },
         {
           "name": "Guido",
-          "bio": "CTO",
-          "handle": "/static/assets/icons/Twitter.svg",
+          "bio": "Consultor Software",
+          "handle": "tw",
           "url": "https://twitter.com/gvilarino",
           "img": "../static/assets/profiles/guido.jpg"
         },
         {
+          "name": "Matías",
+          "bio": "Consultor Software",
+          "handle": "mail",
+          "url": "https://matiaslescano.com.ar",
+          "img": "../static/assets/profiles/matias.jpg"
+        },
+        {
           "name": "Martín",
           "bio": "Educación",
-          "handle": "/static/assets/icons/Twitter.svg",
+          "handle": "tw",
           "url": "",
           "img": "../static/assets/profiles/martin.jpg"
         },
         {
           "name": "Powa",
           "bio": "Cuentas",
-          "handle": "/static/assets/icons/linkedin.png",
+          "handle": "ln",
           "url": "https://www.linkedin.com/in/don-powa-59290473/",
           "img": "../static/assets/profiles/powa.jpg"
         },
         {
-          "name": "Daniela",
-          "bio": "Investigación",
-          "handle": "/static/assets/icons/linkedin.png",
-          "url": "https://ar.linkedin.com/in/daniela-mazzoni-222861115",
-          "img": "../static/assets/profiles/daniela.jpg"
-        },
-        {
           "name": "Florencia",
-          "bio": "Desarrollo",
-          "handle": "/static/assets/icons/github.png",
-          "url": "https://www.github.com/florlafuente",
-          "img": "../static/assets/profiles/florencia-dev.jpg"
-        },
-        {
-          "name": "Franco",
-          "bio": "Investigación",
-          "handle": "/static/assets/icons/mail.png",
-          "url": "mailto:franco@democracyos.io",
-          "img": "../static/assets/profiles/franco.jpg"
-        },
-        {
-          "name": "Laura",
-          "bio": "Desarrollo",
-          "handle": "/static/assets/icons/github.png",
-          "url": "https://www.github.com/luarar",
-          "img": "../static/assets/profiles/laura.jpg"
-        },
-        {
-          "name": "Matías",
-          "bio": "Desarrollo",
-          "handle": "/static/assets/icons/mail.png",
-          "url": "https://matiaslescano.com.ar",
-          "img": "../static/assets/profiles/matias.jpg"
-        },
-        {
-          "name": "Florencia",
-          "bio": "Proyectos",
-          "handle": "/static/assets/icons/Twitter.svg",
+          "bio": "Coordinadora de Proyectos",
+          "handle": "tw",
           "url": "https://twitter.com/pitucaffarone",
           "img": "../static/assets/profiles/florencia-dir.jpg"
         },
         {
+          "name": "Daniela",
+          "bio": "Investigación de campo",
+          "handle": "ln",
+          "url": "https://ar.linkedin.com/in/daniela-mazzoni-222861115",
+          "img": "../static/assets/profiles/daniela.jpg"
+        },
+        {
+          "name": "Franco",
+          "bio": "Investigación de campo",
+          "handle": "mail",
+          "url": "mailto:franco@democracyos.io",
+          "img": "../static/assets/profiles/franco.jpg"
+        },
+        {
+          "name": "Francisco",
+          "bio": "Lider de Desarrollo",
+          "handle": "github",
+          "url": "https://www.github.com/franciclo",
+          "img": "../static/assets/profiles/francisco.jpg"
+        },
+        {
+          "name": "Florencia",
+          "bio": "Desarrollo",
+          "handle": "github",
+          "url": "https://www.github.com/florlafuente",
+          "img": "../static/assets/profiles/florencia-dev.jpg"
+        },
+       
+        {
+          "name": "Laura",
+          "bio": "Desarrollo",
+          "handle": "github",
+          "url": "https://www.github.com/luarar",
+          "img": "../static/assets/profiles/laura.jpg"
+        },
+        {
           "name": "Guille",
           "bio": "Desarrollo",
-          "handle": "/static/assets/icons/Twitter.svg",
+          "handle": "tw",
           "url": "https://twitter.com/guillermocroppi",
           "img": "../static/assets/profiles/guille.jpg"
         }
