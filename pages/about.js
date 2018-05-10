@@ -54,7 +54,7 @@ export default class extends Component {
           currentLang={this.state.currentLang} >
           <Header 
             title={t('aboutUs.title')}
-            bg={'../static/assets/header/headerAbout.jpg'} />
+            bg={'../static/assets/header/headerWeb.jpg'} />
           <AboutUs />
           <SectionMilestone 
             title={t('aboutUs.openGov.title')} 
