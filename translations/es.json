@@ -182,8 +182,8 @@
         {
           "name": "Martín",
           "bio": "Educación",
-          "handle": "tw",
-          "url": "",
+          "handle": "ln",
+          "url": "https://www.linkedin.com/in/mgalanternik/",
           "img": "../static/assets/profiles/martin.jpg"
         },
         {
@@ -247,7 +247,7 @@
     }
   },
 "aboutUs": {
-    "title": "Sobre nosotros",
+    "title": "Sobre nosotras",
     "der": {
       "title": "Democracia en red",
       "text": [

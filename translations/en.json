@@ -3,9 +3,9 @@
   "index": {
     "header": {
       "title": "Democracia en Red",
-      "subtitle": "We imagine, design and implement  innovations in the political system, to open decision processes, to redistribute power.",
+      "subtitle": "We imagine, design and implement innovations in the political system, to open decision processes, to redistribute power.",
       "callToAction": "Submit",
-      "placeholder": "Sign up with your email for updates!",
+      "placeholder": "Sign up for news!",
       "mobilePlaceholder": "Receive updates in your email.",
       "mailSuscribed": "We have sent an email with a confirmation link to your email address",
       "invalidMail": "The email address is in an invalid format.",
@@ -72,7 +72,7 @@
         {
           "title": "Transparency",
           "subtitle": "Who funds us? How we spend?",
-          "text": "Here is all accounting summary information and documentary support.",
+          "text": "Here is all accounting information summarized and documentary support.",
           "icon": "/static/assets/icons/transparency.svg",
           "callToAction": "Download PDF",
           "href": "https://drive.google.com/file/d/18-rWaYPOXxVCjzH4zNySzl9c5HtFhr4x/view"
@@ -105,9 +105,9 @@
       "title": "Media",
       "links": [
         {
-          "url": "http://www.fastcompany.com/3043388/the-y-combinator-chronicles/why-y-combinator-funded-a-radical-political-party-in-argentina",
-          "logo": "/static/assets/media/fast.svg",
-          "className": "fast"
+          "url": "https://www.opendemocracy.net/digitaliberties/marco-deseriis-guido-vilari-o/simplicity-openness-and-modifiability",
+          "logo": "/static/assets/media/openDemocracy.png",
+          "className": "opendemocracy"
         },
         {
           "url": "https://www.youtube.com/watch?v=7bAOT-57KeE",
@@ -120,9 +120,9 @@
           "className": "lpo"
         },
         {
-          "url": "http://ccaa.elpais.com/ccaa/2015/01/27/madrid/1422375720_783629.html",
-          "logo": "/static/assets/media/elpais.svg",
-          "className": "elpais"
+          "url": "https://www.lacapital.com.ar/la-ciudad/javkin-queremos-escuchar-proponer-y-construir-juntos-n1431351.html",
+          "logo": "/static/assets/media/laCapital.png",
+          "className": "lacapital"
         },
         {
           "url": "http://www.wired.com/2014/05/democracy-os/",
@@ -146,84 +146,84 @@
       "team": [
         {
           "name": "Agustín",
-          "bio": "Director Ejecutivo",
+          "bio": "Executive Director",
           "handle": "tw", 
           "url": "https://twitter.com/agustinfrizzera",
           "img": "../static/assets/profiles/agustin.jpg"
         },
         {
           "name": "Florencia",
-          "bio": "Presidenta",
+          "bio": "President",
           "handle": "tw",
           "url": "",
           "img": "../static/assets/profiles/florencia-presi.jpg"
         },
         {
           "name": "Esteban",
-          "bio": "Vicepresidente",
+          "bio": "Vicepresident",
           "handle": "tw",
           "url": "",
           "img": "../static/assets/profiles/esteban.jpg"
         },
         {
           "name": "Guido",
-          "bio": "Consultor Software",
+          "bio": "Software consultant",
           "handle": "tw",
           "url": "https://twitter.com/gvilarino",
           "img": "../static/assets/profiles/guido.jpg"
         },
         {
           "name": "Matías",
-          "bio": "Consultor Software",
+          "bio": "Software consultant",
           "handle": "mail",
           "url": "https://matiaslescano.com.ar",
           "img": "../static/assets/profiles/matias.jpg"
         },
         {
           "name": "Martín",
-          "bio": "Educación",
-          "handle": "tw",
-          "url": "",
+          "bio": "Education",
+          "handle": "ln",
+          "url": "https://www.linkedin.com/in/mgalanternik/",
           "img": "../static/assets/profiles/martin.jpg"
         },
         {
           "name": "Powa",
-          "bio": "Cuentas",
+          "bio": "Accounts",
           "handle": "ln",
           "url": "https://www.linkedin.com/in/don-powa-59290473/",
           "img": "../static/assets/profiles/powa.jpg"
         },
         {
           "name": "Florencia",
-          "bio": "Coordinadora de Proyectos",
+          "bio": "Proyect coordinator",
           "handle": "tw",
           "url": "https://twitter.com/pitucaffarone",
           "img": "../static/assets/profiles/florencia-dir.jpg"
         },
         {
           "name": "Daniela",
-          "bio": "Investigación de campo",
+          "bio": "Field investigation",
           "handle": "ln",
           "url": "https://ar.linkedin.com/in/daniela-mazzoni-222861115",
           "img": "../static/assets/profiles/daniela.jpg"
         },
         {
           "name": "Franco",
-          "bio": "Investigación de campo",
+          "bio": "Field investigation",
           "handle": "mail",
           "url": "mailto:franco@democracyos.io",
           "img": "../static/assets/profiles/franco.jpg"
         },
         {
           "name": "Francisco",
-          "bio": "Lider de Desarrollo",
+          "bio": "Development leader",
           "handle": "github",
           "url": "https://www.github.com/franciclo",
           "img": "../static/assets/profiles/francisco.jpg"
         },
         {
           "name": "Florencia",
-          "bio": "Desarrollo",
+          "bio": "Development",
           "handle": "github",
           "url": "https://www.github.com/florlafuente",
           "img": "../static/assets/profiles/florencia-dev.jpg"
@@ -231,14 +231,14 @@
        
         {
           "name": "Laura",
-          "bio": "Desarrollo",
+          "bio": "Development",
           "handle": "github",
           "url": "https://www.github.com/luarar",
           "img": "../static/assets/profiles/laura.jpg"
         },
         {
           "name": "Guille",
-          "bio": "Desarrollo",
+          "bio": "Development",
           "handle": "tw",
           "url": "https://twitter.com/guillermocroppi",
           "img": "../static/assets/profiles/guille.jpg"
@@ -253,7 +253,7 @@
       "text": [
         "DeR is an NGO founded in 2014 for articulate a political project from civil society. DeR was born from a diagnosis about the status quo and because fed up of diagnoses and diagnosticians",
         "We were born to build practice, technique and poetry that allow us to imagine and implement innovations in the political system, to open decision processes, to redistribute power.",
-        "We promote new values, experiences and processes that enable more collaborative governance schemes, new bureaucratic logics and new public spaces."
+        "We promote new values, experiences and processes that allow more collaborative governance schemes, new bureaucratic logics and new public spaces."
       ]
     },
     "openGov": {
@@ -284,13 +284,13 @@
     },
     "civicStack": {
       "img": "/static/assets/about/logocivic.svg",
-      "text": "CivicStack is a repository of open source technologies for citizen participation. Made together with Asuntos del Sur, is a compilation of apps made and promoted by organizations that use or develop open (source) technology to improve citizen processes and encourage the opening of information.",
+      "text": "CivicStack is a repository of open source technologies for citizen participation. Developed together with Asuntos del Sur, is a compilation of apps developed and promoted by organizations that use or develop open (source) technology to improve citizen processes and encourage the openness of information.",
       "callToAction": "More info",
       "href": "http://www.civicstack.org/"
     },
     "hechaLaLey": {
       "title": "Hecha la ley",
-      "text": "Inspired by the idea of bill-tracking, “Hecha la ley” is an open source development designed for the specialized press and the professional body of the parliaments, that works by calculating the differences in a bill as it progresses in the parliamentary process. Developed together with the Legislative Directory, today is in the testing stage.",
+      "text": "Inspired by the idea of bill-tracking, “Hecha la ley” is an open source development designed for specialized press and professionals of the parliaments, that measures changes of a law project as it progresses in the parliamentary process. Developed together with the Legislative Directory, is currently in a testing stage.",
       "callToAction": "See more",
       "href": "https://hechalaley.org/"
     },
@@ -303,7 +303,7 @@
       "img": "/static/assets/about/logosole.svg",
       "text" : [
         "The Self-Organized Learning Environments (S.O.L.E.) are spaces that at first sight seem somewhat chaotic: many children, some / a few computers and a big question.",
-        "The proposal organizes group access to computers to investigate and answer a stimulating question. Thus, new interactions arise in the classroom. The magic unleashed by this experience ignites the curiosity and amazement of children, the great engines of this device adapted on the methodology of Dr. Sugata Mitra."
+        "The proposal organizes the acces of groups to computers to investigate and answer a stimulating question. Thus, new interactions arise in the classroom. The magic unleashed by this experience turns on the curiosity and amazement of children, the great power of this device adapted from the methodology of Dr. Sugata Mitra."
       ],
       "callToAction": "See More",
       "href": "http://www.soleargentina.org/",
