@@ -20,7 +20,7 @@ const AboutUs = () => (
       }
       .section-title {
         font-size: 3.6rem;
-        font-weight: var(--bold);
+        font-weight: bold;
         margin-bottom: 77px;
         text-transform: uppercase;
       }

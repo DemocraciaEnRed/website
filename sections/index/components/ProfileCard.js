@@ -1,9 +1,10 @@
-const ProfileCard = ( {name, bio, handle, img} ) => (
+const ProfileCard = ( {name, bio, handle, img, url} ) => (
   <div className='profile-card'>
     <div className='profile-card-container'>
       <h3 className='profile-title'>{name}</h3>
       <p className='profile-bio'>{bio}</p>
-      <a href={`http://www.twitter.com/${handle}`}className='profile-handle'>{'@'+handle}</a>
+   <a href={`${url}`}>  <div className={`${handle}`}></div>   </a>
+     
     </div>
   <style jsx>{`
     .profile-card {
@@ -19,24 +20,68 @@ const ProfileCard = ( {name, bio, handle, img} ) => (
       justify-content: center;
       position: relative;
       width: 250px;
+      margin-bottom:30px;
     }
     .profile-card-container {
       display: none;
+      ∫
+    }
+    .ln{
+      height:30px;
+      width:30px;
+      background-image: url("/static/assets/icons/ln.svg");
+      margin-top:10px;
+    }
+    .mail{
+      height:30px;
+      width:35px;
+      background-image: url("/static/assets/icons/mail.svg");
+      margin-top:10px;
+    }
+    .github{
+      height:29px;
+      width:30px;
+      background-image: url("/static/assets/icons/github.svg");
+      margin-top:10px;
+    }
+    .tw{
+      height:30px;
+      width:35px;
+      background-image: url("/static/assets/icons/twitter.svg");
+      margin-top:10px;
+    }
+    .profile-card:hover .profile-card-container{
+      flex-direction:column;
+      align-items:center;
     }
     .profile-title {
       font-size: 2.8rem;
       font-weight: 500;
       color: #eaeaea;
     }
-    .profile-bio {
-      font-size: 2.1rem;
+    .profile-bio  {
+      font-size: 2rem;
       font-weight: 300;
       color: #eaeaea;
+      text-align:center;
     }
+    
+    .profile-card:nth-child(6) .profile-bio,
+    .profile-card:nth-child(7) .profile-bio,
+    .profile-card:nth-child(8) .profile-bio {
+    font-size: 1.6rem;
+      
+    }
+   
     .profile-handle {
       font-size: 21.1px;
       font-weight: 300;
       color: #eaeaea;
+    }
+    .profile-icon {
+      padding-top:10px;
+      max-height:10px;
+      max-width:10px;
     }
     @-webkit-keyframes fadeInFromNone {
       0% {
@@ -100,15 +145,18 @@ const ProfileCard = ( {name, bio, handle, img} ) => (
       }
     }
     @media screen and (min-width: 1200px) {
-      .profile-card:nth-child(9) {
+      .profile-card:nth-child(13) {
         margin-left: 25%
       }
-      .profile-card:nth-child(10) {
+      .profile-card:nth-child(14) {
         margin-right: 25%
       }
     }
     @media screen and (min-width: 1024px) {
       .profile-card:hover .profile-card-container {
+        heigth:260px;
+        width:260px;
+        overflow:hidden;
         animation: fadeInFromNone 0.5s ease;
         background-color: rgba(0,0,0,0.8); 
         border-radius: 100%;
@@ -126,6 +174,9 @@ const ProfileCard = ( {name, bio, handle, img} ) => (
         margin: 0 45px;
       }
       .profile-card:hover .profile-card-container {
+        heigth:260px;
+        width:260px;
+        overflow:hidden;
         animation: fadeInFromNone 0.5s ease;
         background-color: rgba(0,0,0,0.8); 
         border-radius: 100%;

@@ -130,6 +130,8 @@ export default class JobForm extends Component {
             padding: 10px;
             height: 43px;
             width: 100%;
+            font-size: 2rem;
+
           }
           input:required {
             box-shadow: none;
@@ -143,8 +145,10 @@ export default class JobForm extends Component {
             height: 150px;
             margin-bottom: 11px;
             max-width: 718px;
-            padding: 10px;
+            padding: 5px;
             width: 100%;
+            font-size: 1.9rem;
+
           }
           div.input-wrapper:not(last-child){
             margin-bottom: 22px;

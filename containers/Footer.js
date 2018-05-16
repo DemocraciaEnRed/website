@@ -13,9 +13,7 @@ const Footer = () => (
     <MediaQuery maxDeviceWidth={1024} >
       <SocialBar alignSelf={'flex-end'} iconsSize={'28px'}  width={'331px'} mobileWidth={'283px'} justifyContent={'space-between'} iconHover={'#bebebe'} iconMobileHover={'#bebebe'} />
     </MediaQuery>
-    <div className='end-text'>
-      <span>the end</span>
-    </div>
+   
     <style jsx>{`
       footer {
         align-items: center;

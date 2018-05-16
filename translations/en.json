@@ -3,9 +3,9 @@
   "index": {
     "header": {
       "title": "Democracia en Red",
-      "subtitle": "We imagine, design and implement  innovations in the political system, to open decision processes, to redistribute power.",
+      "subtitle": "We imagine, design and implement innovations in the political system, to open decision processes, to redistribute power.",
       "callToAction": "Submit",
-      "placeholder": "Sign up with your email for updates!",
+      "placeholder": "Sign up for news!",
       "mobilePlaceholder": "Receive updates in your email.",
       "mailSuscribed": "We have sent an email with a confirmation link to your email address",
       "invalidMail": "The email address is in an invalid format.",
@@ -16,13 +16,13 @@
       "title": "About us",
       "content": [
         {
-          "title": "Open the government",
-          "subtitle": "Citizen participation facilitated by technology",
+          "title": "Open the institutions",
+          "subtitle": "Politic participation facilitated by technology",
           "icon": "/static/assets/icons/opengov.svg"
         },
         {
-          "title": "Rethinking education",
-          "subtitle": "New didactics and educational pedagogy",
+          "title": "Citizen education",
+          "subtitle": "Didactics and tools for collective action",
           "icon": "/static/assets/icons/education.svg"
         },
         {
@@ -64,7 +64,7 @@
         { 
           "title": "Collaborate",
           "subtitle": "How can I collaborate?",
-          "text": "Help us to reach more people. There are many ways to collaborate.",
+          "text": "Help us reach more people. There are many ways to collaborate.",
           "icon": "/static/assets/icons/collaborate.svg",
           "callToAction": "Drop us a line",
           "href": "/contact"
@@ -72,7 +72,7 @@
         {
           "title": "Transparency",
           "subtitle": "Who funds us? How we spend?",
-          "text": "Here is all accounting summary information and documentary support.",
+          "text": "Here is all accounting information summarized and documentary support.",
           "icon": "/static/assets/icons/transparency.svg",
           "callToAction": "Download PDF",
           "href": "https://drive.google.com/file/d/18-rWaYPOXxVCjzH4zNySzl9c5HtFhr4x/view"
@@ -80,7 +80,7 @@
       ]
     },
     "publications": {
-      "title": "Publications",
+      "title": "Articles",
       "callToAction": "More info"
     },
     "ebooks": {
@@ -105,9 +105,9 @@
       "title": "Media",
       "links": [
         {
-          "url": "http://www.fastcompany.com/3043388/the-y-combinator-chronicles/why-y-combinator-funded-a-radical-political-party-in-argentina",
-          "logo": "/static/assets/media/fast.svg",
-          "className": "fast"
+          "url": "https://www.opendemocracy.net/digitaliberties/marco-deseriis-guido-vilari-o/simplicity-openness-and-modifiability",
+          "logo": "/static/assets/media/openDemocracy.png",
+          "className": "opendemocracy"
         },
         {
           "url": "https://www.youtube.com/watch?v=7bAOT-57KeE",
@@ -120,9 +120,9 @@
           "className": "lpo"
         },
         {
-          "url": "http://ccaa.elpais.com/ccaa/2015/01/27/madrid/1422375720_783629.html",
-          "logo": "/static/assets/media/elpais.svg",
-          "className": "elpais"
+          "url": "https://www.lacapital.com.ar/la-ciudad/javkin-queremos-escuchar-proponer-y-construir-juntos-n1431351.html",
+          "logo": "/static/assets/media/laCapital.png",
+          "className": "lacapital"
         },
         {
           "url": "http://www.wired.com/2014/05/democracy-os/",
@@ -146,74 +146,101 @@
       "team": [
         {
           "name": "Agustín",
-          "bio": "Director",
-          "handle": "agustin",
+          "bio": "Executive Director",
+          "handle": "tw", 
+          "url": "https://twitter.com/agustinfrizzera",
           "img": "../static/assets/profiles/agustin.jpg"
         },
         {
-          "name": "Esteban",
-          "bio": "Vicepresidente",
-          "handle": "esteban",
-          "img": "../static/assets/profiles/esteban.jpg"
-        },
-        {
           "name": "Florencia",
-          "bio": "Presidenta",
-          "handle": "florencia-presi",
+          "bio": "President",
+          "handle": "tw",
+          "url": "https://twitter.com/juicyminerva",
           "img": "../static/assets/profiles/florencia-presi.jpg"
         },
         {
-          "name": "Francisco",
-          "bio": "Producto",
-          "handle": "frn",
-          "img": "../static/assets/profiles/francisco.jpg"
-        },
-        {
-          "name": "Guido",
-          "bio": "CTO",
-          "handle": "guido",
-          "img": "../static/assets/profiles/guido.jpg"
+          "name": "Esteban",
+          "bio": "Vicepresident",
+          "handle": "tw",
+          "url": "https://twitter.com/ebrenman",
+          "img": "../static/assets/profiles/esteban.jpg"
         },
         {
           "name": "Martín",
-          "bio": "COO",
-          "handle": "martin",
+          "bio": "Education",
+          "handle": "ln",
+          "url": "https://www.linkedin.com/in/mgalanternik/",
           "img": "../static/assets/profiles/martin.jpg"
         },
         {
           "name": "Powa",
-          "bio": "Cuentas",
-          "handle": "powa",
+          "bio": "Accounts",
+          "handle": "ln",
+          "url": "https://www.linkedin.com/in/don-powa-59290473/",
           "img": "../static/assets/profiles/powa.jpg"
         },
         {
+          "name": "Florencia",
+          "bio": "Proyect coordinator",
+          "handle": "tw",
+          "url": "https://twitter.com/pitucaffarone",
+          "img": "../static/assets/profiles/florencia-dir.jpg"
+        },
+        {
           "name": "Daniela",
-          "bio": "Investigación",
-          "handle": "daniela",
+          "bio": "Field investigation",
+          "handle": "ln",
+          "url": "https://ar.linkedin.com/in/daniela-mazzoni-222861115",
           "img": "../static/assets/profiles/daniela.jpg"
         },
         {
-          "name": "Florencia",
-          "bio": "Desarrollo",
-          "handle": "florencia-dev",
-          "img": "../static/assets/profiles/florencia-dev.jpg"
-        },
-        {
           "name": "Franco",
-          "bio": "Investigación",
-          "handle": "franco",
+          "bio": "Field investigation",
+          "handle": "mail",
+          "url": "mailto:franco@democracyos.io",
           "img": "../static/assets/profiles/franco.jpg"
         },
         {
+          "name": "Francisco",
+          "bio": "Development leader",
+          "handle": "github",
+          "url": "https://www.github.com/franciclo",
+          "img": "../static/assets/profiles/francisco.jpg"
+        },
+        {
+          "name": "Florencia",
+          "bio": "Development",
+          "handle": "github",
+          "url": "https://www.github.com/florlafuente",
+          "img": "../static/assets/profiles/florencia-dev.jpg"
+        },
+       
+        {
           "name": "Laura",
-          "bio": "Desarrollo",
-          "handle": "laura",
+          "bio": "Development",
+          "handle": "github",
+          "url": "https://www.github.com/luarar",
           "img": "../static/assets/profiles/laura.jpg"
         },
         {
+          "name": "Guille",
+          "bio": "Development",
+          "handle": "tw",
+          "url": "https://twitter.com/guillermocroppi",
+          "img": "../static/assets/profiles/guille.jpg"
+        },
+        {
+          "name": "Guido",
+          "bio": "Software consultant",
+          "handle": "tw",
+          "url": "https://twitter.com/gvilarino",
+          "img": "../static/assets/profiles/guido.jpg"
+        },
+        {
           "name": "Matías",
-          "bio": "Desarrollo",
-          "handle": "matias",
+          "bio": "Software consultant",
+          "handle": "mail",
+          "url": "https://matiaslescano.com.ar",
           "img": "../static/assets/profiles/matias.jpg"
         }
       ]
@@ -224,12 +251,13 @@
     "der": {
       "title": "Democracia en red",
       "text": [
-        "DeR is an NGO founded in 2014, that was born from a diagnosis about the status quo and because fed up of diagnoses and diagnosticians. We were born to build practice, technique and poetry that allow us to imagine and implement innovations in the political system, to open decision processes, to redistribute power.",
-        "For us “to influence” means to promote effective changes in the relationship between representatives and represented, a change that enables new governance schemes (more collaborative), new bureaucratic logics (more sensitive) and new public spaces (both digital and territorial)."
+        "DeR is an NGO founded in 2014 for articulate a political project from civil society. DeR was born from a diagnosis about the status quo and because fed up of diagnoses and diagnosticians",
+        "We were born to build practice, technique and poetry that allow us to imagine and implement innovations in the political system, to open decision processes, to redistribute power.",
+        "We promote new values, experiences and processes that allow more collaborative governance schemes, new bureaucratic logics and new public spaces."
       ]
     },
     "openGov": {
-      "title": "Open the government",
+      "title": "Open the institutions",
       "subtitle": "Citizen participation facilitated by technology.",
       "icon": "/static/assets/icons/opengov.svg"
     },
@@ -240,62 +268,70 @@
         "DemocracyOS is conceived as a versatile, simple and scalable web application for collective decision-making that serves as a tool for citizens interested in improving access to information, civic participation and opening channels of interaction between new power building spaces and the political system: civic activists, civil organizations and government actors."
       ],
       "list": [
-        "Developed as open source, with more than 50000 users.",
-        "Used by over 40 institutions, movements and political parties around the world.",
-        "Available in 17 languages.",
-        "It works on any device with a web browser."
+        "Open source.",
+        "More than 50.000 users.",
+        "More than 40 institutions, movements and political parties around the world.",
+        "17 languajes.",
+        "Adaptable to all devices."
+      ],
+      "text-2": [
+        "DemocracyOS has been used for digital public consultation promoted for the Ministry of Modernization of Argentina, the Autonomous City of Buenos Aires Legislature, the Municipality of Rosario City, the Bahía Blanca Deliberative Council, the Mexico Federal Government, social organizations and political parties of Argentina, Brazil, Spain, United States, Tunez, between others."
       ],
       "repo": "Repository",
-      "callToAction": "More info",
+      "callToAction": "See more",
       "href": "http://democracyos.org/",
       "repourl": "https://github.com/DemocracyOS/democracyos"
     },
     "civicStack": {
       "img": "/static/assets/about/logocivic.svg",
-      "text": "CivicStack is a repository of open source technologies for citizen participation promoted by organizations that use or develop open (source) technology to improve citizen processes, encourage the opening of information and facilitate online civic behavior.",
+      "text": "CivicStack is a repository of open source technologies for citizen participation. Developed together with Asuntos del Sur, is a compilation of apps developed and promoted by organizations that use or develop open (source) technology to improve citizen processes and encourage the openness of information.",
       "callToAction": "More info",
       "href": "http://www.civicstack.org/"
     },
     "hechaLaLey": {
       "title": "Hecha la ley",
-      "text": "Inspired by the idea of bill-tracking, “Hecha la ley” is an open source development that works by calculating the differences in a bill as it progresses in the parliamentary process. Today in the testing stage, it is a tool designed for the specialized press and the professional body (advisors and journalists) of the parliaments.",
-      "callToAction": "More info",
+      "text": "Inspired by the idea of bill-tracking, “Hecha la ley” is an open source development designed for specialized press and professionals of the parliaments, that measures changes of a law project as it progresses in the parliamentary process. Developed together with the Legislative Directory, is currently in a testing stage.",
+      "callToAction": "See more",
       "href": "https://hechalaley.org/"
     },
     "education": {
-      "title": "Rethinking education",
-      "subtitle": "New didactics and educational pedagogy.",
+      "title": "Education for the citizenship",
+      "subtitle": "Didactics and tools for collective action.",
       "icon": "/static/assets/icons/education.svg"
     },
     "sole": {
       "img": "/static/assets/about/logosole.svg",
       "text" : [
-        "It is necessary to rethink the educational model. Today, children continue to be educated for the industrial society: citizens-consumers who only learn to choose between options and access standardized knowledge, administered vertically and with disciplinary dynamics of “rewards and punishments”.",
-        "The Self-Organized Learning Environments (S.O.L.E.) are spaces that at first sight seem somewhat chaotic: many children, some / a few computers and a big question. The proposal organizes group access to computers to investigate and answer a stimulating question. Thus, new interactions arise in the classroom. The magic unleashed by this experience ignites the curiosity and amazement of children, the great engines of this device.",
-        "Based on the methodology of Dr. Sugata Mitra, the approach of S.O.L.E. is concluding its pilot application in School No. 20 of the City of Buenos Aires, thanks to an agreement with the Ministry of Education. In total, we conducted more than 160 sessions of S.O.L.E., in 4 stages in 2015 and 2016, in 5 grades of initial education of said School.",
-        "Among its results and learning, we highlight the following:"
+        "The Self-Organized Learning Environments (S.O.L.E.) are spaces that at first sight seem somewhat chaotic: many children, some / a few computers and a big question.",
+        "The proposal organizes the acces of groups to computers to investigate and answer a stimulating question. Thus, new interactions arise in the classroom. The magic unleashed by this experience turns on the curiosity and amazement of children, the great power of this device adapted from the methodology of Dr. Sugata Mitra."
       ],
-      "items" : [
-        "In 94% of the sessions, the children were able to construct an appropriate response to the curricular question that was proposed.",
-        "In the knowledge retention test carried out at the end of stage 4 (June 2016), the students remembered 80% of the contents worked on in SOLE.",
-        "Teachers report improvements in reading comprehension skills, mainly when done in groups.",
-        "The evaluation of the ability to acquire knowledge on the Internet (CACI) gave better results, 20% higher than those of schools set up as “control groups”.",
-        "From the focus and activities developed, it was possible to impact on the aspirational goals of some students."
+      "callToAction": "See More",
+      "href": "http://www.soleargentina.org/",
+      "callToAction2": "SOLE in Barracas",
+      "callToAction3": "Interview",
+      "href2":"https://www.youtube.com/watch?v=QUVr2oXCQAc&t=209s",
+      "href3":"https://www.youtube.com/watch?v=A0duZe6e8K0"
+    },
+    "debatirEnRedes": {
+      "title": "To debate in Social Networks",
+      "text": [
+        "This educational project, made together with MINU, pretends to bring young people through a modern pedagogical approach, guides and tools to deal with public debates in social networks.",
+        "Organized on a workshop mode, based on evidence and scientific works, the project invites to think about the struggles of discussion in digital environments, but also proposes some solutions, in the form of practical advices."
       ],
-      "callToAction": "More info",
-      "href": "http://www.soleargentina.org/"
+      "callToAction": "See more",
+      "href": "https://drive.google.com/file/d/1KTm9Ki4xW69PfJ_WJVR5tWAk_fvmrAMU/view?usp=sharing"
     },
     "leadership": {
       "title": "Promote leadership",
-      "subtitle": "Regional networks of political-social projects.",
+      "subtitle": "Regional networks of innovator political-social projects.",
       "icon": "/static/assets/icons/leaders.svg"
     },
     "rinp": {
       "img": "/static/assets/about/logoredi.svg",
       "text": [
-        "The crisis of representation is Latin American and, therefore, the debates must also be Latin American. Think of scalable solutions in different countries, learn from local experiences and discuss implementations of the same tools in different socio-economic and institutional contexts.",
-        "From Democracia en Red we are committed to this network of people in Latin America who are working, from the political system and / or civil society, on the paradigm of civic innovation.",
-        "After the founding meeting of Buenos Aires, in July 2016, we worked together on the development of innovations that allow us to participate in the design of new instances of citizen participation with an impact on the political system."
+        "The crisis of representation is Latin American and, therefore, the debates must also be Latin American.",
+        "Think of scalable solutions in different countries, learn from local experiences and discuss implementations of the same tools in different socio-economic and institutional contexts.",
+        "From Democracia en Red we are committed to this network of people in Latin America who are working, from the political system and / or civil society, on the paradigm of civic innovation."
       ],
       "list": {
         "title": "As products of the Network we can highlight:",
@@ -305,16 +341,16 @@
           "Workshop on “innovative political campaigns” for members of the Ativista Bank (bancadaativista.org), was held in Sao Paulo in August 2016, with 5 members of the Network (Agustín Frizzera, DeR, Arg, Rodrigo Etchecopar, RD, Chi, Caio Tendolini, UpDate, Br, Susana Ochoa and Alejandra Parra, WikiPolítica, Mx) as exhibitors."
         ]
       },
-      "callToAction": "More info",
+      "callToAction": "See More",
       "href": "http://redinnovacionpolitica.org/"
     },
     "clip": {
       "title": "Latin American connections of Political Innovation",
       "text": [
         "The CLIP Initiative aims to create conditions, institutional reforms and a different political culture, from the present and for the medium and long term, that  contribute to improve and transform democracy for an effective redistribution of power.",
-        "As part of its Strategic Council, DeR is committed to the CLIP as it seeks to generate knowledge from the theoretical / practical on the dilemmas of sustainable development and the new frameworks for political exercise; articulate experiences and lessons learned among the participants of the initiative; accompany and prepare the actors when they decide to participate in the electoral dispute or join a state public management."
+        "As part of its Strategic Council, DeR is committed to the CLIP as it seeks to articulate experiences and lessons learned in the field of political innovation and accompany the actors that decide to participate in the electoral dispute or join a state public management."
       ],
-      "callToAction": "More info",
+      "callToAction": "See More",
       "href": "http://clip.lat/"
     }
   },
@@ -375,7 +411,7 @@
       },
       {
         "href": "publications",
-        "title": "Publications"
+        "title": "Articles"
       },
       {
         "href": "ebooks",

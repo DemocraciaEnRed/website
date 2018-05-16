@@ -3,7 +3,7 @@ import { t } from '../../../polyglot-modules/polyglot.js'
 import ProfileCard from '../components/ProfileCard'
 let Flickity;
 
-const data = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+const data = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11,12,13]
 
 class WhoWeAre extends Component {
   constructor (props) {
@@ -41,7 +41,7 @@ class WhoWeAre extends Component {
         <h2 className='section-title'>{t('index.whoWeAre.title')}</h2>
         <div className='profile-container carousel' ref='carousel'>
           {data.map((i) => 
-            <ProfileCard key={i} name={t(`index.whoWeAre.team.${i}.name`)} bio={t(`index.whoWeAre.team.${i}.bio`)} handle={t(`index.whoWeAre.team.${i}.handle`)} img={t(`index.whoWeAre.team.${i}.img`)} />
+            <ProfileCard key={i} name={t(`index.whoWeAre.team.${i}.name`)} bio={t(`index.whoWeAre.team.${i}.bio`)} handle={t(`index.whoWeAre.team.${i}.handle`)} url={t(`index.whoWeAre.team.${i}.url`)} img={t(`index.whoWeAre.team.${i}.img`)} />
           )}
         </div>
         <style jsx>{`
@@ -54,7 +54,7 @@ class WhoWeAre extends Component {
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-around;
-            height: 850px;
+            height: 1050px;
             margin-top: 72px;
             width: 100%;
           }

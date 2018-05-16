@@ -12,6 +12,7 @@ import DemocracyOs from '../sections/about/components/DemocracyOs'
 import CivicStack from '../sections/about/components/CivicStack'
 import HechaLaLey from '../sections/about/components/HechaLaLey'
 import Sole from '../sections/about/components/Sole'
+import DebatirEnRedes from '../sections/about/components/DebatirEnRedes'
 import Rinp from '../sections/about/components/Rinp'
 import Clip from '../sections/about/components/Clip'
 import Footer from '../containers/Footer'
@@ -53,7 +54,7 @@ export default class extends Component {
           currentLang={this.state.currentLang} >
           <Header 
             title={t('aboutUs.title')}
-            bg={'../static/assets/header/headerAbout.jpg'} />
+            bg={'../static/assets/header/headerWeb.jpg'} />
           <AboutUs />
           <SectionMilestone 
             title={t('aboutUs.openGov.title')} 
@@ -72,6 +73,7 @@ export default class extends Component {
           />
           <Content>
             <Sole />
+            <DebatirEnRedes />
           </Content>
           <SectionMilestone 
             title={t('aboutUs.leadership.title')} 
