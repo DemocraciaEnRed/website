@@ -66,15 +66,12 @@ const ProfileCard = ( {name, bio, handle, img, url} ) => (
       text-align:center;
     }
     
-    .profile-card:nth-child(8) .profile-bio,
-    .profile-card:nth-child(9) .profile-bio,
-    .profile-card:nth-child(10) .profile-bio {
+    .profile-card:nth-child(6) .profile-bio,
+    .profile-card:nth-child(7) .profile-bio,
+    .profile-card:nth-child(8) .profile-bio {
     font-size: 1.6rem;
       
     }
-    
-    
-    
    
     .profile-handle {
       font-size: 21.1px;

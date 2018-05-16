@@ -80,7 +80,7 @@
       ]
     },
     "publications": {
-      "title": "Publications",
+      "title": "Articles",
       "callToAction": "More info"
     },
     "ebooks": {
@@ -155,29 +155,15 @@
           "name": "Florencia",
           "bio": "President",
           "handle": "tw",
-          "url": "",
+          "url": "https://twitter.com/juicyminerva",
           "img": "../static/assets/profiles/florencia-presi.jpg"
         },
         {
           "name": "Esteban",
           "bio": "Vicepresident",
           "handle": "tw",
-          "url": "",
+          "url": "https://twitter.com/ebrenman",
           "img": "../static/assets/profiles/esteban.jpg"
-        },
-        {
-          "name": "Guido",
-          "bio": "Software consultant",
-          "handle": "tw",
-          "url": "https://twitter.com/gvilarino",
-          "img": "../static/assets/profiles/guido.jpg"
-        },
-        {
-          "name": "Matías",
-          "bio": "Software consultant",
-          "handle": "mail",
-          "url": "https://matiaslescano.com.ar",
-          "img": "../static/assets/profiles/matias.jpg"
         },
         {
           "name": "Martín",
@@ -242,6 +228,20 @@
           "handle": "tw",
           "url": "https://twitter.com/guillermocroppi",
           "img": "../static/assets/profiles/guille.jpg"
+        },
+        {
+          "name": "Guido",
+          "bio": "Software consultant",
+          "handle": "tw",
+          "url": "https://twitter.com/gvilarino",
+          "img": "../static/assets/profiles/guido.jpg"
+        },
+        {
+          "name": "Matías",
+          "bio": "Software consultant",
+          "handle": "mail",
+          "url": "https://matiaslescano.com.ar",
+          "img": "../static/assets/profiles/matias.jpg"
         }
       ]
     }
@@ -411,7 +411,7 @@
       },
       {
         "href": "publications",
-        "title": "Publications"
+        "title": "Articles"
       },
       {
         "href": "ebooks",

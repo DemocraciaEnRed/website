@@ -13,7 +13,7 @@
       "internalError": "Ocurrió un error. Por favor, intentalo de nuevo más tarde."
     },
     "aboutUs": {
-      "title": "Sobre nosotras",
+      "title": "Sobre Nosotras",
       "content": [
         {
           "title": "Abrir las instituciones",
@@ -75,12 +75,12 @@
           "text": "Aquí toda la información contable resumida y con su soporte documental.",
           "icon": "/static/assets/icons/transparency.svg",
           "callToAction": "Ver Balances",
-          "href": "https://drive.google.com/file/d/18-rWaYPOXxVCjzH4zNySzl9c5HtFhr4x/view"
+          "href": "https://drive.google.com/open?id=18FqJdWg7Ucj6sey126T_SQPUQv0hZFyy"
         }
       ]
     },
     "publications": {
-      "title": "Publicaciones",
+      "title": "Artículos",
       "callToAction": "Ver más"
     },
     "ebooks": {
@@ -155,29 +155,15 @@
           "name": "Florencia",
           "bio": "Presidenta",
           "handle": "tw",
-          "url": "",
+          "url": "https://twitter.com/juicyminerva",
           "img": "../static/assets/profiles/florencia-presi.jpg"
         },
         {
           "name": "Esteban",
           "bio": "Vicepresidente",
           "handle": "tw",
-          "url": "",
+          "url": "https://twitter.com/ebrenman",
           "img": "../static/assets/profiles/esteban.jpg"
-        },
-        {
-          "name": "Guido",
-          "bio": "Consultor Software",
-          "handle": "tw",
-          "url": "https://twitter.com/gvilarino",
-          "img": "../static/assets/profiles/guido.jpg"
-        },
-        {
-          "name": "Matías",
-          "bio": "Consultor Software",
-          "handle": "mail",
-          "url": "https://matiaslescano.com.ar",
-          "img": "../static/assets/profiles/matias.jpg"
         },
         {
           "name": "Martín",
@@ -242,12 +228,26 @@
           "handle": "tw",
           "url": "https://twitter.com/guillermocroppi",
           "img": "../static/assets/profiles/guille.jpg"
+        },
+        {
+          "name": "Guido",
+          "bio": "Consultor Software",
+          "handle": "tw",
+          "url": "https://twitter.com/gvilarino",
+          "img": "../static/assets/profiles/guido.jpg"
+        },
+        {
+          "name": "Matías",
+          "bio": "Consultor Software",
+          "handle": "mail",
+          "url": "https://matiaslescano.com.ar",
+          "img": "../static/assets/profiles/matias.jpg"
         }
       ]
     }
   },
 "aboutUs": {
-    "title": "Sobre nosotras",
+    "title": "Sobre Nosotras",
     "der": {
       "title": "Democracia en red",
       "text": [
@@ -356,7 +356,7 @@
     "contactUs": "Contactate con nosotros",
     "copy": [
       "¿Tenés dudas, recomendaciones, querés colaborar o solamente saludarnos?",
-      "Aquí podés hacerlo."
+      "Acá podés hacerlo."
     ], 
     "form": {
       "name": "Nombre y apellido",
@@ -396,7 +396,7 @@
     "primaryLinks": [
       {
         "href": "about",
-        "title": "Sobre nosotras"
+        "title": "Sobre Nosotras"
       },
       {
         "href": "collaborate",
@@ -408,7 +408,7 @@
       },
       {
         "href": "publications",
-        "title": "Publicaciones"
+        "title": "Artículos"
       },
       {
         "href": "ebooks",
