@@ -13,7 +13,7 @@
       "internalError": "Ocurrió un error. Por favor, intentalo de nuevo más tarde."
     },
     "aboutUs": {
-      "title": "Sobre Nosotras",
+      "title": "Qué hacemos",
       "content": [
         {
           "title": "Abrir las instituciones",
@@ -247,7 +247,7 @@
     }
   },
 "aboutUs": {
-    "title": "Sobre Nosotras",
+    "title": "Qué hacemos",
     "der": {
       "title": "Democracia en red",
       "text": [
@@ -396,7 +396,7 @@
     "primaryLinks": [
       {
         "href": "about",
-        "title": "Sobre Nosotras"
+        "title": "Qué hacemos"
       },
       {
         "href": "collaborate",
