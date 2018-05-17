@@ -45,7 +45,7 @@ const Footer = () => (
       @media (max-width: 1024px) {
         footer {
           align-items: center;
-          height: 466px;
+          height: 100px;
           justify-content: flex-end;
           padding: 60px;
         }
