@@ -4,7 +4,7 @@
     "header": {
       "title": "Democracia en Red",
       "subtitle": "We imagine, design and implement innovations in the political system, to open decision processes, to redistribute power.",
-      "callToAction": "Submit",
+      "callToAction": "Send",
       "placeholder": "Sign up for news!",
       "mobilePlaceholder": "Receive updates in your email.",
       "mailSuscribed": "We have sent an email with a confirmation link to your email address",
@@ -367,7 +367,7 @@
       "reference": "How did you hear about us?",
       "message": "You can leave us your message here!"
     },
-    "callToAction": "Submit"
+    "callToAction": "Send"
   },
   "jobs": {
     "title": "JOBS",

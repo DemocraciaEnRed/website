@@ -21,7 +21,7 @@
           "icon": "/static/assets/icons/opengov.svg"
         },
         {
-          "title": "Educación para la ciudadanía",
+          "title": "Educación y ciudadanía",
           "subtitle": "Didácticas y herramientas para la acción colectiva",
           "icon": "/static/assets/icons/education.svg"
         },
@@ -64,7 +64,7 @@
         { 
           "title": "Colaborar",
           "subtitle": "¿Cómo puedo colaborar?",
-          "text": "Ayudanos a llegar a más personas. Hay muchas maneras de colaborar.",
+          "text": "Hay muchas manera de contribuir con nuestra misión.",
           "icon": "/static/assets/icons/collaborate.svg",
           "callToAction": "Escribinos",
           "href": "/contact"
@@ -72,7 +72,7 @@
         {
           "title": "Transparencia",
           "subtitle": "¿Quién nos financia? ¿Cómo gastamos?",
-          "text": "Aquí toda la información contable resumida y con su soporte documental.",
+          "text": "Aquí todos nuestros balances financieros.",
           "icon": "/static/assets/icons/transparency.svg",
           "callToAction": "Ver Balances",
           "href": "https://drive.google.com/open?id=18FqJdWg7Ucj6sey126T_SQPUQv0hZFyy"
@@ -142,7 +142,7 @@
       ]
     },
     "whoWeAre": {
-      "title": "Quiénes somos",
+      "title": "Quienes somos",
       "team": [
         {
           "name": "Agustín",
@@ -299,7 +299,7 @@
       "href2": "http://directoriolegislativo.org/"
     },
     "education": {
-      "title": "Educación para la ciudadanía",
+      "title": "Educación y ciudadanía",
       "subtitle": "Didácticas y herramientas para la acción colectiva.",
       "icon": "/static/assets/icons/education.svg"
     },
@@ -420,7 +420,7 @@
       },
       {
         "href": "who-we-are",
-        "title": "Quiénes somos"
+        "title": "Quienes somos"
       }
     ],
     "secondaryLinks" : [
