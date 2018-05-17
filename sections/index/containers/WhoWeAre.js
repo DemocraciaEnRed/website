@@ -41,7 +41,7 @@ class WhoWeAre extends Component {
         <h2 className='section-title'>{t('index.whoWeAre.title')}</h2>
         <div className='profile-container carousel' ref='carousel'>
           {data.map((i) => 
-            <ProfileCard key={i} name={t(`index.whoWeAre.team.${i}.name`)} bio={t(`index.whoWeAre.team.${i}.bio`)} handle={t(`index.whoWeAre.team.${i}.handle`)} img={t(`index.whoWeAre.team.${i}.img`)} />
+            <ProfileCard key={i} name={t(`index.whoWeAre.team.${i}.name`)} bio={t(`index.whoWeAre.team.${i}.bio`)} handle={t(`index.whoWeAre.team.${i}.handle`)} url={t(`index.whoWeAre.team.${i}.url`)} img={t(`index.whoWeAre.team.${i}.img`)} />
           )}
         </div>
         <style jsx>{`

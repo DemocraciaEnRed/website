@@ -35,19 +35,7 @@ const Sole = () => (
     </button>
   </a>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-   
+ 
     <style jsx>{`
       .sole-container {
         display: flex;
@@ -99,6 +87,10 @@ const Sole = () => (
         .sole-container ul {
           margin-left: 24px;
           margin-right: 0;
+        }
+
+        .btn {
+          margin-bottom:15px;
         }
       }
 

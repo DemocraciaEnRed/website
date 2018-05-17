@@ -44,7 +44,7 @@ export default class extends Component {
           currentLang={this.state.currentLang} >
           <Header 
             title={t('contact.title')}
-            bg={'../static/assets/header/headerAbout.jpg'} />
+            bg={'../static/assets/header/headerContact.jpg'} />
             <ContactWrapper />
         </Layout>
         <style jsx>{`

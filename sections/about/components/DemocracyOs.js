@@ -3,7 +3,7 @@ import Github from '../components/Github'
 
 const data = [0, 1]
 const data2 = [0]
-const items = [0, 1, 2, 3]
+const items = [0, 1, 2, 3,4]
 
 const DemocracyOs = () => (
   <div className='democracy-os-container'>
@@ -67,7 +67,7 @@ const DemocracyOs = () => (
         flex-wrap: wrap;
         justify-content: space-between;
         margin-top: 45px;
-        width: 700px;
+        width: 511px;
       }
       .btn {
         margin-top: -3px;
