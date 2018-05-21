@@ -35,7 +35,7 @@ class Publications extends Component {
       draggable: true,
       friction: 0.2,
       contain: true,
-      prevNextButtons: false
+      prevNextButtons: true
     }
     this.flickity = new Flickity(this.refs.carousel, options)
   }
