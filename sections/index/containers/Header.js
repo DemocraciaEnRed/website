@@ -5,7 +5,7 @@ import SocialBar from '../../../components/SocialBar.js'
 
 const Header = ( {modal, content, hideModal} ) => (
 	<header>
-		<h1>{t('index.header.title')}</h1>
+		<img className='logoDerMenu' src='../static/assets/Logo-der.svg'/>
 		<p className='subtext'>{t('index.header.subtitle')}</p>
 		<Submit />
 		<SocialBar alignSelf={'flex-end'} iconsSize={'30px'} width={'214px'} mobileWidth={'100%'} justifyContent={'space-around'} iconHover={'#444'} iconMobileHover={'#999'} />
@@ -13,7 +13,17 @@ const Header = ( {modal, content, hideModal} ) => (
       <Modal content={content} hideModal={hideModal} />
     }
     <style jsx>{`
-    	header {
+      img.logoDerMenu{
+        width:45em;
+        padding-bottom:4em;
+      }
+      @media (max-width: 440px) {
+        img.logoDerMenu{
+          width:30em;
+          padding-bottom:4em;
+        }
+      }
+      header {
      		background-image: url('../static/assets/header/headerWeb.jpg');
         background-repeat: no-repeat;
         background-size: cover;
