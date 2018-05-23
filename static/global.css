@@ -194,7 +194,10 @@ button {
   letter-spacing: 0.13rem;
   text-transform: uppercase;
 }
-
+._markdown_ span:last-child {
+  margin-top: 20px !important;
+  display: block;
+}
 ._markdown_ p {
   color: var(--black);
   font-size: 2.0rem;
@@ -215,6 +218,8 @@ button {
   list-style-type: disc;
   margin: 10px 220px 0;
 }
+
+
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 2000px) {
@@ -279,6 +284,7 @@ button {
   ._markdown_ p span {
     font-size: 1.8rem;
   }
+
   ._markdown_ h3 {
     font-size: 1.8rem;
     margin: 49px 24px 0;

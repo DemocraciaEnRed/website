@@ -9,20 +9,28 @@ const Content = () => markdown`
 
 <span>Dónde:</span> Buenos Aires
 
+<span>Presentación: </span>
+Buscamos una persona que valore servicios fiables, predecibles y bien documentados para crear sistemas que sirvan datos a distintas webapps.
+
 ### Responsabilidades
-* Desarrollar aplicaciones web en JavaScript, utilizando ES6, React.JS, Node.JS y otras tecnologías modernas.
-* Implementar nuevas funcionalidades y módulos en aplicaciones para startups y marcas globales.
-* Mejorar las herramientas disponibles para el equipo de desarrollo aplicando Gulp, Grunt, RequireJS, Browserify, Docker y otros.
+* Crear y mantener apps en Node.js
+* Gestionar contribuciones en proyectos de Código Libre
+* Deployar servicios en la nube usando Docker
+* Implementar testing y procesos de integración continua
+* Participar en las definiciones del producto
 
 ### Requisitos
-* Desarrollar aplicaciones web en JavaScript, utilizando ES6, React.JS, Node.JS y otras tecnologías modernas.
-* Implementar nuevas funcionalidades y módulos en aplicaciones para startups y marcas globales.
-* Mejorar las herramientas disponibles para el equipo de desarrollo aplicando Gulp, Grunt, RequireJS, Browserify, D
+* Node.js
+* Express, Mongoose
+* Mocha, Sinon
+* REST APIs
+* Testing
+* Performance
+ *Seguridad
+* Docker
 
-### ¿Qué te ofrecemos?
-* Desarrollar aplicaciones web en JavaScript, utilizando ES6, React.JS, Node.JS y otras tecnologías modernas.
-* Implementar nuevas funcionalidades y módulos en aplicaciones para startups y marcas globales.
-* Mejorar las herramientas disponibles para el equipo de desarrollo aplicando Gulp, Grunt, RequireJS, Browserify, D
+### Deseado
+* DevOps
 `
 
 export default Content

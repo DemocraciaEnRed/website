@@ -24,15 +24,17 @@ const JobCard = ( props ) => (
         background-color: #f0f0f0;
         display: flex;
         flex-wrap: wrap;
+        flex-direction: row;
         height: 268px;
         margin-bottom: 23px;
         padding: 16px;
         width: 313px;
       }
       .job-card-category {
-        margin-left: auto;
+        margin-left:auto;
         color: #565656;
         font-size: 2.0rem;
+        min-width:3.4em;
       }
       .job-card-title {
         color: var(--dark-accent);
