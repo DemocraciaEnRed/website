@@ -9,24 +9,6 @@
     "url": "/backend"
   },
   {
-    "id": "ux-ui-designer",
-    "job": "Diseñador UX/UI",
-    "category": "Diseño",
-    "seniority": "Semi-senior",
-    "type": "Full-time",
-    "location": "Oficina/WFH",
-    "url": "/ux-ui-designer"
-  },
-  {
-    "id": "front_end_dev",
-    "job": "Front-end developer",
-    "category": "Desarrollo",
-    "seniority": "Semi-senior",
-    "type": "Full-time",
-    "location": "Oficina/WFH",
-    "url": "/frontend"
-  },
-  {
     "id": "devops",
     "job": "Administración de sistemas / DevOps",
     "category": "Desarrollo",
