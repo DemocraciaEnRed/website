@@ -5,7 +5,7 @@ import SocialBar from '../../../components/SocialBar.js'
 
 const Header = ( {modal, content, hideModal} ) => (
 	<header>
-		<img className='logoDerMenu' src='../static/assets/Logo-der.svg'/>
+		<img className='logoDerMenu' src='../static/assets/Logo-der-header.svg'/>
 		<p className='subtext'>{t('index.header.subtitle')}</p>
 		<Submit />
 		<SocialBar alignSelf={'flex-end'} iconsSize={'30px'} width={'214px'} mobileWidth={'100%'} justifyContent={'space-around'} iconHover={'#444'} iconMobileHover={'#999'} />
