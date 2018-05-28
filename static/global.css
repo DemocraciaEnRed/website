@@ -27,6 +27,9 @@
   font-family: Dosis-ExtraLight;
   src: url(./fonts/Dosis-ExtraLight.ttf);
 }
+*:focus {
+  outline: none;
+}
 
 :root {
   /* COLOURS */
