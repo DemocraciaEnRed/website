@@ -3,12 +3,12 @@ import { t } from '../../../polyglot-modules/polyglot.js'
 const HechaLaLey = () => (
   <div className='hechalaley-container'>
     <img src='/static/assets/about/logohechalaley.png' alt='Hecha la ley' className='logo' />
-    <p>{t('aboutUs.hechaLaLey.text')}</p>
+    <p>{t('what-we-do.hechaLaLey.text')}</p>
     <div className='btn-container'>
-      <a href={t('aboutUs.hechaLaLey.href')} target='_blank' rol='external'>
+      <a href={t('what-we-do.hechaLaLey.href')} target='_blank' rol='external'>
         <button className='btn'>
           <span className='action-text'>
-            {t('aboutUs.hechaLaLey.callToAction')}
+            {t('what-we-do.hechaLaLey.callToAction')}
           </span>
         </button>
       </a>

@@ -75,6 +75,9 @@ module.exports = (token) => `<!doctype html>
         line-height: inherit !important;
         text-decoration: none !important;
       }
+      .btn-primary table td{
+        background-color: #89529D !important;
+      }
       .btn-primary table td:hover {
         background-color: #89529D !important;
       }
@@ -132,7 +135,7 @@ module.exports = (token) => `<!doctype html>
             <!-- START FOOTER -->
             <div class="footer" style="clear: both; Margin-top: 10px; text-align: center; width: 100%;">
               <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;">
-                <img src='../../static/assets/logo-der.svg'/>
+                <img src='../static/assets/logo-der.svg'/>
                 </tr>
               </table>
             </div>

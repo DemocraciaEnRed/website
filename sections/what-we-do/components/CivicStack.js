@@ -2,15 +2,15 @@ import { t } from '../../../polyglot-modules/polyglot.js'
 
 const CivicStack = () => (
   <div className='civic-stack-container'>
-    <img src={t('aboutUs.civicStack.img')} alt='Civic Stack' />
+    <img src={t('what-we-do.civicStack.img')} alt='Civic Stack' />
     <div className='civic-stack-text-container'>
-      <p className='civic-stack-text'>{t('aboutUs.civicStack.text')}</p>
+      <p className='civic-stack-text'>{t('what-we-do.civicStack.text')}</p>
     </div>
     <div className='btn-container'>
-      <a href={t('aboutUs.civicStack.href')} target='_blank' rel='external'>
+      <a href={t('what-we-do.civicStack.href')} target='_blank' rel='external'>
         <button className='btn'>
           <span className='action-text'>
-            {t('aboutUs.civicStack.callToAction')}
+            {t('what-we-do.civicStack.callToAction')}
           </span>
         </button>
       </a>

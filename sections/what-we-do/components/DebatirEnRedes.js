@@ -5,16 +5,16 @@ const data = [0, 1]
 const debatirEnRedes = () => (
   <div className='debatirEnRedes-container'>
     <div className='debatirEnRedes-text-container'>
-    <h2 className='debatirEnRedes-title'>{t('aboutUs.debatirEnRedes.title')}</h2>
+    <h2 className='debatirEnRedes-title'>{t('what-we-do.debatirEnRedes.title')}</h2>
     {data.map((i)=> {
-        return <p className='debatirEnRedes-text' key={i}>{t(`aboutUs.debatirEnRedes.text.${i}`)}</p>
+        return <p className='debatirEnRedes-text' key={i}>{t(`what-we-do.debatirEnRedes.text.${i}`)}</p>
       })}
     </div>
     <div className='btn-container'>
-      <a href={t('aboutUs.debatirEnRedes.href')} target='_blank' rel='external'>
+      <a href={t('what-we-do.debatirEnRedes.href')} target='_blank' rel='external'>
         <button className='btn'>
           <span className='action-text'>
-            {t('aboutUs.debatirEnRedes.callToAction')}
+            {t('what-we-do.debatirEnRedes.callToAction')}
           </span>
         </button>
       </a>

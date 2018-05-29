@@ -5,17 +5,17 @@ const data = [0, 1]
 
 const Clip = () => (
   <div className='clip-container'>
-    <img src={t('aboutUs.clip.img')} alt='conexiones latinoamericanas de innovación política'/>
+    <img src={t('what-we-do.clip.img')} alt='conexiones latinoamericanas de innovación política'/>
     <div className='clip-text'>
       {data.map((i)=> {
-        return <p key={i}>{t(`aboutUs.clip.text.${i}`)}</p>
+        return <p key={i}>{t(`what-we-do.clip.text.${i}`)}</p>
       })}
     </div>
     <div className='btn-container'>
-      <a href={t('aboutUs.clip.href')} target='_blank' rol='external'>
+      <a href={t('what-we-do.clip.href')} target='_blank' rol='external'>
         <button className='btn'>
           <span className='action-text'>
-            {t('aboutUs.clip.callToAction')}
+            {t('what-we-do.clip.callToAction')}
           </span>
         </button>
       </a>
