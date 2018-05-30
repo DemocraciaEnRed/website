@@ -4,17 +4,17 @@
     "job": "Back-end developer",
     "category": "Desarrollo",
     "seniority": "Semi-senior",
-    "type": "Full-time",
-    "location": "Oficina/WFH",
+    "type": "Full-time/Freelance",
+    "location": "Oficina/Remoto",
     "url": "/backend"
   },
   {
     "id": "devops",
     "job": "Administración de sistemas / DevOps",
     "category": "Desarrollo",
-    "seniority": "Semi-senior",
-    "type": "Full-time",
-    "location": "Oficina/WFH",
+    "seniority": "Senior/Semi-senior",
+    "type": "Full-time/Freelance",
+    "location": "Oficina/Remoto",
     "url": "/devops"
   },
   {
@@ -22,8 +22,8 @@
     "job": "Front-end developer",
     "category": "Desarrollo",
     "seniority": "Semi-senior",
-    "type": "Full-time",
-    "location": "Oficina/WFH",
+    "type": "Full-time/Freelance",
+    "location": "Oficina/Remoto",
     "url": "/frontend"
   }
 ]
