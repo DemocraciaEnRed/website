@@ -1,105 +1,35 @@
-import { t } from '../../../polyglot-modules/polyglot.js'
-import Github from '../components/Github'
+import React, {Component} from 'react';
 
-const data = [0, 1]
-const data2 = [0]
-const items = [0, 1, 2, 3,4]
+const { YOUTUBE_API_KEY } = 'undefined' !== typeof window ? window.env : process.env
 
-const DemocracyOs = () => (
-  <div className='democracy-os-container'>
-    <img src={t('aboutUs.democracyOs.img')} alt='Democracy OS' className='democracy-os-logo'/>
-    <div className='democracy-os-text'>
-      {data.map((i)=> {
-        return <p key={i}>{t(`aboutUs.democracyOs.text.${i}`)}</p>
-      })}
-    </div>
-    <ul className='democracy-os-list'>
-      {items.map((i)=>{
-        return <li key={i}>{t(`aboutUs.democracyOs.list.${i}`)}</li>
-      })}
-    </ul>
-    <div className='democracy-os-text'>
-      {data2.map((i)=> {
-        return <p key={i}>{t(`aboutUs.democracyOs.text-2.${i}`)}</p>
-      })}
-    </div>
-    <div className='buttons-container'>
-      <a href={t('aboutUs.democracyOs.repourl')}  target='_blank' rel='external'>
-        <button className='btn'>
-          <Github />
-          <span className='action-text'>{t('aboutUs.democracyOs.repo')}</span>
-        </button>
-      </a>
-      <a href={t('aboutUs.democracyOs.href')}  target='_blank' rel='external'>
-        <button className='btn'>
-          <span className='action-text'>{t('aboutUs.democracyOs.callToAction')}</span>
-        </button>
-      </a>
-    </div>
-    <style jsx>{`
-      .democracy-os-container {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding-bottom: 100px;
-        padding-top: 100px;
-      }
-      .democracy-os-logo {
-        margin-bottom: 38px;
-      }
-      p{
-        font-size: 2rem;
-        letter-spacing: 0.13rem;
-        text-align: center;
-      }
-      p:nth-child(2) {
-        margin: 40px 0;
-      }
-      .democracy-os-list {
-        list-style: disc;
-        font-size: 2.0rem;
-        letter-spacing: 0.13rem;
-        padding-bottom:3rem;
-      }
-      .buttons-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin-top: 45px;
-        width: 511px;
-      }
-      .btn {
-        margin-top: -3px;
-      }
-      @media (max-width: 768px) {
-        .democracy-os-list {
-          margin-left: 24px;
-          margin-right: 0;
-        }
-      }
-      @media (min-width: 1441px) {
-        .democracy-os-text, .democracy-os-list {
-          max-width: 1270px;
-        }
-      }
-      @media (max-width: 520px) {
-        .buttons-container {
-          align-items: center;
-          flex-direction: column;
-          width: 100%;
-        }
-        .buttons-container .btn:first-child {
-          margin-bottom: 20px;
-        }
-      }
-      @media (max-width: 375px) {
-        .democracy-os-logo {
-          width: 300px;
-        }
-      }
-    `}</style>
-  </div>
-)
 
-export default DemocracyOs
+export default class extends React.Component{
+
+constructor(props){
+  super(props)
+  this.playlistId = 'PL-5jaKJlVw83pDzsOkK079BTOzrZ-VfNT'
+  this.part = 'contentDetails'
+
+  this.clicked = this.clicked.bind(this);
+}
+  clicked (){
+    fetch(`https://www.googleapis.com/youtube/v3/playlistItems?key=${YOUTUBE_API_KEY}&playlistId=${this.playlistId}&part=${this.part}`)
+    .then((response) => response.json())
+    .then((responseJson) => {
+    console.log(responseJson);
+    //const resultyt = responseJson.items.map(obj => obj)
+    })
+    .catch((error) => {
+    console.error(error);
+    });
+    }
+
+    render(){
+      console.log(process.env.YOUTUBE_API_KEY)
+      return(
+        <div>
+          <button onClick={this.clicked}> click</button>
+        </div>
+      )
+    }
+  }

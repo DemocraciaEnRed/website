@@ -11,6 +11,7 @@ const AboutUs = () => (
       })}
     </div>
     <style jsx>{`
+    
       .about-us-section {
         align-items: center;
         display: flex;
@@ -32,6 +33,9 @@ const AboutUs = () => (
         letter-spacing: 0.13rem;
         text-align: center;
         margin-bottom:20px;
+      }
+      .about-us-section p:last-children {
+        margin-bottom:0px;
       }
       @media (min-width: 1747px) {
         .about-us-section {

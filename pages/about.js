@@ -7,9 +7,19 @@ import Layout from '../layouts/Layout'
 import Header from '../containers/Header'
 import AboutUs from '../sections/about/containers/AboutUs'
 import Content from '../sections/about/containers/Content'
+import VideoPlayer from '../sections/about/components/VideoPlayer'
 import Footer from '../containers/Footer'
 
+
+
+const env = process.env.YOUTUBE_API_KEY;
+
 export default class extends Component {
+
+  static getInitialProps() {
+    return { env };
+  }
+
   constructor (props) {
     super(props)
     this.state = {
@@ -19,9 +29,11 @@ export default class extends Component {
       polyglot.extend(es)
       polyglot.locale(es.language)
     }
+    
   }
 
   componentDidMount () {
+    console.log(this.props)
     const lang = localStorage.getItem('lang')
     if (lang === null) {
       localStorage.setItem('lang', 'es')
@@ -49,7 +61,8 @@ export default class extends Component {
             bg={'../static/assets/header/headerWeb.jpg'} />
           <AboutUs />
           <Content>
-          </Content>
+          <VideoPlayer autoplay="0" rel="0" modest="1" />         
+        </Content>
           <Footer />
         </Layout>
         <style jsx>{`
