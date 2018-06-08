@@ -57,7 +57,7 @@ export default class extends Component {
             title={t('aboutUs.title')}
             bg={'../static/assets/header/headerWeb.jpg'} />
           <AboutUs />
-          <Content youtubeApi={this.props.env}>
+          <Content api={this.props.env}>
         </Content>
           <Footer />
         </Layout>
