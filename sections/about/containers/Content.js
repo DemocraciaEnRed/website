@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import ThumbnailSlider from '../components/ThumbnailSlider'
+import dynamic from 'next/dynamic'
 import DisplayVideo from '../components/DisplayVideo'
 import SliderContainer from './SliderContainer'
 
@@ -47,64 +47,16 @@ render() {
         videos={this.state.videos}
         handleClick={this.handleClick} />
       <style jsx>{`
-      
-        .video-container {
-          position: relative;
-          padding-bottom: 56.25%;
-          padding-top: 30px;
-          height: 0;
-          overflow: hidden;
-        }
-
-        .video-container iframe,
-        .video-container object,
-        .video-container embed {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
         .video-section {
           display: flex;
+          flex-direction: column;
           flex-wrap: wrap;
           padding-bottom: 85px;
-          overflow-x: hidden;
         }
-        .thumbnails-container {
-          margin-top: 43px;
-          width: 100%;
+        .section-title {
+          display: block;
+          text-align: center;
         }
-        .btn-container {
-          display: none;
-        }
-        @media (max-width: 1024px) {
-          .video-section {
-            padding-bottom: 42px;
-          }
-          .thumbnails-container {
-            margin: 24px 0 33px;
-            display: block;
-            overflow: hidden;
-            width: 100%;
-            height: 229px;
-          }
-          .btn-container {
-            align-self: center;
-            display: flex;
-            justify-content: center;
-            margin: auto;
-          }
-        }
-        @media (max-width: 475px) {
-        .video-section {
-          padding-right: 0px;
-          padding-bottom: 42px;
-        }
-        .thumbnails-container {
-          margin-right: -24px;
-        }
-      }
       `}</style>
     </section>
   )
