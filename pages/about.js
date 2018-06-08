@@ -7,12 +7,10 @@ import Layout from '../layouts/Layout'
 import Header from '../containers/Header'
 import AboutUs from '../sections/about/containers/AboutUs'
 import Content from '../sections/about/containers/Content'
-import VideoPlayer from '../sections/about/components/VideoPlayer'
 import Footer from '../containers/Footer'
 
 
-
-const env = process.env.YOUTUBE_API_KEY;
+const env = 'undefined' !== process ? process.env.YOUTUBE_API_KEY : null
 
 export default class extends Component {
 
@@ -33,7 +31,6 @@ export default class extends Component {
   }
 
   componentDidMount () {
-    console.log(this.props)
     const lang = localStorage.getItem('lang')
     if (lang === null) {
       localStorage.setItem('lang', 'es')
@@ -60,8 +57,7 @@ export default class extends Component {
             title={t('aboutUs.title')}
             bg={'../static/assets/header/headerWeb.jpg'} />
           <AboutUs />
-          <Content>
-          <VideoPlayer autoplay="0" rel="0" modest="1" />         
+          <Content youtubeApi={this.props.env}>
         </Content>
           <Footer />
         </Layout>

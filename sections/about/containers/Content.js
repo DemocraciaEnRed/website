@@ -1,8 +1,9 @@
+import React, { Component } from 'react'
+import VideoPlayer from '../components/VideoPlayer'
+
 const Content = (props) => (
   <section className='content-section'>
-    <h3>Este es el título</h3>
-
-    {props.children}
+    <VideoPlayer api={props.youtubeApi}/>         
     <style jsx>{`
     h3{
       font-size:5em;
