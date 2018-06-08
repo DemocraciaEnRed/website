@@ -5,6 +5,20 @@ const DisplayVideo = ({ video }) => (
       .main-video {
         display: flex;
         justify-content: center;
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 30px;
+        height: 0;
+        overflow: hidden;
+      }
+      .main-video iframe,
+      .main-video object,
+      .main-video embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
       }
     `}</style>
     </div>

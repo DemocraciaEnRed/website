@@ -3,8 +3,6 @@ import dynamic from 'next/dynamic'
 import DisplayVideo from '../components/DisplayVideo'
 import SliderContainer from './SliderContainer'
 
-const api = 'AIzaSyBIBmx-nyGW907aCAOtnZGpyrJfyhipjKs'
-
 class Content extends React.Component{
   constructor(props){
     super(props)
@@ -22,7 +20,7 @@ class Content extends React.Component{
 
 
 componentDidMount () {
-  fetch(`https://www.googleapis.com/youtube/v3/playlistItems?key=${api}&playlistId=${this.playlistId}&part=snippet&maxResults=12`)
+  fetch(`https://www.googleapis.com/youtube/v3/playlistItems?key=${this.props.api}&playlistId=${this.playlistId}&part=snippet&maxResults=12`)
   .then((response) => response.json())
   .then((responseJson) => {
     console.log(responseJson)
