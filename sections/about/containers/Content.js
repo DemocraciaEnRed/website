@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import ThumbnailSlider from '../components/ThumbnailSlider'
 import DisplayVideo from '../components/DisplayVideo'
+import SliderContainer from './SliderContainer'
 
-let Flickity;
-
+const api = 'AIzaSyBIBmx-nyGW907aCAOtnZGpyrJfyhipjKs'
 
 class Content extends React.Component{
   constructor(props){
@@ -11,9 +11,7 @@ class Content extends React.Component{
     this.playlistId = 'PL-5jaKJlVw83pDzsOkK079BTOzrZ-VfNT'
     this.state = {
       currentVideo : 'FJS0zWIQJo0',
-      currentTitle : 'hola',
-      videos: [],
-      page: null
+      videos: []
     }
   }
   
@@ -27,9 +25,7 @@ class Content extends React.Component{
 
 
 componentDidMount () {
-  Flickity = require('flickity')
-
-  fetch(`https://www.googleapis.com/youtube/v3/playlistItems?key=${this.props.api}&playlistId=${this.playlistId}&part=snippet&maxResults=12`)
+  fetch(`https://www.googleapis.com/youtube/v3/playlistItems?key=${api}&playlistId=${this.playlistId}&part=snippet&maxResults=12`)
   .then((response) => response.json())
   .then((responseJson) => {
     const items = responseJson.items.map((obj) => ({
@@ -43,49 +39,12 @@ componentDidMount () {
   .catch((error) => console.error(error))
 }
 
-
-componentDidUpdate(){
-  const options = {
-    cellCelector: '.thumbnail-items',
-    pageDots: false,
-    wrapAround: false,
-    cellAlign: 'left',
-    draggable: true,
-    friction: 0.2,
-    contain: true,
-    prevNextButtons: true
-  }
-  this.flickity = new Flickity(this.refs.carousel, options)
-}
-
-
 render() {
   return (
     <section className='video-section' id='videos'>
-      
-      <h2 className='section-title'>{this.state.currentTitle}</h2>
-      
-      <div className='video-container'>
-        <DisplayVideo />
-       </div>
-
-      <div className='thumbnails-container' ref='carousel'>
-        { this.state.videos.map((video,i) => 
-          <ThumbnailSlider
-            key={i}
-             />
-        )}
-      </div>
-    {/*  <div className='btn-container'>
-        <a href='https://medium.com/multitudes' role='author' target='_blank'>
-          <button className='btn'>
-            <span className='action-text'>
-              {t('index.video.callToAction')}
-            </span>
-          </button>
-        </a>
-      </div>
-      */ }
+      <h2 className='section-title'>Material audiovisual</h2>
+      <DisplayVideo />
+      <SliderContainer videos={this.state.videos} />
       <style jsx>{`
       
         .video-container {

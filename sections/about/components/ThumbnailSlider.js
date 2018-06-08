@@ -1,6 +1,4 @@
-
 const ThumbnailSlider = (props) => (
-        
   <div className='thumbnail-item'>
     <button className='' 
   //  onClick={this.handleClick(video)}
