@@ -1,17 +1,16 @@
 import React, {Component} from 'react';
 
-
 export default class extends React.Component{
-
 constructor(props){
   super(props)
   this.playlistId = 'PL-5jaKJlVw83pDzsOkK079BTOzrZ-VfNT'
   this.part = 'contentDetails'
   this.state = {
-  currentVideo : 'FJS0zWIQJo0',
-  currentTitle : 'hola',
-  videos: []
-  };
+    currentVideo : 'FJS0zWIQJo0',
+    currentTitle : 'hola',
+    videos: [],
+    page: null
+  }
 }
 
   
@@ -23,25 +22,20 @@ handleClick = (video) => () => {
   }
 
   
-  componentDidMount (){
-    fetch(`https://www.googleapis.com/youtube/v3/playlistItems?key=${this.props.api}&playlistId=${this.playlistId}&part=snippet`)
+  componentDidMount () {
+    fetch(`https://www.googleapis.com/youtube/v3/playlistItems?key=${this.props.api}&playlistId=${this.playlistId}&part=snippet&maxResults=12`)
     .then((response) => response.json())
     .then((responseJson) => {
-    return responseJson.items.map(obj => ({ 
-      title: obj.snippet.title,
-      thumbnail: obj.snippet.thumbnails.standard.url,
-      id: obj.resourceId.videoId
+      const items = responseJson.items.map((obj) => ({
+          title: obj.snippet.title,
+          thumbnail: obj.snippet.thumbnails.default.url,
+          id: obj.snippet.resourceId.videoId
+        }))
+      return items
     })
-  );
-    })
-  .then((videos) =>   
-    this.setState({videos: videos},() => console.log(this.state.videos))
-  )  
-    .catch((error) => {
-    console.error(error);
-    });
-
-    }
+    .then((videos) => this.setState({videos: videos}))
+    .catch((error) => console.error(error))
+  }
 
     render(){
       
