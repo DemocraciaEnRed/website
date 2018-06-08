@@ -11,6 +11,7 @@ export default class extends Component {
           thumbnail={video.thumbnail}
           title={video.title}
           key={video.id}
+          handleClick={this.props.handleClick}
         />
       )}
       </div>

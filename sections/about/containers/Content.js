@@ -16,18 +16,16 @@ class Content extends React.Component{
   }
   
     
-  handleClick = (video) => () => {
-    this.setState({
-      currentVideo : video.id,
-      currentTitle: video.title
-    })
-    }
+  handleClick = (id) => () => {
+    this.setState({ currentVideo : id })
+  }
 
 
 componentDidMount () {
   fetch(`https://www.googleapis.com/youtube/v3/playlistItems?key=${api}&playlistId=${this.playlistId}&part=snippet&maxResults=12`)
   .then((response) => response.json())
   .then((responseJson) => {
+    console.log(responseJson)
     const items = responseJson.items.map((obj) => ({
         title: obj.snippet.title,
         thumbnail: obj.snippet.thumbnails.default.url,
@@ -43,8 +41,11 @@ render() {
   return (
     <section className='video-section' id='videos'>
       <h2 className='section-title'>Material audiovisual</h2>
-      <DisplayVideo />
-      <SliderContainer videos={this.state.videos} />
+      <DisplayVideo
+        video={this.state.currentVideo} />
+      <SliderContainer
+        videos={this.state.videos}
+        handleClick={this.handleClick} />
       <style jsx>{`
       
         .video-container {
