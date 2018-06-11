@@ -17,8 +17,8 @@ export default class extends Component {
     const options = {
       cellCelector: '.thumbnail-item',
       pageDots: false,
-      wrapAround: true,
-      cellAlign: 'left',
+      wrapAround: false,
+      cellAlign: 'center',
       draggable: true,
       contain: true,
       prevNextButtons: true
@@ -42,6 +42,11 @@ export default class extends Component {
           handleClick={this.props.handleClick}
         />
       )}
+      <style jsx>{`
+        .thumbnails-container {
+          width: 800px;
+        }
+      `}</style>
       </div>
     )
   }
