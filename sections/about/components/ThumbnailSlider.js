@@ -9,7 +9,7 @@ const ThumbnailSlider = ({ id, thumbnail, title, handleClick}) => (
           flex-direction: column;
           height: 305px;
           justify-content: space-between;
-          margin-right: 72px;
+          margin-right: 10px;
           padding: 58px 30px 39px;
           position: relative;
           width: 371px;

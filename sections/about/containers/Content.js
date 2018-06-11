@@ -8,7 +8,7 @@ class Content extends React.Component{
     super(props)
     this.playlistId = 'PL-5jaKJlVw83pDzsOkK079BTOzrZ-VfNT'
     this.state = {
-      currentVideo : 'FJS0zWIQJo0',
+      currentVideo : 'qJn3XVme-oQ',
       videos: []
     }
   }
@@ -55,6 +55,7 @@ render() {
           display: block;
           text-align: center;
         }
+        h2{margin-bottom:1.2em;}
       `}</style>
     </section>
   )
