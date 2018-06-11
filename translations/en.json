@@ -398,8 +398,8 @@
   "nav": {
     "primaryLinks": [
       {
-        "href": "about",
-        "title": "About us"
+        "href": "what-we-do",
+        "title": "What We Do"
       },
       {
         "href": "collaborate",
@@ -427,6 +427,10 @@
       }
     ],
     "secondaryLinks" : [
+      {
+        "href": "/about",
+        "title": "About us"
+      },
       {
         "href": "/contact",
         "title": "Contact us"

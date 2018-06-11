@@ -438,6 +438,10 @@
     ],
     "secondaryLinks" : [
       {
+        "href": "/about",
+        "title": "acerca de"
+      },
+      {
         "href": "/contact",
         "title": "Contacto"
       },
