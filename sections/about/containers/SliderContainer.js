@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import ThumbnailSlider from '../components/ThumbnailSlider'
-let Flickity;
+import Flickity from 'flickity'
 
 export default class extends Component {
   constructor(props) {
@@ -8,17 +8,14 @@ export default class extends Component {
     this.flickity = null
   }
 
-  componentDidMount () {
-    Flickity = require('flickity')
-  }
 
   componentDidUpdate () {
     if (this.flkty) this.flkty.destroy()
     const options = {
       cellCelector: '.thumbnail-item',
       pageDots: false,
-      wrapAround: true,
-      cellAlign: 'left',
+      wrapAround: false,
+      cellAlign: 'center',
       draggable: true,
       contain: true,
       prevNextButtons: true
@@ -42,6 +39,11 @@ export default class extends Component {
           handleClick={this.props.handleClick}
         />
       )}
+      <style jsx>{`
+        .thumbnails-container {
+          width: 800px;
+        }
+      `}</style>
       </div>
     )
   }

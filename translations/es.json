@@ -247,7 +247,7 @@
     }
   },
   "aboutUs": {
-    "title": "Acerca de nosotros",
+    "title": "Acerca de nosotras",
     "der": {
       "title": "Democracia en red",
       "text": [
@@ -408,8 +408,8 @@
   "nav": {
     "primaryLinks": [
       {
-        "href": "about",
-        "title": "Que hacemos"
+        "href": "what-we-do",
+        "title": "Qué hacemos"
       },
       {
         "href": "collaborate",
@@ -439,7 +439,7 @@
     "secondaryLinks" : [
       {
         "href": "/about",
-        "title": "acerca de"
+        "title": "Acerca de"
       },
       {
         "href": "/contact",

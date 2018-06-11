@@ -5,14 +5,14 @@ import Milestone from '../components/Milestone'
 const items = [0, 1, 2]
 
 const AboutUs = () => (
-	<section className='about-us-section' id='about'>
+	<section className='about-us-section' id='what-we-do'>
 		<h2 className='section-title'>{t('index.aboutUs.title')}</h2>
     <div className='about-us-container'>
       {items.map((i) => {
         return <Milestone key={i} title={t(`index.aboutUs.content.${i}.title`)} subtitle={t(`index.aboutUs.content.${i}.subtitle`)} icon={t(`index.aboutUs.content.${i}.icon`)}containerWidth={'290px'} />
       })}
     </div>
-    <Link href='/about'>
+    <Link href='/what-we-do'>
       <button className='btn'>
         <span className='action-text'>
           {t('index.aboutUs.callToAction')}
