@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import ThumbnailSlider from '../components/ThumbnailSlider'
-import Flickity from 'flickity'
+let Flickity;
 
 export default class extends Component {
   constructor(props) {
@@ -10,6 +10,7 @@ export default class extends Component {
 
 
   componentDidUpdate () {
+    Flickity = require('flickity')
     if (this.flkty) this.flkty.destroy()
     const options = {
       cellCelector: '.thumbnail-item',
