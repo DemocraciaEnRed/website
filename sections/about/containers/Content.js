@@ -55,8 +55,8 @@ render() {
         .section-title {
           display: block;
           text-align: center;
-          margin-bottom:1.2em;
-          margin-top: 10px;
+          margin-bottom:0.5em;
+          margin-top: 0.5em;
         }
         .slider-wrapper {
           display: flex;

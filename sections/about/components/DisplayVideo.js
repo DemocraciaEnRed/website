@@ -12,8 +12,27 @@ export default ({ video }) => (
       .main-video object,
       .main-video embed {
         width: 800px;
-        height: 600px;
-        margin: 40px 0;
+        height: 451px;
+        margin: 0px 0;
+      }
+
+      @media (max-width: 768px) {
+        .main-video iframe,
+      .main-video object,
+      .main-video embed {
+        width: 560px;
+        height: 315px;
+        margin: 0px 0;
+      }
+      }
+      @media (max-width: 450px) {
+        .main-video iframe,
+      .main-video object,
+      .main-video embed {
+        width: 400px;
+        height: 220px;
+        margin: 0px 0;
+      }
       }
     `}</style>
     </div>
