@@ -9,15 +9,7 @@ import AboutUs from '../sections/about/containers/AboutUs'
 import Content from '../sections/about/containers/Content'
 import Footer from '../containers/Footer'
 
-
-const env = 'undefined' !== process ? process.env.YOUTUBE_API_KEY : null
-
 export default class extends Component {
-
-  static getInitialProps() {
-    return { env };
-  }
-
   constructor (props) {
     super(props)
     this.state = {
@@ -57,7 +49,7 @@ export default class extends Component {
             title={t('aboutUs.title')}
             bg={'../static/assets/header/headerWeb.jpg'} />
           <AboutUs />
-          <Content api={this.props.env}>
+          <Content>
         </Content>
           <Footer />
         </Layout>

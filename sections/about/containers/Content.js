@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import dynamic from 'next/dynamic'
 import DisplayVideo from '../components/DisplayVideo'
 import SliderContainer from './SliderContainer'
 
@@ -9,7 +8,7 @@ class Content extends React.Component{
     this.playlistId = 'PL-5jaKJlVw83pDzsOkK079BTOzrZ-VfNT'
     this.state = {
       currentVideo : 'qJn3XVme-oQ',
-      videos: []
+      videos: null
     }
   }
   
@@ -20,7 +19,8 @@ class Content extends React.Component{
 
 
 componentDidMount () {
-  fetch(`https://www.googleapis.com/youtube/v3/playlistItems?key=${this.props.api}&playlistId=${this.playlistId}&part=snippet&maxResults=12`)
+  const youtube = localStorage.getItem('youtube')
+  fetch(`https://www.googleapis.com/youtube/v3/playlistItems?key=${youtube}&playlistId=${this.playlistId}&part=snippet&maxResults=12`)
   .then((response) => response.json())
   .then((responseJson) => {
     const items = responseJson.items.map((obj) => ({

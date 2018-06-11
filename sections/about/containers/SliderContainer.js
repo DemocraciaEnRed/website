@@ -33,7 +33,7 @@ export default class extends Component {
   render () {
     return (
       <div className='thumbnails-container' ref='carousel'>
-      {this.props.videos.map((video) => 
+      {this.props.videos && this.props.videos.map((video) => 
         <ThumbnailSlider
           id={video.id}
           thumbnail={video.thumbnail}
