@@ -10,12 +10,12 @@ const ThumbnailSlider = ({ id, thumbnail, title, handleClick}) => (
         .thumbnail-item {
           display: flex;
           flex-direction: column;
-          height: 305px;
+          height: 220px;
           justify-content: space-between;
           margin-right: 10px;
           padding: 58px 30px 39px;
           position: relative;
-          width: 371px;
+          width: 280px;
           cursor: pointer;
         }
         .thumbnail-link {

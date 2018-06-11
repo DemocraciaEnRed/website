@@ -1,27 +1,20 @@
-const DisplayVideo = ({ video }) => (
+export default ({ video }) => (
   <div className='main-video'>
-    <iframe frameBorder="0" width="560" height="315" src={`https://youtube.com/embed/${video}`} ></iframe>
+    <iframe frameBorder='0' src={`https://youtube.com/embed/${video}`} />
     <style jsx>{`
       .main-video {
         display: flex;
         justify-content: center;
         position: relative;
-        padding-bottom: 56.25%;
-        padding-top: 30px;
-        height: 0;
         overflow: hidden;
       }
       .main-video iframe,
       .main-video object,
       .main-video embed {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+        width: 800px;
+        height: 600px;
+        margin: 40px 0;
       }
     `}</style>
     </div>
 )
-
-export default DisplayVideo
