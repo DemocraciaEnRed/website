@@ -55,7 +55,6 @@ export default class extends Component {
           <Header 
             title={t('what-we-do.title')}
             bg={'../static/assets/header/headerWeb.jpg'} />
-          <WhatWeDo />
           <SectionMilestone 
             title={t('what-we-do.openGov.title')} 
             text={t('what-we-do.openGov.subtitle')}
