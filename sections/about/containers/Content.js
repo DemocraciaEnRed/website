@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import dynamic from 'next/dynamic'
 import DisplayVideo from '../components/DisplayVideo'
 const SliderContainer  = dynamic(import('./SliderContainer'), {
   ssr: false
