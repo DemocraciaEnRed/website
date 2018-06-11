@@ -17,7 +17,7 @@ export default class extends Component {
     const options = {
       cellCelector: '.thumbnail-item',
       pageDots: false,
-      wrapAround: true,
+      wrapAround: false,
       cellAlign: 'center',
       draggable: true,
       contain: true,
