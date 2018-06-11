@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import ThumbnailSlider from '../components/ThumbnailSlider'
-let Flickity;
+import Flickity from 'flickity'
 
 export default class extends Component {
   constructor(props) {
@@ -8,9 +8,6 @@ export default class extends Component {
     this.flickity = null
   }
 
-  componentDidMount () {
-    Flickity = require('flickity')
-  }
 
   componentDidUpdate () {
     if (this.flkty) this.flkty.destroy()

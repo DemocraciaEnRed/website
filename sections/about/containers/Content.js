@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import dynamic from 'next/dynamic'
 import DisplayVideo from '../components/DisplayVideo'
-import SliderContainer from './SliderContainer'
+const SliderContainer  = dynamic(import('./SliderContainer'), {
+  ssr: false
+})
 
 class Content extends React.Component{
   constructor(props){
