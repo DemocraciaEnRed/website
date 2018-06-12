@@ -12,7 +12,13 @@ import WhoWeAre from '../sections/index/containers/WhoWeAre'
 import Publications from '../sections/index/containers/Publications'
 import Footer from '../containers/Footer'
 
+const env = 'undefined' !== process ? process.env.YOUTUBE_API_KEY : null
+
 export default class extends Component {
+  static getInitialProps() {
+    return { env };
+  }
+
   constructor (props) {
     super(props)
     this.state = {
@@ -27,6 +33,7 @@ export default class extends Component {
   }
   
   componentDidMount () {
+    localStorage.setItem('youtube', this.props.env)
     const lang = localStorage.getItem('lang')
     if (lang === null) {
       localStorage.setItem('lang', 'es')

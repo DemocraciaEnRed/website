@@ -7,32 +7,32 @@ const items = [0, 1, 2, 3,4]
 
 const DemocracyOs = () => (
   <div className='democracy-os-container'>
-    <img src={t('aboutUs.democracyOs.img')} alt='Democracy OS' className='democracy-os-logo'/>
+    <img src={t('what-we-do.democracyOs.img')} alt='Democracy OS' className='democracy-os-logo'/>
     <div className='democracy-os-text'>
       {data.map((i)=> {
-        return <p key={i}>{t(`aboutUs.democracyOs.text.${i}`)}</p>
+        return <p key={i}>{t(`what-we-do.democracyOs.text.${i}`)}</p>
       })}
     </div>
     <ul className='democracy-os-list'>
       {items.map((i)=>{
-        return <li key={i}>{t(`aboutUs.democracyOs.list.${i}`)}</li>
+        return <li key={i}>{t(`what-we-do.democracyOs.list.${i}`)}</li>
       })}
     </ul>
     <div className='democracy-os-text'>
       {data2.map((i)=> {
-        return <p key={i}>{t(`aboutUs.democracyOs.text-2.${i}`)}</p>
+        return <p key={i}>{t(`what-we-do.democracyOs.text-2.${i}`)}</p>
       })}
     </div>
     <div className='buttons-container'>
-      <a href={t('aboutUs.democracyOs.repourl')}  target='_blank' rel='external'>
+      <a href={t('what-we-do.democracyOs.repourl')}  target='_blank' rel='external'>
         <button className='btn'>
           <Github />
-          <span className='action-text'>{t('aboutUs.democracyOs.repo')}</span>
+          <span className='action-text'>{t('what-we-do.democracyOs.repo')}</span>
         </button>
       </a>
-      <a href={t('aboutUs.democracyOs.href')}  target='_blank' rel='external'>
+      <a href={t('what-we-do.democracyOs.href')}  target='_blank' rel='external'>
         <button className='btn'>
-          <span className='action-text'>{t('aboutUs.democracyOs.callToAction')}</span>
+          <span className='action-text'>{t('what-we-do.democracyOs.callToAction')}</span>
         </button>
       </a>
     </div>

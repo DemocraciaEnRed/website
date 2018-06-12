@@ -181,7 +181,7 @@
         },
         {
           "name": "Florencia",
-          "bio": "Proyect coordinator",
+          "bio": "Project coordinator",
           "handle": "tw",
           "url": "https://twitter.com/pitucaffarone",
           "img": "../static/assets/profiles/florencia-dir.jpg"
@@ -251,10 +251,23 @@
     "der": {
       "title": "Democracia en red",
       "text": [
+        "DeR is an NGO founded in 2014 to articulate a political project from civil society. DeR was born from a diagnosis about the status quo and because we fed up with diagnoses and diagnosticians.",
+        "We were born to build practice, technique and poetry to imagine and implement innovations of the political system, to open up decision processes, to redistribute power. ",
+        "Our vision of success is reflected in a greater number of citizens, of diverse socio-economic profiles, incorporating to participative processes that have impact in terms of public policies.",
+        "This phenomenon requires promotion, inside the state structure, of new values, experiences and processes that outline a new and more open public administration model.",
+        "For us, impact, means promote effective changes in the relation between representants and representatives, a change that allow new governance schemes (more collaborative), new bureaucratic logics (more sensible) and new public spaces (digital and territorial)."
+     ]
+    }
+  },
+"what-we-do": {
+    "title": "Que hacemos",
+    "der": {
+      "title": "Democracia en red",
+      "text": [
         "DeR is an NGO founded in 2014 for articulate a political project from civil society. DeR was born from a diagnosis about the status quo and because fed up of diagnoses and diagnosticians",
         "We were born to build practice, technique and poetry that allow us to imagine and implement innovations in the political system, to open decision processes, to redistribute power.",
         "We promote new values, experiences and processes that allow more collaborative governance schemes, new bureaucratic logics and new public spaces."
-      ]
+      ] 
     },
     "openGov": {
       "title": "Open the institutions",
@@ -398,8 +411,8 @@
   "nav": {
     "primaryLinks": [
       {
-        "href": "about",
-        "title": "About us"
+        "href": "what-we-do",
+        "title": "What We Do"
       },
       {
         "href": "collaborate",
@@ -427,6 +440,10 @@
       }
     ],
     "secondaryLinks" : [
+      {
+        "href": "/about",
+        "title": "About us"
+      },
       {
         "href": "/contact",
         "title": "Contact us"

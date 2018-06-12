@@ -5,16 +5,16 @@ const items = [0, 1, 2]
 
 const Rinp = () => (
   <div className='rinp-container'>
-    <img src={t('aboutUs.rinp.img')} alt='Red de Innovación Política Logo'/>
+    <img src={t('what-we-do.rinp.img')} alt='Red de Innovación Política Logo'/>
     <div className='rinp-text'>
       {text.map((i)=> {
-        return <p key={i}>{t(`aboutUs.rinp.text.${i}`)}</p>
+        return <p key={i}>{t(`what-we-do.rinp.text.${i}`)}</p>
       })}
     </div>
-    <a href={t('aboutUs.rinp.href')} rel='external' target="_blank">
+    <a href={t('what-we-do.rinp.href')} rel='external' target="_blank">
       <button className='btn'>
         <span className='action-text'>
-          {t('aboutUs.rinp.callToAction')}
+          {t('what-we-do.rinp.callToAction')}
         </span>
       </button>
     </a>

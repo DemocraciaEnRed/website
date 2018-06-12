@@ -47,7 +47,7 @@ const ProfileCard = ( {name, bio, handle, img, url} ) => (
     .tw{
       height:30px;
       width:35px;
-      background-image: url("/static/assets/icons/twitter.svg");
+      background-image: url("/static/assets/icons/Twitter.svg");
       margin-top:10px;
     }
     .profile-card:hover .profile-card-container{

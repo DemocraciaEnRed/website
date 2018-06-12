@@ -5,32 +5,32 @@ const items = [0, 1, 2, 3, 4]
 
 const Sole = () => (
   <div className='sole-container'>
-    <img src={t('aboutUs.sole.img')} alt='SOLE'/>
+    <img src={t('what-we-do.sole.img')} alt='SOLE'/>
     <div>
       {text.map((i)=> {
-        return <p key={i}>{t(`aboutUs.sole.text.${i}`)}</p>
+        return <p key={i}>{t(`what-we-do.sole.text.${i}`)}</p>
       })}
     </div>
 
     <div className='buttons-container'>
-    <a href={t('aboutUs.sole.href')} target='_blank' rel='external'>
+    <a href={t('what-we-do.sole.href')} target='_blank' rel='external'>
     <button className='btn'>
       <span className='action-text'>
-        {t('aboutUs.sole.callToAction')}
+        {t('what-we-do.sole.callToAction')}
       </span>
     </button>
   </a>
-  <a href={t('aboutUs.sole.href2')} target='_blank' rel='external'>
+  <a href={t('what-we-do.sole.href2')} target='_blank' rel='external'>
   <button className='btn'>
     <span className='action-text'>
-      {t('aboutUs.sole.callToAction2')}
+      {t('what-we-do.sole.callToAction2')}
     </span>
   </button>
 </a>
-<a href={t('aboutUs.sole.href3')} target='_blank' rel='external'>
+<a href={t('what-we-do.sole.href3')} target='_blank' rel='external'>
     <button className='btn'>
       <span className='action-text'>
-        {t('aboutUs.sole.callToAction3')}
+        {t('what-we-do.sole.callToAction3')}
       </span>
     </button>
   </a>
