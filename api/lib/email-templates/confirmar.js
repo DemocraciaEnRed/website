@@ -134,7 +134,7 @@ module.exports = (token) => `<!doctype html>
             <!-- START FOOTER -->
             <div class="footer" style="clear: both; Margin-top: 10px; text-align: center; width: 100%;">
               <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;">
-                <img style="max-width: 200px" src="http://democraciaenred.org/static/assets/Logo-der-header.png"/>
+                <img style="max-width: 200px" src="https://democraciaenred.org/static/assets/Logo-der-header.png"/>
               </table>
             </div>
             <!-- END FOOTER -->
