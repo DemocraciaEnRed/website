@@ -12,8 +12,7 @@ const {
   MAILGUN_API_KEY,
   MAILGUN_PUBLIC_KEY,
   JWT_SECRET,
-  HOST,
-  SITE
+  HOST
 } = process.env
 
 const mg = mailgun({
@@ -61,7 +60,7 @@ function mandarConfirmacion (req, res, next) {
 
 function estaSubscripto (mail) {
   return new Promise(function (resolve, reject) {
-    mg.lists('test-encuesta@mg.octa.digital').members(mail)
+    mg.lists('novedades@mg.democraciaenred.org').members(mail)
       .info(function (error, body) {
         if (!error) return reject('is-in-list')
         if (error && error.statusCode === 404) return resolve(mail)
@@ -72,16 +71,16 @@ function estaSubscripto (mail) {
 
 function agregarEmail (req, res, next) {
   jwt.verify(req.query.token, JWT_SECRET, function(err, decoded) {
-    if (err) return res.redirect(301, `${SITE}?subscripto=false`)
+    if (err) return res.redirect(301, `${HOST}?subscripto=false`)
 
     const savedToken = cache.get(decoded.mail)
-    if (!savedToken || savedToken !== req.query.token) return res.redirect(301, `${SITE}?subscripto=false`)
+    if (!savedToken || savedToken !== req.query.token) return res.redirect(301, `${HOST}?subscripto=false`)
 
-    mg.lists('test-encuesta@mg.octa.digital').members()
+    mg.lists('novedades@mg.democraciaenred.org').members()
       .create({ address: decoded.mail }, function (error, body) {
         if (error) return next(error)
         cache.del(decoded.mail)
-        res.redirect(301, `${SITE}?subscripto=true`)
+        res.redirect(301, `${HOST}?subscripto=true`)
       })
   })
 }
@@ -95,7 +94,7 @@ function mailContacto (req, res, next) {
     mg.messages()
       .send({
         from: 'no-reply@democraciaenred.org',
-        to: 'speak@democracyos.io',
+        to: 'contacto@mg.democraciaenred.org',
         subject: 'Contacto democraciaenred.org',
         text: contactoTemplate(req.body)
       }, function (error, body) {
@@ -112,7 +111,7 @@ function mailTrabajo (req, res, next) {
 
     let message = {
       from: 'no-reply@democraciaenred.org',
-      to: 'trabajos@mg.octa.digital',
+      to: 'trabajos@mg.democraciaenred.org',
       subject: 'Trabajos democraciaenred.org',
       text: trabajoTemplate(req.body)
     }
