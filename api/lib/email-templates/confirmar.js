@@ -108,7 +108,7 @@ module.exports = (token) => `<!doctype html>
                                     </tr>
                                     <tr>
                                       <td style="font-family: sans-serif; font-size: 14px; vertical-align: top; text-align: center;">
-                                        <a href="${process.env.HOST}/subscripcion?token=${token}" target="_blank" style="text-decoration: capitalize;display: inline-block; color: #ffffff; background-color: #a764bf; border-radius: 10rem; box-sizing: border-box; cursor: pointer; text-decoration: none; font-size: 14px; font-weight: bold; margin: 0; padding: 8px 25px; text-transform: uppercase; border-color: #a764bf;">Confirmar email</a>
+                                        <a href="${process.env.HOST}/api/subscripcion?token=${token}" target="_blank" style="text-decoration: capitalize;display: inline-block; color: #ffffff; background-color: #a764bf; border-radius: 10rem; box-sizing: border-box; cursor: pointer; text-decoration: none; font-size: 14px; font-weight: bold; margin: 0; padding: 8px 25px; text-transform: uppercase; border-color: #a764bf;">Confirmar email</a>
                                       </td>
                                     </tr>
                                     <tr>
