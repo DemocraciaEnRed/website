@@ -7,23 +7,5 @@
     "type": "Full-time/Freelance",
     "location": "Oficina/Remoto",
     "url": "/backend"
-  },
-  {
-    "id": "devops",
-    "job": "Administración de sistemas / DevOps",
-    "category": "Desarrollo",
-    "seniority": "Senior/Semi-senior",
-    "type": "Full-time/Freelance",
-    "location": "Oficina/Remoto",
-    "url": "/devops"
-  },
-  {
-    "id": "front_end_dev",
-    "job": "Front-end developer",
-    "category": "Desarrollo",
-    "seniority": "Semi-senior",
-    "type": "Full-time/Freelance",
-    "location": "Oficina/Remoto",
-    "url": "/frontend"
   }
 ]
