@@ -174,7 +174,7 @@
         },
         {
           "name": "Powa",
-          "bio": "Accounts",
+          "bio": "Territorial coordinator",
           "handle": "ln",
           "url": "https://www.linkedin.com/in/don-powa-59290473/",
           "img": "../static/assets/profiles/powa.jpg"
@@ -260,7 +260,7 @@
     }
   },
 "what-we-do": {
-    "title": "Que hacemos",
+    "title": "What we do",
     "der": {
       "title": "Democracia en red",
       "text": [

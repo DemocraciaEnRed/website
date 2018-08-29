@@ -13,7 +13,7 @@
       "internalError": "Ocurrió un error. Por favor, intentalo de nuevo más tarde."
     },
     "aboutUs": {
-      "title": "Que hacemos",
+      "title": "Qué hacemos",
       "content": [
         {
           "title": "Abrir las instituciones",
@@ -142,7 +142,7 @@
       ]
     },
     "whoWeAre": {
-      "title": "Quienes somos",
+      "title": "Quiénes somos",
       "team": [
         {
           "name": "Agustín",
@@ -174,7 +174,7 @@
         },
         {
           "name": "Powa",
-          "bio": "Cuentas",
+          "bio": "Coordinador territorial",
           "handle": "ln",
           "url": "https://www.linkedin.com/in/don-powa-59290473/",
           "img": "../static/assets/profiles/powa.jpg"
@@ -260,7 +260,7 @@
     }
   },
 "what-we-do": {
-    "title": "Que hacemos",
+    "title": "Qué hacemos",
     "der": {
       "title": "Democracia en red",
       "text": [
@@ -433,7 +433,7 @@
       },
       {
         "href": "who-we-are",
-        "title": "Quienes somos"
+        "title": "Quiénes somos"
       }
     ],
     "secondaryLinks" : [
