@@ -24,6 +24,9 @@ export default class JobForm extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault()
+    this.setState({
+      disabled: true
+    })
     const form = {
       name: this.state.name,
       email: this.state.email,
