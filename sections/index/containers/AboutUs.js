@@ -12,6 +12,7 @@ const AboutUs = () => (
         return <Milestone key={i} title={t(`index.aboutUs.content.${i}.title`)} subtitle={t(`index.aboutUs.content.${i}.subtitle`)} icon={t(`index.aboutUs.content.${i}.icon`)}containerWidth={'290px'} />
       })}
     </div>
+    <div className="buttons-container">
     <Link href='/what-we-do'>
       <button className='btn'>
         <span className='action-text'>
@@ -19,6 +20,14 @@ const AboutUs = () => (
         </span>
       </button>
     </Link>
+    <a href={'https://drive.google.com/file/d/1dOuw_imRgG0dLA539Zoi6OIlRMCXInnd/view'}>
+      <button className='btn'>
+        <span className='action-text'>
+          {t('index.aboutUs.downloadPDF')}
+        </span>
+      </button>
+    </a>
+    </div>
     <style jsx>{`
       .about-us-section {
         display: flex;
@@ -40,6 +49,25 @@ const AboutUs = () => (
       }
       .section-number {
         right: 83px;
+      }
+      .buttons-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 45px;
+        width: 511px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      @media (max-width: 520px) {
+        .buttons-container {
+          align-items: center;
+          flex-direction: column;
+          width: 100%;
+        }
+        .buttons-container .btn:first-child {
+          margin-bottom: 20px;
+        }
       }
       @media (max-width: 1440px) {
         .about-us-container {
