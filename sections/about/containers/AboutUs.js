@@ -17,7 +17,8 @@ const AboutUs = () => (
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        padding: 135px 213px;
+        padding: 135px 213px 135px 213px;
+
       }
       .section-title {
         font-size: 3.6rem;
