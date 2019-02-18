@@ -31,7 +31,10 @@
           "icon": "/static/assets/icons/leaders.svg"
         }
       ],
-      "callToAction": "Ver más"
+      "callToAction": "Ver más",
+      "downloadPDF": "Informe 2018",
+      "urldownload": "https://drive.google.com/file/d/1dOuw_imRgG0dLA539Zoi6OIlRMCXInnd/view"
+
     },
     "caseStudies": {
       "title": "Casos de Estudio",
@@ -67,7 +70,8 @@
           "text": "Hay muchas manera de contribuir con nuestra misión.",
           "icon": "/static/assets/icons/collaborate.svg",
           "callToAction": "Escribinos",
-          "href": "/contact"
+          "href": "/contact",
+          "classbtn": "btn"
         },
         {
           "title": "Transparencia",
@@ -75,7 +79,8 @@
           "text": "Aquí todos nuestros balances financieros.",
           "icon": "/static/assets/icons/transparency.svg",
           "callToAction": "Ver Balances",
-          "href": "https://drive.google.com/open?id=18FqJdWg7Ucj6sey126T_SQPUQv0hZFyy"
+          "href": "https://drive.google.com/open?id=18FqJdWg7Ucj6sey126T_SQPUQv0hZFyy",
+          "classbtn": "'btn last-btn'"
         }
       ]
     },

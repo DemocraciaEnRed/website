@@ -54,6 +54,9 @@ const Milestone = ( props ) => (
           font-size: 1.9rem;
         }
       }
+      #collaborate div div div a button {
+        margin-top:76px !important;
+      }
       @media (max-width: 500px) {
         .milestone-container {
           width: 100%;
