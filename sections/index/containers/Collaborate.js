@@ -51,7 +51,6 @@ class Collaborate extends Component {
                   href={t(`index.collaborate.content.${i}.href`)}
                   containerWidth={'auto'}
                   classbtn={`index.collaborate.content${i}.classbtn`} />
-
               </div>     
             )}
           </div>
