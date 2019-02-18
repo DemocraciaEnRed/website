@@ -49,7 +49,9 @@ class Collaborate extends Component {
                   icon={t(`index.collaborate.content.${i}.icon`)}
                   button={t(`index.collaborate.content.${i}.callToAction`)}
                   href={t(`index.collaborate.content.${i}.href`)}
-                  containerWidth={'auto'} />
+                  containerWidth={'auto'}
+                  classbtn={`index.collaborate.content${i}.classbtn`} />
+
               </div>     
             )}
           </div>
@@ -74,6 +76,9 @@ class Collaborate extends Component {
           .collaborate-container .section-title {
             align-self: flex-start;
             margin-bottom: 53px;
+          }
+          .collaborate-container .btn {
+            margin-top:76px !important;
           }
           @media (min-width: 1600px) {
             .collaborate-section {

@@ -67,7 +67,8 @@
           "text": "Help us reach more people. There are many ways to collaborate.",
           "icon": "/static/assets/icons/collaborate.svg",
           "callToAction": "Drop us a line",
-          "href": "/contact"
+          "href": "/contact",
+          "classbtn": "btn"
         },
         {
           "title": "Transparency",
@@ -75,7 +76,8 @@
           "text": "Here is all accounting information summarized and documentary support.",
           "icon": "/static/assets/icons/transparency.svg",
           "callToAction": "Download PDF",
-          "href": "https://drive.google.com/file/d/18-rWaYPOXxVCjzH4zNySzl9c5HtFhr4x/view"
+          "href": "https://drive.google.com/file/d/18-rWaYPOXxVCjzH4zNySzl9c5HtFhr4x/view",
+          "classbtn": "btn last-btn"
         }
       ]
     },
