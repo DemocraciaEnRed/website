@@ -99,6 +99,7 @@ button {
   font-family: var(--semibold);
   font-weight: 500;
   font-size: 4.2rem;
+  text-align: center;
 }
 
 .subtitle {
