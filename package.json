@@ -4,6 +4,8 @@
   "description": "Democracia en Red website",
   "main": "index.js",
   "scripts": {
+    "devi": "next",
+    "api": "node server.js",
     "dev": "next build && node server.js",
     "build": "next build",
     "start": "NODE_ENV=production node server.js"

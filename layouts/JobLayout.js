@@ -5,6 +5,8 @@ import Navbar from '../containers/Navbar'
 import Header from '../containers/Header'
 import Breadcrumbs from '../sections/jobs/components/Breadcrumbs'
 
+
+
 const JobLayout = (props) => (
   <div>
     <Head>

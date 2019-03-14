@@ -170,13 +170,6 @@
           "img": "../static/assets/profiles/esteban.jpg"
         },
         {
-          "name": "Martín",
-          "bio": "Education",
-          "handle": "ln",
-          "url": "https://www.linkedin.com/in/mgalanternik/",
-          "img": "../static/assets/profiles/martin.jpg"
-        },
-        {
           "name": "Powa",
           "bio": "Territorial coordinator",
           "handle": "ln",
@@ -198,33 +191,11 @@
           "img": "../static/assets/profiles/daniela.jpg"
         },
         {
-          "name": "Franco",
-          "bio": "Field investigation",
-          "handle": "mail",
-          "url": "mailto:franco@democracyos.io",
-          "img": "../static/assets/profiles/franco.jpg"
-        },
-        {
           "name": "Francisco",
           "bio": "Development leader",
           "handle": "github",
           "url": "https://www.github.com/franciclo",
           "img": "../static/assets/profiles/francisco.jpg"
-        },
-        {
-          "name": "Florencia",
-          "bio": "Development",
-          "handle": "github",
-          "url": "https://www.github.com/florlafuente",
-          "img": "../static/assets/profiles/florencia-dev.jpg"
-        },
-       
-        {
-          "name": "Laura",
-          "bio": "Development",
-          "handle": "github",
-          "url": "https://www.github.com/luarar",
-          "img": "../static/assets/profiles/laura.jpg"
         },
         {
           "name": "Guille",
