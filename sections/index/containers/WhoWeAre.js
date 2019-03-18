@@ -68,7 +68,7 @@ class WhoWeAre extends Component {
               width: 1270px;
             }
             .section-title {
-              align-self: flex-start;
+              align-self: center;
             }
           }
           @media screen and (max-width: 1024px) {
