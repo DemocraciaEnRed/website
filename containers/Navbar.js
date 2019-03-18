@@ -59,7 +59,7 @@ class Navbar extends Component {
             position: fixed;
             width: 100vw;
             height: 50px;
-            padding: 0 42px;
+            padding: 0 25px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -86,7 +86,7 @@ class Navbar extends Component {
 
           @media screen and (max-width: 860px) {
             nav {
-              padding: 0 24px;
+              padding: 0 19px;
             }
           }
         `}</style>
