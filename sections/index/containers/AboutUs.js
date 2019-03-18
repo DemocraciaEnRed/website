@@ -20,7 +20,7 @@ const AboutUs = () => (
         </span>
       </button>
     </Link>
-    <a href={'https://drive.google.com/file/d/1dOuw_imRgG0dLA539Zoi6OIlRMCXInnd/view'}>
+    <a href={'https://drive.google.com/file/d/1dOuw_imRgG0dLA539Zoi6OIlRMCXInnd/view'} target="_blank">
       <button className='btn'>
         <span className='action-text'>
           {t('index.aboutUs.downloadPDF')}
