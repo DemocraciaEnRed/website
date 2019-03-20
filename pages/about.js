@@ -6,7 +6,7 @@ import en from '../translations/en.json'
 import Layout from '../layouts/Layout'
 import Header from '../containers/Header'
 import AboutUs from '../sections/about/containers/AboutUs'
-import Content from '../sections/about/containers/Content'
+// import Content from '../sections/about/containers/Content'
 import Footer from '../containers/Footer'
 
 export default class extends Component {
@@ -49,8 +49,8 @@ export default class extends Component {
             title={t('aboutUs.title')}
             bg={'../static/assets/header/headerWeb.jpg'} />
           <AboutUs />
-          <Content>
-        </Content>
+          {/* <Content>
+        </Content> */}
           <Footer />
         </Layout>
         <style jsx>{`
