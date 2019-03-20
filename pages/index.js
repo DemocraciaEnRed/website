@@ -11,7 +11,7 @@ import Media from '../sections/index/containers/Media'
 import WhoWeAre from '../sections/index/containers/WhoWeAre'
 import Publications from '../sections/index/containers/Publications'
 import Footer from '../containers/Footer'
-
+import Content from "../sections/about/containers/Content"
 const env = 'undefined' !== process ? process.env.YOUTUBE_API_KEY : null
 
 export default class extends Component {
@@ -80,6 +80,7 @@ export default class extends Component {
           <Publications />
           <Ebooks />
           <Media />
+          <Content />
           <WhoWeAre />
           <Footer />
         </Layout>
