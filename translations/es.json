@@ -185,11 +185,25 @@
           "img": "../static/assets/profiles/florencia-dir.jpg"
         },
         {
-          "name": "Daniela",
+          "name": "Luciana",
           "bio": "Investigación de campo",
+          "handle": "tw",
+          "url": "https://twitter.com/_lucianavega",
+          "img": "../static/assets/profiles/luciana.jpg"
+        },
+        {
+          "name": "Solange",
+          "bio": "Proyectos",
           "handle": "ln",
-          "url": "https://ar.linkedin.com/in/daniela-mazzoni-222861115",
-          "img": "../static/assets/profiles/daniela.jpg"
+          "url": "https://www.linkedin.com/in/solange-rosa-6407a1b3/",
+          "img": "../static/assets/profiles/sol.jpg"
+        },
+        {
+          "name": "Mariela",
+          "bio": "Comunicación",
+          "handle": "ln",
+          "url": "https://www.linkedin.com/in/solange-rosa-6407a1b3/",
+          "img": "../static/assets/profiles/mariela.jpg"
         },
         {
           "name": "Francisco",
@@ -199,11 +213,25 @@
           "img": "../static/assets/profiles/francisco.jpg"
         },
         {
+          "name": "Álvaro",
+          "bio": "DevOps",
+          "handle": "github",
+          "url": "https://github.com/mxdlx",
+          "img": "../static/assets/profiles/alvaro.jpg"
+        },
+        {        
           "name": "Guille",
           "bio": "Desarrollo",
           "handle": "tw",
           "url": "https://twitter.com/guillermocroppi",
           "img": "../static/assets/profiles/guille.jpg"
+        },
+        {
+          "name": "Bárbara",
+          "bio": "Desarrollo",
+          "handle": "github",
+          "url": "https://github.com/Inventrixx",
+          "img": "../static/assets/profiles/barbara.jpg"
         },
         {
           "name": "Guido",
@@ -219,6 +247,8 @@
           "url": "https://matiaslescano.com.ar",
           "img": "../static/assets/profiles/matias.jpg"
         }
+        
+
       ]
     }
   },
