@@ -3,7 +3,7 @@ const ProfileCard = ( {name, bio, handle, img, url} ) => (
     <div className='profile-card-container'>
       <h3 className='profile-title'>{name}</h3>
       <p className='profile-bio'>{bio}</p>
-   <a href={`${url}`}>  <div className={`${handle}`}></div>   </a>
+   <a href={`${url}`} target="_blank">  <div className={`${handle}`}></div>   </a>
      
     </div>
   <style jsx>{`
