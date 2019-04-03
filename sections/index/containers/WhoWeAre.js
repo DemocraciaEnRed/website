@@ -3,7 +3,7 @@ import { t } from '../../../polyglot-modules/polyglot.js'
 import ProfileCard from '../components/ProfileCard'
 let Flickity;
 
-const data = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+const data = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
 
 class WhoWeAre extends Component {
   constructor (props) {
@@ -49,12 +49,10 @@ class WhoWeAre extends Component {
             overflow-y: hidden;
           }
           .profile-container {
-            align-content: space-between;
             display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
+            flex-flow: row wrap;
             justify-content: space-around;
-            height: 1050px;
+            height: auto;
             margin-top: 72px;
             width: 100%;
           }
