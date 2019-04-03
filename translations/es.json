@@ -171,18 +171,18 @@
           "img": "../static/assets/profiles/esteban.jpg"
         },
         {
-          "name": "Powa",
-          "bio": "Coordinador territorial",
-          "handle": "ln",
-          "url": "https://www.linkedin.com/in/don-powa-59290473/",
-          "img": "../static/assets/profiles/powa.jpg"
-        },
-        {
           "name": "Florencia",
           "bio": "Coordinadora de Proyectos",
           "handle": "tw",
           "url": "https://twitter.com/pitucaffarone",
           "img": "../static/assets/profiles/florencia-dir.jpg"
+        },
+        {
+          "name": "Powa",
+          "bio": "Coordinador territorial",
+          "handle": "ln",
+          "url": "https://www.linkedin.com/in/don-powa-59290473/",
+          "img": "../static/assets/profiles/powa.jpg"
         },
         {
           "name": "Luciana",
@@ -202,22 +202,7 @@
           "name": "Mariela",
           "bio": "Comunicación",
           "handle": "ln",
-          "url": "https://www.linkedin.com/in/solange-rosa-6407a1b3/",
           "img": "../static/assets/profiles/mariela.jpg"
-        },
-        {
-          "name": "Francisco",
-          "bio": "Lider de Desarrollo",
-          "handle": "github",
-          "url": "https://www.github.com/franciclo",
-          "img": "../static/assets/profiles/francisco.jpg"
-        },
-        {
-          "name": "Álvaro",
-          "bio": "DevOps",
-          "handle": "github",
-          "url": "https://github.com/mxdlx",
-          "img": "../static/assets/profiles/alvaro.jpg"
         },
         {        
           "name": "Guille",
@@ -225,6 +210,13 @@
           "handle": "tw",
           "url": "https://twitter.com/guillermocroppi",
           "img": "../static/assets/profiles/guille.jpg"
+        },
+        {
+          "name": "Álvaro",
+          "bio": "DevOps",
+          "handle": "github",
+          "url": "https://github.com/mxdlx",
+          "img": "../static/assets/profiles/alvaro.jpg"
         },
         {
           "name": "Bárbara",
@@ -235,17 +227,24 @@
         },
         {
           "name": "Guido",
-          "bio": "Consultor Software",
+          "bio": "Asesor de Software",
           "handle": "tw",
           "url": "https://twitter.com/gvilarino",
           "img": "../static/assets/profiles/guido.jpg"
         },
         {
           "name": "Matías",
-          "bio": "Consultor Software",
+          "bio": "Asesor de Software",
           "handle": "mail",
           "url": "https://matiaslescano.com.ar",
           "img": "../static/assets/profiles/matias.jpg"
+        },
+        {
+          "name": "Francisco",
+          "bio": "Asesor de Software",
+          "handle": "github",
+          "url": "https://www.github.com/franciclo",
+          "img": "../static/assets/profiles/francisco.jpg"
         }
         
 

@@ -170,18 +170,18 @@
           "img": "../static/assets/profiles/esteban.jpg"
         },
         {
-          "name": "Powa",
-          "bio": "Territorial coordinator",
-          "handle": "ln",
-          "url": "https://www.linkedin.com/in/don-powa-59290473/",
-          "img": "../static/assets/profiles/powa.jpg"
-        },
-        {
           "name": "Florencia",
           "bio": "Project coordinator",
           "handle": "tw",
           "url": "https://twitter.com/pitucaffarone",
           "img": "../static/assets/profiles/florencia-dir.jpg"
+        },
+        {
+          "name": "Powa",
+          "bio": "Territorial coordinator",
+          "handle": "ln",
+          "url": "https://www.linkedin.com/in/don-powa-59290473/",
+          "img": "../static/assets/profiles/powa.jpg"
         },
         {
           "name": "Luciana",
@@ -201,22 +201,7 @@
           "name": "Mariela",
           "bio": "Comunication",
           "handle": "ln",
-          "url": "https://www.linkedin.com/in/solange-rosa-6407a1b3/",
           "img": "../static/assets/profiles/mariela.jpg"
-        },
-        {
-          "name": "Francisco",
-          "bio": "Development leader",
-          "handle": "github",
-          "url": "https://www.github.com/franciclo",
-          "img": "../static/assets/profiles/francisco.jpg"
-        },
-        {
-          "name": "Álvaro",
-          "bio": "DevOps",
-          "handle": "github",
-          "url": "https://github.com/mxdlx",
-          "img": "../static/assets/profiles/alvaro.jpg"
         },
         {
           "name": "Guille",
@@ -224,6 +209,13 @@
           "handle": "tw",
           "url": "https://twitter.com/guillermocroppi",
           "img": "../static/assets/profiles/guille.jpg"
+        },
+        {
+          "name": "Álvaro",
+          "bio": "DevOps",
+          "handle": "github",
+          "url": "https://github.com/mxdlx",
+          "img": "../static/assets/profiles/alvaro.jpg"
         },
         {
           "name": "Bárbara",
@@ -245,6 +237,13 @@
           "handle": "mail",
           "url": "https://matiaslescano.com.ar",
           "img": "../static/assets/profiles/matias.jpg"
+        },
+        {
+          "name": "Francisco",
+          "bio": "Software consultant",
+          "handle": "github",
+          "url": "https://www.github.com/franciclo",
+          "img": "../static/assets/profiles/francisco.jpg"
         }
         
       ]
