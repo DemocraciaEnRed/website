@@ -218,6 +218,13 @@
           "img": "../static/assets/profiles/alvaro.jpg"
         },
         {
+          "name": "Marien",
+          "bio": "Design",
+          "handle": "tw",
+          "url": "https://twitter.com/marienkaefer__",
+          "img": "../static/assets/profiles/Marien.jpg"
+        },
+        {
           "name": "Bárbara",
           "bio": "Development",
           "handle": "github",
@@ -368,6 +375,17 @@
       ],
       "callToAction": "See More",
       "href": "http://clip.lat/"
+    }
+  },
+  "transparency": {
+    "title": "Transparencia 2019",
+    "logo": "/static/assets/icons/transparency-logo.svg",
+    "content": {
+      "title": "Información presupuesto 2019",
+      "subtitle": "Lorem ipsum dolor sit amet this is title sit amet lorem ipsum",
+      "information": {
+        "title": "gastos"
+      }
     }
   },
   "contact": {

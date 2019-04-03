@@ -1,6 +1,6 @@
 { 
   "language": "es",
-  "index": {
+  "index": { 
     "header": {
       "title": "Democracia en Red",
       "subtitle": "Imaginamos, diseñamos e implementamos innovaciones en el sistema político para abrir los procesos de decisión y redistribuir el poder.",
@@ -79,7 +79,7 @@
           "text": "Aquí todos nuestros balances financieros.",
           "icon": "/static/assets/icons/transparency.svg",
           "callToAction": "Ver Balances",
-          "href": "https://drive.google.com/open?id=18FqJdWg7Ucj6sey126T_SQPUQv0hZFyy",
+          "href": "/transparency",
           "classbtn": "'btn last-btn'"
         }
       ]
@@ -217,6 +217,13 @@
           "handle": "github",
           "url": "https://github.com/mxdlx",
           "img": "../static/assets/profiles/alvaro.jpg"
+        },
+        {
+          "name": "Marien",
+          "bio": "Diseño",
+          "handle": "tw",
+          "url": "https://twitter.com/marienkaefer__",
+          "img": "../static/assets/profiles/Marien.jpg"
         },
         {
           "name": "Bárbara",
@@ -367,6 +374,18 @@
       ],
       "callToAction": "Ver más",
       "href": "http://clip.lat/"
+    }
+  },
+  "transparency": {
+    "title": "Transparencia 2019",
+    "logo": "/static/assets/icons/transparency-logo.svg",
+    "content": {
+      "title": "Información presupuesto 2019",
+      "subtitle": "Lorem ipsum dolor sit amet this is title sit amet lorem ipsum",
+      "information": {
+        "title": "gastos"
+        
+      }
     }
   },
   "contact": {
