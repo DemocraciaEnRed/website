@@ -1,6 +1,6 @@
 import { t } from '../../../polyglot-modules/polyglot.js'
 import Modal from '../components/Modal'
-import Submit from '../components/Submit'
+//import Submit from '../components/Submit'
 import SocialBar from '../../../components/SocialBar.js'
 
 const Header = ( {modal, content, hideModal} ) => (

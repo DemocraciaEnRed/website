@@ -47,6 +47,7 @@ class WhoWeAre extends Component {
         <style jsx>{`
           .who-we-are-section {
             overflow-y: hidden;
+            width:100%;
           }
           .profile-container {
             display: flex;

@@ -19,7 +19,7 @@ const ProfileCard = ( {name, bio, handle, img, url} ) => (
       height: 250px;
       justify-content: center;
       position: relative;
-      width: 250px;
+      width: 20%;
       margin-bottom:30px;
     }
     .profile-card-container {

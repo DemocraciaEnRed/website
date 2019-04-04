@@ -377,15 +377,20 @@
     }
   },
   "transparency": {
-    "title": "Transparencia 2019",
+    "header": "Transparencia 2019",
+    "title": "Información presupuesto 2019",
+    "subtitle": "Lorem ipsum dolor sit amet this is title sit amet lorem ipsum",
     "logo": "/static/assets/icons/transparency-logo.svg",
-    "content": {
-      "title": "Información presupuesto 2019",
-      "subtitle": "Lorem ipsum dolor sit amet this is title sit amet lorem ipsum",
-      "information": {
-        "title": "gastos"
-        
-      }
+    "doughnutGraphic": {
+      "subtitleOne": "Ingresos",
+      "subtitleTwo": "Gastos"
+    },
+    "barGraphic": {
+      "subtitle": "Detalle de ingresos y gastos",
+      "btn-text": "Ver más"
+    },
+    "HorizontalGraphic": {
+      "subtitle": "Paridad del Equipo"
     }
   },
   "contact": {
