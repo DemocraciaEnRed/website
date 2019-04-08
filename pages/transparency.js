@@ -5,9 +5,12 @@ import es from '../translations/es.json'
 import en from '../translations/en.json'
 import Layout from '../layouts/Layout'
 import Header from '../containers/Header'
-//import Transparency from '../sections/transparency/containers/AboutUs'
 import Content from '../sections/transparency/containers/Content'
 import Footer from '../containers/Footer'
+import DoughnutGraphic  from "../sections/transparency/containers/DoughnutGraphic"
+import VerticalBars from "../sections/transparency/containers/VerticalBars"
+import HorizontalBars from "../sections/transparency/containers/HorizontalBars"
+
 
 export default class extends Component {
   constructor (props) {
@@ -46,11 +49,12 @@ export default class extends Component {
           changeLang={this.changeLang}
           currentLang={this.state.currentLang} >
           <Header 
-            title={t('transparency.title')}
+            title={t('transparency.header')}
             bg={'../static/assets/header/headerWeb.jpg'} />
-         {/*  <AboutUs />*/}
           <Content icon={t('transparency.logo')}/>
-          <h2>Hola</h2>
+          <DoughnutGraphic />
+          <VerticalBars />
+          <HorizontalBars />
           <Footer />
         </Layout>
         <style jsx>{`
