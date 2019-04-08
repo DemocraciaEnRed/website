@@ -201,7 +201,8 @@
         {
           "name": "Mariela",
           "bio": "Comunicación",
-          "handle": "ln",
+          "handle": "tw",
+          "url": "https://twitter.com/1_male",
           "img": "../static/assets/profiles/mariela.jpg"
         },
         {        
@@ -377,8 +378,8 @@
     }
   },
   "transparency": {
-    "header": "Transparencia 2019",
-    "title": "Información presupuesto 2019",
+    "header": "Transparencia",
+    "title": "Información presupuesto 2018",
     "subtitle": "Lorem ipsum dolor sit amet this is title sit amet lorem ipsum",
     "logo": "/static/assets/icons/transparency-logo.svg",
     "doughnutGraphic": {

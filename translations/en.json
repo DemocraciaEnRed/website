@@ -200,7 +200,8 @@
         {
           "name": "Mariela",
           "bio": "Comunication",
-          "handle": "ln",
+          "handle": "tw",
+          "url": "https://twitter.com/1_male",
           "img": "../static/assets/profiles/mariela.jpg"
         },
         {
@@ -378,14 +379,20 @@
     }
   },
   "transparency": {
-    "title": "Transparencia 2019",
+    "header": "Transparency 2019",
+    "title": "Budget Information 2019",
+    "subtitle": "Lorem ipsum dolor sit amet this is title sit amet lorem ipsum",
     "logo": "/static/assets/icons/transparency-logo.svg",
-    "content": {
-      "title": "Información presupuesto 2019",
-      "subtitle": "Lorem ipsum dolor sit amet this is title sit amet lorem ipsum",
-      "information": {
-        "title": "gastos"
-      }
+    "doughnutGraphic": {
+      "subtitleOne": "Income",
+      "subtitleTwo": "Outcome"
+    },
+    "barGraphic": {
+      "subtitle": "Income and outcome details",
+      "btn-text": "See more"
+    },
+    "HorizontalGraphic": {
+      "subtitle": "Team parity"
     }
   },
   "contact": {
