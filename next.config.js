@@ -10,7 +10,8 @@ module.exports = {
             '/contact' : {  page: '/contact' },
             '/jobs' : {  page: '/jobs' },
             '/apply' : { page: '/apply' },
-            '/backend' : { page: '/backend'}
+            '/backend' : { page: '/backend'},
+            '/transparency': { page: '/transparency'}
         }
     }
 }
