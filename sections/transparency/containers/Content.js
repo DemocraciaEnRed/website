@@ -1,8 +1,7 @@
 import { t } from '../../../polyglot-modules/polyglot.js'
-import DoughnutGraphic  from "./DoughnutGraphic"
 
 const Content = (props) => (
-  <div className='content-container'>
+  <section className='content-container'>
     <div>
       <img src={props.icon}/>
     </div>
@@ -10,7 +9,6 @@ const Content = (props) => (
     <div className="section-subtitle">
       <p>{t('transparency.subtitle')}</p>
       <div className="section-text">
-        <DoughnutGraphic />
       </div>
     </div>
     <style jsx>{`
@@ -31,7 +29,7 @@ const Content = (props) => (
         text-align: center;
       }
     `}</style>
-  </div>
+  </section>
 )
 
 export default Content
