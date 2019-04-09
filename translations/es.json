@@ -382,17 +382,30 @@
     "title": "Balance 2018",
     "subtitle": "¿Quién nos financia? ¿Cómo gastamos?",
     "logo": "/static/assets/icons/transparency-logo.svg",
+    
     "doughnutGraphic": {
       "subtitleOne": "Ingresos",
       "subtitleTwo": "Gastos"
     },
     "barGraphic": {
-      "subtitle": "Evolución de ingresos y gastos",
+      "title": "Evolución de ingresos y gastos",
+      "income": {
+        "subtitle": "Ingresos por fuente de financiamiento fiscal"
+      },
+      "outcome": {
+        "subtitle": "Egreso por objeto del año fiscal"
+      },
       "btn-text": "Ver más",
       "urldownload": "https://drive.google.com/drive/folders/18FqJdWg7Ucj6sey126T_SQPUQv0hZFyy"
     },
-    "HorizontalGraphic": {
+    "horizontalGraphic": {
       "subtitle": "Paridad del Equipo"
+    },
+    "balanceSheet": {
+      "text": "Ver informe de gestión 2018",
+      "btn-text": "Balance 2018",
+      "urldownload": "https://drive.google.com/file/d/1dOuw_imRgG0dLA539Zoi6OIlRMCXInnd/view"
+    
     }
   },
   "contact": {

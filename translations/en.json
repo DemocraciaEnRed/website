@@ -388,13 +388,24 @@
       "subtitleTwo": "Outcome"
     },
     "barGraphic": {
-      "subtitle": "Income and outcome's evolution",
+      "title": "Income and outcome's evolution",
+      "income": {
+        "subtitle": "Income by source of financing fiscal year"
+      },
+      "outcome": {
+        "subtitle": "Outcome by fiscal year object"
+      },
       "btn-text": "See more",
       "urldownload": "https://drive.google.com/drive/folders/18FqJdWg7Ucj6sey126T_SQPUQv0hZFyy"
     
     },
-    "HorizontalGraphic": {
-      "subtitle": "Team parity"
+    "horizontalGraphic": {
+      "subtitle": "Team's parity"
+    },
+    "balanceSheet": {
+      "text": "Balance Sheet",
+      "btn-text": "2018's balance",
+      "urldownload": "https://drive.google.com/file/d/1dOuw_imRgG0dLA539Zoi6OIlRMCXInnd/view"
     }
   },
   "contact": {
