@@ -7,14 +7,14 @@ import DetailOutcome from "../component/DetailOutcome"
 const VerticalBars = () => {
     return(
         <section className="verticalBar-section">
-            <div className="title"><h1>{t('transparency.barGraphic.subtitle')}</h1></div>
-            <Details />
-            <DetailOutcome />
+            <div className="title"><h1>{t('transparency.barGraphic.title')}</h1></div>
+            <Details subtitle={t('transparency.barGraphic.income.subtitle')}/>
+            <DetailOutcome subtitle={t('transparency.barGraphic.outcome.subtitle')}/>
                 <div className='btn-container'>
             <a  href={t('transparency.barGraphic.urldownload')} target="_blank">
         
                     <button className='btn'>
-                    <span className='action-text'>Ver Balances</span>
+                    <span className='action-text'>{t('transparency.barGraphic.btn-text')}</span>
                     </button>
             </a>
                     </div>
