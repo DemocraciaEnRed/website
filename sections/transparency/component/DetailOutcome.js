@@ -15,7 +15,7 @@ class DetailOutcome extends Component {
       borderWidth: 1,
       hoverBackgroundColor: '#FFDC5C',
       hoverBorderColor: '#FFDC5C',
-      data: [0, 0,330325.30, 192205]
+      data: [0, 0,540900, 368805]
     },
     {
         label: 'Impuesto e intereses',
@@ -24,7 +24,7 @@ class DetailOutcome extends Component {
         borderWidth: 1,
         hoverBackgroundColor: '#219EFF',
         hoverBorderColor: '#219EFF',
-        data: [9301.58, 25257.96, 34786.16, 80626.18]
+        data: [27593.75, 94031.07, 660411.1, 108363.95]
       },
       {
         label: 'Gastos de oficina',
@@ -33,7 +33,7 @@ class DetailOutcome extends Component {
         borderWidth: 1,
         hoverBackgroundColor: '#9DEDAC',
         hoverBorderColor: '#9DEDAC',
-        data: [24.091,36, 28298, 2310, 59.372]
+        data: [51631.08, 81950, 126310, 223747]
       },
       {
         label: 'Honorarios',
@@ -42,7 +42,7 @@ class DetailOutcome extends Component {
         borderWidth: 1,
         hoverBackgroundColor: '#C894FF',
         hoverBorderColor: '#C894FF',
-        data: [1497115.69, 933012.19, 1254320, 1727560]
+        data: [1547948, 2184899, 1254320, 1727560]
       }
   ]
         }
