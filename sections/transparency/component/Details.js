@@ -19,11 +19,11 @@ class Details extends Component {
     },
     {
         label: 'Donaciones',
-        backgroundColor: '#EA73C0',
-        borderColor: '#EA73C0',
+        backgroundColor: '#5ce175',
+        borderColor: '#5ce175',
         borderWidth: 1,
-        hoverBackgroundColor: '#EA73C0',
-        hoverBorderColor: '#EA73C0',
+        hoverBackgroundColor: '#5ce175',
+        hoverBorderColor: '#5ce175',
         data: [1497115.69, 933012.19, 1346284.39, 2630485.26]
       }
   ]
@@ -31,10 +31,11 @@ class Details extends Component {
         }
     }
     render() {
-        const {data} = this.state
+        const {data} = this.state;
+        const {subtitle} = this.props;
         return (
             <div>
-              <div className="subtitle">Ingresos por fuente de financiamiento año fiscal</div>
+              <div className="subtitle">{subtitle}</div>
                     <Bar
                       data={data}
                      width={650}
@@ -43,7 +44,7 @@ class Details extends Component {
                       yAxes: [
                         {
                             ticks: {
-                               callback: function(label, index, labels) {
+                               callback: function(label) {
                                  return '$' + label;
                                }
                             }
