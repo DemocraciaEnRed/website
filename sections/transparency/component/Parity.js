@@ -40,9 +40,15 @@ const Parity = () => {
        scales:
        {
          xAxes:[{display: false}],
-         yAxes:[{gridLines: {display: false}}]
-       },
-     }}
+         yAxes:[
+           {
+             gridLines: {display: false},
+            ticks: {fontSize: 20}            
+          }
+          ]
+       }
+       }
+     }
       />
     <style jsx>{`
       .parity-subtitle {
