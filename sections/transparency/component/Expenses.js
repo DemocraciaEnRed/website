@@ -1,6 +1,24 @@
 import React, {Component} from "react"
 import {Doughnut} from "react-chartjs-2"
 
+const option = {
+    tooltips: {
+      callbacks: {
+        label: function(tooltipItem, data) {
+        //get de current data set
+          let dataset = data.datasets[tooltipItem.datasetIndex];
+        //get the current items value
+          let currentValue = dataset.data[tooltipItem.index];
+          return currentValue + '%';
+        },
+        title: function(tooltipItem, data) {
+            //return each label
+          return data.labels[tooltipItem[0].index];
+        }
+      }
+    }
+  }
+
 class Expenses extends Component {
     constructor(props) {
         super(props);
@@ -10,21 +28,24 @@ class Expenses extends Component {
                 'Honorarios',
                 'Servicios de Consultoria',
                 'Diseño y comunicación',
-                'Oficina'
+                'Oficina',
+                'Otros'
               ],
               datasets: [{
-                data: [70.3, 14.7, 4.6, 10.3],
+                data: [70.3, 14.7, 4.6, 10.3, 0.01],
                 backgroundColor: [
                 '#62378C',
                 '#B54CFF',
                 '#9500FF',
-                '#73617F'
+                '#73617F',
+                '#C894FF'
                 ],
                 hoverBackgroundColor: [
                 '#62378C',
                 '#B54CFF',
                 '#9500FF',
-                '#73617F'
+                '#73617F',
+                '#C894FF'
                 ]
             }]
             
@@ -43,6 +64,7 @@ class Expenses extends Component {
             width={350}
             height={250}
             data={data}
+            options={option}
              />
             <style jsx>
                     {`
