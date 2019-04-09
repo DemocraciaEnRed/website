@@ -1,5 +1,5 @@
 const Youtube = (props) => ( 	  <svg version="1.1" className="cls-2" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"  x="0px" y="0px"
-viewBox="0 0 455 455" /* style="enable-background:new 0 0 455 455;" */ xmlXspace="preserve"  >
+viewBox="0 0 455 455" /* style="enable-background:new 0 0 455 455;" */ xmlxspace="preserve"  >
 <g>
 <path className="cls-1" /* style="fill-rule:evenodd;clip-rule:evenodd;" */ d="M0,0v455h455V0H0z M379.493,301.961
  c-3.861,16.75-17.563,29.118-34.057,30.96c-39.044,4.353-78.575,4.382-117.952,4.353c-39.361,0.029-78.892,0-117.948-4.353
