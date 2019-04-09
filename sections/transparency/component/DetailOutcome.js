@@ -49,10 +49,11 @@ class DetailOutcome extends Component {
         }
     }
     render() {
-        const {data} = this.state
+        const {data} = this.state;
+        const {subtitle} = this.props;
         return (
             <div>
-                 <div className="subtitle">Egreso por objeto del año fiscal</div>
+                 <div className="subtitle">{subtitle}</div>
                     <Bar
                       data={data}
                      width={650}
