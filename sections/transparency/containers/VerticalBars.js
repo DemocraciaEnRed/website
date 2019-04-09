@@ -10,14 +10,14 @@ const VerticalBars = () => {
             <div className="title"><h1>{t('transparency.barGraphic.subtitle')}</h1></div>
             <Details />
             <DetailOutcome />
+                <div className='btn-container'>
             <a  href={t('transparency.barGraphic.urldownload')} target="_blank">
         
-                <div className='btn-container'>
                     <button className='btn'>
                     <span className='action-text'>Ver Balances</span>
                     </button>
-                    </div>
             </a>
+                    </div>
         
             <style jsx>
            {`
