@@ -34,10 +34,11 @@ class Expenses extends Component {
     }
 
     render() {
-        const {data} = this.state
+        const {data} = this.state;
+        const {subtitle} = this.props
         return (
             <div className="expenses-container">
-           <div className="title"><span>GASTOS</span></div>
+           <div className="title"><span>{subtitle}</span></div>
             <Doughnut
             width={350}
             height={250}

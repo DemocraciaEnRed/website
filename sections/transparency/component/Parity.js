@@ -30,7 +30,7 @@ const Parity = () => {
  return (
    <div>
      <div className="parity-subtitle">
-       <h1>Paridad de Equipo</h1>
+       <h1>Paridad del Equipo</h1>
        </div>
      <HorizontalBar
       width={650}

@@ -10,39 +10,49 @@ class Income extends Component {
                 'Altec',
                 'Open Society',
                 'Clip',
-                'Donaciones',
                 'FFHC',
+                'Servicios',
+                'Donaciones'
                
               ],
               datasets: [{
-                data: [51.9, 37.8, 8.2, 2.1],
+                data: [51.9, 37.8, 8.2, 2.1, 0, 0],
                 backgroundColor: [
-                '#B6DFFF',
-                '#219EFF',
-                '#37607F',
-                '#1A7ECC'
+                '#ef8cca ',
+                '#f4a4d5 ',
+                '#f8bbdf ',
+                '#fbd2ea',
+                '#9DEDAC',
+                '#EA73C0',
                 ],
+                label: ['Hola', 'Ble', 'Ble'],
                 hoverBackgroundColor: [
-                '#B6DFFF',
-                '#219EFF',
-                '#37607F',
-                '#1A7ECC'
+                '#ef8cca ',
+                '#f4a4d5 ',
+                '#f8bbdf',
+                '#fbd2ea',
+                '#9DEDAC',
+                '#EA73C0',
                 ],
                
             },
             {
-                data: [44.6, 56.4],
-                label: [
-                    'Donaciones',
-                'Servicios'
-                ],
+                data: [0, 0, 0, 0, 55.4, 44.6],
                 backgroundColor: [
                 '#EA73C0',
-                '#9DEDAC'
+                '#9DEDAC',
+                '#EA73C0',
+                '#9DEDAC',
+                '#9DEDAC',
+                '#EA73C0',
                 ],
                 hoverBackgroundColor: [
                 '#EA73C0',
-                '#9DEDAC'
+                '#9DEDAC',
+                '#EA73C0',
+                '#9DEDAC',
+                '#9DEDAC',
+                '#EA73C0',
                 ]
             }
         ]
@@ -53,10 +63,11 @@ class Income extends Component {
     }
 
     render() {
-        const {data} = this.state
+        const {data} = this.state;
+        const {subtitle} = this.props
         return (
             <div className="income-container">
-           <div className="title"><span>INGRESOS</span></div>
+           <div className="title"><span>{subtitle}</span></div>
             <Doughnut
             width={180}
             height={180}
