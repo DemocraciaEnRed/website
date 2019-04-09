@@ -2,22 +2,7 @@ import React, {Component} from "react"
 import {Doughnut} from "react-chartjs-2"
 
 
-const option = {
-    tooltips: {
-      callbacks: {
-        label: function(tooltipItem, data) {
-            //get de current data set
-          let dataset = data.datasets[tooltipItem.datasetIndex];
-          //get the current items value
-          let currentValue = dataset.data[tooltipItem.index];
-         return currentValue + '%';
-        },
-        title: function(tooltipItem, data) {
-          return data.labels[tooltipItem[0].index];
-        }
-      }
-    }
-  }
+
   
 class Income extends Component {
     constructor(props) {
@@ -33,9 +18,9 @@ class Income extends Component {
                 'FFHC'
               ],
               datasets: [{
-                data: [55.4, 0,51.9, 37.8, 8.2, 2.1],
+                data: [55.43, 0, 23.14, 16.86, 3.64, 0.93],
                 backgroundColor: [
-                '#C894FF',
+                '#219EFF',
                 '#87e99a',
                 '#9dedac',
                 '#b3f1be',
@@ -43,7 +28,7 @@ class Income extends Component {
                 '#def9e3',
                 ],
                 hoverBackgroundColor: [
-                '#C894FF',
+                '#219EFF',
                 '#87e99a',
                 '#9dedac',
                 '#b3f1be',
@@ -55,7 +40,7 @@ class Income extends Component {
             {
                 data: [55.4, 44.6, 0, 0, 0],
                 backgroundColor: [
-                '#C894FF',
+                '#219EFF',
                 '#5ce175',
                 '#FFF',
                 '#FFF',
@@ -63,11 +48,8 @@ class Income extends Component {
                 '#FFF',
                 ],
                 hoverBackgroundColor: [
-                '#C894FF',
+                '#219EFF',
                 '#72e588',
-                '#EA73C0',
-                '#9DEDAC',
-                '#9DEDAC',
                 '#EA73C0',
                 ]
             }
@@ -80,7 +62,23 @@ class Income extends Component {
 
     render() {
         const {data} = this.state;
-        const {subtitle} = this.props
+        const {subtitle} = this.props;
+        const option = {
+          tooltips: {
+            callbacks: {
+              label: function(tooltipItem, data) {
+                  //get de current data set
+                let dataset = data.datasets[tooltipItem.datasetIndex];
+                //get the current items value
+                let currentValue = dataset.data[tooltipItem.index];
+               return currentValue + '%';
+              },
+              title: function(tooltipItem, data) {
+                return data.labels[tooltipItem[0].index];
+              }
+            }
+          }
+        }
         return (
             <div className="income-container">
            <div className="title"><span>{subtitle}</span></div>
