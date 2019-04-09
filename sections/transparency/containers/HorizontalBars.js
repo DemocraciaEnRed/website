@@ -3,7 +3,7 @@ import Parity from "../component/Parity"
 const Horizontalbars = () => (
     
         <section className="parity-section">
-            <Parity />
+            <Parity subtitle={t('transparency.horizontalGraphic.subtitle')} />
             <style jsx>
             {`
             .parity-section {
