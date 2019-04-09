@@ -379,16 +379,17 @@
   },
   "transparency": {
     "header": "Transparencia",
-    "title": "Información presupuesto 2018",
-    "subtitle": "Lorem ipsum dolor sit amet this is title sit amet lorem ipsum",
+    "title": "Balance 2018",
+    "subtitle": "¿Quién nos financia? ¿Cómo gastamos?",
     "logo": "/static/assets/icons/transparency-logo.svg",
     "doughnutGraphic": {
       "subtitleOne": "Ingresos",
       "subtitleTwo": "Gastos"
     },
     "barGraphic": {
-      "subtitle": "Detalle de ingresos y gastos",
-      "btn-text": "Ver más"
+      "subtitle": "Evolución de ingresos y gastos",
+      "btn-text": "Ver más",
+      "urldownload": "https://drive.google.com/drive/folders/18FqJdWg7Ucj6sey126T_SQPUQv0hZFyy"
     },
     "HorizontalGraphic": {
       "subtitle": "Paridad del Equipo"
@@ -446,10 +447,6 @@
         "title": "Colaborar"
       },
       {
-        "href": "collaborate",
-        "title": "Transparencia"
-      },
-      {
         "href": "publications",
         "title": "Artículos"
       },
@@ -470,6 +467,10 @@
       {
         "href": "/about",
         "title": "Acerca de"
+      },
+      {
+        "href": "/transparency",
+        "title": "transparencia"
       },
       {
         "href": "/contact",

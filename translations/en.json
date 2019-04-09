@@ -379,17 +379,19 @@
     }
   },
   "transparency": {
-    "header": "Transparency 2019",
-    "title": "Budget Information 2019",
-    "subtitle": "Lorem ipsum dolor sit amet this is title sit amet lorem ipsum",
+    "header": "Transparency",
+    "title": "Account information",
+    "subtitle": "Who funds us? How we spend?",
     "logo": "/static/assets/icons/transparency-logo.svg",
     "doughnutGraphic": {
       "subtitleOne": "Income",
       "subtitleTwo": "Outcome"
     },
     "barGraphic": {
-      "subtitle": "Income and outcome details",
-      "btn-text": "See more"
+      "subtitle": "Income and outcome's evolution",
+      "btn-text": "See more",
+      "urldownload": "https://drive.google.com/drive/folders/18FqJdWg7Ucj6sey126T_SQPUQv0hZFyy"
+    
     },
     "HorizontalGraphic": {
       "subtitle": "Team parity"
@@ -447,10 +449,6 @@
         "title": "Collaborate"
       },
       {
-        "href": "collaborate",
-        "title": "Transparency"
-      },
-      {
         "href": "publications",
         "title": "Articles"
       },
@@ -471,6 +469,10 @@
       {
         "href": "/about",
         "title": "About us"
+      },
+      {
+        "href": "/transparency",
+        "title": "transparency"
       },
       {
         "href": "/contact",
