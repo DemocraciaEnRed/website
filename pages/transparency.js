@@ -10,7 +10,7 @@ import Footer from '../containers/Footer'
 import DoughnutGraphic  from "../sections/transparency/containers/DoughnutGraphic"
 import VerticalBars from "../sections/transparency/containers/VerticalBars"
 import HorizontalBars from "../sections/transparency/containers/HorizontalBars"
-
+import BalanceSheet from "../sections/transparency/containers/BalanceSheet"
 
 export default class extends Component {
   constructor (props) {
@@ -55,6 +55,10 @@ export default class extends Component {
           <DoughnutGraphic />
           <VerticalBars />
           <HorizontalBars />
+          <BalanceSheet 
+          text={t('transparency.balanceSheet.text')} 
+          url={t('transparency.balanceSheet.urldownload')} 
+          btnText={t('transparency.balanceSheet.btn-text')}/>
           <Footer />
         </Layout>
         <style jsx>{`
