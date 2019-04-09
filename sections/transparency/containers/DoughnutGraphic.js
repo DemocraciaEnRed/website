@@ -11,8 +11,8 @@ class DoughnutGraphic extends Component{
   render () {
     return (
       <section className="graphic-section"> 
-        <Income />
-        <Expenses />
+        <Income subtitle={t('transparency.doughnutGraphic.subtitleOne')} />
+        <Expenses subtitle={t('transparency.doughnutGraphic.subtitleTwo')} />
      
       <style jsx>{`
     .graphic-section {

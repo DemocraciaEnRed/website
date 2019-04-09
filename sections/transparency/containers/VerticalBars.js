@@ -2,17 +2,23 @@ import { t } from '../../../polyglot-modules/polyglot.js'
 import React from "react"
 import Details from "../component/Details"
 import DetailOutcome from "../component/DetailOutcome"
+
+
 const VerticalBars = () => {
     return(
         <section className="verticalBar-section">
-        <div className="title"><h1>Detalle de ingresos y gastos</h1></div>
-        <Details />
-        <DetailOutcome />
-        <div className='btn-container'>
-            <button className='btn'>
-            <span className='action-text'>Ver Balances</span>
-            </button>
-        </div>
+            <div className="title"><h1>{t('transparency.barGraphic.subtitle')}</h1></div>
+            <Details />
+            <DetailOutcome />
+            <a  href={t('transparency.barGraphic.urldownload')} target="_blank">
+        
+                <div className='btn-container'>
+                    <button className='btn'>
+                    <span className='action-text'>Ver Balances</span>
+                    </button>
+                    </div>
+            </a>
+        
             <style jsx>
            {`
             .verticalBar-section {
