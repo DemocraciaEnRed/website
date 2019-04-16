@@ -96,9 +96,11 @@ button {
 }
 
 .section-title {
+  width: 100%;
   font-family: var(--semibold);
   font-weight: 500;
   font-size: 4.2rem;
+  text-align: center;
 }
 
 .subtitle {
@@ -113,6 +115,7 @@ button {
   font-size: 2.4rem;
   line-height: 1.5;
   color: var(--gray);
+  text-align: center;
 }
 
 .regular-text {

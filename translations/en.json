@@ -170,11 +170,11 @@
           "img": "../static/assets/profiles/esteban.jpg"
         },
         {
-          "name": "Martín",
-          "bio": "Education",
-          "handle": "ln",
-          "url": "https://www.linkedin.com/in/mgalanternik/",
-          "img": "../static/assets/profiles/martin.jpg"
+          "name": "Florencia",
+          "bio": "Project coordinator",
+          "handle": "tw",
+          "url": "https://twitter.com/pitucaffarone",
+          "img": "../static/assets/profiles/florencia-dir.jpg"
         },
         {
           "name": "Powa",
@@ -184,47 +184,25 @@
           "img": "../static/assets/profiles/powa.jpg"
         },
         {
-          "name": "Florencia",
-          "bio": "Project coordinator",
+          "name": "Luciana",
+          "bio": "Field investigation",
           "handle": "tw",
-          "url": "https://twitter.com/pitucaffarone",
-          "img": "../static/assets/profiles/florencia-dir.jpg"
+          "url": "https://twitter.com/_lucianavega",
+          "img": "../static/assets/profiles/luciana.jpg"
         },
         {
-          "name": "Daniela",
-          "bio": "Field investigation",
+          "name": "Solange",
+          "bio": "Proyects",
           "handle": "ln",
-          "url": "https://ar.linkedin.com/in/daniela-mazzoni-222861115",
-          "img": "../static/assets/profiles/daniela.jpg"
+          "url": "https://www.linkedin.com/in/solange-rosa-6407a1b3/",
+          "img": "../static/assets/profiles/sol.jpg"
         },
         {
-          "name": "Franco",
-          "bio": "Field investigation",
-          "handle": "mail",
-          "url": "mailto:franco@democracyos.io",
-          "img": "../static/assets/profiles/franco.jpg"
-        },
-        {
-          "name": "Francisco",
-          "bio": "Development leader",
-          "handle": "github",
-          "url": "https://www.github.com/franciclo",
-          "img": "../static/assets/profiles/francisco.jpg"
-        },
-        {
-          "name": "Florencia",
-          "bio": "Development",
-          "handle": "github",
-          "url": "https://www.github.com/florlafuente",
-          "img": "../static/assets/profiles/florencia-dev.jpg"
-        },
-       
-        {
-          "name": "Laura",
-          "bio": "Development",
-          "handle": "github",
-          "url": "https://www.github.com/luarar",
-          "img": "../static/assets/profiles/laura.jpg"
+          "name": "Mariela",
+          "bio": "Comunication",
+          "handle": "tw",
+          "url": "https://twitter.com/1_male",
+          "img": "../static/assets/profiles/mariela.jpg"
         },
         {
           "name": "Guille",
@@ -234,6 +212,27 @@
           "img": "../static/assets/profiles/guille.jpg"
         },
         {
+          "name": "Álvaro",
+          "bio": "DevOps",
+          "handle": "github",
+          "url": "https://github.com/mxdlx",
+          "img": "../static/assets/profiles/alvaro.jpg"
+        },
+        {
+          "name": "Marien",
+          "bio": "Design",
+          "handle": "tw",
+          "url": "https://twitter.com/marienkaefer__",
+          "img": "../static/assets/profiles/Marien.jpg"
+        },
+        {
+          "name": "Bárbara",
+          "bio": "Development",
+          "handle": "github",
+          "url": "https://github.com/Inventrixx",
+          "img": "../static/assets/profiles/barbara.jpg"
+        },
+         {
           "name": "Guido",
           "bio": "Software consultant",
           "handle": "tw",
@@ -246,7 +245,15 @@
           "handle": "mail",
           "url": "https://matiaslescano.com.ar",
           "img": "../static/assets/profiles/matias.jpg"
+        },
+        {
+          "name": "Francisco",
+          "bio": "Software consultant",
+          "handle": "github",
+          "url": "https://www.github.com/franciclo",
+          "img": "../static/assets/profiles/francisco.jpg"
         }
+        
       ]
     }
   },
@@ -371,6 +378,36 @@
       "href": "http://clip.lat/"
     }
   },
+  "transparency": {
+    "header": "Transparency",
+    "title": "Account information",
+    "subtitle": "Who funds us? How we spend?",
+    "logo": "/static/assets/icons/transparency-logo.svg",
+    "doughnutGraphic": {
+      "subtitleOne": "Income",
+      "subtitleTwo": "Outcome"
+    },
+    "barGraphic": {
+      "title": "Income and outcome's evolution",
+      "income": {
+        "subtitle": "Income by source of financing fiscal year"
+      },
+      "outcome": {
+        "subtitle": "Outcome by fiscal year object"
+      },
+      "btn-text": "See more",
+      "urldownload": "https://drive.google.com/drive/folders/18FqJdWg7Ucj6sey126T_SQPUQv0hZFyy"
+    
+    },
+    "horizontalGraphic": {
+      "subtitle": "Team's parity"
+    },
+    "balanceSheet": {
+      "text": "Balance Sheet",
+      "btn-text": "2018's balance",
+      "urldownload": "https://drive.google.com/file/d/1dOuw_imRgG0dLA539Zoi6OIlRMCXInnd/view"
+    }
+  },
   "contact": {
     "title": "CONTACT",
     "contactUs": "Contact us",
@@ -423,10 +460,6 @@
         "title": "Collaborate"
       },
       {
-        "href": "collaborate",
-        "title": "Transparency"
-      },
-      {
         "href": "publications",
         "title": "Articles"
       },
@@ -447,6 +480,10 @@
       {
         "href": "/about",
         "title": "About us"
+      },
+      {
+        "href": "/transparency",
+        "title": "transparency"
       },
       {
         "href": "/contact",

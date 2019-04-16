@@ -1,18 +1,29 @@
 import { t } from '../../../polyglot-modules/polyglot.js'
 import Modal from '../components/Modal'
-import Submit from '../components/Submit'
+//import Submit from '../components/Submit'
 import SocialBar from '../../../components/SocialBar.js'
 
 const Header = ( {modal, content, hideModal} ) => (
 	<header>
-		<img className='logoDerMenu' src='../static/assets/Logo-der-header.svg'/>
-		<p className='subtext'>{t('index.header.subtitle')}</p>
-		<Submit />
-		<SocialBar alignSelf={'flex-end'} iconsSize={'30px'} width={'214px'} mobileWidth={'100%'} justifyContent={'space-around'} iconHover={'#444'} iconMobileHover={'#999'} />
+		<div className="img-container"><img className='logoDerMenu' src='../static/assets/Logo-der-header.svg'/></div>
+		<div className="subtext-container"><p className='subtext'>{t('index.header.subtitle')}</p></div>
+		{/* <Submit /> */}
+		<SocialBar alignSelf={'center'} iconsSize={'30px'} width={'214px'} mobileWidth={'100%'} justifyContent={'space-around'} iconHover={'#3CA2DA'} iconMobileHover={'#999'} />
 		{modal && 
       <Modal content={content} hideModal={hideModal} />
     }
     <style jsx>{`
+      .img-container {
+        background-position: center bottom;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      .subtext-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
       img.logoDerMenu{
         width:45em;
         padding-bottom:4em;
@@ -30,6 +41,7 @@ const Header = ( {modal, content, hideModal} ) => (
         display: flex;
         flex-direction: column;
         padding: 144px 40px 32px 85px;
+        background-position: center bottom;
     	}
     	header h1 {
     		color: var(--white);

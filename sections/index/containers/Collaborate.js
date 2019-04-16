@@ -73,7 +73,7 @@ class Collaborate extends Component {
             width: 486px;
           }
           .collaborate-container .section-title {
-            align-self: flex-start;
+            align-self: center;
             margin-bottom: 53px;
           }
           .collaborate-container .btn {

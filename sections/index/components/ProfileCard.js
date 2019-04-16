@@ -3,7 +3,7 @@ const ProfileCard = ( {name, bio, handle, img, url} ) => (
     <div className='profile-card-container'>
       <h3 className='profile-title'>{name}</h3>
       <p className='profile-bio'>{bio}</p>
-   <a href={`${url}`}>  <div className={`${handle}`}></div>   </a>
+   <a href={`${url}`} target="_blank">  <div className={`${handle}`}></div>   </a>
      
     </div>
   <style jsx>{`
@@ -19,7 +19,7 @@ const ProfileCard = ( {name, bio, handle, img, url} ) => (
       height: 250px;
       justify-content: center;
       position: relative;
-      width: 250px;
+      width: 20%;
       margin-bottom:30px;
     }
     .profile-card-container {

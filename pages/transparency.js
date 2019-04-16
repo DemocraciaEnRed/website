@@ -5,9 +5,12 @@ import es from '../translations/es.json'
 import en from '../translations/en.json'
 import Layout from '../layouts/Layout'
 import Header from '../containers/Header'
-import AboutUs from '../sections/about/containers/AboutUs'
-// import Content from '../sections/about/containers/Content'
+import Content from '../sections/transparency/containers/Content'
 import Footer from '../containers/Footer'
+import DoughnutGraphic  from "../sections/transparency/containers/DoughnutGraphic"
+import VerticalBars from "../sections/transparency/containers/VerticalBars"
+import HorizontalBars from "../sections/transparency/containers/HorizontalBars"
+import BalanceSheet from "../sections/transparency/containers/BalanceSheet"
 
 export default class extends Component {
   constructor (props) {
@@ -46,11 +49,16 @@ export default class extends Component {
           changeLang={this.changeLang}
           currentLang={this.state.currentLang} >
           <Header 
-            title={t('aboutUs.title')}
+            title={t('transparency.header')}
             bg={'../static/assets/header/headerWeb.jpg'} />
-          <AboutUs />
-          {/* <Content>
-        </Content> */}
+          <Content icon={t('transparency.logo')}/>
+          <DoughnutGraphic />
+          <VerticalBars />
+          <HorizontalBars />
+          <BalanceSheet 
+          text={t('transparency.balanceSheet.text')} 
+          url={t('transparency.balanceSheet.urldownload')} 
+          btnText={t('transparency.balanceSheet.btn-text')}/>
           <Footer />
         </Layout>
         <style jsx>{`

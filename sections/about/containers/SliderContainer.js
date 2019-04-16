@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+/* import React, { Component, Fragment } from 'react'
 import ThumbnailSlider from '../components/ThumbnailSlider'
 let Flickity;
 
@@ -11,7 +11,9 @@ export default class extends Component {
 
   componentDidUpdate () {
     Flickity = require('flickity')
-    if (this.flkty) this.flkty.destroy()
+    this.flkty = new Flickity(this.refs.carousel, options)
+
+    //if (this.flkty) this.flkty.destroy()
     const options = {
       cellCelector: '.thumbnail-item',
       pageDots: false,
@@ -21,11 +23,10 @@ export default class extends Component {
       contain: true,
       prevNextButtons: true
     }
-    this.flkty = new Flickity(this.refs.carousel, options)
   }
 
   componentWillUnmount () {
-    this.flkty.destroy()
+   //this.flkty.destroy()
   }
 
   render () {
@@ -49,3 +50,79 @@ export default class extends Component {
     )
   }
 }
+ */
+
+ import React, {Component, Fragment} from "react"
+ import ThumbnailSlider from '../components/ThumbnailSlider'
+
+ class SliderContainer extends Component {
+
+   constructor(props) {
+     super(props);
+     this.state = { 
+       Flickity: null,
+       flickityOptions: null };
+     if (typeof window !== 'undefined') {
+      const Flickity = require('react-flickity-component');
+      this.state = {
+        Flickity: Flickity,
+        flickityOptions: {
+          cellCelector: '.thumbnail-item',
+          pageDots: true,
+          wrapAround: true,
+          cellAlign: 'center',
+          draggable: true,
+          contain: true,
+          prevNextButtons: true,
+          adaptiveHeight: true,
+          // setGallerySize: true,
+          imagesLoaded: true,
+        }
+      };
+    }
+   }
+
+   componentDidMount = () => {
+     setTimeout( () => {
+       this.flkty.resize()
+       console.log('Resize the flickity')
+     }, 3000)
+   }
+
+   render() {
+     let { Flickity, flickityOptions } = this.state 
+     return (
+       <div className="wrapper-flickity">
+      {Flickity && <Flickity  className={'thumbnails-container'} // default ''
+      elementType={'div'} // default 'div'
+      options={flickityOptions} // takes flickity options {}
+      disableImagesLoaded={false} // default false
+      reloadOnUpdate // default false
+      flickityRef={c => this.flkty = c}
+      >
+      {this.props.videos && this.props.videos.map((video) => 
+        <ThumbnailSlider
+          id={video.id}
+          thumbnail={video.thumbnail}
+          title={video.title}
+          key={video.id}
+          handleClick={this.props.handleClick}
+      />
+      )}
+      </Flickity>
+    }
+     <style jsx>{`
+      .wrapper-flickity {
+        width: 100%;
+        margin: 30px 60px 0 60px;
+      }
+      .thumbnails-container {
+        width: 100%;
+      }
+    `}</style>
+      </div>
+     )
+   }
+ }
+
+ export default SliderContainer;

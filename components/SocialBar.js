@@ -1,6 +1,8 @@
 import Facebook from './Facebook'
 import Twitter from './Twitter'
 import Github from './Github'
+import Instagram from "./Instagram" 
+import Youtube from "./Youtube"
 
 const SocialBar = ( { alignSelf, iconsSize, width, mobileWidth, justifyContent, iconHover, iconMobileHover } ) => (
 	<nav className='social-bar'>
@@ -12,6 +14,12 @@ const SocialBar = ( { alignSelf, iconsSize, width, mobileWidth, justifyContent, 
     </a>
 		<a href='https://github.com/democraciaenred' className='github' target='_blank' rel='external'>
       <Github hover={iconHover} mobileHover={iconMobileHover} />
+    </a>
+    <a href='https://www.instagram.com/democracia_en_red/' className='ins' target='_blank' rel='external'>
+      <Instagram hover={iconHover} mobileHover={iconMobileHover} />
+    </a>
+    <a href='https://www.youtube.com/channel/UCm5n0zxmfWN0pMuMPxk7psw/featured' className='fb' target='_blank' rel='external'>
+      <Youtube hover={iconHover} mobileHover={iconMobileHover} />
     </a>
 		<style jsx>{`
       .social-bar {
