@@ -39,6 +39,7 @@
     "react": "^16.4.0",
     "react-chartjs-2": "^2.7.6",
     "react-dom": "^16.0.0",
+    "react-flickity-component": "^3.2.0",
     "react-ga": "^2.5.2",
     "react-responsive": "^3.0.0",
     "request": "^2.83.0"
