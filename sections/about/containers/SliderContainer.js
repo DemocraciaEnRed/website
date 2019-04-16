@@ -56,6 +56,7 @@ export default class extends Component {
  import ThumbnailSlider from '../components/ThumbnailSlider'
 
  class SliderContainer extends Component {
+
    constructor(props) {
      super(props);
      this.state = { 
@@ -67,28 +68,37 @@ export default class extends Component {
         Flickity: Flickity,
         flickityOptions: {
           cellCelector: '.thumbnail-item',
-          pageDots: false,
-          wrapAround: false,
+          pageDots: true,
+          wrapAround: true,
           cellAlign: 'center',
           draggable: true,
           contain: true,
           prevNextButtons: true,
           adaptiveHeight: true,
-          setGallerySize: false
+          // setGallerySize: true,
+          imagesLoaded: true,
         }
       };
     }
+   }
+
+   componentDidMount = () => {
+     setTimeout( () => {
+       this.flkty.resize()
+       console.log('Resize the flickity')
+     }, 3000)
    }
 
    render() {
      let { Flickity, flickityOptions } = this.state 
      return (
        <div className="wrapper-flickity">
-      {Flickity && <Flickity  className={'thumbanils-container'} // default ''
+      {Flickity && <Flickity  className={'thumbnails-container'} // default ''
       elementType={'div'} // default 'div'
       options={flickityOptions} // takes flickity options {}
       disableImagesLoaded={false} // default false
       reloadOnUpdate // default false
+      flickityRef={c => this.flkty = c}
       >
       {this.props.videos && this.props.videos.map((video) => 
         <ThumbnailSlider
@@ -103,10 +113,11 @@ export default class extends Component {
     }
      <style jsx>{`
       .wrapper-flickity {
-        width: 800px;
+        width: 100%;
+        margin: 30px 60px 0 60px;
       }
       .thumbnails-container {
-        width: 800px;
+        width: 100%;
       }
     `}</style>
       </div>

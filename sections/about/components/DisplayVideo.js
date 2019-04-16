@@ -7,6 +7,8 @@ export default ({ video }) => (
         justify-content: center;
         position: relative;
         overflow: hidden;
+        width: 100%    !important;
+        height: auto   !important;
       }
       .main-video iframe,
       .main-video object,

@@ -71,11 +71,11 @@ http://flickity.metafizzy.co
 
 .flickity-prev-next-button.previous { 
   left: 10px; 
-  margin-left: -35px;
+  margin-left: -90px;
 }
 .flickity-prev-next-button.next { 
   right: 10px; 
-  margin-right: -35px;
+  margin-right: -90px;
 }
 /* right to left */
 .flickity-rtl .flickity-prev-next-button.previous {
