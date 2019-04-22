@@ -9,18 +9,18 @@ const ProfileCard = ( {name, bio, handle, img, url} ) => (
   <style jsx>{`
     .profile-card {
       align-items: space-between;
-      background-image: url(${img});
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
       border-radius: 100%;
       display: flex;
       flex-wrap: wrap;
-      height: 250px;
       justify-content: center;
       position: relative;
-      width: 20%;
+      height: 250px;
+      width: 250px;
       margin-bottom:30px;
+      background-image: url(${img});
     }
     .profile-card-container {
       display: none;
@@ -144,14 +144,14 @@ const ProfileCard = ( {name, bio, handle, img, url} ) => (
         margin-right: 10px;
       }
     }
-    @media screen and (min-width: 1200px) {
+   /*  @media screen and (min-width: 1200px) {
       .profile-card:nth-child(13) {
         margin-left: 25%
       }
       .profile-card:nth-child(14) {
         margin-right: 25%
       }
-    }
+    } */
     @media screen and (min-width: 1024px) {
       .profile-card:hover .profile-card-container {
         heigth:260px;
