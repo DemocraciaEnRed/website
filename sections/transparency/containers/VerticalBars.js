@@ -8,8 +8,12 @@ const VerticalBars = () => {
     return(
         <section className="verticalBar-section">
             <div className="title"><h1>{t('transparency.barGraphic.title')}</h1></div>
+            <div className="details-graphic">
             <Details subtitle={t('transparency.barGraphic.income.subtitle')}/>
+            </div>
+            <div className="detailsOutcome-graphic">
             <DetailOutcome subtitle={t('transparency.barGraphic.outcome.subtitle')}/>
+            </div>
                 <div className='btn-container'>
             <a  href={t('transparency.barGraphic.urldownload')} target="_blank">
         
@@ -38,6 +42,7 @@ const VerticalBars = () => {
                 justify-content: center;
                 width: 100%;
             }
+           
            `}
             </style>
         </section>
