@@ -42,6 +42,8 @@ class Expenses extends Component {
         const {subtitle} = this.props;
         
         const option = {
+          maintainAspectRatio: false,
+          responsive: true,
           tooltips: {
             callbacks: {
               label: function(tooltipItem, data) {
@@ -61,12 +63,12 @@ class Expenses extends Component {
         return (
             <div className="expenses-container">
            <div className="title"><span>{subtitle}</span></div>
+           <div className="expenses-graphic">
             <Doughnut
-            width={350}
-            height={250}
             data={data}
             options={option}
              />
+             </div>
             <style jsx>
                     {`
         .expenses-container{
@@ -85,6 +87,13 @@ class Expenses extends Component {
         .title span {
             font-weight: 600;
             font-size: 35px;
+        }
+        .expenses-graphic {
+          display: flex;
+          justify-content: center;
+          height: 50vh;
+         
+          position: relative;
         }
 
   `}

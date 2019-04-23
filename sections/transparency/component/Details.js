@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import {Bar} from 'react-chartjs-2';
+import {Bar, defaults} from 'react-chartjs-2';
+
 
 class Details extends Component {
     constructor(props) {
@@ -31,34 +32,60 @@ class Details extends Component {
         }
     }
     render() {
+        const chartOptions = {
+          scales: {
+            yAxes: [
+              {
+                ticks: {
+                  callback: function(value) {
+                    return '$' + value.toFixed(0).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")
+                }
+                  }
+              }
+            ]
+        },
+          tooltips: {
+            callbacks: {
+              label: function (tooltipItem, data) {
+                var tooltipValue = data.datasets[tooltipItem.datasetIndex].data[tooltipItem.index];
+                return '$' + parseInt(tooltipValue).toFixed(0).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+              }
+            }
+          }
+
+        }
         const {data} = this.state;
         const {subtitle} = this.props;
         return (
-            <div>
+            <div className="details-container">
               <div className="subtitle">{subtitle}</div>
+              <div className="details-graphic">
                     <Bar
                       data={data}
                      width={650}
                      height={350}
-                     options={{scales: {
-                      yAxes: [
-                        {
-                            ticks: {
-                               callback: function(label) {
-                                 return '$' + label;
-                               }
-                            }
-                        }
-                      ]
-                  }}}
+                     options={chartOptions}
                    
                       
                     />
+                    </div>
                     <style jsx>
                     
-                    {`.subtitle {
+                    {`
+                    .subtitle {
                       text-align: center;
-                    }`}
+                    }
+                    @media (max-width: 700px) {
+                      .details-container {
+                        margin-bottom: 20px;
+                      }
+
+                      
+                    .details-graphic {
+                      margin-bottom: 15px;
+                    }
+                     }
+                    `}
 
                     </style>
                   </div>

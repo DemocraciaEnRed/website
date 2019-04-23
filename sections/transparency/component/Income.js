@@ -63,7 +63,9 @@ class Income extends Component {
     render() {
         const {data} = this.state;
         const {subtitle} = this.props;
-        const option = {
+        const chartOptions = {
+          maintainAspectRatio: false,
+          responsive: true,
           tooltips: {
             callbacks: {
               label: function(tooltipItem, data) {
@@ -82,12 +84,13 @@ class Income extends Component {
         return (
             <div className="income-container">
            <div className="title"><span>{subtitle}</span></div>
+           <div className="income-graphic">
             <Doughnut
-            width={180}
-            height={180}
             data={data}
-            options={option}
+            options={chartOptions}
+            
              />
+             </div>
             <style jsx>
                     {`
         .income-container{
@@ -108,6 +111,14 @@ class Income extends Component {
             font-size: 35px;
 
         }
+        .income-graphic {
+          display: flex;
+          justify-content: center;
+          height: 50vh;
+         
+          position: relative;
+        }
+       
 
   `}
 
