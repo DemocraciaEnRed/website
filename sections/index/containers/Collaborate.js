@@ -70,7 +70,7 @@ class Collaborate extends Component {
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 486px;
+            width: 387px;
           }
           .collaborate-container .section-title {
             align-self: center;
@@ -104,7 +104,7 @@ class Collaborate extends Component {
               padding-bottom: 48px;
             }
             .collaborate-container {
-              width: 100%;
+              width: 80%;
             }
             .flickity-prev-next-button.previous{
               margin-left: -35px;
