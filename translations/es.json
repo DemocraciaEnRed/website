@@ -78,7 +78,7 @@
           "subtitle": "¿Quién nos financia? ¿Cómo gastamos?",
           "text": "Aquí todos nuestros balances financieros.",
           "icon": "/static/assets/icons/transparency.svg",
-          "callToAction": "Ver Balances",
+          "callToAction": "Transparencia",
           "href": "/transparency",
           "classbtn": "'btn last-btn'"
         }
@@ -395,15 +395,15 @@
       "outcome": {
         "subtitle": "Egreso por objeto del año fiscal"
       },
-      "btn-text": "Ver más",
+      "btn-text": "Balances completos",
       "urldownload": "https://drive.google.com/drive/folders/18FqJdWg7Ucj6sey126T_SQPUQv0hZFyy"
     },
     "horizontalGraphic": {
       "subtitle": "Paridad del Equipo"
     },
     "balanceSheet": {
-      "text": "Ver informe de gestión 2018",
-      "btn-text": "Balance 2018",
+      "text": "Memorias 2018",
+      "btn-text": "Ver más",
       "urldownload": "https://drive.google.com/file/d/1dOuw_imRgG0dLA539Zoi6OIlRMCXInnd/view"
     
     }
@@ -466,6 +466,10 @@
       {
         "href": "ebooks",
         "title": "E-books"
+      },
+      {
+        "href": "videos",
+        "title": "Material Audiovisual"
       },
       {
         "href": "media",
