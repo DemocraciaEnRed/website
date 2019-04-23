@@ -32,6 +32,42 @@ class Parity extends Component {
     }
   }
 render() {
+
+  const chartOptions = {
+    legend: {
+      labels: {
+        fontFamily: "Dosis-Regular, 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+        fontSize: 20
+      }
+    },
+    scales:
+        {
+          xAxes:[{display: false}],
+          yAxes:[
+            {
+              gridLines: {display: false},
+             ticks: {
+               fontSize: 20,
+               fontFamily: "Dosis-Regular, 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif"
+              }            
+           }
+           ]
+        },
+        tooltips: {
+          callbacks: {
+            label: function(tooltipItem, data) {
+                //get de current data set
+                let title = data.datasets[tooltipItem.datasetIndex].label;
+              let dataset = data.datasets[tooltipItem.datasetIndex];
+              //get the current items value
+              let currentValue = dataset.data[tooltipItem.index];
+             return title + ': ' + currentValue + '%';
+            },
+           
+          }
+        }
+
+  }
   const {data} = this.state
   const {subtitle} = this.props
   return (
@@ -43,19 +79,7 @@ render() {
        width={650}
        data={data} 
        height={450}
-       options={{
-        scales:
-        {
-          xAxes:[{display: false}],
-          yAxes:[
-            {
-              gridLines: {display: false},
-             ticks: {fontSize: 20}            
-           }
-           ]
-        }
-        }
-      }
+       options={chartOptions}
        />
      <style jsx>{`
        .parity-subtitle {
