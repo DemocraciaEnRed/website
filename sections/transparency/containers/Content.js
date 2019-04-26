@@ -5,7 +5,7 @@ const Content = (props) => (
     <div>
       <img src={props.icon}/>
     </div>
-    <h2 className='section-title'>{t('transparency.title')}</h2>
+    <div className='title'><h1>{t('transparency.title')}</h1></div>
     <div className="section-subtitle">
       <p>{t('transparency.subtitle')}</p>
       <div className="section-text">
