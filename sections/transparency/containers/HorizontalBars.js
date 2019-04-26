@@ -8,7 +8,8 @@ const Horizontalbars = () => (
             {`
             .parity-section {
                 display: flex;
-                justify-content: center;                width: 100%;
+                justify-content: center;                
+                width: 100%;
             }
            `}
             </style>

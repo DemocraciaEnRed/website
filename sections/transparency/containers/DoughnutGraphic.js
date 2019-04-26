@@ -22,12 +22,14 @@ class DoughnutGraphic extends Component{
       height: auto;
       
     }
-    @media (max-width: 700px) {
+
+    @media (min-width: 300px) and (max-width: 780px) {
       .graphic-section {
+
         display: flex;
-      flex-flow: column wrap;
-      justify-content: center;
-      overflow-x: hidden;
+        flex-flow: column wrap;
+        justify-content: center;
+        overflow-x: hidden;
 
       }
       

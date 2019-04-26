@@ -50,6 +50,8 @@ class DetailOutcome extends Component {
     }
     render() {
       const chartOptions = {
+        maintainAspectRatio: false,
+        responsive: true,
         scales: {
           yAxes: [
             {
@@ -78,27 +80,49 @@ class DetailOutcome extends Component {
                     <div className="detailOutcome-graphic">
                     <Bar
                       data={data}
-                     width={650}
-                     height={350}
+                      width={650}
+                      height={300}
                      options={chartOptions}
                     />
                     </div>
-                       <style jsx>{
-                         `
-                         
-                         .subtitle {
-                           text-align: center;
-                         }
-                         
-                         @media (max-width: 700px) {
-                           
+                       <style jsx>{`
+                         .detailOutcome-container{
+                          min-width: 0
+                        }
+                       .detailOutcome-graphic {
+                          position: relative;
+                         /*  height: 70vh;
+                          width: 40vw; */
+                          margin-right: 25px;
+                          min-width: 0
+                       }
+                        .subtitle {
+                          text-align: center;
+                        }
+    
+                        @media (min-width: 780px) and (max-width: 1400px) {
                           .detailOutcome-container {
-                            margin-top: 20px;
-                           }
-
-                           .detailOutcome-graphic {
-                            margin-top: 10px;
+                            margin-bottom: 20px;
                           }
+    
+                          
+                        .detailOutcome-graphic {
+                          margin: 0 0 20px 0;
+                           height: 60vh;
+                          width: 65vw; 
+                        }
+                        }
+                        @media (min-width: 341px) and (max-width: 780px) {
+                          .detailOutcome-container {
+                            margin-bottom: 20px;
+                          }
+    
+                          
+                        .detailOutcome-graphic {
+                          margin: 0 0 10px 0;
+                           height: 36vh;
+                          width: 85vw; 
+                        }
                          }
 
                          `

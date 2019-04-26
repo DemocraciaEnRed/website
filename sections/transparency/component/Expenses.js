@@ -33,15 +33,20 @@ class Expenses extends Component {
             }]
             
 
-            }
+            },
+            
         }
-    }
+    } 
+
+     
+
+
 
     render() {
         const {data} = this.state;
         const {subtitle} = this.props;
-        
         const option = {
+          cutoutPercentage: 65,
           maintainAspectRatio: false,
           responsive: true,
           tooltips: {
@@ -61,12 +66,15 @@ class Expenses extends Component {
           }
         }
         return (
+   
             <div className="expenses-container">
-           <div className="title"><span>{subtitle}</span></div>
-           <div className="expenses-graphic">
+           <div className="subtitle">{subtitle}</div>
+           <div className="expenses-graphic" ref={ (divElement) => this.divElement = divElement}>
             <Doughnut
             data={data}
-            options={option}
+            options={option} 
+            width={650}
+            height={500}
              />
              </div>
             <style jsx>
@@ -78,23 +86,38 @@ class Expenses extends Component {
         overflow-x: hidden;
         flex-wrap: wrap;
         }
-        .title{
+        .subtitle{
             margin-top: 10px;
             margin-bottom: 10px;
             text-align: center;
             width: 100%;
-        }
-        .title span {
-            font-weight: 600;
             font-size: 35px;
         }
+       
         .expenses-graphic {
           display: flex;
           justify-content: center;
           height: 50vh;
-         
+          min-width: 0;
           position: relative;
         }
+        canvas {
+          width: 360px;
+        }
+
+        @media (min-width: 780px) and (max-width: 1400px) {
+          .expenses-graphic {
+            height: 60vh;
+            width: 65vw; 
+          }
+      }
+      @media (min-width: 341px) and (max-width: 780px) {
+        .expenses-graphic {
+          height: 40vh;
+          width: 85vw; 
+        }
+      }
+
 
   `}
 

@@ -83,12 +83,13 @@ class Income extends Component {
         }
         return (
             <div className="income-container">
-           <div className="title"><span>{subtitle}</span></div>
+           <div className="subtitle">{subtitle}</div>
            <div className="income-graphic">
             <Doughnut
             data={data}
             options={chartOptions}
-            
+            width={650}
+            height={150}
              />
              </div>
             <style jsx>
@@ -99,26 +100,36 @@ class Income extends Component {
         align-items: center;
         overflow-x: hidden;
         flex-wrap: wrap;
+        min-width: 0;
         }
-        .title{
+        .subtitle{
             margin-top: 10px;
             margin-bottom: 10px;
             text-align: center;
             width: 100%;
-        }
-        .title span {
-            font-weight: 600;
             font-size: 35px;
-
         }
+        
         .income-graphic {
           display: flex;
           justify-content: center;
-          height: 50vh;
-         
+          height: 45vh;
+          min-width: 0;
           position: relative;
         }
-       
+
+        @media (min-width: 780px) and (max-width: 1400px) {
+            .income-graphic {
+              height: 60vh;
+              width: 65vw; 
+            }
+        }
+        @media (min-width: 341px) and (max-width: 780px) {
+          .income-graphic {
+            height: 40vh;
+            width: 85vw; 
+          }
+        }
 
   `}
 
