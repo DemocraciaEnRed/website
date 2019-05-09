@@ -7,12 +7,11 @@ class Content extends React.Component{
     super(props)
     this.playlistId = 'PL-5jaKJlVw83pDzsOkK079BTOzrZ-VfNT'
     this.state = {
-      currentVideo : 'qJn3XVme-oQ',
+      currentVideo : 'yTMVjoovdh8',
       videos: null
     }
   }
   
-    
   handleClick = (id) => () => {
     this.setState({ currentVideo : id })
   }

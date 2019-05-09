@@ -28,7 +28,8 @@ class WhoWeAre extends Component {
       const options = {
         cellCelector: '.profile-card',
         cellAlign: 'center',
-        pageDots: false,
+        pageDots: true,
+        prevNextButtons: false,
         wrapAround: wrapAround
       }
       this.flickity = new Flickity(this.refs.carousel, options)
@@ -51,11 +52,9 @@ class WhoWeAre extends Component {
           }
           .profile-container {
             display: flex;
-            flex-flow: row wrap;
-            justify-content: space-around;
-            height: auto;
+            flex-wrap: wrap;
+            justify-content: center;
             margin-top: 72px;
-            width: 100%;
           }
           @media screen and (min-width: 1440px) {
             .who-we-are-section {
@@ -74,8 +73,7 @@ class WhoWeAre extends Component {
             .profile-container {
               display: block;
               margin-top: 33px;
-              height: 250px;
-              overflow: hidden;
+              height: 265px;    
             }
             .flickity-prev-next-button {
               width: 100px;

@@ -34,6 +34,7 @@ const BalanceSheet = (props) => {
       justify-content: center;
       width: 100%;
     }
+   
     `}
     </style>
     </section>

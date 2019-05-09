@@ -3,7 +3,7 @@ import Router from 'next/router'
 import jump from 'jump.js'
 import { t } from '../polyglot-modules/polyglot.js'
 
-const primaryLinks = [0, 1, 2, 3, 4, 5]
+const primaryLinks = [0, 1, 2, 3, 4, 5, 6]
 const secondaryLinks = [0, 1, 2, 3]
 
 

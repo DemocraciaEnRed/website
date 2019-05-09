@@ -32,6 +32,44 @@ class Parity extends Component {
     }
   }
 render() {
+
+  const chartOptions = {
+    maintainAspectRatio: false,
+    responsive: true,
+    legend: {
+      labels: {
+        fontFamily: "Dosis-Regular, 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+        fontSize: 20
+      }
+    },
+    scales:
+        {
+          xAxes:[{display: false}],
+          yAxes:[
+            {
+              gridLines: {display: false},
+             ticks: {
+               fontSize: 20,
+               fontFamily: "Dosis-Regular, 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif"
+              }            
+           }
+           ]
+        },
+        tooltips: {
+          callbacks: {
+            label: function(tooltipItem, data) {
+                //get de current data set
+                let title = data.datasets[tooltipItem.datasetIndex].label;
+              let dataset = data.datasets[tooltipItem.datasetIndex];
+              //get the current items value
+              let currentValue = dataset.data[tooltipItem.index];
+             return title + ': ' + currentValue + '%';
+            },
+           
+          }
+        }
+
+  }
   const {data} = this.state
   const {subtitle} = this.props
   return (
@@ -39,28 +77,38 @@ render() {
       <div className="parity-subtitle">
         <h1>{subtitle}</h1>
         </div>
+        <div className="parity-graphic">
       <HorizontalBar
-       width={650}
-       data={data} 
+       width={600}
        height={450}
-       options={{
-        scales:
-        {
-          xAxes:[{display: false}],
-          yAxes:[
-            {
-              gridLines: {display: false},
-             ticks: {fontSize: 20}            
-           }
-           ]
-        }
-        }
-      }
+       data={data} 
+       options={chartOptions}
        />
+       </div>
      <style jsx>{`
        .parity-subtitle {
          margin: 15px;
          text-align: center;
+       }
+       .parity-graphic {
+         min-width: 0;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+       }
+
+       @media (min-width: 300px) and (max-width: 780px) {
+         .parity-graphic {
+           height: 40vh;
+           width: 85vw; 
+         }
+       }
+
+       @media (min-width: 780px) and (max-width: 1400px) {
+        .parity-graphic {
+          height: 40vh;
+          width: 85vw; 
+        }
        }
      `}
      

@@ -79,8 +79,8 @@ export default class extends Component {
           <Collaborate />
           <Publications />
           <Ebooks />
-          <Media />
           <Content />
+          <Media />
           <WhoWeAre />
           <Footer />
         </Layout>

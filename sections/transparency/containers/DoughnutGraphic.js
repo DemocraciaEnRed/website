@@ -17,8 +17,22 @@ class DoughnutGraphic extends Component{
       <style jsx>{`
     .graphic-section {
       display: flex;
-      justify-content: center;
+      justify-content: space-around;
       overflow-x: hidden;
+      height: auto;
+      
+    }
+
+    @media (min-width: 300px) and (max-width: 780px) {
+      .graphic-section {
+
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        overflow-x: hidden;
+
+      }
+      
     }
 
   `}</style>

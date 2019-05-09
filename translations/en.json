@@ -76,7 +76,7 @@
           "subtitle": "Who funds us? How we spend?",
           "text": "Here is all accounting information summarized and documentary support.",
           "icon": "/static/assets/icons/transparency.svg",
-          "callToAction": "Download PDF",
+          "callToAction": "Transparency",
           "href": "https://drive.google.com/file/d/18-rWaYPOXxVCjzH4zNySzl9c5HtFhr4x/view",
           "classbtn": "btn last-btn"
 
@@ -395,7 +395,7 @@
       "outcome": {
         "subtitle": "Outcome by fiscal year object"
       },
-      "btn-text": "See more",
+      "btn-text": "Full balance sheet",
       "urldownload": "https://drive.google.com/drive/folders/18FqJdWg7Ucj6sey126T_SQPUQv0hZFyy"
     
     },
@@ -403,8 +403,8 @@
       "subtitle": "Team's parity"
     },
     "balanceSheet": {
-      "text": "Balance Sheet",
-      "btn-text": "2018's balance",
+      "text": "2018 Memoirs",
+      "btn-text": "Ver informe",
       "urldownload": "https://drive.google.com/file/d/1dOuw_imRgG0dLA539Zoi6OIlRMCXInnd/view"
     }
   },
@@ -466,6 +466,10 @@
       {
         "href": "ebooks",
         "title": "E-books"
+      },
+      {
+        "href": "videos",
+        "title": "Audiovisual Material"
       },
       {
         "href": "media",

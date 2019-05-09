@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import {Bar} from 'react-chartjs-2';
+import {Bar, defaults} from 'react-chartjs-2';
+
 
 class Details extends Component {
     constructor(props) {
@@ -31,34 +32,89 @@ class Details extends Component {
         }
     }
     render() {
+        const chartOptions = {
+        maintainAspectRatio: false,
+        responsive: true,
+          scales: {
+            yAxes: [
+              {
+                ticks: {
+                  callback: function(value) {
+                    return '$' + value.toFixed(0).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")
+                }
+                  }
+              }
+            ]
+        },
+          tooltips: {
+            callbacks: {
+              label: function (tooltipItem, data) {
+                var tooltipValue = data.datasets[tooltipItem.datasetIndex].data[tooltipItem.index];
+                return '$' + parseInt(tooltipValue).toFixed(0).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+              }
+            }
+          }
+
+        }
         const {data} = this.state;
         const {subtitle} = this.props;
         return (
-            <div>
+            <div className="details-container">
               <div className="subtitle">{subtitle}</div>
+              <div className="details-graphic">
                     <Bar
                       data={data}
-                     width={650}
-                     height={350}
-                     options={{scales: {
-                      yAxes: [
-                        {
-                            ticks: {
-                               callback: function(label) {
-                                 return '$' + label;
-                               }
-                            }
-                        }
-                      ]
-                  }}}
+                      width={650}
+                     height={300}
+                     options={chartOptions}
                    
                       
                     />
+                    </div>
                     <style jsx>
                     
-                    {`.subtitle {
+                    {`
+                    .details-container {
+                      min-width: 0
+                    }
+                   .details-graphic {
+                      position: relative;
+                     /*  height: 70vh;
+                      width: 40vw; */
+                      margin-right: 25px;
+                      min-width: 0
+                   }
+                    .subtitle {
                       text-align: center;
-                    }`}
+                    }
+
+                    @media (min-width: 780px) and (max-width: 1400px) {
+                      .details-container {
+                        margin-bottom: 20px;
+                      }
+
+                      
+                    .details-graphic {
+                      margin: 0 0 20px 0;
+                       height: 60vh;
+                      width: 65vw; 
+                    }
+                    }
+                    @media (min-width: 341px) and (max-width: 780px) {
+                      .details-container {
+                        margin-bottom: 5px;
+                      }
+
+                      
+                    .details-graphic {
+                      margin: 0 0 5px 0;
+                       height: 40vh;
+                      width: 85vw; 
+                    }
+                     }
+
+                    
+                    `}
 
                     </style>
                   </div>
