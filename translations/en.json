@@ -84,11 +84,11 @@
       ]
     },
     "publications": {
-      "title": "Articles",
+      "title": "Reflections",
       "callToAction": "More info"
     },
     "ebooks": {
-      "title": "Ebooks",
+      "title": "Publications",
       "content": [
         {
           "title": "Recuperar la política",
@@ -461,15 +461,15 @@
       },
       {
         "href": "publications",
-        "title": "Articles"
+        "title": "Relfections"
       },
       {
         "href": "ebooks",
-        "title": "E-books"
+        "title": "Publications"
       },
       {
         "href": "videos",
-        "title": "Audiovisual Material"
+        "title": "Audiovisual Content"
       },
       {
         "href": "media",
@@ -492,10 +492,6 @@
       {
         "href": "/contact",
         "title": "Contact us"
-      },
-      {
-        "href": "/jobs",
-        "title": "Jobs"
       }
     ]
   },
