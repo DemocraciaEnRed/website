@@ -5,12 +5,13 @@ import SliderContainer  from './SliderContainer'
 class Content extends React.Component{
   constructor(props){
     super(props)
-    this.playlistId = 'PL-5jaKJlVw83pDzsOkK079BTOzrZ-VfNT'
+    this.playlistId = 'PL-5jaKJlVw82dWX3ZNG5uVmoD9b5yf2bd'
     this.state = {
-      currentVideo : 'yTMVjoovdh8',
+      currentVideo : 'LhcS-IbQbTk',
       videos: null
     }
   }
+
   
   handleClick = (id) => () => {
     this.setState({ currentVideo : id })
@@ -36,7 +37,7 @@ componentDidMount () {
 render() {
   return (
     <section className='video-section' id='videos'>
-      <h2 className='section-title'>Material audiovisual</h2>
+      <h2 className='section-title'>Contenido Audiovisual</h2>
       <DisplayVideo
         video={this.state.currentVideo} />
       <div className='slider-wrapper'>
