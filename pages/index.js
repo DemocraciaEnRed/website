@@ -78,8 +78,8 @@ export default class extends Component {
           <AboutUs />
           <Collaborate />
           <Publications />
-          <Ebooks />
           <Content />
+          <Ebooks />
           <Media />
           <WhoWeAre />
           <Footer />
