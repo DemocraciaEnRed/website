@@ -51,7 +51,7 @@ class Cases extends Component {
 
   render() {
     return (
-      <section className='case-studies-section' id='publications'>
+      <section className='case-studies-section' id='cases'>
         <h2 className='section-title'>{t('index.caseStudies.title')}</h2>
         <div className='posts-container' ref='carousel'>
           {this.state.posts.map((post, i)=> 
