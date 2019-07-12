@@ -1,8 +1,8 @@
 const request = require('request')
 const moment = require('moment')
 
-function getPublicaciones (req, res) {
-  getMedium()
+function getPublicacionesCasos (req, res) {
+  getMediumCasos()
     .then(mediumResponse => {
       res.json(parsePublicaciones(mediumResponse, req.query.lang))
     })
@@ -14,10 +14,10 @@ function getPublicaciones (req, res) {
 }
 
 
-function getMedium (tag) {
+function getMediumCasos (tag) {
   return new Promise(function (resolve, reject) {
     request({
-      url: `${process.env.MEDIUM_URL}?format=json&limit=8`,
+      url: `${process.env.MEDIUM_URL_CASOS}?format=json`,
       json: true
     }, function (error, response, body) {
       if (!error && response.statusCode === 200) {
@@ -40,7 +40,7 @@ function parsePublicaciones (mediumResponse, lang) {
   return posts.map(p => (
     {
     
-    url: `${process.env.MEDIUM_URL}/${p.uniqueSlug}`,
+    url: `${process.env.MEDIUM_URL_CASOS}/${p.uniqueSlug}`,
     title: p.title,
     claps: p.virtuals.totalClapCount,
     createdAt: moment(p.createdAt).format('LT, dddd'),
@@ -48,4 +48,4 @@ function parsePublicaciones (mediumResponse, lang) {
   }))
 }
 
-module.exports = { getPublicaciones}
+module.exports = { getPublicacionesCasos }

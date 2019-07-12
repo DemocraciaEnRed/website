@@ -28,7 +28,7 @@ const MediumPost = (props) => (
       width: 371px;
     }
     .post-overlay {
-      background-color: rgba(0,0,0,0.5);
+      background-color: rgba(0,0,0,0.75);
       bottom: 0;
       height: 100%;
       left: 0;

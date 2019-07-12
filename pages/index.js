@@ -4,7 +4,7 @@ import es from '../translations/es.json'
 import en from '../translations/en.json'
 import Layout from '../layouts/Layout'
 import Header from '../sections/index/containers/Header'
-import AboutUs from '../sections/index/containers/AboutUs'
+import Cases from '../sections/index/containers/Cases'
 import Collaborate from '../sections/index/containers/Collaborate'
 import Ebooks from '../sections/index/containers/Ebooks'
 import Media from '../sections/index/containers/Media'
@@ -75,7 +75,7 @@ export default class extends Component {
       <div>
         <Layout changeLang={this.changeLang} currentLang={this.state.currentLang}>
           <Header modal={this.state.modal} content={this.state.content} hideModal={this.hideModal} />
-          <AboutUs />
+          <Cases />
           <Collaborate />
           <Publications />
           <Content />

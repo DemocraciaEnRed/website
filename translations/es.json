@@ -3,7 +3,7 @@
   "index": { 
     "header": {
       "title": "Democracia en Red",
-      "subtitle": "Imaginamos, diseñamos e implementamos innovaciones en el sistema político para abrir los procesos de decisión y redistribuir el poder.",
+      "subtitle": "Creamos soluciones de participación ciudadana con gobiernos  y activistas para fortalecer la democracia.",
       "callToAction": "Enviar",
       "placeholder": "¡Ingresá tu e-mail para recibir novedades!",
       "mobilePlaceholder": "Recibí novedades en tu e-mail",
@@ -37,30 +37,7 @@
 
     },
     "caseStudies": {
-      "title": "Casos de Estudio",
-      "content": [
-        {
-          "title": "Lorem ipsum dolor sit amet this is title",
-          "subtitle": "Label here, lorem ipsum",
-          "img": " "
-        },
-        {
-          "title": "Lorem ipsum dolor sit amet this is title",
-          "subtitle": "Label here, lorem ipsum",
-          "img": " "
-        },
-        {
-          "title": "Lorem ipsum dolor sit amet this is title",
-          "subtitle": "Label here, lorem ipsum",
-          "img": " "
-        },
-        {
-          "title": "Lorem ipsum dolor sit amet this is title",
-          "subtitle": "Label here, lorem ipsum",
-          "img": " "
-        }
-      ],
-      "callToAction": "Ver más"
+      "title": "Casos de Estudio"
     },
     "collaborate": {
       "content": [
@@ -125,7 +102,7 @@
           "className": "lpo"
         },
         {
-          "url": "https://www.lacapital.com.ar/la-ciudad/javkin-queremos-escuchar-proponer-y-construir-juntos-n1431351.html",
+          "url": "https://www.lacapital.com.ar/la-ciudad/record-votantes-el-presupuesto-participativo-2018-n1510558.html",
           "logo": "/static/assets/media/laCapital.png",
           "className": "lacapital"
         },
@@ -143,11 +120,35 @@
           "url": "http://www.ted.com/talks/pia_mancini_how_to_upgrade_democracy_for_the_internet_era",
           "logo": "/static/assets/media/ted.svg",
           "className": "ted"
+        },
+        {
+          "url": "https://www.diariopopular.com.ar/vicente-lopez-lanzaron-los-foros-vecinales-barriales-n347949",
+          "logo": "/static/assets/media/logo-dp.png",
+          "className": "dp"
+        },
+        {
+          "url": "https://www.ambito.com/diputados-lanzo-un-portal-que-la-ciudadania-participe-la-elaboracion-leyes-n5021762 ",
+          "logo": "/static/assets/media/logo-ambito1.png",
+          "className": "ambito"
+        },
+        {
+          "url": "https://ar.radiocut.fm/audiocut/entrevista-a-agustin-frizzera-director-de-democracia-en-red",
+          "logo": "/static/assets/media/logo-radio-cut1.png",
+          "className": "radio-cut"
+        },
+        {
+          "url": "https://www.infobae.com/politica/2018/02/14/el-gobierno-busca-extender-al-poder-legislativo-y-judicial-la-prohibicion-de-contratar-familiares/",
+          "logo": "/static/assets/media/logo-infobae.png",
+          "className": "infobae"
         }
       ]
     },
     "whoWeAre": {
       "title": "Quiénes somos",
+      "subtitle": ["Somos una organización de la sociedad conformada por personas activistas,",
+       "programadoras y científicas sociales que desde el hacer", 
+       "buscamos abrir las instituciones públicas y los procesos de toma de desición.",
+       "Buscamos recuperar la política."],
       "team": [
         {
           "name": "Agustín",
@@ -452,8 +453,8 @@
   "nav": {
     "primaryLinks": [
       {
-        "href": "what-we-do",
-        "title": "Qué hacemos"
+        "href": "cases",
+        "title": "Casos"
       },
       {
         "href": "collaborate",

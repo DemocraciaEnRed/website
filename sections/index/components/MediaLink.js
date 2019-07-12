@@ -48,6 +48,17 @@ const MediaLink = ( {url, logo, className}) => (
           order: 7;
           margin: auto;
         }
+        .dp {
+          order: 8
+        }
+        .ambito {
+          order: 9;
+          max-width: 439px;
+        }
+        .radio-cut {
+          order: 10;
+        }
+       
       }
       @media screen and (max-width: 450px) {
         .lanacion {
