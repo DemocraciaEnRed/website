@@ -4,6 +4,7 @@ import ProfileCard from '../components/ProfileCard'
 let Flickity;
 
 const data = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+const text = [0, 1, 2, 3]
 
 class WhoWeAre extends Component {
   constructor (props) {
@@ -40,6 +41,11 @@ class WhoWeAre extends Component {
     return (
       <section className='who-we-are-section' id='who-we-are'>
         <h2 className='section-title'>{t('index.whoWeAre.title')}</h2>
+        <div className="subtitle">
+          {text.map(i => {
+            return <h4  className="subtext" key={i}>{t(`index.whoWeAre.subtitle.${i}`)}</h4>
+          })}
+        </div>
         <div className='profile-container carousel' ref='carousel'>
           {data.map((i) => 
             <ProfileCard key={i} name={t(`index.whoWeAre.team.${i}.name`)} bio={t(`index.whoWeAre.team.${i}.bio`)} handle={t(`index.whoWeAre.team.${i}.handle`)} url={t(`index.whoWeAre.team.${i}.url`)} img={t(`index.whoWeAre.team.${i}.img`)} />
@@ -50,11 +56,14 @@ class WhoWeAre extends Component {
             overflow-y: hidden;
             width:100%;
           }
+          .subtitle {
+            margin: 1.5em;
+          }
           .profile-container {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            margin-top: 72px;
+            margin-top: 50px;
           }
           @media screen and (min-width: 1440px) {
             .who-we-are-section {
@@ -62,7 +71,11 @@ class WhoWeAre extends Component {
               display: flex;
               flex-direction: column;
             }
+            .subtitle {
+              margin: 1em;
+            }
             .profile-container {
+              margin-top: 20px;
               width: 1270px;
             }
             .section-title {
@@ -70,6 +83,9 @@ class WhoWeAre extends Component {
             }
           }
           @media screen and (max-width: 1024px) {
+            .subtitle {
+              margin: 0.5em;
+            }
             .profile-container {
               display: block;
               margin-top: 33px;
