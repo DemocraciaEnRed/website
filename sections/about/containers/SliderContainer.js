@@ -62,9 +62,10 @@ export default class extends Component {
      this.state = { 
        Flickity: null,
        flickityOptions: null };
+       
      if (typeof window !== 'undefined') {
       const Flickity = require('react-flickity-component');
-      this.state = {
+       this.state = {
         Flickity: Flickity,
         flickityOptions: {
           cellCelector: '.thumbnail-item',
@@ -78,19 +79,22 @@ export default class extends Component {
           // setGallerySize: true,
           imagesLoaded: true,
         }
-      };
+      }; 
+
+
     }
    }
 
    componentDidMount = () => {
      setTimeout( () => {
        this.flkty.resize()
-       console.log('Resize the flickity')
+       
      }, 3000)
    }
 
    render() {
      let { Flickity, flickityOptions } = this.state 
+    
      return (
        <div className="wrapper-flickity">
       {Flickity && <Flickity  className={'thumbnails-container'} // default ''
