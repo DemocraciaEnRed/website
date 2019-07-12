@@ -1,7 +1,7 @@
 import { t } from '../../../polyglot-modules/polyglot.js'
 import MediaLink from '../components/MediaLink'
 
-const data = [0, 1, 2, 3, 4, 5, 6]
+const data = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 const Media = () => (
   <section className='media-section' id='media'>
@@ -13,11 +13,11 @@ const Media = () => (
     </div>
     <style jsx>{`
       .media-container {
-        align-content: space-between;
+        align-content: space-around;
         display: flex;
         flex-wrap: wrap;
         height: 220px;
-        justify-content: space-between;
+        justify-content: space-around;
         margin-top: 79px;
       }
       @media screen and (max-width: 1024px) {
