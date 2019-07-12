@@ -27,15 +27,23 @@ class Publications extends Component {
   }
 
   componentDidUpdate(){
+
+    setTimeout( () => {
+      this.flkty.resize()
+      console.log('Resize the flickity')
+    }, 3000)
+
     const options = {
       cellCelector: '.medium-post',
-      pageDots: false,
-      wrapAround: false,
+      pageDots: true,
+      wrapAround: true,
       cellAlign: 'left',
       draggable: true,
       friction: 0.2,
       contain: true,
-      prevNextButtons: true
+      prevNextButtons: true,
+      adaptiveHeight: true,
+      imagesLoaded: true,
     }
     this.flickity = new Flickity(this.refs.carousel, options)
   }
