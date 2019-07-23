@@ -5,28 +5,55 @@ import SocialBar from '../../../components/SocialBar.js'
 
 const Header = ( {modal, content, hideModal} ) => (
 	<header>
-		<div className="img-container"><img className='logoDerMenu' src='../static/assets/Logo-der-header.svg'/></div>
+    <div className="super">
+      <div className="img-container">
+        <img className='logoDerMenu' src='../static/assets/der_black.svg'/>
+      </div>
+    </div>
+   
 		<div className="subtext-container"><p className='subtext'>{t('index.header.subtitle')}</p></div>
+    <div className="subtext-title"><span>CONOCENOS</span></div>
 		{/* <Submit /> */}
-		<SocialBar alignSelf={'center'} iconsSize={'30px'} width={'214px'} mobileWidth={'100%'} justifyContent={'space-around'} iconHover={'#3CA2DA'} iconMobileHover={'#999'} />
+		<SocialBar alignSelf={'center'} iconsSize={'30px'} width={'25%'} mobileWidth={'100%'} justifyContent={'space-around'} iconHover={'#3CA2DA'} iconMobileHover={'#999'} />
 		{modal && 
       <Modal content={content} hideModal={hideModal} />
     }
     <style jsx>{`
-      .img-container {
-        background-position: center bottom;
-        width: 100%;
+      .super {
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
+      }
+      .img-container {
+        background-position: center bottom;
+        width: 30%;
+        display: flex;
+        justify-content: center;
+      }
+      .logo-der-header {
+        fill: black;
       }
       .subtext-container {
         width: 100%;
         display: flex;
         justify-content: center;
       }
+      .subtext-title {
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+      }
+      .subtext-title span {
+        font-weight: 800;
+        text-align: center;
+        font-size: 3rem;
+        letter-spacing: 3px;
+        color: #8A509F;
+        padding: 20px;
+      }
       img.logoDerMenu{
-        width:45em;
-        padding-bottom:4em;
+        width:65em;
+        // padding-bottom:4em;
       }
       @media (max-width: 440px) {
         img.logoDerMenu{
@@ -35,7 +62,7 @@ const Header = ( {modal, content, hideModal} ) => (
         }
       }
       header {
-     		background-image: url('../static/assets/header/headerWeb.jpg');
+     		// background-image: url('../static/assets/header/headerWeb.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         display: flex;
@@ -44,13 +71,13 @@ const Header = ( {modal, content, hideModal} ) => (
         background-position: center bottom;
     	}
     	header h1 {
-    		color: var(--white);
+    		color: var(--black);
     	}
     	header p {
-    		color: var(--white);
+    		color: var(--black);
         line-height: 1.5;
         letter-spacing: 0.08rem;
-        margin: 24px 0 53px;
+        margin: 24px 0 30px;
         max-width: 598px;
     	}
       @media (max-width: 1024px) {
