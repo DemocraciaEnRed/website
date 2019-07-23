@@ -3,6 +3,7 @@ import Twitter from './Twitter'
 import Github from './Github'
 import Instagram from "./Instagram" 
 import Youtube from "./Youtube"
+import Medium from "./Medium"
 
 const SocialBar = ( { alignSelf, iconsSize, width, mobileWidth, justifyContent, iconHover, iconMobileHover } ) => (
 	<nav className='social-bar'>
@@ -18,12 +19,16 @@ const SocialBar = ( { alignSelf, iconsSize, width, mobileWidth, justifyContent, 
     <a href='https://www.instagram.com/democraciaenred' className='ins' target='_blank' rel='external'>
       <Instagram hover={iconHover} mobileHover={iconMobileHover} />
     </a>
+    <a href='https://medium.com/multitudes' className='medium' target='_blank' rel='external' >
+      <Medium hover={iconHover} mobileHover={iconMobileHover} />
+    </a>
     <a href='https://www.youtube.com/channel/UCm5n0zxmfWN0pMuMPxk7psw/featured' className='fb' target='_blank' rel='external'>
       <Youtube hover={iconHover} mobileHover={iconMobileHover} />
+   
     </a>
 		<style jsx>{`
       .social-bar {
-        justify-content: space-between;
+        justify-content: space-around;
         align-self: ${alignSelf};
         display: flex;
         width: ${width};
