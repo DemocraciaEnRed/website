@@ -3,7 +3,8 @@ const moment = require('moment')
 
 function getPublicacionesCasos (req, res) {
   getMediumCasos()
-    .then(mediumResponse => {
+    .then(mediumResponse => 
+       {
       res.json(parsePublicaciones(mediumResponse, req.query.lang))
     })
     .catch(err => {
@@ -40,7 +41,7 @@ function parsePublicaciones (mediumResponse, lang) {
   return posts.map(p => (
     {
     
-    url: `${process.env.MEDIUM_URL_CASOS}/${p.uniqueSlug}`,
+    url: `${process.env.MEDIUM_URL}/${p.uniqueSlug}`,
     title: p.title,
     claps: p.virtuals.totalClapCount,
     createdAt: moment(p.createdAt).format('LT, dddd'),
