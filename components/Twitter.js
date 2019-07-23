@@ -14,14 +14,14 @@ const Twitter = ( props ) => (
     </g>
     <style jsx>{`
         .cls-1{
-          fill:#fff;
+          fill:#000;
         }
         .cls-2:hover .cls-1:hover{
-          fill: ${props.hover};
+          fill: #F27057;
         }
         @media (max-width: 1024px) {
           .cls-2:hover .cls-1:hover{
-          fill: ${props.mobileHover};
+          fill: #F27057};
         }
     `}</style>
 </svg>

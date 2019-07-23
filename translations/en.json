@@ -3,7 +3,7 @@
   "index": {
     "header": {
       "title": "Democracia en Red",
-      "subtitle": "We imagine, design and implement innovations in the political system, to open decision processes, to redistribute power.",
+      "subtitle": "Together with governments and activists we create solutions for citizen participation to strengthen democracy.",
       "callToAction": "Send",
       "placeholder": "Sign up for news!",
       "mobilePlaceholder": "Receive updates in your email.",
@@ -34,14 +34,14 @@
       "callToAction": "More info"
     },
     "caseStudies": {
-      "title": "Case Studies"
+      "title": "What we do?"
     },
     "collaborate": {
       "content": [
         { 
           "title": "Collaborate",
           "subtitle": "How can I collaborate?",
-          "text": "Help us reach more people. There are many ways to collaborate.",
+          "text": "There are many ways to collaborate.",
           "icon": "/static/assets/icons/collaborate.svg",
           "callToAction": "Drop us a line",
           "href": "/contact",
@@ -144,10 +144,10 @@
     },
     "whoWeAre": {
       "title": "Who we are",
-      "subtitle": ["Somos una organización de la sociedad conformada por personas activistas,",
-        "programadoras y científicas sociales que desde el hacer", 
-        "buscamos abrir las instituciones públicas y los procesos de toma de desición.",
-        "Buscamos recuperar la política."],
+      "subtitle": ["We are a civil society organization made up of activists,",
+        "developers and social scientists who from doing", 
+        "have sought to open up the public institutions and decision-making processes.",
+        "We seek to recover politics."],
       "team": [
         {
           "name": "Agustín",
@@ -155,20 +155,6 @@
           "handle": "tw", 
           "url": "https://twitter.com/agustinfrizzera",
           "img": "../static/assets/profiles/agustin.jpg"
-        },
-        {
-          "name": "Florencia",
-          "bio": "President",
-          "handle": "tw",
-          "url": "https://twitter.com/juicyminerva",
-          "img": "../static/assets/profiles/florencia-presi.jpg"
-        },
-        {
-          "name": "Esteban",
-          "bio": "Vicepresident",
-          "handle": "tw",
-          "url": "https://twitter.com/ebrenman",
-          "img": "../static/assets/profiles/esteban.jpg"
         },
         {
           "name": "Florencia",
@@ -253,6 +239,20 @@
           "handle": "github",
           "url": "https://www.github.com/franciclo",
           "img": "../static/assets/profiles/francisco.jpg"
+        },
+        {
+          "name": "Florencia",
+          "bio": "President",
+          "handle": "tw",
+          "url": "https://twitter.com/juicyminerva",
+          "img": "../static/assets/profiles/florencia-presi.jpg"
+        },
+        {
+          "name": "Esteban",
+          "bio": "Vicepresident",
+          "handle": "tw",
+          "url": "https://twitter.com/ebrenman",
+          "img": "../static/assets/profiles/esteban.jpg"
         }
         
       ]

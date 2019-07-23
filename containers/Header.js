@@ -14,7 +14,7 @@ const Header = ( { title, bg }) => (
         width: 100%;
       }
       .about-us-title {
-        color: var(--white);
+        color: var(--black);
         font-size: 4.2rem;
       }
       @media screen and (max-width: 1024px) {

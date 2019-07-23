@@ -70,11 +70,11 @@ section {
 }
 
 section:nth-child(odd) {
-  background-color: var(--white);
+  background-color: var(--light-gray);
 }
 
 section:nth-child(even) {
-  background-color: var(--light-gray);
+  background-color: var(--white);
 }
 
 h1 {

@@ -38,7 +38,7 @@ class Collaborate extends Component {
   render () {
     return (
       <section className='collaborate-section' id='collaborate'>
-           <div className='carousel' ref='carousel'>
+           <div className='carousel'>
             {data.map((i)=> 
               <div className='collaborate-container' key={i}>
                 <h2 className='section-title'> {t(`index.collaborate.content.${i}.title`)} </h2>
@@ -63,7 +63,7 @@ class Collaborate extends Component {
           .carousel {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: center;
             width: 100%;
           }
           .collaborate-container {
