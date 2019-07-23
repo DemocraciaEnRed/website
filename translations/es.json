@@ -37,7 +37,7 @@
 
     },
     "caseStudies": {
-      "title": "Casos de Estudio"
+      "title": "¿Qué hacemos?"
     },
     "collaborate": {
       "content": [
@@ -144,7 +144,7 @@
       ]
     },
     "whoWeAre": {
-      "title": "Quiénes somos",
+      "title": "¿Quiénes somos?",
       "subtitle": ["Somos una organización de la sociedad conformada por personas activistas,",
        "programadoras y científicas sociales que desde el hacer", 
        "buscamos abrir las instituciones públicas y los procesos de toma de desición.",
@@ -156,20 +156,6 @@
           "handle": "tw", 
           "url": "https://twitter.com/agustinfrizzera",
           "img": "../static/assets/profiles/agustin.jpg"
-        },
-        {
-          "name": "Florencia",
-          "bio": "Presidenta",
-          "handle": "tw",
-          "url": "https://twitter.com/juicyminerva",
-          "img": "../static/assets/profiles/florencia-presi.jpg"
-        },
-        {
-          "name": "Esteban",
-          "bio": "Vicepresidente",
-          "handle": "tw",
-          "url": "https://twitter.com/ebrenman",
-          "img": "../static/assets/profiles/esteban.jpg"
         },
         {
           "name": "Florencia",
@@ -254,6 +240,20 @@
           "handle": "github",
           "url": "https://www.github.com/franciclo",
           "img": "../static/assets/profiles/francisco.jpg"
+        },
+        {
+          "name": "Florencia",
+          "bio": "Presidenta",
+          "handle": "tw",
+          "url": "https://twitter.com/juicyminerva",
+          "img": "../static/assets/profiles/florencia-presi.jpg"
+        },
+        {
+          "name": "Esteban",
+          "bio": "Vicepresidente",
+          "handle": "tw",
+          "url": "https://twitter.com/ebrenman",
+          "img": "../static/assets/profiles/esteban.jpg"
         }
         
 
