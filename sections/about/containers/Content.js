@@ -7,7 +7,7 @@ class Content extends React.Component{
     super(props)
     this.playlistId = 'PL-5jaKJlVw82dWX3ZNG5uVmoD9b5yf2bd'
     this.state = {
-      currentVideo : 'LhcS-IbQbTk',
+      currentVideo : 'TXNo80KL8Cg',
       videos: null
     }
   }
@@ -19,6 +19,7 @@ class Content extends React.Component{
 
 
 componentDidMount () {
+  console.log(this.state.currentVideo)
   const youtube = localStorage.getItem('youtube')
   fetch(`https://www.googleapis.com/youtube/v3/playlistItems?key=${youtube}&playlistId=${this.playlistId}&part=snippet&maxResults=12`)
   .then((response) => response.json())
