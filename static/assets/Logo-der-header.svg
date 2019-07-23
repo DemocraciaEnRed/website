@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="212px" height="59px" viewBox="0 0 212 59" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg class="logo-der-header" width="212px" height="59px" viewBox="0 0 212 59" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
     <title>Page 1</title>
     <desc>Created with Sketch.</desc>
@@ -11,7 +11,7 @@
         <g id="Desktop-HD-Copy" transform="translate(-72.000000, -21.000000)">
             <g id="Page-1" transform="translate(72.000000, 21.000000)">
                 <g id="Group-3" transform="translate(0.000000, 0.570501)">
-                    <mask id="mask-2" fill="white">
+                    <mask id="mask-2" fill="black">
                         <use xlink:href="#path-1"></use>
                     </mask>
                     <g id="Clip-2"></g>
