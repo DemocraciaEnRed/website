@@ -36,9 +36,9 @@ class Cases extends Component {
 
     const options = {
       cellCelector: '.medium-post',
-      pageDots: false,
-      wrapAround: false,
-      cellAlign: 'center',
+      pageDots: true,
+      wrapAround: true,
+      cellAlign: 'left',
       draggable: true,
       friction: 0.2,
       contain: true,

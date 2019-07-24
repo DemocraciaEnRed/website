@@ -63,15 +63,17 @@ class Publications extends Component {
               url={post.url} />
           )}
         </div>
-        <div className='btn-container'>
+     {/*    <div className='btn-container'>
           <a href='https://medium.com/multitudes' role='author' target='_blank'>
             <button className='btn'>
               <span className='action-text'>
                 {t('index.publications.callToAction')}
               </span>
-            </button>
-          </a>
+            </button> 
+              </a>
         </div>
+            */}
+        
         <style jsx>{`
           .publications-section {
             display: flex;
