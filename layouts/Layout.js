@@ -30,7 +30,19 @@ export default class Layout extends React.Component {
       changeLang={this.props.changeLang}
       currentLang={this.props.currentLang}
     />
-    {this.props.children}
+    {this.props.children} 
+    <style jsx global>{`
+    section:nth-child(odd) {
+      background-color: #efefef;
+    }
+    
+    section:nth-child(even) {
+      background-color:  #fff;
+    }
+
+    ` 
+
+    }</style>
       </div>
     )
   }

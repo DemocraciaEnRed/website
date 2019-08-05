@@ -3,7 +3,6 @@ import { polyglot } from '../polyglot-modules/polyglot'
 import { t } from '../polyglot-modules/polyglot.js'
 import es from '../translations/es.json'
 import en from '../translations/en.json'
-import Layout from '../layouts/Layout'
 import Header from '../containers/Header'
 import Content from '../sections/transparency/containers/Content'
 import Footer from '../containers/Footer'
@@ -11,6 +10,8 @@ import DoughnutGraphic  from "../sections/transparency/containers/DoughnutGraphi
 import VerticalBars from "../sections/transparency/containers/VerticalBars"
 import HorizontalBars from "../sections/transparency/containers/HorizontalBars"
 import BalanceSheet from "../sections/transparency/containers/BalanceSheet"
+import { doesNotThrow } from 'assert';
+import Layout from '../layouts/Layout'
 
 export default class extends Component {
   constructor (props) {
@@ -44,13 +45,15 @@ export default class extends Component {
   
   render () {
     return (
-      <div>
+      <div className="transparencia">
+        
         <Layout 
           changeLang={this.changeLang}
           currentLang={this.state.currentLang} >
           <Header 
             title={t('transparency.header')}
-            bg={'../static/assets/header/headerWeb.jpg'} />
+            // bg={'../static/assets/header/headerWeb.jpg'}
+             />
           <Content icon={t('transparency.logo')}/>
           <DoughnutGraphic />
           <VerticalBars />
@@ -60,13 +63,15 @@ export default class extends Component {
           url={t('transparency.balanceSheet.urldownload')} 
           btnText={t('transparency.balanceSheet.btn-text')}/>
           <Footer />
-        </Layout>
-        <style jsx>{`
-          section {
-            padding-left: 100px;
-            padding-right: 100px;
+        <style jsx global>{`
+          .transparencia section:nth-child(odd) {
+            background-color: #fff;
+          }
+          .transparencia section:nth-child(even) {
+            background-color: #efefef;
           }
         `}</style>
+        </Layout>
       </div>
     )
   }

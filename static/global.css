@@ -69,13 +69,13 @@ section {
   padding: 48px 85px 85px;
 }
 
-section:nth-child(odd) {
-  background-color: var(--light-gray);
+/* section:nth-child(odd) {
+  background-color: var(--white);
 }
 
 section:nth-child(even) {
-  background-color: var(--white);
-}
+  background-color: var(--light-gray);
+} */
 
 h1 {
   font-family: var(--bold);

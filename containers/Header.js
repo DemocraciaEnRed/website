@@ -3,17 +3,19 @@ const Header = ( { title, bg }) => (
     <h1 className='about-us-title'>{title}</h1>
     <style jsx>{`
       header {
-        background-image: url(${bg});
+        // background-image: url(${bg});
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
         display: flex;
-        align-items: flex-end;
+        align-items: center;
         height: 475px;
         padding: 49px 81px 21px;
         width: 100%;
+        justify-content: center;
       }
       .about-us-title {
+        text-align: center;
         color: var(--black);
         font-size: 4.2rem;
       }
