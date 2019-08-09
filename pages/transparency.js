@@ -52,9 +52,10 @@ export default class extends Component {
           currentLang={this.state.currentLang} >
           <Header 
             title={t('transparency.header')}
+            icon={t('transparency.logo')}
             // bg={'../static/assets/header/headerWeb.jpg'}
              />
-          <Content icon={t('transparency.logo')}/>
+          {/* <Content /> */}
           <DoughnutGraphic />
           <VerticalBars />
           <HorizontalBars />
@@ -63,7 +64,7 @@ export default class extends Component {
           url={t('transparency.balanceSheet.urldownload')} 
           btnText={t('transparency.balanceSheet.btn-text')}/>
           <Footer />
-        <style jsx global>{`
+        <style jsx>{`
           .transparencia section:nth-child(odd) {
             background-color: #fff;
           }

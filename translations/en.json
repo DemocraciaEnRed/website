@@ -44,7 +44,7 @@
           "text": "There are many ways to collaborate.",
           "icon": "/static/assets/icons/collaborate.svg",
           "callToAction": "Drop us a line",
-          "href": "/contact",
+          "href": "https://preguntarparaacordar.typeform.com/to/fSqwwL",
           "classbtn": "btn"
 
         },
@@ -183,6 +183,13 @@
           "handle": "ln",
           "url": "https://www.linkedin.com/in/solange-rosa-6407a1b3/",
           "img": "../static/assets/profiles/sol.jpg"
+        },
+        {
+          "name": "Agustina",
+          "bio": "Comunication",
+          "handle": "ig",
+          "url": "https://www.instagram.com/agusmanuele/",
+          "img": "../static/assets/profiles/agus-manuele.jpeg"
         },
         {
           "name": "Mariela",
