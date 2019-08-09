@@ -186,6 +186,13 @@
           "img": "../static/assets/profiles/sol.jpg"
         },
         {
+          "name": "Agustina",
+          "bio": "Comunicación",
+          "handle": "ig",
+          "url": "https://www.instagram.com/agusmanuele/",
+          "img": "../static/assets/profiles/agus-manuele.jpeg"
+        },
+        {
           "name": "Mariela",
           "bio": "Comunicación",
           "handle": "tw",
