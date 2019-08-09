@@ -24,7 +24,7 @@ const Content = (props) => (
         margin-top: 20px;
       }
       .section-text {
-        font-size: 2.4rem;
+        
         letter-spacing: 0.13rem;
         text-align: center;
       }
