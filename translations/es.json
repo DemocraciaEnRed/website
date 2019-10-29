@@ -79,6 +79,12 @@
           "subtitle": "Nos preguntamos: ¿qué democracia podemos construir en este contexto social y tecnológico?",
           "link": "http://www.democraciaparaelsiglo21.org/",
           "img": "/static/assets/ebooks/quedemocracia.jpg"
+        },
+        {
+          "title": "Internet: Guía Ciudadana.",
+          "subtitle": "Un primer paso para que el uso crítico de Internet gane el lugar que merece.",
+          "link": "https://sumando.org.ar/_wp/wp-content/uploads/2019/08/Guia-Ciudadana-Digital.pdf",
+          "img": "/static/assets/ebooks/internetguiaciudadana.jpg"
         }
       ],
       "callToAction": "Descargar"

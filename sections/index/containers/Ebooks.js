@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { t } from '../../../polyglot-modules/polyglot.js'
 import EbookCard from '../components/EbookCard'
-let Flickity;
+//let Flickity;
 
-const data = [0, 1]
+const data = [0, 1, 2]
 
 class Ebooks extends Component {
   constructor(props){
@@ -14,7 +14,7 @@ class Ebooks extends Component {
   }
 
   componentDidMount () {
-    Flickity = require('flickity')
+    //Flickity = require('flickity')
     if (window.innerWidth < 768) {
       this.setState({
         mobile: true
@@ -50,7 +50,7 @@ class Ebooks extends Component {
         freeScroll: false,
         prevNextButtons: false
       }
-      this.flickity = new Flickity(this.refs.carousel, options)
+      //this.flickity = new Flickity(this.refs.carousel, options)
     }
   }
 
@@ -72,7 +72,7 @@ class Ebooks extends Component {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
-            margin-top: 59px;
+            /*margin-top: 59px;*/
           }
           @media screen and (max-width: 1260px) {
             .ebooks-container {
@@ -86,7 +86,6 @@ class Ebooks extends Component {
           }
           @media screen and (max-width: 766px) {
             .ebooks-container {
-              height: 176px;
               display: block;
               overflow: hidden;
               margin: 17px 0 0;

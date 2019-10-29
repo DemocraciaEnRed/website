@@ -20,7 +20,8 @@ const EbookCard = ( {img, title, description, link}) => (
           "sidebar header"
           "sidebar main"
           "sidebar footer";
-        height: 280px;
+        height: 320px;
+        margin-top: 59px;
       }
       .ebook-img {
         background-color: var(--gray);
@@ -53,7 +54,7 @@ const EbookCard = ( {img, title, description, link}) => (
           grid-column-gap: 28px;
           grid-template-columns: 129px 146px;
           grid-template-rows: auto auto 39px;
-          height: 176px;
+          height: 187px;
           margin-right: 48px;
         }
         .ebook-title {
