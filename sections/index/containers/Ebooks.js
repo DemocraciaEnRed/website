@@ -71,31 +71,14 @@ class Ebooks extends Component {
           .ebooks-container {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-around;
-            /*margin-top: 59px;*/
-          }
-          @media screen and (max-width: 1260px) {
-            .ebooks-container {
-              justify-content: space-between;
-            }
+            justify-content: space-evenly;
           }
           @media screen and (max-width: 1024px) {
             .ebooks-section {
               padding: 24px 24px 48px 24px ;
             }
-          }
-          @media screen and (max-width: 766px) {
             .ebooks-container {
-              display: block;
-              overflow: hidden;
-              margin: 17px 0 0;
-              padding-left: 0;
-              padding-right: 0;
-            }
-          }
-          @media screen and (max-width: 425px) {
-            .ebooks-container {
-              margin-right: -24px;
+              display: flex;
             }
           }
         `}</style>
