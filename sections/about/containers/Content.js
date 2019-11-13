@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import DisplayVideo from '../components/DisplayVideo'
+import { t } from '../../../polyglot-modules/polyglot.js'
 import SliderContainer  from './SliderContainer'
 
 class Content extends React.Component{
@@ -38,7 +39,7 @@ componentDidMount () {
 render() {
   return (
     <section className='video-section' id='videos'>
-      <h2 className='section-title'>Contenido Audiovisual</h2>
+      <h2 className='section-title'>{t('index.audiovisual.title')}</h2>
       <DisplayVideo
         video={this.state.currentVideo} />
       <div className='slider-wrapper'>

@@ -23,6 +23,10 @@ class Cases extends Component {
     fetch(apiUrl)
       .then( r => r.json() )
       .then( data => {
+        data.forEach(function(post){
+          let urlSuffix = post.url.substr(post.url.lastIndexOf('/')+1)
+          post.title = t('index.caseStudies.cases.' + urlSuffix)
+        })
         this.setState({ posts: data })
     })
   }

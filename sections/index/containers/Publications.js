@@ -22,6 +22,10 @@ class Publications extends Component {
     fetch(apiUrl)
       .then( r => r.json() )
       .then( data => {
+        data.forEach(function(post){
+          let urlSuffix = post.url.substr(post.url.lastIndexOf('/')+1)
+          post.title = t('index.publications.items.' + urlSuffix)
+        })
         this.setState({ posts: data })
     })
   }

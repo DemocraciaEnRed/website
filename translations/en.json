@@ -34,14 +34,23 @@
       "callToAction": "More info"
     },
     "caseStudies": {
-      "title": "What we do?"
+      "title": "What we do?",
+      "cases": {
+        "leyes-abiertas-38249baa7e75": "OPEN LAWS",
+        "consulta-pública-a5836964ad98": "PUBLIC CONSULTATION",
+        "presupuesto-participativo-de-vicente-lópez-9db05cc3147d": "VICENTE LOPEZ’S PARTICIPATIVE BUDGET",
+        "san-lorenzo-participa-98ca7ae38ff4": "SAN LORENZO PARTICIPATES",
+        "gobierno-abierto-cff3b1344119": "OPEN GOVERMENT",
+        "hecha-la-ley-b7613fb9adbb": "HECHA LA LEY",
+        "abre-latam-18ecc392d982": "LATAM OPENS"
+      }
     },
     "collaborate": {
       "content": [
         { 
           "title": "Collaborate",
           "subtitle": "How can I collaborate?",
-          "text": "There are many ways to collaborate.",
+          "text": "There are many ways to do it.",
           "icon": "/static/assets/icons/collaborate.svg",
           "callToAction": "Drop us a line",
           "href": "https://preguntarparaacordar.typeform.com/to/fSqwwL",
@@ -62,22 +71,41 @@
     },
     "publications": {
       "title": "Reflections",
-      "callToAction": "More info"
+      "callToAction": "More info",
+      "items": {
+        "el-miedo-y-la-bronca-171914e124bc": "Fear and anger",
+        "serenidad-aa86640a717c": "Serenity",
+        "de-arriba-hacia-abajo-y-de-abajo-hacia-arriba-822cd591ca16": "From top to bottom and from bottom to top",
+        "somos-democracia-en-red-eb8bdd0fd8a0": "We are Democracia en Red",
+        "leyes-abiertas-38249baa7e75": "Open Laws",
+        "consulta-pública-a5836964ad98": "Public consultation",
+        "presupuesto-participativo-de-vicente-lópez-9db05cc3147d": "Vicente Lopez’s participative budget",
+        "gobierno-abierto-cff3b1344119": "Open Goverment"
+      }
+    },
+    "audiovisual": {
+      "title": "Audiovisual Content"
     },
     "ebooks": {
       "title": "Publications",
       "content": [
         {
-          "title": "Recuperar la política",
+          "title": "Take back politics",
           "subtitle": "To recover Politics means to honor it. How are power and democracy organized in a liquid society?",
           "link": "http://www.recuperarlapolitica.org/",
           "img": "/static/assets/ebooks/recuperarlapolitica.jpg"
         },
         {
-          "title": "¿Qué democracia para el siglo XXI?",
+          "title": "Wich Democracy for XXI century?",
           "subtitle": "We wonder: What democracy can we build in our social and technological context?",
           "link": "http://www.democraciaparaelsiglo21.org/",
           "img": "/static/assets/ebooks/quedemocracia.jpg"
+        },
+        {
+          "title": "Internet: ciziten guide",
+          "subtitle": "A first step for the critical use of Internet to win the place it deserves.",
+          "link": "https://sumando.org.ar/_wp/wp-content/uploads/2019/08/Guia-Ciudadana-Digital.pdf",
+          "img": "/static/assets/ebooks/internetguiaciudadana.jpg"
         }
       ],
       "callToAction": "Download"

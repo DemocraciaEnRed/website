@@ -37,7 +37,16 @@
 
     },
     "caseStudies": {
-      "title": "¿Qué hacemos?"
+      "title": "¿Qué hacemos?",
+      "cases": {
+        "leyes-abiertas-38249baa7e75": "LEYES ABIERTAS",
+        "consulta-pública-a5836964ad98": "CONSULTA PÚBLICA",
+        "presupuesto-participativo-de-vicente-lópez-9db05cc3147d": "PRESUPUESTO PARTICIPATIVO DE VICENTE LÓPEZ",
+        "san-lorenzo-participa-98ca7ae38ff4": "SAN LORENZO PARTICIPA",
+        "gobierno-abierto-cff3b1344119": "GOBIERNO ABIERTO",
+        "hecha-la-ley-b7613fb9adbb": "HECHA LA LEY",
+        "abre-latam-18ecc392d982": "ABRE LATAM"
+      }
     },
     "collaborate": {
       "content": [
@@ -63,7 +72,20 @@
     },
     "publications": {
       "title": "Reflexiones",
-      "callToAction": "Ver más"
+      "callToAction": "Ver más",
+      "items": {
+        "el-miedo-y-la-bronca-171914e124bc": "el Miedo y la Bronca",
+        "serenidad-aa86640a717c": "Serenidad",
+        "de-arriba-hacia-abajo-y-de-abajo-hacia-arriba-822cd591ca16": "De arriba hacia abajo y de abajo hacia arriba",
+        "somos-democracia-en-red-eb8bdd0fd8a0": "Somos Democracia en Red",
+        "leyes-abiertas-38249baa7e75": "LEYES ABIERTAS",
+        "consulta-pública-a5836964ad98": "CONSULTA PÚBLICA",
+        "presupuesto-participativo-de-vicente-lópez-9db05cc3147d": "PRESUPUESTO PARTICIPATIVO DE VICENTE LÓPEZ",
+        "gobierno-abierto-cff3b1344119": "GOBIERNO ABIERTO"
+      }
+    },
+    "audiovisual": {
+      "title": "Contenido Audiovisual"
     },
     "ebooks": {
       "title": "Publicaciones",
