@@ -26,7 +26,7 @@ const Header = ( {modal, content, hideModal} ) => (
       }
       .img-container {
         background-position: center bottom;
-        width: 30%;
+        width: 40em;
         display: flex;
         justify-content: center;
       }
