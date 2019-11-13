@@ -1,7 +1,7 @@
 import { t } from '../../../polyglot-modules/polyglot.js'
 import MediaLink from '../components/MediaLink'
 
-const data = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const data = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
 
 const Media = () => (
   <section className='media-section' id='media'>

@@ -167,6 +167,11 @@
           "url": "https://www.infobae.com/politica/2018/02/14/el-gobierno-busca-extender-al-poder-legislativo-y-judicial-la-prohibicion-de-contratar-familiares/",
           "logo": "/static/assets/media/logo-infobae.png",
           "className": "infobae"
+        },
+        {
+          "url": "https://tn.com.ar/opinion/la-vision-esloganera-del-futuro-y-una-campana-sin-ideas_1002801",
+          "logo": "/static/assets/media/logo-tn.png",
+          "className": "tn"
         }
       ]
     },
