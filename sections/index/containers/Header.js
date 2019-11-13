@@ -12,7 +12,7 @@ const Header = ( {modal, content, hideModal} ) => (
     </div>
    
 		<div className="subtext-container"><p className='subtext'>{t('index.header.subtitle')}</p></div>
-    <div className="subtext-title"><span>CONOCENOS</span></div>
+    <div className="subtext-title"><span>{t('index.header.socialmedia')}</span></div>
 		{/* <Submit /> */}
 		<SocialBar alignSelf={'center'} iconsSize={'30px'} width={'25%'} mobileWidth={'100%'} justifyContent={'space-around'} iconHover={'#3CA2DA'} iconMobileHover={'#999'} />
 		{modal && 
