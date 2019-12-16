@@ -4,7 +4,7 @@
     "header": {
       "title": "Democracia en Red",
       "subtitle": "Together with governments and activists we create solutions for citizen participation to strengthen democracy.",
-      "socialmedia": "WHO WE ARE",
+      "socialmedia": "MEET US",
       "callToAction": "Send",
       "placeholder": "Sign up for news!",
       "mobilePlaceholder": "Receive updates in your email.",
@@ -226,13 +226,6 @@
           "img": "../static/assets/profiles/agus-manuele.jpeg"
         },
         {
-          "name": "Mariela",
-          "bio": "Comunication",
-          "handle": "tw",
-          "url": "https://twitter.com/1_male",
-          "img": "../static/assets/profiles/mariela.jpg"
-        },
-        {
           "name": "Guille",
           "bio": "Development",
           "handle": "tw",
@@ -254,11 +247,11 @@
           "img": "../static/assets/profiles/Marien.jpg"
         },
         {
-          "name": "Bárbara",
+          "name": "Wencha",
           "bio": "Development",
           "handle": "github",
-          "url": "https://github.com/Inventrixx",
-          "img": "../static/assets/profiles/barbara.jpg"
+          "url": "https://github.com/wencha",
+          "img": "../static/assets/profiles/wencha.jpeg"
         },
          {
           "name": "Guido",
@@ -495,7 +488,7 @@
     "primaryLinks": [
       {
         "href": "cases",
-        "title": "Casos"
+        "title": "Cases"
       },
       {
         "href": "collaborate",

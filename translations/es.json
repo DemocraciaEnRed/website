@@ -226,13 +226,6 @@
           "url": "https://www.instagram.com/agusmanuele/",
           "img": "../static/assets/profiles/agus-manuele.jpeg"
         },
-        {
-          "name": "Mariela",
-          "bio": "Comunicación",
-          "handle": "tw",
-          "url": "https://twitter.com/1_male",
-          "img": "../static/assets/profiles/mariela.jpg"
-        },
         {        
           "name": "Guille",
           "bio": "Desarrollo",
@@ -255,11 +248,11 @@
           "img": "../static/assets/profiles/Marien.jpg"
         },
         {
-          "name": "Bárbara",
+          "name": "Wencha",
           "bio": "Desarrollo",
           "handle": "github",
-          "url": "https://github.com/Inventrixx",
-          "img": "../static/assets/profiles/barbara.jpg"
+          "url": "https://github.com/wencha",
+          "img": "../static/assets/profiles/wencha.jpeg"
         },
         {
           "name": "Guido",
