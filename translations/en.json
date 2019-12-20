@@ -253,6 +253,13 @@
           "url": "https://github.com/wencha",
           "img": "../static/assets/profiles/wencha.jpeg"
         },
+        {
+          "name": "Josh",
+          "bio": "Development",
+          "handle": "",
+          "url": "",
+          "img": "../static/assets/profiles/josh.jpg"
+        },
          {
           "name": "Guido",
           "bio": "Software consultant",
