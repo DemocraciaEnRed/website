@@ -257,8 +257,8 @@
         {
           "name": "Josh",
           "bio": "Desarrollo",
-          "handle": "",
-          "url": "",
+          "handle": "github",
+          "url": "https://github.com/joshchisnerman",
           "img": "../static/assets/profiles/josh.jpg"
         },
         {
