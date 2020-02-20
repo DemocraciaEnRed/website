@@ -1,4 +1,4 @@
-{ 
+{
   "language": "en",
   "index": {
     "header": {
@@ -48,7 +48,7 @@
     },
     "collaborate": {
       "content": [
-        { 
+        {
           "title": "Collaborate",
           "subtitle": "How can I collaborate?",
           "text": "There are many ways to do it.",
@@ -179,14 +179,14 @@
     "whoWeAre": {
       "title": "Who we are",
       "subtitle": ["We are a civil society organization made up of activists,",
-        "developers and social scientists who from doing", 
+        "developers and social scientists who from doing",
         "have sought to open up the public institutions and decision-making processes.",
         "We seek to recover politics."],
       "team": [
         {
           "name": "Agustín",
           "bio": "Executive Director",
-          "handle": "tw", 
+          "handle": "tw",
           "url": "https://twitter.com/agustinfrizzera",
           "img": "../static/assets/profiles/agustin.jpg"
         },
@@ -295,7 +295,7 @@
           "url": "https://twitter.com/ebrenman",
           "img": "../static/assets/profiles/esteban.jpg"
         }
-        
+
       ]
     }
   },
@@ -320,7 +320,7 @@
         "DeR is an NGO founded in 2014 for articulate a political project from civil society. DeR was born from a diagnosis about the status quo and because fed up of diagnoses and diagnosticians",
         "We were born to build practice, technique and poetry that allow us to imagine and implement innovations in the political system, to open decision processes, to redistribute power.",
         "We promote new values, experiences and processes that allow more collaborative governance schemes, new bureaucratic logics and new public spaces."
-      ] 
+      ]
     },
     "openGov": {
       "title": "Open the institutions",
@@ -402,7 +402,7 @@
       "list": {
         "title": "As products of the Network we can highlight:",
         "items": [
-          "The future release of “Recovered Politics” (October 2016), audio-visual material of interviews with members of the Network.", 
+          "The future release of “Recovered Politics” (October 2016), audio-visual material of interviews with members of the Network.",
           "The future release of “What democracy for the XXI Century. volII ”(February 2017), publication of epub format with reflections on new ways for democratic representation and the political subject of the XXI century.",
           "Workshop on “innovative political campaigns” for members of the Ativista Bank (bancadaativista.org), was held in Sao Paulo in August 2016, with 5 members of the Network (Agustín Frizzera, DeR, Arg, Rodrigo Etchecopar, RD, Chi, Caio Tendolini, UpDate, Br, Susana Ochoa and Alejandra Parra, WikiPolítica, Mx) as exhibitors."
         ]
@@ -439,15 +439,15 @@
       },
       "btn-text": "Full balance sheet",
       "urldownload": "https://drive.google.com/drive/folders/18FqJdWg7Ucj6sey126T_SQPUQv0hZFyy"
-    
+
     },
     "horizontalGraphic": {
       "subtitle": "Team's parity"
     },
     "balanceSheet": {
       "text": "2018 Memoirs",
-      "btn-text": "Ver informe",
-      "urldownload": "https://drive.google.com/file/d/1dOuw_imRgG0dLA539Zoi6OIlRMCXInnd/view"
+      "btn-text": "View file",
+      "urldownload": "https://drive.google.com/file/d/16zZiqKcE6LYcD2lCThlemXgABzKGK-l2/view"
     }
   },
   "contact": {
@@ -456,7 +456,7 @@
     "copy": [
       "Do you have questions, recommendations, want to collaborate or just say Hi?",
       "You can do it here."
-    ], 
+    ],
     "form": {
       "name": "Name",
       "email": "Email",

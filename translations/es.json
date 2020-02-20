@@ -1,6 +1,6 @@
-{ 
+{
   "language": "es",
-  "index": { 
+  "index": {
     "header": {
       "title": "Democracia en Red",
       "subtitle": "Creamos soluciones de participación ciudadana con gobiernos  y activistas para fortalecer la democracia.",
@@ -51,7 +51,7 @@
     },
     "collaborate": {
       "content": [
-        { 
+        {
           "title": "Colaborar",
           "subtitle": "¿Cómo puedo colaborar?",
           "text": "Hay muchas manera de contribuir con nuestra misión.",
@@ -180,14 +180,14 @@
     "whoWeAre": {
       "title": "¿Quiénes somos?",
       "subtitle": ["Somos una organización de la sociedad conformada por personas activistas,",
-       "programadoras y científicas sociales que desde el hacer", 
+       "programadoras y científicas sociales que desde el hacer",
        "buscamos abrir las instituciones públicas y los procesos de toma de decisión.",
        "Buscamos recuperar la política."],
       "team": [
         {
           "name": "Agustín",
           "bio": "Director Ejecutivo",
-          "handle": "tw", 
+          "handle": "tw",
           "url": "https://twitter.com/agustinfrizzera",
           "img": "../static/assets/profiles/agustin.jpg"
         },
@@ -226,7 +226,7 @@
           "url": "https://www.instagram.com/agusmanuele/",
           "img": "../static/assets/profiles/agus-manuele.jpeg"
         },
-        {        
+        {
           "name": "Guille",
           "bio": "Desarrollo",
           "handle": "tw",
@@ -296,7 +296,7 @@
           "url": "https://twitter.com/ebrenman",
           "img": "../static/assets/profiles/esteban.jpg"
         }
-        
+
 
       ]
     }
@@ -375,7 +375,7 @@
       "img": "/static/assets/about/logosole.svg",
       "text" : [
         "Los Entornos de Aprendizaje Auto Organizado (Self Organised Learning Enviroments, S.O.L.E., sus siglas en inglés) son espacios que a simple vista parecen algo caóticos: muchos niños, algunas computadoras y una gran pregunta. ",
-        "La propuesta didáctica organiza el acceso en grupos a las computadoras para investigar y responder a una pregunta estimulante. Así, surgen en el aula nuevas interacciones. La magia desatada por esta experiencia enciende la curiosidad y el asombro de los niños, los grandes motores de este dispositivo adaptado de la metodología del Dr. Sugata Mitra." 
+        "La propuesta didáctica organiza el acceso en grupos a las computadoras para investigar y responder a una pregunta estimulante. Así, surgen en el aula nuevas interacciones. La magia desatada por esta experiencia enciende la curiosidad y el asombro de los niños, los grandes motores de este dispositivo adaptado de la metodología del Dr. Sugata Mitra."
       ],
       "callToAction": "Ver más",
       "href": "http://www.soleargentina.org/",
@@ -424,7 +424,7 @@
     "title": "Balance 2018",
     "subtitle": "¿Quién nos financia? ¿Cómo gastamos?",
     "logo": "/static/assets/icons/transparency-logo.svg",
-    
+
     "doughnutGraphic": {
       "subtitleOne": "Ingresos",
       "subtitleTwo": "Gastos"
@@ -445,9 +445,9 @@
     },
     "balanceSheet": {
       "text": "Memorias 2018",
-      "btn-text": "Ver más",
-      "urldownload": "https://drive.google.com/file/d/1dOuw_imRgG0dLA539Zoi6OIlRMCXInnd/view"
-    
+      "btn-text": "Ver informe",
+      "urldownload": "https://drive.google.com/file/d/16zZiqKcE6LYcD2lCThlemXgABzKGK-l2/view"
+
     }
   },
   "contact": {
@@ -456,7 +456,7 @@
     "copy": [
       "¿Tenés dudas, recomendaciones, querés colaborar o solamente saludarnos?",
       "Acá podés hacerlo."
-    ], 
+    ],
     "form": {
       "name": "Nombre y apellido",
       "email": "E-mail",
