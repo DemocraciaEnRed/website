@@ -260,6 +260,13 @@
           "url": "https://github.com/joshchisnerman",
           "img": "../static/assets/profiles/josh.jpg"
         },
+        {
+          "name": "Vale",
+          "bio": "Field investigation",
+          "handle": "",
+          "url": "",
+          "img": "../static/assets/profiles/vale.jpg"
+        },
          {
           "name": "Guido",
           "bio": "Software consultant",

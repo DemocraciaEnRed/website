@@ -262,6 +262,13 @@
           "img": "../static/assets/profiles/josh.jpg"
         },
         {
+          "name": "Vale",
+          "bio": "Investigación de campo",
+          "handle": "",
+          "url": "",
+          "img": "../static/assets/profiles/vale.jpg"
+        },
+        {
           "name": "Guido",
           "bio": "Asesor de Software",
           "handle": "tw",
