@@ -444,10 +444,18 @@
     "horizontalGraphic": {
       "subtitle": "Team's parity"
     },
-    "balanceSheet": {
-      "text": "2019 Memoirs",
-      "btn-text": "View file",
-      "urldownload": "https://drive.google.com/file/d/16zZiqKcE6LYcD2lCThlemXgABzKGK-l2/view"
+    "balanceSheets": {
+      "text": "Memoirs",
+      "sheets": [
+        {
+          "btn-text": "2019",
+          "urldownload": "https://drive.google.com/file/d/16zZiqKcE6LYcD2lCThlemXgABzKGK-l2/view"
+        },
+        {
+          "btn-text": "2018",
+          "urldownload": "https://drive.google.com/file/d/1dOuw_imRgG0dLA539Zoi6OIlRMCXInnd/view"
+        }
+      ]
     }
   },
   "contact": {

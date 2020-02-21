@@ -23,7 +23,7 @@ export default class extends Component {
       polyglot.extend(es)
       polyglot.locale(es.language)
     }
-    
+
   }
 
   componentDidMount () {
@@ -37,20 +37,20 @@ export default class extends Component {
 
   changeLang = (lang) => {
     const newLang = lang === 'es' ? es : en
-    polyglot.extend(newLang) 
+    polyglot.extend(newLang)
     polyglot.locale(newLang.language)
     localStorage.setItem('lang', lang)
     this.setState({currentLang: lang})
   }
-  
+
   render () {
     return (
       <div className="transparencia">
-        
-        <Layout 
+
+        <Layout
           changeLang={this.changeLang}
           currentLang={this.state.currentLang} >
-          <Header 
+          <Header
             title={t('transparency.header')}
             icon={t('transparency.logo')}
             // bg={'../static/assets/header/headerWeb.jpg'}
@@ -59,10 +59,7 @@ export default class extends Component {
           <DoughnutGraphic />
           <VerticalBars />
           <HorizontalBars />
-          <BalanceSheet 
-          text={t('transparency.balanceSheet.text')} 
-          url={t('transparency.balanceSheet.urldownload')} 
-          btnText={t('transparency.balanceSheet.btn-text')}/>
+          <BalanceSheet text={t('transparency.balanceSheets.text')}/>
           <Footer />
         <style jsx>{`
           .transparencia section:nth-child(odd) {
