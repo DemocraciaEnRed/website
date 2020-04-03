@@ -3,8 +3,8 @@
   "index": {
     "header": {
       "title": "Democracia en Red",
-      "subtitle": "Creamos soluciones de participación ciudadana con gobiernos  y activistas para fortalecer la democracia.",
-      "socialmedia": "CONOCENOS",
+      "subtitle": "Creamos soluciones de participación ciudadana con gobiernos y activistas para fortalecer la democracia.",
+      "socialmedia": "NUESTRAS REDES",
       "callToAction": "Enviar",
       "placeholder": "¡Ingresá tu e-mail para recibir novedades!",
       "mobilePlaceholder": "Recibí novedades en tu e-mail",
@@ -82,7 +82,9 @@
         "leyes-abiertas-38249baa7e75": "LEYES ABIERTAS",
         "consulta-pública-a5836964ad98": "CONSULTA PÚBLICA",
         "presupuesto-participativo-de-vicente-lópez-9db05cc3147d": "PRESUPUESTO PARTICIPATIVO DE VICENTE LÓPEZ",
-        "gobierno-abierto-cff3b1344119": "GOBIERNO ABIERTO"
+        "gobierno-abierto-cff3b1344119": "GOBIERNO ABIERTO",
+        "el-límite-de-las-palabras-b937b8b1bcb7": "EL LÍMITE DE LAS PALABRAS",
+        "salimos-a-la-cancha-a1675afe970d": "Salimos a la cancha."
       }
     },
     "audiovisual": {
