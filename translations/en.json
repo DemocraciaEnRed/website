@@ -441,7 +441,7 @@
     "barGraphic": {
       "title": "Income and outcome's evolution",
       "income": {
-        "subtitle": "Income by source of financing fiscal year"
+        "subtitle": "Income by source of financing (fiscal year)"
       },
       "outcome": {
         "subtitle": "Outcome by fiscal year object"
@@ -464,6 +464,55 @@
           "btn-text": "2018",
           "urldownload": "https://drive.google.com/file/d/1dOuw_imRgG0dLA539Zoi6OIlRMCXInnd/view"
         }
+      ]
+    },
+    "incomeGraphic": {
+      "labels": [
+        "Services",
+        "Donations",
+        "Open Society",
+        "Altec",
+        "Clip",
+        "Luminate",
+        "IFA",
+        "European Union"
+      ]
+    },
+    "outcomeGraphic": {
+      "labels": [
+        "Design & communication",
+        "External hiring",
+        "Salaries",
+        "Office expenses",
+        "Others"
+      ]
+    },
+    "incomeByYearGraphic": {
+      "labels": [
+        "Services",
+        "Donations"
+      ],
+      "years": [
+        "June 30, 2015",
+        "June 30, 2016",
+        "June 30, 2017",
+        "June 30, 2018",
+        "June 30, 2019"
+      ]
+    },
+    "outcomeByYearGraphic": {
+      "labels": [
+        "Design",
+        "Taxes and interests",
+        "Office expenses",
+        "Salaries"
+      ],
+      "years": [
+        "June 30, 2015",
+        "June 30, 2016",
+        "June 30, 2017",
+        "June 30, 2018",
+        "June 30, 2019"
       ]
     }
   },

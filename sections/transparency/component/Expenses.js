@@ -1,46 +1,50 @@
 import React, {Component} from "react"
 import {Doughnut} from "react-chartjs-2"
-
+import { t } from '../../../polyglot-modules/polyglot.js'
 
 class Expenses extends Component {
     constructor(props) {
         super(props);
-
-        this.state= {
-            data: { labels: [
-                'Diseño y comunicación',
-                'Contrataciones Ext.',
-                'Honorarios',
-                'Oficina',
-                'Otros'
-              ],
-              datasets: [{
-                data: [3.44, 15.65, 54.21, 8.38, 18.32],
-                backgroundColor: [
-                '#62378C',
-                '#B54CFF',
-                '#9500FF',
-                '#73617F',
-                '#C894FF'
-                ],
-                hoverBackgroundColor: [
-                '#62378C',
-                '#B54CFF',
-                '#9500FF',
-                '#73617F',
-                '#C894FF'
-                ]
-            }]
-
-
-            },
-
-        }
     }
 
+    componentWillMount(){
+      this.setData()
+    }
+
+    componentWillReceiveProps(nextProps){
+      if (nextProps && nextProps.currentLang && this.props.currentLang != nextProps.currentLang){
+        this.setData()
+        this.setState({ currentLang: nextProps.currentLang })
+      }
+    }
+
+    setData(){
+      this.setState({data: {
+          labels: [0,1,2,3,4].map(i => {
+            return t(`transparency.incomeGraphic.labels.${i}`)
+          }),
+          datasets: [{
+            data: [3.44, 15.65, 54.21, 8.38, 18.32],
+            backgroundColor: [
+            '#62378C',
+            '#B54CFF',
+            '#9500FF',
+            '#73617F',
+            '#C894FF'
+            ],
+            hoverBackgroundColor: [
+            '#62378C',
+            '#B54CFF',
+            '#9500FF',
+            '#73617F',
+            '#C894FF'
+            ]
+        }]
 
 
-
+        }
+      })
+    }
 
     render() {
         const {data} = this.state;

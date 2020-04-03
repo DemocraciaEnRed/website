@@ -8,9 +8,10 @@ class DoughnutGraphic extends Component{
     super(props);
 
   }
+
   render () {
     return (
-      <section className="graphic-section"> 
+      <section className="graphic-section">
          <div className='title'>
            <h1>{t('transparency.title')}</h1>
           </div>
@@ -19,9 +20,9 @@ class DoughnutGraphic extends Component{
         <div className="section-text">
         </div>
     </div>
-        <Income subtitle={t('transparency.doughnutGraphic.subtitleOne')} />
-        <Expenses subtitle={t('transparency.doughnutGraphic.subtitleTwo')} />
-     
+        <Income currentLang={this.props.currentLang} subtitle={t('transparency.doughnutGraphic.subtitleOne')} />
+        <Expenses currentLang={this.props.currentLang} subtitle={t('transparency.doughnutGraphic.subtitleTwo')} />
+
       <style jsx>{`
     .graphic-section {
       display: flex;
@@ -29,7 +30,7 @@ class DoughnutGraphic extends Component{
       justify-content: space-around;
       overflow-x: hidden;
       height: auto;
-      
+
     }
     .title {
       display: flex;
@@ -39,7 +40,7 @@ class DoughnutGraphic extends Component{
     .section-subtitle {
       text-align: center;
       font-size: 2.4rem;
-      width: 100%;  
+      width: 100%;
     }
     @media (min-width: 300px) and (max-width: 780px) {
       .graphic-section {
@@ -50,7 +51,7 @@ class DoughnutGraphic extends Component{
         overflow-x: hidden;
 
       }
-      
+
     }
 
   `}</style>
@@ -58,7 +59,7 @@ class DoughnutGraphic extends Component{
   )
 
   }
-  
+
 }
 
 export default DoughnutGraphic;

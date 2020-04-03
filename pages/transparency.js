@@ -56,8 +56,8 @@ export default class extends Component {
             // bg={'../static/assets/header/headerWeb.jpg'}
              />
           {/* <Content /> */}
-          <DoughnutGraphic />
-          <VerticalBars />
+          <DoughnutGraphic currentLang={this.state.currentLang} />
+          <VerticalBars currentLang={this.state.currentLang} />
           <HorizontalBars />
           <BalanceSheet text={t('transparency.balanceSheets.text')}/>
           <Footer />

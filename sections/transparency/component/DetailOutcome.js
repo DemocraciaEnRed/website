@@ -1,59 +1,69 @@
 import React, {Component} from 'react';
 import {Bar} from 'react-chartjs-2';
+import { t } from '../../../polyglot-modules/polyglot.js'
 
 class DetailOutcome extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-        data: {
-            labels: [
-              '30 de junio de 2015',
-              '30 de junio de 2016',
-              '30 de junio de 2017',
-              '30 de junio de 2018',
-              '30 de junio de 2019'
-            ],
-  datasets: [
-    {
-      label: 'Diseño',
-      backgroundColor: '#FFDC5C',
-      borderColor: '#FFDC5C',
-      borderWidth: 1,
-      hoverBackgroundColor: '#FFDC5C',
-      hoverBorderColor: '#FFDC5C',
-      data: [0, 0, 540900, 368805, 1073626.07]
-    },
-    {
-        label: 'Impuesto e intereses',
-        backgroundColor: '#219EFF',
-        borderColor: '#219EFF',
-        borderWidth: 1,
-        hoverBackgroundColor: '#219EFF',
-        hoverBorderColor: '#219EFF',
-        data: [27593.75, 94031.07, 660411.1, 108363.95, 33837.97]
-      },
-      {
-        label: 'Gastos de oficina',
-        backgroundColor: '#9DEDAC',
-        borderColor: '#9DEDAC',
-        borderWidth: 1,
-        hoverBackgroundColor: '#9DEDAC',
-        hoverBorderColor: '#9DEDAC',
-        data: [51631.08, 81950, 126310, 223747, 237561.31]
-      },
-      {
-        label: 'Honorarios',
-        backgroundColor: '#C894FF',
-        borderColor: '#C894FF',
-        borderWidth: 1,
-        hoverBackgroundColor: '#C894FF',
-        hoverBorderColor: '#C894FF',
-        data: [1547948, 2184899, 1254320, 1727560, 5166089.87]
-      }
-  ]
-        }
-        }
     }
+
+    componentWillMount(){
+      this.setData()
+    }
+
+    componentWillReceiveProps(nextProps){
+      if (nextProps && nextProps.currentLang && this.props.currentLang != nextProps.currentLang){
+        this.setData()
+        this.setState({ currentLang: nextProps.currentLang })
+      }
+    }
+
+    setData(){
+      this.setState({data: {
+          labels: [0,1,2,3,4].map(i => {
+            return t(`transparency.outcomeByYearGraphic.years.${i}`)
+          }),
+          datasets: [
+            {
+              label: t("transparency.outcomeByYearGraphic.labels.0"),
+              backgroundColor: '#FFDC5C',
+              borderColor: '#FFDC5C',
+              borderWidth: 1,
+              hoverBackgroundColor: '#FFDC5C',
+              hoverBorderColor: '#FFDC5C',
+              data: [0, 0, 540900, 368805, 1073626.07]
+            },
+            {
+              label: t("transparency.outcomeByYearGraphic.labels.1"),
+              backgroundColor: '#219EFF',
+              borderColor: '#219EFF',
+              borderWidth: 1,
+              hoverBackgroundColor: '#219EFF',
+              hoverBorderColor: '#219EFF',
+              data: [27593.75, 94031.07, 660411.1, 108363.95, 33837.97]
+            },
+            {
+              label: t("transparency.outcomeByYearGraphic.labels.2"),
+              backgroundColor: '#9DEDAC',
+              borderColor: '#9DEDAC',
+              borderWidth: 1,
+              hoverBackgroundColor: '#9DEDAC',
+              hoverBorderColor: '#9DEDAC',
+              data: [51631.08, 81950, 126310, 223747, 237561.31]
+            },
+            {
+              label: t("transparency.outcomeByYearGraphic.labels.3"),
+              backgroundColor: '#C894FF',
+              borderColor: '#C894FF',
+              borderWidth: 1,
+              hoverBackgroundColor: '#C894FF',
+              hoverBorderColor: '#C894FF',
+              data: [1547948, 2184899, 1254320, 1727560, 5166089.87]
+            }
+          ]//end data.datasets
+        }})//end data
+    }
+
     render() {
       const chartOptions = {
         maintainAspectRatio: false,

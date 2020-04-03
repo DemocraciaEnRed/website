@@ -464,6 +464,55 @@
           "urldownload": "https://drive.google.com/file/d/1dOuw_imRgG0dLA539Zoi6OIlRMCXInnd/view"
         }
       ]
+    },
+    "incomeGraphic": {
+      "labels": [
+        "Servicios",
+        "Donaciones",
+        "Open Society",
+        "Altec",
+        "Clip",
+        "Luminate",
+        "IFA",
+        "Unión Europea"
+      ]
+    },
+    "outcomeGraphic": {
+      "labels": [
+        "Diseño y comunicación",
+        "Contrataciones Ext.",
+        "Honorarios",
+        "Oficina",
+        "Otros"
+      ]
+    },
+    "incomeByYearGraphic": {
+      "labels": [
+        "Servicios",
+        "Donaciones"
+      ],
+      "years": [
+        "30 de junio de 2015",
+        "30 de junio de 2016",
+        "30 de junio de 2017",
+        "30 de junio de 2018",
+        "30 de junio de 2019"
+      ]
+    },
+    "outcomeByYearGraphic": {
+      "labels": [
+        "Diseño",
+        "Impuesto e intereses",
+        "Gastos de oficina",
+        "Honorarios"
+      ],
+      "years": [
+        "30 de junio de 2015",
+        "30 de junio de 2016",
+        "30 de junio de 2017",
+        "30 de junio de 2018",
+        "30 de junio de 2019"
+      ]
     }
   },
   "contact": {

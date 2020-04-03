@@ -1,42 +1,53 @@
 import React, {Component} from 'react';
 import {Bar, defaults} from 'react-chartjs-2';
+import { t } from '../../../polyglot-modules/polyglot.js'
 
 
 class Details extends Component {
     constructor(props) {
-        super(props);
-        this.state = {
-        data: {
-            labels: [
-              '30 de junio de 2015',
-              '30 de junio de 2016',
-              '30 de junio de 2017',
-              '30 de junio de 2018',
-              '30 de junio de 2019'
-            ],
-  datasets: [
-    {
-      label: 'Servicios',
-      backgroundColor: '#219EFF',
-      borderColor: '#219EFF',
-      borderWidth: 1,
-      hoverBackgroundColor: '#219EFF',
-      hoverBorderColor: '#219EFF',
-      data: [0, 2019402.49,330325.30, 678800, 3710207.54]
-    },
-    {
-        label: 'Donaciones',
-        backgroundColor: '#5ce175',
-        borderColor: '#5ce175',
-        borderWidth: 1,
-        hoverBackgroundColor: '#5ce175',
-        hoverBorderColor: '#5ce175',
-        data: [1497115.69, 933012.19, 1346284.39, 2630485.26, 7935275.84]
-      }
-  ]
-        }
-        }
+      super(props);
     }
+
+    componentWillMount(){
+      this.setData()
+    }
+
+    componentWillReceiveProps(nextProps){
+      if (nextProps && nextProps.currentLang && this.props.currentLang != nextProps.currentLang){
+        this.setData()
+        this.setState({ currentLang: nextProps.currentLang })
+      }
+    }
+
+    setData(){
+      this.setState({data: {
+          labels: [0,1,2,3,4].map(i => {
+            return t(`transparency.incomeByYearGraphic.years.${i}`)
+          }),
+          datasets: [
+            {
+              label: t("transparency.incomeByYearGraphic.labels.0"),
+              backgroundColor: '#219EFF',
+              borderColor: '#219EFF',
+              borderWidth: 1,
+              hoverBackgroundColor: '#219EFF',
+              hoverBorderColor: '#219EFF',
+              data: [0, 2019402.49,330325.30, 678800, 3710207.54]
+            },
+            {
+              label: t("transparency.incomeByYearGraphic.labels.1"),
+              backgroundColor: '#5ce175',
+              borderColor: '#5ce175',
+              borderWidth: 1,
+              hoverBackgroundColor: '#5ce175',
+              hoverBorderColor: '#5ce175',
+              data: [1497115.69, 933012.19, 1346284.39, 2630485.26, 7935275.84]
+            }
+          ]//end data.datasets
+        }}//end data
+      )
+    }
+
     render() {
         const chartOptions = {
         maintainAspectRatio: false,

@@ -1,78 +1,84 @@
 import React, {Component} from "react"
 import {Doughnut} from "react-chartjs-2"
-
-
-
-
+import { t } from '../../../polyglot-modules/polyglot.js'
+console.log(  )
 class Income extends Component {
     constructor(props) {
         super(props);
+    }
 
-        this.state= {
-            data: { labels: [
-                'Servicios',
-                'Donaciones',
+    componentWillMount(){
+      this.setData()
+    }
 
-                'Open Society',
-                'Altec',
-                'Clip',
-                'Luminate',
-                'IFA',
-                'Unión Europea'
-              ],
-              datasets: [{
-                data: [
-                  24.94, 0,
-                  20.08, 9.32, 0.99, 26.8, 2.87, 15.01
-                ],
-                backgroundColor: [
-                '#219EFF',
-                '#87e99a',
+    componentWillReceiveProps(nextProps){
+      if (nextProps && nextProps.currentLang && this.props.currentLang != nextProps.currentLang){
+        this.setData()
+        this.setState({ currentLang: nextProps.currentLang })
+      }
+    }
 
-                '#9dedac',
-                '#c8f5d0',
-                '#b3f1be',
-                '#b3f1be',
-                '#def9e3',
-                '#9dedac',
-                ],
-                hoverBackgroundColor: [
-                '#219EFF',
-                '#87e99a',
+    setData(){
+      this.setState({data: {
+        labels: [0,1,2,3,4,5,6,7].map(i => {
+          return t(`transparency.incomeGraphic.labels.${i}`)
+        }),
+        datasets: [
+          {
+            label: [0,1,2,3,4,5,6,7].map(i => {
+              return t(`transparency.incomeGraphic.labels.${i}`)
+            }),
+            data: [
+              24.94, 0,
+              20.08, 9.32, 0.99, 26.8, 2.87, 15.01
+            ],
+            backgroundColor: [
+              '#219EFF',
+              '#87e99a',
 
-                '#9dedac',
-                '#c8f5d0',
-                '#b3f1be',
-                '#b3f1be',
-                '#def9e3',
-                '#9dedac',
-                ],
+              '#9dedac',
+              '#c8f5d0',
+              '#b3f1be',
+              '#b3f1be',
+              '#def9e3',
+              '#9dedac',
+            ],
+            hoverBackgroundColor: [
+              '#219EFF',
+              '#87e99a',
 
-            },
-            {
-                data: [
-                  24.94, 75.06,
-                  0, 0, 0, 0, 0, 0
-                ],
-                backgroundColor: [
-                '#219EFF',
-                '#5ce175',
-                '#FFF',
-                '#FFF',
-                '#FFF',
-                '#FFF',
-                ],
-                hoverBackgroundColor: [
-                '#219EFF',
-                '#72e588',
-                '#EA73C0',
-                ]
-            }
-        ]
-
-
-            }
-        }
+              '#9dedac',
+              '#c8f5d0',
+              '#b3f1be',
+              '#b3f1be',
+              '#def9e3',
+              '#9dedac',
+            ],
+          },
+          {
+            label: [0,1,2,3,4,5,6,7].map(i => {
+              return t(`transparency.incomeGraphic.labels.${i}`)
+            }),
+            data: [
+              24.94, 75.06,
+              0, 0, 0, 0, 0, 0
+            ],
+            backgroundColor: [
+              '#219EFF',
+              '#5ce175',
+              '#FFF',
+              '#FFF',
+              '#FFF',
+              '#FFF',
+            ],
+            hoverBackgroundColor: [
+              '#219EFF',
+              '#72e588',
+              '#EA73C0',
+            ]
+          }
+        ]//end datasets
+      }})
     }
 
     render() {
