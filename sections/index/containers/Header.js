@@ -58,7 +58,6 @@ const Header = ( {modal, content, hideModal} ) => (
       @media (max-width: 440px) {
         img.logoDerMenu{
           width:30em;
-          padding-bottom:4em;
         }
       }
       header {
@@ -67,7 +66,7 @@ const Header = ( {modal, content, hideModal} ) => (
         background-size: cover;
         display: flex;
         flex-direction: column;
-        padding: 144px 40px 32px 85px;
+        padding: 124px 40px 72px 85px;
         background-position: center bottom;
     	}
     	header h1 {
@@ -83,7 +82,7 @@ const Header = ( {modal, content, hideModal} ) => (
       @media (max-width: 1024px) {
         header {
           align-items: center;
-          padding: 90px 26px 37px;
+          padding: 90px 26px 57px;
           text-align: center;
         }
         header h1 {
@@ -93,7 +92,7 @@ const Header = ( {modal, content, hideModal} ) => (
           font-size: 2.0rem;
           letter-spacing: 0.07rem;
           line-height: 3.6rem;
-          margin: 25px 0px 6px;
+          margin: 25px 0px 30px;
         }
       }
 
