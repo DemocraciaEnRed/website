@@ -430,7 +430,7 @@
   },
   "transparency": {
     "header": "Transparencia",
-    "title": "Balance 2018",
+    "title": "Balance 2019",
     "subtitle": "¿Quién nos financia? ¿Cómo gastamos?",
     "logo": "/static/assets/icons/transparency-logo.svg",
 
@@ -441,7 +441,7 @@
     "barGraphic": {
       "title": "Evolución de ingresos y gastos",
       "income": {
-        "subtitle": "Ingresos por fuente de financiamiento fiscal"
+        "subtitle": "Ingresos por fuente de financiamiento (año fiscal)"
       },
       "outcome": {
         "subtitle": "Egreso por objeto del año fiscal"

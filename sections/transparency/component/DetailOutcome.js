@@ -6,7 +6,13 @@ class DetailOutcome extends Component {
         super(props);
         this.state = {
         data: {
-            labels: ['30 de junio de 2015', '30 de junio de 2016', '30 de junio de 2017', '30 de junio de 2018'],
+            labels: [
+              '30 de junio de 2015',
+              '30 de junio de 2016',
+              '30 de junio de 2017',
+              '30 de junio de 2018',
+              '30 de junio de 2019'
+            ],
   datasets: [
     {
       label: 'Diseño',
@@ -15,7 +21,7 @@ class DetailOutcome extends Component {
       borderWidth: 1,
       hoverBackgroundColor: '#FFDC5C',
       hoverBorderColor: '#FFDC5C',
-      data: [0, 0,540900, 368805]
+      data: [0, 0, 540900, 368805, 1073626.07]
     },
     {
         label: 'Impuesto e intereses',
@@ -24,7 +30,7 @@ class DetailOutcome extends Component {
         borderWidth: 1,
         hoverBackgroundColor: '#219EFF',
         hoverBorderColor: '#219EFF',
-        data: [27593.75, 94031.07, 660411.1, 108363.95]
+        data: [27593.75, 94031.07, 660411.1, 108363.95, 33837.97]
       },
       {
         label: 'Gastos de oficina',
@@ -33,7 +39,7 @@ class DetailOutcome extends Component {
         borderWidth: 1,
         hoverBackgroundColor: '#9DEDAC',
         hoverBorderColor: '#9DEDAC',
-        data: [51631.08, 81950, 126310, 223747]
+        data: [51631.08, 81950, 126310, 223747, 237561.31]
       },
       {
         label: 'Honorarios',
@@ -42,7 +48,7 @@ class DetailOutcome extends Component {
         borderWidth: 1,
         hoverBackgroundColor: '#C894FF',
         hoverBorderColor: '#C894FF',
-        data: [1547948, 2184899, 1254320, 1727560]
+        data: [1547948, 2184899, 1254320, 1727560, 5166089.87]
       }
   ]
         }
@@ -99,29 +105,29 @@ class DetailOutcome extends Component {
                         .subtitle {
                           text-align: center;
                         }
-    
+
                         @media (min-width: 780px) and (max-width: 1400px) {
                           .detailOutcome-container {
                             margin-bottom: 20px;
                           }
-    
-                          
+
+
                         .detailOutcome-graphic {
                           margin: 0 0 20px 0;
                            height: 60vh;
-                          width: 65vw; 
+                          width: 65vw;
                         }
                         }
                         @media (min-width: 341px) and (max-width: 780px) {
                           .detailOutcome-container {
                             margin-bottom: 20px;
                           }
-    
-                          
+
+
                         .detailOutcome-graphic {
                           margin: 0 0 10px 0;
                            height: 36vh;
-                          width: 85vw; 
+                          width: 85vw;
                         }
                          }
 

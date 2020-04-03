@@ -8,14 +8,14 @@ class Expenses extends Component {
 
         this.state= {
             data: { labels: [
-                'Honorarios',
-                'Servicios de Consultoria',
                 'Diseño y comunicación',
+                'Contrataciones Ext.',
+                'Honorarios',
                 'Oficina',
                 'Otros'
               ],
               datasets: [{
-                data: [70.3, 14.7, 4.6, 10.3, 0.1],
+                data: [3.44, 15.65, 54.21, 8.38, 18.32],
                 backgroundColor: [
                 '#62378C',
                 '#B54CFF',
@@ -31,14 +31,14 @@ class Expenses extends Component {
                 '#C894FF'
                 ]
             }]
-            
+
 
             },
-            
-        }
-    } 
 
-     
+        }
+    }
+
+
 
 
 
@@ -66,13 +66,13 @@ class Expenses extends Component {
           }
         }
         return (
-   
+
             <div className="expenses-container">
            <div className="subtitle">{subtitle}</div>
            <div className="expenses-graphic" ref={ (divElement) => this.divElement = divElement}>
             <Doughnut
             data={data}
-            options={option} 
+            options={option}
             width={650}
             height={500}
              />
@@ -93,7 +93,7 @@ class Expenses extends Component {
             width: 100%;
             font-size: 35px;
         }
-       
+
         .expenses-graphic {
           display: flex;
           justify-content: center;
@@ -108,13 +108,13 @@ class Expenses extends Component {
         @media (min-width: 780px) and (max-width: 1400px) {
           .expenses-graphic {
             height: 60vh;
-            width: 65vw; 
+            width: 65vw;
           }
       }
       @media (min-width: 341px) and (max-width: 780px) {
         .expenses-graphic {
           height: 40vh;
-          width: 85vw; 
+          width: 85vw;
         }
       }
 

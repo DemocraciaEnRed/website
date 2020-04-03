@@ -3,7 +3,7 @@ import {Doughnut} from "react-chartjs-2"
 
 
 
-  
+
 class Income extends Component {
     constructor(props) {
         super(props);
@@ -12,33 +12,48 @@ class Income extends Component {
             data: { labels: [
                 'Servicios',
                 'Donaciones',
-                'Altec',
+
                 'Open Society',
+                'Altec',
                 'Clip',
-                'FFHC'
+                'Luminate',
+                'IFA',
+                'Unión Europea'
               ],
               datasets: [{
-                data: [55.43, 0, 23.14, 16.86, 3.64, 0.93],
+                data: [
+                  24.94, 0,
+                  20.08, 9.32, 0.99, 26.8, 2.87, 15.01
+                ],
                 backgroundColor: [
                 '#219EFF',
                 '#87e99a',
+
                 '#9dedac',
-                '#b3f1be',
                 '#c8f5d0',
+                '#b3f1be',
+                '#b3f1be',
                 '#def9e3',
+                '#9dedac',
                 ],
                 hoverBackgroundColor: [
                 '#219EFF',
                 '#87e99a',
+
                 '#9dedac',
-                '#b3f1be',
                 '#c8f5d0',
+                '#b3f1be',
+                '#b3f1be',
                 '#def9e3',
+                '#9dedac',
                 ],
-               
+
             },
             {
-                data: [55.4, 44.6, 0, 0, 0],
+                data: [
+                  24.94, 75.06,
+                  0, 0, 0, 0, 0, 0
+                ],
                 backgroundColor: [
                 '#219EFF',
                 '#5ce175',
@@ -54,7 +69,7 @@ class Income extends Component {
                 ]
             }
         ]
-            
+
 
             }
         }
@@ -109,7 +124,7 @@ class Income extends Component {
             width: 100%;
             font-size: 35px;
         }
-        
+
         .income-graphic {
           display: flex;
           justify-content: center;
@@ -121,13 +136,13 @@ class Income extends Component {
         @media (min-width: 780px) and (max-width: 1400px) {
             .income-graphic {
               height: 60vh;
-              width: 65vw; 
+              width: 65vw;
             }
         }
         @media (min-width: 341px) and (max-width: 780px) {
           .income-graphic {
             height: 40vh;
-            width: 85vw; 
+            width: 85vw;
           }
         }
 
