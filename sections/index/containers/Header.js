@@ -10,12 +10,12 @@ const Header = ( {modal, content, hideModal} ) => (
         <img className='logoDerMenu' src='../static/assets/der_black.svg'/>
       </div>
     </div>
-   
+
 		<div className="subtext-container"><p className='subtext'>{t('index.header.subtitle')}</p></div>
-    <div className="subtext-title"><span>{t('index.header.socialmedia')}</span></div>
+    {/* <div className="subtext-title"><span>{t('index.header.socialmedia')}</span></div> */}
 		{/* <Submit /> */}
 		<SocialBar alignSelf={'center'} iconsSize={'30px'} width={'25%'} mobileWidth={'100%'} justifyContent={'space-around'} iconHover={'#3CA2DA'} iconMobileHover={'#999'} />
-		{modal && 
+		{modal &&
       <Modal content={content} hideModal={hideModal} />
     }
     <style jsx>{`
@@ -96,9 +96,13 @@ const Header = ( {modal, content, hideModal} ) => (
           margin: 25px 0px 6px;
         }
       }
+
+			.social-bar {
+				margin-bottom: 15px;
+				margin-top: 5px;
+			}
   	`}</style>
 	</header>
 	)
 
 export default Header
-
