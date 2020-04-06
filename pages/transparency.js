@@ -8,7 +8,6 @@ import Content from '../sections/transparency/containers/Content'
 import Footer from '../containers/Footer'
 import DoughnutGraphic  from "../sections/transparency/containers/DoughnutGraphic"
 import VerticalBars from "../sections/transparency/containers/VerticalBars"
-import HorizontalBars from "../sections/transparency/containers/HorizontalBars"
 import BalanceSheet from "../sections/transparency/containers/BalanceSheet"
 import { doesNotThrow } from 'assert';
 import Layout from '../layouts/Layout'
@@ -58,7 +57,6 @@ export default class extends Component {
           {/* <Content /> */}
           <DoughnutGraphic currentLang={this.state.currentLang} />
           <VerticalBars currentLang={this.state.currentLang} />
-          <HorizontalBars />
           <BalanceSheet text={t('transparency.balanceSheets.text')}/>
           <Footer />
         <style jsx>{`
