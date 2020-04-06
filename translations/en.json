@@ -64,7 +64,7 @@
           "text": "Here is all accounting information summarized and documentary support.",
           "icon": "/static/assets/icons/transparency.svg",
           "callToAction": "Transparency",
-          "href": "https://drive.google.com/file/d/18-rWaYPOXxVCjzH4zNySzl9c5HtFhr4x/view",
+          "href": "/transparency",
           "classbtn": "btn last-btn"
 
         }
