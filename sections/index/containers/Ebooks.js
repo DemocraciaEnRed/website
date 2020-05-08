@@ -3,7 +3,7 @@ import { t } from '../../../polyglot-modules/polyglot.js'
 import EbookCard from '../components/EbookCard'
 //let Flickity;
 
-const data = [0, 1, 2]
+const data = [0, 1, 2, 3]
 
 class Ebooks extends Component {
   constructor(props){
@@ -23,7 +23,7 @@ class Ebooks extends Component {
   }
 
   componentDidUpdate(){
-/*  Slider in desktop. Uncomment this when there are more than two books   
+/*  Slider in desktop. Uncomment this when there are more than two books
     if (!this.state.mobile) {
       const options = {
         cellCelector: '.ebook-card',
@@ -60,7 +60,7 @@ class Ebooks extends Component {
       <section className='ebooks-section' id='ebooks'>
         <h2 className='section-title'>{t('index.ebooks.title')}</h2>
         <div className='ebooks-container carousel' ref='carousel'>
-          {data.map((i) => 
+          {data.map((i) =>
             <EbookCard key={i} img={t(`index.ebooks.content.${i}.img`)} title={t(`index.ebooks.content.${i}.title`)} description={t(`index.ebooks.content.${i}.subtitle`)} link={t(`index.ebooks.content.${i}.link`)} />
           )}
         </div>

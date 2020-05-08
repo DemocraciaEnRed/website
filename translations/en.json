@@ -109,6 +109,12 @@
           "subtitle": "A first step for the critical use of Internet to win the place it deserves.",
           "link": "https://sumando.org.ar/_wp/wp-content/uploads/2019/08/Guia-Ciudadana-Digital.pdf",
           "img": "/static/assets/ebooks/internetguiaciudadana.jpg"
+        },
+        {
+          "title": "Toolbox",
+          "subtitle": "How to set up a participatory budget? (in spanish)",
+          "link": "/static/assets/ebooks/DER_Kit_PParticipativo_060520.pdf",
+          "img": "/static/assets/ebooks/KitPP_web_070520.jpg"
         }
       ],
       "callToAction": "Download"
