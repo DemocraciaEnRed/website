@@ -32,12 +32,6 @@ class Cases extends Component {
   }
 
   componentDidUpdate(){
-
-    setTimeout( () => {
-      this.flkty.resize()
-      console.log('Resize the flickity')
-    }, 3000)
-
     const options = {
       cellCelector: '.medium-post',
       pageDots: true,
@@ -58,8 +52,8 @@ class Cases extends Component {
       <section className='case-studies-section' id='cases'>
         <h2 className='section-title'>{t('index.caseStudies.title')}</h2>
         <div className='posts-container' ref='carousel'>
-          {this.state.posts.map((post, i)=> 
-            <MediumPost 
+          {this.state.posts.map((post, i)=>
+            <MediumPost
               key={i}
               snippet={post.title}
               timestamp={post.createdAt}
@@ -68,7 +62,7 @@ class Cases extends Component {
               url={post.url} />
           )}
         </div>
-    
+
         <style jsx>{`
           .case-studies-section {
             display: flex;

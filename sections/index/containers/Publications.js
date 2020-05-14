@@ -34,12 +34,6 @@ class Publications extends Component {
   }
 
   componentDidUpdate(){
-
-    setTimeout( () => {
-      this.flkty.resize()
-      console.log('Resize the flickity')
-    }, 3000)
-
     const options = {
       cellCelector: '.medium-post',
       pageDots: true,

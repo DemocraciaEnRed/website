@@ -31,15 +31,20 @@ export default class extends Component {
       polyglot.locale(es.language)
     }
   }
-  
-  componentDidMount () {
-    localStorage.setItem('youtube', this.props.env)
-    const lang = localStorage.getItem('lang')
-    if (lang === null) {
-      localStorage.setItem('lang', 'es')
-    } else if (lang !== polyglot.currentLocale) {
-      this.changeLang('en')
+
+  componentWillMount () {
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('youtube', this.props.env)
+      const lang = localStorage.getItem('lang')
+      if (lang === null) {
+        localStorage.setItem('lang', 'es')
+      } else if (lang !== polyglot.currentLocale) {
+        this.changeLang('en')
+      }
     }
+  }
+
+  componentDidMount () {
     const isSubscribed = this.getQueryVariable('subscripto')
     if (isSubscribed !== undefined) {
       this.setState({
@@ -51,7 +56,7 @@ export default class extends Component {
 
   changeLang = (lang) => {
     const newLang = lang === 'es' ? es : en
-    polyglot.extend(newLang) 
+    polyglot.extend(newLang)
     polyglot.locale(newLang.language)
     localStorage.setItem('lang', lang)
     this.setState({currentLang: lang})
