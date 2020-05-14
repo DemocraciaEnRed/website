@@ -16,24 +16,14 @@ class Publications extends Component {
   }
 
   componentDidMount () {
+    this.updatePosts()
     Flickity = require('flickity')
-    const lang = localStorage.getItem('lang')
-    const apiUrl = `api/publicaciones?lang=${lang === null ? 'es' : lang}`
-    fetch(apiUrl)
-      .then( r => r.json() )
-      .then( data => {
-        data.forEach(function(post){
-          let urlSuffix = post.url.substr(post.url.lastIndexOf('/')+1)
-          let tKey = 'index.publications.items.' + urlSuffix
-          // cuando no hay traducción definida devuelve la t(tKey) devuelve tKey
-          if (tKey != t(tKey))
-            post.title = t(tKey)
-        })
-        this.setState({ posts: data })
-    })
   }
 
-  componentDidUpdate(){
+  componentDidUpdate(prevProps){
+    if(this.props.currentLang != prevProps.currentLang)
+      this.updatePosts()
+
     const options = {
       cellCelector: '.medium-post',
       pageDots: true,
@@ -47,6 +37,22 @@ class Publications extends Component {
       imagesLoaded: true,
     }
     this.flickity = new Flickity(this.refs.carousel, options)
+  }
+
+  updatePosts(){
+    const lang = localStorage.getItem('lang')
+    const apiUrl = `api/publicaciones?lang=${lang === null ? 'es' : lang}`
+    fetch(apiUrl)
+      .then( r => r.json() )
+      .then( data => {
+        data.forEach(function(post){
+          let urlSuffix = post.url.substr(post.url.lastIndexOf('/')+1)
+          let tKey = 'index.publications.items.' + urlSuffix
+          if (polyglot.has(tKey))
+            post.title = t(tKey)
+        })
+        this.setState({ posts: data })
+    })
   }
 
   render() {

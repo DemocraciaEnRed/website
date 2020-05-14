@@ -81,9 +81,9 @@ export default class extends Component {
       <div>
         <Layout changeLang={this.changeLang} currentLang={this.state.currentLang}>
           <Header modal={this.state.modal} content={this.state.content} hideModal={this.hideModal} />
-          <Cases />
+          <Cases currentLang={this.state.currentLang} />
           <Collaborate />
-          <Publications />
+          <Publications currentLang={this.state.currentLang} />
           <Content />
           <Ebooks />
           <Media />

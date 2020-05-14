@@ -18,20 +18,13 @@ class Cases extends Component {
 
   componentDidMount () {
     Flickity = require('flickity')
-    const lang = localStorage.getItem('lang')
-    const apiUrl = `api/casos?lang=${lang === null ? 'es' : lang}`
-    fetch(apiUrl)
-      .then( r => r.json() )
-      .then( data => {
-        data.forEach(function(post){
-          let urlSuffix = post.url.substr(post.url.lastIndexOf('/')+1)
-          post.title = t('index.caseStudies.cases.' + urlSuffix)
-        })
-        this.setState({ posts: data })
-    })
+    this.updatePosts()
   }
 
-  componentDidUpdate(){
+  componentDidUpdate(prevProps) {
+    if(this.props.currentLang != prevProps.currentLang)
+      this.updatePosts()
+
     const options = {
       cellCelector: '.medium-post',
       pageDots: true,
@@ -45,6 +38,22 @@ class Cases extends Component {
       imagesLoaded: true,
     }
     this.flickity = new Flickity(this.refs.carousel, options)
+  }
+
+  updatePosts(){
+    const lang = localStorage.getItem('lang')
+    const apiUrl = `api/casos?lang=${lang === null ? 'es' : lang}`
+    fetch(apiUrl)
+      .then( r => r.json() )
+      .then( data => {
+        data.forEach(function(post){
+          let urlSuffix = post.url.substr(post.url.lastIndexOf('/')+1)
+          let tKey = 'index.caseStudies.cases.' + urlSuffix
+          if (polyglot.has(tKey))
+            post.title = t(tKey)
+        })
+        this.setState({ posts: data })
+    })
   }
 
   render() {
