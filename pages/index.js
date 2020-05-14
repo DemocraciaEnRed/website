@@ -56,6 +56,7 @@ export default class extends Component {
 
   changeLang = (lang) => {
     const newLang = lang === 'es' ? es : en
+    polyglot.clear()
     polyglot.extend(newLang)
     polyglot.locale(newLang.language)
     localStorage.setItem('lang', lang)
