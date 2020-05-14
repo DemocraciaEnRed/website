@@ -24,7 +24,10 @@ class Publications extends Component {
       .then( data => {
         data.forEach(function(post){
           let urlSuffix = post.url.substr(post.url.lastIndexOf('/')+1)
-          post.title = t('index.publications.items.' + urlSuffix)
+          let tKey = 'index.publications.items.' + urlSuffix
+          // cuando no hay traducción definida devuelve la t(tKey) devuelve tKey
+          if (tKey != t(tKey))
+            post.title = t(tKey)
         })
         this.setState({ posts: data })
     })
@@ -57,8 +60,8 @@ class Publications extends Component {
       <section className='publications-section' id='publications'>
         <h2 className='section-title'>{t('index.publications.title')}</h2>
         <div className='posts-container' ref='carousel'>
-          {this.state.posts.map((post, i)=> 
-            <MediumPost 
+          {this.state.posts.map((post, i)=>
+            <MediumPost
               key={i}
               snippet={post.title}
               timestamp={post.createdAt}
@@ -73,11 +76,11 @@ class Publications extends Component {
               <span className='action-text'>
                 {t('index.publications.callToAction')}
               </span>
-            </button> 
+            </button>
               </a>
         </div>
             */}
-        
+
         <style jsx>{`
           .publications-section {
             display: flex;
