@@ -110,9 +110,15 @@
         },
         {
           "title": "Toolbox",
-          "subtitle": "How to set up a participatory budget? (in spanish)",
-          "link": "/static/assets/ebooks/DER_Kit_PParticipativo_060520.pdf",
-          "img": "/static/assets/ebooks/KitPP_web_070520.jpg"
+          "subtitle": "How to set up a participatory budget? (ES)",
+          "link": "/static/assets/ebooks/DER_Kit_PParticipativo.pdf",
+          "img": "/static/assets/ebooks/KitPP_web.jpg"
+        },
+        {
+          "title": "Toolbox",
+          "subtitle": "How to set up a citizen consultation? (ES)",
+          "link": "/static/assets/ebooks/DER_Kit_CCiudadana.pdf",
+          "img": "/static/assets/ebooks/KitCC_web.jpg"
         }
       ],
       "callToAction": "Download"
@@ -216,13 +222,6 @@
           "handle": "tw",
           "url": "https://twitter.com/_lucianavega",
           "img": "../static/assets/profiles/luciana.jpg"
-        },
-        {
-          "name": "Solange",
-          "bio": "Proyects",
-          "handle": "ln",
-          "url": "https://www.linkedin.com/in/solange-rosa-6407a1b3/",
-          "img": "../static/assets/profiles/sol.jpg"
         },
         {
           "name": "Agustina",

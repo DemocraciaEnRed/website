@@ -104,8 +104,14 @@
         {
           "title": "Caja de herramientas",
           "subtitle": "¿Cómo hacer un presupuesto participativo?",
-          "link": "/static/assets/ebooks/DER_Kit_PParticipativo_060520.pdf",
-          "img": "/static/assets/ebooks/KitPP_web_070520.jpg"
+          "link": "/static/assets/ebooks/DER_Kit_PParticipativo.pdf",
+          "img": "/static/assets/ebooks/KitPP_web.jpg"
+        },
+        {
+          "title": "Caja de herramientas",
+          "subtitle": "¿Cómo hacer una consulta ciudadana?",
+          "link": "/static/assets/ebooks/DER_Kit_CCiudadana.pdf",
+          "img": "/static/assets/ebooks/KitCC_web.jpg"
         },
         {
           "title": "#Desinformación",
@@ -217,18 +223,18 @@
           "img": "../static/assets/profiles/luciana.jpg"
         },
         {
-          "name": "Solange",
-          "bio": "Proyectos",
-          "handle": "ln",
-          "url": "https://www.linkedin.com/in/solange-rosa-6407a1b3/",
-          "img": "../static/assets/profiles/sol.jpg"
-        },
-        {
           "name": "Agustina",
           "bio": "Comunicación",
           "handle": "ig",
-          "url": "https://www.instagram.com/agusmanuele/",
+          "url": "https://www.instagram.com/agusmanuele",
           "img": "../static/assets/profiles/agus-manuele.jpeg"
+        },
+        {
+          "name": "Daniel",
+          "bio": "Comunicación",
+          "handle": "ig",
+          "url": "https://www.instagram.com/dani.zarate",
+          "img": "../static/assets/profiles/daniel.jpeg"
         },
         {
           "name": "Guille",

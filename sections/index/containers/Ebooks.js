@@ -3,7 +3,7 @@ import { t } from '../../../polyglot-modules/polyglot.js'
 import EbookCard from '../components/EbookCard'
 //let Flickity;
 
-const data = [0, 1, 2, 3, 4]
+const data = [0, 1, 2, 3, 4, 5]
 
 class Ebooks extends Component {
   constructor(props){
