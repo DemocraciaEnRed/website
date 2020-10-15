@@ -567,10 +567,6 @@
   "nav": {
     "primaryLinks": [
       {
-        "href": "/vivo",
-        "title": "Live!"
-      },
-      {
         "href": "cases",
         "title": "Cases"
       },
@@ -600,6 +596,10 @@
       }
     ],
     "secondaryLinks" : [
+       {
+        "href": "/vivo",
+        "title": "Live!"
+      },
       {
         "href": "/about",
         "title": "About us"
