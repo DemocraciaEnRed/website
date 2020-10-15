@@ -561,8 +561,19 @@
       "optionalField": "Este campo es opcional."
     }
   },
+  "live": {
+    "title": "¡DER en Vivo!",
+    "comingSoon": "Próximamente...",
+    "events": [
+
+    ]
+  },
   "nav": {
     "primaryLinks": [
+      {
+        "href": "/vivo",
+        "title": "En Vivo!"
+      },
       {
         "href": "cases",
         "title": "Casos"

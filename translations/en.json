@@ -557,8 +557,19 @@
       "optionalField": "This is an optional field."
     }
   },
+   "live": {
+    "title": "DER Live Streamings!",
+    "comingSoon": "Coming soon...",
+    "events": [
+
+    ]
+  },
   "nav": {
     "primaryLinks": [
+      {
+        "href": "/vivo",
+        "title": "Live!"
+      },
       {
         "href": "cases",
         "title": "Cases"
