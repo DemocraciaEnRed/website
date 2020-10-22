@@ -34,6 +34,7 @@ class LiveEleitas extends Component {
           
           
         <div className='container-bulma'>
+            <img src='/static/assets/live/eleitas/logo-electas-white.png' className='eleitas-logo' />
             <div className="about">
               <p><b>Miércoles 28 de octubre a las 18:30hs (AR)</b></p>
             </div>
@@ -124,10 +125,17 @@ class LiveEleitas extends Component {
             margin: 25px auto;
             text-align:center;
           }
+          #eleitas .eleitas-logo{
+            margin: 0 auto;
+            display: block;
+            max-width: 400px; 
+            width: 100%;
+          }
           #eleitas .eleitas-logo-organizaciones{
             margin: 0 auto;
             display: block;
-            max-width: 600px; 
+            max-width: 600px;
+            width: 100%; 
           }
           #eleitas .inscripcion-btn {
             background-color: #eb8941;
