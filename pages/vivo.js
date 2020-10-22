@@ -4,6 +4,7 @@ import { t } from '../polyglot-modules/polyglot.js'
 import es from '../translations/es.json'
 import en from '../translations/en.json'
 import Header from '../containers/Header'
+import LiveEleitas from '../containers/LiveEleitas'
 import Layout from '../layouts/Layout'
 
 export default class extends Component {
@@ -41,14 +42,27 @@ export default class extends Component {
         <Layout 
           changeLang={this.changeLang}
           currentLang={this.state.currentLang} >
-          <Header 
-            title={t('live.title')}
-            bg={'../static/assets/header/headerContact.jpg'} />
-          <div className='coming-next'>
-            <h1>{t('live.comingSoon')}</h1>
-          </div>
+            <div className="header-streamings">
+               <img src='/static/assets/live/der-live-logo.svg' className='der-live-logo' />
+             
+            </div>
+          <LiveEleitas></LiveEleitas>
         </Layout>
         <style jsx>{`
+          .header-streamings{
+            padding: 85px 50px 35px;
+            text-align: center;
+            background: rgb(23,43,55);
+            background: -moz-linear-gradient(135deg, rgba(23,43,55,1) 0%, rgba(43,90,119,1) 100%);
+            background: -webkit-linear-gradient(135deg, rgba(23,43,55,1) 0%, rgba(43,90,119,1) 100%);
+            background: linear-gradient(135deg, rgba(23,43,55,1) 0%, rgba(43,90,119,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#172b37",endColorstr="#2b5a77",GradientType=1);
+          }
+          .header-streamings .der-live-logo{
+            display: block;
+            max-width: 300px;
+            margin: 0 auto;
+          }
           section {
             padding-left: 100px;
             padding-right: 100px;
@@ -60,6 +74,11 @@ export default class extends Component {
           .coming-next h1 {
             color: var(--dark-accent); 
           }  
+          .eleitas-container{
+            background-color: #603d99;
+            font-size: 16px;
+            color: #FFF
+          }
         `}</style>
       </div>
     )

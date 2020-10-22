@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { polyglot } from '../polyglot-modules/polyglot'
+import Link from 'next/link'
 import es from '../translations/es.json'
 import en from '../translations/en.json'
 import Layout from '../layouts/Layout'
@@ -82,6 +83,11 @@ export default class extends Component {
         <Layout changeLang={this.changeLang} currentLang={this.state.currentLang}>
           <Header modal={this.state.modal} content={this.state.content} hideModal={this.hideModal} />
           <Cases currentLang={this.state.currentLang} />
+          <Link href={'/vivo'}>
+            <div className="header-streamings">
+               <img src='/static/assets/live/der-live-logo.svg' className='der-live-logo' />
+            </div>
+          </Link>
           <Collaborate />
           <Publications currentLang={this.state.currentLang} />
           <Content />
@@ -93,6 +99,21 @@ export default class extends Component {
         <style jsx>{`
           div {
             position: relative;
+          }
+          .header-streamings{
+            cursor: pointer;
+            padding: 70px 50px;
+            text-align: center;
+            background: rgb(23,43,55);
+            background: -moz-linear-gradient(135deg, rgba(23,43,55,1) 0%, rgba(43,90,119,1) 100%);
+            background: -webkit-linear-gradient(135deg, rgba(23,43,55,1) 0%, rgba(43,90,119,1) 100%);
+            background: linear-gradient(135deg, rgba(23,43,55,1) 0%, rgba(43,90,119,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#172b37",endColorstr="#2b5a77",GradientType=1);
+          }
+          .header-streamings .der-live-logo{
+            display: block;
+            max-width: 250px;
+            margin: 0 auto;
           }
         `}</style>
       </div>
