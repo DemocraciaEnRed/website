@@ -36,18 +36,18 @@ class LiveEleitas extends Component {
         <div className='container-bulma'>
             <img src='/static/assets/live/eleitas/logo-electas-white.png' className='eleitas-logo' />
             <div className="about">
-              <p><b>Miércoles 28 de octubre a las 18:30hs (AR)</b></p>
+              <p><b>Transmitido el Miércoles 28 de Octubre 2020 a las 18:30hs (AR)</b></p>
             </div>
-            <div className="boton-inscripcion">
+            {/* <div className="boton-inscripcion">
                <a href="https://preguntarparaacordar.typeform.com/to/wdTiw5fE" rel='external' target='_blank'>
                 <button className='inscripcion-btn'>
                   <span className='action-text'>INSCRIBIRSE</span>
                 </button>
               </a>
-            </div>
-          <div className="tile is-ancestor tiles-container">
+            </div> */}
+          {/* <div className="tile is-ancestor tiles-container">
             <div className="tile is-parent">
-              <div className="tile is-child">
+              <div className="tile is-8 is-child">
                 <div className="videoWrapper">
                   <iframe
                     width="853"
@@ -63,6 +63,18 @@ class LiveEleitas extends Component {
                <iframe src="https://app.sli.do/event/seruchx1" height="100%" width="100%" frameBorder="0" style={{"minHeight": "100%"}}></iframe>
               </div>
             </div>
+          </div> */}
+          <div className="after-playback">
+            <div className="videoWrapper">
+                  <iframe
+                    width="853"
+                    height="480"
+                    src={`https://www.youtube.com/embed/zNehcYqxRhk`}
+                    frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
           </div>
             <div className="about">
               <p>Un estudio y serie audiovisual sobre las mujeres latinoamericanas en el poder. Una aproximación a entender cómo las prácticas políticas y culturales pueden cambiar los espacios políticos institucionales en América Latina y los paradigmas de poder.</p>
@@ -136,6 +148,10 @@ class LiveEleitas extends Component {
             display: block;
             max-width: 600px;
             width: 100%; 
+          }
+          #eleitas .after-playback{
+            max-width: 960px;
+            margin: 0 auto;
           }
           #eleitas .inscripcion-btn {
             background-color: #eb8941;
