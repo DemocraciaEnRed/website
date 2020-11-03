@@ -4,6 +4,7 @@ import { t } from '../polyglot-modules/polyglot.js'
 import es from '../translations/es.json'
 import en from '../translations/en.json'
 import Header from '../containers/Header'
+import LiveDesinformacion from '../containers/LiveDesinformacion'
 import LiveEleitas from '../containers/LiveEleitas'
 import Layout from '../layouts/Layout'
 
@@ -46,6 +47,7 @@ export default class extends Component {
                <img src='/static/assets/live/der-live-logo.svg' className='der-live-logo' />
              
             </div>
+          <LiveDesinformacion></LiveDesinformacion>
           <LiveEleitas></LiveEleitas>
         </Layout>
         <style jsx>{`
