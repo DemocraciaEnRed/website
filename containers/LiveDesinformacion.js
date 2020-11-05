@@ -36,16 +36,16 @@ class LiveEleitas extends Component {
         <div className='container-bulma'>
             <img src='/static/assets/live/desinformacion/desinformacion-logo.png' className='desinformacion-logo' />
             <div className="about">
-              <p><b>Miércoles 04 de Noviembre 2020 a las 18:00hs (AR)</b></p>
+              <p><b>Transmitido el Miércoles 04 de Noviembre 2020 a las 18:00hs (AR)</b></p>
             </div>
-            <div className="boton-inscripcion">
+            {/* <div className="boton-inscripcion">
                <a href="https://preguntarparaacordar.typeform.com/to/frhgJKpY" rel='external' target='_blank'>
                 <button className='inscripcion-btn'>
                   <span className='action-text'>INSCRIBIRSE</span>
                 </button>
               </a>
-            </div>
-          <div className="tile is-ancestor tiles-container">
+            </div> */}
+          {/* <div className="tile is-ancestor tiles-container">
             <div className="tile is-parent">
               <div className="tile is-8 is-child">
                 <div className="videoWrapper">
@@ -63,19 +63,19 @@ class LiveEleitas extends Component {
                <iframe src="https://app.sli.do/event/pmi8o3wr" height="100%" width="100%" frameBorder="0" style={{"minHeight": "100%"}}></iframe>
               </div>
             </div>
-          </div>
-          {/* <div className="after-playback">
+          </div> */}
+          <div className="after-playback">
             <div className="videoWrapper">
                   <iframe
                     width="853"
                     height="480"
-                    src={`https://www.youtube.com/embed/zNehcYqxRhk`}
+                    src={`https://www.youtube.com/embed/PHVXDLpZxyE`}
                     frameborder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen
                   ></iframe>
                 </div>
-          </div> */}
+          </div>
             <div className="about">
               <p><b>Un conversatorio junto a Agustín Frizzera, de @democraciaenred y Bernardo Sorj, de Plataforma Democrática (Brasil) para describir y analizar el fenómeno vigente que cambió el paradigma en la comunicación política y que amenaza el espacio democrático: la #Desinformación.</b></p>
 <p><b>Un espacio para hablar sobre las estrategias y las tácticas que se llevan a cabo para intentar entender cómo opera la desinformación como proyecto político.</b></p>
