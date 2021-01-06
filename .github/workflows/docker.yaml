@@ -1,0 +1,31 @@
+# version 1.0
+name: Build and push
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  work:
+    name: Work
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the code
+        uses: actions/checkout@v2
+      - name: Lowercase
+        id: lower
+        uses: ASzc/change-string-case-action@v1
+        with:
+          string: ${{ github.repository }}
+      - name: Build & Push docker image
+        uses: mr-smithers-excellent/docker-build-push@v4
+        with:
+          image: ${{ steps.lower.outputs.lowercase }}
+          registry: ghcr.io
+          username: ${{ secrets.REGISTRY_USER }}
+          password: ${{ secrets.REGISTRY_PASSWORD }}
+      - name: Notify Slack
+        uses: craftech-io/slack-action@v1
+        with:
+          slack_webhook_url: ${{ secrets.SLACK_WEBHOOK }}
+        if: always()
