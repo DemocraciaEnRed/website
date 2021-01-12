@@ -4,9 +4,12 @@ import { t } from '../polyglot-modules/polyglot.js'
 import es from '../translations/es.json'
 import en from '../translations/en.json'
 import Header from '../containers/Header'
-import LiveDesinformacion from '../containers/LiveDesinformacion'
-import LiveEleitas from '../containers/LiveEleitas'
+import LiveDesinformacion from '../containers/live/LiveDesinformacion'
+import LiveEleitas from '../containers/live/LiveEleitas'
 import Layout from '../layouts/Layout'
+import LiveDebate from '../containers/live/LiveDebate';
+import CommonCitys from '../containers/live/CommonCitys';
+import ChangeGoverment from '../containers/live/ChangeGoverment'
 
 export default class extends Component {
   constructor (props) {
@@ -49,6 +52,9 @@ export default class extends Component {
             </div>
           <LiveDesinformacion></LiveDesinformacion>
           <LiveEleitas></LiveEleitas>
+          <LiveDebate/>
+          <CommonCitys/>
+          <ChangeGoverment/>
         </Layout>
         <style jsx>{`
           .header-streamings{
