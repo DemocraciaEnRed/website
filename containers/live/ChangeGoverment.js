@@ -8,7 +8,7 @@ function ChangeGoverment () {
         <iframe
           width="853"
           height="480"
-          src={`https://www.youtube.com/watch?v=5beGeuQElZw`}
+          src={`https://www.youtube.com/embed/5beGeuQElZw`}
           frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen>

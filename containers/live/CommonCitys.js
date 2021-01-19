@@ -9,7 +9,7 @@ function CommonCitys () {
           <iframe
             width="853"
             height="480"
-            src={`https://www.youtube.com/watch?v=NmH6-CvpK24&ab_channel=DemocraciaEnRed`}
+            src={`https://www.youtube.com/embed/NmH6-CvpK24`}
             frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen>
@@ -29,7 +29,7 @@ function CommonCitys () {
           <iframe
               width="853"
               height="480"
-              src={`https://www.youtube.com/watch?v=jMs-S-MCdyg`}
+              src={`https://www.youtube.com/embed/jMs-S-MCdyg`}
               frameborder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen>
