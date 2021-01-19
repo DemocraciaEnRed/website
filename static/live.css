@@ -138,3 +138,7 @@
 .change-goverment p strong{
   font-size: 22px;
 }
+.after-playback{
+  max-width: 960px;
+  margin: 0 auto;
+}

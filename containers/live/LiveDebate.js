@@ -7,14 +7,18 @@ function LiveDebate () {
         <div className='container-bulma'>
           <h2><span>#VolvamosADebatir</span></h2>
           <h1>La Desinformación como Distorsión Democrática <br/> ¿Qué podemos hacer?</h1>
-          <iframe
-            width="853"
-            height="480"
-            src={`https://www.youtube.com/embed/eO-V4sYj5H8`}
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-          </iframe>
+          <div className="after-playback">
+            <div className="videoWrapper">
+              <iframe
+              width="853"
+              height="480"
+              src={`https://www.youtube.com/embed/eO-V4sYj5H8`}
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+            </div>
+          </div>
           <div className="vid-description">
           <h3> Natalia Aruguete</h3>
           <p><em>(Investigadora del CONICET y periodista) - ARG </em></p>

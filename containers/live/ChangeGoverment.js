@@ -5,14 +5,18 @@ function ChangeGoverment () {
     <div className="change-goverment">
       <div className="container-bulma">
         <h1>¿Cambia la forma de gobernar?</h1>
-        <iframe
-          width="853"
-          height="480"
-          src={`https://www.youtube.com/embed/5beGeuQElZw`}
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-        </iframe>
+        <div className="after-playback">
+          <div className="videoWrapper">
+            <iframe
+            width="853"
+            height="480"
+            src={`https://www.youtube.com/embed/5beGeuQElZw`}
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+          </div>
+        </div>
       <h2>Participan: </h2>
       <p>
         Fabio Quetglas - <em>Diputado Nacional Argentino</em> <br/>
