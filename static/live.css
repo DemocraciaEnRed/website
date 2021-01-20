@@ -1,0 +1,144 @@
+.debate-container{
+  --stripe: #cfd8dc;
+  --bg: #e1e1e1;
+
+  background: linear-gradient(135deg, var(--bg) 25%, transparent 25%) -50px 0,
+    linear-gradient(225deg, var(--bg) 25%, transparent 25%) -50px 0,
+    linear-gradient(315deg, var(--bg) 25%, transparent 25%),
+    linear-gradient(45deg, var(--bg) 25%, transparent 25%);
+  background-size: 100px 100px;
+  background-color: var(--stripe);
+  padding: 50px 0;
+  text-align: center;
+}
+
+.debate-container h2{
+  font-weight: bold;
+  font-size: 28px;
+}
+.debate-container h2 span{
+  background-color: #fafafa;
+  border-radius: 4px;
+  padding: 10px;
+}
+.debate-container h1{
+  margin: 20px 0;
+  font-size: 40px;
+}
+.debate-container h3{
+  font-size: 26px;
+}
+.debate-container h3 small{
+  font-size: 20px;
+}
+.debate-container h4{
+  font-size: 24px;
+}
+.debate-container h4 em{
+  font-size: 18px;
+  font-weight: lighter;
+}
+.vid-description p{
+  font-size: 20px;
+  margin: 10px 0;
+}
+.vid-description{
+  margin: 20px;
+  text-align: left;
+  background-color: white;
+  border-radius: 4px;
+  padding: 10px
+}
+.common-citys{
+  background-color: #52ffef;
+  text-align: center;
+  padding: 50px 0;
+}
+.common-citys h1{
+  color: white;
+  margin: 20px 0;
+}
+.common-citys p{
+  text-align: center;
+  font-size: 20px;
+  background-color: white;
+  color: #8a509f;
+  margin: 20px;
+  padding: 15px;
+  border-radius: 4px;
+}
+.common-citys p strong{
+  color: #8a509f;
+}
+.common-citys p a{
+  color: #fda659;
+}
+.common-citys-dos{
+  background-color: #f389bb;
+  background: radial-gradient(circle, transparent 20%, #E5E5F7 20%, #E5E5F7 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #E5E5F7 20%, #E5E5F7 80%, transparent 80%, transparent) 50px 50px, linear-gradient(#444CF7 4px, transparent 4px) 0 -2px, linear-gradient(90deg, #444CF7 4px, #E5E5F7 4px) -2px 0;
+  background-size: 100px 100px, 100px 100px, 50px 50px, 50px 50px;
+  text-align: center;
+  padding: 50px 0;
+}
+.common-citys-dos h1{
+  margin-bottom: 30px;
+}
+.common-citys-dos h1 span{
+  color: white;
+  background-color: #333;
+  padding: 5px;
+  border-radius: 4px;
+}
+.common-citys-dos p{
+  margin-top: 20px;
+}
+.common-citys-dos p span{
+  font-size: 20px;
+  background-color: white;
+}
+.common-citys-dos p em{
+  font-size: 24px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+.change-goverment{
+  padding: 50px 0;
+  text-align: center;
+  background: linear-gradient(#f389bb,#e66465);
+}
+.change-goverment h1,h2{
+  color: white;
+}
+.change-goverment h1{
+  margin-bottom: 20px;
+}
+.change-goverment h2{
+  font-size: 30px;
+}
+.change-goverment p{
+  margin-top: 12px;
+  color: white;
+  font-size: 24px;
+}
+.change-goverment p span{
+  font-size: 20px;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+}
+.change-goverment p a{
+  text-decoration: underline;
+}
+.change-goverment p em{
+  color: white;
+}
+.change-goverment p strong{
+  font-size: 22px;
+}
+.after-playback{
+  max-width: 960px;
+  margin: 0 auto;
+}
