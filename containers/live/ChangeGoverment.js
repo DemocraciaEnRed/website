@@ -24,8 +24,6 @@ function ChangeGoverment () {
         Lucía Abelenda - <em>AVINA</em> <br/>
         <strong>Modera: </strong><br/> Agustin Frizzera - <em>Democracia en Red</em> <br/>
         <br/>
-        <span>#gobiernoabierto</span>
-        <br/>
         <br/>
         <a href="https://ciudadescomunes.org/congreso2020"> Mas información </a>
       </p>

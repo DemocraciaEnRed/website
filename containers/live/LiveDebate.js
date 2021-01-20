@@ -28,8 +28,8 @@ function LiveDebate () {
             Agustin Frizzera <small> <em>(Democracia en Red)</em></small>
           </h4>
           <p>
-              Un encuentro online gratuito para pensar las consecuencias de seguir degradando nuestro espacio público, nuestros lugares comunes. 
-              Un espacio para analizar cómo discutimos en las redes con una mirada humana, tecnológica y política.
+              Un encuentro online gratuito para pensar las consecuencias de seguir degradando nuestro espacio público, nuestros lugares comunes. <br/>
+              Un espacio para analizar cómo discutimos en las redes con una mirada humana, tecnológica y política.<br/>
               Paneles, conversatorios, conferencias y la presentación del documento Estrategias y recomendaciones para enfrentar la <strong>#desinformación</strong>.
           </p>
           </div>

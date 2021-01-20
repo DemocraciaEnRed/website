@@ -19,13 +19,12 @@ function CommonCitys () {
             </div>
           </div>
           <p>
-            <strong>#VolverALaCalle</strong> busca soluciones replicables, de bajo costo y alto impacto para reactivar los espacios públicos con distanciamiento físico y recuperar la confianza perdida en la vida urbana.
-            En el marco del programa de incubación los proyectos ganadores del #IDEATÓN, Agustín Frizzera, Director Ejecutivo de Democracia En Red y Coordinador de Causas Comunes, charló sobre Gobierno Abierto y Nuevas Tecnologías. 
+            <strong>#VolverALaCalle</strong> busca soluciones replicables, de bajo costo y alto impacto para reactivar los espacios públicos con distanciamiento físico y recuperar la confianza perdida en la vida urbana.<br/>
+            En el marco del programa de incubación los proyectos ganadores del #IDEATÓN, Agustín Frizzera, Director Ejecutivo de Democracia En Red y Coordinador de Causas Comunes, charló sobre Gobierno Abierto y Nuevas Tecnologías.<br/> 
             Conocé más en  <a href="http://ciudadescomunes.org">http://ciudadescomunes.org</a>
           </p>
         </div>
-      </div>
-      <div className="common-citys-dos">
+      
         <div className="container-bulma">
           <h1>
             <span>El impacto de la crisis actual en las decisiones de las ciudades</span>
@@ -46,8 +45,7 @@ function CommonCitys () {
             <p>
               <span>
                 <strong>Maria Buhigas</strong>  Regidora del Ayuntamiento de Barcelona<br/>
-                Modera: Agustin Frizzera  <br/><br/>
-                <em>#gobiernoabierto</em>
+                Modera: <br/>Agustin Frizzera  <br/><br/>
               </span>
             </p>
         </div>
