@@ -45,7 +45,7 @@ function CommonCitys () {
             <p>
               <span>
                 <strong>Maria Buhigas</strong>  Regidora del Ayuntamiento de Barcelona<br/>
-                Modera: <br/>Agustin Frizzera  <br/><br/>
+                Modera: <br/>Agustin Frizzera - Democracia en red <br/><br/>
               </span>
             </p>
         </div>
