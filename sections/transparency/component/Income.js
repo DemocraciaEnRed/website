@@ -1,7 +1,7 @@
 import React, {Component} from "react"
 import {Doughnut} from "react-chartjs-2"
 import { t } from '../../../polyglot-modules/polyglot.js'
-console.log(  )
+
 class Income extends Component {
     constructor(props) {
         super(props);
@@ -20,17 +20,13 @@ class Income extends Component {
 
     setData(){
       this.setState({data: {
-        labels: [0,1,2,3,4,5,6,7].map(i => {
+        labels: [0,1,2,3,4].map(i => {
           return t(`transparency.incomeGraphic.labels.${i}`)
         }),
         datasets: [
           {
-            label: [0,1,2,3,4,5,6,7].map(i => {
-              return t(`transparency.incomeGraphic.labels.${i}`)
-            }),
             data: [
-              24.94, 0,
-              20.08, 9.32, 0.99, 26.8, 2.87, 15.01
+              56.8, 0, 10.2, 23.2, 9.8
             ],
             backgroundColor: [
               '#219EFF',
@@ -56,12 +52,8 @@ class Income extends Component {
             ],
           },
           {
-            label: [0,1,2,3,4,5,6,7].map(i => {
-              return t(`transparency.incomeGraphic.labels.${i}`)
-            }),
             data: [
-              24.94, 75.06,
-              0, 0, 0, 0, 0, 0
+              56.8, 43.2
             ],
             backgroundColor: [
               '#219EFF',

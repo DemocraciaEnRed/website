@@ -21,7 +21,7 @@ class Details extends Component {
 
     setData(){
       this.setState({data: {
-          labels: [0,1,2,3,4].map(i => {
+          labels: [0,1,2,3,4,5].map(i => {
             return t(`transparency.incomeByYearGraphic.years.${i}`)
           }),
           datasets: [
@@ -32,7 +32,7 @@ class Details extends Component {
               borderWidth: 1,
               hoverBackgroundColor: '#219EFF',
               hoverBorderColor: '#219EFF',
-              data: [0, 2019402.49,330325.30, 678800, 3710207.54]
+              data: [0, 2019402.49,330325.30, 678800, 3710207.54, 4412196.84]
             },
             {
               label: t("transparency.incomeByYearGraphic.labels.1"),
@@ -41,7 +41,7 @@ class Details extends Component {
               borderWidth: 1,
               hoverBackgroundColor: '#5ce175',
               hoverBorderColor: '#5ce175',
-              data: [1497115.69, 933012.19, 1346284.39, 2630485.26, 7935275.84]
+              data: [1497115.69, 933012.19, 1346284.39, 2630485.26, 7935275.84, 3352066.77]
             }
           ]//end data.datasets
         }}//end data

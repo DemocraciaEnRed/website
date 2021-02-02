@@ -20,7 +20,7 @@ class DetailOutcome extends Component {
 
     setData(){
       this.setState({data: {
-          labels: [0,1,2,3,4].map(i => {
+          labels: [0,1,2,3,4,5].map(i => {
             return t(`transparency.outcomeByYearGraphic.years.${i}`)
           }),
           datasets: [
@@ -31,7 +31,7 @@ class DetailOutcome extends Component {
               borderWidth: 1,
               hoverBackgroundColor: '#FFDC5C',
               hoverBorderColor: '#FFDC5C',
-              data: [0, 0, 540900, 368805, 1073626.07]
+              data: [0, 0, 540900, 368805, 1073626.07, 1129083.82]
             },
             {
               label: t("transparency.outcomeByYearGraphic.labels.1"),
@@ -40,7 +40,7 @@ class DetailOutcome extends Component {
               borderWidth: 1,
               hoverBackgroundColor: '#219EFF',
               hoverBorderColor: '#219EFF',
-              data: [27593.75, 94031.07, 660411.1, 108363.95, 33837.97]
+              data: [27593.75, 94031.07, 660411.1, 108363.95, 33837.97, 358970.39]
             },
             {
               label: t("transparency.outcomeByYearGraphic.labels.2"),
@@ -49,7 +49,7 @@ class DetailOutcome extends Component {
               borderWidth: 1,
               hoverBackgroundColor: '#9DEDAC',
               hoverBorderColor: '#9DEDAC',
-              data: [51631.08, 81950, 126310, 223747, 237561.31]
+              data: [51631.08, 81950, 126310, 223747, 237561.31, 950908.83]
             },
             {
               label: t("transparency.outcomeByYearGraphic.labels.3"),
@@ -58,7 +58,7 @@ class DetailOutcome extends Component {
               borderWidth: 1,
               hoverBackgroundColor: '#C894FF',
               hoverBorderColor: '#C894FF',
-              data: [1547948, 2184899, 1254320, 1727560, 5166089.87]
+              data: [1547948, 2184899, 1254320, 1727560, 5166089.87, 8378914.83]
             }
           ]//end data.datasets
         }})//end data

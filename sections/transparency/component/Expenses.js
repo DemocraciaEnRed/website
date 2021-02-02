@@ -20,11 +20,11 @@ class Expenses extends Component {
 
     setData(){
       this.setState({data: {
-          labels: [0,1,2,3,4].map(i => {
-            return t(`transparency.incomeGraphic.labels.${i}`)
+          labels: [0,1,2,3].map(i => {
+            return t(`transparency.outcomeGraphic.labels.${i}`)
           }),
           datasets: [{
-            data: [3.44, 15.65, 54.21, 8.38, 18.32],
+            data: [77.5, 8.8, 3.3, 10.4],
             backgroundColor: [
             '#62378C',
             '#B54CFF',

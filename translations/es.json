@@ -438,7 +438,7 @@
   },
   "transparency": {
     "header": "Transparencia",
-    "title": "Balance 2019",
+    "title": "Balance 2020",
     "subtitle": "¿Quién nos financia? ¿Cómo gastamos?",
     "logo": "/static/assets/icons/transparency-logo.svg",
 
@@ -474,21 +474,17 @@
       "labels": [
         "Servicios",
         "Donaciones",
-        "Open Society",
-        "Altec",
-        "Clip",
-        "Luminate",
-        "IFA",
-        "Unión Europea"
+        "AVINA",
+        "OSF",
+        "Union Europea"
       ]
     },
     "outcomeGraphic": {
       "labels": [
-        "Diseño y comunicación",
-        "Contrataciones Ext.",
         "Honorarios",
-        "Oficina",
-        "Otros"
+        "Gastos de oficina",
+        "Impuestos e intereses",
+        "Diseño y comunicación"
       ]
     },
     "incomeByYearGraphic": {
@@ -501,7 +497,8 @@
         "30 de junio de 2016",
         "30 de junio de 2017",
         "30 de junio de 2018",
-        "30 de junio de 2019"
+        "30 de junio de 2019",
+        "30 de junio de 2020"
       ]
     },
     "outcomeByYearGraphic": {
@@ -516,7 +513,8 @@
         "30 de junio de 2016",
         "30 de junio de 2017",
         "30 de junio de 2018",
-        "30 de junio de 2019"
+        "30 de junio de 2019",
+        "30 de junio de 2020"
       ]
     }
   },
