@@ -1,6 +1,6 @@
 import { t } from '../../../polyglot-modules/polyglot.js'
 
-const sheets = [0, 1]
+const sheets = [0, 1, 2]
 
 const BalanceSheet = (props) => {
   return (
