@@ -2,9 +2,6 @@ const { parsed: localEnv } = require('dotenv').config()
 const webpack = require('webpack')
 
 module.exports = {
-    env: {
-        ga_code: 'UA-118262366-1',
-    },
     exportPathMap: function () {
         return {
             '/': { page: '/' },
