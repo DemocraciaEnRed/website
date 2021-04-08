@@ -7,7 +7,6 @@ import { initGA, logPageView } from '../utils/analytics'
 
 
 export default class Layout extends React.Component {
-  
   componentDidMount () {
     if (!window.GA_INITIALIZED) {
       initGA()
@@ -20,13 +19,6 @@ export default class Layout extends React.Component {
     return (
       <div>
       <Head>
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118262366-1"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments)}
-        gtag('js', new Date());
-        gtag('config', 'UA-118262366-1');
-      </script>
       <title>Democracia en Red</title>
       <meta name='viewport' content='width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0' />
       <link rel="shortcut icon" type="favicon" href="/static/assets/icons/der-favicon.ico" />
