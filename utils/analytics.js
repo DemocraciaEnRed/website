@@ -1,6 +1,6 @@
 import ReactGA from 'react-ga'
 
-const { GOOGLE_UA } = process.env;
+const GOOGLE_UA = process.env.NEXT_PUBLIC_GOOGLE_UA;
 
 export const initGA = () => {
   ReactGA.initialize(GOOGLE_UA)
