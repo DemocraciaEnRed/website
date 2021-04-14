@@ -3,6 +3,7 @@ import { t } from '../../../polyglot-modules/polyglot.js'
 import MediaQuery from 'react-responsive'
 import Milestone from '../components/Milestone'
 let Flickity;
+import { logEvent } from '../../../utils/analytics'
 
 const data = [0, 1]
 
@@ -12,8 +13,11 @@ class Collaborate extends Component {
     this.state = {
       mobile: false
     }
+    this.trackColaborate.bind(this)
   }
-
+  trackColaborate() {
+    logEvent("click", "como-puedo-colaborar");
+  }
   componentDidMount () {
     Flickity = require('flickity')
     if (window.innerWidth < 1024) {
@@ -34,25 +38,36 @@ class Collaborate extends Component {
     }
   }
 
-
   render () {
     return (
       <section className='collaborate-section' id='collaborate'>
            <div className='carousel'>
-            {data.map((i)=> 
-              <div className='collaborate-container' key={i}>
-                <h2 className='section-title'> {t(`index.collaborate.content.${i}.title`)} </h2>
+              <div className='collaborate-container' >
+                <h2 className='section-title'> {t(`index.collaborate.content.0.title`)} </h2>
                 <Milestone 
                   className='collaborate-milestone'
-                  title={t(`index.collaborate.content.${i}.subtitle`)} 
-                  subtitle={t(`index.collaborate.content.${i}.text`)}
-                  icon={t(`index.collaborate.content.${i}.icon`)}
-                  button={t(`index.collaborate.content.${i}.callToAction`)}
-                  href={t(`index.collaborate.content.${i}.href`)}
+                  title={t(`index.collaborate.content.0.subtitle`)} 
+                  subtitle={t(`index.collaborate.content.0.text`)}
+                  icon={t(`index.collaborate.content.0.icon`)}
+                  button={t(`index.collaborate.content.0.callToAction`)}
+                  href={t(`index.collaborate.content.0.href`)}
                   containerWidth={'auto'}
-                  classbtn={`index.collaborate.content${i}.classbtn`} />
+                  classbtn={`index.collaborate.content0.classbtn`}
+                  handleClick={this.trackColaborate} />
               </div>     
-            )}
+              <div className='collaborate-container' >
+              <h2 className='section-title'> {t(`index.collaborate.content.1.title`)} </h2>
+              <Milestone 
+                className='collaborate-milestone'
+                title={t(`index.collaborate.content.1.subtitle`)} 
+                subtitle={t(`index.collaborate.content.1.text`)}
+                icon={t(`index.collaborate.content.1.icon`)}
+                button={t(`index.collaborate.content.1.callToAction`)}
+                href={t(`index.collaborate.content.1.href`)}
+                containerWidth={'auto'}
+                classbtn={`index.collaborate.content1.classbtn`} />
+            </div>     
+            
           </div>
         <style jsx>{`
           .collaborate-section {

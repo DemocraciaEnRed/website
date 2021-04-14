@@ -6,9 +6,9 @@ const Milestone = ( props ) => (
     <h3 className='subtitle'>{props.title}</h3>
     <h4 className='subtext'>{props.subtitle}</h4>
     {props.button && props.href &&
-      <Link href={props.href}>
-        <a target="_blank">
-          <button  className='btn'>
+      <Link href={props.href} >
+        <a target="_blank" >
+          <button  className='btn' onClick={props.handleClick}>
             <span className='action-text'>
               {props.button}
             </span>
