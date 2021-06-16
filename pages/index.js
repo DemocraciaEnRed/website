@@ -79,7 +79,7 @@ export default class extends Component {
 
   render () {
     return (
-      <div>
+      <div id="home-section">
         <Layout changeLang={this.changeLang} currentLang={this.state.currentLang}>
           <Header modal={this.state.modal} content={this.state.content} hideModal={this.hideModal} />
           <Cases currentLang={this.state.currentLang} />

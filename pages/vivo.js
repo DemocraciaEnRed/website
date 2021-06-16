@@ -9,7 +9,8 @@ import LiveEleitas from '../containers/live/LiveEleitas'
 import Layout from '../layouts/Layout'
 import LiveDebate from '../containers/live/LiveDebate';
 import CommonCitys from '../containers/live/CommonCitys';
-import ChangeGoverment from '../containers/live/ChangeGoverment'
+import ChangeGoverment from '../containers/live/ChangeGoverment';
+import LivePoliticxsEnTwitter from '../containers/live/LivePoliticxsEnTwitter'
 
 export default class extends Component {
   constructor (props) {
@@ -50,6 +51,7 @@ export default class extends Component {
                <img src='/static/assets/live/der-live-logo.svg' className='der-live-logo' />
              
             </div>
+          <LivePoliticxsEnTwitter/>
           <LiveDesinformacion></LiveDesinformacion>
           <LiveEleitas></LiveEleitas>
           <LiveDebate/>

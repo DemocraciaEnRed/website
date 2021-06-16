@@ -86,6 +86,10 @@ h1 {
   font-size: 4.8rem;
 }
 
+#home-section h2{
+  color: var(--black)
+}
+
 a {
   text-decoration: none;
 }

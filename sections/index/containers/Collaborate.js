@@ -86,6 +86,7 @@ class Collaborate extends Component {
             flex-direction: column;
             align-items: center;
             width: 387px;
+            margin:auto
           }
           .collaborate-container .section-title {
             align-self: center;

@@ -209,15 +209,15 @@
           "img": "../static/assets/profiles/florencia-dir.jpg"
         },
         {
-          "name": "Powa",
-          "bio": "Coordinador territorial",
+          "name": "Don Powa",
+          "bio": "Desarrollo de proyectos",
           "handle": "ln",
           "url": "https://www.linkedin.com/in/don-powa-59290473/",
           "img": "../static/assets/profiles/powa.jpg"
         },
         {
-          "name": "Luciana",
-          "bio": "Investigación de campo",
+          "name": "Lu",
+          "bio": "Gestión de proyectos",
           "handle": "tw",
           "url": "https://twitter.com/_lucianavega",
           "img": "../static/assets/profiles/luciana.jpg"
@@ -251,31 +251,10 @@
           "img": "../static/assets/profiles/alvaro.jpg"
         },
         {
-          "name": "Marien",
-          "bio": "Diseño",
-          "handle": "tw",
-          "url": "https://twitter.com/marienkaefer__",
-          "img": "../static/assets/profiles/Marien.jpg"
-        },
-        {
-          "name": "Wencha",
-          "bio": "Desarrollo",
-          "handle": "github",
-          "url": "https://github.com/wencha",
-          "img": "../static/assets/profiles/wencha.jpeg"
-        },
-        {
-          "name": "Josh",
-          "bio": "Desarrollo",
-          "handle": "github",
-          "url": "https://github.com/joshchisnerman",
-          "img": "../static/assets/profiles/josh.jpg"
-        },
-        {
           "name": "Vale",
-          "bio": "Investigación de campo",
-          "handle": "",
-          "url": "",
+          "bio": "Gestión de proyectos",
+          "handle": "tw",
+          "url": "https://twitter.com/ValeLisciani",
           "img": "../static/assets/profiles/vale.jpg"
         },
         {
@@ -312,6 +291,48 @@
           "handle": "tw",
           "url": "https://twitter.com/ebrenman",
           "img": "../static/assets/profiles/esteban.jpg"
+        },
+        {
+          "name": "Bel",
+          "bio": " Diseñadora UX/UI",
+          "handle": "ln",
+          "url": " www.linkedin.com/in/mariabelviedma",
+          "img": "../static/assets/profiles/bel.jpg"
+        },
+        {
+          "name": "Mau",
+          "bio": "Diseño Gráfico",
+          "handle": "ig",
+          "url": "https://www.instagram.com/salernomau",
+          "img": "../static/assets/profiles/MauDER.jpg"
+        },
+        {
+          "name": "Niqui",
+          "bio": "Community Manager",
+          "handle": "ig",
+          "url": "https://www.instagram.com/niquialonso/",
+          "img": "../static/assets/profiles/Niqui.jpeg"
+        },
+        {
+          "name": "Mija",
+          "bio": "Desarrollo",
+          "handle": "ig",
+          "url": "https://www.instagram.com/elgordomija",
+          "img": "../static/assets/profiles/mija.jpg"
+        },
+        {
+          "name": "Juli",
+          "bio": "Desarrollo",
+          "handle": "github",
+          "url": " https://github.com/lieta96",
+          "img": "../static/assets/profiles/juli.png"
+        },
+        {
+          "name": "Diego",
+          "bio": "Desarrollo",
+          "handle": "github",
+          "url": "  https://github.com/devhormiga",
+          "img": "../static/assets/profiles/diego.jpg"
         }
 
 

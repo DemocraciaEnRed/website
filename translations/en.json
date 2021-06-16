@@ -205,20 +205,20 @@
         {
           "name": "Florencia",
           "bio": "Project coordinator",
-          "handle": "tw",
-          "url": "https://twitter.com/pitucaffarone",
+          "handle": "ln",
+          "url": " www.linkedin.com/in/florenciacaffarone",
           "img": "../static/assets/profiles/florencia-dir.jpg"
         },
         {
-          "name": "Powa",
-          "bio": "Territorial coordinator",
+          "name": "Don Powa",
+          "bio": "Project development",
           "handle": "ln",
           "url": "https://www.linkedin.com/in/don-powa-59290473/",
           "img": "../static/assets/profiles/powa.jpg"
         },
         {
-          "name": "Luciana",
-          "bio": "Field investigation",
+          "name": "Lu",
+          "bio": "Projects management",
           "handle": "tw",
           "url": "https://twitter.com/_lucianavega",
           "img": "../static/assets/profiles/luciana.jpg"
@@ -245,31 +245,10 @@
           "img": "../static/assets/profiles/alvaro.jpg"
         },
         {
-          "name": "Marien",
-          "bio": "Design",
-          "handle": "tw",
-          "url": "https://twitter.com/marienkaefer__",
-          "img": "../static/assets/profiles/Marien.jpg"
-        },
-        {
-          "name": "Wencha",
-          "bio": "Development",
-          "handle": "github",
-          "url": "https://github.com/wencha",
-          "img": "../static/assets/profiles/wencha.jpeg"
-        },
-        {
-          "name": "Josh",
-          "bio": "Development",
-          "handle": "github",
-          "url": "https://github.com/joshchisnerman",
-          "img": "../static/assets/profiles/josh.jpg"
-        },
-        {
           "name": "Vale",
-          "bio": "Field investigation",
-          "handle": "",
-          "url": "",
+          "bio": "Projects management",
+          "handle": "tw",
+          "url": " https://twitter.com/ValeLisciani",
           "img": "../static/assets/profiles/vale.jpg"
         },
          {
@@ -306,6 +285,48 @@
           "handle": "tw",
           "url": "https://twitter.com/ebrenman",
           "img": "../static/assets/profiles/esteban.jpg"
+        },
+        {
+          "name": "Bel",
+          "bio": "UX/UI Design",
+          "handle": "ln",
+          "url": " www.linkedin.com/in/mariabelviedma",
+          "img": "../static/assets/profiles/bel.jpg"
+        },
+        {
+          "name": "Mau",
+          "bio": "Graphic Design",
+          "handle": "ig",
+          "url": "https://www.instagram.com/salernomau",
+          "img": "../static/assets/profiles/MauDER.jpg"
+        },
+        {
+          "name": "Niqui",
+          "bio": "Community Manager",
+          "handle": "ig",
+          "url": "https://www.instagram.com/niquialonso/",
+          "img": "../static/assets/profiles/Niqui.jpeg"
+        },
+        {
+          "name": "Mija",
+          "bio": "Development",
+          "handle": "ig",
+          "url": "https://www.instagram.com/elgordomija",
+          "img": "../static/assets/profiles/mija.jpg"
+        },
+        {
+          "name": "Juli",
+          "bio": "Development",
+          "handle": "github",
+          "url": " https://github.com/lieta96",
+          "img": "../static/assets/profiles/juli.png"
+        },
+        {
+          "name": "Diego",
+          "bio": "Development",
+          "handle": "github",
+          "url": "  https://github.com/devhormiga",
+          "img": "../static/assets/profiles/diego.jpg"
         }
 
       ]
