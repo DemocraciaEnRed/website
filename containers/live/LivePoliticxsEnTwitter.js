@@ -2,26 +2,27 @@ import React from 'react';
 
 function LivePoliticxsEnTwitter () {
   return(
-    <div >
+    <div>
       <section className='politicxs-container'>
         <div className='container-bulma'>
           <h1>POLITICXS EN TWITTER</h1>
           <div className="after-playback">
             <div className="videoWrapper">
-              <iframe
+              {/* <iframe
               width="853"
               height="480"
-              src={`https://www.youtube.com/watch?v=z258VDvsQD4&t=6s&ab_channel=DemocraciaEnRed`}
+              src={`https://www.youtube.com/embed/z258VDvsQD4`}
               frameborder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen>
-            </iframe>
+              </iframe> */}
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/z258VDvsQD4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-          </div>
+          </div>  
           <div className="politicxs-description">
-          <p>Políticxs en Twitter es un repositorio con interacciones de más de 500 usuarios relacionados con la política en Argentina. Ponemos a disposición de la comunidad este ATLAS con datos libres y reutilizables, para facilitar la producción de conocimiento.
-              <br/>
-            Te invitamos a conocer más en el evento que hicimos de lanzamiento!</p>
+            <p>Políticxs en Twitter es un repositorio con interacciones de más de 500 usuarios relacionados con la política en Argentina. Ponemos a disposición de la comunidad este ATLAS con datos libres y reutilizables, para facilitar la producción de conocimiento.
+                <br/>
+              Te invitamos a conocer más en el evento que hicimos de lanzamiento!</p>
           </div>
 
           <div className="logos-container">
@@ -86,6 +87,7 @@ function LivePoliticxsEnTwitter () {
 
       </style>
     </div>
+ 
   );
 }
 

@@ -8,10 +8,10 @@ const Footer = () => (
     <span className='footer-copy'>{t('footer.copy')}</span>
     <FooterNavbar />
     <MediaQuery minDeviceWidth={1025}>
-      <SocialBar alignSelf={'flex-start'} iconsSize={'47px'} width={'331px'} mobileWidth={'283px'} iconHover={'#bebebe'} iconMobileHover={'#bebebe'} />
+      <SocialBar margin= {'0 auto'} alignSelf={'flex-start'} iconsSize={'47px'} width={'331px'} mobileWidth={'283px'} iconHover={'#bebebe'} iconMobileHover={'#bebebe'} />
     </MediaQuery>
     <MediaQuery maxDeviceWidth={1024} >
-      <SocialBar alignSelf={'flex-end'} iconsSize={'28px'}  width={'331px'} mobileWidth={'283px'} justifyContent={'space-between'} iconHover={'#bebebe'} iconMobileHover={'#bebebe'} />
+      <SocialBar margin= {'0 auto'} alignSelf={'flex-end'} iconsSize={'28px'}  width={'331px'} mobileWidth={'283px'} justifyContent={'space-between'} iconHover={'#bebebe'} iconMobileHover={'#bebebe'} />
     </MediaQuery>
    
     <style jsx>{`

@@ -5,7 +5,7 @@ import Instagram from "./Instagram"
 import Youtube from "./Youtube"
 import Medium from "./Medium"
 
-const SocialBar = ( { alignSelf, iconsSize, width, mobileWidth, justifyContent, iconHover, iconMobileHover } ) => (
+const SocialBar = ( { margin,alignSelf, iconsSize, width, mobileWidth, justifyContent, iconHover, iconMobileHover } ) => (
 	<nav className='social-bar'>
 		<a href='https://www.facebook.com/democraciaenred' className='fb' target='_blank' rel='external'>
       <Facebook hover={iconHover} mobileHover={iconMobileHover} />
@@ -32,6 +32,7 @@ const SocialBar = ( { alignSelf, iconsSize, width, mobileWidth, justifyContent, 
         align-self: ${alignSelf};
         display: flex;
         width: ${width};
+        margin: ${margin}
       }
 			.social-bar a{
 				background-size: contain;
@@ -41,6 +42,7 @@ const SocialBar = ( { alignSelf, iconsSize, width, mobileWidth, justifyContent, 
         height: ${iconsSize};
         width: ${iconsSize};
 			}
+
 
       @media (max-width: 1024px) {
         .social-bar {
