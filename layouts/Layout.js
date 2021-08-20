@@ -24,6 +24,7 @@ export default class Layout extends React.Component {
       <link rel="shortcut icon" type="favicon" href="/static/assets/icons/der-favicon.ico" />
       <link rel="stylesheet" type="text/css" href="/static/flickity.css" />
       <link rel="stylesheet" type="text/css" href="/static/global.css" />
+      
     </Head>
     <Navbar 
       changeLang={this.props.changeLang}

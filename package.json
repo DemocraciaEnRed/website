@@ -42,6 +42,8 @@
     "react-flickity-component": "^3.2.0",
     "react-ga": "^2.5.2",
     "react-responsive": "^3.0.0",
-    "request": "^2.83.0"
+    "react-slick": "^0.28.1",
+    "request": "^2.83.0",
+    "slick-carousel": "^1.8.1"
   }
 }

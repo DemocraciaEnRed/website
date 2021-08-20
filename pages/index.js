@@ -13,6 +13,7 @@ import WhoWeAre from '../sections/index/containers/WhoWeAre'
 import Publications from '../sections/index/containers/Publications'
 import Footer from '../containers/Footer'
 import Content from "../sections/about/containers/Content"
+import HeroSlider from "../sections/index/components/HeroSlider"
 const env = 'undefined' !== process ? process.env.YOUTUBE_API_KEY : null
 
 export default class extends Component {
@@ -81,7 +82,8 @@ export default class extends Component {
     return (
       <div id="home-section">
         <Layout changeLang={this.changeLang} currentLang={this.state.currentLang}>
-          <Header modal={this.state.modal} content={this.state.content} hideModal={this.hideModal} />
+   {/* <Header modal={this.state.modal} content={this.state.content} hideModal={this.hideModal} />        */}
+          <HeroSlider/>
           <Cases currentLang={this.state.currentLang} />
           <Link href={'/vivo'}>
             <div className="header-streamings">
