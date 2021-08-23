@@ -44,13 +44,13 @@ class SimpleSlider extends Component {
         />
     </Head>
     <Slider {...settings} className="hero-container">
-      <div>
-      <Header  modal={this.state.modal} content={this.state.content} hideModal={this.hideModal} />
-      </div>
       <div className="slide se-voz">
         <img src="../static/assets/banner-se-voz.jpg" className="is-hidden-tablet" alt=""/>
         <img src="../static/assets/banner-se-voz-mobile.jpg" className="is-hidden-mobile" alt=""/>
         <a className="button" href="https://preguntarparaacordar.typeform.com/to/VTI9VF52" target="_blank">SUBÍ TU MEME</a>
+      </div>
+      <div>
+      <Header  modal={this.state.modal} content={this.state.content} hideModal={this.hideModal} />
       </div>
     </Slider>
     <style jsx>{`
