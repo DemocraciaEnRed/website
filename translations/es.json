@@ -84,6 +84,18 @@
       "title": "Publicaciones",
       "content": [
         {
+          "title": "Serie elecciones y democracia",
+          "subtitle": "4 Columnas sobre elecciones, más allá de la coyuntura",
+          "link": "/static/assets/ebooks/mr-articulos-frizzera.pdf",
+          "img": "/static/assets/ebooks/serie-elecciones-democracia.jpg"
+        },
+        {
+          "title": "Caja de Herramientas",
+          "subtitle": "¿Cómo hacer rendición de cuentas en la plataforma digital Sumen?",
+          "link": "/static/assets/ebooks/SUMEN_RendicionDeCuentas.pdf",
+          "img": "/static/assets/ebooks/KitPP_web.jpg"
+        },
+        {
           "title": "Recuperar la política",
           "subtitle": "Recuperarla significa honrarla. ¿Cómo se organiza el poder y la democracia en una sociedad líquida?",
           "link": "http://www.recuperarlapolitica.org/",

@@ -91,6 +91,18 @@
       "title": "Publications",
       "content": [
         {
+          "title": "Elections and democracy series",
+          "subtitle": "4 articles on elections, beyond the conjuncture",
+          "link": "/static/assets/ebooks/mr-articulos-frizzera.pdf",
+          "img": "/static/assets/ebooks/serie-elecciones-democracia.jpg"
+        },
+        {
+          "title": "Toolbox",
+          "subtitle": "¿How to do accountability on the Sumen digital platform?",
+          "link": "/static/assets/ebooks/SUMEN_RendicionDeCuentas.pdf",
+          "img": "/static/assets/ebooks/KitPP_web.jpg"
+        },
+        {
           "title": "Take back politics",
           "subtitle": "To recover Politics means to honor it. How are power and democracy organized in a liquid society?",
           "link": "http://www.recuperarlapolitica.org/",
@@ -119,7 +131,13 @@
           "subtitle": "How to set up a citizen consultation? (ES)",
           "link": "/static/assets/ebooks/DER_Kit_CCiudadana.pdf",
           "img": "/static/assets/ebooks/KitCC_web.jpg"
-        }
+        },
+        {
+          "title": "#Disinformation",
+          "subtitle": "Beyond the fake news",
+          "link": "/static/assets/ebooks/DER_DESINFORMACIONPDF.pdf",
+          "img": "/static/assets/ebooks/DER_DESINFORMACIONPDF_portada.jpg"
+        }        
       ],
       "callToAction": "Download"
     },
