@@ -27,7 +27,7 @@
     "express": "^4.16.2",
     "flickity": "^2.0.10",
     "isomorphic-unfetch": "^2.0.0",
-    "jsonwebtoken": "^8.1.0",
+    "jsonwebtoken": "^9.0.0",
     "jump.js": "^1.0.2",
     "mailgun-js": "^0.13.1",
     "markdown-in-js": "^1.1.3",
