@@ -1,5 +1,8 @@
-Democracia en Red
+Website Democracia en Red
 =================
+
+> [!CAUTION]
+> Se archiva el repositorio. El repositorio actual de la web es https://github.com/DemocraciaEnRed/democraciaenred-web
 
 Organization website for the Democracia en Red foundation
 
